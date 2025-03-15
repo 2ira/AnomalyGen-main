@@ -1,0 +1,162 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+apply plugin: 'java-library'
+apply plugin: 'idea'
+
+apply from: 'unittest.gradle'
+
+group 'com.github.adrninistrator'
+version = "3.0.0"
+def projectName = "java-callgraph2"
+description = "${projectName}"
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+def jar_output_dir = "jar_output_dir"
+
+def defaultEncoding = 'UTF-8'
+
+[compileJava, compileTestJava]*.options*.encoding = defaultEncoding
+
+project.buildDir = 'build'
+
+repositories {
+    mavenCentral()
+}
+
+clean {
+    delete 'build'
+    delete "${jar_output_dir}"
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'src/test/java'
+        }
+
+        resources {
+            srcDir 'src/test/resources'
+        }
+    }
+}
+
+List apache_ant = ["org.apache.ant:ant:1.10.9"]
+
+List apache_common = [
+        'commons-codec:commons-codec:1.15',
+        'org.apache.commons:commons-compress:1.26.0'
+]
+
+List aviator = ['com.googlecode.aviator:aviator:5.4.3']
+
+// 6.7.0版本LDC.getValue()会报错，不使用
+List bcel = ['org.apache.bcel:bcel:6.10.0']
+
+List zip4j = ['net.lingala.zip4j:zip4j:2.11.5']
+
+List slf4j = ['org.slf4j:slf4j-api:1.7.36']
+
+List junit = ['junit:junit:4.13.2']
+
+List log4j = [
+        'org.apache.logging.log4j:log4j-api:2.20.0',
+        'org.apache.logging.log4j:log4j-core:2.20.0',
+        'org.apache.logging.log4j:log4j-slf4j-impl:2.20.0'
+]
+
+List disruptor = ['com.lmax:disruptor:3.3.7']
+
+dependencies {
+    api apache_ant, apache_common, aviator, bcel, zip4j, slf4j
+    testImplementation junit, log4j, disruptor
+}
+
+compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+
+processResources {
+    setDuplicatesStrategy(DuplicatesStrategy.INCLUDE)
+}
+
+processTestResources {
+    setDuplicatesStrategy(DuplicatesStrategy.INCLUDE)
+}
+
+task createProject {
+    doFirst {
+        sourceSets*.java.srcDirs*.each { it.mkdirs() }
+        sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+    }
+}
+
+// 生成可以直接执行的jar包，并拷贝相关文件
+task gen_run_jar(type: Jar) {
+    archiveFileName.set('run_javacg2.jar')
+    from(sourceSets.main.output) {
+        into '/'
+    }
+
+    doFirst {
+        delete "${jar_output_dir}"
+    }
+
+    doLast {
+        copy {
+            from 'build/libs/run_javacg2.jar'
+            into "${jar_output_dir}/jar/"
+        }
+        copy {
+            from 'src/main/resources/_javacg2_config/'
+            into "${jar_output_dir}/_javacg2_config/"
+        }
+        copy {
+            from 'src/main/resources/_javacg2_merge_file_switch/'
+            into "${jar_output_dir}/_javacg2_merge_file_switch/"
+        }
+        copy {
+            from 'src/main/resources/_javacg2_parse_class_method_switch/'
+            into "${jar_output_dir}/_javacg2_parse_class_method_switch/"
+        }
+        copy {
+            from 'src/main/resources/_javacg2_parse_method_call_switch/'
+            into "${jar_output_dir}/_javacg2_parse_method_call_switch/"
+        }
+        copy {
+            from new File('src/test/resources').listFiles().findAll { File f -> (f.name.startsWith('log4j2') && f.name.endsWith('.xml')) }
+            into "${jar_output_dir}/config/"
+        }
+        copy {
+            from 'run.bat'
+            into "${jar_output_dir}/"
+        }
+        copy {
+            from 'run.sh'
+            into "${jar_output_dir}/"
+        }
+        copy {
+            from configurations.testRuntimeClasspath.getFiles().findAll {
+                File f -> (!f.name.startsWith("junit-") && !f.name.startsWith('hamcrest-core-'))
+            }
+            into "${jar_output_dir}/lib"
+        }
+    }
+}
+
+idea {
+    module {
+        // and some extra dirs that should be excluded by IDEA
+        excludeDirs += file('.idea')
+        excludeDirs += file('gradle')
+        excludeDirs += file('jar_output_dir')
+        excludeDirs += file('log_javacg2')
+    }
+}

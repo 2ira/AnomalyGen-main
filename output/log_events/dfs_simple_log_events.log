@@ -1,0 +1,3280 @@
+[INFO]:Failed to get response.
+[DEBUG]:Getting groups for user + user
+[DEBUG]:Configuring job jar
+[ERROR]:The conf property DFS_NAMENODE_SHARED_EDITS_DIR_KEY is not set properly with correct journal node uri
+[INFO]:Updating balance throttler bandwidth from ... to: ...
+[ERROR]:Error rebuilding local cache for zkDelegationTokens
+[INFO]:Will run the balancer even during an ongoing HDFS upgrade
+[DEBUG]:STATE* Safe mode extension entered.
+[ERROR]:Failed to parse options
+[INFO]:Logger debug executed
+[INFO]:Step DELEGATION_TOKENS started
+[WARN]:Storage directory is in use.
+[TRACE]:Address <*> is <*> local
+[ERROR]:Unable to rename temp to previous for + sd.getRoot(), ioe
+[WARN]:Failed to find datanode <*>
+[INFO]:Rollback aborted.
+[DEBUG]:Fetched token <*> for <*> into <*>
+[WARN]:Ending command processor service for: + this
+[ERROR]:Invalid READDIRPLUS request
+[INFO]:dn + <*> has utilization= + utilization + >= average= + average + but it is not specified as a source; skipping it.
+[WARN]:Failed to cache + key + : failed to open file
+[WARN]:Failed to connect to dnInfo.addr for block block.getBlock(), e
+[INFO]:Read unlock issued for getNumberOfDatanodes
+[INFO]:removeDirective of + id + successful.
+[INFO]:Datanode storage report obtained
+[DEBUG]:Executing remove method with record class and query
+[INFO]:Do not start Router RPC metrics
+[DEBUG]:Set quota for path: nsId: <*>, dest: <*>.
+[TRACE]:Reading empty packet at end of read
+[INFO]:Loading InMemoryAliasMapReader for block pool id <*>
+[ERROR]:Incompatible build versions: active name-node BV = <*>; backup node BV = <*>
+[INFO]:Read block from sender
+[ERROR]:Error while syncing
+[INFO]:Given mode: <*> is invalid
+[DEBUG]:Truncating file starting with recordModification
+[DEBUG]:DIR* NameSystem.mkdirs: src
+[DEBUG]:Unable to de-serialize block token identifier for user=<*>, block=<*>, access mode=<*>
+[DEBUG]:Router heartbeat for router <*>
+[ERROR]:Cannot get disabled name services
+[WARN]:Removing non-existent lease! holder=<*> src=<*>
+[INFO]:Zone <*>(<*>) is submitted for re-encryption., zoneName, inode.getId()
+[ERROR]:Cannot parse JMX output for <*> from server <*>: <*>
+[INFO]:Periodic Directory Tree Verification scan starting in <*>ms with interval of <*>ms and throttle limit of <*>ms/s
+[ERROR]:RedundancyMonitor thread received Runtime exception.
+[DEBUG]:Cannot get remote user: <*>
+[ERROR]:There are <*> duplicate block entries within the same volume.
+[TRACE]:Logging enabled, fetching clients string
+[ERROR]:Already have a scanner for volume <*>.
+[INFO]:<*> failed.
+[ERROR]:<*> must be greater than zero. Defaulting to <*>
+[WARN]:Failed to save replica <*>. re-enqueueing it.
+[DEBUG]:original failed streamers: ...
+[INFO]:Calling process first blk report from storage: <*>
+[TRACE]:read(arr.length=<*>, off=<*>, len=<*>, filename=<*>, block=<*>, canSkipChecksum=<*>): starting
+[INFO]:BLOCK* allocate ... for ...
+[DEBUG]:DIR* FSDirectory.unprotectedRenameTo: src is renamed to dst
+[TRACE]:Starting VolumeScanner <*>
+[WARN]:Unknown DatanodeCommand action: <*> from standby NN <*>
+[TRACE]:this + ": allocAndRegisterSlot " + idx + ": allocatedSlots=" + allocatedSlots + StringUtils.getStackTrace(Thread.currentThread())
+[DEBUG]:Cannot get listing from <*>
+[DEBUG]:Creating FSImage
+[DEBUG]:idlest stream's idle time:
+[INFO]:Path <*> is not shared.
+[INFO]:Rolling forward previously half-completed synchronization: + tmp + -> + dst + ; journal id: + journalId
+[DEBUG]:Initializing StorageLocationChecker
+[ERROR]:Cannot fetch cluster ID metrics: <*>
+[DEBUG]:Updating re-encryption checkpoint with completed task. last: ..., size:...
+[DEBUG]:this: selecting input streams starting at fromTxId (inProgress ok) from among elfs.size() candidate file(s)
+[DEBUG]:Updating State Store cache
+[INFO]:Found <*> directories in INode section.
+[ERROR]:Cannot rename <*> to <*>, src, dst, e
+[TRACE]:Removing unknown block <*>
+[INFO]:Success
+[WARN]:Received an invalid request file transfer request from a secondary with storage info <*>
+[WARN]:Unable to delete dir + curFile + before rename
+[DEBUG]:DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for <*>
+[WARN]:Failed to cache + key + : checksum verification failed.
+[INFO]:Provided storage <*> transitioning to state <*>
+[ERROR]:Connecting to namenode via <*>
+[DEBUG]:DataNode$DataTransfer: close-ack=<*>
+[DEBUG]:Block token id is null, sending without handshake secret.
+[INFO]:Retry cache on namenode is enabled
+[TRACE]:<*>: about to release <*>, ShortCircuitCache.this, slot
+[WARN]:Forcibly uncaching <*> after <*> because client(s) <*> refused to stop using it.
+[INFO]:Encryption zone created
+[DEBUG]:Initiating caching for Block with id <*>, pool <*>
+[INFO]:Recovery prepare phase complete. Responses:\n + QuorumCall.mapToString(prepareResponses)
+[INFO]:Invoke sequential execution
+[DEBUG]:Decreasing replication from <*> to <*> for <*>
+[TRACE]:startMaintenance: Node <*> in <*>, nothing to do.
+[DEBUG]:Generating block token for + identifier
+[TRACE]:Got Exception while checking, + DataStreamer.this, new Throwable(thrown)
+[DEBUG]:Shutting down Router metrics
+[ERROR]:error closing TcpPeerServer: , e
+[DEBUG]:LowRedundancyBlocks.update <*> curReplicas <*> curExpectedReplicas <*> oldReplicas <*> oldExpectedReplicas <*> curPri <*> oldPri <*>
+[DEBUG]:BLOCK* neededReconstruction = <*> pendingReconstruction = <*>
+[DEBUG]:Block <*>: cannot be found in block manager and hence skipped from calculation for node <*>.
+[TRACE]:<*>: got InvalidToken exception while trying to construct BlockReaderLocal via <*>, this, pathInfo.getPath()
+[INFO]:Calling RouterRpcServer mkdirs
+[TRACE]:<*>: got security exception while constructing a remote block reader from <*>
+[DEBUG]:Increasing replication from <*> to <*> for <*>
+[DEBUG]:Adjusting block totals from <*>/<*> to <*>/<*>, blockSafe, blockTotal, blockSafe + deltaSafe, blockTotal + deltaTotal
+[INFO]:Delaying safemode exit for <*> milliseconds...
+[DEBUG]:Setting bandwidth to <*>
+[TRACE]:createNewMemorySegment: created info.shmId
+[INFO]:Reading <*> expecting start txid #<*> <*>
+[DEBUG]:Failed to Get total capacity
+[DEBUG]:Reading cluster info
+[TRACE]:Updating <*> for re-encryption.
+[WARN]:Unable to start log segment txid at currentInProgress: e.getLocalizedMessage()
+[DEBUG]:BLOCK* prepareFileForTruncate: Scheduling copy-on-truncate to new size <*> new block <*> old block <*>
+[WARN]:Namespace quota violation in image for...
+[DEBUG]:Time to output inodes: <*>ms
+[INFO]:Successfully got block locations
+[ERROR]:Balancer exiting as upgrade is not finalized, please finalize the HDFS upgrade before running the balancer.
+[DEBUG]:Audit: setPermission successful for src
+[INFO]:source nodes = <*>
+[DEBUG]:Adding set replication record to edit log
+[DEBUG]:Checking operation
+[INFO]:Router is running now
+[INFO]:Fetching block byte range
+[DEBUG]:Refresh superuser groups configuration in Router.
+[DEBUG]:Tried to read from deleted edit log segment
+[INFO]:Help text displayed
+[DEBUG]:DIR* Namesystem.delete: <*> is removed
+[ERROR]:Error: status failed for (journal journal_and_stream)
+[DEBUG]:Exception during striped read task
+[WARN]:Invalid clusterId in journal request - expected <*> actual <*>
+[INFO]:op=GETACLSTATUS target=path
+[WARN]:These favored nodes were specified but not chosen: + favoredSet + Specified favored nodes: + Arrays.toString(favoredNodes)
+[INFO]:Node <*> hasn't sent its first block report.
+[DEBUG]:DN <*> has no lease to remove.
+[INFO]:No top limit specified, using default top value %d.
+[DEBUG]:Got interrupted while DeadNodeDetector is idle.
+[INFO]:logAuditEvent
+[WARN]:Failure: removeCachePool, <*>}, false
+[ERROR]:Did not remove "<*>"
+[INFO]:Starting up router
+[DEBUG]:Successful completion of operation 'getErasureCodingPolicies'
+[ERROR]:Exception encountered during storage policy setting.
+[DEBUG]:this: selecting input streams starting at <*> <*> from among <*> candidate file(s)
+[DEBUG]:open AuthenticatedURL connection <*>
+[WARN]:Failed to check the status of <*>. Ignore it and continue.
+[WARN]:<*> is set to <*>. It must be greater than zero. Setting to default of <*>, DFSConfigKeys.DFS_IMAGE_PARALLEL_INODE_THRESHOLD_KEY, inodeThreshold, DFSConfigKeys.DFS_IMAGE_PARALLEL_INODE_THRESHOLD_DEFAULT
+[WARN]:Error recovering pipeline for writing + block + . Already retried 5 times for the same packet.
+[INFO]:getSegmentInfo( + segmentTxId + ): + elf + -> + TextFormat.shortDebugString(ret) + ; journal id: + journalId
+[DEBUG]:writeTo blockfile is ... of size ...
+[INFO]:Operation completed. Audit event logged successfully
+[DEBUG]:Re-encryption updater throttling expect: <*>, actual: <*>, throttleTimerAll:<*>
+[ERROR]:Unable to load DataNode plugins. Specified list of plugins: <*>
+[DEBUG]:PmemMappableBlockLoader used for block loading
+[INFO]:logEdit called
+[INFO]:Start moving + this
+[INFO]:\nDatanode Volume Report
+[INFO]:Starting standby checkpoint thread...\nCheckpointing active NN to possible NNs: <*>\nServing checkpoints at <*>, activeNNAddresses, myNNAddress
+[DEBUG]:Loading using Default Loader
+[DEBUG]:Delegation token encoded
+[DEBUG]:Lease renewed for client <*>
+[INFO]:Reporting volume information for DataNode(s). These DataNode(s) are parsed from '<*>'.
+[DEBUG]:<*>: Not scheduling suspect block <*> for rescanning, because this volume scanner is stopping.
+[INFO]:Formatting ...
+[INFO]:Added volume - location, StorageType: storageType
+[DEBUG]:No snapshot name found for inode <*>
+[INFO]:BlockRecoveryWorker: <*> calls recoverBlock(<*>, targets=<*>, newGenerationStamp=<*>, newBlock=<*>, isStriped=<*>)
+[INFO]:Convert + b + from Temporary to RBW, visible length= + visible
+[INFO]:Initializing ZooKeeper connection
+[DEBUG]:Closing and removing stale pool <*>
+[WARN]:Allowing manual HA control from + Server.getRemoteAddress() + even though automatic HA is enabled, because the user + specified the force flag
+[INFO]:Failed to change storage policy satisfier as DFS_STORAGE_POLICY_ENABLED_KEY set to <*>
+[INFO]:Concurrent invocation success
+[DEBUG]:Processed cache report from <*>, blocks: <*>, processing time: <*> msecs
+[INFO]:Operation check started
+[WARN]:excess types chosen for block <*> among storages <*> is empty
+[WARN]:Exception while closing CheckpointStorage
+[ERROR]:Invalid BlockPoolId ...
+[INFO]:NameNode is being shutdown, exit SafeModeMonitor thread
+[DEBUG]:Using striped block reconstruction; pool threads=<*>
+[INFO]:Outputted <*> INodes.
+[INFO]:logAuditEvent success
+[INFO]:Using random node as fallback
+[INFO]:Starting log segment at + segmentTxId
+[INFO]:Finished executing getErasureCodingPolicy for path src
+[ERROR]:The conf property DFS_NAMENODE_SHARED_EDITS_DIR_KEY is not properly set with correct journal node hostnames
+[ERROR]:Cannot get a connection to <*> because the manager isn't running
+[DEBUG]:Receiver: Block replaced
+[DEBUG]:Trigger the write back task. Current nextOffset: <*>
+[WARN]:Failed to report bad + block + from datanode + srcDataNode + to namenode
+[WARN]:Get corrupt file blocks returned error
+[ERROR]:Unable to leave safemode.
+[DEBUG]:Connection context details logged
+[ERROR]:Cleanup with logger due to failure
+[INFO]:Namenode actor taking over ACTIVE state from bpServiceToActive at higher txid= txid
+[ERROR]:failover: incorrect arguments
+[TRACE]:this + blocksToReceive= + blocksToReceive + , scheduledSize= + getScheduledSize() + , srcBlocks#= + srcBlocks.size()
+[INFO]:Safemode status retrieved successfully.
+[WARN]:Edits tailer failed to find any streams. Will try again later.
+[DEBUG]:Remove the node out from suspect node list: <*>.
+[INFO]:Removed storage <*> from DataNode <*>
+[WARN]:Unable to unlock bad storage directory: <*>
+[ERROR]:Could not create paxos dir: <*>
+[INFO]:Checkpointer about to load edits from <*> stream(s).
+[DEBUG]:Reported block <*> on <*> size <*> replicaState = <*>
+[WARN]:Couldn't remove BPOS BPOfferService from bpByNameserviceId map
+[DEBUG]:Creating IOStreamPair of CryptoInputStream and CryptoOutputStream.
+[DEBUG]:child: <*>, posixAclInheritanceEnabled: <*>, modes: <*>
+[DEBUG]:Logging RPC IDs
+[WARN]:Cannot move meta file ... back to the finalized directory ...
+[INFO]:Edit pending queue is full
+[DEBUG]:Lease recovery for inode <*> is complete. File closed
+[ERROR]:Wrong Namenode to monitor
+[DEBUG]:Reading diskbalancer Status failed.
+[INFO]:Saving image to target directory
+[INFO]:Keytab is configured, will login using keytab.
+[TRACE]:this : registerSlot slotIdx : allocatedSlots= + allocatedSlots + StringUtils.getStackTrace(Thread.currentThread())
+[INFO]:Special commit success
+[INFO]:Reconfiguring <*> to <*>
+[DEBUG]:Current active thread number: + executor.getActiveCount() + queue size: + executor.getQueue().size() + scheduled task number: + executor.getTaskCount()
+[DEBUG]:Closer check completed
+[DEBUG]:Skipping volume. Volume : %s Type : %s Target Number of bytes : %f lowVolume dfsUsed : %d. Skipping this volume from all future balancing calls.
+[DEBUG]:Recording a newly allocated block ID in the edit log
+[INFO]:Log sync completed for non-HA setup <*> Rolling upgrade finalized audit event logged
+[DEBUG]:Failed to get number of live nodes
+[WARN]:Excluding datanode
+[TRACE]:Failed to place enough replicas, still in need of...
+[INFO]:Renew delegation token operation started
+[INFO]:Recovering storage directory <*> from failed checkpoint
+[ERROR]:Unsupported operation exception thrown
+[INFO]:Starting <*> StoragePolicySatisfier.
+[TRACE]:getBlockLocalPathInfo successful block=<*> blockfile <*> metafile <*>
+[INFO]:NNTop conf: + DFSConfigKeys.NNTOP_WINDOWS_MINUTES_KEY + = +
+[TRACE]:Removed BR lease 0x<*> for DN <*>. numPending = <*>
+[INFO]:Analyzing storage directories for bpid <*>
+[INFO]:Quota update count info
+[INFO]:Initializing secure datanode resources
+[ERROR]:Cannot parse line <*> in file <*>
+[DEBUG]:DataNode failed volumes: <*>
+[ERROR]:Exception in retrieving block pool id <*>
+[INFO]:Audit success: renameSnapshot
+[TRACE]:DFSClient readNextPacket got header <*>
+[DEBUG]:Removed re-encryption tracker for zone ... because it completed with ... tasks.
+[DEBUG]:Using default data node port : <*>
+[ERROR]:Interrupted waiting for countdown latch
+[INFO]:Enter safe mode after <*> ms without reaching the State Store
+[INFO]:Unsuccessfully sent block report 0x...
+[DEBUG]:Unable to create a temporary directory. Fall back to the default system temp directory <*>
+[DEBUG]:Get InputStream by cache file path.
+[INFO]:Loading InMemoryAliasMapWriter for block pool id <*>
+[INFO]:Save namespace ...
+[WARN]:Access denied for rename (options=<*>) src dst
+[ERROR]:File/Directory does not exist: <*>
+[INFO]:Successfully moved block
+[INFO]:Registered FederationRPCMBean: <*>
+[INFO]:<*> = <*>
+[INFO]:Nameservice <*> enabled successfully.
+[DEBUG]:<*>: no block pools are registered.
+[DEBUG]:End loading cache pools
+[WARN]:ServicePlugin + p + " could not be started"
+[INFO]:LazyWriter was interrupted, exiting
+[INFO]:Started plug-in <*>
+[DEBUG]:Decrease reference count <= 0 on ...
+[DEBUG]:Invalidating <*> from <*>
+[INFO]:logAuditEvent(true, "rename (options=" + Arrays.toString(options) + ")", src, dst, res.auditStat)
+[TRACE]:Sending receipt verification byte for slot <*>
+[DEBUG]:There is no pending items to satisfy the given path inodeId:<*>
+[INFO]:<*> RPC address: <*>
+[WARN]:Journal at ... has no edit logs
+[INFO]:Re-encrypt handler interrupted. Exiting
+[INFO]:Submission completed of zone <*> for re-encryption.
+[DEBUG]:Cleaning up <*>
+[DEBUG]:getUGI is returning: <*>
+[ERROR]:Disk Balancer - No such plan. Cancel plan failed. PlanID:
+[INFO]:BLOCK* processReport: logged info for <*> of <*> reported.
+[INFO]:Need to move <*> to make the cluster balanced.
+[ERROR]:<*> doesn’t exist. Aborting tmp segment move to current directory ; journal id: <*>
+[INFO]:Successfully connected to ...
+[INFO]:Audit event: create, src, status
+[DEBUG]:Add replication task from source <*> to target <*> for EC block <*>
+[INFO]:Processing <*> messages from DataNodes that were previously queued during standby state
+[WARN]:Exception shutting down SecondaryNameNode
+[DEBUG]:Lease renewed with RouterRpcServer
+[ERROR]:JournalNode Proxy not found.
+[INFO]:A checkpoint was triggered but the Standby Node has not received any transactions since the last checkpoint at txid <*>. Skipping...
+[INFO]:Storage policy satisfier is already disabled, mode:<*> so ignoring change mode event.
+[INFO]:Stopping BPOfferServices for nameservices: ...
+[INFO]:Recovering unfinalized segments in currentDir
+[INFO]:Loading image file curFile of size curFile.length() bytes loaded in elapsedTime seconds.
+[DEBUG]:End step SAVING_CHECKPOINT
+[TRACE]:getBlockLocalPathInfo for block=<*> returning null
+[INFO]:this + : datanode does not support short-circuit + shared memory access: + error
+[INFO]:Cancelling <*> re-encryption tasks
+[INFO]:Resuming re-encrypt updater for testing.
+[DEBUG]:BLOCK* invalidateBlocks: postponing invalidation of <*> on <*> because <*> replica(s) are located on nodes with potentially out-of-date block reports
+[INFO]:Image file <*> of size <*> bytes saved in <*> seconds <*>
+[DEBUG]:DeadNode detection is not enabled or given block <*> is null, skip to remove node.
+[INFO]:Downloading missing Edit Log from <*> to <*>
+[TRACE]:Reference count: + op + this +: + this.reference.getReferenceCount()
+[WARN]:NN safe mode check
+[INFO]:Packet queued
+[INFO]:All async lazy persist service threads have been shut down
+[INFO]:Done logSyncAll lastWrittenTxId= + lastWrittenTxId + lastSyncedTxid= + synctxid + mostRecentTxid= + txid
+[WARN]:DataNode<*>:Failed to transfer <*> to <*> got
+[DEBUG]:logUtilizationCollections
+[INFO]:Failed to re-encrypting one batch of <*> edeks from KMS, time consumed: <*>, start: <*>., result, batch.size(), kmsSW.stop(), batch.getFirstFilePath()
+[INFO]:Lease recovery started for src by clientName from clientMachine
+[INFO]:Finalizing rolling upgrade
+[WARN]:Failed to place enough replicas, still in need of X to reach Y (unavailableStorages=...,storagePolicy=...,newBlock=...) e.getMessage()
+[ERROR]:Cannot find subcluster for <*> (<*> -> <*>)
+[ERROR]:Cannot check overrides for record
+[INFO]:System.out.println("No EC policy parsed out from " + filePath)
+[WARN]:Encountered exception
+[INFO]:Namesystem is not running, skipping decommissioning/maintenance checks.
+[INFO]:Finalize upgrade for <*> is complete
+[WARN]:Exception when unlocking storage
+[INFO]:Not scanning suspicious block <*> on <*>, because there is no volume scanner for that storageId.
+[DEBUG]:*DIR* NameNode.create: file <*> for <*> at <*>
+[WARN]:Slow flushOrSync took <*> ms (threshold=<*> ms), isSync:<*>, flushTotalNanos=<*> ns, volume=<*>, blockId=<*>
+[DEBUG]:Set erasure coding policy <*> on <*>
+[DEBUG]:Invoked sequential method
+[DEBUG]:logSync <*>
+[DEBUG]:The node <*> does not have enough <*> space (required=<*>, scheduled=<*>, remaining=<*>).
+[INFO]:Caught InterruptedException while scheduling replication work for mis-replicated blocks
+[WARN]:Failed to renew lease for <*> for <*> seconds. Aborting ...
+[WARN]:Namenode for <*> remains unresolved for ID <*>. Check your hdfs-site.xml file to ensure namenodes are configured properly.
+[INFO]:Audit event succeeded: removeDefaultAcl
+[INFO]:Initializing cache loader: org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.PmemMappableBlockLoader
+[INFO]:Initialized MemoryMappableBlockLoader
+[ERROR]:Exception in doCheckpoint:
+[WARN]:Exception shutting down DataNode HttpServer
+[DEBUG]:allocate(arrayLength)
+[ERROR]:Cannot warm up EDEKs.
+[INFO]:Rolling back storage directory <*>. target LV = <*>; target CTime = <*>
+[INFO]:Journal created
+[INFO]:<*> allows retrying failed subclusters in <*>
+[TRACE]:this + : replica refCount + (replica.refCount - 1) + -> + replica.refCount + StringUtils.getStackTrace(Thread.currentThread())
+[DEBUG]:Directive <*>: not scanning file <*> because bytesNeeded for pool <*> is <*>, but the pool's limit is <*>
+[ERROR]:e.getMessage()
+[DEBUG]:Reducing read length from <*> to <*> to avoid going more than one byte past the end of the block. blockPos=<*>; curPos=<*>; curEnd=<*>
+[DEBUG]:Failed to connect to <*> while fetching HAServiceState
+[DEBUG]:Step : <*>
+[DEBUG]:BLOCK markBlockAsCorrupt: <*> cannot be marked as corrupt as it does not belong to any file
+[WARN]:Received null remoteUser while authorizing access to getImage servlet
+[INFO]:Starting CacheReplicationMonitor with interval <*> milliseconds
+[WARN]:<*>: error creating legacy BlockReaderLocal. Disabling legacy local reads.
+[TRACE]:<*>: returning new remote block reader using UNIX domain socket on <*>
+[WARN]:checkAllVolumes timed out after <*> ms maxAllowedTimeForCheckMs
+[INFO]:Invalidating blocks in dataset
+[INFO]:Fix Quota src=<*> dst=<*> type=<*> oldQuota=<*> newQuota=<*>, location.getSrc(), location, t, remoteQuota.getTypeQuota(t), gQuota.getTypeQuota(t)
+[ERROR]:Cannot locate RPC service address for NN <*>, using RPC address <*>
+[INFO]:Created <*>
+[INFO]:Adding cache directive info
+[ERROR]:Cannot find BPOfferService for reporting block receiving for bpid=<*>
+[INFO]:logAuditEvent(true, operationName, src, null, auditStat)
+[TRACE]:<*>: returning new legacy block reader local.
+[TRACE]:CacheCleaner: purging replica
+[INFO]:rollingUpgrade FINALIZE
+[DEBUG]:InterruptedException in block key updater thread
+[WARN]:Exception shutting down web server
+[INFO]:Refresh super user groups configuration successful for proxy.getAddress()
+[INFO]:Reconfiguration task started
+[INFO]:Reported NameNode version '<*>' does not match DataNode version '<*>' but is within acceptable limits. Note: This is normal during a rolling upgrade.
+[INFO]:Sync log completed
+[DEBUG]:Invocation returned standby exception on <*>, proxyInfo, ex
+[INFO]:Updated xattrs on <*>(<*>) files in zone <*> for re-encryption, starting:<*>.
+[INFO]:Finalizing upgrade for storage directory <*>.\\n cur LV = <*>; cur CTime = <*>
+[WARN]:meta file <*> is missing!
+[INFO]:Cancelling token
+[DEBUG]:Connecting to datanode dnAddr
+[INFO]:FSCK started by UserGroupInformation from remoteAddress for path path at <*>
+[INFO]:offering IBR service
+[WARN]:Exception encountered while saving legacy OIV image; continuing with other checkpointing steps
+[INFO]:Stopped applying edits to prepare for checkpoint.
+[WARN]:Received an invalid request file transfer request from + request.getRemoteAddr() + : + msg
+[INFO]:Creating paxos dir: <*>
+[DEBUG]:Renew delegation token
+[INFO]:Invoke single method executed
+[INFO]:RECONFIGURE* changed <*> to <*>
+[WARN]:Failed to cache the block <*>!
+[WARN]:Edits URI Ignoring duplicates.
+[INFO]:restoring dir <*>
+[INFO]:Stopping decommissioning of <*> node <*> <*>
+[INFO]:No opened stream for fileId: + fileHandle.dumpFileHandle() + commitOffset= + commitOffset + . Return success in this case.
+[DEBUG]:Getting Namenode Name Service ID
+[ERROR]:In-progress edits file + f + has improperly formatted transaction ID
+[ERROR]:Detected errors while saving FsImage
+[DEBUG]:DatanodeAdminMonitor is running.
+[TRACE]:Writing string table entry: <*>
+[DEBUG]:Token renewed, expiration time updated
+[ERROR]:Setting file size is not supported when creating file: <*> + dir fileId: <*>
+[DEBUG]:CacheReport of block(s) took createCost msecs to generate and sendCost msecs for RPC and NN processing
+[INFO]:bpos.toString() + ": scheduling a full block report " + "to namenode: " + nnAddr + "."
+[DEBUG]:LIVE datanodes: <*>
+[INFO]:Deleted State Store record <*>: <*>
+[INFO]:Mis-replicated blocks that have been postponed:
+[WARN]:this + I/O error requesting file descriptors. Disabling domain socket <*>
+[TRACE]:openFileMap size:
+[DEBUG]:Cancelling caching for block with id <*>, pool <*>.
+[WARN]:Got error when sending OOB message.
+[DEBUG]:call blockReceivedAndDeleted: + Arrays.toString(reports)
+[WARN]:BLOCK* blockReceived: <*> is expected to be removed from an unrecorded node <*>
+[DEBUG]:logEdit <*>
+[INFO]:ImageServlet allowing checkpointer: + remoteUser
+[TRACE]:New Excluded nodes: <*>
+[INFO]:Encryption zone removed for inode
+[INFO]:Failed to read expected SASL data transfer protection handshake from client at ...
+[INFO]:NNStorage.attemptRestoreRemovedStorage: check removed(failed) storage. removedStorages size = <*>
+[INFO]:Retrieving service name from configuration
+[ERROR]:Exception while checking heartbeat
+[INFO]:Finalize upgrade for + sd.getRoot() + is complete.
+[WARN]:Exception while getting file is for the given path:<*>
+[DEBUG]:iterating in reported metrics, size=<*> values=<*>
+[INFO]:Cleaning resources
+[ERROR]:Cannot get stat from <*> using JMX
+[WARN]:Failed to reconstruct striped block: <*>, <*>
+[INFO]:namenodes = + namenodes
+[INFO]:DFS_BLOCKREPORT_INITIAL_DELAY_KEY is greater than or equal to DFS_BLOCKREPORT_INTERVAL_MSEC_KEY. Setting initial delay to 0 msec.
+[DEBUG]:Delete <*> due to unsuccessful mapping.
+[WARN]:Block <*> does not have a metafile!
+[ERROR]:Dump data failed: <*> OpenFileCtx state: <*>
+[WARN]:NotReplicatedYetException sleeping src retries left retries
+[ERROR]:Can't start StoragePolicySatisfier for the given mode:<*>
+[INFO]:Stopping security manager
+[DEBUG]:Getting NameNode ID
+[WARN]:Insufficient space for placing the block on a transient volume, fall back to persistent storage
+[DEBUG]:Caught exception was: ...
+[DEBUG]:Adding block reconstruction task <*> to <*>, current queue size is <*>
+[DEBUG]:, org.apache.hadoop.hdfs.util.ByteArrayManager$FixedLengthManager instance
+[ERROR]:Could not sync enough journals to persistent storage due to No journals available to flush. Unsynced transactions: <*>
+[WARN]:The volume<*> with the available space (=<*> B) is less than the block size (=<*> B).
+[DEBUG]:Adding thread capacity: <*>
+[INFO]:RedundancyMonitor received an exception while shutting down.
+[DEBUG]:Updating NN registration: <*> -> <*>
+[DEBUG]:GETATTR for fileHandle: <*> client: <*>
+[INFO]:getECTopologyResultForPolicies called
+[WARN]:File <*> is not under construction. Skipping add to low redundancy open files!
+[ERROR]:Cannot open write stream for record <*>, <*>
+[ERROR]:Failed to start router, e
+[DEBUG]:DatanodeManager.wipeDatanode(node): storage key is removed from datanodeMap.
+[DEBUG]:Update nonSequentialWriteInMemory by <*> new value: <*>, count, newValue
+[DEBUG]:Exception in channel handler, cause
+[DEBUG]:BLOCK* NameSystem.allocateBlock: handling block allocation writing to a file with a complete previous block: src= /* src from code */ lastBlock= /* lastBlockInFile from code */
+[DEBUG]:Creating a GREEDY_PLANNER for Node : nodeName IP : nodeIP ID : nodeUUID
+[DEBUG]:Checking if dfsUsage is an instance of CachingGetSpaceUsed
+[INFO]:Refresh user to groups mapping successful
+[DEBUG]:Created new DT for <*>
+[INFO]:Connection to the State Store driver <*> is open and ready
+[DEBUG]:Using connector : <*>
+[INFO]:Will remove files: <*>
+[ERROR]:No namenode available to invoke...
+[INFO]:Starting services required for standby state
+[DEBUG]:BLOCK* Removing stale replica <*> of <*>
+[INFO]:logEdit
+[DEBUG]:Did not renew lease for client <*>
+[DEBUG]:<*> does not allow retrying a failed subcluster
+[DEBUG]:Traversing directory <*>
+[WARN]:Could not read or failed to verify checksum for data at offset <*> for block <*>
+[INFO]:<*> data directory doesn't exist, creating it
+[DEBUG]:*BLOCK* NameNode.cacheReport: from ...
+[DEBUG]:Sequential invocation on src
+[DEBUG]:BLOCK* block <*>: <*> is received from <*>
+[WARN]:Failed to delete block file
+[DEBUG]:Only using the first part of the path: <*> -> <*>, path, trimmedPath
+[DEBUG]:Change nextOffset to <*>
+[DEBUG]:getFlushedOffset=<*> commitOffset=<*> nextOffset=<*>
+[WARN]:<*>:DataXceiverServer.kill()
+[DEBUG]:Exception , ie
+[TRACE]:<*>: pulled slot <*> out of <*>, this, slot.getSlotIdx(), shm
+[DEBUG]:DIR* NameSystem.renameTo: with options - src to dst
+[DEBUG]:logSync(tx) synctxid=<*> lastJournalledTxId=<*> mytxid=<*>
+[ERROR]:Setting file size is not supported when mkdir: fileName in dirHandle dirHandle
+[ERROR]:copyBlocksToLostFound: error processing <*>
+[WARN]:Failed to write dfsUsed to ...
+[DEBUG]:Failed to get remaining capacity
+[INFO]:logSyncAll toSyncToTxId= + lastWrittenTxId + lastSyncedTxid= + synctxid + mostRecentTxid= + txid
+[DEBUG]:<*>: the UNIX domain socket associated with this short-circuit memory closed before we could make use of the shm.
+[DEBUG]:replaying edit log: ...
+[INFO]:Rolled edit log using RouterClientProtocol
+[INFO]:Shutdown has been called
+[INFO]:DatanodeCommand action: DNA_BALANCERBANDWIDTHUPDATE
+[DEBUG]:MOUNT NULLOP : client: client
+[INFO]:Balance failed, error code: <*>
+[DEBUG]:logUtilizationCollection("below-average", belowAvgUtilized)
+[DEBUG]:Tried to read from deleted or moved edit log segment
+[DEBUG]:SASL server doing encrypted handshake for peer = <*>, datanodeId = <*>
+[DEBUG]:wake up: org.apache.hadoop.hdfs.util.ByteArrayManager$FixedLengthManager instance, recycled? true
+[DEBUG]:Sending cacheReport from service actor: this
+[ERROR]:Found duplicated storage UUID: %s in %s.
+[DEBUG]:DataNode <*> was requested to be excluded, but it was not found.
+[INFO]:Re-encrypting zone <*>(id=<*>)
+[INFO]:starting recovery...
+[INFO]:DataNode$DataTransfer, at <*>: Transmitted <*> (numBytes=<*>) to <*>
+[INFO]:JSON response created with location
+[INFO]:rpcClient.invokeConcurrent executed
+[ERROR]:Disk Balancer - Unable to find dest volume: <*>
+[ERROR]:Refusing to leave safe mode without a force flag. Exiting safe mode will cause a deletion of <*> byte(s). Please use -forceExit flag to exit safe mode forcefully if data loss is acceptable.
+[WARN]:Modify this write to write only the appended data
+[DEBUG]:Not enabling OAuth2 in WebHDFS
+[INFO]:Audit log created for failed operation
+[TRACE]:url=<*>
+[DEBUG]:After remove stream + handle.dumpFileHandle() + , the stream number: + size()
+[DEBUG]:Cannot add more than <*> connections to <*>
+[WARN]:Failed to send success response back to the client. Shutting down socket for <*>
+[INFO]:Scheduled health check for volume <*>
+[ERROR]:Unsupported protocol found when creating the proxy connection to NameNode:
+[DEBUG]:Preparing file for truncate
+[INFO]:Parsing entry: str
+[TRACE]:<*>: the DfsClientShmManager has been closed.
+[INFO]:Another async task is already started before this one is finalized. fileId: <*> asyncStatus: <*> original startOffset: <*> new startOffset: <*>. Won't change asyncStatus here.
+[INFO]:Service address not found
+[DEBUG]:DFSClient <*>
+[WARN]:Disk error on Unknown DataNode: ...
+[WARN]:Slow waitForAckedSeqno took <*>ms (threshold=<*>ms). File being written: <*>, block: <*>, Write pipeline datanodes: <*>.
+[ERROR]:Cannot get local namespace for <*>, clientAddr
+[WARN]:Interrupted when sending OOB message.
+[WARN]:I/O error attempting to unlock storage directory <*>.
+[DEBUG]:Block <*> cannot be reconstructed from any node
+[DEBUG]:Inode <*> existing edek changed, skipping re-encryption
+[INFO]:Start linking block files from <*> to <*>
+[WARN]:Failed to delete the mapped File: <*>!
+[DEBUG]:Ignoring cache report from <*> because <*> = false. number of blocks: <*>
+[DEBUG]:Refresh user groups mapping in Router.
+[INFO]:Not able to copy block ... because it's pinned
+[INFO]:Not enough replicas was chosen. Reason: <*>, reasonMap
+[INFO]:loadDataStorage: <*> upgrade tasks
+[DEBUG]:logRpcIds operation
+[DEBUG]:Cancel delegation token
+[WARN]:Error registering FSDatasetState MBean
+[ERROR]:Interrupted waiting for executor terminated.
+[INFO]:DatanodeCommand action: DNA_CACHE for ... of <*>
+[WARN]:Failed to delete block file for replica + replicaToDelete
+[DEBUG]:Generated manifest for logs since
+[INFO]:BPOfferService + this + interrupted while + stateString
+[DEBUG]:DeadNode detection is not enabled, skip to add node <*>., datanodeInfo
+[INFO]:State Store metrics not enabled
+[ERROR]:Async data service got error: , t
+[INFO]:Current OpenFileCtx is already inactive, no need to cleanup.
+[WARN]:The value of DFS_NAMENODE_AVAILABLE_SPACE_BLOCK_PLACEMENT_POLICY_BALANCED_SPACE_TOLERANCE_KEY is invalid, Current value is balancedSpaceTolerance, Default value DFS_NAMENODE_AVAILABLE_SPACE_BLOCK_PLACEMENT_POLICY_BALANCED_SPACE_TOLERANCE_DEFAULT will be used instead.
+[INFO]:<*>=<*> min(s), <*>=<*> min(s), <*>=<*>
+[WARN]:Datanode + i + did not restart within + datanodeRestartTimeout + ms: + nodes<*>
+[DEBUG]:Checksum loaded and data length set
+[DEBUG]:NFS CREATE dir fileHandle: <*> filename: <*> client: <*>
+[ERROR]:Failed to report to name-node., e
+[WARN]:Could not find a target for file <*> with favored node <*>
+[DEBUG]:Writing output to file
+[INFO]:Choosing random node after resolving network location
+[WARN]:encountered exception
+[ERROR]:FileSystem is <*>
+[DEBUG]:DFSClient check open
+[DEBUG]:BLOCK* addBlock: block <*> on node <*> size <*> does not belong to any file
+[ERROR]:Invalid LOOKUP request
+[ERROR]:Refresh super user groups configuration failed for proxy.getAddress()
+[ERROR]:Failed to refresh mount table entries cache at router <*>, adminAddress, e
+[ERROR]:Cannot get Namenodes from the State Store
+[ERROR]:Access control exception in removeAclEntries
+[DEBUG]:Node is not chosen due to being too busy (load: <*> > <*>)
+[ERROR]:Real capacity is negative. This usually points to some kind of mis-configuration. Capacity : %d Reserved : %d realCap = capacity - reserved = %d. Skipping this volume from all processing. type : %s id :%s
+[INFO]:Create new dump directory <*>
+[WARN]:Inconsistent number of corrupt replicas for <*> + blockMap has <*> but corrupt replicas map has <*>, blk, numCorruptNodes, numCorruptReplicas
+[INFO]:Refreshing SuperUser proxy group mapping list
+[TRACE]:startDecommission: Node <*> in <*>, nothing to do.
+[DEBUG]:Sorting located block
+[ERROR]:prompt
+[TRACE]:Unsuccessful invocation on <*>
+[DEBUG]:Number of storages reported in heartbeat=<*>; Number of storages in storageMap=<*>
+[DEBUG]:Edit log recorded
+[DEBUG]:<*>: Not scheduling suspect block <*> for rescanning, because we rescanned it recently.
+[TRACE]:load(<*>, <*>): loaded iterator <*>: <*>
+[INFO]:Start checkpoint at txid X<*>
+[INFO]:Receiving <*> src: <*> dest: <*>
+[INFO]:Successfully connected to peer
+[DEBUG]:Exception caught, ignoring node:<*>.
+[WARN]:StorageLocation <*> appears to be degraded.
+[INFO]:Will move <*> in this iteration for <*>
+[WARN]:Incorrect version exception
+[DEBUG]:BLOCK* invalidateBlock: <*> on <*>
+[DEBUG]:Creating <*> requires creating parent <*>, src, parent
+[WARN]:Clusterid mismatch - current clusterid: <*>, Ignoring given clusterid: <*>
+[INFO]:Setting quota for mount table
+[INFO]:Registered StateStoreMBean: <*>
+[TRACE]:<*> is stale because it's <*> ms old and staleThreadholdMS=<*>
+[DEBUG]:Checking EC block group
+[ERROR]:<*>
+[ERROR]:Can't close stream for fileHandle: <*>, <*>
+[WARN]:Default name service is disabled.
+[INFO]:Warming up <*> EDEKs... (initialDelay=<*>, retryInterval=<*>)
+[WARN]:Got a repeated request, same range, with a different xid: <*> xid in old request: <*>
+[DEBUG]:requestShortCircuitFdsForRead failed
+[DEBUG]:MOUNT MNT path: <*> client: <*> →
+[ERROR]:Failed to initialize handler <*>
+[DEBUG]:No opened stream for fileId: <*> commitOffset=<*>. Return success in this case.
+[WARN]:DIR* FSDirectory.unprotectedDelete: failed to remove $<*> because the root is not allowed to be deleted
+[ERROR]:Failed to get local host name
+[INFO]:Filter initializers set : <*>
+[ERROR]:Fsck: could not copy block <*> to <*>
+[ERROR]:Cannot get main namespace for path <*> with order <*>, path, order
+[INFO]:Name service ID <*> will use virtual IP <*> for failover, nameServiceID, virtualIP
+[ERROR]:It appears that another node <*> has already locked the storage directory: <*>
+[DEBUG]:Volume <*> is <*>.
+[WARN]:(offset,count,nextOffset): (<*>,<*>,<*>)
+[INFO]:Skipping download of remote edit log <*> since it's already stored locally at <*>
+[ERROR]:Cannot get node mapping when resolving <*> at <*> from <*>, path, loc, clientAddr
+[INFO]:fsync called in RouterRpcServer
+[TRACE]:Block <*> does not need replication.
+[DEBUG]:NFS WRITE fileHandle: <*> offset: <*> length: <*> stableHow: <*> xid: <*> client: <*>
+[DEBUG]:Concurrent invocation on src
+[TRACE]:<*> is not stale because it's only <*> ms old and staleThresholdMs=<*>
+[INFO]:Block analysis status:<*> for the file id:<*>. So, Cleaning up the Xattrs.
+[DEBUG]:logAuditEvent failure
+[INFO]:Can't get path for fromHandle fileId: <*>
+[INFO]:Sending an out of band ack of type + ackStatus
+[INFO]:Checksum JSON location response
+[DEBUG]:NFS LOOKUP fileId: <*> name: <*> does not exist
+[ERROR]:Configuration must be suffixed with nameservice and namenode ID for HA configuration
+[INFO]:Total bytes (blocks) moved in this iteration <*> (<*>)
+[ERROR]:Exception in getting local edit log manifest
+[INFO]:Audit event success for computeSnapshotDiff
+[INFO]:Renewing delegation token
+[INFO]:Invalidated <*> extra redundancy blocks on <*> after it is in service, numExtraRedundancy, srcNode
+[WARN]:DataNode.handleDiskError on: <*> Keep Running: <*>
+[ERROR]:Unexpected IOException
+[INFO]:Rolling back storage directory sd.getRoot(). target LV = DATANODE_LAYOUT_VERSION; target CTime = nsInfo.getCTime()
+[INFO]:Leave startup safe mode after <*> ms
+[INFO]:Initialized the Default Decommission and Maintenance monitor
+[TRACE]:<*>: checked shared memory segment. isStale=<*>
+[DEBUG]:Directive <*>: No inode found at <*>
+[DEBUG]:Summary of operations loaded from edit log:\n ...
+[WARN]:DataNode volume info not available.
+[WARN]:Failed to cache block with id + blockId + , pool + bpid + : volume not found.
+[ERROR]:Cannot get the live nodes: <*>
+[WARN]:PendingReconstructionMonitor timed out <*>
+[DEBUG]:Failed to get the used capacity
+[INFO]:SPS hint already removed for the inodeId:<*>. Ignoring exception:<*>
+[DEBUG]:Re-encryption handler throttling because queue size <*> is larger than number of cores <*>
+[ERROR]:Error reported on storage directory <*>
+[WARN]:Could not lower thread count to <*> from <*>. Too busy.
+[INFO]:Namenode actor trying to claim ACTIVE state with txid= txid
+[INFO]:Finished loading INode directory section in <*>ms
+[ERROR]:No shared edits directory configured for namespace + nsId + namenodeId
+[INFO]:Formatting journal id : <*> with namespace info: <*> and force: <*>
+[INFO]:<*>: no suitable block pools found to scan. Waiting <*> ms.
+[WARN]:Could not find ip address of "default" inteface.
+[DEBUG]:Connecting to datanode <*> addr=<*>
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: rename destination <*> already exists
+[DEBUG]:isValidRequestor is allowing: ...
+[ERROR]:Invocation to "<*>" for "<*>" timed out
+[INFO]:Removing "<*>"
+[INFO]:RECONFIGURE* changed <*> to <*>, property, newVal
+[INFO]:Unregistering slot because the requestShortCircuitFdsForRead operation failed.
+[ERROR]:Forcing CleanerThreadPool to shutdown!
+[INFO]:Available space rack fault tolerant block placement policy initialized
+[DEBUG]:ending log segment because of end of stream in <*>
+[TRACE]:this + ": freed"
+[DEBUG]:computePacketChunkSize: src=<*>, chunkSize=<*>, chunksPerPacket=<*>, packetSize=<*>
+[INFO]:The policy name already exists
+[INFO]:Updating edits cache to use layout version <*> starting from txn ID <*>
+[TRACE]:storageTypes=<*>, storageTypes
+[INFO]:Volume <*>: verification failed for <*> because of FileNotFoundException. This may be due to a race with write.
+[INFO]:Reading + editIn + expecting start txid # + (lastAppliedTxId + 1) + logSuppressed
+[INFO]:Placeholder for log message
+[DEBUG]:skipping skipAmt bytes at the end of edit log getName(): reached txid txId out of lastTxId
+[DEBUG]:FsPathBooleanRunner is running
+[WARN]:Failed to delete <*>
+[INFO]:logRpcIds executed
+[ERROR]:interrupted while waiting for masterThread to terminate, e
+[INFO]:Success: removeCachePool, <*>}, true
+[ERROR]:error closing DomainPeerServer: , e
+[DEBUG]:Upstream service is down, skipping the sps work.
+[TRACE]:<*>: returning new block reader local.
+[DEBUG]:Decrypted EDEK for file: <*>, output stream: 0x<*>
+[INFO]:Super post called for UNSETSTORAGEPOLICY
+[DEBUG]:Entering run method
+[INFO]:Removing zone <*> from re-encryption.
+[INFO]:Retrying connect to namenode: <*>. Already retried <*> time(s); retry policy is <*>, delay <*>ms.
+[INFO]:There are <*> blocks pending replication and the limit is <*>. A further <*> blocks are waiting to be processed. The replication queue currently has <*> blocks
+[ERROR]:Cannot initialize driver for driverName
+[WARN]:got IOException closing stale peer <*>, which is <*> ms old
+[INFO]:Federated FSCK started by current_user from remoteAddress at current_time
+[DEBUG]:Processing SnapshotDiffSection
+[ERROR]:Invalid root directory, unable to initialize driver.
+[INFO]:Audit log creation successful
+[INFO]:Using clusterid: <*>
+[DEBUG]:Checked operation
+[ERROR]:Failed to move aside pre-upgrade storage in image directory ...
+[ERROR]:Unexpected health check result null for volume <*>, reference.getVolume()
+[WARN]:Failed to update re-encrypted progress to xattr for zone ..., ...
+[WARN]:Checksum error in block + block + from + inAddr + , + specificOffset, ce
+[WARN]:Failed to place enough replicas...
+[WARN]:IOException in LifelineSender for + BPServiceActor.this
+[INFO]:MembeshipStoreImpl cache loaded
+[ERROR]:Request short-circuit read file descriptor failed with unknown error.
+[INFO]:Upgrading to sequential block IDs. Generation stamp for new blocks set to startingGenStamp
+[INFO]:Purging no-longer needed file <*>
+[INFO]:Applying UMask
+[INFO]:All EC block group status: OK
+[INFO]:Recovered <*> replicas from <*>
+[DEBUG]:Cluster URI : <*>
+[ERROR]:Cannot get mount point: <*>
+[DEBUG]:logRpcIds called
+[ERROR]:Expected tag end event for <*>, but got tag end event for <*>
+[WARN]:Cannot request to call satisfy storage policy on path: <*>, as this file/dir was already called for satisfying storage policy.
+[INFO]:Volume reference is released.
+[DEBUG]:Block analysis status:<*> for the file id:<*>. Adding to attempt monitor queue for the storage movement attempt finished report.
+[DEBUG]:Checking state store connection
+[INFO]:editsSyncDir + " directory already exists."
+[INFO]:Write lock metrics added: ... <*>
+[INFO]:this + beginning handshake with NN
+[WARN]:Interrupted waiting for namespace to freeze
+[INFO]:Retry cache on namenode is disabled
+[WARN]:Only one namespace edits storage directory (DFS_NAMENODE_EDITS_DIR_KEY) configured. Beware of data loss due to lack of redundant storage directories!
+[DEBUG]:A packet was last sent <*>ms ago.
+[ERROR]:Cannot initialize record store for simpleName
+[DEBUG]:Operation unsetErasureCodingPolicy started
+[INFO]:getEcTopologyVerifierResultForEnabledPolicies
+[ERROR]:Cannot wait for the updater to finish
+[INFO]:Synchronizing log
+[WARN]:Failed to updateBlock (newblock=, datanode=r.id)
+[WARN]:Please update your configuration to use <*> instead.
+[WARN]:Clearing all the queues from StoragePolicySatisfier. So, user requests on satisfying block storages would be discarded.
+[INFO]:No opened stream for fileHandle: <*>
+[DEBUG]:DIR* NameSystem.createSymlink: target= + target + link= + link
+[INFO]:Refreshing all user-to-groups mappings. Requested by user: (getRemoteUser().getShortUserName result)
+[DEBUG]:SPS service mode is <*>, so external SPS service is not allowed to fetch the path Ids
+[INFO]:Linked blocks from <*> to <*>. <*>
+[INFO]:<*> does not exist. Creating ...
+[WARN]:Failed to delete temporary file <*>
+[INFO]:EDEKCacheLoader interrupted during retry.
+[INFO]:Deleting block.getLocalBlock() replica replicaToDelete
+[INFO]:recoverLease: + lease + , src= + src + from client + clientName
+[TRACE]:<*>: unregisterSlot <*>, this, slotIdx
+[ERROR]:Failed to parse persistent memory volume
+[TRACE]:this + : + removedFrom + no longer contains + replica + . refCount + (replica.refCount - 1) + -> + replica.refCount + StringUtils.getStackTrace(Thread.currentThread())
+[INFO]:Locking is disabled for <*>
+[DEBUG]:Mapped HA service delegation token for logical URI + haUri + to namenode + singleNNAddr
+[INFO]:opCopyBlock ... received exception ...
+[WARN]:logAuditEvent(false, "rename (options=" + Arrays.toString(options) + ")", src, dst, null)
+[INFO]:Replica Cache file: path cannot be deleted
+[WARN]:Storagespace quota violation in image for...
+[ERROR]:Cannot fetch safemode state for <*>
+[ERROR]:Edits file + f + has improperly formatted + transaction ID
+[WARN]:NameNode safe mode check failed: Failed to finalize rolling upgrade
+[INFO]:Setting owner name and group
+[DEBUG]:NFS MKDIR dirHandle: <*> filename: <*> client: <*>
+[INFO]:Found <*> INodes in the INode section
+[INFO]:Clients are to use <*> to access this namenode/service.
+[INFO]:Set storage policy <*> on <*>
+[INFO]:DatanodeCommand action from standby NN <*>: DNA_ACCESSKEYUPDATE
+[INFO]:Copied ... to ...
+[DEBUG]:Interrupted waiting for peers to close
+[DEBUG]:Failed to getReplicaVisibleLength from datanode <*> for block <*>
+[WARN]:failed to get ...
+[DEBUG]:a metric is reported: cmd: <*> user: <*>
+[DEBUG]:Failed to refresh DFSInputStream for path <*>
+[DEBUG]:Started block recovery <*> lease <*>
+[INFO]:Initializing edits cache starting from txn ID %d
+[DEBUG]:got
+[DEBUG]:this received versionRequest response: nsInfo
+[WARN]:Fsck error_message
+[INFO]:dfsClient is null
+[WARN]:JournalNodeSyncer interrupted
+[DEBUG]:First trial failed, node has no type <*>, making second trial carrying this type
+[INFO]:addSymlink: failed to add <*>
+[WARN]:Invocation returned exception on <*>; <*> failure(s) so far
+[INFO]:Now rescanning bpid <*> on volume <*>, after more than <*> hour(s)
+[INFO]:updatePipeline( + oldBlock.getLocalBlock() + => + newBlock.getLocalBlock() + ) success
+[INFO]:Completed re-encrypting one batch of <*> edeks from KMS, time consumed: <*>, start: <*>., result, batch.size(), kmsSW.stop(), batch.getFirstFilePath()
+[INFO]:Fsck: copied the remains of the corrupted file <*> to /lost+found
+[INFO]:Provided block pool slice fetched and logged
+[INFO]:op=GETXATTRS target=path
+[INFO]:Loaded + counter + directories
+[INFO]:Upgrade of <*> is complete
+[DEBUG]:Exception encountered:
+[ERROR]:Cannot open read stream for record <*>
+[INFO]:Shutting down all async disk service threads
+[DEBUG]:Using local interface <*>
+[DEBUG]:Exception in closing + domainSocketWatcher, e
+[DEBUG]:Got no rules - will disallow anyone access
+[TRACE]:Registering <*> for <*>
+[INFO]:Delete current dump directory <*>
+[INFO]:Replacing block
+[WARN]:Found image file at but storage directory is not configured to contain images.
+[INFO]:Found nn: +info.getNameNodeID()+, ipc: +info.getIpcAddress()
+[DEBUG]:UNSTABLE write request, send response for offset: OFFSET_PLACEHOLDER
+[DEBUG]:selectStreamingInputStream manifests:\n <*>
+[WARN]:this + ": error shutting down shm: got IOException calling " + "shutdown(SHUT_RDWR)"
+[INFO]:Zone <*> starts re-encryption processing
+[INFO]:BLOCK* allocateBlock: caught retry for allocation of a new block in /* src from code */. Returning previously allocated block /* lastBlockInFile from code */
+[INFO]:Calling RouterClientProtocol mkdirs
+[INFO]:op=GETFILESTATUS target=path
+[DEBUG]:return byte<*>
+[ERROR]:Cannot get the remote user name
+[TRACE]:Evaluating rule, subnet: <*>, path: <*>
+[INFO]:logAuditEvent(true, "modifyAclEntries", src, null, auditStat)
+[INFO]:Modification time set for file
+[INFO]:createNameNode <*>
+[INFO]:Recovering persistent memory cache for block <*>, path = <*>, address = <*>, length = <*>
+[ERROR]:FSImageFormatPBSnapshot: Missing referred INodeId ...
+[WARN]:Unable to dump remaining operations, remaining raw bytes: " + Hex.encodeHexString(remainingRawEdits), ioe
+[TRACE]:getNextSubDir(<*>, <*>): no subdirectories found in <*>
+[INFO]:Checkpoint Period : + checkpointConf.getPeriod() + secs + ( + checkpointConf.getPeriod() / 60 + min
+[WARN]:Disallowed RPC access from <*> at <*>. Not listed in <*>
+[ERROR]:FORCEFENCE and FORCEACTIVE flags not supported with auto-failover enabled.
+[INFO]:Saving image file <*> using <*>
+[ERROR]:<*> exiting because of exception
+[WARN]:Edits URI ... listed multiple times in ... Ignoring duplicates.
+[INFO]:Instance created
+[INFO]:modifyCachePool of <*> successful; set limit to <*>
+[ERROR]:Read request interrupted
+[DEBUG]:write to <*>: <*>, blockGroup=<*>, datanode, Op.BLOCK_GROUP_CHECKSUM, blockGroup
+[INFO]:Web server init done
+[WARN]:Getting exception while validating integrity and setting length for blockFile
+[ERROR]:caught exception initializing this
+[WARN]:Repetitive policies in EC policy configuration file: <*>
+[DEBUG]:Commit done: x
+[WARN]:AsyncDataService has already shut down.
+[DEBUG]:Datanode is not chosen
+[ERROR]:Could not construct Shared Edits Uri
+[INFO]:String.format(isDead ? REPORT_REMOVE_DEAD_NODE_ENTRY : REPORT_REMOVE_STALE_NODE_ENTRY, d)
+[INFO]:Refreshing call queue.
+[ERROR]:The dependency call returned null for host + node.getHostName()
+[DEBUG]:Checking if security is enabled
+[INFO]:Disabling StoragePolicySatisfier, mode:<*>
+[DEBUG]:<*>: <*> is not usable for short circuit; giving up on BlockReaderLocal., this, pathInfo
+[DEBUG]:DataNode overwriting downstream QOP
+[DEBUG]:About to load edits:\n <*>
+[DEBUG]:IOUtils.cleanupWithLogger called
+[INFO]:Loaded <*> inode references
+[INFO]:logAuditEvent: operationName, src
+[DEBUG]:Closing RBF metrics
+[DEBUG]:BLOCK* addStoredBlock: Redundant addStoredBlock request received for <*> on node <*> size <*>
+[WARN]:cachedDfsUsed not found in file:<*>, will proceed with Du for space computation calculation
+[INFO]:Allocating <*> threads per target.
+[INFO]:Sleeping in the re-encrypt handler for unit test.
+[WARN]:Arrays.toString(nodes) + " are unavailable and all striping blocks on them are lost. IgnoredNodes = " + ignoredNodes
+[WARN]:Received exception in BlockPoolManager#shutDownAll
+[INFO]:Finalizing upgrade for local dirs.
+[DEBUG]:------------------- logged event for top service: allowed=<*>\tugi=<*>\tip=<*>\tcmd=<*>\tsrc=<*>\tdst=<*>\tperm=<*>
+[INFO]:AllocateBlockIdOp instance created and block ID set
+[ERROR]:Cache update failed for cache <*>
+[ERROR]:Image checkpoint time X > edits checkpoint time Y
+[WARN]:Unable to find stream starting with ...
+[DEBUG]:selecting edit log stream + elf
+[DEBUG]:SASL server skipping handshake in secured configuration for peer = <*>, datanodeId = <*>
+[DEBUG]:Cannot schedule check on null volume
+[ERROR]:Please specify the policy name.
+[INFO]:Giving handle (fileHandle: <*> file URI: <*>) to client for export <*>
+[ERROR]:Cannot fetch block pool ID metrics: <*>
+[WARN]:Fsck on blockId
+[DEBUG]:No sync response, expect an async response for request XID=<*>
+[WARN]:"<*>: Got exception while serving <*> to <*>: ", dnR, block, remoteAddress, ioe
+[DEBUG]:Creating FSNamesystem
+[ERROR]:Finalize upgrade for <*> failed
+[INFO]:Cannot find block info for block <*>
+[ERROR]:Syntax error in URI + s + . Please check hdfs configuration.
+[DEBUG]:Block recovery: DataNode: <*> does not have replica for block: <*>
+[DEBUG]:MOUNT NULLOP : client: <*>
+[INFO]:Generated new storageID <*> for directory <*> <*>
+[INFO]:Starting periodic service <*>
+[DEBUG]:DataNode Z reported slow disks: <*>
+[ERROR]:The conf property not set properly, it has been configured with different journalnode values
+[ERROR]:The Router metrics are not enabled
+[WARN]:The storage policy <*> is not suitable for Striped EC files. So, ignoring to move the blocks
+[TRACE]:No erasure coding policy is given.
+[INFO]:Checked <*> blocks and <*> nodes this tick. <*> nodes are now in maintenance or transitioning state. <*> nodes pending., numBlocksChecked, numNodesChecked, outOfServiceNodeBlocks.size(), getPendingNodes().size()
+[ERROR]:Cannot refresh mount table: state store not available
+[INFO]:Replica state finalized, adding stored block
+[DEBUG]:Canot execute <*> in <*>: <*>
+[INFO]:Edit log file + elf + appears to be empty. + Moving it aside... + ; journal id: + journalId
+[INFO]:Problem connecting to server: + nnAddr + : + e.getLocalizedMessage()
+[INFO]:Updating lastPromisedEpoch from <*> to <*> for client <*> ; journal id: <*>
+[INFO]:Loading the INodeDirectory section in parallel with <*> sub-sections
+[DEBUG]:Volume <*> is <*>., reference.getVolume(), result
+[WARN]:File is not a block filename, skipping.
+[INFO]:Added persistent memory - <*> with size=<*>
+[DEBUG]:Block with id <*>, pool <*> does not need to be uncached, because it is not currently in the mappableBlockMap.
+[ERROR]:Cannot serialize field <*> into JSON
+[TRACE]:stopDecommission: Node <*> in <*>, nothing to do., node, node.getAdminState()
+[ERROR]:Exception while selecting input streams
+[WARN]:Exception while scanning file inodes to satisfy the policy
+[INFO]:Problem connecting to server: + nnAddr
+[WARN]:Now FSCK to DFSRouter is unstable feature. There may be incompatible changes between releases.
+[INFO]:Storage directory " + sd.getRoot() + " does not contain previous fs state.
+[TRACE]:Directive <*>: can't cache block <*> because it is in state <*>, not COMPLETE.
+[DEBUG]:opWriteBlock: stage=<*>, clientname=<*> block=<*>, newGs=<*>, bytesRcvd=<*> targets=<*>; pipelineSize=<*>, srcDataNode=<*>, pinning=<*>
+[ERROR]:The endTxId of the temporary file is not less than the last committed transaction id. Aborting move to final file <*> ; journal id: <*>
+[INFO]:Failed to find a pending move for + noMoveInterval + ms. Skipping + this
+[DEBUG]:scheme : <*>
+[DEBUG]:Loaded edits starting from txid
+[ERROR]:Unexpected health check result <*> for volume <*>, result, reference.getVolume()
+[WARN]:Failed to add the inode <*> to the directory <*>
+[DEBUG]:Cancelled token for token.getService()
+[ERROR]:InvalidEncryptionKeyException recorded
+[ERROR]:Invalid READ request
+[ERROR]:Unable to get quota usage for + src, ioe
+[INFO]:...(IOException e.Message)
+[INFO]:Found corruption while reading <*>. Error repairing corrupt blocks. Bad blocks remain., ie
+[DEBUG]:Metrics system initialized
+[INFO]:Initialized the Backoff Decommission and Maintenance Monitor
+[DEBUG]:Copied srcReplica.getMetadataURI() meta to dstMeta and calculated checksum
+[INFO]:Reading hosts file into set for type and filename
+[INFO]:Pause detected while waiting for QuorumCall response; increasing timeout threshold by pause time of <*> ms.
+[DEBUG]:BLOCK* addStoredBlock: <*> is added to <*> (size=<*>)
+[INFO]:Failed to warm up EDEKs.
+[ERROR]:System Error during DirectoryScanner execution - permanently terminating periodic scanner
+[WARN]:Re-encryption updater thread interrupted. Exiting.
+[WARN]:Original exception is
+[DEBUG]:Remove write <*> from the list
+[INFO]:Write locked
+[WARN]:Unexpected throwable:
+[DEBUG]:Replica is being written!
+[WARN]:Failed to cache block with id + blockId + , pool + bpid + : replica is not finalized; it is in state + info.getState()
+[DEBUG]:Processing RPC with index <*> out of total <*> RPCs in processReport 0x<*>
+[INFO]:Audit success: satisfyStoragePolicy
+[DEBUG]:Token decoded
+[DEBUG]:<*>:Number of active connections is: <*>
+[INFO]:Ignoring exception
+[INFO]:Finished one round, will wait for <*> for next round
+[INFO]:initReplicaRecovery: changing replica state for + block + from + replica.getState() + to + rur.getState()
+[INFO]:<*> has expired hard limit
+[ERROR]:Exception while moving block replica to target storage type
+[INFO]:Cancelled image saving for + sd.getRoot() + : + snce.getMessage()
+[WARN]:Quorum journal URI ' + uri + ' has an even number of Journal Nodes specified. This is not recommended!
+[DEBUG]:Another Diskbalancer instance is running ? - Target Directory already exists. <*>
+[INFO]:Loading inode directory section
+[INFO]:Can't send invalid block
+[DEBUG]:Directive <*>: ignoring non-directive, non-file inode <*>
+[ERROR]:This is a rare failure scenario!!!
+[INFO]:Could not send read status ( + statusCode + ) to datanode + peer.getRemoteAddressString() + : + e.getMessage()
+[DEBUG]:Checking NN startup
+[INFO]:Shutdown complete.
+[DEBUG]:Cache pool added
+[TRACE]:redirectURI=<*>
+[DEBUG]:*DIR* NameNode.concat: src path <*> to target path <*>
+[ERROR]:Invalid RENAME request
+[INFO]:Selected loggers with >= maxAllowedTxns transactions starting from lowest txn ID
+[TRACE]:Acquiring write lock to replay edit log
+[INFO]:Slow ReadProcessor read fields for block XXX took YYYms
+[INFO]:FSImageSaver clean checkpoint: txid=<*> when meet + Throwable., context.getTxId()\n
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: rename destination parent ... not found.
+[DEBUG]:logAuditEvent success
+[INFO]:Deactivating volumes (clear failure=true/false): <*>
+[INFO]:Incrementing counter for each cache pool
+[INFO]:Balance failed, error code: + retCode
+[WARN]:No KEY found for persisted identifier + identifier.toString()
+[DEBUG]:Using NN principal: + nameNodePrincipal
+[ERROR]:Failed to move some block's after <*> retries.
+[INFO]:Connection closed by client...
+[DEBUG]:reconcile start DirectoryScanning
+[ERROR]:Access Control Exception: removeAcl failed
+[INFO]:Recovering persistent memory cache for block <*>, path = <*>, length = <*>
+[INFO]:Watcher for tokens is disabled in this secret manager
+[DEBUG]:MemoryMappableBlockLoader used for block loading
+[INFO]:RECONFIGURE* changed heartbeatRecheckInterval to ...
+[INFO]:Sending the cached reply to retransmitted request <*>
+[INFO]:Number of suppressed write-lock reports: ... <*>
+[ERROR]:Unable to disable Nameservice <*>, nsId
+[DEBUG]:DIR* NameSystem.startFile...
+[DEBUG]:Finished refreshing <*> of <*> streams in <*>ms
+[WARN]:Failed to add storage directory <*> for block pool <*>
+[INFO]:Synchronizing log <*> from <*>
+[INFO]:Temporary redirect response built
+[DEBUG]:STATE* Safe mode ON.
+[WARN]:Exception
+[INFO]:Scheduling a check for <*>, target
+[INFO]:Start loading edits file
+[ERROR]:Disk Balancer : Scheduler did not terminate.
+[WARN]:Audit Event: setOwner failed for src
+[WARN]:Invalid namespaceID in journal request - expected <*> actual <*>
+[WARN]:Cannot list edit logs in <*>
+[INFO]:Audit event failed for computeSnapshotDiff
+[DEBUG]:Token kind set
+[INFO]:For namenode using...
+[INFO]:Start moving block
+[INFO]:Triggering block report
+[TRACE]:Removing unknown block
+[DEBUG]:Error , cause
+[DEBUG]:Audit log true for operation listSnapshottableDirectory
+[ERROR]:error closing blockReader
+[ERROR]:Re-throwing API exception, no more retries
+[INFO]:Continuing re-encryption updater after pausing.
+[DEBUG]:BLOCK* block RECEIVING_BLOCK: block <*> is received from <*>
+[INFO]:Skipping creating directory for block pool <*> for PROVIDED storage location <*>
+[INFO]:STATE* Network topology has <*> racks and <*> datanodes
+[DEBUG]:Got commit status: <*>
+[DEBUG]:NameNode safe mode check completed
+[ERROR]:Setting file size is not supported when setattr, fileId: <*>
+[ERROR]:Cannot remove records <*> query <*>, <*>
+[WARN]:fetchBlockByteRange(). Got a checksum exception for <*> at <*>:<*> from <*>
+[INFO]:Skipping jas + jas + since it's disabled
+[INFO]:Finished loading directories in <*>ms
+[INFO]:Stopping RedundancyMonitor.
+[DEBUG]:Beginning of the step. Phase: <*>, Step: <*>
+[DEBUG]:The scanning start dir/sub dir + childPath + does not have childrens.
+[DEBUG]:Normalizing source path
+[WARN]:Ending block pool service for: this
+[ERROR]:KeyProvider URI string is invalid <*>!!
+[INFO]:Add user <*> to the list that will bypass external attribute provider.
+[INFO]:logRpcIds invoked
+[WARN]:Took <*> ms to process <*> commands from NN, processCommandsMs, cmds.length
+[INFO]:Node <*> is sufficiently replicated and healthy, marked as <*>.
+[DEBUG]:Created a new BR lease 0x<*> for DN <*>. numPending = <*>
+[INFO]:CachedRecordStore cache loaded
+[INFO]:Audit event for listStatus operation denied on src
+[INFO]:op=LISTSTATUS target=path
+[ERROR]:Failed to transfer block <*>
+[INFO]:Decoding to reconstruct targets...
+[DEBUG]:Read in partial CRC chunk from disk for block
+[DEBUG]:<*>: seqno=<*> waiting for local datanode to finish write.
+[ERROR]:Cannot fetch cluster ID metrics <*>
+[ERROR]:Interrupted while running disk check, e
+[INFO]:Rollback of <*> is complete
+[TRACE]:Got request user: <*>, remoteIp: <*>, query: <*>, path: <*>
+[WARN]:Exception while getting reportedBlock list
+[DEBUG]:After dump, nonSequentialWriteInMemory == <*>
+[DEBUG]:,
+[INFO]:Recover RBW replica
+[ERROR]:interrupted while waiting for reportCompileThreadPool to terminate, e
+[DEBUG]:Returning JSON response
+[DEBUG]:Creating new mount table entry
+[DEBUG]:Getting datanode storage report
+[DEBUG]:getDatanodeListForReport with includedNodes = ..., excludedNodes = ..., foundNodes = ..., nodes = ...
+[INFO]:Disabling StoragePolicySatisfier service as <*> set to <*>.
+[DEBUG]:BLOCK NameSystem.addToCorruptReplicasMap: <*> added as corrupt on <*> by <*> <*>
+[WARN]:LazyWriter failed to create <*>
+[WARN]:Skipping date check on this plan. This could mean we are executing an old plan and may not be the right plan for this data node.
+[INFO]:Storage policy satisfier is disabled
+[INFO]:Directory with id <*> removed during re-encrypt, skipping
+[INFO]:Directory + prevDir + does not exist.
+[INFO]:Upgrade of <*> is complete, name
+[DEBUG]:INode <*> doesn't exist, skipping re-encrypt.
+[DEBUG]:Failed getting node for hedged read: <*>
+[INFO]:Creating symlink
+[INFO]:Shutting down all async lazy persist service threads
+[DEBUG]:Block recovery: Ignored replica with invalid original state: <*> from DataNode: <*>
+[WARN]:Removed block + blockId + from memory with missing block file on the disk
+[WARN]:Periodic Directory Tree Verification scan is disabled because verification is turned off by configuration
+[INFO]:removeAcl operation completed
+[DEBUG]:Received handleLifeline from nodeReg = + nodeReg
+[WARN]:Error parsing protocol buffer of EZ XAttr <*> dir:<*>
+[ERROR]:*********** Upgrade is not supported from this older version <*> of storage to the current version. Please upgrade to <*> or a later version and then upgrade to current version. Old layout version is <*> and latest layout version this software version can upgrade from is <*>. ************
+[WARN]:src=<*>, datanodes<*>=<*>
+[INFO]:Compiling report for volume: ProvidedVolumeImpl; bpid: someBpid
+[DEBUG]:Scheduling write back task for fileId: ...
+[DEBUG]:Closing an already closed stream. <*>
+[DEBUG]:logUtilizationCollection("over-utilized", overUtilized)
+[WARN]:Exception caught, ignoring node:<*>
+[DEBUG]:DIR* NameSystem.completeFile: String srcArg for String holder
+[ERROR]:EditLogManifest response does not have fromUrl field set. Aborting current sync attempt
+[WARN]:Recovery for replica " + block + " on data-node " + id + " is already in progress. Recovery id = " + rBlock.getNewGenerationStamp() + " is aborted.
+[WARN]:Encountered exception loading fsimage
+[INFO]:Starting DataNode with maxLockedMemory = <*>
+[INFO]:Error writing to fileId <*> at offset <*> and length <*>
+[DEBUG]:Add new write to the list with nextOffset <*> and requested offset=<*>
+[DEBUG]:SASL server skipping handshake in unsecured configuration for peer = <*>, datanodeId = <*>
+[DEBUG]:No HA service delegation token found for logical URI + haUri
+[WARN]:Log file + file + has no valid header, e
+[WARN]:ShortCircuitCache.this: failed to release short-circuit shared memory slot ...
+[DEBUG]:Checking federal security status
+[DEBUG]:DIR* addFile: <*> is added
+[INFO]:Token verified
+[ERROR]:Disk Balancer - Invalid plan.
+[DEBUG]:Getting groups for user <*>
+[DEBUG]:lastTxnId:
+[DEBUG]:Discarding refreshed blocks for path <*> because lastBlockLength was -1
+[DEBUG]:Adjusting safe-mode totals for deletion. decreasing safeBlocks by <*>, totalBlocks by <*>
+[WARN]:Block token verification failed: op=<*>, remoteAddress=<*>, message=<*>
+[ERROR]:NameNode process will exit now... The saved FsImage <*> is potentially corrupted.
+[DEBUG]:Block <*>: can't add new cached replicas, + because there is no record of this block + on the NameNode.
+[INFO]:Node <*> completed decommission and maintenance but has been moved back to in service
+[INFO]:Fsck: deleted corrupt file
+[INFO]:Could not obtain block from any node: <*>
+[INFO]:At datanode display name, Recovering rbw
+[DEBUG]:Recalculate checksum for the missing/failed block index <*>
+[INFO]:Moved block from StorageType to StorageType
+[INFO]:Zone <*> will retry re-encryption
+[WARN]:bpid + has some block files, cannot delete unless forced
+[DEBUG]:saveSecretManagerSection completed
+[ERROR]:Disk Balancer - Executing another plan, submitPlan failed.
+[INFO]:Reading minimum sources...
+[INFO]:Failed to cache + key + : failed to find backing files.
+[INFO]:Delegation token request processed
+[DEBUG]:Outputted <*> INodes.
+[INFO]:No striped internal block on source <*>, block <*>. Skipping.
+[ERROR]:Cannot get <*> nodes
+[DEBUG]:Change concurrent thread count to <*> from <*>
+[INFO]:Loaded <*> edits file(s) (the last named <*>) of total size <*>, total edits <*>, total load time <*> ms
+[INFO]:Using already-accepted recovery for segment starting at txid + segmentTxId + : + bestEntry
+[ERROR]:Cannot fetch mount table entries from State Store
+[ERROR]:Error: status failed for too many journals
+[DEBUG]:Running URLRunner
+[ERROR]:JournalNodeSyncer daemon received Runtime exception.
+[WARN]:Cannot release the path <*> in the lease <*>. It will be retried.
+[INFO]:Loading <*> inodes.
+[WARN]:Exception occurred while compiling report
+[DEBUG]:<*> corruption detected! Child nodes are missing.
+[DEBUG]:BLOCK* addToInvalidates: <*> <*>
+[WARN]:Failed to delete meta file
+[WARN]:Failed to delete file <*>
+[WARN]:Failed to delete test file <*> from persistent memory
+[TRACE]:Chosen nodes: <*>
+[INFO]:Available space block placement policy initialized: DFS_NAMENODE_AVAILABLE_SPACE_BLOCK_PLACEMENT_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_KEY = balancedPreferencePercent
+[INFO]:The block deletion will start around <*>
+[WARN]:Failed to shut down socket in error handler, e
+[INFO]:Nonpositive count in invalid READDIR request: <*>
+[INFO]:Number of files under construction = + size
+[INFO]:Loading + numInodes + INodes.
+[WARN]:Cannot register namenode <*>
+[TRACE]:<*>: No ReplicaAccessor created by <*>
+[ERROR]:Cancelling plan on <*> failed. Result: <*>, Message: <*>
+[INFO]:Skipping satisfy storage policy on path:<*> as this file doesn't have any blocks!
+[INFO]:Could not obtain <*> from any node: <*>. Will get new block locations from namenode and retry...
+[INFO]:Starting BPOfferServices for nameservices: ...
+[INFO]:Edit operation logged
+[INFO]:unknown GET someUri 200
+[INFO]:Inserting new NN registration: <*>
+[DEBUG]:enqueue full <*>, src=<*>, bytesCurBlock=<*>, blockSize=<*>, appendChunk=<*>, <*>, currentPacket, src, getStreamer().getBytesCurBlock(), blockSize, getStreamer().getAppendChunk(), getStreamer()
+[DEBUG]:LazyWriter schedule async task to persist RamDisk block pool id: + bpId + block id: + blockId
+[DEBUG]:using name node URI : <*>
+[INFO]:Adding new volumes: <*>
+[DEBUG]:Removing re-encryption status of zone <*>
+[TRACE]:<*>: trying to construct BlockReaderLocalLegacy
+[DEBUG]:Can't create a new BR lease for DN <*>, because numPending equals maxPending at <*>. Current leases: <*>
+[INFO]:Re-encryption caught exception, will retry
+[INFO]:Updating layout version from <*> to <*> for storage <*>
+[WARN]:Got IOException <*>; returned false
+[ERROR]:Errors while recording the output of plan command.
+[INFO]:Finalize rolling upgrade logged at time: rollingUpgradeInfo.getFinalizeTime()
+[WARN]:The edits buffer is + size() + " bytes long with " + numTxns + " unflushed transactions. Below is the list of unflushed transactions:
+[INFO]:Stopping periodic service <*>
+[INFO]:Waiting for threadgroup to exit, active threads is <*>
+[DEBUG]:Saved MD5 digestString to md5File
+[DEBUG]:In safemode, not computing reconstruction work
+[DEBUG]:Directive <*>: Failed to resolve path <*> (<*>)
+[INFO]:Initializing cache loader: MemoryMappableBlockLoader.
+[DEBUG]:Sequential invocation initiated
+[TRACE]:No need to dump with status(replied,dataState):(replied,dataState)
+[DEBUG]:Cannot get locations for <*>, <*>.
+[INFO]:Return JSON with location
+[WARN]:writeTransactionIdToStorage failed on <*>
+[INFO]:Number of files = numFiles
+[TRACE]:Validating directive <*> pool maxRelativeExpiryTime <*>
+[DEBUG]:*DIR* NameNode.mkdirs: <*>
+[WARN]:Unable to persist blocks in hflush for
+[DEBUG]:lastAckedSeqno = <*>
+[DEBUG]:Print usage for -shutdownDatanode
+[INFO]:currently disabled dir <*>; type=<*> ;canwrite=<*>
+[DEBUG]:adding node <*>
+[DEBUG]:Check access completed successfully
+[ERROR]:<*> is set to an invalid value, it must be greater than zero. Defaulting to <*>
+[DEBUG]:Dumper woke up
+[ERROR]:Cannot initialize the ZK connection, e
+[DEBUG]:get commit while still writing to the requested offset
+[ERROR]:Cannot get Namenodes from the State Store.
+[WARN]:Got overwrite with appended data [<*>-<*>), current offset <*>, drop the overlapped section [<*>-<*>) and append new data [<*>-<*>)
+[TRACE]:getSubdirEntries(<*>, <*>): purging entries cache for <*> + after <*> ms.
+[INFO]:Re-encryption completed on zone <*>. Re-encrypted <*> files, failures encountered: <*>.
+[DEBUG]:BlockTokenIdentifier id: <*>
+[INFO]:Using <*> threads to upgrade data directories (<*>=<*>, dataDirs=<*>)
+[INFO]:*DIR* reportBadBlocks for block: <*> on datanode: <*>
+[INFO]:Re-encryption zone marked as completed
+[WARN]:Failed to upgrade storage directory <*>
+[INFO]:nodes are empty for write pipeline of + block
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: rename destination directory is not empty: <*>
+[INFO]:Client trace information logged
+[DEBUG]:Sorting inodes
+[DEBUG]:Recalculated checksum for the block index:<*>, checksum=<*>
+[INFO]:Failed to connect to <*>: <*>
+[WARN]:Failed to fetch TopUser metrics
+[DEBUG]:Reading input file
+[DEBUG]:Sending heartbeat with <*> storage reports from service actor: <*>
+[DEBUG]:Block deletion is delayed during NameNode startup. The deletion will start after <*> ms.
+[DEBUG]:Setting erasure coding policy
+[INFO]:Stream closed
+[INFO]:Rolled edit log using RouterRpcServer
+[DEBUG]:Log audit event: failed operation addCachePool
+[DEBUG]:Response temporary redirect configured
+[INFO]:HTTP server started on address
+[ERROR]:Unsupported protocol for connection to NameNode: ...
+[ERROR]:Cannot remove "<*>"
+[DEBUG]:<*> Skipping disk from computation. Maximum data size achieved., lowVolume.getPath()
+[WARN]:The block pool <*> is still running, cannot be deleted.
+[TRACE]:Receipt verification is not enabled on the DataNode. Not verifying slotId
+[DEBUG]:Generating block token for +
+[WARN]:Got an overlapping write <*>, nextOffset=<*>. Remove and trim it
+[INFO]:close the slow stream
+[ERROR]:Unexpected safe mode action
+[DEBUG]:Creating encryption zone
+[DEBUG]:Audit event logged
+[DEBUG]:Mount tree initialization failed with the reason => <*>. Falling back to regular DFS initialization. Please re-initialize the fs after updating mount point.
+[DEBUG]:count=count
+[DEBUG]:Proxying operation: <*>
+[INFO]:Stopped plug-in <*>
+[INFO]:Layout version rolled back to DATANODE_LAYOUT_VERSION for storage sd.getRoot()
+[INFO]:Restoring <*> to <*>
+[DEBUG]:Invocation successful on <*>
+[INFO]:getRole() + " service RPC up at: " + rpcServer.getServiceRpcAddress()
+[ERROR]:Invalid FSINFO request
+[INFO]:Retrieved locations for path
+[INFO]:EDEKCacheLoader interrupted before warming up.
+[ERROR]:Got null reader from BlockAliasMap
+[TRACE]:<*>: created mmap of size <*>, this, channel.size()
+[ERROR]:<*> is set to an invalid value, it must be zero or greater. Defaulting to <*>, DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES, DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES_DEFAULT
+[DEBUG]:The write back thread is working.
+[ERROR]:Unresolved topology mapping. Using + NetworkTopology.DEFAULT_RACK + for host + node.getHostName()
+[WARN]:About to remove corresponding storage: <*>
+[WARN]:Excluding datanode: + badNode
+[DEBUG]:Not scanning suspicious block <*> on <*>, because the block scanner is disabled.
+[ERROR]:Cannot get active NN for <*>, State Store unavailable
+[ERROR]:Failed to abort file: ... with inode: ...
+[DEBUG]:healthy streamer count= ...
+[INFO]:Sleeping in the re-encryption updater for unit test.
+[ERROR]:Unable to save new edits <*> due to exception when updating to new layout version %d
+[ERROR]:Cannot remove record <*>
+[DEBUG]:NFS RENAME from: <*>/<*> to: <*>/<*> client: <*>
+[ERROR]:Cannot generate JSON of mount table from store: <*>
+[INFO]:block is already in the recovery queue
+[DEBUG]:<*>: no parent default ACL to inherit
+[TRACE]:GOT EXCEPITION
+[INFO]:modifyCachePool of <*> successful; set owner to <*>
+[ERROR]:Exception while edit logging: <*>
+[ERROR]:Cannot remove <*>: <*>
+[DEBUG]:checkStreamers: ...
+[ERROR]:Cannot heartbeat router <*>
+[WARN]:<*> limit has been reached, re-queueing <*> nodes which are dead while in Decommission In Progress., DFSConfigKeys.DFS_NAMENODE_DECOMMISSION_MAX_CONCURRENT_TRACKED_NODES, numUnhealthyNodesToRequeue
+[INFO]:Preconditions check for interval
+[INFO]:Returning authentication parameters
+[INFO]:op=GETCONTENTSUMMARY target=path
+[DEBUG]:logEdit
+[INFO]:Loaded FSImage in <*> seconds.
+[INFO]:Updated master key log
+[WARN]:Unable to finish rolling edits in %d ms
+[DEBUG]:Starting delete operation
+[DEBUG]:Schedule probe datanode for probe type: <*>.
+[WARN]:Not able to start
+[INFO]:Loading INode directory section.
+[ERROR]:Unsupported protocol for connection to NameNode: null
+[ERROR]:Cannot disable <*>, it does not exists, nsId
+[ERROR]:Trash dir for replica ...
+[DEBUG]:logEdit called
+[TRACE]:Reading receipt verification byte for slotId
+[INFO]:Removing block pool + bpid
+[ERROR]:Probe failed, datanode: <*>, type: <*>., datanodeInfo, type, e
+[DEBUG]:SecondaryNameNode principal could not be added
+[INFO]:Upgrade process renamed reserved path + oldPath + to + path
+[INFO]:Audit Event: setReplication
+[INFO]:Service address obtained
+[INFO]:Allowed RPC access from <*> at <*>
+[INFO]:Processing directory file
+[TRACE]:Found no rules for user
+[INFO]:<*> printed
+[INFO]:Configuring job jar
+[DEBUG]:computePartialChunkCrc for block: sizePartialChunk=sizePartialChunk, block offset=blkoff, metafile offset=ckoff
+[WARN]:Exception, e
+[ERROR]:Cannot get method <*> with types <*> from <*>
+[INFO]:Number of blocks under construction: <*>
+[INFO]:startFile: recover + lease + , src= + src + client + clientName
+[DEBUG]:<*>:<*>, this, msg
+[WARN]:Got a repeated request, same range, with xid: <*> nextOffset <*> req offset=<*>
+[INFO]:Erasure coding policy unset successfully
+[ERROR]:IOException occurred in close
+[DEBUG]:Response JSON location configured
+[WARN]:Failed to recover block (block=<*>, datanode=<*>)
+[INFO]:Removed BPOfferService
+[WARN]:Cannot register namenode, router ID is not known <*>
+[INFO]:DFSConfigKeys.DFS_DATANODE_FILEIO_PROFILING_SAMPLING_PERCENTAGE_KEY set to $<*>. Disabling file IO profiling
+[DEBUG]:do write, fileHandle <*> offset: <*> length: <*> stableHow: <*>, handle.dumpFileHandle(), offset, count, stableHow.name()
+[TRACE]:<*>: loading <*>
+[TRACE]:Failed to place enough replicas, still in need of ...
+[DEBUG]:Datanode information accessed, block locations retrieved
+[INFO]:Interrupted while waiting in SPSPathIdProcessor
+[DEBUG]:DFSInputStream has been closed already
+[DEBUG]:LeaseManager is interrupted
+[DEBUG]:BLOCK* rescanPostponedMisreplicatedBlocks: Postponed mis-replicated block <*> no longer found in block map.
+[INFO]:fsync called in RouterClientProtocol
+[WARN]:Fail to save the lease for inode id + id + as the file is not under construction
+[DEBUG]:User retrieved
+[INFO]:Storage policy satisfier is configured as external, please start external sps service explicitly to satisfy policy
+[INFO]:All async disk service threads have been shut down
+[INFO]:StreamMonitor got interrupted
+[DEBUG]:<*>: masked=<*>
+[INFO]:Finalize upgrade for + sd.getRoot() + is not required.
+[WARN]:<*>: unknown response code <*> while attempting to set up short-circuit access. <*>. Short-circuit read for DataNode <*> is <*> based on <*>., this, resp.getStatus(), resp.getMessage(), datanode, disableMsg, DFS_DOMAIN_SOCKET_DISABLE_INTERVAL_SECOND_KEY
+[INFO]:BLOCK* registerDatanode: from ...
+[WARN]:checkDiskError got <*> failed volumes - <*>
+[ERROR]:Transfer failed for all targets.
+[ERROR]:Access control exception during renew delegation token
+[INFO]:Temporary redirect to URI
+[INFO]:STATE* Safe mode is ON.\nIt was turned on manually. Use "hdfs dfsrouteradmin -safemode leave" to turn safe mode off.
+[DEBUG]:stage=<*>, <*>
+[INFO]:Removing block level storage: <*>
+[WARN]:DN <*> (<*>) requested a lease even though it wasn't yet registered. Registering now.
+[INFO]:logAuditEvent(true, getAclStatus, src)
+[WARN]:Invalid directory in: <*>: <*>
+[DEBUG]:NFS FSSTAT fileHandle: <*> client: <*>
+[DEBUG]:After dump, new dumpFileOffset: dumpFileOffset
+[ERROR]:Could not find uri with key <*> to create a keyProvider !!
+[INFO]:Request #getBlocks to Standby NameNode success. remoteAddress: <*>
+[DEBUG]:Retrieved locations for path
+[TRACE]:: trimEvictionMaps is purging <*><*>
+[ERROR]:Exception in secureMain
+[ERROR]:An error occurred while reflecting the event in top service, event: (cmd=<*>,userName=<*>)
+[WARN]:Inconsistent number of corrupt replicas for <*> blockMap has <*> but corrupt replicas map has <*>
+[ERROR]:Caught interrupted exception while waiting for thread <*> to finish. Retrying join
+[INFO]:excluded nodes = <*>
+[DEBUG]:Choosing data node
+[WARN]:Failed to parse `%s` in `%s`. Ignoring in the %s list.
+[WARN]:Ignoring exception in LazyWriter:
+[WARN]:Error retrieving hostname:
+[INFO]:Skipping blockpool <*>
+[DEBUG]:DIR* FSDirectory.removeBlock: with block is removed from the file system
+[INFO]:BlocksStorageMovementAttemptMonitor thread is interrupted.
+[DEBUG]:writeTo metafile is ... of size ...
+[ERROR]:Name 'elementName' is repeated in the 'deleted' difflist of directory 'dirFullPath', INodeId=dir.getId()
+[WARN]:Exception running disk checks against volume + reference.getVolume(), exception
+[DEBUG]:Connecting to datanode
+[WARN]:Invalid hostname + hostStr + in hosts file
+[INFO]:Adding replicas to map for block pool on volume ...
+[DEBUG]:Trim request [offset-(offset + count)), current offset currentOffset, drop the overlapped section [offset-currentOffset) and write new data [currentOffset-(offset + count))
+[INFO]:Checking operation category WRITE
+[WARN]:No KEY found for persisted identifier <*>
+[DEBUG]:elapsedTimeMs > refreshIntervalMs : <*> > <*>, so refreshing cache
+[DEBUG]:Decoding FileEncryptionInfo
+[ERROR]:Unable to start log segment + segmentTxId
+[INFO]:Snapshot diff report generated
+[ERROR]:Enable to fetch json representation of namenodes <*>
+[ERROR]:Failed to start secondary namenode
+[WARN]:Ignored <*> nodes, including <*> in snapshots. Please turn on debug log for details
+[DEBUG]:Failed to get number of blocks pending replica
+[ERROR]:Couldn't create parents for <*>, src
+[INFO]:Active Volumes : X
+[INFO]:Reconfiguring <*> to <*>, property, newVal
+[INFO]:sendTransferBlock called
+[DEBUG]:Updating SPS service status, current mode:<*>, new mode:<*>
+[WARN]:Interrupted while waiting for CacheReplicationMonitor rescan
+[INFO]:Starting web server as: <*>
+[ERROR]:Registration rejected by ... Shutting down.
+[INFO]:Storage version updated
+[DEBUG]:Successfully cached <*>. We are now caching <*> bytes in total.
+[DEBUG]:The destination <*> doesn't exist.
+[INFO]:Namenode actor relinquishing ACTIVE state with txid= nnHaState.getTxId()
+[WARN]:Exception in checking the encryption zone for the path
+[ERROR]:Cancelling plan on <*> failed. Result: <*>, Message: <*>, plan.getNodeName(), ex.getResult().toString(), ex.getMessage()
+[ERROR]:Unable to enter safemode.
+[TRACE]:GOT EXCEPITION, e
+[DEBUG]:No excess replica can be found. excessTypes: <*>. moreThanOne: <*>. exactlyOne: <*>.
+[INFO]:Nameservice <*> disabled successfully.
+[INFO]:Unable to close file because dfsclient was unable to contact the HDFS servers. clientRunning <*> hdfsTimeout <*>
+[DEBUG]:BLOCK* ExcessRedundancyMap.add(<*>, <*>)
+[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to <*>
+[WARN]:Lazy persist file scrubber is disabled, configured scrub interval is zero.
+[INFO]:cliID: ..., src: 127.0.0.1, dest: 127.0.0.1, op: REQUEST_SHORT_CIRCUIT_SHM, shmId: n/a, srvID: ..., success: false
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: rename source cannot be the root
+[WARN]:Failed to construct new object of type
+[WARN]:Storage directory ... contains no VERSION file. Skipping...
+[DEBUG]:DatanodeManager.addDatanode: node <*> is added to datanodeMap.
+[ERROR]:Unexpected IOException by closing FsVolumeReference
+[DEBUG]:Block locations retrieved
+[DEBUG]:Delegation token retrieved
+[DEBUG]:Added track info for inode <*> to block storageMovementNeeded queue
+[DEBUG]:logUtilizationCollection("underutilized", underUtilized)
+[INFO]:Error Recovery for + block + waiting for responder to exit.
+[INFO]:Enabled trash for bpid <*>
+[DEBUG]:Inode <*> EZ key version unchanged, skipping re-encryption.
+[ERROR]:Failing over to edit log...
+[INFO]:Allocated new BlockPoolId: <*>
+[DEBUG]:No block has been moved for X iterations, maximum notChangedIterations before exit is: Y
+[INFO]:Rolling back storage directory ...
+[DEBUG]:Waiting for storageMovementNeeded queue to be free!
+[WARN]:modifyDirective of <*> failed: <*>
+[ERROR]:Bad persistent memory volume:
+[DEBUG]:write to <*>: <*>, block=<*>
+[DEBUG]:Adding trackID:<*> for the file id:<*> back to retry queue as some of the blocks movement failed.
+[INFO]:Finished loading FSImage in <*> msecs
+[INFO]:Number of suppressed write-lock reports: <*> Longest write-lock held at <*> for <*>ms via <*> Total suppressed write-lock held time: <*>
+[INFO]:Wrong RPC AUTH flavor, <*> is not AUTH_SYS or RPCSEC_GSS.
+[DEBUG]:NFS READ fileHandle: <*> offset: <*> count: <*> client: <*>
+[INFO]:Backup node ... re-registers
+[WARN]:Exception while getting number of live datanodes.
+[INFO]:Block pool storage directory for location ... is not formatted. Formatting ...
+[TRACE]:Exception interrupting DataXceiverServer
+[WARN]:Volume usage (%d) is greater than capacity (%d). Setting volume usage to the capacity
+[INFO]:Loading string table
+[ERROR]:Layout version on remote node (...) does not match this node's layout version (...)
+[TRACE]:Block <*>: DataNode <*> is not a valid possibility because the block has size <*>, but the DataNode only has <*> bytes of cache remaining (<*> pending bytes, <*> already cached.)
+[ERROR]:Cannot create record type "<*>" from "<*>": <*>
+[INFO]:Stopping Journal Node Sync.
+[TRACE]:Proceeding with interaction
+[DEBUG]:IOUtils stream closed
+[INFO]:BLOCK* fsync: <*> for <*>
+[WARN]:BlockReader failed to seek to targetPos. Instead, it seeked to pos.
+[DEBUG]:LazyWriter: Start persisting RamDisk block: block pool Id: <*> block id: <*> on target volume <*>
+[WARN]:Failed to cache + key + : could not reserve + more bytes in the cache: + cacheLoader.getCacheCapacity() + exceeded when try to reserve + length + bytes.
+[ERROR]:Failed to close outputstream of dump file <*>
+[WARN]:Failed to cache + key + : Underlying blocks are not backed by files.
+[DEBUG]:Got an error checking if <*> is local
+[INFO]:Block recovery for block <*> succeeded
+[INFO]:Stopping services started for active state
+[DEBUG]:: wait ...
+[INFO]:DatanodeCommand action: DNA_UNCACHE for ... of <*>
+[INFO]:Rolling upgrade started
+[DEBUG]:logRpcIds
+[INFO]:Retrieving block access token.
+[WARN]:Failed to transfer block <*>
+[DEBUG]:handleWrite org.apache.hadoop.nfs.nfs3.request.WRITE3Request
+[DEBUG]:Add <*> to local dead nodes, previously was <*>.
+[INFO]:logRpcIds
+[DEBUG]:mkdirs: created directory <*>
+[INFO]:Accepted recovery for segment
+[WARN]:No eviction candidate. All streams have pending work.
+[WARN]:Encountered exception while exiting state
+[INFO]:Opened streaming server at <*>
+[TRACE]:Returned false due to null rempteIp
+[DEBUG]:Volumes are imbalanced. Selecting volume from high available space volumes for write of block size replicaSize
+[DEBUG]:Received service state: <*> from HA namenode: <*>
+[INFO]:DatanodeCommand action: DNA_ACCESSKEYUPDATE
+[INFO]:-- Local NN thread dump --
+[INFO]:updatePipeline( + oldBlock.getLocalBlock() + , newGS= + newBlock.getGenerationStamp() + , newLength= + newBlock.getNumBytes() + , newNodes= + Arrays.asList(newNodes) + , client= + clientName + )
+[INFO]:Audit log updated
+[TRACE]:GOT EXCEPTION
+[WARN]:The value of DFS_NAMENODE_AVAILABLE_SPACE_BLOCK_PLACEMENT_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_KEY is greater than 1.0 but should be in the range 0.0 - 1.0
+[ERROR]:Error while processing URI: <*>
+[WARN]:Not able to find datanode <*> which has dependency with datanode <*>
+[INFO]:BR lease 0x<*> is not valid for unknown datanode <*>
+[ERROR]:Disk Balancer - Invalid plan hash.
+[WARN]:The volume<*> with the available space (=... B) is less than the block size (=... B).
+[ERROR]:No ack received, took <*>ms (threshold=<*>ms). File being written: <*>, block: <*>, Write pipeline datanodes: <*>.
+[ERROR]:Exception in block key updater thread
+[INFO]:Audit event: getECTopologyResultForPolicies
+[ERROR]:No movable source blocks found. <*>, item.toJson()
+[INFO]:Pausing re-encrypt handler for testing.
+[ERROR]:Unable to de-serialize block token identifier for user=userId, block=block, access mode=mode
+[DEBUG]:Shutting down connection pool \"connectionPoolIdPlaceholder\" used timeSinceLastActivePlaceholder seconds ago
+[DEBUG]:Getting EditLog
+[INFO]:Super post called for TRUNCATE
+[DEBUG]:Verifying QOP, requested QOP = <*>, negotiated QOP = <*>
+[DEBUG]:closeFile: <*> with <*> blocks is persisted to the file system
+[DEBUG]:pipeline = + Arrays.toString(nodes) + , + this
+[INFO]:STATE* UnderReplicatedBlocks has <*> blocks
+[DEBUG]:Performing recovery in + latestNameSD + and + latestEditsSD
+[DEBUG]:%d DataNodes are required for the erasure coding policies: %s. The number of DataNodes is only %d.
+[INFO]:modifyCachePool of <*> successful; set group to <*>
+[INFO]:Finalizing upgrade of storage directory + sd.getRoot()
+[DEBUG]:The version of namenode doesn't support getQuotaUsage API. Fall back to use getContentSummary API.
+[DEBUG]:New write buffered with xid <*> nextOffset <*> req offset=<*> mapsize=<*>
+[ERROR]:Audit event failed
+[WARN]:The value of DFS_NAMENODE_AVAILABLE_SPACE_BLOCK_PLACEMENT_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_KEY is less than 0.5 so datanodes with more used percent will receive more block allocations.
+[WARN]:Fatal disk error on + dnName + : + msg
+[WARN]:<*>: nextBlock error on <*>
+[INFO]:All async data service threads have been shut down
+[DEBUG]:<*>: Scheduling suspect block <*> for rescanning.
+[DEBUG]:Process perfectOverWrite
+[WARN]:commitBeforeRead didn’t succeed with ret=<*>
+[INFO]:Error report from Unknown DataNode: ...
+[DEBUG]:Block token with <*> doesn't have the correct token password
+[ERROR]:No block pools found on volume. volume : <*>. Exiting.
+[INFO]:Starting SyncJournal daemon for journal + jid
+[INFO]:Outputting <*> more corrupted nodes.
+[INFO]:Skipping State Store cache update, driver is not ready.
+[DEBUG]:NFS PATHCONF fileHandle: <*> client: <*>, handle.dumpFileHandle(), remoteAddress
+[ERROR]:Failed to create RPC proxy to NameNode at <*>
+[DEBUG]:Skipped checking <*>. Time since last check <*>ms is less than the min gap <*>ms., target, msSinceLastCheck, minMsBetweenChecks
+[WARN]:Re-encryption updater thread exception.
+[DEBUG]:Running refresh for <*> streams
+[DEBUG]:Sending lifeline with ...
+[DEBUG]:Copied <*> to <*>
+[DEBUG]:logAuditEvent(false, operationName, src) (from catch block)
+[INFO]:line
+[WARN]:short-circuit read access for the file <*> is disabled for DataNode <*>. reason: <*>
+[ERROR]:Exception in BPOfferService for this
+[ERROR]:failed to load misc.Unsafe, e
+[INFO]:Syncing Journal...
+[INFO]:trySendErrorReport encountered RemoteException errorMessage: <*> errorCode: <*>
+[DEBUG]:SASL server doing general handshake for peer = <*>, datanodeId = <*>
+[DEBUG]:Dumper checking OpenFileCtx activeState: <*> enabledDump: <*>
+[ERROR]:Cannot fetch number of expired registrations from the store: <*>
+[INFO]:Unable to close file because dfsclient was unable to contact the HDFS servers. clientRunning false hdfsTimeout 0
+[WARN]:Encountered exception when handling exception ($<*>):, $<*>
+[INFO]:Continuing re-encrypt handler after pausing.
+[WARN]:Update (size=) to a smaller size block
+[ERROR]:Failed to initialize storage directory <*>.Exception details: <*>
+[DEBUG]:Preallocated + total + bytes at the end of + the edit log (offset + oldSize + )
+[DEBUG]:Failed to get number of dead nodes
+[ERROR]:No shared edits directory configured for namespace + nsId + namenode + namenodeId
+[INFO]:The filesystem under path 'dir' has no CORRUPT files
+[WARN]:BLOCK* getBlocks: Asking for blocks from an unrecorded node <*>
+[DEBUG]:Checked safe mode status
+[DEBUG]:Partial length is greater than zero
+[DEBUG]:The destination <*> is a symlink.
+[DEBUG]:Yielded lock during decommission/maintenance check
+[INFO]:TrackID: <*> becomes timed out and moved to needed retries queue for next iteration.
+[INFO]:Deleting zero-length edit log file elf
+[INFO]:Number of failed storages changes from <*> to <*>
+[INFO]:starting log segment
+[INFO]:End step SAVING_CHECKPOINT
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: rename source <*> is not found.
+[DEBUG]:Unable to perform a zero-copy read from offset <*> of <*>; BlockReader#getClientMmap returned null.
+[WARN]:Encountered exception while tailing edits >= ... via RPC; falling back to streaming.
+[DEBUG]:SASL client doing general handshake for addr = <*>, datanodeId = <*>
+[DEBUG]:Probe datanode: <*> result: <*>, type: <*>
+[DEBUG]:Repeated write request which hasn’t been served: xid=<*>, drop it.
+[ERROR]:Unexpected exception <*> proxying <*> to <*>
+[INFO]:Exception while adding a block
+[INFO]:Starting Web-server for <*> at: <*>
+[INFO]:logAuditEvent - success
+[INFO]:Attempting to delete existing output path
+[DEBUG]:Check node: <*>, type: <*>., datanodeInfo, type
+[TRACE]:"<*>: Ignoring exception while serving <*> to <*>", dnR, block, remoteAddress, ignored
+[INFO]:Start MarkedDeleteBlockScrubber thread
+[WARN]:DIR* FSDirRenameOp.unprotectedRenameTo: failed to rename srcIIP.getPath() to dstIIP.getPath() because the source can not be removed
+[INFO]:Found %d node(s)
+[WARN]:Balancer already running as a long-service!
+[INFO]:logAuditEvent(false, "createSymlink", link, target, null)
+[DEBUG]:Checking operation WRITE
+[DEBUG]:Pending replication tasks: X erasure-coded tasks: Y
+[INFO]:Loading EC policy file + policyFile
+[INFO]:Audit Event: setOwner successful for src
+[DEBUG]:Exception in closing closeable
+[INFO]:Begin saveInodes and Snapshots
+[INFO]:current cluster id for sd=;lv=;cid=
+[INFO]:<*> is set to <*>
+[INFO]:Restored <*> block files from trash., restored
+[ERROR]:Disk Balancer - Internal Error.
+[TRACE]:stopMaintenance: Node <*> in <*>, nothing to do.
+[INFO]:Creating directory
+[INFO]:Performing upgrade of storage directory + sd.getRoot()
+[INFO]:Edit log sync completed
+[INFO]:OpenFileCtx is inactive, fileId: <*>
+[INFO]:Balancing took ...
+[INFO]:Closing all peers.
+[INFO]:Setting destination locations
+[INFO]:Suffix IDs retrieved successfully
+[INFO]:Triggering log roll on remote NameNode
+[INFO]:Temporary redirect for checksum
+[INFO]:Interrupted waiting for countdown latch
+[INFO]:Audit event for operation: setErasureCodingPolicy on srcArg
+[INFO]:No version file in
+[DEBUG]:Lease renewer daemon for <*> with renew id <*> executed
+[ERROR]:Unable to fetch namespace information from any remote NN. Possible NameNodes: <*>
+[INFO]:New instance created
+[DEBUG]:Acquiring write lock
+[ERROR]:Cannot get data for <*> at <*>, cleaning corrupted data
+[DEBUG]:NFS MKDIR dirHandle: dirHandle.dumpFileHandle() filename: fileName client: remoteAddress
+[DEBUG]:Skipped a canceled re-encryption task
+[WARN]:Quorum journal URI ' + uri + ' has an even number + of Journal Nodes specified. This is not recommended!
+[DEBUG]:Storage policy satisfier is not enabled, ignoring
+[INFO]:Operation type set
+[ERROR]:Cannot get <*> nodes, subclusters timed out responding
+[INFO]:this starting to offer service
+[ERROR]:Failed to move aside pre-upgrade storage in image directory
+[INFO]:Preconditions check for jitter
+[TRACE]:this can't register a slot because the ShortCircuitRegistry is not enabled.
+[WARN]:The root directory is not available, using <*>
+[DEBUG]:RPC operation check executed
+[DEBUG]:Released read lock
+[WARN]:Error compiling report. Continuing.
+[DEBUG]:Loading <*>.
+[DEBUG]:NFS READDIRPLUS fileHandle: <*> cookie: <*> dirCount: <*> maxCount: <*> client: <*>
+[TRACE]:getSubdirEntries(<*>, <*>): no entries found in <*>
+[INFO]:Updating lastWriterEpoch from ...
+[INFO]:Snapshot allowed for path
+[DEBUG]:<*>: failed to load block iterator: + e.getMessage()
+[DEBUG]:newInfo = <*>
+[INFO]:namenodes = <*>
+[WARN]:<*>: failed to load block iterator.
+[INFO]:Perfect overwrite has same content, updating the mtime, then return success
+[DEBUG]:Connecting to target address.
+[TRACE]:Got user: <*>, remoteIp: <*>, path: <*>
+[INFO]:hsync failed when processing possible perfect overwrite, path=<*> error: <*>, path, e.toString()
+[INFO]:Finalizing upgrade for journal + storage.getRoot() + . + (storage.getLayoutVersion() == 0 ? : \n cur LV = + storage.getLayoutVersion() + ; cur CTime = + storage.getCTime())
+[INFO]:Rollback of sd.getRoot() is complete
+[WARN]:DFSConfigKeys.DFS_DATANODE_FILEIO_PROFILING_SAMPLING_PERCENTAGE_KEY + " value cannot be more than 100. Setting value to 100"
+[WARN]:The file <*> is not under construction but has lease.
+[WARN]:Default name service is not set.
+[WARN]:Failed to delete image file: <*>
+[TRACE]:<*> exiting because of InterruptedException.
+[INFO]:Pausing re-encrypt updater for testing.
+[INFO]:Can't get path for fileId: <*>, handle.getFileId()
+[DEBUG]:Last queued seqno retrieved
+[TRACE]:demoteOldEvictable: demoting <*>: <*>: <*>
+[DEBUG]:Replica is finalized!
+[WARN]:Got overwrite [<*>-<*>) smaller than current offset <*>, drop the request
+[INFO]:Executing logEdit
+[ERROR]:Got stream error during data sync
+[DEBUG]:Loading section INODE length: <*>
+[DEBUG]:Datanode is not chosen since
+[DEBUG]:DFSClient flush(): bytesCurBlock=<*>, lastFlushOffset=<*>, createNewBlock=<*>
+[INFO]:Will take over writing edit logs at txnid ...
+[INFO]:modifyCachePool of <*> successful; no changes.
+[ERROR]:Could not create exception <*>, <*>
+[INFO]:Starting upgrade of edits directory
+[ERROR]:Error in setting outputbuffer capacity
+[DEBUG]:New BlockReaderLocalLegacy for file <*> of size <*> startOffset <*> length <*> short circuit checksum <*>
+[INFO]:Use the new authorization provider API
+[WARN]:IOException occurred for block <*>!
+[DEBUG]:Block <*>: we only have <*> of <*> cached replicas. + <*> DataNodes have insufficient cache capacity.
+[WARN]:All opened streams are busy, can't remove any from cache.
+[DEBUG]:*DIR* NameNode.unsetStoragePolicy for path: <*>
+[WARN]:Unknown DatanodeCommand action: ...
+[DEBUG]:<*>: closing stale domain peer <*>
+[TRACE]:<*>: created new block iterator for <*>.
+[DEBUG]:Server using encryption algorithm + dnConf.getEncryptionAlgorithm()
+[ERROR]:Failed to start JournalNode.
+[DEBUG]:No policy name is specified, set the default policy name instead
+[ERROR]:Got RuntimeException at position + inputStream.getPosition()
+[ERROR]:Disk Balancer - Plan was generated more than <*> ago
+[WARN]:Unknown block status code reported by <*>: <*>
+[INFO]:Connected to InMemoryAliasMap at <*>
+[ERROR]:Failover failed: <*>
+[DEBUG]:Scanned <*> inodes.
+[DEBUG]:Setting total cache pools
+[INFO]:Start file before generating key
+[ERROR]:Not a symlink, fileId: <*>
+[INFO]:DatanodeCommand action : DNA_REGISTER from + actor.nnAddr + with + actor.state + state
+[WARN]:this + : mmap error, e
+[DEBUG]:Sum: + sum Bucket: updateTime: timeStr (bucketTime) isStale stale at time
+[ERROR]:Could not determine valid IPC address for other NameNode (+info.getNameNodeID()+) , got: +address
+[ERROR]:Expected tag end event for <*>, but got: <*>
+[INFO]:Time to add replicas to map for block pool on volume : ms
+[INFO]:Cache directive removed
+[DEBUG]:current list of storage dirs:<*>
+[WARN]:Encountered error getting ec policy for inode path
+[TRACE]:Returned Servlet info <*>
+[WARN]:Unable to rename checkpoint in directory
+[WARN]:Could not get block locations. Source file \" + src + \" - Aborting... + this
+[INFO]:Moving aside edit log file that seems to have zero transactions elf
+[ERROR]:Download of Edit Log file for Syncing failed. Deleting temp file: <*>
+[INFO]:New generation stamp and access token set
+[INFO]:Going to retain <*> images with txid >= <*>
+[TRACE]:<*>: disabling scanning on block pool <*>, this, bpid
+[INFO]:Stopping services started for <*> state
+[INFO]:Volume removed successfully.
+[INFO]:Initialized PmemMappableBlockLoader
+[ERROR]:Node Resolution failed. Please make sure that rack awareness scripts are functional.
+[WARN]:Unable to move edits file from <*> to <*> ; journal id: <*>
+[DEBUG]:Removing pending reconstruction for <*>
+[INFO]:New namespace image has been created
+[TRACE]:<*>: trying to create a remote block reader from the UNIX domain socket at <*>
+[WARN]:Cannot heartbeat router <*>: State Store unavailable
+[WARN]:Datanode <*> is not a valid cache location for block <*> because that node does not have a backing replica!
+[DEBUG]:BP offer service run start time: <*>, sendHeartbeat: <*>
+[DEBUG]:Audit log false for operation listSnapshottableDirectory
+[INFO]:Cleared trash for bpid <*>
+[INFO]:Refresh request received for nameservices: ...
+[DEBUG]:<*>: suspect block <*> is already queued for rescanning.
+[DEBUG]:Local namespace for <*> is <*>, clientAddr, localSubcluster
+[ERROR]:Interrupted while waiting for SlotReleaserThreadPool to terminate
+[DEBUG]:syncBlock for block <*>, all datanodes don't have the block or their replicas have 0 length. The block can be deleted.
+[DEBUG]:rpcServer.checkOperation called
+[WARN]:Only one image storage directory (DFS_NAMENODE_NAME_DIR_KEY) configured. Beware of data loss due to lack of redundant storage directories!
+[DEBUG]:Checking operation UNCHECKED
+[DEBUG]:Retrieval of results initiated
+[INFO]:Found corruption while reading + file + . Error repairing corrupt blocks. Bad blocks remain.
+[INFO]:Interrupted. Stopping the WebImageViewer.
+[DEBUG]:STRING_TABLE writing header: <*>
+[ERROR]:Failed to register State Store bean <*>
+[TRACE]:load(<*>, <*>): loaded iterator <*> from <*>: <*>, storageID, bpid, name, file.getAbsoluteFile(), WRITER.writeValueAsString(state)
+[WARN]:couldn't find any VERSION file containing valid ClusterId
+[DEBUG]:Cached location of block <*> as <*>, blk, pathinfo
+[INFO]:replaying edit log: 0/1 transactions completed. (0%)
+[INFO]:The maximum iteration time ( + maxIterationTime / 1000 + seconds) has been reached. Stopping + this
+[WARN]:Received non-NN/JN request for edits from <*>
+[INFO]:Inactive with pending write
+[DEBUG]:saveInodes and Snapshots completed
+[DEBUG]:Got host: <*> path: <*> →
+[DEBUG]:Lease renewed with RouterClientProtocol
+[ERROR]:File is not a regular file
+[DEBUG]:BLOCK* prepareFileForTruncate: <*> Scheduling in-place block truncate to new size <*>
+[INFO]:BlockRecoveryWorker: block=<*> (length=<*>), isTruncateRecovery=<*>, syncList=<*>
+[WARN]:I/O error constructing remote block reader.
+[TRACE]:save(<*>, <*>): saved <*>
+[DEBUG]:Checking block access token for block '<*>' with mode '<*>'
+[WARN]:Connection failure: Failed to connect to <*> for file <*> for block <*>
+[TRACE]:unregisterSlot: ShortCircuitRegistry is not enabled.
+[DEBUG]:Operation: + cmd + Status: + succeeded + TokenId: + tokenId
+[DEBUG]:Failed to get the number of live decommissioned datanodes
+[DEBUG]:Processing help Command.
+[WARN]:Unable to download file ...
+[INFO]:Recover failed close b
+[DEBUG]:NameNode is on an older version, request file info with additional RPC call for file: <*>
+[DEBUG]:Clearing encryption key
+[TRACE]:storageTypes=<*>
+[TRACE]:Block <*> numExpected=<*>, numLive=<*>
+[WARN]:encountered an exception
+[INFO]:Returning JSON response with location for file checksum
+[DEBUG]:DIR* FSDirectory.renameTo: path1 to path2
+[ERROR]:Cannot find namenode id for local <*>
+[WARN]:<*>: failed to load <*>
+[DEBUG]:Skips encoding and writing parity cells as there are no healthy parity data streamers: streamers
+[DEBUG]:allocate(arrayLength), return byte<*>
+[ERROR]:Invalid READDIR request, with negative cookie: <*>
+[DEBUG]:renaming <*> to <*>
+[DEBUG]:start process datanode/external error
+[WARN]:Failed to replace datanode. Continue with the remaining datanodes since BEST_EFFORT_KEY is set to true.
+[WARN]:Skipping next heartbeat scan due to excessive pause
+[ERROR]:Misordered entries in the 'deleted' difflist of directory 'dirFullPath', INodeId=dir.getId(). The full list is 'deletedArray'
+[INFO]:Recovering Transition Read
+[INFO]:Loaded token cache in <*> milliseconds
+[ERROR]:Refresh user to groups mapping failed for address
+[DEBUG]:Evicting block ...
+[WARN]:Leaving safe mode due to forceExit. This will cause a data loss of <*> byte(s).
+[DEBUG]:Loaded <*> with onDiskVersion= + onDiskVersion + , layoutVersion= + layoutVersion + .
+[WARN]:Error processing datanode Command, ioe
+[WARN]:Invocation returned exception on <*>, proxyInfo, ex
+[ERROR]:Failed to set keys
+[WARN]:Caught ExecutionException while waiting all streamer flush,
+[DEBUG]:NFS SETATTR fileHandle: <*> client: <*>
+[INFO]:Fallback to the old authorization provider API because the expected method is not found.
+[INFO]:Fix Quota src=<*> dst=<*> oldQuota=<*>/<*> newQuota=<*>/<*>, location.getSrc(), location, remoteQuota.getQuota(), remoteQuota.getSpaceQuota(), gQuota.getQuota(), gQuota.getSpaceQuota()
+[INFO]:Write lock released
+[INFO]:Loading inode references
+[TRACE]:<*>: loaded block iterator for <*>.
+[ERROR]:Thread exiting
+[DEBUG]:saveNameSystemSection completed
+[INFO]:NNTop conf: + DFSConfigKeys.NNTOP_NUM_USERS_KEY + = +
+[ERROR]:Disk Balancer - Unable to support transient storage type.
+[WARN]:A packet was last sent <*>ms ago. Maximum idle time: <*>ms.
+[DEBUG]:saveErasureCodingSection completed
+[WARN]:Node <*> is dead while in <*>. Cannot be safely decommissioned or be in maintenance since there is risk of reduced data durability or data loss. Either restart the failed node or force decommissioning or maintenance by removing, calling refreshNodes, then re-adding to the excludes or host config files.
+[DEBUG]:Sending client SASL negotiation
+[ERROR]:Invalid MKDIR request
+[TRACE]:Skipped checking all volumes, time since last check <*> is less than the minimum gap between checks (<*> ms), gap, minDiskCheckGapMs
+[DEBUG]:WRITE_RPC_END + xid
+[DEBUG]:getAdditionalDatanode: src= + src + , fileId= + fileId + , blk= + blk + , existings= + Arrays.asList(existings) + , excludes= + Arrays.asList(excludes) + , numAdditionalNodes= + numAdditionalNodes + , clientName= + clientName
+[ERROR]:Cannot write <*>
+[ERROR]:Re-encryption updater thread exiting.
+[INFO]:Total target DataNodes in this iteration: <*>
+[INFO]:Fast-forwarding stream...
+[DEBUG]:getEditLogManifest
+[WARN]:Caught exception while adding replicas from + volume + in subtask. Will throw later.
+[DEBUG]:Handshake secret is null, sending without handshake secret.
+[INFO]:HTTP Server started
+[INFO]:Can't get path for toHandle fileId: <*>
+[WARN]:Could not obtain block: <*><*>. Throwing a BlockMissingException
+[DEBUG]:DFSStripedOutputStream does not support hsync <*>. Caller should check StreamCapabilities before calling.
+[DEBUG]:Failed to get access time of block <*>
+[WARN]:Failed to move block file from + blockFile + to + targetBlockFile, e
+[INFO]:Loading the INode section in parallel with <*> sub-sections
+[INFO]:Chosen node: ...
+[INFO]:Superuser privileges verified
+[WARN]:Failed to list directory ... Ignore the directory and continue.
+[INFO]:storage.getJournalManager().doRollback called
+[WARN]:<*>: error saving <*>., this, iter, e
+[ERROR]:Unable to cleanup tmp dir: <*>, <*>
+[INFO]:Write lock info after unlocking: ... <*>
+[TRACE]:getBlocks( + getDatanodeInfo() + , + StringUtils.TraditionalBinaryPrefix.long2String(size, B, 2) + ) returns + newBlksLocs.getBlocks().length + blocks.
+[INFO]:OK response built with JSON location
+[WARN]:Unable to stop HTTP server for ...
+[DEBUG]:getUGI is returning: + ugi.getShortUserName()
+[DEBUG]:Failed to choose remote rack (location = ~ + localMachine.getNetworkLocation() + ), fallback to local rack
+[DEBUG]:Audit log for operation: listEncryptionZones, success: true
+[TRACE]:Excluded nodes: <*>
+[DEBUG]:BLOCK* addToInvalidates: storedBlock datanodes
+[INFO]:NameNode safe mode checked
+[ERROR]:Disk Balancer - Invalid plan version.
+[DEBUG]:checkAccess operation completed
+[WARN]:<*>
+[TRACE]:Retrieval of slow peer report is disabled. To enable it, please enable config <*>.
+[WARN]:Falling back to getSnapshotDiffReport <*>
+[DEBUG]:Block files moved to rbw directory
+[WARN]:<*><*>
+[INFO]:Caught interrupted exception
+[WARN]:Problem connecting to server: nnAddr
+[DEBUG]:Log start rolling upgrade
+[ERROR]:Please specify the path for setting the storage policy.
+[INFO]:Sequential invocation executed
+[INFO]:Continuing
+[WARN]:Fsck: can't copy the remains of <*> to <*> because <*> already exists.
+[DEBUG]:Adding scanner for volume <*> (StorageID <*>)
+[DEBUG]:Loading using Protobuf Loader
+[WARN]:Overwriting existing file ...
+[DEBUG]:Start dump. Before dump, nonSequentialWriteInMemory == <*>
+[INFO]:Block pool storage directory for location ... does not exist
+[INFO]:logAuditEvent(true, "createSymlink", link, target, auditStat)
+[INFO]:Successfully added volume: <*>
+[DEBUG]:Loading section INODE_REFERENCE length: <*>
+[ERROR]:Cannot open read stream for <*>
+[INFO]:this activateDelay <*> seconds
+[DEBUG]:allocate(arrayLength): count=count, return byte<*>
+[ERROR]:Exception in RestCsrfPreventionFilterHandler
+[INFO]:Starting HTTP server
+[DEBUG]:NS_INFO writing header: <*>
+[WARN]:NameNode low on available disk space. Already in safe mode.
+[DEBUG]:Probing NN at service address: <*>
+[INFO]:Edit logging is async: true/false
+[DEBUG]:Waiting for volume reference to be released.
+[ERROR]:<*> instantiation failed., className, e
+[DEBUG]:Redirecting with URI
+[DEBUG]:BLOCK* markBlockReplicasAsCorrupt: mark block replica <*> on <*> as corrupt because the dn is not in the new committed storage list.
+[INFO]:Successfully read replica from cache file : path
+[DEBUG]:Configuration set
+[DEBUG]:Resolved path is <*>
+[DEBUG]:*BLOCK* NameNode.processIncrementalBlockReport: from <*> receiving: <*>, received: <*>, deleted: <*>
+[TRACE]:this + ": the DfsClientShmManager is closed."
+[DEBUG]:SASL client skipping handshake in secured configuration with no SASL protection configured for addr = <*>, datanodeId = <*>
+[INFO]:Completed loading all INodeDirectory sub-sections
+[DEBUG]:*DIR* NameNode.setStoragePolicy for path: <*>, policyName: <*>
+[DEBUG]:SASL encryption trust check: localHostTrusted = <*>, remoteHostTrusted = <*>
+[DEBUG]:<*> exception cannot be retried
+[WARN]:Failed to mkdirs + targetDir
+[DEBUG]:About to load edits
+[INFO]:Roll Edit Log from <*>
+[WARN]:Latest log has no transactions. moving it aside and looking for previous log ; journal id:
+[DEBUG]:Get corrupt file blocks returned error: <*>
+[INFO]:Added erasure coding policy
+[INFO]:Re-encryption using key version
+[INFO]:Begin saveCacheManagerSection
+[DEBUG]:Failed to get number of missing blocks
+[TRACE]:range.getMin()=<*> nextOffset=<*>
+[WARN]:Metrics logging will not be async since the logger is not log4j
+[INFO]:Checking operation category
+[DEBUG]:Redirecting to URI
+[DEBUG]:Creating NameNode connector
+[DEBUG]:set atime: <*> mtime: <*>
+[DEBUG]:Using failoverProxy to service <*>
+[DEBUG]:Exporting access keys
+[INFO]:replaying edit log: 1/10 transactions completed. (10%)
+[DEBUG]:*BLOCK* NameNode.blockReport: from <*>, reports.length=<*>
+[INFO]:Fsck: ignoring open file + path
+[DEBUG]:set new mode: <*>
+[ERROR]:Cannot find BPOfferService for reporting block received + for bpid=<*>
+[DEBUG]:SPS processing Q -> maximum capacity:<*>, current size:<*>, remaining size:<*>
+[INFO]:Checkpoint finished successfully.
+[DEBUG]:BLOCK* rescanPostponedMisreplicatedBlocks: Re-scanned block <*>, result is <*>
+[DEBUG]:count=count, return byte<*>
+[INFO]:Deactivation request received for active volume: <*>
+[WARN]:Unexpectedly short length on <*>.
+[TRACE]:data: <*>
+[DEBUG]:Renaming oldmeta to newmeta
+[WARN]:Block: + blockId + found in invalid directory. Expected directory: + expectedBlockDir + . Actual directory: + actualBlockDir
+[WARN]:Waited A ms (timeout=B ms) for a response for C...
+[INFO]:Quota verified for truncate
+[INFO]:No node available for <*>
+[DEBUG]:Failed to get number of live in maintenance nodes
+[DEBUG]:Evict stream ctx: + pairs.getValue()
+[WARN]:Exception from remote name node + currentNN + , try next.
+[WARN]:The value of <*> is greater than 1.0 but should be in the range 0.0 - 1.0
+[WARN]:The value of DFS_NAMENODE_AVAILABLE_SPACE_RACK_FAULT_TOLERANT_BLOCK_PLACEMENT_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_KEY is less than 0.5 so datanodes with more used percent will receive more block allocations.
+[INFO]:Added new volume: volume.getStorageID()
+[WARN]:closing file $<*>, but there are still unreleased ByteBuffers allocated by read(). Please release $<*>.
+[WARN]:I/O error while finding block <*> on volume <*>
+[WARN]:Encountered exception setting Rollback Image
+[INFO]:Get locations for path
+[DEBUG]:Initializing Generic Keys
+[INFO]:SkipList is enabled with skipInterval= + skipInterval + , maxLevels= + maxLevels
+[INFO]:NNTop conf: + DFSConfigKeys.NNTOP_BUCKETS_PER_WINDOW_KEY + = +
+[DEBUG]:Name checkpoint time is newer than edits, not loading edits.
+[ERROR]:Unable to get HomeDirectory from original File System
+[DEBUG]:requested offset=<*> and current filesize=<*>
+[DEBUG]:Closing old block <*>
+[INFO]:Loading directories
+[TRACE]:<*>: createNewShm: created <*>
+[DEBUG]:BLOCK NameSystem.addToCorruptReplicasMap: <*> added as corrupt on <*> by <*>
+[DEBUG]:Got access token error in response to OP_BLOCK_CHECKSUM
+[TRACE]:Removed block <*> from PENDING_CACHED list.
+[DEBUG]:Saving a subsection for <*>
+[WARN]:Not all router admins updated their cache
+[WARN]:report bad block <*> failed
+[DEBUG]:removing node <*>
+[ERROR]:Merging failed X times.
+[TRACE]:nextTcpPeer: created newConnectedPeer <*>
+[DEBUG]:Failed to preserve last modified date from '<*>' to '<*>'
+[INFO]:Finalizing upgrade for storage directory <*>.\n cur LV = <*>; cur CTime = <*>
+[DEBUG]:allocate(arrayLength): count=count
+[DEBUG]:Skipping sending lifeline for + BPServiceActor.this + , because it is not due.
+[ERROR]:All specified directories have failed to load.
+[DEBUG]:timed poll(): timed out
+[ERROR]:Cannot access the Router RPC server
+[INFO]:Log segment started
+[INFO]:Operation category WRITE checked
+[INFO]:Resetting bytesOnDisk to match blockDataLength (=<*>) for replica <*>
+[INFO]:Starting IBR Task Handler.
+[WARN]:Cannot find FsVolumeSpi to report bad block: <*>
+[INFO]:Added export: exportPath FileSystem URI: exportPath with namenodeId: namenodeId
+[INFO]:Acknowledging ACTIVE Namenode actor
+[INFO]:Starting maintenance of <*> <*> with <*> blocks
+[INFO]:Scanning block pool <*> on volume <*>...
+[WARN]:hostsFilePath + has legacy JSON format. + REFER_TO_DOC_MSG
+[INFO]:FS:<*> adding export Path:<*> with URI: <*>
+[INFO]:initializing replication queues
+[TRACE]:Scanner volume report: <*>
+[INFO]:Operation check performed
+[WARN]:BR lease 0x<*> is not valid for DN <*>. Expected BR lease 0x<*>.
+[DEBUG]:NFS NULL
+[INFO]:Token added
+[ERROR]:Unable to start log segment + segmentTxId: too few journals successfully started.
+[INFO]:Purging logs older than + minTxIdToKeep
+[INFO]:Null channel should only happen in tests. Do nothing.
+[DEBUG]:Initial report of block <*> on <*> size <*> replicaState = <*>
+[WARN]:The client stateId: <*> is greater than the server stateId: <*>
+[TRACE]:nextDomainPeer: reusing existing peer <*>
+[INFO]:Image has not changed. Will not download image.
+[INFO]:modifyCachePool of <*> successful; set mode to <*>
+[DEBUG]:Skip to add dead node <*> to check since the node is already in the probe queue.
+[DEBUG]:Proxy for + uri + failed. cause: , cause
+[DEBUG]:Interrupted during wait interval
+[DEBUG]:gc window of metric: <*> userName: <*>
+[WARN]:Invalid file name. Skipping <*>
+[WARN]:Failed to find inode <*> in getNumUnderConstructionBlocks().
+[TRACE]:Proceeding with interaction since the request doesn't access WebHDFS API
+[WARN]:StorageLocation <*> detected as failed.
+[INFO]:Successfully started new epoch <*>
+[WARN]:Got a command from standby NN <*> - ignoring command: <*>
+[INFO]:System.out.println(response)
+[DEBUG]:Directory created
+[INFO]:<*> <*>
+[WARN]:Reserved storage <*> reported as non-provided from <*>
+[INFO]:Moved <*> to <*>
+[INFO]:Creating file
+[INFO]:Attempting to open state store driver.
+[WARN]:SIMULATING A CORRUPT BYTE IN IMAGE TRANSFER!
+[INFO]:URI redirection initiated
+[ERROR]:FS:fsScheme, Namenode ID collision for path:exportPath nnid:namenodeId uri being added:exportURI existing uri:value
+[ERROR]:Audit event failed: AccessControlException
+[ERROR]:Got error reading edit log input stream...
+[INFO]:Stopping StoragePolicySatisfier.
+[INFO]:Balance succeed!
+[TRACE]:<*>: thread starting.
+[WARN]:DFS chooseDataNode: got #<*> IOException, will wait for <*> msec.
+[INFO]:Wrote VERSION in the new storage, <*>
+[WARN]:Unable to rename edits file from + tmpFile + to + finalizedFile
+[INFO]:modifyDirective of <*> successfully applied <*>.
+[ERROR]:Error encountered requiring NN shutdown. Shutting down immediately.
+[INFO]:Generating block reports
+[INFO]:Listening on UNIX domain socket: <*>
+[WARN]:Failed to compute snapshot diff on ...
+[DEBUG]:set bytesPerCRC=<*>, crcPerBlock=<*>
+[TRACE]:Successfully scanned <*> on <*>
+[WARN]:Unable to delete cancelled checkpoint in <*>
+[DEBUG]:Jvm metrics set
+[INFO]:modifyCachePool of <*> successful; set default replication to <*>
+[WARN]:Failed to upgrade storage directory <*> for block pool <*>
+[ERROR]:Setting file size is not supported when mkdir: <*> in dirHandle <*>
+[DEBUG]:Is namenode in safemode? true; uri= + uri
+[WARN]:Failed to move block:<*> from src:<*> to destin:<*> to satisfy storageType:<*>
+[DEBUG]:Sender: Block replaced
+[DEBUG]:DIR* NameSystem.appendFile: file <*> for <*> at <*> block <*> block size <*>
+[DEBUG]:Failed to get the number of dead decommissioned datanodes
+[ERROR]:Cannot get mount point
+[DEBUG]:Exception occurred while modifying cache pool
+[DEBUG]:checkDiskErrorAsync: no volume failures detected
+[WARN]:<*> is shutting down, this, re
+[WARN]:Checkpoint done. New Image Size: ...
+[DEBUG]:First Volume : %s, DataDensity : %f, Last Volume : %s, DataDensity : %f
+[DEBUG]:<*> is anchored, and can't be uncached now. Scheduling it for uncaching in <*>
+[INFO]:Disk Volume set <*> - Type : <*> plan completed.
+[TRACE]:Cache report from datanode <*> has block <*>
+[INFO]:Deleting temporary files: + files
+[INFO]:Re-encryption was canceled.
+[ERROR]:Heartbeat is enabled but there are no namenodes to monitor
+[TRACE]:<*>: trying to create ShortCircuitReplicaInfo.
+[INFO]:Nonpositive maxcount in invalid READDIRPLUS request: <*>
+[WARN]:Unexpected meta-file version for <*>: version in file is <*> but expected version is <*>
+[DEBUG]:Doing checkpoint. Last applied: <*>
+[WARN]:Failed to get snapshottable directories. Ignore and continue.
+[WARN]:No missing internal block. Skip reconstruction for task:<*>
+[DEBUG]:get commit while still writing to the requested offset, + with empty queue
+[DEBUG]:Acquired locations for path
+[WARN]:Unexpected exception
+[INFO]:Can perform rollback for shared edit log.
+[DEBUG]:Allocating new block group. The previous block group: <*>
+[INFO]:BackupNode namespace frozen.
+[DEBUG]:The next sequential write has not arrived yet
+[INFO]:The storage policy of <*>: <*>
+[DEBUG]:Select counter statement: <*>
+[DEBUG]:Interrupted Exception while waiting to join sps thread, ignoring it
+[INFO]:Checking superuser privilege
+[DEBUG]:BLOCK* addBlock: logged info for <*> of <*> reported.
+[INFO]:Checkpoint completed in <*> seconds. New Image Size: <*>
+[WARN]:Configuration key <*> is deprecated! Ignoring... Instead please specify a value for <*>
+[WARN]:DFS Read
+[INFO]:Reading fully from block input stream
+[ERROR]:Cannot sync as there is no other JN available for sync.
+[WARN]:NameNode low on available disk space. Entering safe mode.
+[DEBUG]:isValidRequestor is comparing to valid requestor: ...
+[DEBUG]:Copied srcReplica.getBlockURI() to dstFile
+[INFO]:Remove erasure coding policy + name
+[DEBUG]:RPC ids logged with op
+[INFO]:Downloaded file <*> size <*> bytes.
+[INFO]:Loaded image for txid + txId + from + curFile
+[ERROR]:Cannot create a new connection
+[DEBUG]:Path <*> is not a prefix of the path <*>
+[INFO]:Checkpoint renamed from IMAGE_ROLLBACK to IMAGE
+[INFO]:logEdit invoked
+[INFO]:The value for '-node' is neither specified or empty.
+[DEBUG]:resolveDuplicateReplicas decide to keep + replicaToKeep + . Will try to delete + replicaToDelete
+[WARN]:Disk error on + dnName + : + msg
+[WARN]:InMemoryAliasMap location <*> is missing. Creating it.
+[INFO]:SkipList is disabled
+[INFO]:Using longest log: + bestEntry
+[DEBUG]:Queueing reported block <*> in state <*> from datanode <*> for later processing because <*>.
+[DEBUG]:Block <*>: removing from PENDING_CACHED for node <*> because it cannot fit in remaining cache size <*>.
+[INFO]:Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+[INFO]:Recovering storage directory <*> from previous upgrade
+[ERROR]:The connection creator was interrupted
+[INFO]:Read data interrupted.
+[DEBUG]:Failed to serialize statistics
+[WARN]:After resync, the position, <*> is not greater than the previous position <*>. Skipping remainder of this log.
+[WARN]:After resync, position is ...
+[INFO]:Set total to size of currentTokens
+[DEBUG]:Not root inode with id <*> having no parent.
+[WARN]:Exception while reading checksum
+[INFO]:Node <*> is dead and there are no low redundancy blocks or blocks pending reconstruction. Safe to decommission or put in maintenance.
+[ERROR]:Get connection for...
+[DEBUG]:Enabling OAuth2 in WebHDFS
+[WARN]:Audit event failure: AccessControlException for operation: setErasureCodingPolicy on srcArg
+[INFO]:parameters = <*>
+[INFO]:Reprocessing replication and invalidation queues
+[DEBUG]:storage.refreshStorage called
+[DEBUG]:Thread interrupted
+[INFO]:Override State Store record <*>: <*>
+[DEBUG]:<*> blocks are now pending replication
+[INFO]:getRole() + " RPC up at: " + getNameNodeAddress()
+[INFO]:Image Transfer timeout configured to + timeout + milliseconds
+[INFO]:Found null currentLocatedBlock. pos=<*>, blockEnd=<*>, fileLength=<*>
+[INFO]:Deactivation request received for failed volume: <*>
+[DEBUG]:Failed to get number of decommissioning nodes
+[DEBUG]:Inode <*> EZ key changed, skipping re-encryption.
+[INFO]:Setting up data streams.
+[DEBUG]:Checking file
+[WARN]:<*> is not a directory
+[WARN]:Unable to purge old storage + nnf.getName(), e
+[DEBUG]:Message placeholder
+[WARN]:Last block length <*> is less than reportedLastBlockSize <*>, length - sumBlockLengths, reportedLastBlockSize
+[DEBUG]:NFS READDIRPLUS fileHandle: <*> cookie: <*> dirCount: <*> + maxCount: <*> client: <*>
+[DEBUG]:BLOCK* ask <*> to replicate <*> to <*>
+[TRACE]:closed <*><*> this suffix
+[INFO]:Cannot find inode <*>, skip saving xattr for re-encryption
+[DEBUG]:Processing Plan Command.
+[INFO]:Downloaded file + dstFiles.get(0).getName() + size + dstFiles.get(0).length() + bytes.
+[WARN]:Volume <*> has less than 0 available space
+[WARN]:Failed to reconstruct striped block <*>, <*>
+[WARN]:Unable to clear quota at the destinations for <*>: <*>
+[DEBUG]:Finished sorting inodes
+[ERROR]:$<*>
+[INFO]:Balancer concurrent dispatcher threads = <*>
+[DEBUG]:Audit Event: removeAcl success
+[ERROR]:Failed to start storage policy satisfier.
+[DEBUG]:Created ugi: <*> for username: <*>
+[INFO]:Edited log entry
+[WARN]:Failed to renew lease for clientName for (elapsed / 1000) seconds (>= hard-limit = (dfsClientConf.getleaseHardLimitPeriod() / 1000) seconds.) Closing all files being written ...
+[DEBUG]:passing over + elf + because it is in progress + and we are ignoring in-progress logs.
+[DEBUG]:JMX URL: <*>
+[DEBUG]:BLOCK NameSystem.addToCorruptReplicasMap: duplicate requested for <*> to add as corrupt on <*> by <*>
+[INFO]:Log segment finalized
+[DEBUG]:Recovering block " + block + ", length=" + block.getNumBytes() + ", safeLength=" + safeLength + ", syncList=" + syncBlocks
+[INFO]:Applying default permissions
+[WARN]:Caught exception when adding...
+[DEBUG]:Processing XML
+[INFO]:Super post response created for TRUNCATE
+[DEBUG]:Trim write request by delta: " + delta + " " + toString()
+[INFO]:Processing batched re-encryption for zone <*>, batch size <*>, start:<*>, zoneNodeId, batch.size(), batch.getFirstFilePath()
+[INFO]:DataNode ... are congested. Backing off for ... ms
+[INFO]:Completing previous upgrade for storage directory <*>
+[INFO]:rollingUpgrade UNKNOWN_ACTION
+[DEBUG]:Logs rolled while catching up to current segment
+[TRACE]:getSubdirEntries(<*>, <*>): listed <*> entries in <*>
+[INFO]:trying to read block from datanode
+[DEBUG]:Setting max error to <*>
+[INFO]:Processing returned re-encryption task for zone <*>(<*>,), batch size <*>, start:<*>
+[INFO]:Rolling edit logs
+[WARN]:Pending edits to IPCLoggerChannel.this is going to exceed limit size: queueSizeLimitBytes, current queued edits size: queuedEditsSizeBytes, will silently drop size bytes of edits!
+[INFO]:Downloaded file + tmpFiles.get(0).getName() + size + finalFiles.get(0).length() + bytes.
+[INFO]:Caught exception while scanning <*>. Will throw later.
+[DEBUG]:persistBlocks: <*> with <*> blocks is persisted to the file system
+[INFO]:could not get ... due to InvalidToken exception.
+[ERROR]:Cannot open write stream for <*>
+[DEBUG]:Pause monitor started
+[INFO]:<*> : configured=<*>, counted=<*>, effected=<*>, DFSConfigKeys.DFS_BLOCK_INVALIDATE_LIMIT_KEY, configuredBlockInvalidateLimit, countedBlockInvalidateLimit, this.blockInvalidateLimit
+[ERROR]:Should not get commit return code: + ret.name()
+[DEBUG]:Checking superuser privilege
+[WARN]:Fail to find inode + id + when saving the leases.
+[TRACE]:Retrieval of slow peer reports as json string is disabled. To enable it, please enable config <*>.
+[ERROR]:Cannot invoke <*> for <*> in <*>: <*>
+[INFO]:<*> Web address: <*>
+[INFO]:Node <*> has <*> blocks yet to process
+[DEBUG]:Processing previouly queued message
+[DEBUG]:block=<*>, getBytesPerCRC=<*>, crcPerBlock=<*>, compositeCrc=<*>
+[WARN]:The value of DFS_NAMENODE_AVAILABLE_SPACE_RACK_FAULT_TOLERANT_BLOCK_PLACEMENT_POLICY_BALANCED_SPACE_PREFERENCE_FRACTION_KEY is greater than 1.0 but should be in the range 0.0 - 1.0
+[ERROR]:Cannot get data for <*>: <*>
+[DEBUG]:checkAccess operation started
+[INFO]:Waiting until the NameNode rolls its edit logs in order to freeze the BackupNode namespace.
+[DEBUG]:OP_ADD: ... numblocks: ....
+[TRACE]:Adding slow peer report is disabled. To enable it, please enable config <*>.
+[INFO]:Formatting storage directory
+[ERROR]:Failed to load image file.
+[DEBUG]:Active JournalAndStream detected
+[INFO]:Decommissioning complete for node <*>
+[ERROR]:transitionToObserver: incorrect number of arguments
+[DEBUG]:visiting <*> with outstandingMmapCount=<*>, replicas=<*>, failedLoads=<*>, evictable=<*>, evictableMmapped=<*>
+[DEBUG]:Storage policy satisfier service is running outside namenode, ignoring
+[DEBUG]:Choose redundant EC replicas to delete from blk_<*> which is located in <*>
+[INFO]:Sent total: <*> bytes. Size of last segment intended to send: <*> bytes.
+[DEBUG]:BLOCK* getAdditionalBlock: <*> inodeId <*> for <*>
+[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to dnInfo.addr : e
+[WARN]:AsyncDiskService has already shut down.
+[INFO]:rollingUpgrade PREPARE
+[INFO]:Received an RBW replica for <*> on <*>: ignoring it, since it is complete with the same genstamp
+[DEBUG]:Removed connection <*> used <*> seconds ago. Pool has <*>/<*> connections
+[WARN]:removeDirective of + id + failed: , e
+[DEBUG]:Failed to get number of blocks under replicated
+[WARN]:short-circuit read access is disabled for DataNode <*>. reason: <*>
+[TRACE]:Joiner.on("\n").join(Thread.currentThread().getStackTrace())
+[DEBUG]:SASL client skipping handshake in secured configuration with privileged port for addr = <*>, datanodeId = <*>
+[INFO]:Mover took X milliseconds
+[ERROR]:File is not closed
+[INFO]:Completed loading all INode sections. Loaded <*> inodes.
+[DEBUG]:checkStreamers: ... <*>
+[INFO]:Executing re-encrypt commands on zone <*>. Current zones:<*>
+[DEBUG]:No new edits available in logs; requested starting from ID <*>
+[DEBUG]:In memory blockUCState = <*>
+[TRACE]:<*>: can't construct BlockReaderLocalLegacy because the address + <*> is not local
+[INFO]:report corrupt + block + from datanode + srcDataNode + to namenode
+[WARN]:Exception shutting down access key updater thread
+[WARN]:No live nodes contain block
+[INFO]:Adding snapshot
+[INFO]:Edit logged
+[ERROR]:Aborting current sync attempt.
+[ERROR]:Got IOException at position + inputStream.getPosition()
+[INFO]:Scan Results: <*>
+[INFO]:Stopping InMemoryLevelDBAliasMapServer
+[DEBUG]:Skipping sending lifeline for + BPServiceActor.this + , because heartbeats are disabled for tests.
+[DEBUG]:PendingReconstructionMonitor checking Q
+[ERROR]:<*> is not supported for filesystem <*> on path <*>
+[WARN]:Failed to resolve the path as mount path
+[DEBUG]:BLOCK* chooseExcessRedundancies: (<*>, <*>) is added to invalidated blocks set
+[ERROR]:Audit failed: satisfyStoragePolicy
+[TRACE]:HTTP <*>: <*>, <*>, ugi=<*>, <*>, <*> <*>
+[DEBUG]:<*>: saving block iterator <*> after <*> ms., this, curBlockIter, saveDelta
+[INFO]:Failover from <*> to <*> successful
+[WARN]:Failed to place enough replicas, still in need of ...
+[ERROR]:FSImage.formatEditLogReplayError
+[INFO]:Dead node <*> is decommissioned immediately.
+[INFO]:RECONFIGURE* changed blockInvalidateLimit to <*>
+[DEBUG]:Ignoring unknown CryptoProtocolVersion provided by client: <*>
+[DEBUG]:DataTransferProtocol using SaslPropertiesResolver, configured QOP <*> = <*>, configured class <*> = <*>
+[DEBUG]:BlockMovingInfo: <*>
+[ERROR]:failed to start web server
+[ERROR]:File does not exist
+[INFO]:MembershipNamenodeResolver cache loaded
+[INFO]:Replica <*> was not found in the VolumeMap for volume <*>
+[DEBUG]:Tailing edits starting from txn ID ... via RPC mechanism
+[INFO]:deleteBlockPool command received for block pool <*>, force=<*>
+[INFO]:Begin saveErasureCodingSection
+[DEBUG]:Failed to choose from local rack (location = <*>), retry with the rack of the next replica (location = <*>)
+[INFO]:truncateBlock: blockFile= + blockFile + , metaFile= + metaFile + , oldlen= + oldlen + , newlen= + newlen
+[ERROR]:Cannot delete non-empty directory without recursive flag
+[INFO]:Stopping rpcProxy in InMemoryAliasMapProtocolClientSideTranslatorPB
+[DEBUG]:Starting removeAclEntries
+[INFO]:Loading directories in INode section.
+[ERROR]:Unexpected exception while proxying API
+[DEBUG]:recycle: array.length=, freeQueueSize=
+[DEBUG]:Begin loading cache pools
+[INFO]:Scanned <*> INode directories to build namespace.
+[DEBUG]:Clear markedDeleteQueue over <*> millisecond to release the write lock
+[INFO]:Replica Cache file: path doesn't exist
+[DEBUG]:persistNewBlock: <*> with new block <*>, current total block count is <*>
+[INFO]:Erasure coding policies added
+[DEBUG]:getNNAddressCheckLogical
+[WARN]:Logic error: we're trying to uncache more replicas than actually exist for cachedBlock
+[DEBUG]:RenameSnapshotOp created
+[INFO]:rollingUpgrade QUERY
+[DEBUG]:Begin step SAVING_CHECKPOINT
+[WARN]:BlocksStorageMovementAttemptMonitor thread received exception and exiting.
+[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to ...
+[TRACE]:read(arr.length=<*>, off=<*>, len=<*>, filename=<*>, block=<*>, canSkipChecksum=<*>): returning <*>
+[TRACE]:BR lease 0x<*> is valid for DN <*>.
+[WARN]:Removing <*> as it's an old temporary record
+[TRACE]:getOutliers: List=<*>, MedianLatency=<*>, MedianAbsoluteDeviation=<*>, upperLimitLatency=<*>
+[WARN]:Failed to delete restart meta file: <*>
+[ERROR]:System.err.println(AdminHelper.prettifyException(e))
+[ERROR]:Trash and PreviousDir shouldn't both exist for storage directory <*>
+[WARN]:Fsck: Block manager is able to process only + processedBlocks + mis-replicated blocks (Total count : + misReplicatedBlocks.size() + ) for path + path
+[DEBUG]:NFS FSINFO fileHandle: <*> client: <*>
+[WARN]:Cannot get all encrypted trash roots
+[DEBUG]:newly failed streamers: ...
+[ERROR]:Cannot execute getter <*> on <*>
+[WARN]:NN actor tried to claim ACTIVE state at txid= txid but there was already a more recent claim at txid= lastActiveClaimTxId
+[INFO]:Purging remote journals older than txid + minTxIdToKeep
+[DEBUG]:getUGI is returning: ugi.getShortUserName()
+[DEBUG]:MOUNT UMNT path: <*> client: <*>
+[INFO]:Adding block pool
+[WARN]:Fsck: there were errors copying the remains of the corrupted file <*> to /lost+found
+[DEBUG]:NFS COMMIT fileHandle: <*> offset=<*> count=<*> client: <*>
+[DEBUG]:Corruption detected! Parent node is not contained in the list of known ids!
+[INFO]:Scanning storage
+[INFO]:this + successfully registered with NN
+[INFO]:Removing StorageLocation <*> with id <*> from FsDataset.
+[ERROR]:got IOException while trying to validate header of + elf + . Skipping., e
+[INFO]:Image has changed. Downloading updated image from NN.
+[WARN]:Remote IP <*> checking available resources took <*>ms
+[INFO]:Need to save fs image? true (staleImage=false, haEnabled=false, isRollingUpgrade=false)
+[WARN]:ServicePlugin <*> could not be started
+[DEBUG]:<*>: finishing cache cleaner run started at <*>. Demoted <*> mmapped replicas; purged <*> replicas.
+[DEBUG]:Start file with no key
+[INFO]:DIR* completeFile: $<*> is closed by $<*>
+[INFO]:<*> Lifeline RPC address: <*>
+[TRACE]:No more elements
+[ERROR]:"rollBack" will remove the current state of the file system...
+[DEBUG]:checkDiskError encountered no failures
+[INFO]:Successfully cached one replica:<*> into persistent memory, <*>
+[ERROR]:Error while resolving the path : fullName, exception
+[INFO]:Journal node retrieved or created
+[WARN]:DatanodeAdminMonitor caught exception when processing node.
+[DEBUG]:Saved MD5 $<*> to $<*>
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: Source <*> and destination <*> must both be directories
+[INFO]:Number of transactions: <*> Total time for transactions(ms): <*> Number of transactions batched in Syncs: <*> Number of syncs: <*> SyncTimes(ms): <*>
+[WARN]:DFSConfigKeys.DFS_BALANCER_MOVERTHREADS_KEY=<*> is too small for moving blocks to <*> targets. Balancing may be slower.
+[DEBUG]:Unable to perform a zero-copy read from offset <*> of <*>; <*> bytes left in block. blockPos=<*>; curPos=<*>; curEnd=<*>
+[DEBUG]:<*> waiting for ack for: <*>
+[ERROR]:Cannot access method <*> with types <*> from <*>
+[ERROR]:Cannot remove records <*> query <*>
+[DEBUG]:Saved INodeReference ids of size <*>.
+[INFO]:Successfully uncached one replica:<*> from persistent memory, <*>
+[INFO]:Added entry to result set
+[INFO]:Super post response created for UNSETSTORAGEPOLICY
+[TRACE]:Added block <*> to CACHED list.
+[WARN]:Exception while reading from ...
+[INFO]:buildTokenServiceForLogicalUri
+[INFO]:Dumper got Throwable. dumpFilePath: <*>
+[DEBUG]:Performing readahead
+[WARN]:Exiting Datanode
+[DEBUG]:Skipping statistical outlier detection as we don't have latency data for enough resources. Have <*>, need at least <*>
+[DEBUG]:Writing file: <*>
+[DEBUG]:Closed potentially stale remote peer
+[INFO]:scanEditLog
+[TRACE]:skip(n=<*>, block=<*>, filename=<*>): discarded <*> bytes from dataBuf and advanced dataPos by <*>
+[INFO]:detachFile failed to delete temporary file
+[WARN]:Unable to trigger a roll of the active NN
+[INFO]:Retrieved trimmed value for namenode id
+[ERROR]:Can't get path for fileId: <*>
+[DEBUG]:BLOCK* processMisReplicatedBlocks: Re-scanned block <*>, result is <*>
+[ERROR]:Block token with id doesn't have the correct token password
+[TRACE]:checking for block <*> with storageLocation <*>
+[WARN]:Could not add proxy for Journal at addresss <*>
+[INFO]:Decided to move X bytes from sourceName to targetName
+[INFO]:Invoking method concurrently
+[WARN]:Exception while sending the block report after refreshing + volumes <*> to <*>
+[TRACE]:op=
+[INFO]:Renamed root path + FSDirectory.DOT_RESERVED_STRING + to + renameString
+[INFO]:shutdownDatanode command received (upgrade=...)
+[DEBUG]:Moved block with size <*> from <*> to <*>
+[DEBUG]:logAuditEvent
+[INFO]:NN registration state has changed: <*> -> <*>
+[WARN]:Resolve Duplicate Replicas
+[INFO]:Cleaning every <*> seconds
+[INFO]:Block locations retrieved
+[INFO]:Have to change stable write to unstable write: STABLE_HOW_PLACEHOLDER
+[INFO]:MountTableResolver cache loaded
+[ERROR]:Cannot retrieve numNamenodes for JMX: <*>
+[WARN]:Encountered exception while tailing edits >= + fromTxnId + via RPC; falling back to streaming.,ioe
+[INFO]:Formatting block pool <*> directory <*>
+[INFO]:Lock on <*> acquired by nodename <*>
+[DEBUG]:Token not required, returning default user parameters
+[INFO]:Leaving safe mode after <*> milliseconds
+[WARN]:Failed to move block
+[INFO]:The fsimage will be loaded in parallel using <*> threads
+[ERROR]:Could not initialize shared edits dir, ioe
+[ERROR]:Unable to save image for + sd.getRoot(), t\n
+[DEBUG]:Reported block:<*> not found in attempted blocks. Datanode:<*>, StorageType:<*>
+[ERROR]:Attempted to cache data of length %d with newStartTxn %d and newEndTxn %d
+[INFO]:Scheduling block for deletion
+[DEBUG]:<*>: wait for <*> milliseconds
+[ERROR]:Could not create KeyProvider for DFSClient !!
+[INFO]:Successfully sent block report 0x...
+[WARN]:this + ": failed to munmap", e
+[TRACE]:<*>: trying to construct a BlockReaderLocal for short-circuit reads., this
+[DEBUG]:<*>: cache cleaner running at <*>
+[ERROR]:Fatal error caught by connection creator
+[INFO]:Starting InMemoryLevelDBAliasMapServer on <*>
+[ERROR]:Fsck: error deleting corrupted file
+[DEBUG]:logRpcIds executed
+[INFO]:Purging old edit log <*>
+[INFO]:Renewing + DelegationTokenIdentifier.stringifyToken(token)
+[DEBUG]:File <*> skipped re-encryption because edek's key version name is not changed.
+[WARN]:Found endTxId ...
+[INFO]:included nodes = <*>
+[DEBUG]:Starting the block retrieval process
+[DEBUG]:Performing getDatanodeListForReport
+[INFO]:Breaking hardlink for <*>x-linked block <*>
+[WARN]:Storage directory <*> does not exist, rootPath
+[DEBUG]:startNamenodeReconfiguration
+[DEBUG]:Change nextOffset (after trim) to <*>
+[DEBUG]:Add dead node to check: <*>.
+[WARN]:A block with id <*> exists locally. Skipping PROVIDED replica
+[DEBUG]:got reply from datanode:<*>, md5=<*>
+[TRACE]:allocShmSlot used up our previous socket...
+[INFO]:Formatting using clusterid: <*>
+[INFO]:Can't register DN <*> because it is already registered., dn.getDatanodeUuid()
+[DEBUG]:Creating non-HA Proxy
+[WARN]:Failed to resolve address `%s` in `%s`. Ignoring in the %s list.
+[INFO]:Marking all datanodes as stale
+[INFO]:Invoking method sequentially
+[WARN]:Unexpected error trying to delete/move block
+[DEBUG]:Receiving one packet for block xyz: header_info
+[DEBUG]:Could not sync with Journal at...
+[INFO]:WebImageViewer started. Listening on + address.toString() + . Press Ctrl+C to stop the viewer.
+[DEBUG]:Cleaning up expired peer
+[DEBUG]:Can't get path for fileId: <*>
+[INFO]:Path access checked successfully
+[INFO]:DN <*> joining cluster has expanded a formerly single-rack cluster to be multi-rack. Re-checking all blocks for replication, since they should now be replicated cross-rack
+[ERROR]:Cannot fetch records for <*>
+[INFO]:Decommissioned node <*> is put in maintenance state immediately.
+[WARN]:Failed to move meta file from + metaFile + to + targetMetaFile, e
+[ERROR]:Cannot get existing records
+[DEBUG]:Got overwrite with appended data
+[ERROR]:Cannot get available namenode for...
+[DEBUG]:Block <*>: can't cache this block, because it is not yet + complete.
+[DEBUG]:NFS ACCESS fileHandle: <*> client: <*>
+[ERROR]:Interrupted while waiting for CleanerThreadPool to terminate
+[TRACE]:Added block <*> to cachedBlocks
+[DEBUG]:Failed to get the router startup time
+[INFO]:RouterRpcServer refresh invoked
+[INFO]:A policy with same schema and cell size already exists
+[DEBUG]:open file: + conn.getURL()
+[TRACE]:Skipping XMLEvent ...
+[ERROR]:Path not found
+[TRACE]:createNewMemorySegment: ShortCircuitRegistry is not enabled.
+[ERROR]:%nInvalid argument found for command %s : %s%nValid arguments are : %n\t %s : %s %n
+[INFO]:Rescan of postponedMisreplicatedBlocks completed in <*> msecs. <*> blocks are left. <*> blocks were removed.
+[INFO]:Storage policy satisfier is already in mode:<*>, so ignoring change mode event.
+[WARN]:Get error accessing file, fileId: <*>
+[INFO]:Waiting up to 30 seconds for transfer threads to complete
+[INFO]:Relaying an out of band ack of type
+[DEBUG]:Sanity checks completed
+[INFO]:Begin saveSecretManagerSection
+[WARN]:Cannot find trash root of path
+[DEBUG]:rpcServer.isInvokeConcurrent returned FALSE
+[DEBUG]:addSymlink: <*> is added
+[INFO]:finalizing upgrade completed by superuser
+[WARN]:Failed to update the access time of <*>
+[DEBUG]:NFS REMOVE dir fileHandle: <*> fileName: <*> client: <*>
+[WARN]:Problem connecting to server: + nnAddr
+[WARN]:DataNode <*> cannot be found with UUID <*> + , removing block invalidation work., dn, dn.getDatanodeUuid()
+[DEBUG]:NFS PATHCONF fileHandle: <*> client: <*>
+[DEBUG]:Excluding DataNodes when allocating new block: <*>
+[DEBUG]:BLOCK* removeStoredBlock: <*> has already been removed from node <*>
+[DEBUG]:Select counter statement: + query
+[DEBUG]:End of the phase: <*>
+[DEBUG]:Performing satisfy storage policy operation
+[WARN]:DIR* FSDirectory.unprotectedAddFile: exception when add existing.getPath() to the file system
+[DEBUG]:Beginning to copy stream <*> to shared edits
+[DEBUG]:stream can be closed for fileId: <*>
+[DEBUG]:Starting Metrics Logger Timer
+[DEBUG]:Queued <*>, <*>
+[DEBUG]:HandleAddBlockPoolError called with empty exception list
+[DEBUG]:Going to check the following volumes disk space: + volumes
+[ERROR]:Failed to get request data offset: + getPlainOffset() + " " + "count:" + count + " error:" + e1
+[DEBUG]:Re-encryption handler throttling expect: <*>, actual: <*>, throttleTimerAll:<*>
+[WARN]:Caught exception
+[ERROR]:Cannot enable <*>, it was not disabled
+[ERROR]:Only specify cancel, renew or print.
+[ERROR]:Cannot find resolver for order <*>, order
+[INFO]:RouterClientProtocol refresh invoked
+[WARN]:IOException in offerService
+[DEBUG]:BLOCK* Removing <*> from neededReconstruction as it has enough replicas
+[INFO]:Resuming re-encrypt handler for testing.
+[ERROR]:Mount table cache refresher was interrupted.
+[INFO]:Going to finish converging with remaining ...
+[INFO]:Cancel request by <*>
+[WARN]:DataNode is shutting down due to failed volumes: <*>
+[INFO]:Cannot lock storage <*>. The directory is already locked
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: rename destination cannot be the root
+[ERROR]:<*> ignoring relative path <*>
+[INFO]:Storage directory + sd.getRoot() + is not formatted.
+[DEBUG]:After writing <*> at offset <*>, updated the memory count, new value: <*>, handle.dumpFileHandle(), offset, nonSequentialWriteInMemory.get()
+[INFO]:Shutting down DataXceiverServer before restart
+[INFO]:Temporary redirect with URI
+[DEBUG]:BLOCK* addStoredBlock: <*> on <*> size <*> but it does not belong to any file
+[TRACE]:Reference trace incremented
+[ERROR]:Can't sync for fileId: <*>. Channel closed with writes pending
+[DEBUG]:<*>: masked=<*>, src, absPermission
+[INFO]:\tNumber of suppressed read-lock reports: <*> \n\tLongest read-lock held at <*> for <*>ms via <*>
+[INFO]:Total time to add all replicas to map for block pool : ms
+[DEBUG]:Removing existing BR lease 0x<*> for DN <*> in order to issue a new one.
+[DEBUG]:NameNode <*> threw StandbyException when fetching HAState
+[WARN]:Error during write properties to the VERSION file to <*>, sd, e
+[WARN]:Abandoning block: + block
+[INFO]:logAuditEvent: success, operationName, src, null, auditStat
+[ERROR]:Cannot get location for <*>: <*>
+[ERROR]:Unable to enable Nameservice <*>
+[DEBUG]:DatanodeAdminMonitorV2 is running.
+[DEBUG]:Datanode <*> is using BR lease id 0x0 to bypass rate-limiting.
+[DEBUG]:%d racks are required for the erasure coding policies: %s. The number of racks is only %d.
+[TRACE]:No valid proxies left
+[DEBUG]:SASL client skipping handshake in unsecured configuration for addr = <*>, datanodeId = <*>
+[WARN]:No class configured for <*>, <*> is empty
+[INFO]:Dumper is interrupted, dumpFilePath = <*>
+[INFO]:logAuditEvent(false, "modifyAclEntries", src)
+[INFO]:addDirective of <*> successful., info
+[INFO]:Beginning recovery of unclosed segment starting at txid + segmentTxId
+[DEBUG]:Closing streams upon failure.
+[WARN]:Failed to reconstruct striped block <*>
+[DEBUG]:Closing log when already closed
+[INFO]:End checkpoint for + registration.getAddress()
+[INFO]:Starting recovery process for unclosed journal segments...
+[WARN]:Unable to delete no-longer-needed data <*>
+[TRACE]:<*>: updateScannedBytes is zeroing out slotIdx <*>. curMinute = <*>; newMinute = <*>
+[DEBUG]:ending log segment because of END_LOG_SEGMENT op in <*>
+[INFO]:Partial read. Asked offset: <*> count: <*> and read back: <*> file size: <*>
+[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to node<*>
+[DEBUG]:Updated disk outliers.
+[DEBUG]:Storage policy is not enabled, ignoring
+[WARN]:BR lease 0x<*> is not valid for DN <*>, because the DN is not in the pending set.
+[ERROR]:Cannot heartbeat for router: unknown router id
+[DEBUG]:Node <*> is currently in maintenance
+[DEBUG]:PendingReconstructionMonitor thread is interrupted.
+[DEBUG]:Changing meta file offset of block <*> from <*> to <*>
+[DEBUG]:there are no corrupt file blocks.
+[DEBUG]:BLOCK* NameSystem.abandonBlock: <*> of file <*>
+[INFO]:Cannot send OOB response + ackStatus + . Responder not running.
+[INFO]:Registered DN <*> (<*>)., dn.getDatanodeUuid(), dn.getXferAddr()
+[DEBUG]:Log audit event: successful operation addCachePool
+[INFO]:Executing rollEditLog
+[INFO]:Storage directory <*> has already been used.
+[INFO]:Generated new cluster id: <*>
+[DEBUG]:Loading section STRING_TABLE length: <*>
+[INFO]:Downloaded file + aliasMap.getName() + size + aliasMap.length() + bytes.
+[WARN]:The target has been modified since snapshot ...
+[DEBUG]:The openFileCtx is not active anymore, fileId: <*>
+[INFO]:Stopping NamenodeHeartbeat service for, NS <*> NN <*> , this.nameserviceId, this.namenodeId
+[INFO]:Now scanning bpid <*> on volume <*>
+[DEBUG]:BPServiceActor ( <*> ) processing queued messages. Action item: <*>
+[DEBUG]:Namenode domain name will be resolved with <*>
+[INFO]:Namespaces retrieved
+[INFO]:Deleting <*>
+[DEBUG]:Exception while seek to <*> from <*> of <*> from <*>
+[ERROR]:Cannot get <*> nodes, Router in safe mode
+[WARN]:Currently creating proxy using LossyRetryInvocationHandler requires NN HA setup
+[DEBUG]:Attempting operation: removeDefaultAcl
+[DEBUG]:User <*> NN <*> is using connection <*>
+[TRACE]:Excluding datanode <*>: outOfService=<*>, excluded=<*>, notIncluded=<*>
+[WARN]:Unable to determine the max transaction ID seen by
+[INFO]:LifelineSender for + BPServiceActor.this + exiting.
+[ERROR]:Failed to close provider., e
+[DEBUG]:Node path detail
+[DEBUG]:Start to update quota cache.
+[DEBUG]:topN users size for command <*> is: <*>
+[INFO]:MinReplicationToBeInMaintenance is set to zero. <*> is put in maintenance state immediately.
+[DEBUG]:Submitted a shutdown request to datanode
+[WARN]:Client is requesting a new log segment ...
+[INFO]:Interrupted waiting to join on checkpointer thread
+[WARN]:Failed to fully delete aliasmap archive: + tarname
+[TRACE]:removing shm + shm
+[DEBUG]:Creating compression for FS image
+[DEBUG]:SASL server skipping handshake in secured configuration with no SASL protection configured for peer = <*>, datanodeId = <*>
+[ERROR]:Cannot get content summary for mount <*>: <*>
+[DEBUG]:Given mode: <*> is invalid
+[DEBUG]:Block with id <*>, pool <*> already exists in the FsDatasetCache with state <*>
+[INFO]:Transferring data to targets...
+[INFO]:Status: OK
+[WARN]:Unexpectedly low genstamp on <*>.
+[DEBUG]:Processing fileDiffEntry
+[WARN]:BR lease 0x<*> is not valid for DN <*>, because the lease has expired.
+[TRACE]:<*>: waiting for loading to finish...
+[INFO]:The storage policy of <*> is unspecified
+[WARN]:INTERNAL_SERVER_ERROR
+[INFO]:Write lock acquired
+[WARN]:Failed to delete old dfsUsed file in ...
+[INFO]:Restored <*> block files from trash before the layout upgrade. These blocks will be moved to the previous directory during the upgrade, restored
+[INFO]:Completing previous finalize for storage directory <*>
+[WARN]:Only able to place ... of total expected ...
+[DEBUG]:Dest file: + f
+[ERROR]:Can't get path for dirHandle: <*>
+[INFO]:Registered FSDatasetState MBean
+[DEBUG]:Processing dirDiffEntry
+[WARN]:AsyncLazyPersistService has already shut down.
+[INFO]:The list of corrupt files under path 'dir' are:
+[INFO]:Stopped the writer: <*>
+[ERROR]:Cannot get children for "<*>": <*>
+[DEBUG]:Creating a JsonNodeConnector
+[DEBUG]:Checksum type: ...
+[INFO]:Provided storage transitioning to state State.NORMAL
+[DEBUG]:NFS READLINK fileHandle: <*> client: <*>,
+[DEBUG]:Path:<*> doesn't exist!
+[ERROR]:Disk Balancer - Unable to find source volume: <*>
+[ERROR]:Invalid COMMIT request
+[WARN]:Found Checksum error for ...
+[ERROR]:Exception in NameNodeResourceMonitor: <*>
+[INFO]:DIR* addFile: failed to add <*>
+[WARN]:Periodic Directory Tree Verification scan is disabled because verification is not supported by SimulatedFSDataset
+[WARN]:Block <*> has not released the reserved bytes. Releasing <*> bytes as part of close.
+[INFO]:Attempting to get socket address for target.
+[TRACE]:Block <*>: added to PENDING_CACHED on DataNode <*>
+[WARN]:Cannot allocate parity block(index=<*>, policy=<*>). Exclude nodes=<*>. There may not be enough datanodes or racks...
+[ERROR]:Error updating cache for <*>
+[DEBUG]:Acquired read lock
+[INFO]:Image file <*> of size <*> bytes saved in <*> seconds.
+[DEBUG]:Read block from receiver
+[DEBUG]:Namenode is in safemode, skipping scrubbing of corrupted lazy-persist files.
+[ERROR]:Error: status failed for required journal (journal_and_stream)
+[ERROR]:Exception during DirectoryScanner execution - will continue next cycle
+[INFO]:Top limit input is not numeric, using default top value %d.
+[ERROR]:Aborted
+[INFO]:Retransmitted request, transaction still in progress <*>
+[WARN]:Failed to choose target datanode for the required storage types <*>, block:<*>, existing storage type:<*>
+[WARN]:Unable to drop cache on file close
+[INFO]:Retry cache will use 0.2 of total heap and retry cache entry expiry time is 600000 millis
+[DEBUG]:start scanning block <*>
+[ERROR]:StoragePolicySatisfier thread received runtime exception.
+[INFO]:Namespace quota set
+[ERROR]:<*> encountered fatal exception and exit., getName(), t
+[WARN]:Cannot use /lost+found : a regular file with this name exists.
+[DEBUG]:DIR* FSDirectory.unprotectedDelete: " + iip.getPath() + " is removed
+[INFO]:Exception when processing re-encryption task for zone <*>, retrying...
+[INFO]:datanode.getDNRegistrationForBP(bpid):Exception writing block to mirror mirrorAddr
+[TRACE]:<*>: trying to create a remote block reader from a TCP socket
+[DEBUG]:NFS SYMLINK, target: <*>, link: <*>, namenodeId: <*>, client: <*>
+[WARN]:checkDiskErrorAsync callback got <*> failed volumes: <*>
+[ERROR]:DiskBalancerException message
+[INFO]:ImageServlet rejecting: + remoteUser
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: rename destination parent ... is a file.
+[DEBUG]:<*> was chosen by name node (favored=<*>).
+[WARN]:BLOCK* removeDatanode: node does not exist
+[ERROR]:Audit event: create, src
+[ERROR]:Error reading md5 file at <*>
+[INFO]:Could not complete <*> retrying...
+[ERROR]:Cannot add more than <*> connections at the same time
+[ERROR]:Cannot get the datanodes from the RPC server
+[DEBUG]:The reading thread has been interrupted.
+[WARN]:Failed to call blockReceivedAndDeleted: <*>, nnId: <*> + , duration(ms): <*>, Arrays.toString(reports), nnRpcLatencySuffix, monotonicNow() - startTime
+[WARN]:trying to get DT with no secret manager running
+[INFO]:STATE* Safe mode is OFF.\n + It was turned off manually.
+[INFO]:logEdit executed
+[WARN]:Failed to connect with namenode
+[INFO]:Checked operation
+[ERROR]:Failed to create directory for downloading log segments: $<*>. Stopping Journal Node Sync.
+[DEBUG]:saveCacheManagerSection completed
+[DEBUG]:Beginning of the phase: <*>
+[DEBUG]:Failed to get number of files
+[DEBUG]:*DIR* NameNode.rename: src to dst
+[INFO]:Total time to scan all replicas for block pool <*>: <*>ms
+[INFO]:Router RPC up at: ...
+[INFO]:Diskspace quota set
+[INFO]:Upgrading storage directory <*>. old LV = <*>; old CTime = <*>. new LV = <*>; new CTime = <*>
+[DEBUG]:Will collect peer metrics for downstream node <*>
+[DEBUG]:No node to choose.
+[WARN]:The storage policy + policy.getName() + is not suitable for Striped EC files. + So, Ignoring to move the blocks
+[INFO]:addCachePool of <*> successful.
+[DEBUG]:Key written and counter incremented
+[WARN]:Cannot access storage directory <*>
+[WARN]:Failed to remove SPS xattr for track id <*>
+[INFO]:DatanodeCommand action: DNA_ERASURE_CODING_RECOVERY
+[INFO]:NN is transitioning from active to standby and FSEditLog is closed -- could not read edits
+[DEBUG]:Waiting to executor service terminated duration <*>ms.
+[INFO]:Deleted block
+[ERROR]:The <*> cannot find a location for <*>, super.getClass().getSimpleName(), path
+[DEBUG]:addFinalizedBlock: Moved replicaInfo.getMetadataURI() to dstmeta and replicaInfo.getBlockURI() to dstfile
+[DEBUG]:Best effort placement failed: expecting <*> replicas, only chose <*>.
+[ERROR]:Cannot initialize State Store driver <*>
+[ERROR]:ReplicaCachingGetSpaceUsed refresh error
+[ERROR]:Cannot get local host name
+[DEBUG]:Volume <*>: block <*> is no longer in the dataset.
+[WARN]:Cannot heartbeat router <*>
+[WARN]:SSL config sslProp is missing. If dfs.server.https.keystore.resource is specified, make sure it is a relative path
+[WARN]:!!! WARNING !!!\n\tThe NameNode currently runs without persistent storage.\n\tAny changes to the file system meta-data may be lost.\n\tRecommended actions:\n\t\t- shutdown and restart NameNode with configured "propertyName" in hdfs-site.xml;\n\t\t- use Backup Node as a persistent and up-to-date storage of the file system meta-data.
+[INFO]:Invoking method 'finalizeUpgrade' concurrently on namespaces
+[WARN]:Error occurred when removing unhealthy storage dirs, e
+[WARN]:Received exception in Datanode#join: <*>
+[INFO]:Thread interrupted when waiting for volume reference to be released.
+[ERROR]:Namenode is not operational: <*>
+[WARN]:ServicePlugin <*> could not be stopped
+[INFO]:File: <*> is not having any blocks. So, skipping the analysis.
+[INFO]:Concurrent invocation executed
+[INFO]:Failed to satisfy the policy after retries. Removing inode from the queue.
+[TRACE]:DataNodePeerMetrics: Got stats: <*>
+[ERROR]:Cannot invoke <*> for <*>: <*>
+[DEBUG]:got reply from datanode:<*> for blockIdx:<*>, checksum:<*>
+[INFO]:Recover failed append to +
+[WARN]:BLOCK* removeDatanode: <*> does not exist
+[DEBUG]:Loading file: <*>
+[DEBUG]:Audit: setPermission failed due to AccessControlException
+[ERROR]:Unable to get json from Item.
+[DEBUG]:Completed block movement. <*>
+[DEBUG]:Got interrupted while DeadNodeDetector is error.
+[WARN]:Other JournalNode addresses not available. Journal Syncing cannot be done
+[DEBUG]:Satisifer Q - outstanding limit:<*>, current size:<*>
+[INFO]:Cookie couldn’t be found: <*>, do listing from beginning
+[INFO]:Block recovery attempt for + block + rejected, as the + previous attempt times out in + timeoutIn + seconds.
+[WARN]:Interrupted before adjusting thread count: <*>
+[INFO]:Successfully saved namespace for preparing rolling upgrade.
+[ERROR]:Failed to move aside pre-upgrade storage in image directory + sd.getRoot()
+[WARN]:Cannot load customized ssl related configuration. Fallback to system-generic settings.
+[WARN]:This cycle terminating immediately because 'shouldRun' has been deactivated
+[DEBUG]:Uncaching <*> now that it is no longer in use by any clients.
+[DEBUG]:Unset erasure coding policy on <*>
+[WARN]:forceExit used when normal exist would suffice. Treating force exit as normal safe mode exit.
+[DEBUG]:Renaming + tmpFile + to + finalizedFile
+[INFO]:Starting up re-encrypt thread with interval=<*> millisecond.
+[DEBUG]:Directive <*>: caching <*>: <*>/<*> bytes
+[DEBUG]:logRpcIds started
+[INFO]:NextBlock call returned null. No valid block to copy. <*>
+[ERROR]:Invalid SYMLINK request
+[INFO]:Cleared trash for storage directory <*>
+[WARN]:Failed to resolve the uri as mount path
+[INFO]:End step for saving cache pools
+[DEBUG]:Concurrent invocation initiated
+[INFO]:Block report queue is full
+[DEBUG]:Couldn't create proxy provider null
+[ERROR]:Cannot initialize ZK node for <*>: <*>, className, e.getMessage()
+[INFO]:Using a threshold of
+[DEBUG]:Will connect to NameNode at + address
+[DEBUG]:BLOCK* invalidateBlocks: <*> on <*> listed for deletion.
+[ERROR]:Cannot get children for <*>
+[ERROR]:Forcing SlotReleaserThreadPool to shutdown!
+[TRACE]:UC block <*> insufficiently-replicated since numLive (<*>) <*>)
+[DEBUG]:Uncaching of <*> completed. usedBytes = <*>
+[WARN]:Failed to add storage directory <*>
+[INFO]:Safe mode exception encountered
+[WARN]:LazyWriter failed to async persist RamDisk block pool id: <*> block Id: <*>
+[DEBUG]:BLOCK* block DELETED_BLOCK: block <*> is received from <*>
+[DEBUG]:*DIR* NameNode.truncate: src to newLength
+[ERROR]:Exception in IBRTaskHandler.
+[DEBUG]:rollEditLog
+[ERROR]:Attempt to insert record <*> that already exists
+[DEBUG]:Checking operation (inside try block)
+[DEBUG]:detail
+[ERROR]:Throwable Exception in doCheckpoint
+[ERROR]:Error adding replica to map
+[WARN]:Volume <*> detected as being unhealthy, reference.getVolume()
+[INFO]:Starting services required for active state
+[INFO]:Super post response created for CONCAT
+[INFO]:Cancelled zone <*>(<*>) for re-encryption.
+[INFO]:Took <*> ms to collect <*> open files with leases <*>, (endTimeMs - startTimeMs), iipSet.size(), ((ancestorDir != null) ? " under " + ancestorDir.getFullPathName() : ".")
+[DEBUG]:<*>: retrying <*>
+[ERROR]:Unexpected health check result null for volume <*>
+[INFO]:...(InterruptedException e.Message)
+[INFO]:Sequential invocation completed
+[DEBUG]:SASL client skipping handshake in secured configuration with unsecured cluster for addr = <*>, datanodeId = <*>
+[WARN]:Block + b + unfinalized and removed.
+[DEBUG]:Invocation of <*> using <*> was successful
+[ERROR]:FETCH_FAILED
+[INFO]:org.apache.hadoop.hdfs.shortcircuit.ShortCircuitCache: closing
+[INFO]:Super post called for CONCAT
+[INFO]:<*> already exists.
+[INFO]:Ending log segment
+[DEBUG]:logSync
+[INFO]:Storage directory with location <*> does not exist
+[INFO]:Auditing event: queryRollingUpgrade
+[INFO]:BLOCK* + err + (numNodes= + numNodes + (numNodes <*>= ) + minimum = + min + ) in file + src
+[DEBUG]:Generate delegation token with renewer
+[INFO]:Audit event for listStatus operation allowed on src
+[WARN]:Existing client context ' + name + ' does not match + requested configuration. Existing: + existing + , Requested: + requested
+[DEBUG]:DataNode instance created
+[INFO]:Setting block keys
+[WARN]:Unflushed op <*>: " + op
+[WARN]:Failed to connect to ... for file ... for block ..., add to deadNodes and continue.
+[ERROR]:Failed to start journalnode.
+[DEBUG]:nodes <*> storageTypes <*> storageIDs <*>
+[WARN]:<*> is set to <*>. It must be greater than zero. Setting to default of <*>, DFSConfigKeys.DFS_IMAGE_PARALLEL_TARGET_SECTIONS_KEY, targetSections, DFSConfigKeys.DFS_IMAGE_PARALLEL_TARGET_SECTIONS_DEFAULT
+[DEBUG]:Adding trackID:<*> for the file id:<*> back to retry queue as none of the blocks found its eligible targets.
+[ERROR]:Node <*> is in an unexpected state <*> and has been removed from tracking for decommission or maintenance
+[INFO]:modifyCachePool of <*> successful; set maxRelativeExpiry to <*>
+[INFO]:Insecure cluster detected
+[WARN]:Block group <*> failed to write <*> blocks.
+[INFO]:Removing expired block report lease 0x<*> for DN <*>.
+[INFO]:Setting up storage: nsid=<*>;bpid=<*>;lv=<*>;nsInfo=<*>;dnuuid=<*>
+[DEBUG]:Current detector state <*>, the detected nodes: <*>.
+[DEBUG]:rpcServer.getLocationsForPath invoked
+[ERROR]:Cannot get State Store versions
+[TRACE]:can't get an mmap for <*> of <*> since SKIP_CHECKSUMS was not given, we aren't skipping checksums, and the block is not mlocked.
+[ERROR]:Failed to add volume: <*>
+[DEBUG]:DIR* NameSystem.appendFile: src=<*>, holder=<*>, clientMachine=<*>
+[INFO]:STATE* Leaving safe mode after <*> secs
+[INFO]:Total size set
+[DEBUG]:Starting to add to replicas map
+[DEBUG]:NFS RMDIR dir fileHandle: <*> fileName: <*> client: <*>
+[WARN]:Failed to write replicas to cache
+[DEBUG]:StreamerStreams initialized
+[DEBUG]:Not adding volume scanner for <*>, because the block scanner is disabled.
+[WARN]:Received non-NN/SNN/administrator request for image or edits from <*> at <*>
+[DEBUG]:Saving MD5 file
+[INFO]:Available space volume choosing policy initialized: <*> = <*>, <*> = <*>
+[DEBUG]:Renewed token for <*> until: <*>
+[ERROR]:Failed to remove volume
+[WARN]:MarkedDeleteBlockScrubber encountered an exception during the block deletion process, the deletion of the block will retry in <*> millisecond.
+[DEBUG]:offer window of metric: <*> userName: <*> sum: <*>
+[DEBUG]:Block added
+[INFO]:Log synchronized
+[DEBUG]:Volumes are imbalanced. Selecting volume from low available space volumes for write of block size replicaSize
+[WARN]:Failed to cache block with id + blockId + , pool + bpid + : ReplicaInfo not found.
+[DEBUG]:rpcServer.isInvokeConcurrent returned TRUE
+[DEBUG]:NFS LOOKUP dir fileHandle: <*> name: <*> client: <*>
+[ERROR]:FSImageSaver cancel checkpoint threw an exception:, e
+[WARN]:Unable to load className
+[ERROR]:Checkpoint failed
+[INFO]:RECOVERY FAILED: caught exception
+[ERROR]:Name-node ... is not active. Shutting down.
+[WARN]:this sd not available:
+[WARN]:Getting exception while trying to determine if nameservice can use logical URI
+[TRACE]:loadNodeChildren(expected= + expected + , terminators=<*>): + parent.dump()
+[INFO]:Deleting all children under <*>
+[DEBUG]:Failed to get number of stale nodes
+[INFO]:Checking invocation result
+[INFO]:Completed update blocks map and name cache, total waiting duration <*>ms.
+[DEBUG]:Error while connecting to namenode
+[DEBUG]:<*>: failed to get ShortCircuitReplica. Cannot construct BlockReaderLocal via <*>, this, pathInfo.getPath()
+[DEBUG]:Repeated write request which is already served: xid=<*>, resend response.
+[WARN]:The value of <*> is less than 0.5 so volumes with less available disk space will receive more block allocations
+[INFO]:Matcher matches and returns result
+[INFO]:removeCachePool of + poolName + successful.
+[DEBUG]:enqueue full <*>, src=<*>, bytesCurBlock=<*>, blockSize=<*>, appendChunk=<*>, <*>
+[DEBUG]:maxTxnsToRead = 1 actual edits read = 0
+[INFO]:Audit log: Operation successful
+[ERROR]:DFSZKFailOverController exiting due to earlier exception: t
+[WARN]:BLOCK* addStoredBlock: block <*> moved to storageType <*> on node <*>
+[INFO]:Recovering storage directory <*> from previous rollback
+[WARN]:Failed: <*>, <*>, <*>
+[INFO]:CacheReplicationMonitor started
+[ERROR]:Cannot build location, <*> not a child of <*>
+[DEBUG]:Couldn't create proxy provider <*>
+[DEBUG]:, freeQueue.offer
+[WARN]:Caching not supported on block with id + blockId + since the volume is backed by RAM.
+[INFO]:Executing "Cancel plan" command.
+[DEBUG]:Check operation
+[DEBUG]:Rescanning because of pending operations
+[INFO]:Audit log creation failed
+[DEBUG]:*DIR* NameNode.rename: " + src + " to " + dst
+[DEBUG]:DIR* FSDirectory.renameTo: srcIIP.getPath() to dstIIP.getPath()
+[ERROR]:Cannot retrieve numExpiredNamenodes for JMX: <*>
+[TRACE]:Rejecting interaction; no rule found
+[DEBUG]:passing over + elf + because it ends at + elf.lastTxId + , but we only care about transactions + as new as + fromTxId
+[TRACE]:nextTcpPeer: reusing existing peer <*>
+[INFO]:Block: <*>, Expected Replicas: <*>, live replicas: <*>, corrupt replicas: <*>, decommissioned replicas: <*>, decommissioning replicas: <*>, maintenance replicas: <*>, live entering maintenance replicas: <*>, replicas on stale nodes: <*>, readonly replicas: <*>, excess replicas: <*>, Is Open File: <*>, Datanodes having this block: <*>, Current Datanode: <*>, Is current datanode decommissioning: <*>, Is current datanode entering maintenance: <*>
+[DEBUG]:Found matching rule, subnet: <*>, path: <*>; returned true
+[ERROR]:Exception in writeLock during removeCachePool, <*>}, false
+[INFO]:Removed blocks associated with storage <*> from DataNode <*>
+[DEBUG]:<*>
+[ERROR]:Cannot get address for <*>: <*>
+[DEBUG]:Block mover to satisfy storage policy; pool threads=<*>
+[WARN]:Request #getBlocks to Standby NameNode but meet exception, will fallback to normal way.
+[DEBUG]:BLOCK NameSystem.addToCorruptReplicasMap: duplicate requested for <*> to add as corrupt on <*> by <*> <*>
+[WARN]:Unable to determine input streams from + jas.getManager() + . Skipping.
+[INFO]:Begin saveNameSystemSection
+[INFO]:Refresh call queue successfully for <*>
+[DEBUG]:Security login
+[ERROR]:Disabling journal <*>
+[DEBUG]:Failed to get security status.
+[INFO]:Create dump file: <*>
+[INFO]:Audit log for operation addErasureCodingPolicies
+[TRACE]:<*>: can't fethchOrCreate <*> because the cache is closed.
+[ERROR]:Status: ERROR, message: Exception message
+[INFO]:<*>: finished scanning block pool <*>
+[DEBUG]:*DIR* Namenode.delete: src=<*>, recursive=<*>
+[INFO]:Checked <*> blocks this tick. <*> nodes are now in maintenance or transitioning state. <*> nodes pending. <*> nodes waiting to be cancelled.
+[INFO]:Secure cluster detected
+[DEBUG]:Notifying handler for new re-encryption command.
+[WARN]:Failed to place enough replicas: expected size is <*> but only <*> storage types can be selected (replication=<*>, selected=<*>, unavailable=<*>, removed=<*>, policy=<*>)
+[INFO]:Catching up to latest edits from old active before taking over writer role in edits logs
+[INFO]:Block token params received from NN: for block pool <*> keyUpdateInterval=<*> min(s), tokenLifetime=<*> min(s)
+[INFO]:Cache directive written
+[DEBUG]:<*>: enqueue <*>
+[WARN]:<*> nodes are decommissioning but only <*> nodes will be tracked at a time. <*> nodes are currently queued waiting to be decommissioned.
+[INFO]:Creating a Wrapped Input Stream since feInfo is not null
+[DEBUG]:DataNode Z reported slow peers: <*>
+[DEBUG]:Loaded rule: user: <*>, network/bits: <*> path: <*>
+[ERROR]:Cannot get remote user: <*>
+[DEBUG]:DIR* FSDirectory.addBlock: <*> with <*> block is added to the in-memory file system
+[INFO]:Node <*> isn't healthy. It needs to replicate <*> more blocks. <*> is still in progress.
+[TRACE]:<*>: <*> no-checksum anchor to slot <*>
+[DEBUG]:The async write task has no pending writes, fileId: <*>
+[DEBUG]:There is a temporary file <*> in <*>
+[WARN]:Couldn’t delete State Store record <*>: <*>
+[ERROR]:Disk Balancer - Plan was generated for another node.
+[INFO]:Unable to roll forward using only logs. Downloading image with txid <*>
+[DEBUG]:Getting locations for path
+[DEBUG]:newEpoch(<*>) responses:\n<*>
+[INFO]:Assuming 'file' scheme for path + s + in configuration.
+[DEBUG]:BLOCK* <*> recovery started, primary=<*>
+[WARN]:Failed to analyze storage directories for block pool <*>, nsInfo.getBlockPoolID(), e
+[TRACE]:UC block <*> sufficiently-replicated since numLive (<*>) >= minR (<*>)
+[ERROR]:<*> exceptions occurred loading INodeDirectories
+[INFO]:Cancel moving + this + as iteration is already cancelled due to + dfs.balancer.max-iteration-time is passed.
+[DEBUG]:Remove volume method invoked
+[ERROR]:<*> exceptions occurred loading INodes
+[DEBUG]:Start decrypting EDEK for file: <*>, output stream: 0x<*>
+[WARN]:Exception while checking whether encryption zone is supported
+[ERROR]:Logger error message with arguments
+[INFO]:initReplicaRecovery: update recovery id for + block + from + oldRecoveryID + to + recoveryId
+[WARN]:Slow manageWriterOsCache took <*>ms (threshold=<*>ms), volume=<*>, blockId=<*>
+[DEBUG]:Attempting to service <*> using proxy <*>
+[WARN]:FSDirectory.addChildNoQuotaCheck - unexpected
+[ERROR]:Exception in doCheckpoint
+[DEBUG]:Saving namespace context
+[INFO]:initReplicaRecovery: + block + , recoveryId= + recoveryId + , replica= + replica
+[INFO]:The active NameNode is in Upgrade. Prepare the upgrade for the standby NameNode as well.
+[INFO]:Can't get path for fileId: <*>
+[INFO]:Can't unregister DN <*> because it is not currently registered.
+[DEBUG]:FileId: <*> Service time: <*>ns. Sent response for commit: <*>
+[DEBUG]:timed poll(): poll() returned null, sleeping for <*> ms
+[ERROR]:Throwable Exception in doCheckpoint:
+[DEBUG]:Failed to choose from the next rack (location = <*>), retry choosing randomly
+[INFO]:Checked operation WRITE
+[INFO]:Mount point updated successfully
+[INFO]:Refresh super user groups configuration successful
+[WARN]:DatanodeAdminMonitor caught exception when processing node., e
+[INFO]:loadBlockPoolSliceStorage: <*> upgrade tasks
+[DEBUG]:*BLOCK* NameNode.blockReceivedAndDeleted: from <*> <*> blocks.
+[DEBUG]:There are no pending or blocks yet to be processed
+[DEBUG]:Removed cache pool
+[TRACE]:<*>: found waitable for <*>
+[DEBUG]:Validating mount table record
+[INFO]:FileJournalManager.doRollback called
+[ERROR]:Expecting boolean obj for setting checking recent image, but got ...
+[DEBUG]:BLOCK* <*>: ask <*> to delete <*>, getClass().getSimpleName(), dn, toInvalidate
+[DEBUG]:Replication remains unchanged at <*> for <*>
+[WARN]:Unable to inspect storage directory
+[WARN]:<*>: can't remove block pool <*>, because it was never added., this, bpid
+[DEBUG]:NFS SYMLINK, target: <*> link: <*> namenodeId: <*> client: <*>
+[WARN]:Could not find a target for file
+[TRACE]:StreamMonitor can still have a sleep:...
+[WARN]:Parallel is enabled and <*> is set to <*>. Setting to the default value <*>
+[INFO]:Sending OOB to peer: <*>
+[WARN]:Failed to re-encrypt one batch of <*> edeks, start:<*>
+[WARN]:<*>: already enabled scanning on block pool <*>
+[INFO]:Failed to read expected encryption handshake from client at ...
+[DEBUG]:All volumes are within the configured free space balance threshold. Selecting volume for write of block size replicaSize
+[INFO]:Write operation checked
+[WARN]:Parallel Image loading and saving is not supported when <*> is set to true. Parallel will be disabled.
+[TRACE]:copying op: <*>
+[ERROR]:nextValidOp: got exception while reading
+[DEBUG]:Waited <*>ms to read from <*>; spawning hedged read
+[INFO]:Error during set operation type
+[INFO]:ImageServlet allowing administrator: + remoteUser
+[INFO]:removeCachePool of + poolName + failed: , e
+[INFO]:"Client <*> did not send a valid status code after reading. Will close connection.", peer.getRemoteAddressString()
+[INFO]:DFSConfigKeys.DFS_DATANODE_FILEIO_PROFILING_SAMPLING_PERCENTAGE_KEY set to $<*>. Enabling file IO profiling
+[INFO]:key = v (default=defaultValue)
+[INFO]:Waited X ms (timeout=Y ms) for a response for Z...
+[INFO]:Checksum calculation succeeded on block file
+[DEBUG]:Unable to perform a zero-copy read from offset <*> of <*>; 31-bit MappedByteBuffer limit exceeded. blockPos=<*>, curEnd=<*>
+[ERROR]:Exception caught in channelRead0
+[WARN]:Caught exception when adding fsVolume. Will throw later.
+[INFO]:Replica Cache file: path has gone stale
+[DEBUG]:Got access token error in response to OP_BLOCK_CHECKSUM for file <*> for block <*> from datanode <*>. Will retry the block once.
+[WARN]:SafeMode is in inconsistent filesystem state. BlockManagerSafeMode data: blockTotal=<*>, blockSafe=<*>; BlockManager data: activeBlocks=<*>
+[DEBUG]:Remove write <*> which is already written from the list
+[DEBUG]:recycle: array.length=
+[WARN]:Deprecated configuration key <*> will be ignored.
+[INFO]:Audit log event: rename (options=<*>) src dst
+[WARN]:Unexpected meta-file version for + name + : version in file is + header.getVersion() + but expected version is + VERSION
+[WARN]:RemoteException in register, e
+[DEBUG]:DIR* NameSystem.startFile: added src inode id holder
+[DEBUG]:SASL client skipping handshake on trusted connection for addr = <*>, datanodeId = <*>
+[INFO]:rpcClient.invokeSequential executed
+[DEBUG]:Skipping compute move. lowVolume: <*>, highVolume: <*>
+[DEBUG]:UnresolvedPathException path: $<*> preceding: $<*> count: $<*> link: $<*> target: $<*> remainder: $<*>
+[ERROR]:logAuditEvent(false, getAclStatus, src)
+[INFO]:Acknowledging ACTIVE Namenode during handshake
+[INFO]:No files in
+[INFO]:Formatting journal <*> with nsid: <*>
+[DEBUG]:isDatanode=<*>, isClient=<*>, isTransfer=<*>
+[WARN]:Log4j is required to enable async auditlog
+[INFO]:addCachePool of <*> failed: <*>
+[DEBUG]:take(): poll() returned null, sleeping for <*> ms
+[DEBUG]:Decided to move + this
+[DEBUG]:Securing socket communication.
+[DEBUG]:blocks = <*>
+[DEBUG]:Closing Namenode metrics
+[WARN]:No mover threads available: skip moving + p
+[INFO]:Failed to open path 'dir': Permission denied
+[DEBUG]:Token cancel failed: <*>
+[DEBUG]:Building token service
+[WARN]:Couldn't report bad block block to actor, e
+[DEBUG]:BLOCK* InvalidateBlocks: add Block to DatanodeInfo
+[WARN]:Failed to recover block (block=" + block + ", datanode=" + id + ")
+[ERROR]:Initialization failed for this . Exiting.
+[DEBUG]:BLOCK* removeStoredBlock: <*> removed from caching related lists on node <*>
+[DEBUG]:Scanned <*> directories.
+[INFO]:Adding block pool <*> to volume with id <*>
+[INFO]:Exception while creating remote block reader, datanode <*>
+[TRACE]:<*>: no block pools are ready to scan yet. Waiting <*> ms., this, timeout
+[WARN]:this + : error requesting short-circuit shared memory + access: + error
+[INFO]:Compute Plan for Node : <*>:<*> took <*> ms, node.getDataNodeName(), node.getDataNodePort(), endTime - startTime
+[DEBUG]:Namespace for <*> (<*>) is <*>
+[ERROR]:Unable to extract metrics: <*>
+[WARN]:Error transferring data from ...
+[INFO]:Successfully synced BackupNode with NameNode at txnid ...
+[INFO]:Storage directory with location <*> is not formatted for namespace <*>. Formatting...
+[INFO]:Successfully moved + this
+[ERROR]:Cannot find BPOfferService for reporting block deleted for bpid= + block.getBlockPoolId()
+[DEBUG]:Auth parameters added for proxy user
+[ERROR]:Symlink target should not be null, fileId: <*>
+[DEBUG]:Ordered locations following <*> are <*>, order, mountTableResult
+[DEBUG]:flatBlockChecksumData.length=<*>, numDataUnits=<*>, checksumLen=<*>, digest=<*>
+[INFO]:Cached dfsUsed found for
+[ERROR]:Initialization failed for this because
+[INFO]:Uploaded image with txid 123 to namenode at http://example.com in 0.5 seconds
+[DEBUG]:Read task returned: <*>, for stripe <*>
+[INFO]:Not starting CacheReplicationMonitor as name-node caching is disabled.
+[WARN]:Reporting bad <*> on <*>
+[INFO]:Sending fileName: <*>, fileSize: <*>.
+[DEBUG]:Failed to get number of entering maintenance nodes
+[WARN]:Unable to get NameNode addresses.
+[DEBUG]:Tailing edits starting from txn ID + fromTxnId + via RPC mechanism
+[DEBUG]:Lease renewer daemon for <*> with renew id <*> expired
+[WARN]:Block + blockId + + NONEXISTENT_STATUS
+[INFO]:Zone <*> completed re-encryption.
+[ERROR]:Link size: <*> is larger than max transfer size: <*>
+[INFO]:Refreshing list of NNs for nameservices: ...
+[WARN]:The Short Circuit Local Read latency, %d ms, is higher then the threshold (%d ms). Suppressing further warnings for this BlockReaderLocal.
+[DEBUG]:NFS READLINK fileHandle: <*> client: <*>
+[WARN]:Incorrect version exception message DN: dnReg
+[DEBUG]:<*>: can’t construct BlockReaderLocalLegacy because disableLegacyBlockReaderLocal is set.
+[INFO]:Fenced by <*> with epoch <*>
+[DEBUG]:Refreshing <*> for path <*>
+[WARN]:Shutdown has been called, but periodic scanner not started
+[INFO]:op=LISTXATTRS target=path
+[INFO]:Caught exception while adding replicas from ... Will throw later.
+[INFO]:Cannot re-encrypt directory with id <*> because it's not a directory.
+[DEBUG]:Scanned <*> directive(s) and <*> block(s) in <*> millisecond(s).
+[DEBUG]:DIR* NameSystem.truncate: src=<*> newLength=<*>
+[DEBUG]:Got one inactive stream:
+[DEBUG]:open URL connection
+[WARN]:The identifier for the State Store connection is not set
+[ERROR]:Edits cache is out of sync; looked for next txn id at %d but got start txn id for cache put request at %d. Reinitializing at new request.
+[INFO]:Permission check passed
+[ERROR]:Cannot remove <*>
+[ERROR]:Failed to fetch token from <*>
+[DEBUG]:Failed to get provided capacity
+[DEBUG]:RBW replica created
+[TRACE]:Writing txid <*>-<*> ; journal id: <*>
+[INFO]:Updating edits cache to use layout version <*> starting from txn ID <*>; previous version was <*>; old entries will be cleared.
+[WARN]:Configured write packet exceeds <*> bytes as max, + using <*> bytes., PacketReceiver.MAX_PACKET_SIZE, PacketReceiver.MAX_PACKET_SIZE
+[DEBUG]:Copied <*> meta to <*> and calculated checksum
+[INFO]:Number of suppressed read-lock reports: <*> Longest read-lock held at <*> for <*>ms via <*>
+[DEBUG]:Failed to get number of blocks pending deletion
+[INFO]:Can perform rollback for sd
+[INFO]:<*> Service RPC address: <*>
+[INFO]:Registering new backup node: ...
+[WARN]:Failed to get default policy for + fullPath + e
+[INFO]:Loading edits into backupnode to try to catch up from txid ...
+[ERROR]:Can't read back <*> bytes, partial read size: <*>, count, readCount
+[INFO]:Cleanup with logger
+[WARN]:hostsFilePath + is empty. + REFER_TO_DOC_MSG
+[INFO]:Not able to copy block ... because threads quota exceeded
+[DEBUG]:refreshLocatedBlock for striped blocks, offset= ...
+[DEBUG]:Incremented storage statistics OpCounter
+[DEBUG]:Activating DatanodeAdminManager with interval <*> seconds, <*> max blocks per interval, <*> max concurrently tracked nodes.
+[ERROR]:Error reported on file ... exiting
+[WARN]:Treat this jumbo write as a real random write, no support.
+[INFO]:Returning JSON response with location
+[INFO]:Next operation retrieved from backup input stream
+[DEBUG]:Closed channel exception
+[WARN]:Edit log tailer thread exited with an exception
+[INFO]:Fields read
+[ERROR]:Disk Outlier Detection daemon did not shutdown
+[DEBUG]:Failed to get number of dead in maintenance nodes
+[DEBUG]:<*> is in multiple subclusters
+[DEBUG]:Re-encryption handler throttling because total tasks pending re-encryption updater is <*>
+[INFO]:Attempting to create address for host without nnServiceName
+[TRACE]:<*>: shared memory segment access is disabled.
+[INFO]:Begin step SAVING_CHECKPOINT
+[DEBUG]:Log that a snapshot is created
+[DEBUG]:Removing SPS hint
+[TRACE]:openFileMap size: + size()
+[INFO]:Starting upgrade of local storage directories. old LV = ...; old CTime = ... new LV = ...; new CTime = ...
+[WARN]:The requested section for <*> is empty. It will not be output to the image
+[WARN]:Problem getting block size
+[INFO]:File: <*> is under construction. So, postpone this to the next retry iteration
+[INFO]:truncateBlock: blockFile=<*>, metaFile=<*>, oldlen=<*>, newlen=<*>
+[DEBUG]:write to <*>: <*>, block=<*>, datanode, Op.BLOCK_CHECKSUM, block
+[INFO]:Shutting down CacheReplicationMonitor
+[DEBUG]:Pinned block can't be moved, so skipping block
+[DEBUG]:Failed to choose from local rack (location = <*>); the second replica is not found, retry choosing randomly
+[WARN]:"Exact path handle not supported by filesystem "
+[INFO]:staleLogMSG.toString()
+[INFO]:Can't get path for dir fileId: <*>
+[TRACE]:Got journal, state = <*>; firstTxId = <*>; numTxns = <*>
+[ERROR]:Exception in creating null checksum stream: <*>
+[TRACE]:close(filename=<*>, block=<*>)
+[DEBUG]:logEdit operation
+[INFO]:Default name service: <*>, enabled to read or write
+[ERROR]:Unsupported operation attempted
+[INFO]:Completing previous rollback for storage directory <*>
+[ERROR]:Exception while stopping httpserver
+[INFO]:got stale replica ... Removing this replica from the replicaInfoMap and retrying.
+[INFO]:Replica <*> still can't be uncached because some clients continue to use it. Will wait for <*>
+[TRACE]:Chosen nodes: ...
+[DEBUG]:Adding zone <*> for re-encryption status
+[DEBUG]:Wait to get the mapping for the first time
+[DEBUG]:getECTopologyResultForPolicies
+[DEBUG]:<*> is disabled. Try enabling it first to capture slow peer outliers.
+[INFO]:Starting plan for Node : <*>:<*>, node.getDataNodeName(), node.getDataNodePort()
+[INFO]:commitBlockSynchronization(oldBlock=...
+[DEBUG]:Reporting non-HA namenode as operational: <*>
+[TRACE]:<*>: released <*>, this, slot
+[DEBUG]:Sorting located striped block
+[TRACE]:this: : purged replica from the cache. Removed from the replicaInfoMap. Removed from evictionMapName
+[INFO]:Stopping MarkedDeleteBlockScrubber.
+[ERROR]:Cannot retrieve nameservices for JMX: <*>
+[INFO]:Thread.currentThread().getName() + " was interrupted, exiting"
+[DEBUG]:doEditTx() op=<*> txid=<*>
+[WARN]:Invalid tagName: + tagName
+[DEBUG]:Failed to get number of blocks
+[DEBUG]:Next Step: <*>, nextStep
+[WARN]:Error managing cache for writer of block <*>, <*>
+[ERROR]:Must specify exactly one token file
+[INFO]:unknown POST /webhdfs/v1/...
+[DEBUG]:Setting quota for...
+[DEBUG]:BLOCK* NameSystem.abandonBlock: <*> is removed from pendingCreates
+[ERROR]:In-progress stale edits file + f + has improperly formatted transaction ID
+[INFO]:bpos.toString() + ": scheduling an incremental block report " + "to namenode: " + nnAddr + "."
+[INFO]:"opReadBlock <*> received exception: <*>", block, e
+[ERROR]:Failed to report to name-node.
+[INFO]:Shutting down CacheReplicationMonitor.
+[INFO]:Error report from + dnName + : + msg
+[DEBUG]:buildTokenServiceForLogicalUri
+[INFO]:Namespace ID found
+[DEBUG]:Client using encryption algorithm <*>
+[DEBUG]:Incremented write operations count
+[INFO]:EC Topology Verifier Result for specified policies
+[INFO]:Downloaded file <*> of size <*> bytes.
+[DEBUG]:Removing <*>
+[INFO]:Cannot get delegation token from <*>
+[INFO]:Begin step for saving cache pools
+[INFO]:Maximum error count exceeded. Error count: <*> Max error:<*>
+[DEBUG]:Adding trackID:<*> for the file id:<*> back to retry queue as some of the blocks are low redundant.
+[WARN]:Disk Balancer - Source and destination volumes are same: <*>
+[INFO]:LazyPersistFileScrubber was interrupted, exiting
+[ERROR]:Unresolved dependency mapping for host + node.getHostName() + . Continuing with an empty dependency list
+[INFO]:cliID: ..., src: 127.0.0.1, dest: 127.0.0.1, op: REQUEST_SHORT_CIRCUIT_SHM, shmId: ..., srvID: ..., success: true
+[WARN]:Exception in connecting to InMemoryAliasMap at <*>
+[INFO]:FSImageSaver clean checkpoint: txid=<*> when meet + Throwable., context.getTxId()
+[WARN]:Storage volume: <*> missing for the replica block: <*>. Probably being removed!
+[DEBUG]:Datanode:<*> storage type:<*> doesn’t have sufficient space:<*> to move the target block size:<*>
+[INFO]:CacheReplicationMonitor already running
+[INFO]:Refresh user to groups mapping successful for address
+[INFO]:Reported DataNode version 'dnVersion' of DN dnReg does not match NameNode version 'nnVersion'. Note: This is normal during a rolling upgrade.
+[WARN]:Block group <*> failed to write <*> blocks. It's at high risk of losing data.
+[DEBUG]:Checked files in directory
+[DEBUG]:Block <*> cannot be reconstructed due to shortage of source datanodes
+[ERROR]:Exception thrown while running DiskBalancerCLI.
+[INFO]:<*>
+[ERROR]:Cannot get Routers JSON from the State Store
+[ERROR]:Cannot create data directory <*>
+[ERROR]:Cannot get stats info for <*>: <*>.
+[WARN]:The given interval for marking stale datanode = ...
+[ERROR]:We got a closed connection from <*>
+[DEBUG]:DIR* FSDirectory.unprotectedDelete: failed to remove $<*> because it does not exist
+[DEBUG]:Setting up servlets
+[TRACE]:this: registered blockId with slot slotId (isCached=true)
+[WARN]:Error Recovery for block in pipeline datanodes: datanode index is reason
+[WARN]:Access control exception for operation
+[WARN]:FsDatasetImpl.shutdown ignoring InterruptedException from LazyWriter.join
+[DEBUG]:Cannot find location with namespace <*> in <*>
+[INFO]:Loading image file curFile using compression
+[INFO]:Nonpositive dircount in invalid READDIRPLUS request: <*>
+[INFO]:logUpdateMasterKey started
+[INFO]:Start loading edits file <*> maxTxnsToRead = <*> <*>
+[DEBUG]:handleVolumeFailures done with empty unhealthyVolumes
+[INFO]:Sent total: ...
+[WARN]:Inconsistent number of corrupt replicas for <*> + blockMap has <*> but corrupt replicas map has <*>
+[DEBUG]:BLOCK* findAndMarkBlockAsCorrupt: <*> not found on <*>
+[DEBUG]:requested offset=<*> and current offset=<*>
+[DEBUG]:Updating existing mount table entry
+[WARN]:Can't append file: <*>. Possibly the file is being closed. Drop the request: <*>, wait for the client to retry...
+[TRACE]:Skipping XMLEvent of type <*>(<*>)
+[INFO]:Remove the node out from dead node list: <*>.
+[ERROR]:Unable to acquire file lock on path <*>
+[ERROR]:Failed to delete dumpfile: <*>
+[WARN]:Deleting <*> has failed
+[ERROR]:Invalid argument, data size is less than count in request
+[WARN]:The value of DFS_NAMENODE_AVAILABLE_SPACE_RACK_FAULT_TOLERANT_BLOCK_PLACEMENT_POLICY_BALANCED_SPACE_TOLERANCE_KEY is invalid, Current value is balancedSpaceTolerance, Default value DFS_NAMENODE_AVAILABLE_SPACE_BLOCK_RACK_FAULT_TOLERANT_PLACEMENT_POLICY_BALANCED_SPACE_TOLERANCE_DEFAULT will be used instead.
+[INFO]:Nothing to flush
+[WARN]:Bad checksum type: <*>. Using default <*>
+[WARN]:Deleted a metadata file without a block + diskMetaFile.getAbsolutePath()
+[ERROR]:Could not initialize shared edits dir
+[DEBUG]:Token service set
+[DEBUG]:NameSystem.concat to <*>
+[INFO]:Can't remove lease for unknown datanode <*>
+[INFO]:Usage text displayed
+[ERROR]:image loading failed at offset <*>
+[INFO]:Storage locations checked
+[INFO]:None of the responders had a log to recover: + QuorumCall.mapToString(prepareResponses)
+[DEBUG]:DIR* NameSystem.delete: <*>
+[DEBUG]:invalidateCorruptReplicas error in deleting bad block <*> on <*>
+[TRACE]:Got batchedListing: <*>
+[INFO]:Executing "query plan" command.
+[INFO]:Set total cache pools
+[DEBUG]:Write lock released
+[DEBUG]:Cached <*> closing after <*> ops...
+[INFO]:Received block X size Y from address
+[INFO]:Next operation retrieved from file input stream
+[DEBUG]:Caught exception when obtaining reference count on closed volume
+[INFO]:Node <*> <*> healthy. It needs to replicate <*> more blocks. <*> is still in progress.
+[WARN]:Reporting bad block
+[ERROR]:Should not get commit return code: <*>
+[WARN]:Volume <*> detected as being unhealthy
+[DEBUG]:logUtilizationCollection("above-average", aboveAvgUtilized)
+[INFO]:Loading <*> strings
+[DEBUG]:Throttling re-encryption, sleeping for <*> ms
+[DEBUG]:Removing thread capacity: <*>. Max wait: <*>
+[DEBUG]:Transferring a replica to <*>
+[DEBUG]:BLOCK* removeStoredBlock: <*> from <*>
+[ERROR]:Must specify a valid cluster ID after the CLUSTERID flag
+[DEBUG]:Set owner operation created
+[INFO]:Block <*> has been invalidated. Marking short-circuit slots as invalid: <*>
+[WARN]:Sync of transaction range <*>-<*> took <*>ms ; journal id: <*>
+[TRACE]:nextTcpPeer: failed to create newConnectedPeer connected to <*>
+[DEBUG]:Send buf size <*>
+[WARN]:checkAllVolumesAsync - no volumes can be referenced
+[INFO]:Bootstrapping the InMemoryAliasMap from <*>
+[INFO]:Time taken to scan block pool <*> on <*>: <*>ms
+[WARN]:Can't get local NN thread dump due to Exception
+[ERROR]:Unable to load NameNode plugins. Specified list of plugins: conf.get(DFS_NAMENODE_PLUGINS_KEY)
+[INFO]:Prepared recovery for segment <*>: <*> ; journal id: <*>
+[ERROR]:Cannot locate eligible NNs for <*>
+[ERROR]:Audit event failed due to AccessControlException
+[DEBUG]:logEdit executed
+[DEBUG]:Updating file xattrs for re-encrypting zone <*>, starting at <*>
+[INFO]:Refresh call queue unsuccessfully for <*>
+[INFO]:Latest log is ; journal id:
+[DEBUG]:Connecting to datanode <*>
+[TRACE]:read(arr.length=<*>, off=<*>, len=<*>, filename=<*>, block=<*>, canSkipChecksum=<*>): I/O error
+[WARN]:A single batch of edits was too large to fit into the cache: startTxn = %d, endTxn = %d, input length = %d. The capacity of the cache (%s) must be increased for it to work properly (current capacity %d). Cache is now empty.
+[INFO]:Usage printed
+[DEBUG]:Replaced expired token: <*>
+[INFO]:Audit event logged
+[DEBUG]:Operation unchecked
+[WARN]:Last block locations not available. Datanodes might not have reported blocks completely. Will retry for $<*> times
+[WARN]:Unable to stop existing writer for block + b + after + writerStopMs + miniseconds.
+[INFO]:Shutting down all async data service threads...
+[ERROR]:FSImageFormatPBINode#serializeINodeDirectorySection: Dangling child pointer found. Missing INode in inodeMap: id=; path=; parent=
+[INFO]:No encryption info; returning direct stream
+[TRACE]:Retrieval of slow peer report for all nodes is disabled. To enable it, please enable config <*>.
+[DEBUG]:writeBlock receive buf size <*> tcp no delay <*>
+[TRACE]:Looking for delegation token to identify user
+[WARN]:deleting + fromFile.getAbsolutePath() + FAILED
+[WARN]:Last seen exception:
+[INFO]:Can't get path for dir fileId: dirHandle.getFileId()
+[INFO]:Start checkpoint for address
+[DEBUG]:Access token was invalid when connecting to <*>: <*>
+[DEBUG]:Deferred uncaching of <*> completed. usedBytes = <*>
+[DEBUG]:Getting the block pool id
+[WARN]:Update but the new block does not have a larger generation stamp
+[WARN]:mtime not found in file:<*>, will proceed with Du for space computation calculation
+[INFO]:Starting decommission of <*> <*> with <*> blocks
+[INFO]:Dead node <*> is put in maintenance state immediately.
+[TRACE]:<*>: pulled the last slot <*> out of <*>, this, slot.getSlotIdx(), shm
+[DEBUG]:*DIR* NameNode.append: file <*> for <*> at <*>
+[INFO]:Transactions count is : + checkpointConf.getTxnCount() + , to trigger checkpoint
+[WARN]:elapsed time:<*> is greater than threshold:<*>, mtime:<*> in file:<*>, will proceed with Du for space computation calculation
+[DEBUG]:BLOCK* findAndMarkBlockAsCorrupt: <*> not found
+[WARN]:File <*> skipped re-encryption because it is not encrypted! This is very likely a bug.
+[INFO]:Mount point added successfully
+[DEBUG]:Validity of parameters checked
+[ERROR]:Disk Balancer - Unknown key in get balancer setting. Key: <*>
+[WARN]:Failed to write legacy OIV image: ...
+[INFO]:Next operation retrieved from redundant input stream
+[WARN]:Failed to get the checksum for block <*> at index <*> in blockGroup <*>
+[DEBUG]:DFSStripedOutputStream does not support hflush. Caller should check StreamCapabilities before calling.
+[TRACE]:Failed to place enough replicas, still in need of X to reach Y (unavailableStorages=...,storagePolicy=...,newBlock=...) e
+[ERROR]:IOException during finalizing upgrade
+[INFO]:Loaded edits file(s)
+[DEBUG]:Get quota usage for path: nsId: <*>, dest: <*>, nsCount: <*>, ssCount: <*>, typeCount: <*>.
+[TRACE]:Client State ID= <*> and Server State ID= <*>
+[DEBUG]:Checking operation unchecked
+[INFO]:Starting edit log roll due to rolling upgrade finalization
+[INFO]:Reading cluster info from file : dataFilePath
+[INFO]:Not overwriting <*> with smaller file from trash directory. This message can be safely ignored.
+[DEBUG]:Handling volume failures
+[DEBUG]:Building remote locations list
+[DEBUG]:Directive <*>: the directive expired at <*> (now = <*>)
+[ERROR]:Cannot create State Store root directory <*>
+[WARN]:Failed to delete meta file for replica + replicaToDelete
+[WARN]:Encountered exception during format
+[DEBUG]:Location cache after invalidation: <*>
+[ERROR]:Unsupported operation exception
+[INFO]:Audit failed: renameSnapshot
+[DEBUG]:Write operation checked
+[DEBUG]:Retrieving checksum from an earlier-version DataNode: inferring checksum by reading first byte
+[INFO]:Successfully loaded <*> inodes
+[INFO]:Mount table entries cache refresh successCount=<*>,failureCount=<*>
+[DEBUG]:Deferring removal of stale storage <*> with <*> blocks
+[TRACE]:Excluded nodes: ...
+[INFO]:The filesystem under path 'dir' has numCorrupt CORRUPT files
+[DEBUG]:Block read failed. Getting remote block reader using TCP
+[ERROR]:Failed to create DFSClient for user: <*>
+[DEBUG]:Calling logRpcIds
+[ERROR]:Unexpected health check result <*> for volume <*>
+[DEBUG]:Added lastBlockCrc 0x<*> for block index <*> of size <*>, Integer.toString(lastBlockCrc, 16), locatedBlocks.size() - 1, consumedLastBlockLength
+[WARN]:Cannot initialize /lost+found .
+[INFO]:Node report generated for each DiskBalancerDataNode
+[INFO]:DN <*> joining cluster has expanded a formerly single-rack cluster to be multi-rack. Not checking for mis-replicated blocks because this NN is not yet processing repl queues.
+[INFO]:Successfully warmed up <*> EDEKs.
+[WARN]:<*> is corrupt but has no associated node.
+[ERROR]:-r, --rack arguments are not supported anymore. RackID resolution is handled by the NameNode.
+[INFO]:Refresh Responses:
+[INFO]:End step DELEGATION_TOKENS
+[DEBUG]:SASL client doing encrypted handshake for addr = <*>, datanodeId = <*>
+[ERROR]:<*> ignoring reserved path <*>
+[INFO]:Executing "execute plan" command
+[TRACE]:this: registered blockId with slot slotId (isCached=false)
+[INFO]:RECOVERY COMPLETE
+[TRACE]:getNextSubDir(<*>, <*>): picking next subdirectory <*> within <*>
+[DEBUG]:Refresh dfs used, bpid: <*>, replicas size: <*>, dfsUsed: <*> on volume: <*>, duration: <*>ms
+[WARN]:LazyPersistFileScrubber encountered an exception while scanning for lazyPersist files with missing blocks. Scanning will retry in <*> seconds.
+[WARN]:DIR* FSDirectory.unprotectedRenameTo: Rename destination " + dst + " is a directory or file under source " + src
+[ERROR]:No edits directories configured!
+[INFO]:Starting SPSPathIdProcessor!.
+[ERROR]:<*> ignoring path <*> with scheme
+[WARN]:Invalid tagName: <*>
+[DEBUG]:Changed current proxy from <*> to <*>
+[INFO]:transferBlock <*> received exception <*>
+[WARN]:"Got exception while serving <*> to <*>: ", block, remoteAddress, ioe
+[INFO]:There are <*> pending writes.
+[INFO]:Completing previous checkpoint for storage directory <*>
+[ERROR]:Query plan failed. ex: <*>, ex
+[DEBUG]:Processing report command
+[WARN]:Probe failed, add suspect node to dead node list: <*>.
+[DEBUG]:BLOCK* NameSystem.LowRedundancyBlock.update: <*> has only <*> replicas and needs <*> replicas so is added to neededReconstructions at priority level <*>
+[INFO]:Namenode is in safemode. It will retry again.
+[INFO]:ACL entries removed successfully
+[ERROR]:Name-node will treat the image as the latest state of the namespace. Old edits will be discarded.
+[DEBUG]:LazyWriter: Finish persisting RamDisk block: block pool Id: bpId block id: blockId to block file savedFiles<*> and meta file savedFiles<*> on target volume targetVolume
+[DEBUG]:Cleaning up with logger
+[WARN]:Exception in getting reader from provided alias map
+[DEBUG]:got reply from <*>: blockChecksum=<*>, blockChecksumType=<*>, datanode, blockChecksumForDebug, getBlockChecksumType()
+[INFO]:Got finalize command for block pool ...
+[INFO]:dnUserName = <*>
+[DEBUG]:Loading filter handler <*>
+[ERROR]:Unable to abort stream <*>
+[DEBUG]:BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block <*> from priority queue <*>
+[INFO]:STATE* Safe mode is OFF
+[WARN]:Periodic block scanner is not running
+[INFO]:Took <*> ms to collect <*> open files with leases <*>
+[WARN]:Fatal disk error on Unknown DataNode: ...
+[WARN]:BLOCK* BlockUnderConstructionFeature.initializeBlockRecovery: No blocks found, lease removed.
+[INFO]:Temporary redirect with URI for file checksum
+[DEBUG]:BLOCK* block RECEIVED_BLOCK: block <*> is received from <*>
+[DEBUG]:BLOCK* block <*> is moved from neededReconstruction to pendingReconstruction
+[TRACE]:openFileMap size:<*>
+[DEBUG]:<*>: starting cache cleaner thread which will run every <*> ms, this, rateMs
+[WARN]:SecondaryNameNode principal not considered, ...
+[INFO]:Satisfy storage policy
+[ERROR]:Cannot get "<*>" records from the State Store
+[INFO]:Submitted batch (start:<*>, size:<*>) of zone <*> to re-encrypt.
+[INFO]:Checking removing StorageLocation <*> with id <*>
+[WARN]:Caught exception after scanning through ... ops from ... while determining its valid length. Position was ...
+[DEBUG]:Start rolling upgrade
+[WARN]:Error in looking up block
+[INFO]:Validating log segment <*> about to be finalized ; journal id: <*>
+[WARN]:Unexpected exception in block pool this
+[WARN]:Failed to move + this, e
+[DEBUG]:State transition <*> -> <*>
+[INFO]:Deactivating volumes (clear failure=%b): %s
+[WARN]:error creating ShortCircuitReplica., e
+[INFO]:Persistent memory is used for caching data instead of DRAM. Max locked memory is set to zero to disable DRAM cache
+[WARN]:Current bytesPerCRC=<*> doesn’t match next bpc=<*>
+[DEBUG]:Got invalid encryption key error in response to OP_BLOCK_CHECKSUM
+[DEBUG]:MOUNT UMNTALL : client: + client
+[DEBUG]:<*> Skipping disk from computation. Minimum data size achieved., highVolume.getPath()
+[WARN]:Removing lazyPersist file <*> with no replicas.
+[ERROR]:Failed to acquire lock on <*>. If this storage directory is mounted via NFS, ensure that the appropriate nfs lock services are running.
+[INFO]:Operation category checked
+[WARN]:Setting password to null since IOException is caught when getting password
+[WARN]:Unable to warm up EDEKs.
+[DEBUG]:Validating request made by...
+[INFO]:<*> exiting.
+[INFO]:<*> Starting thread to transfer <*> to <*>
+[ERROR]:Cannot read JMX bean <*> from server <*>
+[ERROR]:Submitting plan on <*> failed. Result: <*>, Message: <*>
+[WARN]:addDirective of + info + failed: , e
+[INFO]:Start loading token cache
+[DEBUG]:Invalid mode:<*>, ignoring
+[DEBUG]:Get InputStream by cache address.
+[DEBUG]:Logging legacy generation stamp
+[DEBUG]:, freeQueueSize=
+[ERROR]:Unsupported protocol found when creating the proxy connection to NameNode
+[WARN]:Failure processing re-encryption task for zone <*>
+[DEBUG]:Setting <*> to <*>
+[WARN]:IOException caught when re-encrypting zone <*>
+[INFO]:STATE* Safe mode is already OFF
+[INFO]:Finalizing edits file inprogressFile -> dstFile
+[INFO]:DIR* completeFile: request from ... to complete inode ... which is already closed.
+[ERROR]:Unable to read transaction ids from the configured shared edits storage. Error: <*>
+[INFO]:Skipping download of remote edit log + log + since it already is stored locally at + f
+[ERROR]:Exception during StoragePolicySatisfier execution - will continue next cycle
+[DEBUG]:NFS READDIR fileHandle: <*> cookie: <*> count: <*> client: <*>
+[INFO]:<*>: could not load <*> due to InvalidToken exception.
+[INFO]:Purging old legacy OIV images
+[TRACE]:<*>: successfully loaded <*>
