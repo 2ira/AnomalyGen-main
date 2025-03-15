@@ -1,0 +1,958 @@
+ examine: 
+=
+Bad configuration no queues defined 
+D: 
+D_LIBRARY_PATH=
+ECV: 
+EFORE decResourceRequest:
+ELETED 
+EQUATOR) 
+FTER decResourceRequest:
+ID: 
+ILLING 
+M not assigned to Job. Waiting to get the AM ...
+MCommunicator notified that isSignalled is: 
+MCommunicator notified that shouldUnregistered is: 
+NativeCollectorOnlyHandler] combiner is not null
+OB_CREATE 
+ONTAINER_REMOTE_LAUNCH contains a map task (
+ONTAINER_REMOTE_LAUNCH contains a reduce task (
+OT preempting 
+PPLICATION_ATTEMPT_ID: 
+PP_CLASSPATH=
+QLException closing resultset: 
+QLException closing statement: 
+QLException committing split transaction: 
+Queue 
+RAppMaster launching normal, non-uberized, multi-container 
+RAppMaster received a signal. Signaling RMCommunicator and 
+RAppMaster uberizing job 
+REEMPTION TASK: setting mustPreempt to 
+RESET) equator 
+RROR IN CONTACTING RM. 
+S Admin: 
+SError from child
+SError: 
+TTEMPT_START 
+UBMITTING ApplicationSubmissionContext app:
+Using ResourceCalculatorProcessTree : 
+V read from Stream [
+V read from [
+V written to Stream [
+VM with ID : 
+VM with ID: 
+achedHistoryStorage Init
+ackground thread returning, interrupted
+ad conf file: top-level element not <queues>
+adoop command-line option parsing not performed. 
+adoop platform inited
+ailed checking for the existance of history intermediate 
+ailed to cleanup staging dir 
+ailed to cleanup staging dir: 
+ailed to close classloader created 
+ailed to connect to 
+ailed to connect to host: 
+ailed to contact AM/History for job 
+ailed to contact the tasktracker
+ailed to createOutputCommitter
+ailed to delete symlink created by the local job runner: 
+ailed to execute refreshJobRetentionSettings : Job History service is not started
+ailed to execute refreshLoadedJobCache: CachedHistoryStorage is not started
+ailed to execute refreshLoadedJobCache: JobHistory service is not started
+ailed to instantiate ClientProtocolProvider, please 
+ailed to load nativetask JNI library with error: 
+ailed to manage OS cache for 
+ailed to process Event 
+ailed to process fileInfo for job: 
+ailed to render attempts page with task type : 
+ailed to render tasks page with task type : 
+ailed to resolve address: 
+ailed to save summary to {}
+ailed to set setXIncludeAware(true) for parser 
+ailed to shuffle for fetcher#
+ailed to shuffle output of 
+ailed to update failure diagnosis
+ailed to write the job configuration file
+ailed while checking for/creating  history staging path: [
+ailed while getting the configured log directories
+ailure asking whether task can commit: 
+ailure cleaning up: 
+ailure committing: 
+ailure sending commit pending: 
+ailure sending status update: 
+ailure signalling completion: 
+ailure to clean up 
+aiting for 
+aiting for Event Handling thread to complete
+aiting for FileSystem at 
+aiting for application to be successfully unregistered.
+aiting for authentication response
+aiting for finish
+aiting has been interrupted
+aiting scan completion
+aiting to remove IN_INTERMEDIATE state histories 
+aiting to remove MOVE_FAILED state histories 
+alidateSpillIndexFileCB.. Path: {}
+alidateSpillIndexFileCB.. could not retrieve indexFile.. 
+alled getAllJobs(AppId): 
+alled getAllPartialJobs()
+alling handler for JobFinishedEvent 
+alling stop for all the services
+amping down 
+amping up 
+an't create NativeObject for class 
+an't handle this event at current state
+an't handle this event at current state for 
+an't make a speculation runtime estimator
+an't make a speculator -- check 
+anceling the task attempt 
+ancelling commit
+andling uplink command 
+annot assign container 
+annot constuct TACEStatus from TaskAtemptState: [
+annot find a range for NUMERIC or DECIMAL fields with one end NULL.
+annot locate shuffle secret in credentials.
+annot pick 
+annot read symbolic link on
+annot set replication to 
+annot submit job to parent queue 
+ap 
+ap #
+ap ID
+ap ID 
+ap output collector class = 
+ap tasks to process: 
+apCompletionEvents request from 
+apId=
+apOutput URL for 
+apResourceRequest:
+arent died.  Exiting 
+arget 
+arget directory not specified
+arsing job history file with partial data encoded into name: 
+arts[
+ask 
+ask '
+ask attempt 
+ask cleanup failed for attempt 
+ask final state is not FAILED or KILLED: 
+ask java-opts do not specify heap size. Setting task attempt
+ask no longer available: 
+ask status: "
+ask succeeded with attempt 
+ask timeout must be as least twice as long as the task 
+ask-diagnostic-info for task 
+ask:
+ask: 
+ask: Loaded jobTokenFile from: 
+askAttempt
+askAttempt 
+askAttempt: [
+askHeartbeatHandler thread interrupted
+askInfo is null for TaskAttemptUnsuccessfulCompletionEvent
+askInfo loaded
+askType 
+ast fail the job because the cluster storage capacity was exceeded.
+ast retry, killing 
+atal: 
+ath 
+athCache Eviction: {}, Reason={}
+ative output collector can be successfully enabled!
+ativeHandler: direct buffer size: 
+ativeTask Combiner is enabled, class = 
+ativetask JNI library loaded.
+aught exception parsing history file after 
+aunching 
+ava.library.path=
+aved output of task '
+ax block location exceeded for split: 
+ax job attempts set to 1 since encrypted intermediate
+ax local threads: 
+axContainerCapability: 
+axTaskFailuresPerNode is 
+ay result in an incomplete import.
+berizing job 
+best: 
+borting Job {} in state {}
+borting already-finished MapOutput for 
+borting because of 
+borting job with runstate : 
+can complete: shutting down
+can failed
+can not needed of 
+canning file: 
+canning intermediate dir 
+canning intermediate dirs
+cheduling a redundant attempt for task 
+cheduling move to done of 
+current name 
+ddResourceRequest:
+ddSpillIndexFileCB... Path: {}
+dded 
+dded Memory Segment to List. List Size is 
+dded attempt req to host 
+dded attempt req to rack 
+dded entry #{}: {}
+dded priority=
+dded token for 
+dding 
+dding #
+dding IOStatistics: {}
+dding ShuffleProvider Service: 
+dding block of {} entries
+dding in history for 
+dding job token for 
+dding the following namenodes' delegation tokens:
+e got asked to run a debug speculation scan.
+e launched 
+ead 
+ead completed tasks from history 
+ead from history task 
+eader: 
+eading Manifest in file {}
+eading success data from {}
+eadroom=
+ebapps failed to start. Ignoring for now:
+ecalculating schedule, headroom=
+eceived completed container 
+eceived new Container :
+ecord too large for in-memory buffer: 
+ecovered 
+ecovered output from task attempt 
+ecovering 
+ecovering task 
+ecovering task for upgrading scenario, moving files from 
+educe preemption successful 
+educe slow start threshold not met. 
+educe slow start threshold reached. Scheduling reduces.
+educe tasks to process: 
+educeResourceRequest:
+eed: 
+eepAliveParam : 
+eeping 
+efault FileSystem: 
+efault file system [
+efault file system is set solely 
+efaultSpeculator.addSpeculativeAttempt -- we are speculating 
+egotiable preemption :
+ejecting recoverTask({}) call
+eleasing unassigned container 
+elete startJobCommitFile in case commit is not finished as 
+eleting 
+eleting JobSummary file: [
+eleting staging directory 
+emoved attempt 
+emoved previousRange 
+emoving from cache 
+emoving master key 
+emoving token 
+enaming map output file for task attempt 
+end configurations that match regex expression: 
+ending AUTHENTICATION_REQ, digest=
+ending event 
+ending reportNextRecordRange 
+ending signal to all members of process group 
+enerating 
+enerating splits for a floating-point index column. Due to the
+enerating splits for a textual index column.
+ength of dest file {}: {} does not match that of manifest entry {}
+ent abort command
+ent close command
+eplacing FAST_FAIL_MAP container 
+eplacing MAP container 
+eport already exists: {}
+eporting fetch failure for 
+equest for unknown token 
+ergeQ: adding: 
+erged 
+ergerManager: memoryLimit=
+erging 
+erifying request. enc_str=
+erminated node allocation with : CompletedNodes: {}, size left: {}
+ermissions on staging directory 
+erms after creating 
+ery low remaining capacity in the event-queue 
+eserve(int, InputStream) not supported by BackupRamManager
+eserving: 
+eset - First segment offset is 
+esource capability of task type {} is set to {}
+esourceRequest:
+esourceRequest: resource = 
+essage 
+esult of canCommit for 
+et BigDecimal splitSize to MIN_INCREMENT
+et a negative backoff value from ShuffleHandler. Setting
+et historyUrl to 
+et replication to 
+etBlacklistedTrackers - Not implemented yet
+etMapEventsThread about to sleep for 
+etMapOutputInfo: jobId=
+etMaxVirtualMemoryForTask() is deprecated.
+etMaxVirtualMemoryForTask() is deprecated. 
+etProxy() call interruped
+etResources() for 
+etSpillFileCB.. Could not find spilled file .. Path: {}
+etSpillFileCB... Path {}; Pos: {}
+etSpillFileCB... access incorrect position.. 
+etStagingAreaDir: dir=
+etTaskLogFileDetail threw an exception 
+etcher 
+etcher request verfied. enc_str=
+etcher#
+etrieved pathInfo for 
+etsid exited with exit code 
+etsid is not available on this machine. So not using it.
+etting 
+etting ContainerLauncher pool size to 
+etting classloader 
+etting connection close header...
+etting default time zone: GMT
+etting job diagnostics to 
+etting list of all Jobs.
+etting preemption bit for task: 
+etting task report for 
+etting the FirsSegmentOffset to 
+eturning, interrupted : 
+etwork ACL closed to AM for job 
+ex.size() = 
+extRange 
+f your database sorts in a case-insensitive order, 
+ffset=
+gnore blacklisting set to false. Known: 
+gnore blacklisting set to true. Known: 
+gnore disabling erasure coding for path {} because method 
+gnored 
+gnored non-jar 
+gnoring FS object {}
+gnoring client socket close
+gnoring closed channel error
+gnoring enqueue of empty list
+gnoring exception during close for 
+gnoring killed event for successful map only task attempt
+gnoring killed event for successful reduce task attempt
+gnoring obsolete output of 
+gnoring output of failed map TIP: '
+gnoring unexpected event 
+hared cache does not support directories
+he API getMaxPhysicalMemoryForTask() is deprecated.
+he API setMaxPhysicalMemoryForTask() is deprecated.
+he job-conf file on the remote FS is 
+he job-jar file on the remote FS is 
+he max number of bytes for a single in-memory shuffle cannot
+he property 
+he same path is included more than once 
+he thread pool initial size is 
+he url to track the job: 
+heckAccess job acls, jobOwner: 
+hecking access for the acl 
+hecking state of job 
+hild starting
+hitelisted 
+hread 
+hread sleep is interrupted.
+huffle error 
+huffle error :
+huffle error in populating headers :
+huffle error: 
+huffle failed : local error on this node
+huffle failed : local error on this node: 
+huffle failed with too many fetch failures 
+huffle failure 
+huffle output from 
+huffle port returned by ContainerManager for 
+huffle secret key missing from job credentials.
+huffle secret missing from task credentials.
+huffleError: 
+hutting down timer 
+hutting down timer for 
+hutting down writer; entry lists in queue: {}
+iagnostics report from 
+icked 
+icking 
+ignaling process 
+igured value for 
+ile Output Committer Algorithm version is 
+ile is not splittable so no parallelization 
+ileOutputCommitter skip cleanup _temporary folders under 
+illing 
+illing map task 
+illing taskAttempt:
+ime taken to get FileStatuses: 
+ime to delete files {}
+ime to prepare directories {}
+ime zone 
+ime zone has been set to 
+imeline entities are successfully put in event 
+imeline service is enabled; version: 
+imeline service is not enabled
+imeout expired in FAIL_WAIT waiting for tasks to get killed.
+imeout for copying MapOutput with retry on host 
+imeout is set to 0. Skipping replication check.
+imeout submitting entries to {}
+imeout waiting for write thread to finish
+inal Counters for 
+inalMerge called with 
+inding containerReq for allocated container: 
+ine = 
+ing from 
+ingSocketCleaner exception
+ingSocketCleaner started...
+inished cleaning up previous job temporary files
+inished dispatching all Mappper.map calls, job 
+inished spill 
+inishing task: 
+ipe child done
+irectory: [
+isabling Erasure Coding for path: 
+isk Segment added to List. Size is 
+isk file: 
+issing header hash for 
+issing successful attempt for task 
+istory Cleaner complete
+istory Cleaner started
+istory file is at 
+istory url is 
+istoryCleanerService/move to done shutdown may not have 
+ize of containertokens_dob is 
+ize of event-queue in RMContainerAllocator is 
+ize of the JobHistory event queue is 
+jobconf option is deprecated, please use -D instead.
+kdirs failed to create 
+kdirs failed. Ignoring.
+kip cleanup the _temporary folders under job's output 
+kipped line of size 
+kipping cleaning up the staging dir. 
+kipping index 
+kipping unexpected file in history server token bucket: 
+kipping unexpected file in history server token state: 
+lacing a new container request for task attempt 
+lacklistDisablePercent is 
+lacklisted 
+lacklisted host 
+latform 
+leanUpPartialOutputForTask: removing everything belonging to 
+leaning up job
+leaning up the staging area 
+leanupThread:Unable to delete path 
+lease set EXECUTE permissions on this directory
+leep in connection retry get interrupted.
+leeping for 
+lientServiceDelegate invoke call interrupted
+ll maps assigned. 
+llQueues : 
+llocated thread interrupted. Returning.
+lose socket cause client has closed.
+loseInMemoryFile -> map-output of size: 
+loseInMemoryMergedFile -> size: 
+losing Writer
+losing connection
+losing is Interrupted
+lushing 
+mitting job history data to the timeline server is not 
+mitting job history data to the timeline service is enabled
+mprecise representation of floating-point values in Java, this
+n HistoryEventHandler 
+n HistoryEventHandler, handle timelineEvent:
+n flush timer task
+n stop, writing event 
+n the current state, queue 
+nDiskMerger: We have  
+nable to create default file context [
+nable to delete unexpected local file/dir 
+nable to determine FileDescriptor
+nable to parse finish time from job history file 
+nable to parse num maps from job history file 
+nable to parse num reduces from job history file 
+nable to parse prior job history, aborting recovery
+nable to parse start time from job history file 
+nable to parse submit time from job history file 
+nable to recover task attempt 
+nable to remove master key 
+nable to remove token 
+nable to store master key 
+nable to store token 
+nable to update token 
+nable to write out JobSummaryInfo to [
+ncountered a NULL date in the split column. Splits may be poorly balanced.
+ncover 
+ncrypted shuffle is enabled.
+ndex=
+ndexCache HIT: MapId 
+ndexCache MISS: MapId 
+ndexCache created with max memory = 
+nexpected event for REDUCE task 
+nexpected parameters
+nitializing Existing Jobs...
+nitializing cluster for Job Tracker=
+nitiating Memory-to-Memory merge with 
+nitiating in-memory merge with 
+nownNode Count at 0. Not computing ignoreBlacklisting
+nput size for job 
+nrecognized value '
+nreserving: 
+nstantiated HistoryClientService at 
+nstantiated LocatedFileStatusFetcher with {} threads
+nstantiated MRClientService at 
+nstantiating committer {} with output path {} and job context
+nstantiating committer {} with output path {} and task context
+nsupported permission configured in 
+nterrupted
+nterrupted Exception while stopping
+nterrupted deletion of 
+nterrupted deletion of an invalid path: Path deletion 
+nterruptedException while stopping
+nterrupting Event Handling thread
+ntryFile write queue inactive; discarding {} entries submitted to {}
+nvalid Input Errors raised
+nvalid event 
+nvalid map id 
+nvalid map-output! Received output for 
+nvalid value for 
+nvironment 
+o Output found for 
+o file for job-history with 
+o file for jobConf with 
+o file for jobconf with 
+o filesystem specified in either fs or target.
+o job jar file set.  User classes may not be found. 
+o ondisk files to merge...
+o output committer factory defined,
+o rename: {}
+o scheme-specific factory defined in {}
+o space available. Available: 
+o summary directory set in 
+o summary file for job: 
+oaded 
+oaded : {} via loader
+oaded state DB schema version info 
+oaded state version info 
+oading history file: [
+oading history server state from 
+oading job: 
+oading master key from 
+oading token from 
+oading user's secret keys from 
+ob 
+ob Abort statistics {}
+ob History Server is not configured.
+ob Staging directory is null
+ob control has circular dependency for the  job 
+ob end notification interrupted for jobID : 
+ob end notification started for jobID : 
+ob finished cleanly, recording last MRAppMaster retry
+ob init failed
+ob jar is not present. 
+ob setup failed
+ob summary saved to {}
+obHistory Init
+obHistoryEventHandler notified that forceJobCompletion is 
+ocal filesystem 
+ocalFetcher 
+ocalfetcher#
+odeBlacklistingEnabled:
+odifying permissions to 
+oft limit at 
+og Directory is null, returning
+oing to preempt 
+oken kind is 
+ommand to launch container for ApplicationMaster is : 
+ommit go/no-go request from 
+ommit-pending state update from 
+ommitting job
+ommunication exception: 
+ompletedMapPercent 
+ompressed input; cannot compute number of records in the split
+ompressing tarball
+one
+one acknowledgment from 
+one recovering task 
+onfiguration 
+onfiguring 
+onfiguring "
+onfiguring job 
+onfiguring jobConf 
+onfiguring multithread runner to use 
+onfiguring queue ACLs in mapred-site.xml or 
+onnected to ApplicationMaster at: 
+onnected to HistoryServer at: 
+onnecting to 
+onnecting to ApplicationMaster at: 
+onnecting to HistoryServer at: 
+onnecting to MRHistoryServer at: 
+onnection received from {}
+onnection rejected by the host 
+onnection retry failed with 
+ontainer allocated at unwanted priority: 
+ontainer complete event for unknown container 
+ontainer completed 
+ontent Length in shuffle : 
+ontext classloader of thread 
+oo many fetch-failures for output of task attempt: 
+ooking for Job 
+ooking for a token with service 
+ooking for committer factory for path {}
+opied from: 
+opsie...  this can never happen: 
+opy failed from: 
+opyMapOutput failed for tasks 
+opying 
+or url=
+ork file for {} extension '{}' is {}
+ork path is {}
+ost 
+ost matched to the request list 
+ot 
+ot a link
+ot able to initialize queue 
+ot allocated container on a blacklisted 
+ot allocated containers 
+ot an error parsing job-history file
+ot attempting to recover. Intermediate spill encryption
+ot attempting to recover. Recovery disabled. To enable 
+ot attempting to recover. Recovery is not supported by 
+ot attempting to recover. The shuffle key is invalid for 
+ot creating job classloader since APP_CLASSPATH is not set.
+ot decrementing resource as 
+ot done
+ot dt for 
+ot generating HistoryFinish event since start event not
+ot generating HistoryFinish event since start event not 
+ot interrupt while joining 
+ot interrupted while joining 
+otal # of splits generated by getSplits: 
+otal input files to process : 
+otalPageview=
+otification error [
+otification retry error [
+otify JHEH isAMLastRetry: 
+otify RMCommunicator isAMLastRetry: 
+ou are strongly encouraged to choose an integral split column.
+ould not abort job
+ould not commit job
+ould not connect to 
+ould not connect to History server.
+ould not contact RM after 
+ould not create failure file.
+ould not create log file: [
+ould not deallocate container for task attemptId 
+ould not delete 
+ould not find 
+ould not find method setSessionTimeZone in 
+ould not find output size 
+ould not find serial portion from path: 
+ould not find the clause substitution token 
+ould not find timestamp portion from path: 
+ould not get Job info from RM for job 
+ould not get LocalFileSystem BYTES_WRITTEN counter
+ould not get inputStream position.. Path {}
+ould not list directory 
+ould not map allocated container to a valid request.
+ould not obtain compressor from CodecPool
+ould not obtain decompressor from CodecPool
+ould not obtain job info after 
+ould not parse the old history file. 
+ould not set time zone for oracle connection
+ouldn't get current user
+ouldn't parse Token Cache JSON file with user secret keys
+ound 
+ound UTF-8 BOM and skipped it
+ound jobId 
+ound replacement: 
+ounter name MAP_INPUT_BYTES is deprecated. 
+ource file 
+ove no longer pending
+oveToDone: 
+oved tmp to done: 
+over 
+oving 
+own to the last merge-pass, with 
+pdate native status got exception
+pdate the blacklist for 
+pdating token 
+peration hsync is not supported so far on path with 
+pilling map output
+ploaded 
+ppMaster capability = 
+pper limit on the thread pool size is 
+pplication state is 
+pplication state is completed. FinalApplicationStatus=
+pplicationMaster is out of sync with ResourceManager,
+pplying ask limit of 
+raceful stop failed. Exiting.. 
+reated MRAppMaster for application 
+reated ManifestCommitter with JobID {},
+reated a new BackupStore with a memory of 
+reated a new mem block of 
+reated attempt 
+reated file: 
+reated jobQInfo 
+reating FileOutputCommitter for path {} and context {}
+reating GZip
+reating db record reader for db product: 
+reating directory {}
+reating intermediate history logDir: [
+reating job classloader
+reating setup context, jobSubmitDir url is 
+reating splits at 
+reating state database at 
+reempted state update from 
+reempting 
+reparing {} directory/directories; {} parent dirs implicitly created
+revious history file is at 
+revious job temporary files do not exist, 
+reviousRange 
+riginal source 
+rite failure
+riteSpillFileCB.. path:{}; pos:{}
+riting event
+riting text output to 
+rl=
+robe for isCommitJobRepeatable({}): returning false
+robe for isRecoverySupported({}): returning false
+robe for needsTaskCommit({})
+roblem determining local host: 
+rocessInitialInputPathCallable path {}
+rocessInputDirCallable {}
+rocessed {} files
+rocessing 
+rocessing split: 
+rocessing the event 
+rogress of TaskAttempt 
+ropping 
+ropping a segment
+roup 
+rror
+rror : 
+rror JobHistoryEventHandler in handleEvent: 
+rror cleaning up 
+rror cleaning up a HistoryFile that is out of date.
+rror cleaning up job:
+rror closing writer for JobID: 
+rror communicating with RM: 
+rror creating user intermediate history done directory: [ 
+rror deleting path 
+rror deleting {}: {}
+rror during getMeta
+rror during initApp
+rror during stopApp
+rror executing shell command 
+rror in cleanup job, manually cleanup is needed.
+rror in execution 
+rror in handling event type 
+rror number format: 
+rror parsing conf file: 
+rror putting entity 
+rror reading/writing job
+rror running child : 
+rror running local (uberized) 'child' : 
+rror starting JobHistoryServer
+rror starting MRAppMaster
+rror trying to clean up 
+rror trying to contact the shared cache manager,
+rror trying to convert URL received from shared cache to
+rror trying to open previous history file. No history data 
+rror trying to scan for all FileInfos
+rror when checking for application status
+rror when publishing entity [
+rror while closing MultipleOutput file
+rror while reading 
+rror while scanning directory 
+rror while scanning intermediate done dir 
+rror while starting the Secret Manager threads
+rror while trying to clean up previous job's temporary 
+rror while trying to delete history files
+rror while trying to move a job to done
+rror while trying to run jobs.
+rror while trying to scan the directory 
+rror while tyring to clean up 
+rror writing History Event: 
+rying ClientProtocolProvider : 
+rying map output collector class: 
+rying to delete 
+rying to recover task from 
+rying to set finish time for task 
+rying to set illegal startTime for task : 
+sage of -Djava.library.path in 
+ser 
+sing 
+sing OutputCommitter factory class {} from key {}
+sing PathOutputCommitter implementation {}
+sing ShuffleConsumerPlugin: 
+sing deprecated num.key.fields.for.partition. 
+sing mapred newApiCommitter.
+sing new api for output committer
+sing query: 
+sing schema-specific factory for {}
+sing state database at 
+ssigned 
+ssigned based on * match
+ssigned based on host match 
+ssigned based on rack match 
+ssigned container 
+ssigned container (
+ssigned from earlierFailedMaps
+ssigned to reduce
+ssigning 
+ssigning container 
+ssues starting disk monitor thread: 
+ssuing kill to other attempt 
+t root level only " queue " tags are allowed 
+tack trace
+tag of dest file {}: {} does not match that of manifest entry {}
+tartJobs: parent=
+tarted entry writer {}
+tarting
+tarting application
+tarting downlink
+tarting flush of map output
+tarting inMemoryMerger's merge since commitMemory=
+tarting mapper thread pool executor.
+tarting reduce thread pool executor.
+tarting scan to move intermediate done files
+tarting solve
+tarting task: 
+tarting to clean up previous job's temporary files
+task completed:
+tate-string for task 
+tatus update was called with illegal TaskAttemptId: 
+tatusUpdater thread exiting 
+top processing
+topped JobHistoryEventHandler. super.stop()
+topping History Cleaner/Move To Done
+topping JobHistory
+topping JobHistoryEventHandler. 
+toring master key 
+toring state DB schema version info 
+toring state version info 
+toring token 
+trict preemption :
+ttempt num: 
+ttemptInfo is null for TaskAttemptUnsuccessfulCompletionEvent
+ttempting to recover.
+ubmitting tokens for job: 
+ueue 
+ueue configuration is refreshed successfully.
+ueue: 
+ueueing directory scan {}
+ueueing {} entries
+ueuing scan of directory {}
+ufstart = 
+uggested mapreduce.application.classpath $PWD/
+ull event handling thread
+um completed Tasks: 
+umPageview=
+umReduceTasks: 
+umber of children for queue 
+umber of reduces for job 
+umber of splits:
+ummary directory set in to {}
+unning cleanup for the task
+unning job: 
+uplicate: deleting
+urrentIndex 
+urther groups got skipped.
+urther records got skipped.
+uthentication succeeded
+utput Path is null in abortTask()
+utput Path is null in cleanupJob()
+utput Path is null in commitJob()
+utput Path is null in commitTask()
+utput Path is null in recoverTask()
+utput Path is null in setupJob()
+utputCommitter is 
+utputCommitter set in config 
+utting shuffle token in serviceData
+vbuffer is null. Skipping flush.
+vent Writer setup for JobId: 
+vent from RM: shutting down Application Master
+vent handling interrupted
+ventFetcher is interrupted.. Returning
+ventQueue take interrupted. Returning
+ventType: 
+victing 
+vstart = 
+waiting all running Mappper.map calls to finish, job 
+xception
+xception cleaning up: 
+xception get thrown in job commit, retry (
+xception in closing 
+xception in committer.isCommitJobRepeatable():
+xception in getting events
+xception occurred while closing connection :
+xception occurred while shutting down HSQLDB :
+xception on close
+xception running child : 
+xception running local (uberized) 'child' : 
+xception while canceling delayed flush timer. 
+xception while closing file 
+xception while parsing job state. Defaulting to KILLED
+xception while publishing configs on JOB_SUBMITTED Event 
+xception while registering
+xception while unregistering 
+xecuting with tokens: {}
+xisting job initialization finished. 
+xpanded source 
+xpecting 
+xplicitly setting permissions to : 
+}
+} directory already exists
+}: Although mkdirs({}) returned false, there's nothing at that path to prevent it
+}: Cleanup of {} disabled
+}: Cleaup of directory {} with {}
+}: Committing job "{}". resilient commit supported = {}
+}: Committing job with file count: {}; total size {} bytes
+}: Committing task "{}"
+}: Created {} directories
+}: Creating Job Attempt directory {}
+}: Deleting file where a directory should go: {}
+}: Deleting file {}
+}: Deleting job directory {}
+}: Deleting task attempt directory {}
+}: Directory count = {}; maximum depth {}
+}: Directory entries containing files to delete: {}
+}: Even though mkdirs({}) failed, there is now a directory there
+}: Exception while listing/deleting task attempts under {}; continuing
+}: Executing Manifest Job Commit with manifests in {}
+}: Executing Manifest Job Commit with {} files
+}: Executing Stage {}
+}: Failed to rename manifests to {}
+}: Failed to write manifest for task {}
+}: Files committed: {}. Total size {}
+}: Full exception details
+}: Job Commit statistics {}
+}: Job Summary {}
+}: Mkdir stack
+}: Number of subdirectories under {} found: {}; file count {}
+}: Renaming manifests to {}
+}: Saving _SUCCESS file to {}
+}: Saving _SUCCESS file to {} via {}
+}: Saving manifest file to {}
+}: Stage failure:
+}: Stage {} completed after {}
+}: Stage {} failed: after {}: {}
+}: Summary of {} manifests loaded in {}: {}
+}: Task Attempt {} file {}: File count: {}; data size={}
+}: Task attempt dir {} not found
+}: Validating output.
+}: _SUCCESS file summary {}
+}: delete('{}') returned {}'
+}: delete('{}, {}')
+}: directory {} contained {} file(s); data size {}
+}: failure to {} {} to {} with
+}: getFileStatus('{}')
+}: isFile('{}')
+}: listStatusIterator('{}')
+}: loadManifest('{}')
+}: mkdir failure #{} Failed to create directory "{}": {}
+}: mkdir({}) raised exception {}
+}: mkdirs('{}')
+}: mkdirs({}) returned false, attempting to recover
+}: msync('{}')
+}: rename failures were recovered from. Number of recoveries: {}
+}: save('{}, {}, {}')
+}: scanning directory {}
+}: task attempt {} added {} directories
+}: {} '{}' to '{}')
+}: {} createNewDirectory('{}')
+}: {} raised an exception: {}
+}: {} stack trace

@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -cp .:./build/libs/java-callgraph2-3.0.0.jar:./jar/run_javacg2.jar:./lib/*:./config com.adrninistrator.javacg2.entry.JavaCG2Entry

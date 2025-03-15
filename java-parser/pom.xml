@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>java-parser</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>java-parser</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- JavaParser 依赖 -->
+    <dependency>
+        <groupId>com.github.javaparser</groupId>
+        <artifactId>javaparser-core</artifactId>
+        <version>3.25.9</version>
+    </dependency>
+    <dependency>
+        <groupId>com.github.javaparser</groupId>
+        <artifactId>javaparser-symbol-solver-core</artifactId>
+        <version>3.25.9</version>
+    </dependency>
+    <dependency>
+        <groupId>net.sf.py4j</groupId>
+        <artifactId>py4j</artifactId>
+        <version>0.10.9.7</version>
+    </dependency>
+    <!-- 增加soot依赖
+    <dependency>
+        <groupId>org.soot-oss</groupId>
+        <artifactId>soot</artifactId>
+        <version>4.2.1</version>
+    </dependency> -->
+
+
+  </dependencies>
+
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- 或者你使用的其他版本 -->
+            <configuration>
+                <source>1.8</source> <!-- 设置为 1.7 或更高版本 -->
+                <target>1.8</target> <!-- 设置为 1.7 或更高版本 -->
+            </configuration>
+           </plugin>
+            
+            <!-- 用于执行 Java 类的插件 -->
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.5.0</version>
+            <executions>
+                <execution>
+                    <id>java-parser-server-execution</id>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                    <configuration>
+                        <mainClass>com.example.JavaParserServer</mainClass>
+                    </configuration>
+                </execution>
+                <execution>
+                    <id>method-extractor-gateway-execution</id>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                    <configuration>
+                        <mainClass>com.example.MethodExtractorGateway</mainClass>
+                    </configuration>
+                </execution>
+                <execution>
+                        <id>node-type-counter</id>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>com.example.NodeTypeCounter</mainClass>
+                        </configuration>
+                    </execution>
+            </executions>
+        </plugin>
+       
+    </plugins>
+</build>
+
+</project>
