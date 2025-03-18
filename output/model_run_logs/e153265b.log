@@ -1,0 +1,86 @@
+2025-03-15 02:59:37,840 P272756 INFO {
+    "model_name": "CNN",
+    "hidden_size": 200,
+    "kernel_sizes": "2 3 4",
+    "embedding_dim": 8,
+    "dataset": "HDFS",
+    "data_dir": "../data/processed/HDFS/no_hdfs_1.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "sequentials",
+    "label_type": "anomaly",
+    "use_tfidf": false,
+    "pretrain_path": null,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 500,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "patience": 10,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "e153265b"
+}
+2025-03-15 02:59:41,983 P272756 INFO Load from ../data/processed/HDFS/no_hdfs_1.0_tar
+2025-03-15 02:59:41,984 P272756 INFO {
+    "label_file": "../data/HDFS/Full/anomaly_label.csv",
+    "log_file": "../data/HDFS/Full/HDFS_log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 1.0
+}
+2025-03-15 02:59:41,984 P272756 INFO # train sessions 460048 (0.03 anomalies)
+2025-03-15 02:59:41,984 P272756 INFO # test sessions 115012 (0.03 anomalies)
+2025-03-15 02:59:41,985 P272756 INFO Cannot load cached feature extractor.
+2025-03-15 02:59:42,380 P272756 INFO 31 tempaltes are found.
+2025-03-15 02:59:42,394 P272756 INFO Transforming train data.
+2025-03-15 02:59:52,979 P272756 INFO 4836417 sliding windows generated.
+2025-03-15 03:00:27,354 P272756 INFO Finish feature extraction (train).
+2025-03-15 03:00:27,355 P272756 INFO Transforming test data.
+2025-03-15 03:00:27,636 P272756 INFO 0 new templates show while testing.
+2025-03-15 03:00:32,051 P272756 INFO 1206665 sliding windows generated.
+2025-03-15 03:00:51,040 P272756 INFO Finish feature extraction (test).
+2025-03-15 03:01:08,523 P272756 INFO Start training on 4724 batches with cuda:0.
+2025-03-15 03:03:59,556 P272756 INFO Epoch 1/500, training loss: 0.08150 [171.03s]
+2025-03-15 03:03:59,560 P272756 INFO Evaluating test data.
+2025-03-15 03:04:23,061 P272756 INFO Finish inference. [23.50s]
+2025-03-15 03:04:24,252 P272756 INFO {'f1': '0.941', 'rc': '0.996', 'pc': '0.892', 'acc': '0.996'}
+2025-03-15 03:04:24,451 P272756 INFO Saving model to ./experiment_records/e153265b/model.ckpt
+2025-03-15 03:06:52,238 P272756 INFO Epoch 2/500, training loss: 0.07747 [147.78s]
+2025-03-15 03:06:52,240 P272756 INFO Evaluating test data.
+2025-03-15 03:07:59,254 P272756 INFO Finish inference. [67.01s]
+2025-03-15 03:08:00,500 P272756 INFO {'f1': '0.942', 'rc': '0.996', 'pc': '0.894', 'acc': '0.996'}
+2025-03-15 03:08:00,745 P272756 INFO Saving model to ./experiment_records/e153265b/model.ckpt
+2025-03-15 03:09:59,749 P272756 INFO Epoch 3/500, training loss: 0.07714 [119.00s]
+2025-03-15 03:09:59,750 P272756 INFO Evaluating test data.
+2025-03-15 03:10:36,254 P272756 INFO Finish inference. [36.50s]
+2025-03-15 03:10:40,265 P272756 INFO {'f1': '0.958', 'rc': '0.996', 'pc': '0.923', 'acc': '0.997'}
+2025-03-15 03:10:41,139 P272756 INFO Saving model to ./experiment_records/e153265b/model.ckpt
+2025-03-15 03:13:26,100 P272756 INFO Epoch 4/500, training loss: 0.07709 [164.96s]
+2025-03-15 03:13:26,101 P272756 INFO Evaluating test data.
+2025-03-15 03:13:51,323 P272756 INFO Finish inference. [25.22s]
+2025-03-15 03:13:52,447 P272756 INFO {'f1': '0.959', 'rc': '0.995', 'pc': '0.924', 'acc': '0.997'}
+2025-03-15 03:13:52,750 P272756 INFO Saving model to ./experiment_records/e153265b/model.ckpt
+2025-03-15 03:16:39,180 P272756 INFO Epoch 5/500, training loss: 0.07696 [166.43s]
+2025-03-15 03:16:39,181 P272756 INFO Evaluating test data.
+2025-03-15 03:17:12,553 P272756 INFO Finish inference. [33.37s]
+2025-03-15 03:17:15,731 P272756 INFO {'f1': '0.958', 'rc': '0.996', 'pc': '0.923', 'acc': '0.997'}
+2025-03-15 03:19:27,860 P272756 INFO Epoch 6/500, training loss: 0.07695 [131.52s]
+2025-03-15 03:19:27,861 P272756 INFO Evaluating test data.
+2025-03-15 03:19:50,240 P272756 INFO Finish inference. [22.38s]
+2025-03-15 03:19:51,345 P272756 INFO {'f1': '0.969', 'rc': '0.996', 'pc': '0.945', 'acc': '0.998'}
+2025-03-15 03:19:51,571 P272756 INFO Saving model to ./experiment_records/e153265b/model.ckpt
+2025-03-15 03:21:52,146 P272756 INFO Epoch 7/500, training loss: 0.07695 [120.57s]
+2025-03-15 03:21:52,147 P272756 INFO Evaluating test data.
+2025-03-15 03:22:13,655 P272756 INFO Finish inference. [21.51s]
+2025-03-15 03:22:14,714 P272756 INFO {'f1': '0.960', 'rc': '0.995', 'pc': '0.927', 'acc': '0.998'}
+2025-03-15 03:23:53,874 P272756 INFO Epoch 8/500, training loss: 0.07693 [98.96s]
+2025-03-15 03:23:53,874 P272756 INFO Evaluating test data.
+2025-03-15 03:24:17,725 P272756 INFO Finish inference. [23.85s]
+2025-03-15 03:24:21,125 P272756 INFO {'f1': '0.957', 'rc': '0.996', 'pc': '0.921', 'acc': '0.997'}
+2025-03-15 03:26:01,950 P272756 INFO Epoch 9/500, training loss: 0.07691 [100.20s]
+2025-03-15 03:26:01,950 P272756 INFO Evaluating test data.
+2025-03-15 03:26:48,445 P272756 INFO Finish inference. [46.49s]
+2025-03-15 03:26:49,524 P272756 INFO {'f1': '0.958', 'rc': '0.996', 'pc': '0.923', 'acc': '0.997'}
+2025-03-15 03:26:49,727 P272756 INFO Early stop at epoch: 9
+2025-03-15 03:26:49,727 P272756 INFO Loading model from ./experiment_records/e153265b/model.ckpt

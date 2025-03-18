@@ -16,7 +16,8 @@ logging.basicConfig(filename="prune_and_update.log",
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
 CHECKPOINT_FILE = "bfs_checkpoint.json"
-CHECKPOINT_INTERVAL = 1000 
+CHECKPOINT_INTERVAL = 1000  #address 1000 nodes and save a checkpoint
+
 def load_db_config(config_file='mysql/config.ini'):
     config = configparser.ConfigParser()
     config.read(config_file)
@@ -30,6 +31,7 @@ def load_db_config(config_file='mysql/config.ini'):
     }
 
 def ensure_log_propagation_column():
+    """ make sure log_propagation,if it's not exists,add it  """
     db_config = load_db_config()
     cnx = mysql.connector.connect(**db_config)
     cursor = cnx.cursor()
@@ -38,12 +40,15 @@ def ensure_log_propagation_column():
     result = cursor.fetchone()
     
     if not result:
+        logging.info("log_propagation not exists adding now ...")
         cursor.execute("ALTER TABLE method_call ADD COLUMN log_propagation TINYINT DEFAULT 0")
         cnx.commit()
+        logging.info("log_propagation finish adding !")
     
     cursor.close()
     cnx.close()
 
+""" load call graph and build caller->callee and  callee->caller and node set """
 def load_call_graph():
     db_config = load_db_config()
     cnx = mysql.connector.connect(**db_config)
@@ -67,22 +72,23 @@ def load_call_graph():
     return forward_graph, reverse_graph, nodes
 
 
+## load log keys from log_key_words
 def load_logging_keywords(config_file='mysql/config.ini'):
+    """ load log keys from log_key_words  """
     config = configparser.ConfigParser()
     config.read(config_file)
     keywords = config.get('logging', 'keywords', fallback='org.slf4j.Logger, LoggerFactory, getLogger')
     return [kw.strip() for kw in keywords.split(',')] if keywords else []
 
 
-#
 def is_logging_method(method):
-    logging_keywords = load_logging_keywords()  #   
+    logging_keywords = load_logging_keywords()     
     return any(kw in method for kw in logging_keywords)
-
 
 edge_queue = queue.Queue()
 
 def db_update_worker(db_config, edge_queue, stop_event, batch_size=1000):
+    """ refresh edges by  batch """
     cnx = mysql.connector.connect(**db_config)
     cursor = cnx.cursor()
     batch = []
@@ -110,6 +116,7 @@ def db_update_worker(db_config, edge_queue, stop_event, batch_size=1000):
         cnx.commit()
     cursor.close()
     cnx.close()
+    logging.info("DB finish")
 
 def checkpoint_progress(marked, bfs_queue):
     checkpoint = {
@@ -119,9 +126,9 @@ def checkpoint_progress(marked, bfs_queue):
     try:
         with open(CHECKPOINT_FILE, "w", encoding="utf-8") as f:
             json.dump(checkpoint, f)
-        logging.info(f"Checkpoint sucess{len(marked)}, length{bfs_queue.qsize()}")
+        logging.info(f"Checkpoint write success, marking nodes num: {len(marked)}, the length of queue {bfs_queue.qsize()}")
     except Exception as e:
-        logging.error(f"write  to checkpoint failed: {e}")
+        logging.error(f"write to checkpoint failed: {e}")
 
 def load_checkpoint():
     if os.path.exists(CHECKPOINT_FILE):
@@ -133,12 +140,13 @@ def load_checkpoint():
             bfs_q = queue.Queue()
             for node in bfs_list:
                 bfs_q.put(node)
+            logging.info(f"load checkpoint：{len(marked)} marked nodes,the length of queue {bfs_q.qsize()}")
             return marked, bfs_q
         except Exception as e:
+            logging.error(f"加载 checkpoint 失败: {e}")
     return None, None
 
 def bfs_worker(bfs_queue, marked, marked_lock, reverse_graph, edge_queue, checkpoint_counter, counter_lock):
-   
     while True:
         try:
             current = bfs_queue.get(timeout=3)
@@ -157,11 +165,10 @@ def bfs_worker(bfs_queue, marked, marked_lock, reverse_graph, edge_queue, checkp
         bfs_queue.task_done()
 
 def multi_threaded_bfs_update(forward_graph, reverse_graph, nodes, db_config, start_nodes, num_workers=8):
-  
     marked_lock = threading.Lock()
     counter_lock = threading.Lock()
-    checkpoint_counter = [0]  
-    
+    checkpoint_counter = [0] 
+
     marked, bfs_queue = load_checkpoint()
     if marked is None or bfs_queue is None:
         marked = set(start_nodes)
@@ -188,6 +195,7 @@ def multi_threaded_bfs_update(forward_graph, reverse_graph, nodes, db_config, st
     
     if os.path.exists(CHECKPOINT_FILE):
         os.remove(CHECKPOINT_FILE)
+        logging.info("Checkpoint was deleted")
     
     return marked
 
@@ -197,6 +205,7 @@ def update_method_call_table(marked):
     cursor = cnx.cursor()
     
     if not marked:
+        logging.info("no marked node ,skip")
         cursor.close()
         cnx.close()
         return
@@ -214,42 +223,43 @@ def update_method_call_table(marked):
     cnx.commit()
     cursor.close()
     cnx.close()
-    logging.info("method_call refresh log_propagation")
+    logging.info("method_call already refreshed log_propagation")
 
 def save_start_nodes(marked, reverse_graph,output_file="output/start_node.txt"):
-  
+
     start_nodes = [node for node in marked if node not in reverse_graph or len(reverse_graph[node]) == 0]
     try:
         with open(output_file, "w", encoding="utf-8") as f:
             for node in start_nodes:
                 f.write(node + "\n")
+        logging.info(f"in 0 node is {output_file},number is  {len(start_nodes)}")
     except Exception as e:
-        logging.error(f"err writging: {e}")
+        logging.error(f"write to 0 egde is failed: {e}")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="prune")
-    parser.add_argument('--output_file', type=str, required=False,default = "output/start_node.txt", help="输出目录路径")
+    parser = argparse.ArgumentParser(description="prune operation")
+    parser.add_argument('--output_file', type=str, required=False,default = "output/start_node.txt", help="output dir")
     args = parser.parse_args()
 
     start_output_file = args.output_file
 
-    ensure_log_propagation_column()  
+    ensure_log_propagation_column()
     db_config = load_db_config()
     forward_graph, reverse_graph, nodes = load_call_graph()
-    logging.info(f"load graph,num {len(nodes)}")
+    logging.info(f"load callgraph,all the node is {len(nodes)}")
     
     start_nodes = [node for node in nodes if is_logging_method(node)]
-    logging.info(f"start node: {len(start_nodes)}")
+    logging.info(f"start log node is  {len(start_nodes)}")
     
     marked_nodes = multi_threaded_bfs_update(forward_graph, reverse_graph, nodes, db_config, start_nodes)
-    logging.info(f"BFS end,node: {len(marked_nodes)}")
+    logging.info(f"multiprocess BFS is finished,marking node is {len(marked_nodes)}")
     
     update_method_call_table(marked_nodes)
-    logging.info("refresh dataset")
+    logging.info("prune and refresh finished!")
     
     save_start_nodes(marked_nodes, reverse_graph,start_output_file)
-    logging.info("save start node")
+    logging.info("saved all")
 
 if __name__ == "__main__":
     main()

@@ -8,31 +8,18 @@ def load_json(json_file):
             data = json.load(file)
         return data
     except FileNotFoundError:
-        print(f"文件 {json_file} 未找到。")
+        print(f"file {json_file} can not find")
         return None
     except json.JSONDecodeError:
-        print(f"无法解析 {json_file} 中的 JSON 数据。")
+        print(f"can noe analyze {json_file} json data")
         return None
     except Exception as e:
-        print(f"加载 {json_file} 时出现未知错误: {e}")
+        print(f"load  {json_file} error: {e}")
         return None
 
 def main():
     #dir ="/home/ubuntu/LLMlogger/output/hadoop/TaskAttemptImpl_createCommonContainerLaunchContext"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/RMContainerAllocator_heartbeat"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/HttpServer2_initializeWebServer"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/JobHistoryUtils_getDefaultFileContext"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/JobImpl_handle"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/LeaseRenewer_run"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/MetricsSystemImpl_start"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/MRAppMaster_createOutputCommitter"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/MRAppMaster_initAndStartAppMaster"
     #dir = "/home/ubuntu/LLMlogger/output/hadoop/MRAppMaster_main"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/MRAppMaster_serviceInit"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/RackResolver_resolve"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/RMContainerRequestor_makeRemoteRequest"
-    #dir = "/home/ubuntu/LLMlogger/output/hadoop/RMContainerRequestor_serviceInit"
- 
     
     code_path = os.path.join(dir,"extracted_methods.json")
     code_map = load_json(code_path)
@@ -43,21 +30,8 @@ def main():
     single_log_map = load_json(single_log_path)
 
     #for key,value in single_call_map.items():
-    #key="org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl:createCommonContainerLaunchContext(java.util.Map,org.apache.hadoop.conf.Configuration,org.apache.hadoop.security.token.Token,org.apache.hadoop.mapred.JobID,org.apache.hadoop.security.Credentials)"
-    #key="org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl:configureJobJar(org.apache.hadoop.conf.Configuration,java.util.Map)"
-    #key = "org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator:heartbeat()"
-    #key = "org.apache.hadoop.http.HttpServer2:initializeWebServer(java.lang.String,java.lang.String,org.apache.hadoop.conf.Configuration,java.lang.String[])"
-    #key = "org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils:getDefaultFileContext()"
-    #key = "org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl:handle(org.apache.hadoop.mapreduce.v2.app.job.event.JobEvent)"
-    #key = "org.apache.hadoop.hdfs.client.impl.LeaseRenewer:run(int)"
     #key = "org.apache.hadoop.metrics2.impl.MetricsSystemImpl:start()"
     #key = "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:createOutputCommitter(org.apache.hadoop.conf.Configuration)"
-    #key =  "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:initAndStartAppMaster(org.apache.hadoop.mapreduce.v2.app.MRAppMaster,org.apache.hadoop.mapred.JobConf,java.lang.String)"
-    #key = "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:main(java.lang.String[])"
-    #key = "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:serviceInit(org.apache.hadoop.conf.Configuration)"
-    #key = "org.apache.hadoop.yarn.util.RackResolver:resolve(java.util.List)"
-    #key = "org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor:makeRemoteRequest()"
-    #key="org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor:serviceInit(org.apache.hadoop.conf.Configuration)"
     key = ""
     print("key is ")
     print(key)
@@ -146,44 +120,37 @@ def filtered():
 ###merge all the single 
 def merge():
     merge_node = {}
-    json1 = load_json("output/enhanced_single_cfg/enhanced_cfg.json")
-    json2 = load_json("output/enhanced_single_cfg12/enhanced_cfg.json")
-    # json3 = load_json("output/enhanced_single_cfg/m3_enhanced_cfg.json")
-    # json4 = load_json("output/enhanced_single_cfg/enhanced_cfg.json")
-    # json2 = load_json("output/enhanced_single_cfg/m2_enhanced_cfg.json")
+    json1 = load_json("output/log_events/compressed_logs_valid.json")
+    json2 = load_json("output/log_events/compressed_logs_v2.json")
 
     for key,value in json1.items():
         merge_node[key] = value
     for key,value in json2.items():
         merge_node[key] = value
-    # for key,value in json3.items():
-    #     merge_node[key] = value
-    # for key,value in json4.items():
-    #     merge_node[key] = value
     print(len(merge_node))
-    with open("output/enhanced_single_cfg/merged_enhanced_cfg.json",'w') as f:
+    with open("output/log_events/compressed_logs_all.json",'w') as f:
         json.dump(merge_node,f)
 
-# merge()
+merge()
 
 from pathlib import Path
 
 def count_files_in_folder(folder_path):
     folder = Path(folder_path)
-    # 检查路径是否存在
+    # whether exists path
     if not folder.exists():
-        print(f"指定的文件夹路径 {folder_path} 不存在。")
+        print(f"file dir path is  {folder_path} not exist")
         return 0
-    # 检查路径是否为文件夹
+    # whether a dir
     if not folder.is_dir():
-        print(f"{folder_path} 不是一个有效的文件夹路径。")
+        print(f"{folder_path} not a valid path")
         return 0
 
-    # 递归统计文件数量
+    # recusive count file amount
     file_count = len(list(folder.rglob('*'))) - len(list(folder.rglob('*/')))
     return file_count
 
-# 示例使用
+# for example
 # folder_path = 'output/merge_info'
 # file_count = count_files_in_folder(folder_path)
-# print(f"文件夹 {folder_path} 中共有 {file_count} 个文件。")
+# print(f"dir {folder_path} all have {file_count} files")

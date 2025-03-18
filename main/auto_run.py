@@ -45,6 +45,7 @@ def create_output_dirs(project_dir, entry_functions):
 
     return output_dir, entry_dirs
 
+
 def store_method_calls_in_db(input_dir):
     print("store to database...")
 
@@ -52,7 +53,7 @@ def store_method_calls_in_db(input_dir):
 
 def run_prune_and_update(output_dir):
     print("pruning...")
-    subprocess.run(['python3', 'mysql/prune_and_update_db.py', '--output_file', f'{output_dir}/start_nodes.txt'])
+    subprocess.run(['python3', 'mysql/prune_and_update_db_v2.py', '--output_file', f'{output_dir}/start_nodes.txt'])
 
 def get_global_source_code(project_dir):
     print("start MethodExtractorGateWay and analyze  code ")
@@ -119,7 +120,7 @@ def extract_call_deps(entry_functions, output_dir,depth,batch_size=2):
 
 
 def parse_and_match_source_code(entry_functions, output_dir,project_dir):
-    print("启动MethodExtractorGateWay")
+    print("Starting MethodExtractorGateWay")
     subprocess.run(['pkill', '-f', 'com.example.(MethodExtractorGateway|JavaParserServer)'], check=False)
     time.sleep(2)  
 
@@ -137,7 +138,7 @@ def parse_and_match_source_code(entry_functions, output_dir,project_dir):
     finally:
         java_gateway.send_signal(signal.SIGTERM)
         java_gateway.wait(timeout=5)
-        print("MethodExtratorGateway 进程已关闭。")
+        print("MethodExtratorGateway is Closed")
         time.sleep(3)  
         
 
@@ -176,7 +177,7 @@ def main():
     parser = argparse.ArgumentParser(description="auto process")
     parser.add_argument('--project_dir', type=str, required=True, help="input project dir")
     parser.add_argument('--entry_functions', nargs='+', required=True, help="entries")
-    parser.add_argument('--depth', type=int,required=False,default=10, help="depth,default 10")
+    parser.add_argument('--depth', type=int,required=False,default=3, help="depth, default 3")
     parser.add_argument('--input_dir',type=str,required=True,help="output dir of javacallgraph")
     args = parser.parse_args()
 
@@ -189,10 +190,7 @@ def main():
 
     output_dir, entry_dirs = create_output_dirs(project_dir, entry_functions)
 
-  
-    extract_classes(project_dir, output_dir)
-    configure_java_callgraph2(output_dir)
-    store_method_calls_in_db(input_dir)
+    # store_method_calls_in_db(input_dir)
     run_prune_and_update(output_dir)
 
     input_file = "output/extracted_methods.json"

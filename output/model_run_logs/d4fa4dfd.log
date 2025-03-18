@@ -1,0 +1,112 @@
+2025-03-15 02:58:51,361 P272536 INFO {
+    "model_name": "Transformer",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "nhead": 2,
+    "dataset": "HDFS",
+    "data_dir": "../data/processed/HDFS/hdfs_0.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "sequentials",
+    "use_attention": false,
+    "label_type": "next_log",
+    "use_tfidf": false,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 10,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "d4fa4dfd"
+}
+2025-03-15 02:58:56,312 P272536 INFO Load from ../data/processed/HDFS/hdfs_0.0_tar
+2025-03-15 02:58:56,313 P272536 INFO {
+    "label_file": "../data/HDFS/Full/anomaly_label.csv",
+    "log_file": "../data/HDFS/Full/HDFS_log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 0.0
+}
+2025-03-15 02:58:56,313 P272536 INFO # train sessions 446660 (0.00 anomalies)
+2025-03-15 02:58:56,313 P272536 INFO # test sessions 115014 (0.03 anomalies)
+2025-03-15 02:58:56,314 P272536 INFO Cannot load cached feature extractor.
+2025-03-15 02:58:56,660 P272536 INFO 38 tempaltes are found.
+2025-03-15 02:58:56,675 P272536 INFO Transforming train data.
+2025-03-15 02:59:07,064 P272536 INFO 4693159 sliding windows generated.
+2025-03-15 02:59:21,678 P272536 INFO Finish feature extraction (train).
+2025-03-15 02:59:21,679 P272536 INFO Transforming test data.
+2025-03-15 02:59:21,752 P272536 INFO 17 new templates show while testing.
+2025-03-15 02:59:22,889 P272536 INFO 1206356 sliding windows generated.
+2025-03-15 02:59:26,317 P272536 INFO Finish feature extraction (test).
+2025-03-15 02:59:30,684 P272536 INFO Start training on 4584 batches with cuda:0.
+2025-03-15 03:03:05,967 P272536 INFO Epoch 1/100, training loss: 0.25916 [215.28s]
+2025-03-15 03:03:05,968 P272536 INFO Evaluating test data.
+2025-03-15 03:03:31,643 P272536 INFO Finish inference. [25.67s]
+2025-03-15 03:03:38,381 P272536 INFO Calculating acc sum.
+2025-03-15 03:03:38,700 P272536 INFO Finish generating store_df.
+2025-03-15 03:03:39,153 P272536 INFO {'f1': '0.166', 'rc': '1.000', 'pc': '0.090', 'top1-acc': '0.970'}
+2025-03-15 03:03:39,264 P272536 INFO {'f1': '0.204', 'rc': '0.848', 'pc': '0.116', 'top2-acc': '0.970'}
+2025-03-15 03:03:39,368 P272536 INFO {'f1': '0.335', 'rc': '0.824', 'pc': '0.210', 'top3-acc': '0.970'}
+2025-03-15 03:03:39,469 P272536 INFO {'f1': '0.818', 'rc': '0.804', 'pc': '0.831', 'top4-acc': '0.970'}
+2025-03-15 03:03:39,570 P272536 INFO {'f1': '0.850', 'rc': '0.803', 'pc': '0.904', 'top5-acc': '0.970'}
+2025-03-15 03:03:39,671 P272536 INFO {'f1': '0.854', 'rc': '0.793', 'pc': '0.925', 'top6-acc': '0.970'}
+2025-03-15 03:03:39,772 P272536 INFO {'f1': '0.867', 'rc': '0.788', 'pc': '0.964', 'top7-acc': '0.970'}
+2025-03-15 03:03:39,872 P272536 INFO {'f1': '0.828', 'rc': '0.716', 'pc': '0.982', 'top8-acc': '0.970'}
+2025-03-15 03:03:39,972 P272536 INFO {'f1': '0.749', 'rc': '0.603', 'pc': '0.987', 'top9-acc': '0.970'}
+2025-03-15 03:03:40,071 P272536 INFO {'f1': '0.719', 'rc': '0.564', 'pc': '0.992', 'top10-acc': '0.970'}
+2025-03-15 03:03:40,071 P272536 INFO Finish counting [7.08s]
+2025-03-15 03:03:40,725 P272536 INFO Saving model to ./experiment_records/d4fa4dfd/model.ckpt
+2025-03-15 03:08:00,958 P272536 INFO Epoch 2/100, training loss: 0.21724 [260.22s]
+2025-03-15 03:08:00,959 P272536 INFO Evaluating test data.
+2025-03-15 03:08:27,961 P272536 INFO Finish inference. [27.00s]
+2025-03-15 03:08:35,821 P272536 INFO Calculating acc sum.
+2025-03-15 03:08:36,163 P272536 INFO Finish generating store_df.
+2025-03-15 03:08:36,682 P272536 INFO {'f1': '0.166', 'rc': '1.000', 'pc': '0.090', 'top1-acc': '0.970'}
+2025-03-15 03:08:36,796 P272536 INFO {'f1': '0.191', 'rc': '0.783', 'pc': '0.109', 'top2-acc': '0.970'}
+2025-03-15 03:08:36,914 P272536 INFO {'f1': '0.312', 'rc': '0.753', 'pc': '0.197', 'top3-acc': '0.970'}
+2025-03-15 03:08:37,031 P272536 INFO {'f1': '0.767', 'rc': '0.735', 'pc': '0.802', 'top4-acc': '0.970'}
+2025-03-15 03:08:37,149 P272536 INFO {'f1': '0.805', 'rc': '0.734', 'pc': '0.892', 'top5-acc': '0.970'}
+2025-03-15 03:08:37,260 P272536 INFO {'f1': '0.752', 'rc': '0.633', 'pc': '0.927', 'top6-acc': '0.970'}
+2025-03-15 03:08:37,366 P272536 INFO {'f1': '0.762', 'rc': '0.630', 'pc': '0.962', 'top7-acc': '0.970'}
+2025-03-15 03:08:37,473 P272536 INFO {'f1': '0.698', 'rc': '0.543', 'pc': '0.976', 'top8-acc': '0.970'}
+2025-03-15 03:08:37,580 P272536 INFO {'f1': '0.673', 'rc': '0.513', 'pc': '0.980', 'top9-acc': '0.970'}
+2025-03-15 03:08:37,684 P272536 INFO {'f1': '0.537', 'rc': '0.370', 'pc': '0.978', 'top10-acc': '0.970'}
+2025-03-15 03:08:37,684 P272536 INFO Finish counting [8.09s]
+2025-03-15 03:12:28,784 P272536 INFO Epoch 3/100, training loss: 0.22596 [230.36s]
+2025-03-15 03:12:28,785 P272536 INFO Evaluating test data.
+2025-03-15 03:12:54,531 P272536 INFO Finish inference. [25.75s]
+2025-03-15 03:13:02,245 P272536 INFO Calculating acc sum.
+2025-03-15 03:13:02,683 P272536 INFO Finish generating store_df.
+2025-03-15 03:13:03,232 P272536 INFO {'f1': '0.166', 'rc': '1.000', 'pc': '0.090', 'top1-acc': '0.970'}
+2025-03-15 03:13:03,445 P272536 INFO {'f1': '0.201', 'rc': '0.841', 'pc': '0.114', 'top2-acc': '0.970'}
+2025-03-15 03:13:03,554 P272536 INFO {'f1': '0.339', 'rc': '0.813', 'pc': '0.214', 'top3-acc': '0.970'}
+2025-03-15 03:13:03,690 P272536 INFO {'f1': '0.815', 'rc': '0.788', 'pc': '0.845', 'top4-acc': '0.970'}
+2025-03-15 03:13:03,791 P272536 INFO {'f1': '0.812', 'rc': '0.718', 'pc': '0.935', 'top5-acc': '0.970'}
+2025-03-15 03:13:03,903 P272536 INFO {'f1': '0.792', 'rc': '0.684', 'pc': '0.941', 'top6-acc': '0.970'}
+2025-03-15 03:13:04,041 P272536 INFO {'f1': '0.643', 'rc': '0.484', 'pc': '0.954', 'top7-acc': '0.970'}
+2025-03-15 03:13:04,160 P272536 INFO {'f1': '0.639', 'rc': '0.479', 'pc': '0.960', 'top8-acc': '0.970'}
+2025-03-15 03:13:04,276 P272536 INFO {'f1': '0.633', 'rc': '0.470', 'pc': '0.968', 'top9-acc': '0.970'}
+2025-03-15 03:13:04,396 P272536 INFO {'f1': '0.620', 'rc': '0.453', 'pc': '0.979', 'top10-acc': '0.970'}
+2025-03-15 03:13:04,396 P272536 INFO Finish counting [8.38s]
+2025-03-15 03:16:56,937 P272536 INFO Epoch 4/100, training loss: 0.21924 [231.84s]
+2025-03-15 03:16:56,940 P272536 INFO Evaluating test data.
+2025-03-15 03:17:44,655 P272536 INFO Finish inference. [47.71s]
+2025-03-15 03:18:04,600 P272536 INFO Calculating acc sum.
+2025-03-15 03:18:04,953 P272536 INFO Finish generating store_df.
+2025-03-15 03:18:05,462 P272536 INFO {'f1': '0.166', 'rc': '1.000', 'pc': '0.090', 'top1-acc': '0.970'}
+2025-03-15 03:18:05,581 P272536 INFO {'f1': '0.234', 'rc': '0.979', 'pc': '0.133', 'top2-acc': '0.970'}
+2025-03-15 03:18:05,694 P272536 INFO {'f1': '0.312', 'rc': '0.752', 'pc': '0.197', 'top3-acc': '0.970'}
+2025-03-15 03:18:05,794 P272536 INFO {'f1': '0.780', 'rc': '0.735', 'pc': '0.832', 'top4-acc': '0.970'}
+2025-03-15 03:18:05,893 P272536 INFO {'f1': '0.818', 'rc': '0.734', 'pc': '0.922', 'top5-acc': '0.970'}
+2025-03-15 03:18:05,996 P272536 INFO {'f1': '0.823', 'rc': '0.733', 'pc': '0.938', 'top6-acc': '0.970'}
+2025-03-15 03:18:06,097 P272536 INFO {'f1': '0.827', 'rc': '0.731', 'pc': '0.952', 'top7-acc': '0.970'}
+2025-03-15 03:18:06,200 P272536 INFO {'f1': '0.777', 'rc': '0.649', 'pc': '0.966', 'top8-acc': '0.970'}
+2025-03-15 03:18:06,300 P272536 INFO {'f1': '0.673', 'rc': '0.515', 'pc': '0.970', 'top9-acc': '0.970'}
+2025-03-15 03:18:06,395 P272536 INFO {'f1': '0.658', 'rc': '0.496', 'pc': '0.977', 'top10-acc': '0.970'}
+2025-03-15 03:18:06,395 P272536 INFO Finish counting [16.57s]
+2025-03-15 03:18:07,058 P272536 INFO Early stop at epoch: 4
+2025-03-15 03:18:07,059 P272536 INFO Loading model from ./experiment_records/d4fa4dfd/model.ckpt

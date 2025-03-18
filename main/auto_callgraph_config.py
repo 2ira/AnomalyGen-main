@@ -7,7 +7,7 @@ import argparse
 ##Stage1:get subgraph##
 def extract_classes(project_dir, output_dir):
     print("generate extract classes...")
-    subprocess.run(['python3', 'extract_classes.py', '--input_dir', project_dir, '--output_file', f'{output_dir}/collect_class.txt'])
+    subprocess.run(['python3', 'main/extract_classes.py', '--input_dir', project_dir, '--output_file', f'{output_dir}/collect_class.txt'])
 
 
 def configure_java_callgraph2(output_dir):
@@ -43,4 +43,7 @@ def main():
         os.makedirs(output_dir)
     extract_classes(project_dir, output_dir)
     configure_java_callgraph2(output_dir)
-    
+
+
+if __name__ == "__main__":
+    main()
