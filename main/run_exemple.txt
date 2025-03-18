@@ -2,7 +2,7 @@ export PYTHONPATH="${PYTHONPATH}:.../AnomalyGen"
 
 python3 main/auto_run.py \
 --project_dir hadoop \
---input_dir /home/yxsu/Desktop/cosn-javacg2_merged.jar-output_javacg2 \
+--input_dir /home/ubuntu/cosn-javacg2_merged.jar-output_javacg2 \
 --entry_functions "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:main(java.lang.String[])" \
 --depth 3
 

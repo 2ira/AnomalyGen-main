@@ -1,0 +1,75 @@
+2025-03-15 03:02:43,440 P273285 INFO {
+    "model_name": "CNN",
+    "hidden_size": 200,
+    "kernel_sizes": "2 3 4",
+    "embedding_dim": 8,
+    "dataset": "HDFS",
+    "data_dir": "../data/processed/HDFS/hdfs_1.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "sequentials",
+    "label_type": "anomaly",
+    "use_tfidf": false,
+    "pretrain_path": null,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 500,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "patience": 10,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "3c1d833d"
+}
+2025-03-15 03:02:54,046 P273285 INFO Load from ../data/processed/HDFS/hdfs_1.0_tar
+2025-03-15 03:02:54,047 P273285 INFO {
+    "label_file": "../data/HDFS/Full/anomaly_label.csv",
+    "log_file": "../data/HDFS/Full/HDFS_log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 1.0
+}
+2025-03-15 03:02:54,047 P273285 INFO # train sessions 460057 (0.03 anomalies)
+2025-03-15 03:02:54,047 P273285 INFO # test sessions 115014 (0.03 anomalies)
+2025-03-15 03:02:54,048 P273285 INFO Cannot load cached feature extractor.
+2025-03-15 03:02:55,056 P273285 INFO 57 tempaltes are found.
+2025-03-15 03:02:55,071 P273285 INFO Transforming train data.
+2025-03-15 03:03:22,660 P273285 INFO 4836737 sliding windows generated.
+2025-03-15 03:03:44,920 P273285 INFO Finish feature extraction (train).
+2025-03-15 03:03:44,921 P273285 INFO Transforming test data.
+2025-03-15 03:03:44,999 P273285 INFO 7 new templates show while testing.
+2025-03-15 03:03:46,275 P273285 INFO 1206356 sliding windows generated.
+2025-03-15 03:03:51,327 P273285 INFO Finish feature extraction (test).
+2025-03-15 03:03:56,074 P273285 INFO Start training on 4724 batches with cuda:0.
+2025-03-15 03:06:44,268 P273285 INFO Epoch 1/500, training loss: 0.08136 [168.19s]
+2025-03-15 03:06:44,269 P273285 INFO Evaluating test data.
+2025-03-15 03:07:54,727 P273285 INFO Finish inference. [70.46s]
+2025-03-15 03:07:59,338 P273285 INFO {'f1': '0.960', 'rc': '0.996', 'pc': '0.927', 'acc': '0.998'}
+2025-03-15 03:07:59,580 P273285 INFO Saving model to ./experiment_records/3c1d833d/model.ckpt
+2025-03-15 03:10:36,417 P273285 INFO Epoch 2/500, training loss: 0.07747 [156.83s]
+2025-03-15 03:10:36,419 P273285 INFO Evaluating test data.
+2025-03-15 03:11:00,625 P273285 INFO Finish inference. [24.21s]
+2025-03-15 03:11:01,761 P273285 INFO {'f1': '0.959', 'rc': '0.996', 'pc': '0.924', 'acc': '0.997'}
+2025-03-15 03:13:53,184 P273285 INFO Epoch 3/500, training loss: 0.07726 [171.22s]
+2025-03-15 03:13:53,185 P273285 INFO Evaluating test data.
+2025-03-15 03:14:17,251 P273285 INFO Finish inference. [24.07s]
+2025-03-15 03:14:18,349 P273285 INFO {'f1': '0.958', 'rc': '0.996', 'pc': '0.923', 'acc': '0.997'}
+2025-03-15 03:17:26,939 P273285 INFO Epoch 4/500, training loss: 0.07707 [188.38s]
+2025-03-15 03:17:26,940 P273285 INFO Evaluating test data.
+2025-03-15 03:18:00,846 P273285 INFO Finish inference. [33.91s]
+2025-03-15 03:18:01,982 P273285 INFO {'f1': '0.971', 'rc': '0.992', 'pc': '0.951', 'acc': '0.998'}
+2025-03-15 03:18:02,227 P273285 INFO Saving model to ./experiment_records/3c1d833d/model.ckpt
+2025-03-15 03:20:11,241 P273285 INFO Epoch 5/500, training loss: 0.07706 [129.01s]
+2025-03-15 03:20:11,241 P273285 INFO Evaluating test data.
+2025-03-15 03:20:47,936 P273285 INFO Finish inference. [36.69s]
+2025-03-15 03:20:49,126 P273285 INFO {'f1': '0.960', 'rc': '0.996', 'pc': '0.926', 'acc': '0.997'}
+2025-03-15 03:22:44,810 P273285 INFO Epoch 6/500, training loss: 0.07699 [115.45s]
+2025-03-15 03:22:44,812 P273285 INFO Evaluating test data.
+2025-03-15 03:23:07,224 P273285 INFO Finish inference. [22.41s]
+2025-03-15 03:23:08,944 P273285 INFO {'f1': '0.959', 'rc': '0.995', 'pc': '0.925', 'acc': '0.997'}
+2025-03-15 03:25:08,594 P273285 INFO Epoch 7/500, training loss: 0.07697 [119.04s]
+2025-03-15 03:25:08,595 P273285 INFO Evaluating test data.
+2025-03-15 03:25:30,851 P273285 INFO Finish inference. [22.26s]
+2025-03-15 03:25:32,145 P273285 INFO {'f1': '0.964', 'rc': '0.995', 'pc': '0.935', 'acc': '0.998'}
+2025-03-15 03:25:32,439 P273285 INFO Early stop at epoch: 7
+2025-03-15 03:25:32,439 P273285 INFO Loading model from ./experiment_records/3c1d833d/model.ckpt

@@ -1,0 +1,48 @@
+2025-03-18 08:53:04,203 - INFO - log_propagation not exists adding now ...
+2025-03-18 08:53:04,307 - INFO - log_propagation finish adding !
+2025-03-18 08:53:36,937 - INFO - load callgraph,all the node is 295695
+2025-03-18 08:54:17,404 - INFO - start log node is  101
+2025-03-18 08:54:17,576 - INFO - Checkpoint write success, marking nodes num: 9032, the length of queue 8025
+2025-03-18 08:54:17,618 - INFO - Checkpoint write success, marking nodes num: 9449, the length of queue 7442
+2025-03-18 08:54:17,662 - INFO - Checkpoint write success, marking nodes num: 10212, the length of queue 7205
+2025-03-18 08:54:17,711 - INFO - Checkpoint write success, marking nodes num: 11559, the length of queue 7552
+2025-03-18 08:54:17,758 - INFO - Checkpoint write success, marking nodes num: 12632, the length of queue 7625
+2025-03-18 08:54:17,814 - INFO - Checkpoint write success, marking nodes num: 13862, the length of queue 7855
+2025-03-18 08:54:17,866 - INFO - Checkpoint write success, marking nodes num: 14806, the length of queue 7799
+2025-03-18 08:54:17,916 - INFO - Checkpoint write success, marking nodes num: 16109, the length of queue 8102
+2025-03-18 08:54:17,972 - INFO - Checkpoint write success, marking nodes num: 17246, the length of queue 8239
+2025-03-18 08:54:18,044 - INFO - Checkpoint write success, marking nodes num: 18078, the length of queue 8071
+2025-03-18 08:54:18,117 - INFO - Checkpoint write success, marking nodes num: 19019, the length of queue 8012
+2025-03-18 08:54:18,181 - INFO - Checkpoint write success, marking nodes num: 19786, the length of queue 7779
+2025-03-18 08:54:18,262 - INFO - Checkpoint write success, marking nodes num: 20543, the length of queue 7536
+2025-03-18 08:54:18,322 - INFO - Checkpoint write success, marking nodes num: 21372, the length of queue 7365
+2025-03-18 08:54:18,375 - INFO - Checkpoint write success, marking nodes num: 22260, the length of queue 7253
+2025-03-18 08:54:18,441 - INFO - Checkpoint write success, marking nodes num: 23328, the length of queue 7321
+2025-03-18 08:54:18,506 - INFO - Checkpoint write success, marking nodes num: 24273, the length of queue 7266
+2025-03-18 08:54:18,562 - INFO - Checkpoint write success, marking nodes num: 25099, the length of queue 7092
+2025-03-18 08:54:18,618 - INFO - Checkpoint write success, marking nodes num: 25949, the length of queue 6942
+2025-03-18 08:54:18,691 - INFO - Checkpoint write success, marking nodes num: 26983, the length of queue 6976
+2025-03-18 08:54:18,760 - INFO - Checkpoint write success, marking nodes num: 27786, the length of queue 6779
+2025-03-18 08:54:18,833 - INFO - Checkpoint write success, marking nodes num: 28581, the length of queue 6574
+2025-03-18 08:54:18,916 - INFO - Checkpoint write success, marking nodes num: 29760, the length of queue 6753
+2025-03-18 08:54:18,988 - INFO - Checkpoint write success, marking nodes num: 30581, the length of queue 6574
+2025-03-18 08:54:19,074 - INFO - Checkpoint write success, marking nodes num: 31529, the length of queue 6522
+2025-03-18 08:54:19,165 - INFO - Checkpoint write success, marking nodes num: 32392, the length of queue 6385
+2025-03-18 08:54:19,269 - INFO - Checkpoint write success, marking nodes num: 33279, the length of queue 6272
+2025-03-18 08:54:19,347 - INFO - Checkpoint write success, marking nodes num: 33952, the length of queue 5945
+2025-03-18 08:54:19,431 - INFO - Checkpoint write success, marking nodes num: 34631, the length of queue 5624
+2025-03-18 08:54:19,504 - INFO - Checkpoint write success, marking nodes num: 35432, the length of queue 5425
+2025-03-18 08:54:19,565 - INFO - Checkpoint write success, marking nodes num: 36044, the length of queue 5037
+2025-03-18 08:54:19,659 - INFO - Checkpoint write success, marking nodes num: 36890, the length of queue 4883
+2025-03-18 08:54:19,734 - INFO - Checkpoint write success, marking nodes num: 37512, the length of queue 4505
+2025-03-18 08:54:19,822 - INFO - Checkpoint write success, marking nodes num: 38145, the length of queue 4138
+2025-03-18 08:54:19,898 - INFO - Checkpoint write success, marking nodes num: 38833, the length of queue 3826
+2025-03-18 08:54:19,963 - INFO - Checkpoint write success, marking nodes num: 39492, the length of queue 3485
+2025-03-18 08:54:20,032 - INFO - Checkpoint write success, marking nodes num: 40056, the length of queue 3049
+2025-03-18 08:54:20,131 - INFO - Checkpoint write success, marking nodes num: 40719, the length of queue 2712
+2025-03-18 08:54:20,259 - INFO - Checkpoint write success, marking nodes num: 41308, the length of queue 2301
+2025-03-18 08:54:20,341 - INFO - Checkpoint write success, marking nodes num: 41906, the length of queue 1899
+2025-03-18 08:54:20,421 - INFO - Checkpoint write success, marking nodes num: 42445, the length of queue 1438
+2025-03-18 08:54:20,506 - INFO - Checkpoint write success, marking nodes num: 43016, the length of queue 1009
+2025-03-18 08:54:20,638 - INFO - Checkpoint write success, marking nodes num: 43769, the length of queue 762
+2025-03-18 08:54:20,759 - INFO - Checkpoint write success, marking nodes num: 44258, the length of queue 251

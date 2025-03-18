@@ -94,7 +94,7 @@ def extract_from_content(content):
     return pairs
 
 
-def compress_log(output_file = "output/log_events/compressed_logs_v2.json"):
+def compress_log(output_file = "output/log_events/compressed_logs_all.json"):
     os.makedirs("output/log_events",exist_ok=True)
     signature = load_filtered_signatures()
     node_map = load_json("output/enhanced_single_cfg/merged_enhanced_cfg.json")
