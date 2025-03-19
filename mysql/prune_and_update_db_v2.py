@@ -143,7 +143,7 @@ def load_checkpoint():
             logging.info(f"load checkpoint：{len(marked)} marked nodes,the length of queue {bfs_q.qsize()}")
             return marked, bfs_q
         except Exception as e:
-            logging.error(f"加载 checkpoint 失败: {e}")
+            logging.error(f"load checkpoint failed: {e}")
     return None, None
 
 def bfs_worker(bfs_queue, marked, marked_lock, reverse_graph, edge_queue, checkpoint_counter, counter_lock):

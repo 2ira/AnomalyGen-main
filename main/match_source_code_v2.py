@@ -47,7 +47,6 @@ def parse_method_signature(signature):
     fqcn = parts[0]
     method_with_params = parts[1]
     
-    # 处理内部类（包含匿名内部类时可能不适用，因为匿名类没有明确名称）
     if '$' in fqcn:
         simple_class_name = fqcn.split('$')[-1]
     else:
@@ -55,7 +54,7 @@ def parse_method_signature(signature):
     
     method_name_end = method_with_params.find('(')
     method_name = method_with_params[:method_name_end]
-    param_signature = method_with_params[method_name_end:]  # 包含括号
+    param_signature = method_with_params[method_name_end:] 
     return fqcn, simple_class_name, method_name, param_signature
 
 def get_java_method_code(gateway, file_path, simple_class_name, method_name, param_signature):
@@ -120,6 +119,8 @@ def process_log_file(input_file, project_dir,output_dir="output"):
 
 
     for method_signature in method_signatures:
+        file_path = locate_source_code_file_path(method_signature,project_dir)
+        source_code = locate_source_code(method_signature,file_path)
       
         if source_code:
             result_dict[method_signature] = {
@@ -141,7 +142,7 @@ def process_log_file(input_file, project_dir,output_dir="output"):
         json.dump(missing_dict, missing_file, indent=4, ensure_ascii=False)
 
     logging.info(f"Method source code extraction completed and saved to {output_file}")
-    logging.info("finish, all %d 个方法,no locate %d 个方法。",
+    logging.info("finish, all %d methods,no locate %d methods",
                  len(result_dict), len(missing_dict))
 
 def prune_call_chain_by_log_node(call_chain_file, output_file):

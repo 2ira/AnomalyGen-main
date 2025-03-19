@@ -110,7 +110,7 @@ def dfs(signature, simple_call_graph, code_map):
         callpaths = ""
         for child in simple_call_graph.get(signature, []):
             callpaths = callpaths + "->"+child+"\n"      
-        info ="当前节点的签名:" + signature + "源代码:" + source_code +"所有的方法调用边:"+ callpaths + "源代码原始CFG路径:" + node_info
+        info = f"signature: {signature}, source_code: {source_code}, all the callpath: {callpaths} , the origin cfg of this signature: {node_info}"
         node_log_seq = get_single_node_log(info)
         single_call_path_json[signature] = node_info
         single_log_seq_json[signature] = node_log_seq
