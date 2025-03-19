@@ -1,4 +1,2 @@
-/home/ubuntu/LLMlogger/java-parser/src/main/java/com/example/MethodExtractorGateway.java
-/home/ubuntu/LLMlogger/java-parser/src/main/java/com/example/JavaParserServer.java
-/home/ubuntu/LLMlogger/java-parser/src/main/java/com/example/JavaParserBack.java
-/home/ubuntu/LLMlogger/java-parser/src/main/java/com/example/NodeTypeCounter.java
+/home/yxsu/Desktop/AnomalyGen-main/java-parser/src/main/java/com/example/JavaParserServer.java
+/home/yxsu/Desktop/AnomalyGen-main/java-parser/src/main/java/com/example/MethodExtractorGateway.java

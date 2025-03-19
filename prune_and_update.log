@@ -46,3 +46,15 @@
 2025-03-18 08:54:20,506 - INFO - Checkpoint write success, marking nodes num: 43016, the length of queue 1009
 2025-03-18 08:54:20,638 - INFO - Checkpoint write success, marking nodes num: 43769, the length of queue 762
 2025-03-18 08:54:20,759 - INFO - Checkpoint write success, marking nodes num: 44258, the length of queue 251
+2025-03-19 20:21:57,607 - INFO - log_propagation not exists adding now ...
+2025-03-19 20:21:57,661 - INFO - log_propagation finish adding !
+2025-03-19 20:22:00,332 - INFO - load callgraph,all the node is 295695
+2025-03-19 20:22:17,452 - INFO - start log node is  101
+2025-03-19 20:22:17,473 - INFO - load checkpoint：44258 marked nodes,the length of queue 251
+2025-03-19 20:31:19,218 - INFO - DB finish
+2025-03-19 20:31:19,219 - INFO - Checkpoint was deleted
+2025-03-19 20:31:19,219 - INFO - multiprocess BFS is finished,marking node is 44806
+2025-03-19 20:31:25,114 - INFO - method_call already refreshed log_propagation
+2025-03-19 20:31:25,115 - INFO - prune and refresh finished!
+2025-03-19 20:31:25,130 - INFO - in 0 node is output/hadoop/start_nodes.txt,number is  15527
+2025-03-19 20:31:25,130 - INFO - saved all

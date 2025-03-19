@@ -1,6 +1,6 @@
 {
     "openai": {
-        "api_key":"..",
+        "api_key":"...",
         "base_url":"...",
         "default_model":"...",
         "temperature": 0,
