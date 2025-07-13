@@ -119,10 +119,11 @@ Return to the project root and run the auto-configuration script:
 
 ```bash
 cd ..
+cd main
 python main/auto_callgraph_config.py --project_dir your_project_dir
 
 # Example
-python main/auto_callgraph_config.py --project_dir hadoop
+python main/auto_callgraph_config.py --project_dir hadoop(in the main directory )
 ```
 
 #### e) Modify Configuration and Run Call Graph Construction
@@ -138,7 +139,7 @@ output.file.ext=.txt
 Then, navigate to the output directory and execute:
 
 ```bash
-cd java-callgraph2/jar-output_dir/
+cd java-callgraph2/jar_output_dir/
 ./run.sh
 ```
 
