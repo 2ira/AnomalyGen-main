@@ -7,7 +7,7 @@ main/venv/*
 # some bug files 
 main/output/hadoop/cosn-javacg2_merged.jar-output_javacg2/method_call_info.txt
 ain/output/hadoop/cosn-javacg2_merged.jar-output_javacg2/method_call.txt
-
+output/hadoop/cosn-javacg2_merged.jar-output_javacg2/*
 *.log
 #git lfs track "*.jar"
 # Tracking "*.jar"
