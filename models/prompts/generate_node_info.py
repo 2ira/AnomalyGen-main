@@ -1,6 +1,6 @@
 import os
 def generate_node_log_seq(info):
-    return f"""
+   yield f"""
    # Role and Task Description
    You are a Java control flow analysis engine that needs to generate accurate log sequence mappings based on control flow graphs (CFGs) of methods
 
@@ -122,7 +122,7 @@ def generate_node_log_seq(info):
 
 
 def generate_node_log_seq_v2(info):
-    return f"""
+   yield f"""
    #Intelligent Control Flow Analysis Engine Task Description
 
    ## Input data specification
@@ -235,6 +235,4 @@ def generate_node_log_seq_v2(info):
 
    Please complete the analysis based on the following input:
    {info}
-   Only use to return ```xml.... ``` only the results of the analysis, without giving anything else.
-
-"""
+   Only use to return ```xml.... ``` only the results of the analysis, without giving anything else."""

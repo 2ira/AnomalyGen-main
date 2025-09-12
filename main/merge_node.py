@@ -18,6 +18,9 @@ logger = logging.getLogger()
 
 
 def address_log_seq(message):
+
+    if "'```xml" not in message:
+        return message
     
     xml_content = re.search(r'```xml(.*?)```', message, re.DOTALL)
     xml_data = None
@@ -117,7 +120,7 @@ class StackDFSMerger:
             
             parent_info = "node name is "+node+"node log is"+str(parent_log)+"souce code:"+ str(parent_code)
             child_info ="node name is"+child+ "node log is"+str(child_log)+"source code:"+str(child_code)
-            prompts = get_merge_nodes_by_llm_v4(parent_info,child_info)
+            prompts = list(get_merge_nodes_by_llm_v4(parent_info,child_info))
             
             merged = get_response(prompts)
             self.merged_info[node]=merged
@@ -206,11 +209,6 @@ def load_json(json_file):
     except Exception as e:
         return None
 
-def get_single_node_log(info):
-    prompts = generate_node_log_seq(info)
-    reply = get_response(prompts)
-    return reply
-
 def parse_call_file(filename):
     call_graph_with_depth = {}
     all_callees = set()
@@ -261,7 +259,7 @@ def test():
         roots = {list(simple_call_graph.keys())[0]}
 
     code_map =  load_json("output/hadoop/MRAppMaster_main/extracted_methods.json")
-    single_log_map = load_json("output/hadoop/MRAppMaster_main/single_log_seq_javaparser.json")
+    single_log_map = load_json("output/hadoop/MRAppMaster_main/single_call_path_javaparser.json")
     
     merger = StackDFSMerger(simple_call_graph, code_map,single_log_map)
     merger.merge(roots)
@@ -284,7 +282,7 @@ def main():
     parser = argparse.ArgumentParser(description = "finishd sub graph code mapping")
     parser.add_argument('--call_chain_file', type=str, required=True,help="sub graph file")
     parser.add_argument('--source_mapping', type=str, required=True,help="source_code mapping file path")
-    parser.add_argument('--single_log_seq', type=str, required=True,help="single log generation mapping file path")
+    parser.add_argument('--single_call_path', type=str, required=True,help="single log generation mapping file path")
     parser.add_argument('--output_dir', type=str, required=True,help="output dir of mapping json")
     
     args = parser.parse_args()
@@ -292,7 +290,7 @@ def main():
     call_file = args.call_chain_file
     source_mapping = args.source_mapping
     output_dir = args.output_dir
-    single_log_seq = args.single_log_seq
+    single_call_path = args.single_call_path
 
     call_graph_with_depth, all_callees = parse_call_file(call_file)
     simple_call_graph = build_simple_call_graph(call_graph_with_depth)
@@ -304,9 +302,9 @@ def main():
         roots = {list(simple_call_graph.keys())[0]}
     code_map =  load_json(source_mapping)
     # print(source_mapping)
-    single_log_map = load_json(single_log_seq)
+    single_log_map = load_json(single_call_path)
     if single_log_map is None:
-        print(f"load {single_log_seq} failed")
+        print(f"load {single_call_path} failed")
 
     
     merger = StackDFSMerger(simple_call_graph, code_map,single_log_map)

@@ -1,0 +1,418 @@
+{
+  "26a3b790_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Changing meta file offset of block 1024 from 2048 to 4096"
+  },
+  "9f4f21bf_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Changing meta file offset of block 1024 from 4096 to 8192"
+  },
+  "cc7f52f8_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Changing meta file offset of block 1024 from 2048 to 4096"
+  },
+  "f569c040_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "b137939a_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Span object is not null [INFO]:Closing resources [INFO]:Exited execution path"
+  },
+  "24dbcb57_1": {
+    "exec_flow": "ENTRY→TRY→CALL:readBlock→IF_TRUE:traceScope!=null→CALL:traceScope.close→IF_TRUE:span!=null→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:readBlock→IF_FALSE:traceScope!=null→EXIT",
+    "log": "[INFO]:Read block operation started [INFO]:Trace scope is active [INFO]:Trace scope closed [INFO]:Span is active [INFO]:Span closed [INFO]:Read block operation completed"
+  },
+  "24dbcb57_2": {
+    "exec_flow": "ENTRY→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→CALL:getSpanContext→CALL:getTraceInfo→RETURN→EXIT",
+    "log": "[INFO]:Continuing trace span [INFO]:Retrieved span context [INFO]:Fetched trace information [INFO]:Retrieved span context [INFO]:Fetched trace information [INFO]:Trace span continued"
+  },
+  "82b133a2_1": {
+    "exec_flow": "ENTRY→TRY→CALL:writeBlock→IF_TRUE:traceScope!=null→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→CALL:traceScope.close→IF_TRUE:span!=null→CALL:close→EXIT%%ENTRY→TRY→CALL:writeBlock→IF_FALSE:traceScope!=null→EXIT",
+    "log": "[INFO]:Block write operation initiated [INFO]:Trace scope is active [INFO]:Continuing trace span [INFO]:Fetching span context [INFO]:Retrieving trace information [INFO]:Closing trace scope [INFO]:Span is active [INFO]:Closing span"
+  },
+  "32a18917_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "e78d5474_1": {
+    "exec_flow": "ENTRY→TRY→CALL:replaceBlock→IF_TRUE:traceScope!=null→ENTRY→IF_TRUE:span!=null→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:replaceBlock→IF_FALSE:traceScope!=null→EXIT",
+    "log": "[INFO]:Replaced block in pool data_pool_01 [ERROR]:Trace scope is null, operation aborted"
+  },
+  "e78d5474_2": {
+    "exec_flow": "ENTRY→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→EXIT",
+    "log": "[INFO]:Continuing trace span for user hadoop_user [INFO]:Fetched trace context from namenode01 [INFO]:Retrieved trace information successfully"
+  },
+  "7dc47aa3_1": {
+    "exec_flow": "ENTRY→TRY→CALL:copyBlock→IF_TRUE:traceScopeExists%%ENTRY→TRY→CALL:copyBlock→IF_FALSE:traceScopeExists",
+    "log": "[INFO]:Copied block of size 128MB from namenode01 [INFO]:Trace scope exists, entering detailed span processing [INFO]:Span exists, closing active span [INFO]:Span does not exist, skipping close operation [INFO]:Continuing trace span [INFO]:Fetched span context successfully [INFO]:Retrieved trace information"
+  },
+  "cdc25fc2_1": {
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE:traceScope!=null→ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE:traceScope!=null→EXIT",
+    "log": "[INFO]:Fetched block checksum from namenode01 [INFO]:Trace scope is active [INFO]:Span is active [INFO]:Span is not active [INFO]:Continuing trace span [INFO]:Fetched span context [INFO]:Retrieved trace information"
+  },
+  "db4b799d_1": {
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→IF_TRUE:traceScopeExists%%ENTRY→TRY→CALL:blockGroupChecksum→IF_FALSE:traceScopeExists",
+    "log": "[INFO]:Started processing block group checksum [INFO]:Trace scope exists, proceeding with span validation [INFO]:Span exists, closing current trace [INFO]:Continuing trace span [INFO]:Fetched span context [INFO]:Retrieved trace information [INFO]:Exiting trace processing [INFO]:Trace scope does not exist, skipping span validation [INFO]:Continuing trace span [INFO]:Fetched span context [INFO]:Retrieved trace information [INFO]:Exiting trace processing"
+  },
+  "aec814f0_1": {
+    "exec_flow": "ENTRY→TRY→CALL:transferBlock→IF_TRUE:traceScope!=null→ENTRY→IF_TRUE:span!=null→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:transferBlock→IF_TRUE:traceScope!=null→ENTRY→IF_FALSE:span!=null→EXIT→EXIT%%ENTRY→TRY→CALL:transferBlock→IF_FALSE:traceScope!=null→EXIT",
+    "log": "[INFO]:Initiating block transfer operation [INFO]:Fetched 128MB block from namenode01 [INFO]:Trace scope is active [INFO]:Span is active [INFO]:Closing active span [INFO]:Exiting block transfer operation [ERROR]:Trace scope is inactive"
+  },
+  "b17d6335_1": {
+    "exec_flow": "ENTRY→TRY→CALL:requestShortCircuitFds→IF_TRUE:traceScope!=null→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→CALL:traceScope.close→ENTRY→ConditionCheck%%ENTRY→TRY→CALL:requestShortCircuitFds→IF_FALSE:traceScope!=null→EXIT",
+    "log": "[INFO]:Attempting to request short-circuit file descriptors [INFO]:Trace scope is active, continuing trace span [INFO]:Fetching span context for trace [INFO]:Retrieved trace information successfully [INFO]:Closing trace scope [INFO]:Checking if span is active [INFO]:Span is active, closing span [INFO]:Exiting execution [INFO]:Trace scope is not active, exiting execution"
+  },
+  "92fab4ed_1": {
+    "exec_flow": "ENTRY→CALL:getDefaultInstance→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "17565125_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "f1398c33_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "6177c713_1": {
+    "exec_flow": "ENTRY→TRY→CALL:releaseShortCircuitFds→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:releaseShortCircuitFds→IF_FALSE→EXIT",
+    "log": "[INFO]:Released short-circuit file descriptors [INFO]:Trace scope is active [INFO]:Span is active [INFO]:Closed resources successfully [INFO]:Exited execution flow [INFO]:Trace scope is inactive [INFO]:Exited execution flow"
+  },
+  "9356f976_1": {
+    "exec_flow": "ENTRY→CALL→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "adcf825f_1": {
+    "exec_flow": "ENTRY→TRY→CALL:requestShortCircuitShm→IF_TRUE:traceScope!=null→CALL:traceScope.close→IF_TRUE:span!=null→CALL:close→EXIT%%ENTRY→TRY→CALL:requestShortCircuitShm→IF_FALSE:traceScope!=null→EXIT",
+    "log": "[INFO]:Requested short-circuit shared memory from namenode01 [INFO]:Trace scope closed successfully [INFO]:Span closed successfully [ERROR]:Trace scope was null, exiting"
+  },
+  "887a26fd_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Released short-circuit file descriptors for pool data_pool_01 [ERROR]:Trace scope is null, unable to proceed"
+  },
+  "475c8eb2_1": {
+    "exec_flow": "ENTRY→RegisteringStream",
+    "log": "[TRACE]:Registering dfsInputStream for /user/data"
+  },
+  "4297f10d_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Registering dfsInputStream for /user/data [ERROR]:Access denied to path /user/test"
+  },
+  "928645da_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": ""
+  },
+  "b3207a18_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Thread interrupted, InterruptedException [INFO]:Thread execution interrupted, attempting recovery"
+  },
+  "b570e521_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "88a78c78_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "ceb06c8d_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ErrorHandling%%ENTRY→PipelineRecovery%%ENTRY→BlockClosure%%ENTRY→DataStreaming%%ENTRY→ExitHandling",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [DEBUG]:Start process datanode/external error [INFO]:Error recovery for block waiting for responder to exit [WARN]:Error recovering pipeline for writing block. Already retried 5 times for the same packet [DEBUG]:Closing old block block-12345 [DEBUG]:Nodes [node01, node02] storageTypes [DISK, SSD] storageIDs [id01, id02]"
+  },
+  "043f2a44_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "bdea6dc9_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": ""
+  },
+  "52166f8a_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "f87f7fa9_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "d737c5b5_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": ""
+  },
+  "4cf8a980_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched current time from system clock"
+  },
+  "2003f395_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Nodes are empty for write pipeline of block [DEBUG]:Pipeline = [node1, node2, node3], this [INFO]:Operation completed successfully"
+  },
+  "8c71fffb_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "49a530e1_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Nodes are empty for write pipeline of block [DEBUG]:Pipeline = [node1, node2, node3], this [INFO]:Message"
+  },
+  "300f0414_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "83761ad5_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Datanode 3 did not restart within 30000 ms: node-03 [ERROR]:Illegal state exception: error=false while checking restarting node deadline"
+  },
+  "bccbdbcd_1": {
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→RETURN→EXIT%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "bccbdbcd_2": {
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline→EXIT%%IF_FALSE: nodes.length == 0→IF_TRUE: Debugging pipeline state→CALL: persistBlocks.set→WHILE: true→WHILE_COND: true→CALL: RestartingNode→IF_TRUE: shouldWait→CALL: monotonicNow→[INFO]:Pipeline updated successfully→EXIT→WHILE_EXIT→EXIT",
+    "log": "[INFO]:Pipeline updated successfully [DEBUG]:Pipeline state: [node1, node2, node3], DataStreamer instance"
+  },
+  "3a4fb26e_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→PipelineSetup",
+    "log": "[WARN]:Nodes array is null or empty [INFO]:Pipeline setup completed successfully"
+  },
+  "3b504348_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Nodes [\"namenode01\", \"namenode02\"] storageTypes [\"DISK\", \"SSD\"] storageIDs [\"block-01\", \"block-02\"] [INFO]:ResponseProcessor initialized [INFO]:Started processing at monotonic time 1697059200000"
+  },
+  "a4f7bfe4_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "4f9e9aad_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": ""
+  },
+  "46c5c85e_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "fa7bbe1f_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "87305a40_1": {
+    "exec_flow": "ENTRY→SYNC→WHILE_COND%%ENTRY→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "33220b2e_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Closing old block 128MB [DEBUG]:Thread interrupted, InterruptedException"
+  },
+  "6748932f_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "a039e58f_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": ""
+  },
+  "4815f777_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "d8681342_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "ff16b5ef_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ExceptionHandling%%ENTRY→OtherBranch",
+    "log": "[INFO]:Responder closed successfully [INFO]:Stream closed successfully [INFO]:Resources released [INFO]:Data queue synchronized [DEBUG]:Thread interrupted"
+  },
+  "140856cf_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "78a850f6_1": {
+    "exec_flow": "ENTRY→CALL:addBlock→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "e426088d_1": {
+    "exec_flow": "ENTRY→CALL→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "52e22579_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "459fce37_1": {
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND: idx < len→IF_TRUE: cur == storageInfo→RETURN→EXIT%%ENTRY→FOR_INIT→FOR_COND: idx < len→FOR_EXIT→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "2699afdf_1": {
+    "exec_flow": "ENTRY→CALL:moveBlockToHead→RETURN→EXIT",
+    "log": "[INFO]:Moved block to head successfully"
+  },
+  "97d385b8_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "c668217f_1": {
+    "exec_flow": "ENTRY→CALL:getNext→CALL:findStorageInfo→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "8e71fe7a_1": {
+    "exec_flow": "ENTRY→CALL:listRemove→IF_TRUE→RETURN→EXIT%%ENTRY→CALL:listRemove→IF_FALSE→RETURN→EXIT",
+    "log": "[INFO]:Removed storage block from pool \"data_pool_01\" [ERROR]:Failed to remove storage block due to insufficient permissions for user \"hadoop_user\""
+  },
+  "afcabafb_1": {
+    "exec_flow": "ENTRY→IF_TRUE: newReport == null→FOREACH: newReport→FOREACH_EXIT→LOG: Reported block block-123 on datanode-01 size 1048576 replicaState = FINALIZED→IF_TRUE: shouldPostponeBlocksFromFuture && isGenStampInFuture(block)→CALL: queueReportedBlock→RETURN→WHILE: it.hasNext()→WHILE_COND: it.hasNext()→WHILE_EXIT→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→ENTRY→CALL: addBlock→RETURN→EXIT→RETURN→EXIT→EXIT%%ENTRY→IF_FALSE: shouldPostponeBlocksFromFuture && isGenStampInFuture(block)→IF_TRUE: storedBlock == null→CALL: toInvalidate.add→RETURN→WHILE: it.hasNext()→WHILE_COND: it.hasNext()→WHILE_EXIT→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→ENTRY→CALL: addBlock→RETURN→EXIT→RETURN→EXIT→EXIT%%ENTRY→IF_FALSE: shouldPostponeBlocksFromFuture && isGenStampInFuture(block)→IF_FALSE: storedBlock == null→LOG: In memory blockUCState = UNDER_CONSTRUCTION→IF_TRUE: invalidateBlocks.contains(dn, block)→RETURN→WHILE: it.hasNext()→WHILE_COND: it.hasNext()→WHILE_EXIT→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→ENTRY→CALL: addBlock→RETURN→EXIT→RETURN→EXIT→EXIT",
+    "log": "[INFO]:Reported block block-123 on datanode-01 size 1048576 replicaState = FINALIZED [DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION"
+  },
+  "afcabafb_2": {
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND: idx < len→IF_TRUE: cur == storageInfo→RETURN→EXIT%%ENTRY→FOR_INIT→FOR_COND: idx < len→FOR_EXIT→RETURN→EXIT",
+    "log": "[INFO]:Loop initialized [DEBUG]:Condition idx < len evaluated"
+  },
+  "afcabafb_3": {
+    "exec_flow": "ENTRY→CALL: getNext→CALL: findStorageInfo→CALL: findStorageInfo→RETURN→EXIT",
+    "log": "[INFO]:Fetching next element [DEBUG]:Finding storage information"
+  },
+  "a0b02421_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "4664c9fd_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "c7f75db9_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "d22cee29_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "0d5cf8ce_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "cae39118_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "2a93eca4_1": {
+    "exec_flow": "ENTRY→CALL:equals→CALL:getBlockUCState→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "21f25770_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "cb33f85a_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "ca7fbcf3_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "964c845c_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "18c30f2e_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→SafeModeDecrement→UpdateReconstructions%%ENTRY→SafeModeDecrement→DataBlockProcessing→UpdateReconstructions%%ENTRY→ExcessRedundancyRemoval",
+    "log": "[INFO]:Block operation started [DEBUG]:Checking if block is stored or node removal failed [INFO]:Block is stored and node removal succeeded [DEBUG]:Checking if block is deleted [INFO]:Block is not deleted [DEBUG]:Decrementing safe block count [INFO]:Safe mode status is ON [DEBUG]:Checking if block is complete and replication matches safe number of nodes [INFO]:Block is complete and replication matches safe number of nodes [DEBUG]:Updating reconstruction queue [INFO]:Excess redundancy removed [INFO]:Corrupt replicas removed from map"
+  },
+  "7027a1a2_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "54c1754e_1": {
+    "exec_flow": "ENTRY→CountNodes",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [INFO]:Counted 3 data-nodes for block /user/data"
+  },
+  "d51b1764_1": {
+    "exec_flow": "ENTRY→IF_TRUE: Block is complete%%ENTRY→IF_FALSE: Block is incomplete→IF_TRUE: Block does not meet minimal replication→THROW: Cannot complete block due to insufficient replication%%ENTRY→IF_FALSE: Block is incomplete→IF_FALSE: Block meets minimal replication→IF_TRUE: Block state is not COMMITTED→CALL: Retrieve block state→RETURN→THROW: Cannot complete block as it is not COMMITTED%%ENTRY→IF_FALSE: Block is incomplete→IF_FALSE: Block meets minimal replication→IF_FALSE: Block state is COMMITTED→CALL: Convert block to complete→CALL: Adjust block totals→CALL: Increment safe block count→ENTRY→IF_TRUE: Safe mode is OFF",
+    "log": "[INFO]:Block entry point reached [INFO]:Block is complete [INFO]:Block is incomplete [ERROR]:Cannot complete block due to insufficient replication [INFO]:Block meets minimal replication [ERROR]:Cannot complete block as it is not COMMITTED [INFO]:Converting block to complete [INFO]:Adjusting block totals [INFO]:Incrementing safe block count [INFO]:Safe mode is OFF"
+  },
+  "2b8438c5_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "5545562d_1": {
+    "exec_flow": "ENTRY→CALL:equals→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "61810f43_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "169b52fd_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "220ab0f3_1": {
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log": "[INFO]:Postponing block processing since storage data_pool_01 does not yet have up-to-date information"
+  },
+  "5b8b437f_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→FinalBranch",
+    "log": "[INFO]:Debugging block log [ERROR]:Cannot invalidate block because datanode does not exist [INFO]:Postponing block deletion due to stale replicas [INFO]:Adding block to invalidation list [INFO]:Iterating over storage blocks [INFO]:Exiting storage block iteration [INFO]:Debugging block log for valid datanodes [INFO]:Removing stored block [INFO]:Debugging block log after removal"
+  },
+  "98efcc52_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→StripedBlockProcessing%%ENTRY→NonStripedBlockProcessing",
+    "log": "[INFO]:Checked if nodes list is null [INFO]:Nodes list is null, returning from execution [INFO]:Checked if nodes list is null [INFO]:Nodes list is not null, checking if block is striped [INFO]:Block is striped, fetching storage information [INFO]:Iterating over nodes copy [INFO]:Completed iteration over nodes copy [INFO]:Block removed from blocks map, removing from corrupt replicas map [INFO]:Removed block from corrupt replicas map [INFO]:Checked if nodes list is null [INFO]:Nodes list is not null, checking if block is striped [INFO]:Block is striped, fetching storage information [INFO]:Iterating over nodes copy [INFO]:Completed iteration over nodes copy [INFO]:Block not removed from blocks map, exiting [INFO]:Checked if nodes list is null [INFO]:Nodes list is not null, checking if block is striped [INFO]:Block is not striped, iterating over nodes copy [INFO]:Completed iteration over nodes copy [INFO]:Block removed from blocks map, removing from corrupt replicas map [INFO]:Removed block from corrupt replicas map [INFO]:Checked if nodes list is null [INFO]:Nodes list is not null, checking if block is striped [INFO]:Block is not striped, iterating over nodes copy [INFO]:Completed iteration over nodes copy [INFO]:Block not removed from blocks map, exiting"
+  },
+  "675fdd79_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "23dfab4e_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "23dfab4e_2": {
+    "exec_flow": "ENTRY→ConditionCheck→InitializeSet→AddBlock→CheckStripedBlock→IncrementECBlocks→LogDebug%%ENTRY→ConditionCheck→InitializeSet→AddBlock→CheckStripedBlock→IncrementECBlocks%%ENTRY→ConditionCheck→InitializeSet→AddBlock→CheckStripedBlock→IncrementBlocks→LogDebug%%ENTRY→ConditionCheck→InitializeSet→AddBlock→CheckStripedBlock→IncrementBlocks%%ENTRY→ConditionCheck→InitializeSet→AddBlock%%ENTRY→OtherBranch→AddBlock→CheckStripedBlock→IncrementECBlocks→LogDebug%%ENTRY→OtherBranch→AddBlock→CheckStripedBlock→IncrementECBlocks%%ENTRY→OtherBranch→AddBlock→CheckStripedBlock→IncrementBlocks→LogDebug%%ENTRY→OtherBranch→AddBlock→CheckStripedBlock→IncrementBlocks%%ENTRY→OtherBranch→AddBlock",
+    "log": "[INFO]:Initialized LightWeightHashSet [INFO]:Block added to set [INFO]:Checked if block is striped [INFO]:Incremented EC block count [DEBUG]:Block state change logged [INFO]:Incremented block count"
+  },
+  "2f60b247_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "0dc59f9c_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "e262ffb3_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[ERROR]:Block cannot be marked as corrupt as it does not belong to any file [INFO]:Block added as corrupt on datanode01 by hadoop_user READ|WRITE [INFO]:Duplicate request to add block as corrupt on datanode01 by hadoop_user READ|WRITE [INFO]:Block successfully removed from storage [ERROR]:Block removal from storage failed [INFO]:Reconstruction queue updated, block removed [INFO]:Reconstruction queue updated, block removed, block state decremented"
+  },
+  "cb32ad64_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "166c8990_1": {
+    "exec_flow": "ENTRY→FOREACH→FOREACH_EXIT→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "44a0857e_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Cannot find FsVolumeSpi to report bad block: /user/data/block_01"
+  },
+  "5e556f95_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "dcde8ff6_1": {
+    "exec_flow": "ENTRY→TRY→CALL:checkBlock→EXCEPTION:checkBlock→CATCH:ReplicaNotFoundException%%ENTRY→TRY→CALL:checkBlock→EXCEPTION:checkBlock→CATCH:UnexpectedReplicaStateException",
+    "log": "[INFO]:Replica not found or state not finalized [INFO]:Unexpected replica state encountered"
+  },
+  "dcde8ff6_2": {
+    "exec_flow": "ENTRY→TRY→CALL:checkBlock→EXCEPTION:checkBlock→CATCH:FileNotFoundException→IF_TRUE:blockFileNotExist→CALL:reportBadBlock→ENTRY→IF_TRUE:volume==null%%ENTRY→TRY→CALL:checkBlock→EXCEPTION:checkBlock→CATCH:IOException→IF_TRUE:blockFileNotExist→CALL:reportBadBlock→ENTRY→IF_TRUE:volume==null",
+    "log": "[INFO]:Block file does not exist [WARN]:Cannot find FsVolumeSpi to report bad block: /data/volume1, block"
+  },
+  "dcde8ff6_3": {
+    "exec_flow": "ENTRY→TRY→CALL:checkBlock→EXCEPTION:checkBlock→CATCH:EOFException→IF_TRUE:lengthTooShort→CALL:reportBadBlock→ENTRY→IF_FALSE:volume==null",
+    "log": "[INFO]:Block length too short [WARN]:Reporting bad blocks to namenode"
+  },
+  "b9f75a67_1": {
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND: i < 10→TRY→CALL: checkBlock→EXCEPTION: checkBlock→CATCH: ReplicaNotFoundException%%ENTRY→FOR_INIT→FOR_COND: i < 10→TRY→CALL: checkBlock→EXCEPTION: checkBlock→CATCH: UnexpectedReplicaStateException%%ENTRY→FOR_INIT→FOR_COND: i < 10→TRY→CALL: checkBlock→EXCEPTION: checkBlock→CATCH: FileNotFoundException→IF_TRUE: blockFileNotExist→ENTRY→IF_TRUE: volume == null%%ENTRY→FOR_INIT→FOR_COND: i < 10→TRY→CALL: checkBlock→EXCEPTION: checkBlock→CATCH: EOFException%%ENTRY→FOR_INIT→FOR_COND: i < 10→TRY→CALL: checkBlock→EXCEPTION: checkBlock→CATCH: IOException→IF_TRUE: blockFileNotExist→ENTRY→IF_TRUE: volume == null",
+    "log": "[INFO]:Replica not found for block [INFO]:Unexpected replica state encountered [INFO]:Block file does not exist [INFO]:Length of block file too short [INFO]:Block file does not exist [WARN]:Cannot find FsVolumeSpi to report bad block: /data/block_01 [WARN]:Cannot find FsVolumeSpi to report bad block: /data/block_02"
+  }
+}

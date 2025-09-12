@@ -1,0 +1,10 @@
+{
+    "org.apache.hadoop.hdfs.DFSClient:addLocatedBlocksRefresh(org.apache.hadoop.hdfs.DFSInputStream)": {
+        "source_code": "/**\n * Adds the {@link DFSInputStream} to the {@link LocatedBlocksRefresher}, so that\n * the underlying {@link LocatedBlocks} is periodically refreshed.\n */\npublic void addLocatedBlocksRefresh(DFSInputStream dfsInputStream) {\n    if (isLocatedBlocksRefresherEnabled()) {\n        clientContext.getLocatedBlocksRefresher().addInputStream(dfsInputStream);\n    }\n}",
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DFSClient.java"
+    },
+    "org.apache.hadoop.hdfs.LocatedBlocksRefresher:addInputStream(org.apache.hadoop.hdfs.DFSInputStream)": {
+        "source_code": "public synchronized void addInputStream(DFSInputStream dfsInputStream) {\n    LOG.trace(\"Registering {} for {}\", dfsInputStream, dfsInputStream.getSrc());\n    registeredInputStreams.add(dfsInputStream);\n}",
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/LocatedBlocksRefresher.java"
+    }
+}

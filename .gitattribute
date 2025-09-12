@@ -1,0 +1,7 @@
+*.jar filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.txt filter=lfs diff=lfs merge=lfs -text
+main/output/hadoop/cosn-javacg2_merged.jar-output_javacg2/method_call_info.txt filter=lfs diff=lfs merge=lfs -text
+test_workplace/hadoop_libs/aws-java-sdk-bundle-1.12.367.jar filter=lfs diff=lfs merge=lfs -text
+main/output/hadoop/cosn-javacg2_merged.jar-output_javacg2/method_call.txt filter=lfs diff=lfs merge=lfs -text
+hadoop/OpenJDK8U-jdk_x64_linux_hotspot_8u382b05.tar.gz filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,2594 @@
+{
+  "1": {
+    "entry_id": 1,
+    "BlockId": "26a3b790_1",
+    "log_key": "26a3b790_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Changing meta file offset of block 1024 from 4096 to 8192",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "2": {
+    "entry_id": 2,
+    "BlockId": "9f4f21bf_1",
+    "log_key": "9f4f21bf_1",
+    "exec_flow": "ENTRY→IF_TRUE%%ENTRY→IF_FALSE",
+    "log_segment": "[DEBUG]:Changing meta file offset of block 1024 from 4096 to 8192",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "3": {
+    "entry_id": 3,
+    "BlockId": "cc7f52f8_1",
+    "log_key": "cc7f52f8_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Changing meta file offset of block 1024 from 4096 to 8192",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "4": {
+    "entry_id": 4,
+    "BlockId": "f569c040_1",
+    "log_key": "f569c040_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "5": {
+    "entry_id": 5,
+    "BlockId": "f569c040_1",
+    "log_key": "f569c040_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "6": {
+    "entry_id": 6,
+    "BlockId": "b137939a_1",
+    "log_key": "b137939a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "7": {
+    "entry_id": 7,
+    "BlockId": "b137939a_1",
+    "log_key": "b137939a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "8": {
+    "entry_id": 8,
+    "BlockId": "24dbcb57_1",
+    "log_key": "24dbcb57_1",
+    "exec_flow": "ENTRY→TRY→readBlock→IF_TRUE→traceScope.close→ENTRY→IF_TRUE→close→EXIT→EXIT%%ENTRY→TRY→readBlock→IF_FALSE→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "9": {
+    "entry_id": 9,
+    "BlockId": "24dbcb57_1",
+    "log_key": "24dbcb57_1",
+    "exec_flow": "ENTRY→TRY→readBlock→IF_TRUE→traceScope.close→ENTRY→IF_TRUE→close→EXIT→EXIT%%ENTRY→TRY→readBlock→IF_FALSE→EXIT",
+    "log_segment": "[INFO]:Trace scope closed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "10": {
+    "entry_id": 10,
+    "BlockId": "24dbcb57_1",
+    "log_key": "24dbcb57_1",
+    "exec_flow": "ENTRY→TRY→readBlock→IF_TRUE→traceScope.close→ENTRY→IF_TRUE→close→EXIT→EXIT%%ENTRY→TRY→readBlock→IF_FALSE→EXIT",
+    "log_segment": "[INFO]:Span closed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "11": {
+    "entry_id": 11,
+    "BlockId": "82b133a2_1",
+    "log_key": "82b133a2_1",
+    "exec_flow": "ENTRY→TRY→CALL:writeBlock→IF_TRUE→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→CALL:traceScope.close→IF_TRUE→CALL:close→EXIT%%ENTRY→TRY→CALL:writeBlock→IF_FALSE→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "12": {
+    "entry_id": 12,
+    "BlockId": "82b133a2_1",
+    "log_key": "82b133a2_1",
+    "exec_flow": "ENTRY→TRY→CALL:writeBlock→IF_TRUE→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→CALL:traceScope.close→IF_TRUE→CALL:close→EXIT%%ENTRY→TRY→CALL:writeBlock→IF_FALSE→EXIT",
+    "log_segment": "[INFO]:Trace span continued with context: {\"traceId\":\"abc123\",\"spanId\":\"def456\"}",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "13": {
+    "entry_id": 13,
+    "BlockId": "82b133a2_1",
+    "log_key": "82b133a2_1",
+    "exec_flow": "ENTRY→TRY→CALL:writeBlock→IF_TRUE→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→CALL:traceScope.close→IF_TRUE→CALL:close→EXIT%%ENTRY→TRY→CALL:writeBlock→IF_FALSE→EXIT",
+    "log_segment": "[INFO]:Trace information retrieved: {\"traceId\":\"abc123\",\"spanId\":\"def456\"}",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "14": {
+    "entry_id": 14,
+    "BlockId": "82b133a2_1",
+    "log_key": "82b133a2_1",
+    "exec_flow": "ENTRY→TRY→CALL:writeBlock→IF_TRUE→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→CALL:traceScope.close→IF_TRUE→CALL:close→EXIT%%ENTRY→TRY→CALL:writeBlock→IF_FALSE→EXIT",
+    "log_segment": "[INFO]:Trace span closed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "15": {
+    "entry_id": 15,
+    "BlockId": "82b133a2_1",
+    "log_key": "82b133a2_1",
+    "exec_flow": "ENTRY→TRY→CALL:writeBlock→IF_TRUE→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→CALL:traceScope.close→IF_TRUE→CALL:close→EXIT%%ENTRY→TRY→CALL:writeBlock→IF_FALSE→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "16": {
+    "entry_id": 16,
+    "BlockId": "32a18917_1",
+    "log_key": "32a18917_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "17": {
+    "entry_id": 17,
+    "BlockId": "32a18917_1",
+    "log_key": "32a18917_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "18": {
+    "entry_id": 18,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "19": {
+    "entry_id": 19,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[DEBUG]:Attempting to replace block in pool data_pool_01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "20": {
+    "entry_id": 20,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[DEBUG]:Condition traceScope != null evaluated as true",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "21": {
+    "entry_id": 21,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[INFO]:Span initialized for tracing",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "22": {
+    "entry_id": 22,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[DEBUG]:Condition span != null evaluated as true",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "23": {
+    "entry_id": 23,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[INFO]:Closing span for tracing",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "24": {
+    "entry_id": 24,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[INFO]:Block replacement operation completed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "25": {
+    "entry_id": 25,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[DEBUG]:Condition traceScope != null evaluated as false",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "26": {
+    "entry_id": 26,
+    "BlockId": "e78d5474_1",
+    "log_key": "e78d5474_1",
+    "exec_flow": "ENTRY→TRY→replaceBlock→ConditionCheck(traceScope != null)→ENTRY→ConditionCheck(span != null)→close→EXIT→EXIT%%ENTRY→TRY→replaceBlock→ConditionCheck(traceScope == null)→EXIT",
+    "log_segment": "[INFO]:Block replacement operation completed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "27": {
+    "entry_id": 27,
+    "BlockId": "7dc47aa3_1",
+    "log_key": "7dc47aa3_1",
+    "exec_flow": "ENTRY→TRY→CALL:copyBlock→ENTRY→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→EXIT→IF_TRUE→CALL:traceScope.close→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:copyBlock→ENTRY→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→EXIT→IF_FALSE→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "28": {
+    "entry_id": 28,
+    "BlockId": "7dc47aa3_1",
+    "log_key": "7dc47aa3_1",
+    "exec_flow": "ENTRY→TRY→CALL:copyBlock→ENTRY→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→EXIT→IF_TRUE→CALL:traceScope.close→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:copyBlock→ENTRY→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→EXIT→IF_FALSE→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "29": {
+    "entry_id": 29,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[INFO]:Operation started for block checksum",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "30": {
+    "entry_id": 30,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[DEBUG]:Attempting block checksum calculation",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "31": {
+    "entry_id": 31,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[DEBUG]:Invoked blockChecksum method",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "32": {
+    "entry_id": 32,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[DEBUG]:traceScope is not null, proceeding",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "33": {
+    "entry_id": 33,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[INFO]:Trace scope entry",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "34": {
+    "entry_id": 34,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[DEBUG]:span is not null, closing trace scope",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "35": {
+    "entry_id": 35,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[DEBUG]:Invoked close method",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "36": {
+    "entry_id": 36,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[INFO]:Trace scope exit",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "37": {
+    "entry_id": 37,
+    "BlockId": "cdc25fc2_1",
+    "log_key": "cdc25fc2_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_TRUE→CALL:close→EXIT→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_FALSE→EXIT%%ENTRY→TRY→CALL:blockChecksum→IF_TRUE→ENTRY→IF_FALSE→EXIT→EXIT",
+    "log_segment": "[INFO]:Operation completed for block checksum",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "38": {
+    "entry_id": 38,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Continuing trace span with header and client name",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "39": {
+    "entry_id": 39,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Fetching span context for trace",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "40": {
+    "entry_id": 40,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Retrieving trace information",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "41": {
+    "entry_id": 41,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Trace span processing completed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "42": {
+    "entry_id": 42,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Exiting trace span continuation",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "43": {
+    "entry_id": 43,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Closing trace scope",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "44": {
+    "entry_id": 44,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Checking if span is not null",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "45": {
+    "entry_id": 45,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Closing active span",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "46": {
+    "entry_id": 46,
+    "BlockId": "db4b799d_1",
+    "log_key": "db4b799d_1",
+    "exec_flow": "ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan%%ENTRY→TRY→CALL:blockGroupChecksum→ENTRY→CALL:continueTraceSpan→IF_FALSE:traceScope != null",
+    "log_segment": "[INFO]:Exiting trace scope closure",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "47": {
+    "entry_id": 47,
+    "BlockId": "aec814f0_1",
+    "log_key": "aec814f0_1",
+    "exec_flow": "ENTRY→TRY→CALL:transferBlock→IF_TRUE→CALL:traceScope.close→ConditionCheck%%ENTRY→TRY→CALL:transferBlock→IF_TRUE→CALL:traceScope.close→OtherBranch",
+    "log_segment": "[INFO]:Transfer block operation started",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "48": {
+    "entry_id": 48,
+    "BlockId": "aec814f0_1",
+    "log_key": "aec814f0_1",
+    "exec_flow": "ENTRY→TRY→CALL:transferBlock→IF_TRUE→CALL:traceScope.close→ConditionCheck%%ENTRY→TRY→CALL:transferBlock→IF_TRUE→CALL:traceScope.close→OtherBranch",
+    "log_segment": "[DEBUG]:TraceScope closed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "49": {
+    "entry_id": 49,
+    "BlockId": "b17d6335_1",
+    "log_key": "b17d6335_1",
+    "exec_flow": "ENTRY→TRY→requestShortCircuitFds→IF_TRUE→traceScope.close→IF_TRUE→close%%ENTRY→TRY→requestShortCircuitFds→IF_FALSE",
+    "log_segment": "[DEBUG]:traceScope != null",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "50": {
+    "entry_id": 50,
+    "BlockId": "b17d6335_1",
+    "log_key": "b17d6335_1",
+    "exec_flow": "ENTRY→TRY→requestShortCircuitFds→IF_TRUE→traceScope.close→IF_TRUE→close%%ENTRY→TRY→requestShortCircuitFds→IF_FALSE",
+    "log_segment": "[INFO]:continueTraceSpan",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "51": {
+    "entry_id": 51,
+    "BlockId": "b17d6335_1",
+    "log_key": "b17d6335_1",
+    "exec_flow": "ENTRY→TRY→requestShortCircuitFds→IF_TRUE→traceScope.close→IF_TRUE→close%%ENTRY→TRY→requestShortCircuitFds→IF_FALSE",
+    "log_segment": "[DEBUG]:traceScope == null",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "52": {
+    "entry_id": 52,
+    "BlockId": "92fab4ed_1",
+    "log_key": "92fab4ed_1",
+    "exec_flow": "ENTRY→CALL→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "53": {
+    "entry_id": 53,
+    "BlockId": "92fab4ed_1",
+    "log_key": "92fab4ed_1",
+    "exec_flow": "ENTRY→CALL→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "54": {
+    "entry_id": 54,
+    "BlockId": "17565125_1",
+    "log_key": "17565125_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "55": {
+    "entry_id": 55,
+    "BlockId": "17565125_1",
+    "log_key": "17565125_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "56": {
+    "entry_id": 56,
+    "BlockId": "f1398c33_1",
+    "log_key": "f1398c33_1",
+    "exec_flow": "ENTRY→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "57": {
+    "entry_id": 57,
+    "BlockId": "f1398c33_1",
+    "log_key": "f1398c33_1",
+    "exec_flow": "ENTRY→CALL:continueTraceSpan→CALL:getSpanContext→CALL:getTraceInfo→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "58": {
+    "entry_id": 58,
+    "BlockId": "6177c713_1",
+    "log_key": "6177c713_1",
+    "exec_flow": "ENTRY→TRY→releaseShortCircuitFds→ConditionCheck%%ENTRY→TRY→releaseShortCircuitFds→OtherBranch",
+    "log_segment": "[INFO]:Released short-circuit file descriptors",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "59": {
+    "entry_id": 59,
+    "BlockId": "6177c713_2",
+    "log_key": "6177c713_2",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Closed tracing scope",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "60": {
+    "entry_id": 60,
+    "BlockId": "9356f976_1",
+    "log_key": "9356f976_1",
+    "exec_flow": "ENTRY→CALL→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "61": {
+    "entry_id": 61,
+    "BlockId": "9356f976_1",
+    "log_key": "9356f976_1",
+    "exec_flow": "ENTRY→CALL→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "62": {
+    "entry_id": 62,
+    "BlockId": "adcf825f_1",
+    "log_key": "adcf825f_1",
+    "exec_flow": "ENTRY→TRY→requestShortCircuitShm→ENTRY→getDefaultInstance→RETURN→EXIT→FINALLY→ConditionCheck%%ENTRY→TRY→requestShortCircuitShm→ENTRY→getDefaultInstance→RETURN→EXIT→FINALLY→OtherBranch",
+    "log_segment": "[DEBUG]:traceScope != null",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "63": {
+    "entry_id": 63,
+    "BlockId": "adcf825f_1",
+    "log_key": "adcf825f_1",
+    "exec_flow": "ENTRY→TRY→requestShortCircuitShm→ENTRY→getDefaultInstance→RETURN→EXIT→FINALLY→ConditionCheck%%ENTRY→TRY→requestShortCircuitShm→ENTRY→getDefaultInstance→RETURN→EXIT→FINALLY→OtherBranch",
+    "log_segment": "[DEBUG]:traceScope == null",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "64": {
+    "entry_id": 64,
+    "BlockId": "adcf825f_1",
+    "log_key": "adcf825f_1",
+    "exec_flow": "ENTRY→TRY→requestShortCircuitShm→ENTRY→getDefaultInstance→RETURN→EXIT→FINALLY→ConditionCheck%%ENTRY→TRY→requestShortCircuitShm→ENTRY→getDefaultInstance→RETURN→EXIT→FINALLY→OtherBranch",
+    "log_segment": "[INFO]:Default instance returned",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "65": {
+    "entry_id": 65,
+    "BlockId": "adcf825f_1",
+    "log_key": "adcf825f_1",
+    "exec_flow": "ENTRY→TRY→requestShortCircuitShm→ENTRY→getDefaultInstance→RETURN→EXIT→FINALLY→ConditionCheck%%ENTRY→TRY→requestShortCircuitShm→ENTRY→getDefaultInstance→RETURN→EXIT→FINALLY→OtherBranch",
+    "log_segment": "[DEBUG]:span != null",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "66": {
+    "entry_id": 66,
+    "BlockId": "887a26fd_1",
+    "log_key": "887a26fd_1",
+    "exec_flow": "ENTRY→SWITCH:op→CASE:RELEASE_SHORT_CIRCUIT_FDS→CALL:opReleaseShortCircuitFds→ENTRY→TRY→CALL:releaseShortCircuitFds→IF_TRUE→CALL:traceScope.close%%ENTRY→SWITCH:op→CASE:RELEASE_SHORT_CIRCUIT_FDS→CALL:opReleaseShortCircuitFds→ENTRY→TRY→CALL:releaseShortCircuitFds→IF_FALSE",
+    "log_segment": "[INFO]:Entry",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "67": {
+    "entry_id": 67,
+    "BlockId": "887a26fd_1",
+    "log_key": "887a26fd_1",
+    "exec_flow": "ENTRY→SWITCH:op→CASE:RELEASE_SHORT_CIRCUIT_FDS→CALL:opReleaseShortCircuitFds→ENTRY→TRY→CALL:releaseShortCircuitFds→IF_TRUE→CALL:traceScope.close%%ENTRY→SWITCH:op→CASE:RELEASE_SHORT_CIRCUIT_FDS→CALL:opReleaseShortCircuitFds→ENTRY→TRY→CALL:releaseShortCircuitFds→IF_FALSE",
+    "log_segment": "[INFO]:Entry",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "68": {
+    "entry_id": 68,
+    "BlockId": "887a26fd_1",
+    "log_key": "887a26fd_1",
+    "exec_flow": "ENTRY→SWITCH:op→CASE:RELEASE_SHORT_CIRCUIT_FDS→CALL:opReleaseShortCircuitFds→ENTRY→TRY→CALL:releaseShortCircuitFds→IF_TRUE→CALL:traceScope.close%%ENTRY→SWITCH:op→CASE:RELEASE_SHORT_CIRCUIT_FDS→CALL:opReleaseShortCircuitFds→ENTRY→TRY→CALL:releaseShortCircuitFds→IF_FALSE",
+    "log_segment": "[INFO]:Exit",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "69": {
+    "entry_id": 69,
+    "BlockId": "887a26fd_1",
+    "log_key": "887a26fd_1",
+    "exec_flow": "ENTRY→SWITCH:op→CASE:RELEASE_SHORT_CIRCUIT_FDS→CALL:opReleaseShortCircuitFds→ENTRY→TRY→CALL:releaseShortCircuitFds→IF_TRUE→CALL:traceScope.close%%ENTRY→SWITCH:op→CASE:RELEASE_SHORT_CIRCUIT_FDS→CALL:opReleaseShortCircuitFds→ENTRY→TRY→CALL:releaseShortCircuitFds→IF_FALSE",
+    "log_segment": "[INFO]:Exit",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "70": {
+    "entry_id": 70,
+    "BlockId": "887a26fd_2",
+    "log_key": "887a26fd_2",
+    "exec_flow": "ENTRY→SWITCH:op→CASE:REQUEST_SHORT_CIRCUIT_SHM→CALL:opRequestShortCircuitShm→ENTRY→TRY→CALL:requestShortCircuitShm→FINALLY→IF_TRUE→CALL:traceScope.close%%ENTRY→SWITCH:op→CASE:REQUEST_SHORT_CIRCUIT_SHM→CALL:opRequestShortCircuitShm→ENTRY→TRY→CALL:requestShortCircuitShm→FINALLY→IF_FALSE",
+    "log_segment": "[DEBUG]:traceScope != null",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "71": {
+    "entry_id": 71,
+    "BlockId": "887a26fd_2",
+    "log_key": "887a26fd_2",
+    "exec_flow": "ENTRY→SWITCH:op→CASE:REQUEST_SHORT_CIRCUIT_SHM→CALL:opRequestShortCircuitShm→ENTRY→TRY→CALL:requestShortCircuitShm→FINALLY→IF_TRUE→CALL:traceScope.close%%ENTRY→SWITCH:op→CASE:REQUEST_SHORT_CIRCUIT_SHM→CALL:opRequestShortCircuitShm→ENTRY→TRY→CALL:requestShortCircuitShm→FINALLY→IF_FALSE",
+    "log_segment": "[INFO]:Default instance returned",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "72": {
+    "entry_id": 72,
+    "BlockId": "887a26fd_2",
+    "log_key": "887a26fd_2",
+    "exec_flow": "ENTRY→SWITCH:op→CASE:REQUEST_SHORT_CIRCUIT_SHM→CALL:opRequestShortCircuitShm→ENTRY→TRY→CALL:requestShortCircuitShm→FINALLY→IF_TRUE→CALL:traceScope.close%%ENTRY→SWITCH:op→CASE:REQUEST_SHORT_CIRCUIT_SHM→CALL:opRequestShortCircuitShm→ENTRY→TRY→CALL:requestShortCircuitShm→FINALLY→IF_FALSE",
+    "log_segment": "[DEBUG]:span != null",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "73": {
+    "entry_id": 73,
+    "BlockId": "475c8eb2_1",
+    "log_key": "475c8eb2_1",
+    "exec_flow": "ENTRY→RegisteringStream",
+    "log_segment": "[TRACE]:Registering dfsInputStream for /user/data",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "74": {
+    "entry_id": 74,
+    "BlockId": "475c8eb2_1",
+    "log_key": "475c8eb2_1",
+    "exec_flow": "ENTRY→RegisteringStream",
+    "log_segment": "[INFO]:Added dfsInputStream to registeredInputStreams",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "75": {
+    "entry_id": 75,
+    "BlockId": "4297f10d_1",
+    "log_key": "4297f10d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[TRACE]:Registering dfsInputStream for /user/data/input_stream",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "76": {
+    "entry_id": 76,
+    "BlockId": "928645da_1",
+    "log_key": "928645da_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "77": {
+    "entry_id": 77,
+    "BlockId": "928645da_1",
+    "log_key": "928645da_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "78": {
+    "entry_id": 78,
+    "BlockId": "b3207a18_1",
+    "log_key": "b3207a18_1",
+    "exec_flow": "ENTRY→IF_TRUE:response!=null→TRY→CALL:close→EXCEPTION:close→CATCH:InterruptedException→LOG:ThreadInterrupted→CALL:ThreadInterrupt%%ENTRY→IF_TRUE:response!=null→TRY→CALL:close→CALL:join→EXCEPTION:join→CATCH:InterruptedException→LOG:ThreadInterrupted→CALL:ThreadInterrupt%%ENTRY→IF_TRUE:response!=null→TRY→CALL:close→CALL:join→EXIT%%ENTRY→IF_FALSE:response!=null→EXIT",
+    "log_segment": "[DEBUG]:Thread interrupted",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "79": {
+    "entry_id": 79,
+    "BlockId": "88a78c78_1",
+    "log_key": "88a78c78_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "80": {
+    "entry_id": 80,
+    "BlockId": "88a78c78_1",
+    "log_key": "88a78c78_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "81": {
+    "entry_id": 81,
+    "BlockId": "ceb06c8d_1",
+    "log_key": "ceb06c8d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→PipelineRecovery%%ENTRY→PipelineClose%%ENTRY→PipelineInit%%ENTRY→SetupPipeline",
+    "log_segment": "[DEBUG]:Start process datanode/external error",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "82": {
+    "entry_id": 82,
+    "BlockId": "ceb06c8d_1",
+    "log_key": "ceb06c8d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→PipelineRecovery%%ENTRY→PipelineClose%%ENTRY→PipelineInit%%ENTRY→SetupPipeline",
+    "log_segment": "[INFO]:Error recovery for block waiting for responder to exit",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "83": {
+    "entry_id": 83,
+    "BlockId": "ceb06c8d_1",
+    "log_key": "ceb06c8d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→PipelineRecovery%%ENTRY→PipelineClose%%ENTRY→PipelineInit%%ENTRY→SetupPipeline",
+    "log_segment": "[WARN]:Error recovering pipeline for writing block. Already retried 5 times for the same packet",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "84": {
+    "entry_id": 84,
+    "BlockId": "ceb06c8d_1",
+    "log_key": "ceb06c8d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→PipelineRecovery%%ENTRY→PipelineClose%%ENTRY→PipelineInit%%ENTRY→SetupPipeline",
+    "log_segment": "[DEBUG]:Closing old block block-01",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "85": {
+    "entry_id": 85,
+    "BlockId": "ceb06c8d_1",
+    "log_key": "ceb06c8d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→PipelineRecovery%%ENTRY→PipelineClose%%ENTRY→PipelineInit%%ENTRY→SetupPipeline",
+    "log_segment": "[DEBUG]:Nodes [node01, node02] storageTypes [DISK, SSD] storageIDs [id01, id02]",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "86": {
+    "entry_id": 86,
+    "BlockId": "ceb06c8d_1",
+    "log_key": "ceb06c8d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→PipelineRecovery%%ENTRY→PipelineClose%%ENTRY→PipelineInit%%ENTRY→SetupPipeline",
+    "log_segment": "[WARN]:Pipeline setup failed due to missing nodes",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "87": {
+    "entry_id": 87,
+    "BlockId": "043f2a44_1",
+    "log_key": "043f2a44_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "88": {
+    "entry_id": 88,
+    "BlockId": "043f2a44_1",
+    "log_key": "043f2a44_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "89": {
+    "entry_id": 89,
+    "BlockId": "bdea6dc9_1",
+    "log_key": "bdea6dc9_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "90": {
+    "entry_id": 90,
+    "BlockId": "bdea6dc9_1",
+    "log_key": "bdea6dc9_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "91": {
+    "entry_id": 91,
+    "BlockId": "52166f8a_1",
+    "log_key": "52166f8a_1",
+    "exec_flow": "ENTRY→SYNC:congestedNodes→IF_TRUE:!congestedNodes.isEmpty()→IF_TRUE:t!=0→CALL:Thread.sleep→EXIT%%ENTRY→SYNC:congestedNodes→IF_TRUE:!congestedNodes.isEmpty()→IF_FALSE:t!=0→EXIT%%ENTRY→SYNC:congestedNodes→IF_FALSE:!congestedNodes.isEmpty()→IF_TRUE:t!=0→CALL:Thread.sleep→EXIT%%ENTRY→SYNC:congestedNodes→IF_FALSE:!congestedNodes.isEmpty()→IF_FALSE:t!=0→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "92": {
+    "entry_id": 92,
+    "BlockId": "52166f8a_1",
+    "log_key": "52166f8a_1",
+    "exec_flow": "ENTRY→SYNC:congestedNodes→IF_TRUE:!congestedNodes.isEmpty()→IF_TRUE:t!=0→CALL:Thread.sleep→EXIT%%ENTRY→SYNC:congestedNodes→IF_TRUE:!congestedNodes.isEmpty()→IF_FALSE:t!=0→EXIT%%ENTRY→SYNC:congestedNodes→IF_FALSE:!congestedNodes.isEmpty()→IF_TRUE:t!=0→CALL:Thread.sleep→EXIT%%ENTRY→SYNC:congestedNodes→IF_FALSE:!congestedNodes.isEmpty()→IF_FALSE:t!=0→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "93": {
+    "entry_id": 93,
+    "BlockId": "f87f7fa9_1",
+    "log_key": "f87f7fa9_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "94": {
+    "entry_id": 94,
+    "BlockId": "f87f7fa9_1",
+    "log_key": "f87f7fa9_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "95": {
+    "entry_id": 95,
+    "BlockId": "4cf8a980_1",
+    "log_key": "4cf8a980_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched current monotonic time",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "96": {
+    "entry_id": 96,
+    "BlockId": "2003f395_1",
+    "log_key": "2003f395_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Nodes are empty for write pipeline of block-12345",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "97": {
+    "entry_id": 97,
+    "BlockId": "2003f395_1",
+    "log_key": "2003f395_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Pipeline = [node01, node02], DataStreamerInstance",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "98": {
+    "entry_id": 98,
+    "BlockId": "2003f395_1",
+    "log_key": "2003f395_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Resetting internal error state",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "99": {
+    "entry_id": 99,
+    "BlockId": "2003f395_1",
+    "log_key": "2003f395_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Waiting for restart condition",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "100": {
+    "entry_id": 100,
+    "BlockId": "2003f395_1",
+    "log_key": "2003f395_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Proceeding without wait",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "101": {
+    "entry_id": 101,
+    "BlockId": "49a530e1_1",
+    "log_key": "49a530e1_1",
+    "exec_flow": "ENTRY→locateFollowingBlock→ConditionCheck%%ENTRY→createBlockOutputStream→PipelineCheck",
+    "log_segment": "[WARN]:Abandoning block block-12345",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "102": {
+    "entry_id": 102,
+    "BlockId": "49a530e1_1",
+    "log_key": "49a530e1_1",
+    "exec_flow": "ENTRY→locateFollowingBlock→ConditionCheck%%ENTRY→createBlockOutputStream→PipelineCheck",
+    "log_segment": "[WARN]:Excluding datanode datanode-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "103": {
+    "entry_id": 103,
+    "BlockId": "49a530e1_1",
+    "log_key": "49a530e1_1",
+    "exec_flow": "ENTRY→locateFollowingBlock→ConditionCheck%%ENTRY→createBlockOutputStream→PipelineCheck",
+    "log_segment": "[INFO]:Nodes are empty for write pipeline of block block-67890",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "104": {
+    "entry_id": 104,
+    "BlockId": "49a530e1_1",
+    "log_key": "49a530e1_1",
+    "exec_flow": "ENTRY→locateFollowingBlock→ConditionCheck%%ENTRY→createBlockOutputStream→PipelineCheck",
+    "log_segment": "[DEBUG]:Pipeline = [datanode-02, datanode-03], restartingNode",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "105": {
+    "entry_id": 105,
+    "BlockId": "49a530e1_1",
+    "log_key": "49a530e1_1",
+    "exec_flow": "ENTRY→locateFollowingBlock→ConditionCheck%%ENTRY→createBlockOutputStream→PipelineCheck",
+    "log_segment": "[INFO]:Resetting internal error state",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "106": {
+    "entry_id": 106,
+    "BlockId": "49a530e1_1",
+    "log_key": "49a530e1_1",
+    "exec_flow": "ENTRY→locateFollowingBlock→ConditionCheck%%ENTRY→createBlockOutputStream→PipelineCheck",
+    "log_segment": "[INFO]:Restarting node due to timeout",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "107": {
+    "entry_id": 107,
+    "BlockId": "300f0414_1",
+    "log_key": "300f0414_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "108": {
+    "entry_id": 108,
+    "BlockId": "300f0414_1",
+    "log_key": "300f0414_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "109": {
+    "entry_id": 109,
+    "BlockId": "83761ad5_1",
+    "log_key": "83761ad5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Datanode 3 did not restart within 30000 ms: node-03",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "110": {
+    "entry_id": 110,
+    "BlockId": "83761ad5_1",
+    "log_key": "83761ad5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Illegal state exception: error=false while checking restarting node deadline",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "111": {
+    "entry_id": 111,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:ENTRY",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "112": {
+    "entry_id": 112,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:RETURN",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "113": {
+    "entry_id": 113,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:EXIT",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "114": {
+    "entry_id": 114,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:ENTRY",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "115": {
+    "entry_id": 115,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:RETURN",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "116": {
+    "entry_id": 116,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:EXIT",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "117": {
+    "entry_id": 117,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:ENTRY",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "118": {
+    "entry_id": 118,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:CALL: updatePipeline",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "119": {
+    "entry_id": 119,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:EXIT",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "120": {
+    "entry_id": 120,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:ENTRY",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "121": {
+    "entry_id": 121,
+    "BlockId": "bccbdbcd_1",
+    "log_key": "bccbdbcd_1",
+    "exec_flow": "ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_TRUE: !handleRestartingDatanode()→CALL: hasInternalError%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→IF_FALSE: !handleRestartingDatanode()→IF_TRUE: !handleBadDatanode()%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_TRUE: success→CALL: updatePipeline%%ENTRY→WHILE: !success && !streamerClosed && dfsClient.clientRunning→WHILE_COND: !success && !streamerClosed && dfsClient.clientRunning→WHILE_EXIT→IF_FALSE: success",
+    "log_segment": "[DEBUG]:EXIT",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "122": {
+    "entry_id": 122,
+    "BlockId": "bccbdbcd_2",
+    "log_key": "bccbdbcd_2",
+    "exec_flow": "ENTRY→IF: nodes.length == 0→CALL: persistBlocks.set→WHILE: true→CALL: isRestartingNode→CALL: resetInternalError→IF: hasInternalError()→CALL: initRestartingNode→IF: shouldWait%%ENTRY→WHILE: true→CALL: resetInternalError→CALL: getBadNodeIndex→CALL: initRestartingNode→IF: shouldWait",
+    "log_segment": "[INFO]:nodes are empty for write pipeline of block-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "123": {
+    "entry_id": 123,
+    "BlockId": "bccbdbcd_2",
+    "log_key": "bccbdbcd_2",
+    "exec_flow": "ENTRY→IF: nodes.length == 0→CALL: persistBlocks.set→WHILE: true→CALL: isRestartingNode→CALL: resetInternalError→IF: hasInternalError()→CALL: initRestartingNode→IF: shouldWait%%ENTRY→WHILE: true→CALL: resetInternalError→CALL: getBadNodeIndex→CALL: initRestartingNode→IF: shouldWait",
+    "log_segment": "[DEBUG]:pipeline = [node01, node02], DataStreamerInstance",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "124": {
+    "entry_id": 124,
+    "BlockId": "bccbdbcd_2",
+    "log_key": "bccbdbcd_2",
+    "exec_flow": "ENTRY→IF: nodes.length == 0→CALL: persistBlocks.set→WHILE: true→CALL: isRestartingNode→CALL: resetInternalError→IF: hasInternalError()→CALL: initRestartingNode→IF: shouldWait%%ENTRY→WHILE: true→CALL: resetInternalError→CALL: getBadNodeIndex→CALL: initRestartingNode→IF: shouldWait",
+    "log_segment": "[INFO]:Resetting internal error state",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "125": {
+    "entry_id": 125,
+    "BlockId": "bccbdbcd_2",
+    "log_key": "bccbdbcd_2",
+    "exec_flow": "ENTRY→IF: nodes.length == 0→CALL: persistBlocks.set→WHILE: true→CALL: isRestartingNode→CALL: resetInternalError→IF: hasInternalError()→CALL: initRestartingNode→IF: shouldWait%%ENTRY→WHILE: true→CALL: resetInternalError→CALL: getBadNodeIndex→CALL: initRestartingNode→IF: shouldWait",
+    "log_segment": "[INFO]:Waiting for restarting node",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "126": {
+    "entry_id": 126,
+    "BlockId": "bccbdbcd_2",
+    "log_key": "bccbdbcd_2",
+    "exec_flow": "ENTRY→IF: nodes.length == 0→CALL: persistBlocks.set→WHILE: true→CALL: isRestartingNode→CALL: resetInternalError→IF: hasInternalError()→CALL: initRestartingNode→IF: shouldWait%%ENTRY→WHILE: true→CALL: resetInternalError→CALL: getBadNodeIndex→CALL: initRestartingNode→IF: shouldWait",
+    "log_segment": "[INFO]:Proceeding without waiting",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "127": {
+    "entry_id": 127,
+    "BlockId": "3a4fb26e_1",
+    "log_key": "3a4fb26e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→PipelineSetup",
+    "log_segment": "[WARN]:Could not get block locations. Source file \"/user/data/file01\" - Aborting...",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "128": {
+    "entry_id": 128,
+    "BlockId": "3a4fb26e_1",
+    "log_key": "3a4fb26e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→PipelineSetup",
+    "log_segment": "[DEBUG]:Pipeline setup initiated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "129": {
+    "entry_id": 129,
+    "BlockId": "3a4fb26e_1",
+    "log_key": "3a4fb26e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→PipelineSetup",
+    "log_segment": "[DEBUG]:Pipeline setup completed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "130": {
+    "entry_id": 130,
+    "BlockId": "3b504348_1",
+    "log_key": "3b504348_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Nodes [node01, node02] storageTypes [SSD, HDD] storageIDs [id123, id456]",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "131": {
+    "entry_id": 131,
+    "BlockId": "a4f7bfe4_1",
+    "log_key": "a4f7bfe4_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "132": {
+    "entry_id": 132,
+    "BlockId": "a4f7bfe4_1",
+    "log_key": "a4f7bfe4_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "133": {
+    "entry_id": 133,
+    "BlockId": "4f9e9aad_1",
+    "log_key": "4f9e9aad_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "134": {
+    "entry_id": 134,
+    "BlockId": "4f9e9aad_1",
+    "log_key": "4f9e9aad_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "135": {
+    "entry_id": 135,
+    "BlockId": "46c5c85e_1",
+    "log_key": "46c5c85e_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "136": {
+    "entry_id": 136,
+    "BlockId": "46c5c85e_1",
+    "log_key": "46c5c85e_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "137": {
+    "entry_id": 137,
+    "BlockId": "fa7bbe1f_1",
+    "log_key": "fa7bbe1f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Node check condition evaluated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "138": {
+    "entry_id": 138,
+    "BlockId": "fa7bbe1f_1",
+    "log_key": "fa7bbe1f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Node marked status: false",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "139": {
+    "entry_id": 139,
+    "BlockId": "87305a40_1",
+    "log_key": "87305a40_1",
+    "exec_flow": "ENTRY→SYNC%%ENTRY→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "140": {
+    "entry_id": 140,
+    "BlockId": "87305a40_1",
+    "log_key": "87305a40_1",
+    "exec_flow": "ENTRY→SYNC%%ENTRY→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "141": {
+    "entry_id": 141,
+    "BlockId": "33220b2e_1",
+    "log_key": "33220b2e_1",
+    "exec_flow": "ENTRY→closeResponder→TRY→CATCH:InterruptedException%%ENTRY→closeResponder→TRY",
+    "log_segment": "[DEBUG]:Closing old block 1024, block",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "142": {
+    "entry_id": 142,
+    "BlockId": "33220b2e_1",
+    "log_key": "33220b2e_1",
+    "exec_flow": "ENTRY→closeResponder→TRY→CATCH:InterruptedException%%ENTRY→closeResponder→TRY",
+    "log_segment": "[DEBUG]:Thread interrupted, InterruptedException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "143": {
+    "entry_id": 143,
+    "BlockId": "4815f777_1",
+    "log_key": "4815f777_1",
+    "exec_flow": "ENTRY→CALL:checkNodeStatus→CALL:waitForNodeRestart→RETURN→EXIT",
+    "log_segment": "[INFO]:Node status check initiated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "144": {
+    "entry_id": 144,
+    "BlockId": "4815f777_1",
+    "log_key": "4815f777_1",
+    "exec_flow": "ENTRY→CALL:checkNodeStatus→CALL:waitForNodeRestart→RETURN→EXIT",
+    "log_segment": "[INFO]:Waiting for node restart to complete",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "145": {
+    "entry_id": 145,
+    "BlockId": "4815f777_1",
+    "log_key": "4815f777_1",
+    "exec_flow": "ENTRY→CALL:checkNodeStatus→CALL:waitForNodeRestart→RETURN→EXIT",
+    "log_segment": "[INFO]:Node restart completed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "146": {
+    "entry_id": 146,
+    "BlockId": "d8681342_1",
+    "log_key": "d8681342_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "147": {
+    "entry_id": 147,
+    "BlockId": "d8681342_1",
+    "log_key": "d8681342_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "148": {
+    "entry_id": 148,
+    "BlockId": "ff16b5ef_1",
+    "log_key": "ff16b5ef_1",
+    "exec_flow": "ENTRY→CALL: closeResponder→IF_TRUE: response != null→TRY→CALL: close→CALL: join→EXIT%%ENTRY→CALL: closeResponder→IF_TRUE: response != null→TRY→CALL: close→CALL: join→EXCEPTION: join→CATCH: InterruptedException e→CALL: Thread.currentThread().interrupt→EXIT",
+    "log_segment": "[DEBUG]:Thread interrupted",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "149": {
+    "entry_id": 149,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Thread interrupted, exception occurred",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "150": {
+    "entry_id": 150,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Pipeline stage is PIPELINE_SETUP_CREATE, current state is active",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "151": {
+    "entry_id": 151,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Start processing datanode/external error, current state is active",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "152": {
+    "entry_id": 152,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Closing old block block-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "153": {
+    "entry_id": 153,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Initializing data streaming with nodes [node1, node2], storage types [DISK, SSD], storage IDs [id1, id2]",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "154": {
+    "entry_id": 154,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Abandoning block block-02",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "155": {
+    "entry_id": 155,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Excluding datanode badNode-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "156": {
+    "entry_id": 156,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Nodes are empty for write pipeline of block-03",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "157": {
+    "entry_id": 157,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Pipeline = [node3, node4], current state is active",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "158": {
+    "entry_id": 158,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Resetting internal error state",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "159": {
+    "entry_id": 159,
+    "BlockId": "140856cf_1",
+    "log_key": "140856cf_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Restarting node due to error recovery",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "160": {
+    "entry_id": 160,
+    "BlockId": "78a850f6_1",
+    "log_key": "78a850f6_1",
+    "exec_flow": "ENTRY→CALL:addBlock→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "161": {
+    "entry_id": 161,
+    "BlockId": "78a850f6_1",
+    "log_key": "78a850f6_1",
+    "exec_flow": "ENTRY→CALL:addBlock→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "162": {
+    "entry_id": 162,
+    "BlockId": "e426088d_1",
+    "log_key": "e426088d_1",
+    "exec_flow": "ENTRY→CALL→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "163": {
+    "entry_id": 163,
+    "BlockId": "e426088d_1",
+    "log_key": "e426088d_1",
+    "exec_flow": "ENTRY→CALL→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "164": {
+    "entry_id": 164,
+    "BlockId": "52e22579_1",
+    "log_key": "52e22579_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→AnotherBranch",
+    "log_segment": "[DEBUG]:Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "165": {
+    "entry_id": 165,
+    "BlockId": "52e22579_1",
+    "log_key": "52e22579_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→AnotherBranch",
+    "log_segment": "[DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "166": {
+    "entry_id": 166,
+    "BlockId": "459fce37_1",
+    "log_key": "459fce37_1",
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND: idx < len→IF_TRUE: cur == storageInfo→RETURN→EXIT%%ENTRY→FOR_INIT→FOR_COND: idx < len→FOR_EXIT→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "167": {
+    "entry_id": 167,
+    "BlockId": "459fce37_1",
+    "log_key": "459fce37_1",
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND: idx < len→IF_TRUE: cur == storageInfo→RETURN→EXIT%%ENTRY→FOR_INIT→FOR_COND: idx < len→FOR_EXIT→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "168": {
+    "entry_id": 168,
+    "BlockId": "2699afdf_1",
+    "log_key": "2699afdf_1",
+    "exec_flow": "ENTRY→MoveBlockToHead→EXIT",
+    "log_segment": "[INFO]:Moved block to head successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "169": {
+    "entry_id": 169,
+    "BlockId": "97d385b8_1",
+    "log_key": "97d385b8_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "170": {
+    "entry_id": 170,
+    "BlockId": "97d385b8_1",
+    "log_key": "97d385b8_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "171": {
+    "entry_id": 171,
+    "BlockId": "8e71fe7a_1",
+    "log_key": "8e71fe7a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "172": {
+    "entry_id": 172,
+    "BlockId": "8e71fe7a_1",
+    "log_key": "8e71fe7a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "173": {
+    "entry_id": 173,
+    "BlockId": "afcabafb_1",
+    "log_key": "afcabafb_1",
+    "exec_flow": "ENTRY→IF_TRUE:newReport==null→CALL:getDatanodeDescriptor→FOREACH:newReport→WHILE:it.hasNext()→CALL:storageInfo.removeBlock→EXIT%%ENTRY→IF_FALSE:newReport==null→CALL:getDatanodeDescriptor→FOREACH:newReport→WHILE:it.hasNext()→CALL:storageInfo.removeBlock→EXIT",
+    "log_segment": "[DEBUG]:Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "174": {
+    "entry_id": 174,
+    "BlockId": "afcabafb_1",
+    "log_key": "afcabafb_1",
+    "exec_flow": "ENTRY→IF_TRUE:newReport==null→CALL:getDatanodeDescriptor→FOREACH:newReport→WHILE:it.hasNext()→CALL:storageInfo.removeBlock→EXIT%%ENTRY→IF_FALSE:newReport==null→CALL:getDatanodeDescriptor→FOREACH:newReport→WHILE:it.hasNext()→CALL:storageInfo.removeBlock→EXIT",
+    "log_segment": "[INFO]:Collecting blocks not reported",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "175": {
+    "entry_id": 175,
+    "BlockId": "afcabafb_2",
+    "log_key": "afcabafb_2",
+    "exec_flow": "ENTRY→LOG:DEBUG:Reported block blk_67890 on datanode02 size 256MB replicaState = UNDER_CONSTRUCTION→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)→IF:storedBlock==null→LOG:DEBUG:In memory blockUCState = COMMITTED→IF:invalidateBlocks.contains(datanode02, blk_67890)→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Reported block blk_67890 on datanode02 size 256MB replicaState = UNDER_CONSTRUCTION",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "176": {
+    "entry_id": 176,
+    "BlockId": "afcabafb_2",
+    "log_key": "afcabafb_2",
+    "exec_flow": "ENTRY→LOG:DEBUG:Reported block blk_67890 on datanode02 size 256MB replicaState = UNDER_CONSTRUCTION→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)→IF:storedBlock==null→LOG:DEBUG:In memory blockUCState = COMMITTED→IF:invalidateBlocks.contains(datanode02, blk_67890)→RETURN→EXIT",
+    "log_segment": "[DEBUG]:In memory blockUCState = COMMITTED",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "177": {
+    "entry_id": 177,
+    "BlockId": "afcabafb_3",
+    "log_key": "afcabafb_3",
+    "exec_flow": "ENTRY→CALL:getNext→CALL:findStorageInfo→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched storage info for block blk_78901",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "178": {
+    "entry_id": 178,
+    "BlockId": "afcabafb_4",
+    "log_key": "afcabafb_4",
+    "exec_flow": "ENTRY→CALL:listRemove→IF_TRUE:b.removeStorage(this)→RETURN→EXIT%%ENTRY→CALL:listRemove→IF_FALSE:b.removeStorage(this)→RETURN→EXIT",
+    "log_segment": "[INFO]:Removed storage info for block blk_89012",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "179": {
+    "entry_id": 179,
+    "BlockId": "a0b02421_1",
+    "log_key": "a0b02421_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "180": {
+    "entry_id": 180,
+    "BlockId": "a0b02421_1",
+    "log_key": "a0b02421_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "181": {
+    "entry_id": 181,
+    "BlockId": "4664c9fd_1",
+    "log_key": "4664c9fd_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "182": {
+    "entry_id": 182,
+    "BlockId": "4664c9fd_1",
+    "log_key": "4664c9fd_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "183": {
+    "entry_id": 183,
+    "BlockId": "c7f75db9_1",
+    "log_key": "c7f75db9_1",
+    "exec_flow": "ENTRY→getUnderConstructionFeature→findStorageInfo%%ENTRY→getUnderConstructionFeature",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "184": {
+    "entry_id": 184,
+    "BlockId": "c7f75db9_1",
+    "log_key": "c7f75db9_1",
+    "exec_flow": "ENTRY→getUnderConstructionFeature→findStorageInfo%%ENTRY→getUnderConstructionFeature",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "185": {
+    "entry_id": 185,
+    "BlockId": "0d5cf8ce_1",
+    "log_key": "0d5cf8ce_1",
+    "exec_flow": "ENTRY→CheckStripedCondition",
+    "log_segment": "[INFO]:Checked if file is striped",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "186": {
+    "entry_id": 186,
+    "BlockId": "cae39118_1",
+    "log_key": "cae39118_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "187": {
+    "entry_id": 187,
+    "BlockId": "cae39118_1",
+    "log_key": "cae39118_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "188": {
+    "entry_id": 188,
+    "BlockId": "2a93eca4_1",
+    "log_key": "2a93eca4_1",
+    "exec_flow": "ENTRY→equals→getBlockUCState→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "189": {
+    "entry_id": 189,
+    "BlockId": "2a93eca4_1",
+    "log_key": "2a93eca4_1",
+    "exec_flow": "ENTRY→equals→getBlockUCState→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "190": {
+    "entry_id": 190,
+    "BlockId": "21f25770_1",
+    "log_key": "21f25770_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Safe mode is off, no operation performed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "191": {
+    "entry_id": 191,
+    "BlockId": "21f25770_1",
+    "log_key": "21f25770_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Block is complete and safe mode check initiated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "192": {
+    "entry_id": 192,
+    "BlockId": "21f25770_1",
+    "log_key": "21f25770_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Block is not complete or safe mode conditions not met",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "193": {
+    "entry_id": 193,
+    "BlockId": "21f25770_2",
+    "log_key": "21f25770_2",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Calculating real data block number for committed/completed block",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "194": {
+    "entry_id": 194,
+    "BlockId": "21f25770_2",
+    "log_key": "21f25770_2",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Returning default data block number for uncommitted/incomplete block",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "195": {
+    "entry_id": 195,
+    "BlockId": "cb33f85a_1",
+    "log_key": "cb33f85a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Block state change logged for block 128MB",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "196": {
+    "entry_id": 196,
+    "BlockId": "cb33f85a_1",
+    "log_key": "cb33f85a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Decremented block statistics",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "197": {
+    "entry_id": 197,
+    "BlockId": "ca7fbcf3_1",
+    "log_key": "ca7fbcf3_1",
+    "exec_flow": "ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_TRUE:!isPopulatingReplQueues()||!block.isComplete()→RETURN→EXIT%%ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_FALSE:!isPopulatingReplQueues()||!block.isComplete()→IF_TRUE:!hasEnoughEffectiveReplicas(block,repl,pendingNum)→neededReconstruction.update→writeUnlock→EXIT%%ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_FALSE:!isPopulatingReplQueues()||!block.isComplete()→IF_FALSE:!hasEnoughEffectiveReplicas(block,repl,pendingNum)→neededReconstruction.remove→writeUnlock→EXIT",
+    "log_segment": "[DEBUG]:Block completeness check",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "198": {
+    "entry_id": 198,
+    "BlockId": "ca7fbcf3_1",
+    "log_key": "ca7fbcf3_1",
+    "exec_flow": "ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_TRUE:!isPopulatingReplQueues()||!block.isComplete()→RETURN→EXIT%%ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_FALSE:!isPopulatingReplQueues()||!block.isComplete()→IF_TRUE:!hasEnoughEffectiveReplicas(block,repl,pendingNum)→neededReconstruction.update→writeUnlock→EXIT%%ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_FALSE:!isPopulatingReplQueues()||!block.isComplete()→IF_FALSE:!hasEnoughEffectiveReplicas(block,repl,pendingNum)→neededReconstruction.remove→writeUnlock→EXIT",
+    "log_segment": "[INFO]:Reconstruction update triggered",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "199": {
+    "entry_id": 199,
+    "BlockId": "ca7fbcf3_1",
+    "log_key": "ca7fbcf3_1",
+    "exec_flow": "ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_TRUE:!isPopulatingReplQueues()||!block.isComplete()→RETURN→EXIT%%ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_FALSE:!isPopulatingReplQueues()||!block.isComplete()→IF_TRUE:!hasEnoughEffectiveReplicas(block,repl,pendingNum)→neededReconstruction.update→writeUnlock→EXIT%%ENTRY→writeLock→equals→getBlockUCState→RETURN→TRY→IF_FALSE:!isPopulatingReplQueues()||!block.isComplete()→IF_FALSE:!hasEnoughEffectiveReplicas(block,repl,pendingNum)→neededReconstruction.remove→writeUnlock→EXIT",
+    "log_segment": "[INFO]:Reconstruction removal triggered",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "200": {
+    "entry_id": 200,
+    "BlockId": "ca7fbcf3_2",
+    "log_key": "ca7fbcf3_2",
+    "exec_flow": "ENTRY→IF_TRUE:priLevel>=0&&priLevel<LEVEL&&priorityQueues.get(priLevel).remove(block)→NameNode.blockStateChangeLog.debug→decrementBlockStat→RETURN→EXIT%%ENTRY→IF_FALSE:priLevel>=0&&priLevel<LEVEL&&priorityQueues.get(priLevel).remove(block)→FOR_INIT→FOR_COND:i<LEVEL→FOR_EXIT→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Removing block from priority queue 0",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "201": {
+    "entry_id": 201,
+    "BlockId": "ca7fbcf3_2",
+    "log_key": "ca7fbcf3_2",
+    "exec_flow": "ENTRY→IF_TRUE:priLevel>=0&&priLevel<LEVEL&&priorityQueues.get(priLevel).remove(block)→NameNode.blockStateChangeLog.debug→decrementBlockStat→RETURN→EXIT%%ENTRY→IF_FALSE:priLevel>=0&&priLevel<LEVEL&&priorityQueues.get(priLevel).remove(block)→FOR_INIT→FOR_COND:i<LEVEL→FOR_EXIT→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Removing block from priority queue 1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "202": {
+    "entry_id": 202,
+    "BlockId": "964c845c_1",
+    "log_key": "964c845c_1",
+    "exec_flow": "ENTRY→RETURN→EXIT%%ENTRY→IF_FALSE: removed→CALL: decrementAndGet→CALL: blockLog.debug→RETURN→EXIT%%ENTRY→IF_FALSE: removed→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "203": {
+    "entry_id": 203,
+    "BlockId": "964c845c_1",
+    "log_key": "964c845c_1",
+    "exec_flow": "ENTRY→RETURN→EXIT%%ENTRY→IF_FALSE: removed→CALL: decrementAndGet→CALL: blockLog.debug→RETURN→EXIT%%ENTRY→IF_FALSE: removed→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "204": {
+    "entry_id": 204,
+    "BlockId": "18c30f2e_1",
+    "log_key": "18c30f2e_1",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status == OFF",
+    "log_segment": "[DEBUG]:BLOCK* removeStoredBlock: block-123 has already been removed from node node-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "205": {
+    "entry_id": 205,
+    "BlockId": "18c30f2e_1",
+    "log_key": "18c30f2e_1",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status == OFF",
+    "log_segment": "[DEBUG]:BLOCK* removeStoredBlock: block-123 removed from caching related lists on node node-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "206": {
+    "entry_id": 206,
+    "BlockId": "18c30f2e_1",
+    "log_key": "18c30f2e_1",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status == OFF",
+    "log_segment": "[INFO]:Safe mode is off, no operation performed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "207": {
+    "entry_id": 207,
+    "BlockId": "18c30f2e_2",
+    "log_key": "18c30f2e_2",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status != OFF→storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1",
+    "log_segment": "[DEBUG]:BLOCK* removeStoredBlock: block-123 has already been removed from node node-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "208": {
+    "entry_id": 208,
+    "BlockId": "18c30f2e_2",
+    "log_key": "18c30f2e_2",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status != OFF→storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1",
+    "log_segment": "[DEBUG]:BLOCK* removeStoredBlock: block-123 removed from caching related lists on node node-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "209": {
+    "entry_id": 209,
+    "BlockId": "18c30f2e_2",
+    "log_key": "18c30f2e_2",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status != OFF→storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1",
+    "log_segment": "[DEBUG]:Block is complete and safe mode check initiated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "210": {
+    "entry_id": 210,
+    "BlockId": "18c30f2e_3",
+    "log_key": "18c30f2e_3",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status != OFF→!(storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1)",
+    "log_segment": "[DEBUG]:BLOCK* removeStoredBlock: block-123 has already been removed from node node-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "211": {
+    "entry_id": 211,
+    "BlockId": "18c30f2e_3",
+    "log_key": "18c30f2e_3",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status != OFF→!(storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1)",
+    "log_segment": "[DEBUG]:BLOCK* removeStoredBlock: block-123 removed from caching related lists on node node-01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "212": {
+    "entry_id": 212,
+    "BlockId": "18c30f2e_3",
+    "log_key": "18c30f2e_3",
+    "exec_flow": "ENTRY→removeStoredBlock→storedBlock == null || !blocksMap.removeNode(storedBlock, node)%%ENTRY→removeStoredBlock→cblock != null%%ENTRY→decrementSafeBlockCount→status != OFF→!(storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1)",
+    "log_segment": "[INFO]:Block is not complete or safe mode conditions not met",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "213": {
+    "entry_id": 213,
+    "BlockId": "18c30f2e_4",
+    "log_key": "18c30f2e_4",
+    "exec_flow": "ENTRY→priLevel >= 0 && priLevel < 3 && priorityQueues.get(priLevel).remove(block)",
+    "log_segment": "[DEBUG]:Removing block block-456 from priority queue 2",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "214": {
+    "entry_id": 214,
+    "BlockId": "18c30f2e_5",
+    "log_key": "18c30f2e_5",
+    "exec_flow": "ENTRY→!(priLevel >= 0 && priLevel < 3 && priorityQueues.get(priLevel).remove(block)→FOR_INIT→FOR_COND→FOR_EXIT",
+    "log_segment": "[DEBUG]:Removing block block-456 from priority queue 1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "215": {
+    "entry_id": 215,
+    "BlockId": "18c30f2e_6",
+    "log_key": "18c30f2e_6",
+    "exec_flow": "ENTRY→set == null",
+    "log_segment": "[DEBUG]:BLOCK* ExcessRedundancyMap.remove(block-789, node-02)",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "216": {
+    "entry_id": 216,
+    "BlockId": "18c30f2e_7",
+    "log_key": "18c30f2e_7",
+    "exec_flow": "ENTRY→!(set == null)→removed→decrementAndGet→blockLog.debug→set.isEmpty()→remove",
+    "log_segment": "[DEBUG]:BLOCK* ExcessRedundancyMap.remove(block-789, node-02)",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "217": {
+    "entry_id": 217,
+    "BlockId": "54c1754e_1",
+    "log_key": "54c1754e_1",
+    "exec_flow": "ENTRY→CountNodes%%ENTRY→AlternativeBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "218": {
+    "entry_id": 218,
+    "BlockId": "54c1754e_1",
+    "log_key": "54c1754e_1",
+    "exec_flow": "ENTRY→CountNodes%%ENTRY→AlternativeBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "219": {
+    "entry_id": 219,
+    "BlockId": "d51b1764_1",
+    "log_key": "d51b1764_1",
+    "exec_flow": "ENTRY→ConditionCheck:curBlock.isComplete()%%ENTRY→ConditionCheck:!force && !hasMinStorage(curBlock, numNodes)%%ENTRY→ConditionCheck:!force && curBlock.getBlockUCState() != COMMITTED%%ENTRY→Action:convertToCompleteBlock",
+    "log_segment": "[DEBUG]:Block state check: COMPLETE",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "220": {
+    "entry_id": 220,
+    "BlockId": "d51b1764_1",
+    "log_key": "d51b1764_1",
+    "exec_flow": "ENTRY→ConditionCheck:curBlock.isComplete()%%ENTRY→ConditionCheck:!force && !hasMinStorage(curBlock, numNodes)%%ENTRY→ConditionCheck:!force && curBlock.getBlockUCState() != COMMITTED%%ENTRY→Action:convertToCompleteBlock",
+    "log_segment": "[ERROR]:Cannot complete block: block does not satisfy minimal replication requirement.",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "221": {
+    "entry_id": 221,
+    "BlockId": "d51b1764_1",
+    "log_key": "d51b1764_1",
+    "exec_flow": "ENTRY→ConditionCheck:curBlock.isComplete()%%ENTRY→ConditionCheck:!force && !hasMinStorage(curBlock, numNodes)%%ENTRY→ConditionCheck:!force && curBlock.getBlockUCState() != COMMITTED%%ENTRY→Action:convertToCompleteBlock",
+    "log_segment": "[ERROR]:Cannot complete block: block has not been COMMITTED by the client.",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "222": {
+    "entry_id": 222,
+    "BlockId": "d51b1764_1",
+    "log_key": "d51b1764_1",
+    "exec_flow": "ENTRY→ConditionCheck:curBlock.isComplete()%%ENTRY→ConditionCheck:!force && !hasMinStorage(curBlock, numNodes)%%ENTRY→ConditionCheck:!force && curBlock.getBlockUCState() != COMMITTED%%ENTRY→Action:convertToCompleteBlock",
+    "log_segment": "[INFO]:Block successfully converted to complete.",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "223": {
+    "entry_id": 223,
+    "BlockId": "d51b1764_2",
+    "log_key": "d51b1764_2",
+    "exec_flow": "ENTRY→ConditionCheck:isComplete() || getBlockUCState() == COMMITTED%%ENTRY→ConditionCheck:!isComplete() && getBlockUCState() != COMMITTED",
+    "log_segment": "[DEBUG]:Block state check: COMMITTED or COMPLETE",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "224": {
+    "entry_id": 224,
+    "BlockId": "d51b1764_2",
+    "log_key": "d51b1764_2",
+    "exec_flow": "ENTRY→ConditionCheck:isComplete() || getBlockUCState() == COMMITTED%%ENTRY→ConditionCheck:!isComplete() && getBlockUCState() != COMMITTED",
+    "log_segment": "[DEBUG]:Block state check: NOT COMMITTED or COMPLETE",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "225": {
+    "entry_id": 225,
+    "BlockId": "2b8438c5_1",
+    "log_key": "2b8438c5_1",
+    "exec_flow": "ENTRY→ConditionCheck:status==OFF%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum==safeNumberOfNodes→ConditionCheck:prog.getStatus(SAFEMODE)!=COMPLETE→ConditionCheck:awaitingReportedBlocksCounter==null→CALL:getCounter→CALL:incrementCounter→CALL:checkSafeMode%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum==safeNumberOfNodes→ConditionCheck:prog.getStatus(SAFEMODE)==COMPLETE→CALL:checkSafeMode%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum!=safeNumberOfNodes",
+    "log_segment": "[INFO]:Safe mode status is OFF",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "226": {
+    "entry_id": 226,
+    "BlockId": "2b8438c5_1",
+    "log_key": "2b8438c5_1",
+    "exec_flow": "ENTRY→ConditionCheck:status==OFF%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum==safeNumberOfNodes→ConditionCheck:prog.getStatus(SAFEMODE)!=COMPLETE→ConditionCheck:awaitingReportedBlocksCounter==null→CALL:getCounter→CALL:incrementCounter→CALL:checkSafeMode%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum==safeNumberOfNodes→ConditionCheck:prog.getStatus(SAFEMODE)==COMPLETE→CALL:checkSafeMode%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum!=safeNumberOfNodes",
+    "log_segment": "[DEBUG]:Incrementing safe block count",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "227": {
+    "entry_id": 227,
+    "BlockId": "2b8438c5_1",
+    "log_key": "2b8438c5_1",
+    "exec_flow": "ENTRY→ConditionCheck:status==OFF%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum==safeNumberOfNodes→ConditionCheck:prog.getStatus(SAFEMODE)!=COMPLETE→ConditionCheck:awaitingReportedBlocksCounter==null→CALL:getCounter→CALL:incrementCounter→CALL:checkSafeMode%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum==safeNumberOfNodes→ConditionCheck:prog.getStatus(SAFEMODE)==COMPLETE→CALL:checkSafeMode%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum!=safeNumberOfNodes",
+    "log_segment": "[INFO]:Startup progress updated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "228": {
+    "entry_id": 228,
+    "BlockId": "2b8438c5_1",
+    "log_key": "2b8438c5_1",
+    "exec_flow": "ENTRY→ConditionCheck:status==OFF%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum==safeNumberOfNodes→ConditionCheck:prog.getStatus(SAFEMODE)!=COMPLETE→ConditionCheck:awaitingReportedBlocksCounter==null→CALL:getCounter→CALL:incrementCounter→CALL:checkSafeMode%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum==safeNumberOfNodes→ConditionCheck:prog.getStatus(SAFEMODE)==COMPLETE→CALL:checkSafeMode%%ENTRY→ConditionCheck:status!=OFF→ConditionCheck:storageNum!=safeNumberOfNodes",
+    "log_segment": "[INFO]:Safe block count unchanged",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "229": {
+    "entry_id": 229,
+    "BlockId": "5545562d_1",
+    "log_key": "5545562d_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "230": {
+    "entry_id": 230,
+    "BlockId": "5545562d_1",
+    "log_key": "5545562d_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "231": {
+    "entry_id": 231,
+    "BlockId": "169b52fd_1",
+    "log_key": "169b52fd_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "232": {
+    "entry_id": 232,
+    "BlockId": "169b52fd_1",
+    "log_key": "169b52fd_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "233": {
+    "entry_id": 233,
+    "BlockId": "220ab0f3_1",
+    "log_key": "220ab0f3_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[TRACE]:BLOCK processExtraRedundancyBlock: Postponing block-1024 since storage storage-01 does not yet have up-to-date information.",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "234": {
+    "entry_id": 234,
+    "BlockId": "5b8b437f_1",
+    "log_key": "5b8b437f_1",
+    "exec_flow": "ENTRY→CALL: blockLog.debug→IF: node == null%%ENTRY→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: blockLog.debug→CALL: postponeBlock%%ENTRY→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug",
+    "log_segment": "[DEBUG]:BLOCK* invalidateBlock: block123 on datanode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "235": {
+    "entry_id": 235,
+    "BlockId": "5b8b437f_1",
+    "log_key": "5b8b437f_1",
+    "exec_flow": "ENTRY→CALL: blockLog.debug→IF: node == null%%ENTRY→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: blockLog.debug→CALL: postponeBlock%%ENTRY→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug",
+    "log_segment": "[DEBUG]:BLOCK* invalidateBlocks: postponing invalidation of block123 on datanode01 because 2 replica(s) are located on nodes with potentially out-of-date block reports",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "236": {
+    "entry_id": 236,
+    "BlockId": "5b8b437f_1",
+    "log_key": "5b8b437f_1",
+    "exec_flow": "ENTRY→CALL: blockLog.debug→IF: node == null%%ENTRY→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: blockLog.debug→CALL: postponeBlock%%ENTRY→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug",
+    "log_segment": "[DEBUG]:BLOCK* addToInvalidates: block123 [datanode01, datanode02]",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "237": {
+    "entry_id": 237,
+    "BlockId": "5b8b437f_1",
+    "log_key": "5b8b437f_1",
+    "exec_flow": "ENTRY→CALL: blockLog.debug→IF: node == null%%ENTRY→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: blockLog.debug→CALL: postponeBlock%%ENTRY→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug",
+    "log_segment": "[DEBUG]:BLOCK* invalidateBlocks: block123 on datanode01 listed for deletion.",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "238": {
+    "entry_id": 238,
+    "BlockId": "5b8b437f_2",
+    "log_key": "5b8b437f_2",
+    "exec_flow": "ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status == BMSafeModeStatus.OFF%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: !(storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1)",
+    "log_segment": "[DEBUG]:BLOCK* removeStoredBlock: block123 has already been removed from node datanode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "239": {
+    "entry_id": 239,
+    "BlockId": "5b8b437f_2",
+    "log_key": "5b8b437f_2",
+    "exec_flow": "ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status == BMSafeModeStatus.OFF%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: !(storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1)",
+    "log_segment": "[DEBUG]:BLOCK* removeStoredBlock: block123 removed from caching related lists on node datanode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "240": {
+    "entry_id": 240,
+    "BlockId": "5b8b437f_2",
+    "log_key": "5b8b437f_2",
+    "exec_flow": "ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status == BMSafeModeStatus.OFF%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: !(storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1)",
+    "log_segment": "[INFO]:Safe mode is off, no operation performed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "241": {
+    "entry_id": 241,
+    "BlockId": "5b8b437f_2",
+    "log_key": "5b8b437f_2",
+    "exec_flow": "ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status == BMSafeModeStatus.OFF%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: !(storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1)",
+    "log_segment": "[DEBUG]:Block is complete and safe mode check initiated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "242": {
+    "entry_id": 242,
+    "BlockId": "5b8b437f_2",
+    "log_key": "5b8b437f_2",
+    "exec_flow": "ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status == BMSafeModeStatus.OFF%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1%%ENTRY→CALL: removeStoredBlock→IF: storedBlock == null || !blocksMap.removeNode(storedBlock, node)→RETURN→CALL: removeStoredBlock→IF: cblock != null→RETURN→CALL: decrementSafeBlockCount→IF: status != BMSafeModeStatus.OFF→IF: !(storedBlock.isComplete() && blockManager.countNodes(b).liveReplicas() == safeNumberOfNodes - 1)",
+    "log_segment": "[INFO]:Block is not complete or safe mode conditions not met",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "243": {
+    "entry_id": 243,
+    "BlockId": "98efcc52_1",
+    "log_key": "98efcc52_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→StripedBlockCheck→GetStorages→NodeIteration→StorageCheck→BlockOnStorage%%ENTRY→StripedBlockCheck→GetStorages→NodeIteration→ExitIteration→RemovedFromBlocksMapCheck→RemoveCorruptReplica%%ENTRY→StripedBlockCheck→GetStorages→NodeIteration→ExitIteration→RemovedFromBlocksMapCheck%%ENTRY→NonStripedBlockCheck→NodeIteration→StorageCheck→BlockOnStorage%%ENTRY→NonStripedBlockCheck→NodeIteration→ExitIteration→RemovedFromBlocksMapCheck→RemoveCorruptReplica%%ENTRY→NonStripedBlockCheck→NodeIteration→ExitIteration→RemovedFromBlocksMapCheck",
+    "log_segment": "[DEBUG]:Invalidate corrupt replicas error in deleting bad block blk_12345 on datanode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "244": {
+    "entry_id": 244,
+    "BlockId": "675fdd79_1",
+    "log_key": "675fdd79_1",
+    "exec_flow": "ENTRY→CALL:addStoredBlock→IF:block.isCompleteOrCommitted()%%ENTRY→IF_TRUE:nodes==null%%ENTRY→IF_FALSE:nodes==null→IF_TRUE:blk.isStriped()→FOREACH:nodesCopy→IF_TRUE:removedFromBlocksMap",
+    "log_segment": "[DEBUG]:Block blk_12345 is added to pool-01 (size=128MB)",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "245": {
+    "entry_id": 245,
+    "BlockId": "675fdd79_1",
+    "log_key": "675fdd79_1",
+    "exec_flow": "ENTRY→CALL:addStoredBlock→IF:block.isCompleteOrCommitted()%%ENTRY→IF_TRUE:nodes==null%%ENTRY→IF_FALSE:nodes==null→IF_TRUE:blk.isStriped()→FOREACH:nodesCopy→IF_TRUE:removedFromBlocksMap",
+    "log_segment": "[WARN]:Block blk_12345 moved to storageType SSD on node datanode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "246": {
+    "entry_id": 246,
+    "BlockId": "675fdd79_1",
+    "log_key": "675fdd79_1",
+    "exec_flow": "ENTRY→CALL:addStoredBlock→IF:block.isCompleteOrCommitted()%%ENTRY→IF_TRUE:nodes==null%%ENTRY→IF_FALSE:nodes==null→IF_TRUE:blk.isStriped()→FOREACH:nodesCopy→IF_TRUE:removedFromBlocksMap",
+    "log_segment": "[DEBUG]:Redundant addStoredBlock request received for blk_12345 on node datanode01 size 128MB",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "247": {
+    "entry_id": 247,
+    "BlockId": "675fdd79_1",
+    "log_key": "675fdd79_1",
+    "exec_flow": "ENTRY→CALL:addStoredBlock→IF:block.isCompleteOrCommitted()%%ENTRY→IF_TRUE:nodes==null%%ENTRY→IF_FALSE:nodes==null→IF_TRUE:blk.isStriped()→FOREACH:nodesCopy→IF_TRUE:removedFromBlocksMap",
+    "log_segment": "[WARN]:Inconsistent number of corrupt replicas for blk_12345. blockMap has 3 but corrupt replicas map has 2",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "248": {
+    "entry_id": 248,
+    "BlockId": "675fdd79_1",
+    "log_key": "675fdd79_1",
+    "exec_flow": "ENTRY→CALL:addStoredBlock→IF:block.isCompleteOrCommitted()%%ENTRY→IF_TRUE:nodes==null%%ENTRY→IF_FALSE:nodes==null→IF_TRUE:blk.isStriped()→FOREACH:nodesCopy→IF_TRUE:removedFromBlocksMap",
+    "log_segment": "[DEBUG]:InvalidateCorruptReplicas error in deleting bad block blk_12345 on datanode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "249": {
+    "entry_id": 249,
+    "BlockId": "675fdd79_2",
+    "log_key": "675fdd79_2",
+    "exec_flow": "ENTRY→CALL:writeLock→ENTRY→CALL:equals→CALL:getBlockUCState→RETURN→TRY→IF_FALSE:!isPopulatingReplQueues()||!block.isComplete()→IF_FALSE:!hasEnoughEffectiveReplicas(block,repl,pendingNum)→CALL:neededReconstruction.remove→CALL:writeUnlock",
+    "log_segment": "[DEBUG]:Block completeness check",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "250": {
+    "entry_id": 250,
+    "BlockId": "675fdd79_2",
+    "log_key": "675fdd79_2",
+    "exec_flow": "ENTRY→CALL:writeLock→ENTRY→CALL:equals→CALL:getBlockUCState→RETURN→TRY→IF_FALSE:!isPopulatingReplQueues()||!block.isComplete()→IF_FALSE:!hasEnoughEffectiveReplicas(block,repl,pendingNum)→CALL:neededReconstruction.remove→CALL:writeUnlock",
+    "log_segment": "[INFO]:Reconstruction removal triggered",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "251": {
+    "entry_id": 251,
+    "BlockId": "23dfab4e_1",
+    "log_key": "23dfab4e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "252": {
+    "entry_id": 252,
+    "BlockId": "23dfab4e_1",
+    "log_key": "23dfab4e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "253": {
+    "entry_id": 253,
+    "BlockId": "2f60b247_1",
+    "log_key": "2f60b247_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:BLOCK* addToInvalidates: BlockInfo{blockId=12345, size=128MB} [datanode01, datanode02]",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "254": {
+    "entry_id": 254,
+    "BlockId": "2f60b247_1",
+    "log_key": "2f60b247_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:BLOCK* InvalidateBlocks: add BlockInfo{blockId=12345, size=128MB} to datanode01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "255": {
+    "entry_id": 255,
+    "BlockId": "0dc59f9c_1",
+    "log_key": "0dc59f9c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Corrupt replicas map updated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "256": {
+    "entry_id": 256,
+    "BlockId": "0dc59f9c_1",
+    "log_key": "0dc59f9c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Block statistics incremented",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "257": {
+    "entry_id": 257,
+    "BlockId": "0dc59f9c_1",
+    "log_key": "0dc59f9c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Block state change logged",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "258": {
+    "entry_id": 258,
+    "BlockId": "e262ffb3_1",
+    "log_key": "e262ffb3_1",
+    "exec_flow": "ENTRY→IF: b.getStored().isDeleted()→ENTRY→RETURN→EXIT→CALL: blockLog.debug→CALL: addToInvalidates→ENTRY→IF_FALSE: !isPopulatingReplQueues()→FOREACH: blocksMap.getStorages(storedBlock)→IF_TRUE: storage.getState() != State.NORMAL→CONTINUE→FOREACH_EXIT→IF_TRUE: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→EXIT→EXIT%%ENTRY→IF_FALSE: b.getStored().isDeleted()→IF: storageInfo != null→CALL: storageInfo.addBlock→ENTRY→CALL: addBlock→RETURN→EXIT→IF: b.getStored().isStriped()→CALL: setBlockId→CALL: corruptReplicas.addToCorruptReplicasMap→ENTRY→IF_TRUE: nodes == null→NEW: HashMap<DatanodeDescriptor, Reason>→CALL: corruptReplicasMap.put→CALL: incrementBlockStat→EXIT→IF_TRUE: reason != null→IF_TRUE: !nodes.keySet().contains(dn)→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→IF_FALSE: reason != null→IF_TRUE: !nodes.keySet().contains(dn→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→EXIT→IF: hasEnoughLiveReplicas || hasMoreCorruptReplicas || corruptedDuringWrite→IF: b.getStored().isStriped()→CALL: corruptReplicas.removeFromCorruptReplicasMap→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→CALL: invalidateBlock→EXIT→EXIT%%ENTRY→CALL: blockLog.debug→IF: node == null→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug→EXIT",
+    "log_segment": "[DEBUG]:BLOCK markBlockAsCorrupt: block_123 cannot be marked as corrupt as it does not belong to any file",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "259": {
+    "entry_id": 259,
+    "BlockId": "e262ffb3_1",
+    "log_key": "e262ffb3_1",
+    "exec_flow": "ENTRY→IF: b.getStored().isDeleted()→ENTRY→RETURN→EXIT→CALL: blockLog.debug→CALL: addToInvalidates→ENTRY→IF_FALSE: !isPopulatingReplQueues()→FOREACH: blocksMap.getStorages(storedBlock)→IF_TRUE: storage.getState() != State.NORMAL→CONTINUE→FOREACH_EXIT→IF_TRUE: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→EXIT→EXIT%%ENTRY→IF_FALSE: b.getStored().isDeleted()→IF: storageInfo != null→CALL: storageInfo.addBlock→ENTRY→CALL: addBlock→RETURN→EXIT→IF: b.getStored().isStriped()→CALL: setBlockId→CALL: corruptReplicas.addToCorruptReplicasMap→ENTRY→IF_TRUE: nodes == null→NEW: HashMap<DatanodeDescriptor, Reason>→CALL: corruptReplicasMap.put→CALL: incrementBlockStat→EXIT→IF_TRUE: reason != null→IF_TRUE: !nodes.keySet().contains(dn)→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→IF_FALSE: reason != null→IF_TRUE: !nodes.keySet().contains(dn→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→EXIT→IF: hasEnoughLiveReplicas || hasMoreCorruptReplicas || corruptedDuringWrite→IF: b.getStored().isStriped()→CALL: corruptReplicas.removeFromCorruptReplicasMap→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→CALL: invalidateBlock→EXIT→EXIT%%ENTRY→CALL: blockLog.debug→IF: node == null→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug→EXIT",
+    "log_segment": "[DEBUG]:BLOCK* addToInvalidates: block_123 [datanode1, datanode2]",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "260": {
+    "entry_id": 260,
+    "BlockId": "e262ffb3_1",
+    "log_key": "e262ffb3_1",
+    "exec_flow": "ENTRY→IF: b.getStored().isDeleted()→ENTRY→RETURN→EXIT→CALL: blockLog.debug→CALL: addToInvalidates→ENTRY→IF_FALSE: !isPopulatingReplQueues()→FOREACH: blocksMap.getStorages(storedBlock)→IF_TRUE: storage.getState() != State.NORMAL→CONTINUE→FOREACH_EXIT→IF_TRUE: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→EXIT→EXIT%%ENTRY→IF_FALSE: b.getStored().isDeleted()→IF: storageInfo != null→CALL: storageInfo.addBlock→ENTRY→CALL: addBlock→RETURN→EXIT→IF: b.getStored().isStriped()→CALL: setBlockId→CALL: corruptReplicas.addToCorruptReplicasMap→ENTRY→IF_TRUE: nodes == null→NEW: HashMap<DatanodeDescriptor, Reason>→CALL: corruptReplicasMap.put→CALL: incrementBlockStat→EXIT→IF_TRUE: reason != null→IF_TRUE: !nodes.keySet().contains(dn)→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→IF_FALSE: reason != null→IF_TRUE: !nodes.keySet().contains(dn→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→EXIT→IF: hasEnoughLiveReplicas || hasMoreCorruptReplicas || corruptedDuringWrite→IF: b.getStored().isStriped()→CALL: corruptReplicas.removeFromCorruptReplicasMap→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→CALL: invalidateBlock→EXIT→EXIT%%ENTRY→CALL: blockLog.debug→IF: node == null→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug→EXIT",
+    "log_segment": "[DEBUG]:BLOCK* InvalidateBlocks: add block_123 to datanode1",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "261": {
+    "entry_id": 261,
+    "BlockId": "e262ffb3_1",
+    "log_key": "e262ffb3_1",
+    "exec_flow": "ENTRY→IF: b.getStored().isDeleted()→ENTRY→RETURN→EXIT→CALL: blockLog.debug→CALL: addToInvalidates→ENTRY→IF_FALSE: !isPopulatingReplQueues()→FOREACH: blocksMap.getStorages(storedBlock)→IF_TRUE: storage.getState() != State.NORMAL→CONTINUE→FOREACH_EXIT→IF_TRUE: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→EXIT→EXIT%%ENTRY→IF_FALSE: b.getStored().isDeleted()→IF: storageInfo != null→CALL: storageInfo.addBlock→ENTRY→CALL: addBlock→RETURN→EXIT→IF: b.getStored().isStriped()→CALL: setBlockId→CALL: corruptReplicas.addToCorruptReplicasMap→ENTRY→IF_TRUE: nodes == null→NEW: HashMap<DatanodeDescriptor, Reason>→CALL: corruptReplicasMap.put→CALL: incrementBlockStat→EXIT→IF_TRUE: reason != null→IF_TRUE: !nodes.keySet().contains(dn)→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→IF_FALSE: reason != null→IF_TRUE: !nodes.keySet().contains(dn→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→EXIT→IF: hasEnoughLiveReplicas || hasMoreCorruptReplicas || corruptedDuringWrite→IF: b.getStored().isStriped()→CALL: corruptReplicas.removeFromCorruptReplicasMap→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→CALL: invalidateBlock→EXIT→EXIT%%ENTRY→CALL: blockLog.debug→IF: node == null→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug→EXIT",
+    "log_segment": "[DEBUG]:BLOCK NameSystem.addToCorruptReplicasMap: block_123 added as corrupt on datanode1 by 192.168.1.1 Reason: Corruption detected",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "262": {
+    "entry_id": 262,
+    "BlockId": "e262ffb3_1",
+    "log_key": "e262ffb3_1",
+    "exec_flow": "ENTRY→IF: b.getStored().isDeleted()→ENTRY→RETURN→EXIT→CALL: blockLog.debug→CALL: addToInvalidates→ENTRY→IF_FALSE: !isPopulatingReplQueues()→FOREACH: blocksMap.getStorages(storedBlock)→IF_TRUE: storage.getState() != State.NORMAL→CONTINUE→FOREACH_EXIT→IF_TRUE: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→EXIT→EXIT%%ENTRY→IF_FALSE: b.getStored().isDeleted()→IF: storageInfo != null→CALL: storageInfo.addBlock→ENTRY→CALL: addBlock→RETURN→EXIT→IF: b.getStored().isStriped()→CALL: setBlockId→CALL: corruptReplicas.addToCorruptReplicasMap→ENTRY→IF_TRUE: nodes == null→NEW: HashMap<DatanodeDescriptor, Reason>→CALL: corruptReplicasMap.put→CALL: incrementBlockStat→EXIT→IF_TRUE: reason != null→IF_TRUE: !nodes.keySet().contains(dn)→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→IF_FALSE: reason != null→IF_TRUE: !nodes.keySet().contains(dn→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→EXIT→IF: hasEnoughLiveReplicas || hasMoreCorruptReplicas || corruptedDuringWrite→IF: b.getStored().isStriped()→CALL: corruptReplicas.removeFromCorruptReplicasMap→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→CALL: invalidateBlock→EXIT→EXIT%%ENTRY→CALL: blockLog.debug→IF: node == null→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug→EXIT",
+    "log_segment": "[DEBUG]:BLOCK* invalidateBlock: block_123 on datanode1",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "263": {
+    "entry_id": 263,
+    "BlockId": "e262ffb3_1",
+    "log_key": "e262ffb3_1",
+    "exec_flow": "ENTRY→IF: b.getStored().isDeleted()→ENTRY→RETURN→EXIT→CALL: blockLog.debug→CALL: addToInvalidates→ENTRY→IF_FALSE: !isPopulatingReplQueues()→FOREACH: blocksMap.getStorages(storedBlock)→IF_TRUE: storage.getState() != State.NORMAL→CONTINUE→FOREACH_EXIT→IF_TRUE: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→EXIT→EXIT%%ENTRY→IF_FALSE: b.getStored().isDeleted()→IF: storageInfo != null→CALL: storageInfo.addBlock→ENTRY→CALL: addBlock→RETURN→EXIT→IF: b.getStored().isStriped()→CALL: setBlockId→CALL: corruptReplicas.addToCorruptReplicasMap→ENTRY→IF_TRUE: nodes == null→NEW: HashMap<DatanodeDescriptor, Reason>→CALL: corruptReplicasMap.put→CALL: incrementBlockStat→EXIT→IF_TRUE: reason != null→IF_TRUE: !nodes.keySet().contains(dn)→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→IF_FALSE: reason != null→IF_TRUE: !nodes.keySet().contains(dn→CALL: NameNode.blockStateChangeLog.debug→CALL: put→EXIT→EXIT→IF: hasEnoughLiveReplicas || hasMoreCorruptReplicas || corruptedDuringWrite→IF: b.getStored().isStriped()→CALL: corruptReplicas.removeFromCorruptReplicasMap→CALL: storageInfo.removeBlock→ENTRY→CALL: listRemove→IF_TRUE: b.removeStorage(this)→RETURN→EXIT→CALL: invalidateBlock→EXIT→EXIT%%ENTRY→CALL: blockLog.debug→IF: node == null→IF: nr.replicasOnStaleNodes() > 0 && !deleteCorruptReplicaImmediately→CALL: addToInvalidates→IF: datanodes != null && datanodes.length() != 0→CALL: blockLog.debug→CALL: removeStoredBlock→CALL: blockLog.debug→EXIT",
+    "log_segment": "[DEBUG]:BLOCK* invalidateBlocks: block_123 on datanode1 listed for deletion.",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "264": {
+    "entry_id": 264,
+    "BlockId": "e262ffb3_2",
+    "log_key": "e262ffb3_2",
+    "exec_flow": "ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_TRUE: !isPopulatingReplQueues() || !block.isComplete()→RETURN→EXIT%%ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_FALSE: !isPopulatingReplQueues() || !block.isComplete()→IF_TRUE: !hasEnoughEffectiveReplicas(block, repl, pendingNum)→CALL: neededReconstruction.update→CALL: writeUnlock→EXIT%%ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_FALSE: !isPopulatingReplQueues() || !block.isComplete()→IF_FALSE: !hasEnoughEffectiveReplicas(block, repl, pendingNum)→CALL: neededReconstruction.remove→CALL: writeUnlock→EXIT",
+    "log_segment": "[DEBUG]:Block completeness check",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "265": {
+    "entry_id": 265,
+    "BlockId": "e262ffb3_2",
+    "log_key": "e262ffb3_2",
+    "exec_flow": "ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_TRUE: !isPopulatingReplQueues() || !block.isComplete()→RETURN→EXIT%%ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_FALSE: !isPopulatingReplQueues() || !block.isComplete()→IF_TRUE: !hasEnoughEffectiveReplicas(block, repl, pendingNum)→CALL: neededReconstruction.update→CALL: writeUnlock→EXIT%%ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_FALSE: !isPopulatingReplQueues() || !block.isComplete()→IF_FALSE: !hasEnoughEffectiveReplicas(block, repl, pendingNum)→CALL: neededReconstruction.remove→CALL: writeUnlock→EXIT",
+    "log_segment": "[INFO]:Reconstruction update triggered",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "266": {
+    "entry_id": 266,
+    "BlockId": "e262ffb3_2",
+    "log_key": "e262ffb3_2",
+    "exec_flow": "ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_TRUE: !isPopulatingReplQueues() || !block.isComplete()→RETURN→EXIT%%ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_FALSE: !isPopulatingReplQueues() || !block.isComplete()→IF_TRUE: !hasEnoughEffectiveReplicas(block, repl, pendingNum)→CALL: neededReconstruction.update→CALL: writeUnlock→EXIT%%ENTRY→CALL: writeLock→ENTRY→CALL: equals→CALL: getBlockUCState→RETURN→TRY→IF_FALSE: !isPopulatingReplQueues() || !block.isComplete()→IF_FALSE: !hasEnoughEffectiveReplicas(block, repl, pendingNum)→CALL: neededReconstruction.remove→CALL: writeUnlock→EXIT",
+    "log_segment": "[INFO]:Reconstruction removal triggered",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "267": {
+    "entry_id": 267,
+    "BlockId": "e262ffb3_3",
+    "log_key": "e262ffb3_3",
+    "exec_flow": "ENTRY→IF_TRUE: priLevel >= 0 && priLevel < LEVEL && priorityQueues.get(priLevel).remove(block)→CALL: NameNode.blockStateChangeLog.debug→CALL: decrementBlockStat→RETURN→EXIT%%ENTRY→IF_FALSE: priLevel >= 0 && priLevel < LEVEL && priorityQueues.get(priLevel).remove(block)→FOR_INIT→FOR_COND: i < LEVEL→FOR_EXIT→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Removing block block_123 from priority queue 1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "268": {
+    "entry_id": 268,
+    "BlockId": "e262ffb3_3",
+    "log_key": "e262ffb3_3",
+    "exec_flow": "ENTRY→IF_TRUE: priLevel >= 0 && priLevel < LEVEL && priorityQueues.get(priLevel).remove(block)→CALL: NameNode.blockStateChangeLog.debug→CALL: decrementBlockStat→RETURN→EXIT%%ENTRY→IF_FALSE: priLevel >= 0 && priLevel < LEVEL && priorityQueues.get(priLevel).remove(block)→FOR_INIT→FOR_COND: i < LEVEL→FOR_EXIT→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Removing block block_123 from priority queue 2",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "269": {
+    "entry_id": 269,
+    "BlockId": "cb32ad64_1",
+    "log_key": "cb32ad64_1",
+    "exec_flow": "ENTRY→CALL:reportDiff→WHILE:it.hasNext()%%ENTRY→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)%%ENTRY→IF:b.getStored().isDeleted()→CALL:blockLog.debug→CALL:addToInvalidates%%ENTRY→IF_FALSE:b.getStored().isDeleted()→IF:storageInfo!=null→CALL:storageInfo.addBlock→IF:b.getStored().isStriped()→CALL:setBlockId→CALL:corruptReplicas.addToCorruptReplicasMap→IF:hasEnoughLiveReplicas||hasMoreCorruptReplicas||corruptedDuringWrite",
+    "log_segment": "[DEBUG]:Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "270": {
+    "entry_id": 270,
+    "BlockId": "cb32ad64_1",
+    "log_key": "cb32ad64_1",
+    "exec_flow": "ENTRY→CALL:reportDiff→WHILE:it.hasNext()%%ENTRY→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)%%ENTRY→IF:b.getStored().isDeleted()→CALL:blockLog.debug→CALL:addToInvalidates%%ENTRY→IF_FALSE:b.getStored().isDeleted()→IF:storageInfo!=null→CALL:storageInfo.addBlock→IF:b.getStored().isStriped()→CALL:setBlockId→CALL:corruptReplicas.addToCorruptReplicasMap→IF:hasEnoughLiveReplicas||hasMoreCorruptReplicas||corruptedDuringWrite",
+    "log_segment": "[INFO]:Collecting blocks not reported",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "271": {
+    "entry_id": 271,
+    "BlockId": "cb32ad64_1",
+    "log_key": "cb32ad64_1",
+    "exec_flow": "ENTRY→CALL:reportDiff→WHILE:it.hasNext()%%ENTRY→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)%%ENTRY→IF:b.getStored().isDeleted()→CALL:blockLog.debug→CALL:addToInvalidates%%ENTRY→IF_FALSE:b.getStored().isDeleted()→IF:storageInfo!=null→CALL:storageInfo.addBlock→IF:b.getStored().isStriped()→CALL:setBlockId→CALL:corruptReplicas.addToCorruptReplicasMap→IF:hasEnoughLiveReplicas||hasMoreCorruptReplicas||corruptedDuringWrite",
+    "log_segment": "[DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "272": {
+    "entry_id": 272,
+    "BlockId": "cb32ad64_1",
+    "log_key": "cb32ad64_1",
+    "exec_flow": "ENTRY→CALL:reportDiff→WHILE:it.hasNext()%%ENTRY→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)%%ENTRY→IF:b.getStored().isDeleted()→CALL:blockLog.debug→CALL:addToInvalidates%%ENTRY→IF_FALSE:b.getStored().isDeleted()→IF:storageInfo!=null→CALL:storageInfo.addBlock→IF:b.getStored().isStriped()→CALL:setBlockId→CALL:corruptReplicas.addToCorruptReplicasMap→IF:hasEnoughLiveReplicas||hasMoreCorruptReplicas||corruptedDuringWrite",
+    "log_segment": "[DEBUG]:BLOCK markBlockAsCorrupt: blk_12345 cannot be marked as corrupt as it does not belong to any file",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "273": {
+    "entry_id": 273,
+    "BlockId": "cb32ad64_1",
+    "log_key": "cb32ad64_1",
+    "exec_flow": "ENTRY→CALL:reportDiff→WHILE:it.hasNext()%%ENTRY→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)%%ENTRY→IF:b.getStored().isDeleted()→CALL:blockLog.debug→CALL:addToInvalidates%%ENTRY→IF_FALSE:b.getStored().isDeleted()→IF:storageInfo!=null→CALL:storageInfo.addBlock→IF:b.getStored().isStriped()→CALL:setBlockId→CALL:corruptReplicas.addToCorruptReplicasMap→IF:hasEnoughLiveReplicas||hasMoreCorruptReplicas||corruptedDuringWrite",
+    "log_segment": "[DEBUG]:BLOCK* addToInvalidates: blk_12345 [datanode01, datanode02]",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "274": {
+    "entry_id": 274,
+    "BlockId": "cb32ad64_1",
+    "log_key": "cb32ad64_1",
+    "exec_flow": "ENTRY→CALL:reportDiff→WHILE:it.hasNext()%%ENTRY→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)%%ENTRY→IF:b.getStored().isDeleted()→CALL:blockLog.debug→CALL:addToInvalidates%%ENTRY→IF_FALSE:b.getStored().isDeleted()→IF:storageInfo!=null→CALL:storageInfo.addBlock→IF:b.getStored().isStriped()→CALL:setBlockId→CALL:corruptReplicas.addToCorruptReplicasMap→IF:hasEnoughLiveReplicas||hasMoreCorruptReplicas||corruptedDuringWrite",
+    "log_segment": "[DEBUG]:BLOCK* InvalidateBlocks: add blk_12345 to datanode01",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "275": {
+    "entry_id": 275,
+    "BlockId": "cb32ad64_1",
+    "log_key": "cb32ad64_1",
+    "exec_flow": "ENTRY→CALL:reportDiff→WHILE:it.hasNext()%%ENTRY→IF:shouldPostponeBlocksFromFuture&&isGenStampInFuture(block)%%ENTRY→IF:b.getStored().isDeleted()→CALL:blockLog.debug→CALL:addToInvalidates%%ENTRY→IF_FALSE:b.getStored().isDeleted()→IF:storageInfo!=null→CALL:storageInfo.addBlock→IF:b.getStored().isStriped()→CALL:setBlockId→CALL:corruptReplicas.addToCorruptReplicasMap→IF:hasEnoughLiveReplicas||hasMoreCorruptReplicas||corruptedDuringWrite",
+    "log_segment": "[DEBUG]:BLOCK NameSystem.addToCorruptReplicasMap: blk_12345 added as corrupt on datanode01 by 192.168.1.100 Replica lost during write",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "276": {
+    "entry_id": 276,
+    "BlockId": "166c8990_1",
+    "log_key": "166c8990_1",
+    "exec_flow": "ENTRY→FOREACH→FOREACH_EXIT→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "277": {
+    "entry_id": 277,
+    "BlockId": "166c8990_1",
+    "log_key": "166c8990_1",
+    "exec_flow": "ENTRY→FOREACH→FOREACH_EXIT→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "278": {
+    "entry_id": 278,
+    "BlockId": "44a0857e_1",
+    "log_key": "44a0857e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Cannot find FsVolumeSpi to report bad block: /user/data, block",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "279": {
+    "entry_id": 279,
+    "BlockId": "5e556f95_1",
+    "log_key": "5e556f95_1",
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→FetchBlock",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "280": {
+    "entry_id": 280,
+    "BlockId": "5e556f95_1",
+    "log_key": "5e556f95_1",
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→FetchBlock",
+    "log_segment": "[ERROR]:Access denied to path /user/data",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "281": {
+    "entry_id": 281,
+    "BlockId": "dcde8ff6_1",
+    "log_key": "dcde8ff6_1",
+    "exec_flow": "ENTRY→TRY→CALL→EXCEPTION→CATCH→IF_TRUE→LOG→CALL→RETURN→EXIT→ENTRY→IF_TRUE→LOG→RETURN→EXIT%%ENTRY→TRY→CALL→EXCEPTION→CATCH→IF_TRUE→LOG→CALL→RETURN→EXIT→ENTRY→IF_FALSE→CALL→LOG→EXIT",
+    "log_segment": "[INFO]:Can’t send invalid block block-12345",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "282": {
+    "entry_id": 282,
+    "BlockId": "dcde8ff6_1",
+    "log_key": "dcde8ff6_1",
+    "exec_flow": "ENTRY→TRY→CALL→EXCEPTION→CATCH→IF_TRUE→LOG→CALL→RETURN→EXIT→ENTRY→IF_TRUE→LOG→RETURN→EXIT%%ENTRY→TRY→CALL→EXCEPTION→CATCH→IF_TRUE→LOG→CALL→RETURN→EXIT→ENTRY→IF_FALSE→CALL→LOG→EXIT",
+    "log_segment": "[INFO]:Error report sent to NameNode",
+    "single_log_label": "explicit",
+    "block_log_label": "both"
+  },
+  "283": {
+    "entry_id": 283,
+    "BlockId": "dcde8ff6_1",
+    "log_key": "dcde8ff6_1",
+    "exec_flow": "ENTRY→TRY→CALL→EXCEPTION→CATCH→IF_TRUE→LOG→CALL→RETURN→EXIT→ENTRY→IF_TRUE→LOG→RETURN→EXIT%%ENTRY→TRY→CALL→EXCEPTION→CATCH→IF_TRUE→LOG→CALL→RETURN→EXIT→ENTRY→IF_FALSE→CALL→LOG→EXIT",
+    "log_segment": "[WARN]:Cannot find FsVolumeSpi to report bad block: /data/volume1, block block-12345",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "284": {
+    "entry_id": 284,
+    "BlockId": "b9f75a67_1",
+    "log_key": "b9f75a67_1",
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_FALSE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE",
+    "log_segment": "[INFO]:Can’t send invalid block block-12345",
+    "single_log_label": "implicit",
+    "block_log_label": "both"
+  },
+  "285": {
+    "entry_id": 285,
+    "BlockId": "b9f75a67_1",
+    "log_key": "b9f75a67_1",
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_FALSE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE",
+    "log_segment": "[INFO]:Error report sent to NameNode",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "286": {
+    "entry_id": 286,
+    "BlockId": "b9f75a67_1",
+    "log_key": "b9f75a67_1",
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_FALSE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE",
+    "log_segment": "[WARN]:Failed to transfer block block-12345, IOException occurred",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "287": {
+    "entry_id": 287,
+    "BlockId": "b9f75a67_1",
+    "log_key": "b9f75a67_1",
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_FALSE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE",
+    "log_segment": "[WARN]:Cannot find FsVolumeSpi to report bad block: volume-01, block block-12345",
+    "single_log_label": "implicit",
+    "block_log_label": "both"
+  },
+  "288": {
+    "entry_id": 288,
+    "BlockId": "b9f75a67_1",
+    "log_key": "b9f75a67_1",
+    "exec_flow": "ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_FALSE%%ENTRY→FOR_INIT→FOR_COND→TRY→transferBlock→ENTRY→IF_TRUE",
+    "log_segment": "[WARN]:msg",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  }
+}

@@ -1,7 +1,7 @@
 import os 
 
 def get_merge_nodes_by_llm_v4(parent_info,child_info):
-  return f"""
+  yield f"""
   # Log-oriented intelligent path merge engine ## Input specification
   [Parent Node Characterization]
   - Call point context: code segment containing the log burial point
@@ -89,9 +89,48 @@ def get_merge_nodes_by_llm_v4(parent_info,child_info):
     Just return the normalized XML result, i.e. similar to the output specification, without returning the detailed parsing process.
     """
 
+def get_merge_nodes_by_llm_without_cot(parent_info,child_info):
+   yield f"""
+ You are a precise path merging tool. Your task is to merge parent node paths and child node paths based on log information and control flow, outputting only the merged XML result.
+
+**Input:**
+- Parent node info: Call point context, paths to enhance (each with log_seq, conditions)
+- Child node info: Called method source code, mergeable paths (each with log_seq, conditions, eval)
+
+**Merging Rules:**
+1. Log Priority: Parent logs are always retained. Child logs are merged only if they exist and don't conflict.
+2. Path Validity: Only process paths with valid logs; discard log-less paths.
+3. Conflict Handling: Mark paths as invalid if there are definite conditional conflicts (e.g., "x>0" vs "x<0") or data flow conflicts.
+4. Log Sequence: Keep different log sequences as separate paths; merge identical sequences with "or" conditions.
+5. No Log Modification: Use only existing logs from source code; never create or alter logs.
+
+**Output (Strict XML Format Only):**
+<merge_result>
+  <valid_paths>
+    <path>
+      <id>[Path ID, e.g., P1-C1]</id>
+      <eval>[true/false]</eval>
+      <exec_flow>[Merged execution flow with critical nodes, conditions, and logs]</exec_flow>
+      <log_sequence>[Ordered log entries from merged paths]</log_sequence>
+    </path>
+  </valid_paths>
+  <pruned_paths>
+    <path id="[Pruned path ID]" reason="[Conflict explanation]"/>
+  </pruned_paths>
+</merge_result>
+
+Merge the following inputs and output only the XML:
+{parent_info}
+{child_info}
+
+   """
+
+
+
+
 
 def get_merge_nodes_by_llm_v5(parent_info,child_info):
-  return f"""
+  yield f"""
    ## Log-oriented intelligent path merge engine ## Input specification
       
   [Parent Node Characterization
@@ -214,7 +253,7 @@ def get_merge_nodes_by_llm_v5(parent_info,child_info):
 
 
 def get_merge_nodes_by_llm_v6(parent_info, child_info):
-    return f"""
+    yield f"""
     # Log-Oriented Intelligent Path Merging Engine
     ## Input Specifications
     【Parent Node Features】

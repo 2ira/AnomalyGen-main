@@ -1,0 +1,4 @@
+{
+  "org.apache.hadoop.hdfs.LocatedBlocksRefresher:addInputStream(org.apache.hadoop.hdfs.DFSInputStream)": "['ENTRY -> LOG: LOG.TRACE: Registering {} for {}, dfsInputStream, dfsInputStream.getSrc() -> CALL: registeredInputStreams.add -> EXIT']",
+  "org.apache.hadoop.hdfs.DFSClient:addLocatedBlocksRefresh(org.apache.hadoop.hdfs.DFSInputStream)": "['ENTRY -> IF_TRUE: isLocatedBlocksRefresherEnabled() -> CALL: clientContext.getLocatedBlocksRefresher().addInputStream -> EXIT', 'ENTRY -> IF_FALSE: isLocatedBlocksRefresherEnabled() -> EXIT']"
+}

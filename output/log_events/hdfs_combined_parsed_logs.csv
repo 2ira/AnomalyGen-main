@@ -1,4 +1,4 @@
-LineId,Level,Content,EventId,EventTemplate,ParameterList,block_id
+LineId,Level,Content,EventId,EventTemplate,ParameterList,BlockId
 1,[DEBUG],Sorting located striped block,70586228,Sorting located striped block,[],3cb580c5_1
 2,[DEBUG],Sorting located block,a9be8205,Sorting located block,[],3cb580c5_1
 1,[WARN],Encountered exception loading fsimage,2a38b58c,Encountered exception loading fsimage,[],b1291aca_1

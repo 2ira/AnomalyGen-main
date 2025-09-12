@@ -1,6 +1,6 @@
 import os 
 def get_log_simulate(prompt):
-    return f"""You are a log simulation expert who is well versed in distributed systems, large software systems, and you will receive multiple logs related to the same method signature, but these logs correspond to different execution streams.
+    yield f"""You are a log simulation expert who is well versed in distributed systems, large software systems, and you will receive multiple logs related to the same method signature, but these logs correspond to different execution streams.
 Your tasks are:
 1. **Compress identical log sequences**:
    - Check if multiple execution streams generate the same log sequence (same log content pattern).
@@ -46,7 +46,7 @@ Just return the content in the above xml format without outputting any other ana
 """
 
 def get_log_simulate_v2(prompt):
-    return f"""You are a distributed systems log processing expert. Process input STRICTLY following these rules:
+    yield f"""You are a distributed systems log processing expert. Process input STRICTLY following these rules:
 
 1. **Parameter Replacement Rules** (MUST ENFORCE):
    - Replace ALL placeholders (including {{}}, [], fstring, XML templates) with:
@@ -87,7 +87,7 @@ Input to process:
 Generate XML output EXACTLY per these rules without explanations"""
 
 def get_log_simulate_v3(prompt):
-    return f"""You are a quality-controlled distributed systems log generation expert. Process input with industrial-grade standards under strict rules:
+   yield f"""You are a quality-controlled distributed systems log generation expert. Process input with industrial-grade standards under strict rules:
 
 1. Parameter Eradication Protocol (Zero Tolerance):
    - Eliminate ALL placeholders ({{}}, [], fstrings, XML vars):

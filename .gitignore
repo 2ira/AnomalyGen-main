@@ -1,0 +1,18 @@
+# hadoop system 
+hadoop/*
+# env
+main/venv/*
+# some hug output 
+# main/output/hadoop/*
+# some bug files 
+main/output/hadoop/cosn-javacg2_merged.jar-output_javacg2/method_call_info.txt
+ain/output/hadoop/cosn-javacg2_merged.jar-output_javacg2/method_call.txt
+
+*.log
+#git lfs track "*.jar"
+# Tracking "*.jar"
+# ((venv) ) (base) lixinyu.222@n199-207-253:~/AnomalyGen$ git lfs track "*.tar.gz"
+# Tracking "*.tar.gz"
+# ((venv) ) (base) lixinyu.222@n199-207-253:~/AnomalyGen$ git lfs track "*.txt"
+# Tracking "*.txt"
+# ((venv) ) (base) lixinyu.222@n199-207-253:~/AnomalyGen$ git lfs track

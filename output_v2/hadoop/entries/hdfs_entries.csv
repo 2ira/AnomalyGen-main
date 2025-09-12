@@ -1,0 +1,331 @@
+entry_id,BlockId,log_key,exec_flow,log_segment,single_log_label,block_log_label
+1,26a3b790_1,26a3b790_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+2,26a3b790_1,26a3b790_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+3,9f4f21bf_1,9f4f21bf_1,ENTRY→CALL: adjustCrcChannelPosition→IF: LOG.isDebugEnabled(),[DEBUG]:Changing meta file offset of block 12345 from 1000 to 2000,normal,normal
+4,cc7f52f8_1,cc7f52f8_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Changing meta file offset of block 1024 from 4096 to 8192,normal,normal
+5,f569c040_1,f569c040_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+6,f569c040_1,f569c040_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+7,b137939a_1,b137939a_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+8,b137939a_1,b137939a_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+9,24dbcb57_1,24dbcb57_1,ENTRY→CALL:opReadBlock→CALL:continueTraceSpan%%ENTRY→CALL:opReadBlock→CALL:continueTraceSpan→CALL:close,[DEBUG]:Continuing trace span with description: Read operation for block 1024,normal,normal
+10,24dbcb57_1,24dbcb57_1,ENTRY→CALL:opReadBlock→CALL:continueTraceSpan%%ENTRY→CALL:opReadBlock→CALL:continueTraceSpan→CALL:close,[INFO]:Using caching strategy: LRU,normal,normal
+11,24dbcb57_1,24dbcb57_1,ENTRY→CALL:opReadBlock→CALL:continueTraceSpan%%ENTRY→CALL:opReadBlock→CALL:continueTraceSpan→CALL:close,[DEBUG]:Default caching strategy applied,normal,normal
+12,82b133a2_1,82b133a2_1,ENTRY→opWriteBlock→continueTraceSpan%%ENTRY→opWriteBlock→continueTraceSpan→writeBlock→close,[DEBUG]:Continuing trace span with description: Write operation,normal,normal
+13,82b133a2_1,82b133a2_1,ENTRY→opWriteBlock→continueTraceSpan%%ENTRY→opWriteBlock→continueTraceSpan→writeBlock→close,[DEBUG]:Closing trace span,normal,normal
+14,32a18917_1,32a18917_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+15,32a18917_1,32a18917_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+16,e78d5474_1,e78d5474_1,ENTRY→CALL:opReplaceBlock→CALL:continueTraceSpan%%ENTRY→CALL:replaceBlock,"[DEBUG]:Continuing trace span with description: ""Replacing block operation initiated""",normal,normal
+17,e78d5474_1,e78d5474_1,ENTRY→CALL:opReplaceBlock→CALL:continueTraceSpan%%ENTRY→CALL:replaceBlock,"[INFO]:Replacing block with storage ID: ""DS-12345""",normal,normal
+18,7dc47aa3_1,7dc47aa3_1,ENTRY→CALL:CopyBlock→FINALLY:CloseTraceScope→EXIT,[INFO]:Received OP_COPY_BLOCK,normal,normal
+19,7dc47aa3_1,7dc47aa3_1,ENTRY→CALL:CopyBlock→FINALLY:CloseTraceScope→EXIT,[DEBUG]:Continuing trace span with header and trace ID,normal,normal
+20,cdc25fc2_1,cdc25fc2_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,"[DEBUG]:Continuing trace span with description: ""Checksum operation initiated""",normal,normal
+21,cdc25fc2_1,cdc25fc2_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Closing trace scope,normal,normal
+22,db4b799d_1,db4b799d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Closing trace scope,normal,normal
+23,db4b799d_1,db4b799d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Continuing trace span,normal,normal
+24,aec814f0_1,aec814f0_1,ENTRY→opTransferBlock→continueTraceSpan%%ENTRY→opTransferBlock→continueTraceSpan→close,[DEBUG]:Continuing trace span with description: Block transfer operation,normal,normal
+25,aec814f0_1,aec814f0_1,ENTRY→opTransferBlock→continueTraceSpan%%ENTRY→opTransferBlock→continueTraceSpan→close,[INFO]:Transferring block: blk_123456,normal,normal
+26,aec814f0_1,aec814f0_1,ENTRY→opTransferBlock→continueTraceSpan%%ENTRY→opTransferBlock→continueTraceSpan→close,[INFO]:Target storage types: DISK,normal,normal
+27,aec814f0_1,aec814f0_1,ENTRY→opTransferBlock→continueTraceSpan%%ENTRY→opTransferBlock→continueTraceSpan→close,[DEBUG]:Closing trace span,normal,normal
+28,b17d6335_1,b17d6335_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:SlotId conversion initiated,normal,normal
+29,b17d6335_1,b17d6335_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,"[INFO]:TraceScope created for ""ShortCircuitDataTransfer""",normal,normal
+30,b17d6335_1,b17d6335_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Continuing trace span,normal,normal
+31,b17d6335_1,b17d6335_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Closing span,normal,normal
+32,92fab4ed_1,92fab4ed_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from https://namenode:8020,normal,explicit
+33,92fab4ed_1,92fab4ed_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+34,17565125_1,17565125_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from namenode01,normal,explicit
+35,17565125_1,17565125_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+36,f1398c33_1,f1398c33_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+37,f1398c33_1,f1398c33_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+38,6177c713_1,6177c713_1,ENTRY→IF:traceScope!=null%%ENTRY→CALL:getTraceInfo,[DEBUG]:Continuing trace span,normal,normal
+39,6177c713_1,6177c713_1,ENTRY→IF:traceScope!=null%%ENTRY→CALL:getTraceInfo,[DEBUG]:Closing trace scope,normal,normal
+40,6177c713_1,6177c713_1,ENTRY→IF:traceScope!=null%%ENTRY→CALL:getTraceInfo,[DEBUG]:Accessing trace info,normal,normal
+41,6177c713_1,6177c713_1,ENTRY→IF:traceScope!=null%%ENTRY→CALL:getTraceInfo,[INFO]:Default trace info used,normal,normal
+42,9356f976_1,9356f976_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 1024MB block from https://namenode:8020,normal,explicit
+43,9356f976_1,9356f976_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+44,adcf825f_1,adcf825f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:TraceInfo retrieved successfully,normal,normal
+45,887a26fd_1,887a26fd_1,ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck%%ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck→SpanClose%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceScopeCheck%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceInfoAccess%%ENTRY→REQUEST_SHORT_CIRCUIT_SHM→TraceInfoRetrieve,[DEBUG]:SlotId conversion initiated,normal,normal
+46,887a26fd_1,887a26fd_1,ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck%%ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck→SpanClose%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceScopeCheck%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceInfoAccess%%ENTRY→REQUEST_SHORT_CIRCUIT_SHM→TraceInfoRetrieve,"[INFO]:TraceScope created for ""ShortCircuitFdsOperation""",normal,normal
+47,887a26fd_1,887a26fd_1,ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck%%ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck→SpanClose%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceScopeCheck%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceInfoAccess%%ENTRY→REQUEST_SHORT_CIRCUIT_SHM→TraceInfoRetrieve,[DEBUG]:Continuing trace span,normal,normal
+48,887a26fd_1,887a26fd_1,ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck%%ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck→SpanClose%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceScopeCheck%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceInfoAccess%%ENTRY→REQUEST_SHORT_CIRCUIT_SHM→TraceInfoRetrieve,[DEBUG]:Closing span,normal,normal
+49,887a26fd_1,887a26fd_1,ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck%%ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck→SpanClose%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceScopeCheck%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceInfoAccess%%ENTRY→REQUEST_SHORT_CIRCUIT_SHM→TraceInfoRetrieve,[DEBUG]:Closing trace scope,normal,normal
+50,887a26fd_1,887a26fd_1,ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck%%ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck→SpanClose%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceScopeCheck%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceInfoAccess%%ENTRY→REQUEST_SHORT_CIRCUIT_SHM→TraceInfoRetrieve,[DEBUG]:Accessing trace info,normal,normal
+51,887a26fd_1,887a26fd_1,ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck%%ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck→SpanClose%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceScopeCheck%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceInfoAccess%%ENTRY→REQUEST_SHORT_CIRCUIT_SHM→TraceInfoRetrieve,[INFO]:Default trace info used,normal,normal
+52,887a26fd_1,887a26fd_1,ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck%%ENTRY→REQUEST_SHORT_CIRCUIT_FDS→SlotIdCheck→SpanClose%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceScopeCheck%%ENTRY→RELEASE_SHORT_CIRCUIT_FDS→TraceInfoAccess%%ENTRY→REQUEST_SHORT_CIRCUIT_SHM→TraceInfoRetrieve,[DEBUG]:TraceInfo retrieved successfully,normal,normal
+53,475c8eb2_1,475c8eb2_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+54,475c8eb2_1,475c8eb2_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+55,4297f10d_1,4297f10d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[TRACE]:Registering DFSInputStream for /user/data,normal,normal
+56,928645da_1,928645da_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+57,928645da_1,928645da_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+58,b3207a18_1,b3207a18_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from https://namenode:8020,normal,explicit
+59,b3207a18_1,b3207a18_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+60,b570e521_1,b570e521_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+61,b570e521_1,b570e521_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+62,88a78c78_1,88a78c78_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+63,88a78c78_1,88a78c78_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+64,ceb06c8d_1,ceb06c8d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→InitStreaming,"[DEBUG]:Start process datanode/external error, datanode01",normal,normal
+65,ceb06c8d_1,ceb06c8d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→InitStreaming,[INFO]:Error recovery for block blk_12345 waiting for responder to exit,normal,normal
+66,ceb06c8d_1,ceb06c8d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→InitStreaming,[WARN]:Error recovering pipeline for writing block blk_12345. Already retried 5 times for the same packet,normal,normal
+67,ceb06c8d_1,ceb06c8d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→InitStreaming,[DEBUG]:Closing old block blk_12345,normal,normal
+68,ceb06c8d_1,ceb06c8d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→InitStreaming,"[WARN]:Could not get block locations. Source file ""/user/data/file01"" - Aborting... datanode01",normal,normal
+69,ceb06c8d_1,ceb06c8d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→InitStreaming,"[DEBUG]:Nodes [datanode01, datanode02] storageTypes [DISK, SSD] storageIDs [id_01, id_02]",normal,normal
+70,043f2a44_1,043f2a44_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+71,043f2a44_1,043f2a44_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+72,bdea6dc9_1,bdea6dc9_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+73,bdea6dc9_1,bdea6dc9_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+74,52166f8a_1,52166f8a_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+75,52166f8a_1,52166f8a_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+76,f87f7fa9_1,f87f7fa9_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+77,f87f7fa9_1,f87f7fa9_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+78,d737c5b5_1,d737c5b5_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+79,d737c5b5_1,d737c5b5_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+80,4cf8a980_1,4cf8a980_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+81,4cf8a980_1,4cf8a980_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+82,2003f395_1,2003f395_1,ENTRY→ConditionCheck%%ENTRY→RetryWithNewKey%%ENTRY→RestartNode,[INFO]:Nodes are empty for write pipeline of block blk_123456,normal,both
+83,2003f395_1,2003f395_1,ENTRY→ConditionCheck%%ENTRY→RetryWithNewKey%%ENTRY→RestartNode,"[DEBUG]:Pipeline = [datanode01, datanode02], clientName",normal,both
+84,2003f395_1,2003f395_1,ENTRY→ConditionCheck%%ENTRY→RetryWithNewKey%%ENTRY→RestartNode,"[WARN]:Exception in createBlockOutputStream clientName, IOException: Connection reset",explicit,both
+85,2003f395_1,2003f395_1,ENTRY→ConditionCheck%%ENTRY→RetryWithNewKey%%ENTRY→RestartNode,"[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode01 : IOException: Invalid key",both,both
+86,2003f395_1,2003f395_1,ENTRY→ConditionCheck%%ENTRY→RetryWithNewKey%%ENTRY→RestartNode,[INFO]:Datanode 1 is restarting: datanode02,normal,both
+87,8c71fffb_1,8c71fffb_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+88,8c71fffb_1,8c71fffb_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+89,49a530e1_1,49a530e1_1,ENTRY→locateFollowingBlock→excludedCheck%%ENTRY→locateFollowingBlock→excludedCheck→createBlockOutputStream→restartCheck,[WARN]:Abandoning block blk_123456789,normal,both
+90,49a530e1_1,49a530e1_1,ENTRY→locateFollowingBlock→excludedCheck%%ENTRY→locateFollowingBlock→excludedCheck→createBlockOutputStream→restartCheck,[WARN]:Excluding datanode dn-01,normal,both
+91,49a530e1_1,49a530e1_1,ENTRY→locateFollowingBlock→excludedCheck%%ENTRY→locateFollowingBlock→excludedCheck→createBlockOutputStream→restartCheck,[INFO]:Nodes are empty for write pipeline of block blk_123456789,normal,both
+92,49a530e1_1,49a530e1_1,ENTRY→locateFollowingBlock→excludedCheck%%ENTRY→locateFollowingBlock→excludedCheck→createBlockOutputStream→restartCheck,"[DEBUG]:Pipeline = [dn-02, dn-03], DataStreamer@stream-01",normal,both
+93,49a530e1_1,49a530e1_1,ENTRY→locateFollowingBlock→excludedCheck%%ENTRY→locateFollowingBlock→excludedCheck→createBlockOutputStream→restartCheck,"[WARN]:Exception in createBlockOutputStream DataStreamer@stream-01, java.io.IOException: Connection reset",explicit,both
+94,49a530e1_1,49a530e1_1,ENTRY→locateFollowingBlock→excludedCheck%%ENTRY→locateFollowingBlock→excludedCheck→createBlockOutputStream→restartCheck,"[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to dn-02 : java.io.IOException: Invalid key",both,both
+95,49a530e1_1,49a530e1_1,ENTRY→locateFollowingBlock→excludedCheck%%ENTRY→locateFollowingBlock→excludedCheck→createBlockOutputStream→restartCheck,[INFO]:Datanode 1 is restarting: dn-02,normal,both
+96,300f0414_1,300f0414_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+97,300f0414_1,300f0414_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+98,83761ad5_1,83761ad5_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+99,83761ad5_1,83761ad5_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+100,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[DEBUG]:Internal error detected,normal,both
+101,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[INFO]:New generation stamp: 1024,normal,both
+102,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[INFO]:Nodes are empty for write pipeline of block-01,normal,both
+103,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,"[DEBUG]:Pipeline = [datanode01, datanode02], pool-01",normal,both
+104,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,"[WARN]:Exception in createBlockOutputStream pool-01, IOException: Connection reset",explicit,both
+105,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,"[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode01 : IOException: Key expired",both,both
+106,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[INFO]:Datanode 1 is restarting: datanode02,normal,both
+107,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[WARN]:Datanode 1 did not restart within 30000ms: datanode02,normal,both
+108,bccbdbcd_1,bccbdbcd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[INFO]:Pipeline updated with generation stamp: 1025,normal,both
+109,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[DEBUG]:Internal error detected,normal,both
+110,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[INFO]:New generation stamp: 1024,normal,both
+111,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[INFO]:Nodes are empty for write pipeline of block-01,normal,both
+112,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,"[DEBUG]:Pipeline = [datanode01, datanode02], pool-01",normal,both
+113,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,"[WARN]:Exception in createBlockOutputStream pool-01, IOException: Connection reset",explicit,both
+114,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,"[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode01 : IOException: Key expired",both,both
+115,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[INFO]:Datanode 1 is restarting: datanode02,normal,both
+116,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[WARN]:Datanode 1 did not restart within 30000ms: datanode02,normal,both
+117,3a4fb26e_1,3a4fb26e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→RestartTimeout,[INFO]:Pipeline updated with generation stamp: 1024,normal,both
+118,3b504348_1,3b504348_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from https://namenode:8020,normal,explicit
+119,3b504348_1,3b504348_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+120,a4f7bfe4_1,a4f7bfe4_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 1024MB block from https://namenode:8020,normal,explicit
+121,a4f7bfe4_1,a4f7bfe4_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+122,4f9e9aad_1,4f9e9aad_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+123,4f9e9aad_1,4f9e9aad_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+124,46c5c85e_1,46c5c85e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+125,46c5c85e_1,46c5c85e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+126,fa7bbe1f_1,fa7bbe1f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+127,fa7bbe1f_1,fa7bbe1f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+128,87305a40_1,87305a40_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+129,87305a40_1,87305a40_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+130,33220b2e_1,33220b2e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Closing old block 128MB,normal,normal
+131,33220b2e_1,33220b2e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Thread interrupted,normal,normal
+132,6748932f_1,6748932f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+133,6748932f_1,6748932f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+134,a039e58f_1,a039e58f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+135,a039e58f_1,a039e58f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+136,4815f777_1,4815f777_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+137,4815f777_1,4815f777_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+138,d8681342_1,d8681342_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+139,d8681342_1,d8681342_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+140,ff16b5ef_1,ff16b5ef_1,ENTRY→CALL: closeInternal→CALL: closeResponder→IF: response != null,[DEBUG]:Thread interrupted,normal,normal
+141,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[DEBUG]:Thread interrupted,normal,both
+142,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,"[DEBUG]:Stage initialized, DataStreamer",normal,both
+143,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[DEBUG]:Allocating new block: block-01,normal,both
+144,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[DEBUG]:Append to block block-01,normal,both
+145,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[WARN]:DataStreamer Exception,explicit,both
+146,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[DEBUG]:DataStreamer Quota Exception,explicit,both
+147,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,"[DEBUG]:Start process datanode/external error, DataStreamer",normal,both
+148,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[INFO]:Error Recovery for block-01 waiting for responder to exit.,normal,both
+149,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[WARN]:Error recovering pipeline for writing block-01. Already retried 5 times for the same packet.,normal,both
+150,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[DEBUG]:Closing old block block-01,normal,both
+151,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[WARN]:Abandoning block block-02,normal,both
+152,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[WARN]:Excluding datanode badNode01,normal,both
+153,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,[INFO]:Nodes are empty for write pipeline of block-02,normal,both
+154,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,"[DEBUG]:Pipeline = [node01, node02], DataStreamer",normal,both
+155,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,"[WARN]:Exception in createBlockOutputStream DataStreamer, IOException",explicit,both
+156,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,"[INFO]:Will fetch a new encryption key and retry, encryption key was invalid when connecting to node01 : IOException",both,both
+157,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,"[WARN]:Could not get block locations. Source file ""/user/data/file01"" - Aborting... DataStreamer",normal,both
+158,140856cf_1,140856cf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→LocateBlock%%ENTRY→SetupPipeline%%ENTRY→InitStreaming%%ENTRY→Close,"[DEBUG]:Nodes [node01, node02] storageTypes [DISK, SSD] storageIDs [id01, id02]",normal,both
+159,78a850f6_1,78a850f6_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+160,78a850f6_1,78a850f6_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+161,e426088d_1,e426088d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+162,e426088d_1,e426088d_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+163,52e22579_1,52e22579_1,ENTRY→ConditionCheck,[DEBUG]:Reported block blk_123456 on datanode01 size 134217728 replicaState = FINALIZED,normal,normal
+164,52e22579_1,52e22579_1,ENTRY→ConditionCheck,[DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION,normal,normal
+165,459fce37_1,459fce37_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+166,459fce37_1,459fce37_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+167,2699afdf_1,2699afdf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+168,2699afdf_1,2699afdf_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+169,97d385b8_1,97d385b8_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+170,97d385b8_1,97d385b8_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+171,c668217f_1,c668217f_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from namenode01,normal,explicit
+172,c668217f_1,c668217f_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+173,8e71fe7a_1,8e71fe7a_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from namenode01,normal,explicit
+174,8e71fe7a_1,8e71fe7a_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+175,afcabafb_1,afcabafb_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED,normal,normal
+176,afcabafb_1,afcabafb_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED,normal,normal
+177,afcabafb_1,afcabafb_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Reported block blk_12345 on datanode02 size 128MB replicaState = FINALIZED,normal,normal
+178,afcabafb_1,afcabafb_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION,normal,normal
+179,a0b02421_1,a0b02421_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+180,a0b02421_1,a0b02421_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+181,4664c9fd_1,4664c9fd_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 1024MB block from https://namenode:8020,normal,explicit
+182,4664c9fd_1,4664c9fd_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+183,c7f75db9_1,c7f75db9_1,ENTRY→ConditionCheck%%ENTRY→AddStoredBlock,[DEBUG]:BLOCK* addStoredBlock: block-01 on datanode-01 size 128MB but it does not belong to any file,normal,normal
+184,c7f75db9_1,c7f75db9_1,ENTRY→ConditionCheck%%ENTRY→AddStoredBlock,[DEBUG]:BLOCK* addStoredBlock: datanode-01 is added to block-01 (size=128MB),normal,normal
+185,c7f75db9_1,c7f75db9_1,ENTRY→ConditionCheck%%ENTRY→AddStoredBlock,[WARN]:BLOCK* addStoredBlock: block block-01 moved to storageType SSD on node datanode-01,normal,normal
+186,c7f75db9_1,c7f75db9_1,ENTRY→ConditionCheck%%ENTRY→AddStoredBlock,[DEBUG]:BLOCK* addStoredBlock: Redundant addStoredBlock request received for block-01 on node datanode-01 size 128MB,normal,normal
+187,c7f75db9_1,c7f75db9_1,ENTRY→ConditionCheck%%ENTRY→AddStoredBlock,[WARN]:Inconsistent number of corrupt replicas for block-01. blockMap has 3 but corrupt replicas map has 2,normal,normal
+188,d22cee29_1,d22cee29_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from https://namenode:8020,normal,explicit
+189,d22cee29_1,d22cee29_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+190,0d5cf8ce_1,0d5cf8ce_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+191,0d5cf8ce_1,0d5cf8ce_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+192,cae39118_1,cae39118_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+193,cae39118_1,cae39118_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+194,2a93eca4_1,2a93eca4_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+195,2a93eca4_1,2a93eca4_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+196,21f25770_1,21f25770_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→ErasureCoding,"[DEBUG]:Safe mode is off, skipping decrement",normal,normal
+197,21f25770_1,21f25770_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→ErasureCoding,[DEBUG]:Block is complete and live replicas match safe number,normal,normal
+198,21f25770_1,21f25770_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→ErasureCoding,[INFO]:Decrementing safe block count,normal,normal
+199,21f25770_1,21f25770_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→ErasureCoding,[DEBUG]:Checking if block is striped,normal,normal
+200,21f25770_1,21f25770_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→ErasureCoding,[DEBUG]:Calculating real data block number based on erasure coding policy,normal,normal
+201,cb33f85a_1,cb33f85a_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+202,cb33f85a_1,cb33f85a_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+203,ca7fbcf3_1,ca7fbcf3_1,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete%%ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete→removeBlockFromPriorityQueue,[DEBUG]:Block is not complete or replication queues are not populated,normal,normal
+204,ca7fbcf3_1,ca7fbcf3_1,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete%%ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete→removeBlockFromPriorityQueue,[INFO]:Block reconstruction skipped,normal,normal
+205,ca7fbcf3_1,ca7fbcf3_1,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete%%ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete→removeBlockFromPriorityQueue,[DEBUG]:Effective replicas are sufficient,normal,normal
+206,ca7fbcf3_1,ca7fbcf3_1,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete%%ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete→removeBlockFromPriorityQueue,[INFO]:Block removed from reconstruction queue %%,normal,normal
+207,ca7fbcf3_1,ca7fbcf3_1,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete%%ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete→removeBlockFromPriorityQueue,[DEBUG]:Block is not complete or replication queues are not populated,normal,normal
+208,ca7fbcf3_1,ca7fbcf3_1,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete%%ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete→removeBlockFromPriorityQueue,[INFO]:Block reconstruction skipped,normal,normal
+209,ca7fbcf3_1,ca7fbcf3_1,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete%%ENTRY→updateNeededReconstructions→!isPopulatingReplQueues_OR_blockNotComplete→removeBlockFromPriorityQueue,[DEBUG]:Removing block blk_12345 from priority queue 2,normal,normal
+210,964c845c_1,964c845c_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+211,964c845c_1,964c845c_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+212,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[DEBUG]:BLOCK* removeStoredBlock: block-123 has already been removed from node node-01,normal,normal
+213,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[DEBUG]:BLOCK* removeStoredBlock: block-123 removed from caching related lists on node node-01,normal,normal
+214,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,"[DEBUG]:Safe mode is off, skipping decrement",normal,normal
+215,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[DEBUG]:Block is complete and live replicas match safe number,normal,normal
+216,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[INFO]:Decrementing safe block count,normal,normal
+217,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[DEBUG]:Checking if block is striped,normal,normal
+218,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[DEBUG]:Calculating real data block number based on erasure coding policy,normal,normal
+219,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[DEBUG]:Block is not complete or replication queues are not populated,normal,normal
+220,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[INFO]:Block reconstruction skipped,normal,normal
+221,18c30f2e_1,18c30f2e_1,ENTRY→removeStoredBlock%%ENTRY→remove,[DEBUG]:BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block block-123 from priority queue 2,normal,normal
+222,7027a1a2_1,7027a1a2_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+223,7027a1a2_1,7027a1a2_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+224,54c1754e_1,54c1754e_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from namenode01,normal,explicit
+225,54c1754e_1,54c1754e_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+226,d51b1764_1,d51b1764_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Block is already complete,normal,normal
+227,2b8438c5_1,2b8438c5_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Incrementing safe block count,normal,normal
+228,2b8438c5_1,2b8438c5_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Reporting startup progress,normal,normal
+229,2b8438c5_1,2b8438c5_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Checking if block is striped,normal,normal
+230,61810f43_1,61810f43_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+231,61810f43_1,61810f43_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+232,169b52fd_1,169b52fd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+233,169b52fd_1,169b52fd_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+234,220ab0f3_1,220ab0f3_1,ENTRY→ConditionCheck,[TRACE]:Postponing block-12345 since storage data_pool_01 does not yet have up-to-date information.,normal,normal
+235,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Postponing invalidation of block blk_12345 on datanode dn_01 because 2 replica(s) are located on nodes with potentially out-of-date block reports,normal,normal
+236,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,"[DEBUG]:Adding block blk_12345 to invalidation list for datanodes dn_01, dn_02",normal,normal
+237,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Block blk_12345 on datanode dn_01 listed for deletion,normal,normal
+238,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Block blk_12345 has already been removed from node dn_01,normal,normal
+239,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Block blk_12345 removed from caching related lists on node dn_01,normal,normal
+240,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,"[DEBUG]:Safe mode is off, skipping decrement",normal,normal
+241,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Block blk_12345 is complete and live replicas match safe number,normal,normal
+242,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Decrementing safe block count,normal,normal
+243,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Checking if block blk_12345 is striped,normal,normal
+244,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Calculating real data block number based on erasure coding policy,normal,normal
+245,5b8b437f_1,5b8b437f_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Removing block blk_12345 from priority queue 3,normal,normal
+246,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Invalidate corrupt replicas error in deleting bad block blk_12345 on node_01,normal,normal
+247,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Invalidate corrupt replicas error in deleting bad block blk_12345 on node_01,normal,normal
+248,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:BLOCK* invalidateBlocks: postponing invalidation of blk_67890 on datanode_02 because 3 replica(s) are located on nodes with potentially out-of-date block reports,normal,normal
+249,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,"[DEBUG]:BLOCK* addToInvalidates: block_78901 [datanode_03, datanode_04]",normal,normal
+250,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:BLOCK* invalidateBlocks: blk_67890 on datanode_02 listed for deletion,normal,normal
+251,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:BLOCK* removeStoredBlock: block_78901 has already been removed from node datanode_03,normal,normal
+252,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:BLOCK* removeStoredBlock: block_78901 removed from caching related lists on node datanode_03,normal,normal
+253,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,"[DEBUG]:Safe mode is off, skipping decrement",normal,normal
+254,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Block is complete and live replicas match safe number,normal,normal
+255,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Decrementing safe block count,normal,normal
+256,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Checking if block is striped,normal,normal
+257,98efcc52_1,98efcc52_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[DEBUG]:Calculating real data block number based on erasure coding policy,normal,normal
+258,675fdd79_1,675fdd79_1,ENTRY→addStoredBlock→block.isComplete()%%ENTRY→incrementSafeBlockCount→status==OFF,[DEBUG]:BLOCK* addStoredBlock: Block123 on /user/data size 128MB but it does not belong to any file,normal,normal
+259,675fdd79_1,675fdd79_1,ENTRY→addStoredBlock→block.isComplete()%%ENTRY→incrementSafeBlockCount→status==OFF,[DEBUG]:BLOCK* addStoredBlock: Block123 is added to pool-01 (size=128MB),normal,normal
+260,675fdd79_1,675fdd79_1,ENTRY→addStoredBlock→block.isComplete()%%ENTRY→incrementSafeBlockCount→status==OFF,[WARN]:BLOCK* addStoredBlock: block Block123 moved to storageType DISK on node namenode01,normal,normal
+261,675fdd79_1,675fdd79_1,ENTRY→addStoredBlock→block.isComplete()%%ENTRY→incrementSafeBlockCount→status==OFF,[DEBUG]:BLOCK* addStoredBlock: Redundant addStoredBlock request received for Block123 on node namenode01 size 128MB,normal,normal
+262,675fdd79_1,675fdd79_1,ENTRY→addStoredBlock→block.isComplete()%%ENTRY→incrementSafeBlockCount→status==OFF,[WARN]:Inconsistent number of corrupt replicas for Block123. blockMap has 3 but corrupt replicas map has 2,normal,normal
+263,675fdd79_1,675fdd79_1,ENTRY→addStoredBlock→block.isComplete()%%ENTRY→incrementSafeBlockCount→status==OFF,[INFO]:Invalidating corrupt replicas for block Block123,normal,normal
+264,675fdd79_1,675fdd79_1,ENTRY→addStoredBlock→block.isComplete()%%ENTRY→incrementSafeBlockCount→status==OFF,[INFO]:Incrementing safe block count,normal,normal
+265,675fdd79_1,675fdd79_1,ENTRY→addStoredBlock→block.isComplete()%%ENTRY→incrementSafeBlockCount→status==OFF,[DEBUG]:Reporting startup progress,normal,normal
+266,675fdd79_2,675fdd79_2,ENTRY→invalidateCorruptReplicas→blk.isStriped(),[DEBUG]:invalidateCorruptReplicas error in deleting bad block Block456 on node datanode01,normal,normal
+267,675fdd79_2,675fdd79_2,ENTRY→invalidateCorruptReplicas→blk.isStriped(),[DEBUG]:invalidateCorruptReplicas error in deleting bad block Block456 on node datanode01,normal,normal
+268,675fdd79_3,675fdd79_3,ENTRY→incrementSafeBlockCount→isStriped,[DEBUG]:Checking if block is striped,normal,normal
+269,675fdd79_4,675fdd79_4,"ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete()%%ENTRY→countNodes→hasEnoughEffectiveReplicas(block,repl,pendingNum)",[DEBUG]:Block is not complete or replication queues are not populated,normal,normal
+270,675fdd79_4,675fdd79_4,"ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete()%%ENTRY→countNodes→hasEnoughEffectiveReplicas(block,repl,pendingNum)",[INFO]:Block reconstruction skipped,normal,normal
+271,675fdd79_4,675fdd79_4,"ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete()%%ENTRY→countNodes→hasEnoughEffectiveReplicas(block,repl,pendingNum)",[DEBUG]:Effective replicas are sufficient,normal,normal
+272,675fdd79_4,675fdd79_4,"ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete()%%ENTRY→countNodes→hasEnoughEffectiveReplicas(block,repl,pendingNum)",[INFO]:Block removed from reconstruction queue,normal,normal
+273,675fdd79_5,675fdd79_5,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete()%%ENTRY→remove→priLevel>=0&&priLevel<LEVEL&&priorityQueues.get(priLevel).remove(block),[DEBUG]:Block is not complete or replication queues are not populated,normal,normal
+274,675fdd79_5,675fdd79_5,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete()%%ENTRY→remove→priLevel>=0&&priLevel<LEVEL&&priorityQueues.get(priLevel).remove(block),[INFO]:Block reconstruction skipped,normal,normal
+275,675fdd79_5,675fdd79_5,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete()%%ENTRY→remove→priLevel>=0&&priLevel<LEVEL&&priorityQueues.get(priLevel).remove(block),[DEBUG]:BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block Block789 from priority queue 2,normal,normal
+276,675fdd79_6,675fdd79_6,ENTRY→processExtraRedundancyBlock→storage.getState()!=State.NORMAL,[TRACE]:BLOCK* processExtraRedundancyBlock: Postponing Block999 since storage Storage01 does not yet have up-to-date information.,normal,normal
+277,23dfab4e_1,23dfab4e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+278,23dfab4e_1,23dfab4e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+279,2f60b247_1,2f60b247_1,"ENTRY→CALL:addToInvalidates→FOR:blocksMap.getStorages(storedBlock)→IF:storage.getState()!=State.NORMAL→CONTINUE%%ENTRY→CALL:addToInvalidates→FOR:blocksMap.getStorages(storedBlock)→CALL:getBlockOnStorage→IF:b!=null→CALL:invalidateBlocks.add→IF:datanodes!=null→APPEND:datanodes.append(node).append("" "")→IF:datanodes!=null&&datanodes.length()!=0",[DEBUG]:BLOCK* InvalidateBlocks: add block-12345 to datanode-01,normal,normal
+280,2f60b247_1,2f60b247_1,"ENTRY→CALL:addToInvalidates→FOR:blocksMap.getStorages(storedBlock)→IF:storage.getState()!=State.NORMAL→CONTINUE%%ENTRY→CALL:addToInvalidates→FOR:blocksMap.getStorages(storedBlock)→CALL:getBlockOnStorage→IF:b!=null→CALL:invalidateBlocks.add→IF:datanodes!=null→APPEND:datanodes.append(node).append("" "")→IF:datanodes!=null&&datanodes.length()!=0",[DEBUG]:BLOCK* addToInvalidates: block-12345 datanode-01,normal,normal
+281,0dc59f9c_1,0dc59f9c_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+282,0dc59f9c_1,0dc59f9c_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+283,e262ffb3_1,e262ffb3_1,ENTRY→markBlockAsCorrupt→b.getStored().isDeleted%%ENTRY→markBlockAsCorrupt→b.getStored().isStriped,[DEBUG]:BLOCK markBlockAsCorrupt: Block cannot be marked as corrupt as it does not belong to any file,implicit,implicit
+284,e262ffb3_1,e262ffb3_1,ENTRY→markBlockAsCorrupt→b.getStored().isDeleted%%ENTRY→markBlockAsCorrupt→b.getStored().isStriped,[DEBUG]:BLOCK NameSystem.addToCorruptReplicasMap: Block added as corrupt on datanode01 by 192.168.1.1 Reason: Replica mismatch,normal,implicit
+285,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[DEBUG]:BLOCK* invalidateBlocks: postponing invalidation of Block on datanode01 because 3 replica(s) are located on nodes with potentially out-of-date block reports,normal,normal
+286,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[DEBUG]:BLOCK* addToInvalidates: Block storedBlock01 datanodes01,normal,normal
+287,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[DEBUG]:BLOCK* invalidateBlocks: Block on datanode01 listed for deletion,normal,normal
+288,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[DEBUG]:BLOCK* removeStoredBlock: Block storedBlock01 has already been removed from node datanode01,normal,normal
+289,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[DEBUG]:BLOCK* removeStoredBlock: Block storedBlock01 removed from caching related lists on node datanode01,normal,normal
+290,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,"[DEBUG]:Safe mode is off, skipping decrement",normal,normal
+291,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[DEBUG]:Block is complete and live replicas match safe number,normal,normal
+292,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[INFO]:Decrementing safe block count,normal,normal
+293,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[DEBUG]:Checking if block is striped,normal,normal
+294,e262ffb3_2,e262ffb3_2,ENTRY→invalidateBlock→node==null%%ENTRY→invalidateBlock→nr.replicasOnStaleNodes()>0,[DEBUG]:Calculating real data block number based on erasure coding policy,normal,normal
+295,e262ffb3_3,e262ffb3_3,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete%%ENTRY→updateNeededReconstructions→countNodes,[DEBUG]:Block is not complete or replication queues are not populated,normal,normal
+296,e262ffb3_3,e262ffb3_3,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete%%ENTRY→updateNeededReconstructions→countNodes,[INFO]:Block reconstruction skipped,normal,normal
+297,e262ffb3_3,e262ffb3_3,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete%%ENTRY→updateNeededReconstructions→countNodes,[DEBUG]:Effective replicas are sufficient,normal,normal
+298,e262ffb3_3,e262ffb3_3,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete%%ENTRY→updateNeededReconstructions→countNodes,[INFO]:Block removed from reconstruction queue,normal,normal
+299,e262ffb3_4,e262ffb3_4,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete%%ENTRY→remove→priLevel>=0&&priLevel<LEVEL,[DEBUG]:Block is not complete or replication queues are not populated,normal,normal
+300,e262ffb3_4,e262ffb3_4,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete%%ENTRY→remove→priLevel>=0&&priLevel<LEVEL,[INFO]:Block reconstruction skipped,normal,normal
+301,e262ffb3_4,e262ffb3_4,ENTRY→updateNeededReconstructions→!isPopulatingReplQueues()||!block.isComplete%%ENTRY→remove→priLevel>=0&&priLevel<LEVEL,[DEBUG]:BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block Block01 from priority queue PriorityLevel01,normal,normal
+302,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED,normal,implicit
+303,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED,normal,implicit
+304,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:Reported block blk_12345 on datanode02 size 128MB replicaState = FINALIZED,normal,implicit
+305,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION,normal,implicit
+306,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:BLOCK* addStoredBlock: blk_12345 on node01 size 128MB but it does not belong to any file,normal,implicit
+307,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:BLOCK* addStoredBlock: node01 is added to blk_12345 (size=128MB),normal,implicit
+308,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[WARN]:BLOCK* addStoredBlock: block blk_12345 moved to storageType DISK on node node01,normal,implicit
+309,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:BLOCK* addStoredBlock: Redundant addStoredBlock request received for blk_12345 on node node01 size 128MB,normal,implicit
+310,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[WARN]:Inconsistent number of corrupt replicas for blk_12345. blockMap has 2 but corrupt replicas map has 3,normal,implicit
+311,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:BLOCK* InvalidateBlocks: add blk_12345 to datanode01,normal,implicit
+312,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:BLOCK* addToInvalidates: blk_12345 datanode01 datanode02,normal,implicit
+313,cb32ad64_1,cb32ad64_1,ENTRY→processReport→reportDiff%%ENTRY→markBlockAsCorrupt,[DEBUG]:BLOCK markBlockAsCorrupt: blk_12345 cannot be marked as corrupt as it does not belong to any file,implicit,implicit
+314,166c8990_1,166c8990_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+315,166c8990_1,166c8990_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+316,44a0857e_1,44a0857e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[INFO]:Fetched 128MB block from namenode01,normal,explicit
+317,44a0857e_1,44a0857e_1,ENTRY→ConditionCheck%%ENTRY→OtherBranch,[ERROR]:Access denied to path /user/test,explicit,explicit
+318,5e556f95_1,5e556f95_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[INFO]:Fetched 256MB block from namenode01,normal,explicit
+319,5e556f95_1,5e556f95_1,ENTRY→CheckPermissions%%ENTRY→AlternativePath,[ERROR]:Access denied to path /user/data,explicit,explicit
+320,dcde8ff6_1,dcde8ff6_1,ENTRY→transferBlock→data.checkBlock→replicaNotExist||replicaStateNotFinalized→trySendErrorReport→bpServices→actor.bpThreadEnqueue%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→numTargets>0→xferService.execute,[INFO]:Can't send invalid block block_12345,implicit,implicit
+321,dcde8ff6_1,dcde8ff6_1,ENTRY→transferBlock→data.checkBlock→replicaNotExist||replicaStateNotFinalized→trySendErrorReport→bpServices→actor.bpThreadEnqueue%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→numTargets>0→xferService.execute,[WARN]:Cannot find FsVolumeSpi to report bad block: block_12345,implicit,implicit
+322,dcde8ff6_1,dcde8ff6_1,ENTRY→transferBlock→data.checkBlock→replicaNotExist||replicaStateNotFinalized→trySendErrorReport→bpServices→actor.bpThreadEnqueue%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→numTargets>0→xferService.execute,"[WARN]:Can't replicate block block_12345 because the block file doesn't exist, or is not accessible",normal,implicit
+323,dcde8ff6_1,dcde8ff6_1,ENTRY→transferBlock→data.checkBlock→replicaNotExist||replicaStateNotFinalized→trySendErrorReport→bpServices→actor.bpThreadEnqueue%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→numTargets>0→xferService.execute,[WARN]:Can't replicate block block_12345 because on-disk length is shorter than NameNode recorded length,normal,implicit
+324,dcde8ff6_1,dcde8ff6_1,ENTRY→transferBlock→data.checkBlock→replicaNotExist||replicaStateNotFinalized→trySendErrorReport→bpServices→actor.bpThreadEnqueue%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→blockFileNotExist→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock→volume==null%%ENTRY→transferBlock→data.checkBlock→lengthTooShort→reportBadBlock%%ENTRY→transferBlock→data.checkBlock→numTargets>0→xferService.execute,[INFO]:BP-01 Starting thread to transfer block_12345 to targetNode01,normal,implicit
+325,b9f75a67_1,b9f75a67_1,ENTRY→FOR:blocks→TRY:transferBlock→CATCH:IOException%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:replicaNotExist||replicaStateNotFinalized%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:blockFileNotExist%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:lengthTooShort%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:numTargets>0,[WARN]:Failed to transfer block block_001,both,both
+326,b9f75a67_1,b9f75a67_1,ENTRY→FOR:blocks→TRY:transferBlock→CATCH:IOException%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:replicaNotExist||replicaStateNotFinalized%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:blockFileNotExist%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:lengthTooShort%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:numTargets>0,[INFO]:Can't send invalid block block_001,both,both
+327,b9f75a67_1,b9f75a67_1,ENTRY→FOR:blocks→TRY:transferBlock→CATCH:IOException%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:replicaNotExist||replicaStateNotFinalized%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:blockFileNotExist%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:lengthTooShort%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:numTargets>0,[WARN]:Cannot find FsVolumeSpi to report bad block: block_001,both,both
+328,b9f75a67_1,b9f75a67_1,ENTRY→FOR:blocks→TRY:transferBlock→CATCH:IOException%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:replicaNotExist||replicaStateNotFinalized%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:blockFileNotExist%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:lengthTooShort%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:numTargets>0,"[WARN]:Can't replicate block block_001 because the block file doesn't exist, or is not accessible",explicit,both
+329,b9f75a67_1,b9f75a67_1,ENTRY→FOR:blocks→TRY:transferBlock→CATCH:IOException%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:replicaNotExist||replicaStateNotFinalized%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:blockFileNotExist%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:lengthTooShort%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:numTargets>0,[WARN]:Can't replicate block block_001 because on-disk length is shorter than NameNode recorded length,explicit,both
+330,b9f75a67_1,b9f75a67_1,ENTRY→FOR:blocks→TRY:transferBlock→CATCH:IOException%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:replicaNotExist||replicaStateNotFinalized%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:blockFileNotExist%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:lengthTooShort%%ENTRY→FOR:blocks→TRY:data.checkBlock→IF:numTargets>0,"[INFO]:pool-01 Starting thread to transfer block_001 to target_node_01,target_node_02",explicit,both

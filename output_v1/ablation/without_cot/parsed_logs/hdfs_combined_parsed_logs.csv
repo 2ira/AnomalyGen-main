@@ -1,0 +1,319 @@
+LineId,Level,Content,EventId,EventTemplate,ParameterList,BlockId
+1,[DEBUG],Changing meta file offset of block 1024 from 2048 to 4096,441943f0,Changing meta file offset of block <*> from <*> to <*>,"['1024', '2048', '4096']",26a3b790_1
+1,[DEBUG],Changing meta file offset of block 1024 from 4096 to 8192,441943f0,Changing meta file offset of block <*> from <*> to <*>,"['1024', '4096', '8192']",9f4f21bf_1
+1,[DEBUG],Changing meta file offset of block 1024 from 2048 to 4096,441943f0,Changing meta file offset of block <*> from <*> to <*>,"['1024', '2048', '4096']",cc7f52f8_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f569c040_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f569c040_1
+1,[INFO],Span object is not null,fa919839,Span object is not null,[],b137939a_1
+2,[INFO],Closing resources,4bc863a7,Closing resources,[],b137939a_1
+3,[INFO],Exited execution path,d6646ef8,Exited execution path,[],b137939a_1
+1,[INFO],Read block operation started,b289f01c,Read block operation <*>,['started'],24dbcb57_1
+2,[INFO],Trace scope is active,7cdc4392,Trace scope is active,[],24dbcb57_1
+3,[INFO],Trace scope closed,ee066758,Trace scope closed,[],24dbcb57_1
+4,[INFO],Span is active,996e2510,Span is active,[],24dbcb57_1
+5,[INFO],Span closed,c11c75fa,Span closed,[],24dbcb57_1
+6,[INFO],Read block operation completed,b289f01c,Read block operation <*>,['completed'],24dbcb57_1
+1,[INFO],Continuing trace span,c81f409c,Continuing trace span,[],24dbcb57_2
+2,[INFO],Retrieved span context,70c8bc7a,Retrieved span context,[],24dbcb57_2
+3,[INFO],Fetched trace information,7c07a1ba,Fetched trace information,[],24dbcb57_2
+4,[INFO],Retrieved span context,70c8bc7a,Retrieved span context,[],24dbcb57_2
+5,[INFO],Fetched trace information,7c07a1ba,Fetched trace information,[],24dbcb57_2
+6,[INFO],Trace span continued,a3277533,Trace span continued,[],24dbcb57_2
+1,[INFO],Block write operation initiated,54283690,Block write operation initiated,[],82b133a2_1
+2,[INFO],Trace scope is active,7cdc4392,Trace scope is active,[],82b133a2_1
+3,[INFO],Continuing trace span,c81f409c,Continuing trace span,[],82b133a2_1
+4,[INFO],Fetching span context,18567f4a,Fetching span context,[],82b133a2_1
+5,[INFO],Retrieving trace information,b3c482f0,Retrieving trace information,[],82b133a2_1
+6,[INFO],Closing trace scope,9c1bfcca,Closing trace scope,[],82b133a2_1
+7,[INFO],Span is active,996e2510,Span is active,[],82b133a2_1
+8,[INFO],Closing span,ffe74f51,Closing span,[],82b133a2_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",32a18917_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],32a18917_1
+1,[INFO],Replaced block in pool data_pool_01,dab427c6,Replaced block in pool data_pool_<*>,['01'],e78d5474_1
+2,[ERROR],"Trace scope is null, operation aborted",fce1a984,"Trace scope is null, operation aborted",[],e78d5474_1
+1,[INFO],Continuing trace span for user hadoop_user,4a70f558,Continuing trace span for user hadoop_user,[],e78d5474_2
+2,[INFO],Fetched trace context from namenode01,d6b52a42,Fetched trace context from namenode<*>,['01'],e78d5474_2
+3,[INFO],Retrieved trace information successfully,d649e4ce,Retrieved trace information successfully,[],e78d5474_2
+1,[INFO],Copied block of size 128MB from namenode01,20a4a1a4,Copied block of size <*>MB from namenode<*>,"['128', '01']",7dc47aa3_1
+2,[INFO],"Trace scope exists, entering detailed span processing",518b4a0f,"Trace scope exists, entering detailed span processing",[],7dc47aa3_1
+3,[INFO],"Span exists, closing active span",c7980839,"Span exists, closing active span",[],7dc47aa3_1
+4,[INFO],"Span does not exist, skipping close operation",ce8b3096,"Span does not exist, skipping close operation",[],7dc47aa3_1
+5,[INFO],Continuing trace span,c81f409c,Continuing trace span,[],7dc47aa3_1
+6,[INFO],Fetched span context successfully,68415fbd,Fetched span context successfully,[],7dc47aa3_1
+7,[INFO],Retrieved trace information,a2e44526,Retrieved trace information,[],7dc47aa3_1
+1,[INFO],Fetched block checksum from namenode01,470ef030,Fetched block checksum from namenode<*>,['01'],cdc25fc2_1
+2,[INFO],Trace scope is active,7cdc4392,Trace scope is active,[],cdc25fc2_1
+3,[INFO],Span is active,996e2510,Span is active,[],cdc25fc2_1
+4,[INFO],Span is not active,5289f95d,Span is not active,[],cdc25fc2_1
+5,[INFO],Continuing trace span,c81f409c,Continuing trace span,[],cdc25fc2_1
+6,[INFO],Fetched span context,59fbad88,Fetched span context,[],cdc25fc2_1
+7,[INFO],Retrieved trace information,a2e44526,Retrieved trace information,[],cdc25fc2_1
+1,[INFO],Started processing block group checksum,dd36ebcd,Started processing block group checksum,[],db4b799d_1
+2,[INFO],"Trace scope exists, proceeding with span validation",fff950b2,"Trace scope exists, proceeding with span validation",[],db4b799d_1
+3,[INFO],"Span exists, closing current trace",c1022b71,"Span exists, closing current trace",[],db4b799d_1
+4,[INFO],Continuing trace span,c81f409c,Continuing trace span,[],db4b799d_1
+5,[INFO],Fetched span context,59fbad88,Fetched span context,[],db4b799d_1
+6,[INFO],Retrieved trace information,a2e44526,Retrieved trace information,[],db4b799d_1
+7,[INFO],Exiting trace processing,26b118f8,Exiting trace processing,[],db4b799d_1
+8,[INFO],"Trace scope does not exist, skipping span validation",c89632f2,"Trace scope does not exist, skipping span validation",[],db4b799d_1
+9,[INFO],Continuing trace span,c81f409c,Continuing trace span,[],db4b799d_1
+10,[INFO],Fetched span context,59fbad88,Fetched span context,[],db4b799d_1
+11,[INFO],Retrieved trace information,a2e44526,Retrieved trace information,[],db4b799d_1
+12,[INFO],Exiting trace processing,26b118f8,Exiting trace processing,[],db4b799d_1
+1,[INFO],Initiating block transfer operation,f153daac,<*> block transfer operation,['Initiating'],aec814f0_1
+2,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",aec814f0_1
+3,[INFO],Trace scope is active,1d8dfc1c,Trace scope is <*>,['active'],aec814f0_1
+4,[INFO],Span is active,996e2510,Span is active,[],aec814f0_1
+5,[INFO],Closing active span,8e1c256e,Closing active span,[],aec814f0_1
+6,[INFO],Exiting block transfer operation,f153daac,<*> block transfer operation,['Exiting'],aec814f0_1
+7,[ERROR],Trace scope is inactive,1d8dfc1c,Trace scope is <*>,['inactive'],aec814f0_1
+1,[INFO],Attempting to request short-circuit file descriptors,d6d0b023,Attempting to request short-circuit file descriptors,[],b17d6335_1
+2,[INFO],"Trace scope is active, continuing trace span",fa34b02a,"Trace scope is active, continuing trace span",[],b17d6335_1
+3,[INFO],Fetching span context for trace,2d0d9523,Fetching span context for trace,[],b17d6335_1
+4,[INFO],Retrieved trace information successfully,d649e4ce,Retrieved trace information successfully,[],b17d6335_1
+5,[INFO],Closing trace scope,9c1bfcca,Closing trace scope,[],b17d6335_1
+6,[INFO],Checking if span is active,d7688a4f,Checking if span is active,[],b17d6335_1
+7,[INFO],"Span is active, closing span",d7ecf80c,"Span is active, closing span",[],b17d6335_1
+8,[INFO],Exiting execution,58ed43ef,Exiting execution,[],b17d6335_1
+9,[INFO],"Trace scope is not active, exiting execution",9f42dc5a,"Trace scope is not active, exiting execution",[],b17d6335_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",92fab4ed_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],92fab4ed_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",17565125_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],17565125_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f1398c33_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f1398c33_1
+1,[INFO],Released short-circuit file descriptors,c619c7ea,Released short-circuit file descriptors,[],6177c713_1
+2,[INFO],Trace scope is active,1d8dfc1c,Trace scope is <*>,['active'],6177c713_1
+3,[INFO],Span is active,996e2510,Span is active,[],6177c713_1
+4,[INFO],Closed resources successfully,ca8d9acd,Closed resources successfully,[],6177c713_1
+5,[INFO],Exited execution flow,fe48cda8,Exited execution flow,[],6177c713_1
+6,[INFO],Trace scope is inactive,1d8dfc1c,Trace scope is <*>,['inactive'],6177c713_1
+7,[INFO],Exited execution flow,fe48cda8,Exited execution flow,[],6177c713_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",9356f976_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],9356f976_1
+1,[INFO],Requested short-circuit shared memory from namenode01,672e88f2,Requested short-circuit shared memory from namenode<*>,['01'],adcf825f_1
+2,[INFO],Trace scope closed successfully,e2478928,Trace scope closed successfully,[],adcf825f_1
+3,[INFO],Span closed successfully,f54add74,Span closed successfully,[],adcf825f_1
+4,[ERROR],"Trace scope was null, exiting",906a789f,"Trace scope was null, exiting",[],adcf825f_1
+1,[INFO],Released short-circuit file descriptors for pool data_pool_01,45bda2cd,Released short-circuit file descriptors for pool data_pool_<*>,['01'],887a26fd_1
+2,[ERROR],"Trace scope is null, unable to proceed",eae2f6e1,"Trace scope is null, unable to proceed",[],887a26fd_1
+1,[TRACE],Registering dfsInputStream for /user/data,e29b7448,Registering dfsInputStream for <*>,['/user/data'],475c8eb2_1
+1,[INFO],Registering dfsInputStream for /user/data,e29b7448,Registering dfsInputStream for <*>,['/user/data'],4297f10d_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],4297f10d_1
+1,[DEBUG],"Thread interrupted, InterruptedException",60d22c78,"Thread interrupted, InterruptedException",[],b3207a18_1
+2,[INFO],"Thread execution interrupted, attempting recovery",d788c2c5,"Thread execution interrupted, attempting recovery",[],b3207a18_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",b570e521_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],b570e521_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",88a78c78_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],88a78c78_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",ceb06c8d_1
+2,[DEBUG],Start process datanode/external error,ce81be2d,Start process datanode<*> error,['/external'],ceb06c8d_1
+3,[INFO],Error recovery for block waiting for responder to exit,67088223,Error recovery for block waiting for responder to exit,[],ceb06c8d_1
+4,[WARN],Error recovering pipeline for writing block. Already retried 5 times for the same packet,ec76ac5d,Error recovering pipeline for writing block. Already retried <*> times for the same packet,['5'],ceb06c8d_1
+5,[DEBUG],Closing old block block-12345,7b37f1b8,Closing old block block-<*>,['12345'],ceb06c8d_1
+6,[DEBUG],"Nodes [node01, node02] storageTypes [DISK, SSD] storageIDs [id01, id02]",71a967cb,Nodes <*> storageTypes <*> storageIDs <*>,"['[node01, node02]', '[DISK, SSD]', '[id01, id02]']",ceb06c8d_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",043f2a44_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],043f2a44_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",52166f8a_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],52166f8a_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f87f7fa9_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f87f7fa9_1
+1,[INFO],Fetched current time from system clock,25b9df0d,Fetched current time from system clock,[],4cf8a980_1
+1,[INFO],Nodes are empty for write pipeline of block,2692ee1b,Nodes are empty for write pipeline of block,[],2003f395_1
+2,[DEBUG],"Pipeline = [node1, node2, node3], this",981ca2c5,"Pipeline = <*>, this","['[node1, node2, node3]']",2003f395_1
+3,[INFO],Operation completed successfully,c659179c,Operation completed successfully,[],2003f395_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",8c71fffb_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],8c71fffb_1
+1,[INFO],Nodes are empty for write pipeline of block,2692ee1b,Nodes are empty for write pipeline of block,[],49a530e1_1
+2,[DEBUG],"Pipeline = [node1, node2, node3], this",981ca2c5,"Pipeline = <*>, this","['[node1, node2, node3]']",49a530e1_1
+3,[INFO],Message,4c2a8fe7,Message,[],49a530e1_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",300f0414_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],300f0414_1
+1,[WARN],Datanode 3 did not restart within 30000 ms: node-03,572d4aae,Datanode <*> did not restart within <*> ms: node-<*>,"['3', '30000', '03']",83761ad5_1
+2,[ERROR],Illegal state exception: error=false while checking restarting node deadline,bd7a367d,Illegal state exception: error=false while checking restarting node deadline,[],83761ad5_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",bccbdbcd_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],bccbdbcd_1
+1,[INFO],Pipeline updated successfully,9d50ec6c,Pipeline updated successfully,[],bccbdbcd_2
+2,[DEBUG],"Pipeline state: [node1, node2, node3], DataStreamer instance",b4aa6efd,"Pipeline state: <*>, DataStreamer instance","['[node1, node2, node3]']",bccbdbcd_2
+1,[WARN],Nodes array is null or empty,e90738a8,Nodes array is null or empty,[],3a4fb26e_1
+2,[INFO],Pipeline setup completed successfully,175e65e9,Pipeline setup completed successfully,[],3a4fb26e_1
+1,[DEBUG],"Nodes [""namenode01"", ""namenode02""] storageTypes [""DISK"", ""SSD""] storageIDs [""block-01"", ""block-02""]",71a967cb,Nodes <*> storageTypes <*> storageIDs <*>,"['[""namenode01"", ""namenode02""]', '[""DISK"", ""SSD""]', '[""block-01"", ""block-02""]']",3b504348_1
+2,[INFO],ResponseProcessor initialized,f7e79c9c,ResponseProcessor initialized,[],3b504348_1
+3,[INFO],Started processing at monotonic time 1697059200000,fd8a8b0c,Started processing at monotonic time <*>,['1697059200000'],3b504348_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",a4f7bfe4_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],a4f7bfe4_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",46c5c85e_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],46c5c85e_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",fa7bbe1f_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],fa7bbe1f_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",87305a40_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],87305a40_1
+1,[INFO],Closing old block 128MB,5986da67,Closing old block <*>MB,['128'],33220b2e_1
+2,[DEBUG],"Thread interrupted, InterruptedException",60d22c78,"Thread interrupted, InterruptedException",[],33220b2e_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",6748932f_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],6748932f_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",4815f777_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],4815f777_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",d8681342_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],d8681342_1
+1,[INFO],Responder closed successfully,f6fece51,<*> closed successfully,['Responder'],ff16b5ef_1
+2,[INFO],Stream closed successfully,f6fece51,<*> closed successfully,['Stream'],ff16b5ef_1
+3,[INFO],Resources released,08c55f15,Resources released,[],ff16b5ef_1
+4,[INFO],Data queue synchronized,2b96c1e0,Data queue synchronized,[],ff16b5ef_1
+5,[DEBUG],Thread interrupted,2ab078e1,Thread interrupted,[],ff16b5ef_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",140856cf_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],140856cf_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",78a850f6_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],78a850f6_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",e426088d_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],e426088d_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",52e22579_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],52e22579_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",459fce37_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],459fce37_1
+1,[INFO],Moved block to head successfully,68342917,Moved block to head successfully,[],2699afdf_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",97d385b8_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],97d385b8_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",c668217f_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],c668217f_1
+1,[INFO],"Removed storage block from pool ""data_pool_01""",a697636b,Removed storage block from pool <*>,"['""data_pool_01""']",8e71fe7a_1
+2,[ERROR],"Failed to remove storage block due to insufficient permissions for user ""hadoop_user""",eb4abfbd,Failed to remove storage block due to insufficient permissions for user <*>,"['""hadoop_user""']",8e71fe7a_1
+1,[INFO],Reported block block-123 on datanode-01 size 1048576 replicaState = FINALIZED,27fbd572,Reported block block-<*> on datanode-<*> size <*> replicaState = FINALIZED,"['123', '01', '1048576']",afcabafb_1
+2,[DEBUG],In memory blockUCState = UNDER_CONSTRUCTION,fe2dbd0d,In memory blockUCState = UNDER_CONSTRUCTION,[],afcabafb_1
+1,[INFO],Loop initialized,94948774,Loop initialized,[],afcabafb_2
+2,[DEBUG],Condition idx < len evaluated,d539c0ab,Condition idx < len evaluated,[],afcabafb_2
+1,[INFO],Fetching next element,8e15afa2,Fetching next element,[],afcabafb_3
+2,[DEBUG],Finding storage information,d3dccb83,Finding storage information,[],afcabafb_3
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",a0b02421_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],a0b02421_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",4664c9fd_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],4664c9fd_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",c7f75db9_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],c7f75db9_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",d22cee29_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],d22cee29_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",0d5cf8ce_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],0d5cf8ce_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",cae39118_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],cae39118_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",2a93eca4_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],2a93eca4_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",21f25770_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],21f25770_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",cb33f85a_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],cb33f85a_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",ca7fbcf3_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],ca7fbcf3_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",964c845c_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],964c845c_1
+1,[INFO],Block operation started,368f38eb,Block operation started,[],18c30f2e_1
+2,[DEBUG],Checking if block is stored or node removal failed,a9f8e322,Checking if block is stored or node removal failed,[],18c30f2e_1
+3,[INFO],Block is stored and node removal succeeded,e48370b7,Block is stored and node removal succeeded,[],18c30f2e_1
+4,[DEBUG],Checking if block is deleted,eca47aaa,Checking if block is deleted,[],18c30f2e_1
+5,[INFO],Block is not deleted,9c793687,Block is not deleted,[],18c30f2e_1
+6,[DEBUG],Decrementing safe block count,51331462,Decrementing safe block count,[],18c30f2e_1
+7,[INFO],Safe mode status is ON,5076a865,Safe mode status is ON,[],18c30f2e_1
+8,[DEBUG],Checking if block is complete and replication matches safe number of nodes,360c900d,Checking if block is complete and replication matches safe number of nodes,[],18c30f2e_1
+9,[INFO],Block is complete and replication matches safe number of nodes,e3ad06ca,Block is complete and replication matches safe number of nodes,[],18c30f2e_1
+10,[DEBUG],Updating reconstruction queue,7ce08541,Updating reconstruction queue,[],18c30f2e_1
+11,[INFO],Excess redundancy removed,98f7940a,Excess redundancy removed,[],18c30f2e_1
+12,[INFO],Corrupt replicas removed from map,2fcedcab,Corrupt replicas removed from map,[],18c30f2e_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",7027a1a2_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],7027a1a2_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",54c1754e_1
+2,[INFO],Counted 3 data-nodes for block /user/data,f5431a7f,Counted <*> data-nodes for block <*>,"['3', '/user/data']",54c1754e_1
+1,[INFO],Block entry point reached,8653bdf6,Block entry point reached,[],d51b1764_1
+2,[INFO],Block is complete,026c5a84,Block is <*>,['complete'],d51b1764_1
+3,[INFO],Block is incomplete,026c5a84,Block is <*>,['incomplete'],d51b1764_1
+4,[ERROR],Cannot complete block due to insufficient replication,bb4ac828,Cannot complete block due to insufficient replication,[],d51b1764_1
+5,[INFO],Block meets minimal replication,8e6daba0,Block meets minimal replication,[],d51b1764_1
+6,[ERROR],Cannot complete block as it is not COMMITTED,ddc99b1e,Cannot complete block as it is not COMMITTED,[],d51b1764_1
+7,[INFO],Converting block to complete,18fe01dd,Converting block to complete,[],d51b1764_1
+8,[INFO],Adjusting block totals,d75cf11b,Adjusting block totals,[],d51b1764_1
+9,[INFO],Incrementing safe block count,441e62de,Incrementing safe block count,[],d51b1764_1
+10,[INFO],Safe mode is OFF,2c062d28,Safe mode is OFF,[],d51b1764_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",2b8438c5_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],2b8438c5_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",5545562d_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],5545562d_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",61810f43_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],61810f43_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",169b52fd_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],169b52fd_1
+1,[INFO],Postponing block processing since storage data_pool_01 does not yet have up-to-date information,cb4aa36d,Postponing block processing since storage data_pool_<*> does not yet have up-to-date information,['01'],220ab0f3_1
+1,[INFO],Debugging block log,4f927752,Debugging block log,[],5b8b437f_1
+2,[ERROR],Cannot invalidate block because datanode does not exist,9b3653a0,Cannot invalidate block because datanode does not exist,[],5b8b437f_1
+3,[INFO],Postponing block deletion due to stale replicas,757058d0,Postponing block deletion due to stale replicas,[],5b8b437f_1
+4,[INFO],Adding block to invalidation list,6ce022c7,Adding block to invalidation list,[],5b8b437f_1
+5,[INFO],Iterating over storage blocks,0a29d4ad,Iterating over storage blocks,[],5b8b437f_1
+6,[INFO],Exiting storage block iteration,89b535d8,Exiting storage block iteration,[],5b8b437f_1
+7,[INFO],Debugging block log for valid datanodes,b7aa0dcd,Debugging block log for valid datanodes,[],5b8b437f_1
+8,[INFO],Removing stored block,df5e093f,Removing stored block,[],5b8b437f_1
+9,[INFO],Debugging block log after removal,12d13d0d,Debugging block log after removal,[],5b8b437f_1
+1,[INFO],Checked if nodes list is null,1a176dd9,Checked if nodes list is null,[],98efcc52_1
+2,[INFO],"Nodes list is null, returning from execution",9f4418ee,"Nodes list is null, returning from execution",[],98efcc52_1
+3,[INFO],Checked if nodes list is null,1a176dd9,Checked if nodes list is null,[],98efcc52_1
+4,[INFO],"Nodes list is not null, checking if block is striped",aef7f58d,"Nodes list is not null, checking if block is striped",[],98efcc52_1
+5,[INFO],"Block is striped, fetching storage information",05485ef2,"Block is striped, fetching storage information",[],98efcc52_1
+6,[INFO],Iterating over nodes copy,02a7f0b1,Iterating over nodes copy,[],98efcc52_1
+7,[INFO],Completed iteration over nodes copy,7abfe2fe,Completed iteration over nodes copy,[],98efcc52_1
+8,[INFO],"Block removed from blocks map, removing from corrupt replicas map",b8fd051c,"Block removed from blocks map, removing from corrupt replicas map",[],98efcc52_1
+9,[INFO],Removed block from corrupt replicas map,afc951f5,Removed block from corrupt replicas map,[],98efcc52_1
+10,[INFO],Checked if nodes list is null,1a176dd9,Checked if nodes list is null,[],98efcc52_1
+11,[INFO],"Nodes list is not null, checking if block is striped",aef7f58d,"Nodes list is not null, checking if block is striped",[],98efcc52_1
+12,[INFO],"Block is striped, fetching storage information",05485ef2,"Block is striped, fetching storage information",[],98efcc52_1
+13,[INFO],Iterating over nodes copy,02a7f0b1,Iterating over nodes copy,[],98efcc52_1
+14,[INFO],Completed iteration over nodes copy,7abfe2fe,Completed iteration over nodes copy,[],98efcc52_1
+15,[INFO],"Block not removed from blocks map, exiting",26e4df82,"Block not removed from blocks map, exiting",[],98efcc52_1
+16,[INFO],Checked if nodes list is null,1a176dd9,Checked if nodes list is null,[],98efcc52_1
+17,[INFO],"Nodes list is not null, checking if block is striped",aef7f58d,"Nodes list is not null, checking if block is striped",[],98efcc52_1
+18,[INFO],"Block is not striped, iterating over nodes copy",3a81f72b,"Block is not striped, iterating over nodes copy",[],98efcc52_1
+19,[INFO],Completed iteration over nodes copy,7abfe2fe,Completed iteration over nodes copy,[],98efcc52_1
+20,[INFO],"Block removed from blocks map, removing from corrupt replicas map",b8fd051c,"Block removed from blocks map, removing from corrupt replicas map",[],98efcc52_1
+21,[INFO],Removed block from corrupt replicas map,afc951f5,Removed block from corrupt replicas map,[],98efcc52_1
+22,[INFO],Checked if nodes list is null,1a176dd9,Checked if nodes list is null,[],98efcc52_1
+23,[INFO],"Nodes list is not null, checking if block is striped",aef7f58d,"Nodes list is not null, checking if block is striped",[],98efcc52_1
+24,[INFO],"Block is not striped, iterating over nodes copy",3a81f72b,"Block is not striped, iterating over nodes copy",[],98efcc52_1
+25,[INFO],Completed iteration over nodes copy,7abfe2fe,Completed iteration over nodes copy,[],98efcc52_1
+26,[INFO],"Block not removed from blocks map, exiting",26e4df82,"Block not removed from blocks map, exiting",[],98efcc52_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",675fdd79_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],675fdd79_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",23dfab4e_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],23dfab4e_1
+1,[INFO],Initialized LightWeightHashSet,1d0e502c,Initialized LightWeightHashSet,[],23dfab4e_2
+2,[INFO],Block added to set,4fa0e425,Block added to set,[],23dfab4e_2
+3,[INFO],Checked if block is striped,7be6e5bc,Checked if block is striped,[],23dfab4e_2
+4,[INFO],Incremented EC block count,5859aa45,Incremented EC block count,[],23dfab4e_2
+5,[DEBUG],Block state change logged,375b51b9,Block state change logged,[],23dfab4e_2
+6,[INFO],Incremented block count,a257e33e,Incremented block count,[],23dfab4e_2
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",2f60b247_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],2f60b247_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",0dc59f9c_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],0dc59f9c_1
+1,[ERROR],Block cannot be marked as corrupt as it does not belong to any file,7915fd4e,Block cannot be marked as corrupt as it does not belong to any file,[],e262ffb3_1
+2,[INFO],Block added as corrupt on datanode01 by hadoop_user READ|WRITE,12be37b4,Block added as corrupt on datanode<*> by hadoop_user READ|WRITE,['01'],e262ffb3_1
+3,[INFO],Duplicate request to add block as corrupt on datanode01 by hadoop_user READ|WRITE,fd539e1f,Duplicate request to add block as corrupt on datanode<*> by hadoop_user READ|WRITE,['01'],e262ffb3_1
+4,[INFO],Block successfully removed from storage,716be7d5,Block successfully removed from storage,[],e262ffb3_1
+5,[ERROR],Block removal from storage failed,e1ba67f5,Block removal from storage failed,[],e262ffb3_1
+6,[INFO],"Reconstruction queue updated, block removed",7a0c3761,"Reconstruction queue updated, block removed",[],e262ffb3_1
+7,[INFO],"Reconstruction queue updated, block removed, block state decremented",791f3ebc,"Reconstruction queue updated, block removed, block state decremented",[],e262ffb3_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",cb32ad64_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],cb32ad64_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",166c8990_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],166c8990_1
+1,[WARN],Cannot find FsVolumeSpi to report bad block: /user/data/block_01,3acd24e9,Cannot find FsVolumeSpi to report bad block: <*><*>,['/user/data/block_01'],44a0857e_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",5e556f95_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],5e556f95_1
+1,[INFO],Replica not found or state not finalized,a4a7b298,Replica not found or state not finalized,[],dcde8ff6_1
+2,[INFO],Unexpected replica state encountered,e4368c78,Unexpected replica state encountered,[],dcde8ff6_1
+1,[INFO],Block file does not exist,5be99e8a,Block file does not exist,[],dcde8ff6_2
+2,[WARN],"Cannot find FsVolumeSpi to report bad block: /data/volume1, block",9c8dbc4c,"Cannot find FsVolumeSpi to report bad block: <*><*>, block",['/data/volume1'],dcde8ff6_2
+1,[INFO],Block length too short,0a8fa616,Block length too short,[],dcde8ff6_3
+2,[WARN],Reporting bad blocks to namenode,84d07fe3,Reporting bad blocks to namenode,[],dcde8ff6_3
+1,[INFO],Replica not found for block,9e17a47b,Replica not found for block,[],b9f75a67_1
+2,[INFO],Unexpected replica state encountered,e4368c78,Unexpected replica state encountered,[],b9f75a67_1
+3,[INFO],Block file does not exist,5be99e8a,Block file does not exist,[],b9f75a67_1
+4,[INFO],Length of block file too short,158b5039,Length of block file too short,[],b9f75a67_1
+5,[INFO],Block file does not exist,5be99e8a,Block file does not exist,[],b9f75a67_1
+6,[WARN],Cannot find FsVolumeSpi to report bad block: /data/block_01,3acd24e9,Cannot find FsVolumeSpi to report bad block: <*><*>,['/data/block_01'],b9f75a67_1
+7,[WARN],Cannot find FsVolumeSpi to report bad block: /data/block_02,3acd24e9,Cannot find FsVolumeSpi to report bad block: <*><*>,['/data/block_02'],b9f75a67_1

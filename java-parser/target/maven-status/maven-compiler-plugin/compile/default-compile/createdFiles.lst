@@ -4,5 +4,5 @@ com/example/JavaParserServer$MethodCallDetector.class
 com/example/JavaParserServer$ExpressionVisitor.class
 com/example/MethodExtractorGateway.class
 com/example/MethodExtractorGateway$MethodExtractor.class
-com/example/JavaParserServer.class
 com/example/CFGNode.class
+com/example/JavaParserServer.class

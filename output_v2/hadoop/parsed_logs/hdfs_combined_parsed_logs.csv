@@ -1,0 +1,331 @@
+LineId,Level,Content,EventId,EventTemplate,ParameterList,BlockId
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",26a3b790_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],26a3b790_1
+1,[DEBUG],Changing meta file offset of block 12345 from 1000 to 2000,441943f0,Changing meta file offset of block <*> from <*> to <*>,"['12345', '1000', '2000']",9f4f21bf_1
+1,[DEBUG],Changing meta file offset of block 1024 from 4096 to 8192,441943f0,Changing meta file offset of block <*> from <*> to <*>,"['1024', '4096', '8192']",cc7f52f8_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f569c040_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f569c040_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",b137939a_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],b137939a_1
+1,[DEBUG],Continuing trace span with description: Read operation for block 1024,8ca81206,Continuing trace span with description: Read operation for block <*>,['1024'],24dbcb57_1
+2,[INFO],Using caching strategy: LRU,a902c26f,Using caching strategy: LRU,[],24dbcb57_1
+3,[DEBUG],Default caching strategy applied,358b9519,Default caching strategy applied,[],24dbcb57_1
+1,[DEBUG],Continuing trace span with description: Write operation,078e57d7,Continuing trace span with description: Write operation,[],82b133a2_1
+2,[DEBUG],Closing trace span,b63ce570,Closing trace span,[],82b133a2_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",32a18917_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],32a18917_1
+1,[DEBUG],"Continuing trace span with description: ""Replacing block operation initiated""",35b8104c,Continuing trace span with description: <*>,"['""Replacing block operation initiated""']",e78d5474_1
+2,[INFO],"Replacing block with storage ID: ""DS-12345""",e7ffe523,Replacing block with storage ID: <*>,"['""DS-12345""']",e78d5474_1
+1,[INFO],Received OP_COPY_BLOCK,a82d8b1a,Received OP_COPY_BLOCK,[],7dc47aa3_1
+2,[DEBUG],Continuing trace span with header and trace ID,c07586a1,Continuing trace span with header and trace ID,[],7dc47aa3_1
+1,[DEBUG],"Continuing trace span with description: ""Checksum operation initiated""",35b8104c,Continuing trace span with description: <*>,"['""Checksum operation initiated""']",cdc25fc2_1
+2,[DEBUG],Closing trace scope,9c1bfcca,Closing trace scope,[],cdc25fc2_1
+1,[DEBUG],Closing trace scope,9c1bfcca,Closing trace scope,[],db4b799d_1
+2,[DEBUG],Continuing trace span,c81f409c,Continuing trace span,[],db4b799d_1
+1,[DEBUG],Continuing trace span with description: Block transfer operation,f4af4ec9,Continuing trace span with description: Block transfer operation,[],aec814f0_1
+2,[INFO],Transferring block: blk_123456,f0e49b3a,Transferring block: blk_<*>,['123456'],aec814f0_1
+3,[INFO],Target storage types: DISK,8e01b60e,Target storage types: DISK,[],aec814f0_1
+4,[DEBUG],Closing trace span,b63ce570,Closing trace span,[],aec814f0_1
+1,[DEBUG],SlotId conversion initiated,d87ee372,SlotId conversion initiated,[],b17d6335_1
+2,[INFO],"TraceScope created for ""ShortCircuitDataTransfer""",d7beeffd,TraceScope created for <*>,"['""ShortCircuitDataTransfer""']",b17d6335_1
+3,[DEBUG],Continuing trace span,c81f409c,Continuing trace span,[],b17d6335_1
+4,[DEBUG],Closing span,ffe74f51,Closing span,[],b17d6335_1
+1,[INFO],Fetched 256MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['256', '//namenode:8020']",92fab4ed_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],92fab4ed_1
+1,[INFO],Fetched 256MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['256', '01']",17565125_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],17565125_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f1398c33_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f1398c33_1
+1,[DEBUG],Continuing trace span,c81f409c,Continuing trace span,[],6177c713_1
+2,[DEBUG],Closing trace scope,9c1bfcca,Closing trace scope,[],6177c713_1
+3,[DEBUG],Accessing trace info,a6027d4b,Accessing trace info,[],6177c713_1
+4,[INFO],Default trace info used,cfd3de0d,Default trace info used,[],6177c713_1
+1,[INFO],Fetched 1024MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['1024', '//namenode:8020']",9356f976_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],9356f976_1
+1,[DEBUG],TraceInfo retrieved successfully,5c8e2a19,TraceInfo retrieved successfully,[],adcf825f_1
+1,[DEBUG],SlotId conversion initiated,d87ee372,SlotId conversion initiated,[],887a26fd_1
+2,[INFO],"TraceScope created for ""ShortCircuitFdsOperation""",d7beeffd,TraceScope created for <*>,"['""ShortCircuitFdsOperation""']",887a26fd_1
+3,[DEBUG],Continuing trace span,c81f409c,Continuing trace span,[],887a26fd_1
+4,[DEBUG],Closing span,ffe74f51,Closing span,[],887a26fd_1
+5,[DEBUG],Closing trace scope,9c1bfcca,Closing trace scope,[],887a26fd_1
+6,[DEBUG],Accessing trace info,a6027d4b,Accessing trace info,[],887a26fd_1
+7,[INFO],Default trace info used,cfd3de0d,Default trace info used,[],887a26fd_1
+8,[DEBUG],TraceInfo retrieved successfully,5c8e2a19,TraceInfo retrieved successfully,[],887a26fd_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",475c8eb2_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],475c8eb2_1
+1,[TRACE],Registering DFSInputStream for /user/data,607509cd,Registering DFSInputStream for <*>,['/user/data'],4297f10d_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",928645da_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],928645da_1
+1,[INFO],Fetched 256MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['256', '//namenode:8020']",b3207a18_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],b3207a18_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",b570e521_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],b570e521_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",88a78c78_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],88a78c78_1
+1,[DEBUG],"Start process datanode/external error, datanode01",54d79306,"Start process datanode<*> error, datanode<*>","['/external', '01']",ceb06c8d_1
+2,[INFO],Error recovery for block blk_12345 waiting for responder to exit,f413561a,Error recovery for block blk_<*> waiting for responder to exit,['12345'],ceb06c8d_1
+3,[WARN],Error recovering pipeline for writing block blk_12345. Already retried 5 times for the same packet,2db3eb77,Error recovering pipeline for writing block blk_<*>. Already retried <*> times for the same packet,"['12345', '5']",ceb06c8d_1
+4,[DEBUG],Closing old block blk_12345,5e222677,Closing old block blk_<*>,['12345'],ceb06c8d_1
+5,[WARN],"Could not get block locations. Source file ""/user/data/file01"" - Aborting... datanode01",8f3ad458,Could not get block locations. Source file <*> - Aborting... datanode<*>,"['""/user/data/file01""', '01']",ceb06c8d_1
+6,[DEBUG],"Nodes [datanode01, datanode02] storageTypes [DISK, SSD] storageIDs [id_01, id_02]",71a967cb,Nodes <*> storageTypes <*> storageIDs <*>,"['[datanode01, datanode02]', '[DISK, SSD]', '[id_01, id_02]']",ceb06c8d_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",043f2a44_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],043f2a44_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",bdea6dc9_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],bdea6dc9_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",52166f8a_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],52166f8a_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f87f7fa9_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f87f7fa9_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",d737c5b5_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],d737c5b5_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",4cf8a980_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],4cf8a980_1
+1,[INFO],Nodes are empty for write pipeline of block blk_123456,d831d815,Nodes are empty for write pipeline of block blk_<*>,['123456'],2003f395_1
+2,[DEBUG],"Pipeline = [datanode01, datanode02], clientName",7a3b4a11,"Pipeline = <*>, clientName","['[datanode01, datanode02]']",2003f395_1
+3,[WARN],"Exception in createBlockOutputStream clientName, IOException: Connection reset",6e51b4a0,"Exception in createBlockOutputStream clientName, IOException: Connection reset",[],2003f395_1
+4,[INFO],"Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode01 : IOException: Invalid key",6b732127,"Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode<*> : IOException: Invalid key",['01'],2003f395_1
+5,[INFO],Datanode 1 is restarting: datanode02,e36de2fe,Datanode <*> is restarting: datanode<*>,"['1', '02']",2003f395_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",8c71fffb_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],8c71fffb_1
+1,[WARN],Abandoning block blk_123456789,a775a5fc,Abandoning block blk_<*>,['123456789'],49a530e1_1
+2,[WARN],Excluding datanode dn-01,3df6fdbc,Excluding datanode dn-<*>,['01'],49a530e1_1
+3,[INFO],Nodes are empty for write pipeline of block blk_123456789,d831d815,Nodes are empty for write pipeline of block blk_<*>,['123456789'],49a530e1_1
+4,[DEBUG],"Pipeline = [dn-02, dn-03], DataStreamer@stream-01",64c31e2b,"Pipeline = <*>, DataStreamer@stream-<*>","['[dn-02, dn-03]', '01']",49a530e1_1
+5,[WARN],"Exception in createBlockOutputStream DataStreamer@stream-01, java.io.IOException: Connection reset",793a756d,"Exception in createBlockOutputStream DataStreamer@stream-<*>, java.io.IOException: Connection reset",['01'],49a530e1_1
+6,[INFO],"Will fetch a new encryption key and retry, encryption key was invalid when connecting to dn-02 : java.io.IOException: Invalid key",7e4d600f,"Will fetch a new encryption key and retry, encryption key was invalid when connecting to dn-<*> : java.io.IOException: Invalid key",['02'],49a530e1_1
+7,[INFO],Datanode 1 is restarting: dn-02,4bb2d4ff,Datanode <*> is restarting: dn-<*>,"['1', '02']",49a530e1_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",300f0414_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],300f0414_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",83761ad5_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],83761ad5_1
+1,[DEBUG],Internal error detected,b5aa335e,Internal error detected,[],bccbdbcd_1
+2,[INFO],New generation stamp: 1024,a8929f6c,New generation stamp: <*>,['1024'],bccbdbcd_1
+3,[INFO],Nodes are empty for write pipeline of block-01,ced2eda5,Nodes are empty for write pipeline of block-<*>,['01'],bccbdbcd_1
+4,[DEBUG],"Pipeline = [datanode01, datanode02], pool-01",62d0c26f,"Pipeline = <*>, pool-<*>","['[datanode01, datanode02]', '01']",bccbdbcd_1
+5,[WARN],"Exception in createBlockOutputStream pool-01, IOException: Connection reset",ca4dae55,"Exception in createBlockOutputStream pool-<*>, IOException: Connection reset",['01'],bccbdbcd_1
+6,[INFO],"Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode01 : IOException: Key expired",7b0dee3d,"Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode<*> : IOException: Key expired",['01'],bccbdbcd_1
+7,[INFO],Datanode 1 is restarting: datanode02,e36de2fe,Datanode <*> is restarting: datanode<*>,"['1', '02']",bccbdbcd_1
+8,[WARN],Datanode 1 did not restart within 30000ms: datanode02,d45808b2,Datanode <*> did not restart within <*>ms: datanode<*>,"['1', '30000', '02']",bccbdbcd_1
+9,[INFO],Pipeline updated with generation stamp: 1025,c6793ecf,Pipeline updated with generation stamp: <*>,['1025'],bccbdbcd_1
+1,[DEBUG],Internal error detected,b5aa335e,Internal error detected,[],3a4fb26e_1
+2,[INFO],New generation stamp: 1024,a8929f6c,New generation stamp: <*>,['1024'],3a4fb26e_1
+3,[INFO],Nodes are empty for write pipeline of block-01,ced2eda5,Nodes are empty for write pipeline of block-<*>,['01'],3a4fb26e_1
+4,[DEBUG],"Pipeline = [datanode01, datanode02], pool-01",62d0c26f,"Pipeline = <*>, pool-<*>","['[datanode01, datanode02]', '01']",3a4fb26e_1
+5,[WARN],"Exception in createBlockOutputStream pool-01, IOException: Connection reset",ca4dae55,"Exception in createBlockOutputStream pool-<*>, IOException: Connection reset",['01'],3a4fb26e_1
+6,[INFO],"Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode01 : IOException: Key expired",7b0dee3d,"Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode<*> : IOException: Key expired",['01'],3a4fb26e_1
+7,[INFO],Datanode 1 is restarting: datanode02,e36de2fe,Datanode <*> is restarting: datanode<*>,"['1', '02']",3a4fb26e_1
+8,[WARN],Datanode 1 did not restart within 30000ms: datanode02,d45808b2,Datanode <*> did not restart within <*>ms: datanode<*>,"['1', '30000', '02']",3a4fb26e_1
+9,[INFO],Pipeline updated with generation stamp: 1024,c6793ecf,Pipeline updated with generation stamp: <*>,['1024'],3a4fb26e_1
+1,[INFO],Fetched 256MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['256', '//namenode:8020']",3b504348_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],3b504348_1
+1,[INFO],Fetched 1024MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['1024', '//namenode:8020']",a4f7bfe4_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],a4f7bfe4_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",4f9e9aad_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],4f9e9aad_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",46c5c85e_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],46c5c85e_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",fa7bbe1f_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],fa7bbe1f_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",87305a40_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],87305a40_1
+1,[DEBUG],Closing old block 128MB,5986da67,Closing old block <*>MB,['128'],33220b2e_1
+2,[DEBUG],Thread interrupted,2ab078e1,Thread interrupted,[],33220b2e_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",6748932f_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],6748932f_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",a039e58f_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],a039e58f_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",4815f777_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],4815f777_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",d8681342_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],d8681342_1
+1,[DEBUG],Thread interrupted,2ab078e1,Thread interrupted,[],ff16b5ef_1
+1,[DEBUG],Thread interrupted,2ab078e1,Thread interrupted,[],140856cf_1
+2,[DEBUG],"Stage initialized, DataStreamer",92e73105,"Stage initialized, DataStreamer",[],140856cf_1
+3,[DEBUG],Allocating new block: block-01,4fe4e888,Allocating new block: block-<*>,['01'],140856cf_1
+4,[DEBUG],Append to block block-01,3e411eb6,<*> <*> block block-<*>,"['Append to', '01']",140856cf_1
+5,[WARN],DataStreamer Exception,2ef07439,DataStreamer Exception,[],140856cf_1
+6,[DEBUG],DataStreamer Quota Exception,1aa3ab7f,DataStreamer Quota Exception,[],140856cf_1
+7,[DEBUG],"Start process datanode/external error, DataStreamer",598cddda,"Start process datanode<*> error, DataStreamer",['/external'],140856cf_1
+8,[INFO],Error Recovery for block-01 waiting for responder to exit.,e4d39e23,Error Recovery for block-<*> waiting for responder to exit.,['01'],140856cf_1
+9,[WARN],Error recovering pipeline for writing block-01. Already retried 5 times for the same packet.,1e01c1f5,Error recovering pipeline for writing block-<*>. Already retried <*> times for the same packet.,"['01', '5']",140856cf_1
+10,[DEBUG],Closing old block block-01,3e411eb6,<*> <*> block block-<*>,"['Closing old', '01']",140856cf_1
+11,[WARN],Abandoning block block-02,d68077d0,Abandoning block block-<*>,['02'],140856cf_1
+12,[WARN],Excluding datanode badNode01,e4c012f5,Excluding datanode badNode<*>,['01'],140856cf_1
+13,[INFO],Nodes are empty for write pipeline of block-02,ced2eda5,Nodes are empty for write pipeline of block-<*>,['02'],140856cf_1
+14,[DEBUG],"Pipeline = [node01, node02], DataStreamer",9ed8235b,"Pipeline = <*>, DataStreamer","['[node01, node02]']",140856cf_1
+15,[WARN],"Exception in createBlockOutputStream DataStreamer, IOException",fd385258,"Exception in createBlockOutputStream DataStreamer, IOException",[],140856cf_1
+16,[INFO],"Will fetch a new encryption key and retry, encryption key was invalid when connecting to node01 : IOException",98158501,"Will fetch a new encryption key and retry, encryption key was invalid when connecting to node<*> : IOException",['01'],140856cf_1
+17,[WARN],"Could not get block locations. Source file ""/user/data/file01"" - Aborting... DataStreamer",444fd7ab,Could not get block locations. Source file <*> - Aborting... DataStreamer,"['""/user/data/file01""']",140856cf_1
+18,[DEBUG],"Nodes [node01, node02] storageTypes [DISK, SSD] storageIDs [id01, id02]",71a967cb,Nodes <*> storageTypes <*> storageIDs <*>,"['[node01, node02]', '[DISK, SSD]', '[id01, id02]']",140856cf_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",78a850f6_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],78a850f6_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",e426088d_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],e426088d_1
+1,[DEBUG],Reported block blk_123456 on datanode01 size 134217728 replicaState = FINALIZED,6caede65,Reported block blk_<*> on datanode<*> size <*> replicaState = FINALIZED,"['123456', '01', '134217728']",52e22579_1
+2,[DEBUG],In memory blockUCState = UNDER_CONSTRUCTION,fe2dbd0d,In memory blockUCState = UNDER_CONSTRUCTION,[],52e22579_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",459fce37_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],459fce37_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",2699afdf_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],2699afdf_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",97d385b8_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],97d385b8_1
+1,[INFO],Fetched 256MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['256', '01']",c668217f_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],c668217f_1
+1,[INFO],Fetched 256MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['256', '01']",8e71fe7a_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],8e71fe7a_1
+1,[DEBUG],Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED,fbc3d936,Reported block blk_<*> on datanode<*> size <*>MB replicaState = FINALIZED,"['12345', '01', '128']",afcabafb_1
+2,[DEBUG],Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED,fbc3d936,Reported block blk_<*> on datanode<*> size <*>MB replicaState = FINALIZED,"['12345', '01', '128']",afcabafb_1
+3,[DEBUG],Reported block blk_12345 on datanode02 size 128MB replicaState = FINALIZED,fbc3d936,Reported block blk_<*> on datanode<*> size <*>MB replicaState = FINALIZED,"['12345', '02', '128']",afcabafb_1
+4,[DEBUG],In memory blockUCState = UNDER_CONSTRUCTION,fe2dbd0d,In memory blockUCState = UNDER_CONSTRUCTION,[],afcabafb_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",a0b02421_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],a0b02421_1
+1,[INFO],Fetched 1024MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['1024', '//namenode:8020']",4664c9fd_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],4664c9fd_1
+1,[DEBUG],BLOCK* addStoredBlock: block-01 on datanode-01 size 128MB but it does not belong to any file,ef3b5f82,BLOCK* addStoredBlock: block-<*> on datanode-<*> size <*>MB but it does not belong to any file,"['01', '01', '128']",c7f75db9_1
+2,[DEBUG],BLOCK* addStoredBlock: datanode-01 is added to block-01 (size=128MB),1e31c1e9,BLOCK* addStoredBlock: datanode-<*> is added to block-<*> (size=<*>MB),"['01', '01', '128']",c7f75db9_1
+3,[WARN],BLOCK* addStoredBlock: block block-01 moved to storageType SSD on node datanode-01,42a1a8fb,BLOCK* addStoredBlock: block block-<*> moved to storageType SSD on node datanode-<*>,"['01', '01']",c7f75db9_1
+4,[DEBUG],BLOCK* addStoredBlock: Redundant addStoredBlock request received for block-01 on node datanode-01 size 128MB,7c7e1bf2,BLOCK* addStoredBlock: Redundant addStoredBlock request received for block-<*> on node datanode-<*> size <*>MB,"['01', '01', '128']",c7f75db9_1
+5,[WARN],Inconsistent number of corrupt replicas for block-01. blockMap has 3 but corrupt replicas map has 2,86c98724,Inconsistent number of corrupt replicas for block-<*>. blockMap has <*> but corrupt replicas map has <*>,"['01', '3', '2']",c7f75db9_1
+1,[INFO],Fetched 256MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['256', '//namenode:8020']",d22cee29_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],d22cee29_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",0d5cf8ce_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],0d5cf8ce_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",cae39118_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],cae39118_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",2a93eca4_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],2a93eca4_1
+1,[DEBUG],"Safe mode is off, skipping decrement",864688ab,"Safe mode is off, skipping decrement",[],21f25770_1
+2,[DEBUG],Block is complete and live replicas match safe number,091b7c7b,Block is complete and live replicas match safe number,[],21f25770_1
+3,[INFO],Decrementing safe block count,51331462,Decrementing safe block count,[],21f25770_1
+4,[DEBUG],Checking if block is striped,30e5b4fa,Checking if block is striped,[],21f25770_1
+5,[DEBUG],Calculating real data block number based on erasure coding policy,d5d3498a,Calculating real data block number based on erasure coding policy,[],21f25770_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",cb33f85a_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],cb33f85a_1
+1,[DEBUG],Block is not complete or replication queues are not populated,80066f6c,Block is not complete or replication queues are not populated,[],ca7fbcf3_1
+2,[INFO],Block reconstruction skipped,3679d437,Block reconstruction skipped,[],ca7fbcf3_1
+3,[DEBUG],Effective replicas are sufficient,77a55c1e,Effective replicas are sufficient,[],ca7fbcf3_1
+4,[INFO],Block removed from reconstruction queue %%,0e994ccc,Block removed from reconstruction queue <*>,['%%'],ca7fbcf3_1
+5,[DEBUG],Block is not complete or replication queues are not populated,80066f6c,Block is not complete or replication queues are not populated,[],ca7fbcf3_1
+6,[INFO],Block reconstruction skipped,3679d437,Block reconstruction skipped,[],ca7fbcf3_1
+7,[DEBUG],Removing block blk_12345 from priority queue 2,a306ef5a,Removing block blk_<*> from priority queue <*>,"['12345', '2']",ca7fbcf3_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",964c845c_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],964c845c_1
+1,[DEBUG],BLOCK* removeStoredBlock: block-123 has already been removed from node node-01,c0b8d601,BLOCK* removeStoredBlock: block-<*> has already been removed from node node-<*>,"['123', '01']",18c30f2e_1
+2,[DEBUG],BLOCK* removeStoredBlock: block-123 removed from caching related lists on node node-01,1d6a48d6,BLOCK* removeStoredBlock: block-<*> removed from caching related lists on node node-<*>,"['123', '01']",18c30f2e_1
+3,[DEBUG],"Safe mode is off, skipping decrement",864688ab,"Safe mode is off, skipping decrement",[],18c30f2e_1
+4,[DEBUG],Block is complete and live replicas match safe number,091b7c7b,Block is complete and live replicas match safe number,[],18c30f2e_1
+5,[INFO],Decrementing safe block count,51331462,Decrementing safe block count,[],18c30f2e_1
+6,[DEBUG],Checking if block is striped,30e5b4fa,Checking if block is striped,[],18c30f2e_1
+7,[DEBUG],Calculating real data block number based on erasure coding policy,d5d3498a,Calculating real data block number based on erasure coding policy,[],18c30f2e_1
+8,[DEBUG],Block is not complete or replication queues are not populated,80066f6c,Block is not complete or replication queues are not populated,[],18c30f2e_1
+9,[INFO],Block reconstruction skipped,3679d437,Block reconstruction skipped,[],18c30f2e_1
+10,[DEBUG],BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block block-123 from priority queue 2,9088e876,BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block block-<*> from priority queue <*>,"['123', '2']",18c30f2e_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",7027a1a2_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],7027a1a2_1
+1,[INFO],Fetched 256MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['256', '01']",54c1754e_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],54c1754e_1
+1,[INFO],Block is already complete,09f700a1,Block is already complete,[],d51b1764_1
+1,[INFO],Incrementing safe block count,441e62de,Incrementing safe block count,[],2b8438c5_1
+2,[DEBUG],Reporting startup progress,f7d612a1,Reporting startup progress,[],2b8438c5_1
+3,[DEBUG],Checking if block is striped,30e5b4fa,Checking if block is striped,[],2b8438c5_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",61810f43_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],61810f43_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",169b52fd_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],169b52fd_1
+1,[TRACE],Postponing block-12345 since storage data_pool_01 does not yet have up-to-date information.,8cf1ea2d,Postponing block-<*> since storage data_pool_<*> does not yet have up-to-date information.,"['12345', '01']",220ab0f3_1
+1,[DEBUG],Postponing invalidation of block blk_12345 on datanode dn_01 because 2 replica(s) are located on nodes with potentially out-of-date block reports,aef40b5b,Postponing invalidation of block blk_<*> on datanode dn_<*> because <*> replica(s) are located on nodes with potentially out-of-date block reports,"['12345', '01', '2']",5b8b437f_1
+2,[DEBUG],"Adding block blk_12345 to invalidation list for datanodes dn_01, dn_02",6692eb75,"Adding block blk_<*> to invalidation list for datanodes dn_<*>, dn_<*>","['12345', '01', '02']",5b8b437f_1
+3,[DEBUG],Block blk_12345 on datanode dn_01 listed for deletion,b8724278,Block blk_<*> on datanode dn_<*> listed for deletion,"['12345', '01']",5b8b437f_1
+4,[DEBUG],Block blk_12345 has already been removed from node dn_01,db29adde,Block blk_<*> has already been removed from node dn_<*>,"['12345', '01']",5b8b437f_1
+5,[DEBUG],Block blk_12345 removed from caching related lists on node dn_01,7c0bfc8b,Block blk_<*> removed from caching related lists on node dn_<*>,"['12345', '01']",5b8b437f_1
+6,[DEBUG],"Safe mode is off, skipping decrement",864688ab,"Safe mode is off, skipping decrement",[],5b8b437f_1
+7,[DEBUG],Block blk_12345 is complete and live replicas match safe number,fc43c0b5,Block blk_<*> is complete and live replicas match safe number,['12345'],5b8b437f_1
+8,[INFO],Decrementing safe block count,51331462,Decrementing safe block count,[],5b8b437f_1
+9,[DEBUG],Checking if block blk_12345 is striped,64462ea7,Checking if block blk_<*> is striped,['12345'],5b8b437f_1
+10,[DEBUG],Calculating real data block number based on erasure coding policy,d5d3498a,Calculating real data block number based on erasure coding policy,[],5b8b437f_1
+11,[DEBUG],Removing block blk_12345 from priority queue 3,a306ef5a,Removing block blk_<*> from priority queue <*>,"['12345', '3']",5b8b437f_1
+1,[DEBUG],Invalidate corrupt replicas error in deleting bad block blk_12345 on node_01,dfef897c,Invalidate corrupt replicas error in deleting bad block blk_<*> on node_<*>,"['12345', '01']",98efcc52_1
+2,[DEBUG],Invalidate corrupt replicas error in deleting bad block blk_12345 on node_01,dfef897c,Invalidate corrupt replicas error in deleting bad block blk_<*> on node_<*>,"['12345', '01']",98efcc52_1
+3,[DEBUG],BLOCK* invalidateBlocks: postponing invalidation of blk_67890 on datanode_02 because 3 replica(s) are located on nodes with potentially out-of-date block reports,46b1786f,BLOCK* invalidateBlocks: postponing invalidation of blk_<*> on datanode_<*> because <*> replica(s) are located on nodes with potentially out-of-date block reports,"['67890', '02', '3']",98efcc52_1
+4,[DEBUG],"BLOCK* addToInvalidates: block_78901 [datanode_03, datanode_04]",8caaef68,BLOCK* addToInvalidates: block_<*> <*>,"['78901 [datanode_03, datanode_04]']",98efcc52_1
+5,[DEBUG],BLOCK* invalidateBlocks: blk_67890 on datanode_02 listed for deletion,8b921374,BLOCK* invalidateBlocks: blk_<*> on datanode_<*> listed for deletion,"['67890', '02']",98efcc52_1
+6,[DEBUG],BLOCK* removeStoredBlock: block_78901 has already been removed from node datanode_03,5cfdcd2e,BLOCK* removeStoredBlock: block_<*> has already been removed from node datanode_<*>,"['78901', '03']",98efcc52_1
+7,[DEBUG],BLOCK* removeStoredBlock: block_78901 removed from caching related lists on node datanode_03,0712e785,BLOCK* removeStoredBlock: block_<*> removed from caching related lists on node datanode_<*>,"['78901', '03']",98efcc52_1
+8,[DEBUG],"Safe mode is off, skipping decrement",864688ab,"Safe mode is off, skipping decrement",[],98efcc52_1
+9,[DEBUG],Block is complete and live replicas match safe number,091b7c7b,Block is complete and live replicas match safe number,[],98efcc52_1
+10,[INFO],Decrementing safe block count,51331462,Decrementing safe block count,[],98efcc52_1
+11,[DEBUG],Checking if block is striped,30e5b4fa,Checking if block is striped,[],98efcc52_1
+12,[DEBUG],Calculating real data block number based on erasure coding policy,d5d3498a,Calculating real data block number based on erasure coding policy,[],98efcc52_1
+1,[DEBUG],BLOCK* addStoredBlock: Block123 on /user/data size 128MB but it does not belong to any file,d0d3ec51,BLOCK* addStoredBlock: Block<*> on <*> size <*>MB but it does not belong to any file,"['123', '/user/data', '128']",675fdd79_1
+2,[DEBUG],BLOCK* addStoredBlock: Block123 is added to pool-01 (size=128MB),3fefec29,BLOCK* addStoredBlock: Block<*> is added to pool-<*> (size=<*>MB),"['123', '01', '128']",675fdd79_1
+3,[WARN],BLOCK* addStoredBlock: block Block123 moved to storageType DISK on node namenode01,04766e66,BLOCK* addStoredBlock: block Block<*> moved to storageType DISK on node namenode<*>,"['123', '01']",675fdd79_1
+4,[DEBUG],BLOCK* addStoredBlock: Redundant addStoredBlock request received for Block123 on node namenode01 size 128MB,f2392b92,BLOCK* addStoredBlock: Redundant addStoredBlock request received for Block<*> on node namenode<*> size <*>MB,"['123', '01', '128']",675fdd79_1
+5,[WARN],Inconsistent number of corrupt replicas for Block123. blockMap has 3 but corrupt replicas map has 2,d086eb29,Inconsistent number of corrupt replicas for Block<*>. blockMap has <*> but corrupt replicas map has <*>,"['123', '3', '2']",675fdd79_1
+6,[INFO],Invalidating corrupt replicas for block Block123,f9884813,Invalidating corrupt replicas for block Block<*>,['123'],675fdd79_1
+7,[INFO],Incrementing safe block count,441e62de,Incrementing safe block count,[],675fdd79_1
+8,[DEBUG],Reporting startup progress,f7d612a1,Reporting startup progress,[],675fdd79_1
+1,[DEBUG],invalidateCorruptReplicas error in deleting bad block Block456 on node datanode01,56ee2791,invalidateCorruptReplicas error in deleting bad block Block<*> on node datanode<*>,"['456', '01']",675fdd79_2
+2,[DEBUG],invalidateCorruptReplicas error in deleting bad block Block456 on node datanode01,56ee2791,invalidateCorruptReplicas error in deleting bad block Block<*> on node datanode<*>,"['456', '01']",675fdd79_2
+1,[DEBUG],Checking if block is striped,30e5b4fa,Checking if block is striped,[],675fdd79_3
+1,[DEBUG],Block is not complete or replication queues are not populated,80066f6c,Block is not complete or replication queues are not populated,[],675fdd79_4
+2,[INFO],Block reconstruction skipped,3679d437,Block reconstruction skipped,[],675fdd79_4
+3,[DEBUG],Effective replicas are sufficient,77a55c1e,Effective replicas are sufficient,[],675fdd79_4
+4,[INFO],Block removed from reconstruction queue,b4b7dd32,Block removed from reconstruction queue,[],675fdd79_4
+1,[DEBUG],Block is not complete or replication queues are not populated,80066f6c,Block is not complete or replication queues are not populated,[],675fdd79_5
+2,[INFO],Block reconstruction skipped,3679d437,Block reconstruction skipped,[],675fdd79_5
+3,[DEBUG],BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block Block789 from priority queue 2,1f5b5340,BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block Block<*> from priority queue <*>,"['789', '2']",675fdd79_5
+1,[TRACE],BLOCK* processExtraRedundancyBlock: Postponing Block999 since storage Storage01 does not yet have up-to-date information.,195d0fd0,BLOCK* processExtraRedundancyBlock: Postponing Block<*> since storage Storage<*> does not yet have up-to-date information.,"['999', '01']",675fdd79_6
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",23dfab4e_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],23dfab4e_1
+1,[DEBUG],BLOCK* InvalidateBlocks: add block-12345 to datanode-01,5804fcb7,BLOCK* InvalidateBlocks: add block-<*> to datanode-<*>,"['12345', '01']",2f60b247_1
+2,[DEBUG],BLOCK* addToInvalidates: block-12345 datanode-01,cc1d7a35,BLOCK* addToInvalidates: block-<*> datanode-<*>,"['12345', '01']",2f60b247_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",0dc59f9c_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],0dc59f9c_1
+1,[DEBUG],BLOCK markBlockAsCorrupt: Block cannot be marked as corrupt as it does not belong to any file,bfb0fd60,BLOCK markBlockAsCorrupt: Block cannot be marked as corrupt as it does not belong to any file,[],e262ffb3_1
+2,[DEBUG],BLOCK NameSystem.addToCorruptReplicasMap: Block added as corrupt on datanode01 by 192.168.1.1 Reason: Replica mismatch,4e3625d1,BLOCK NameSystem.addToCorruptReplicasMap: Block added as corrupt on datanode<*> by <*>.<*>.<*>.<*> Reason: Replica mismatch,"['01', '192', '168.1.1']",e262ffb3_1
+1,[DEBUG],BLOCK* invalidateBlocks: postponing invalidation of Block on datanode01 because 3 replica(s) are located on nodes with potentially out-of-date block reports,0741ffbf,BLOCK* invalidateBlocks: postponing invalidation of Block on datanode<*> because <*> replica(s) are located on nodes with potentially out-of-date block reports,"['01', '3']",e262ffb3_2
+2,[DEBUG],BLOCK* addToInvalidates: Block storedBlock01 datanodes01,e9414861,BLOCK* addToInvalidates: Block storedBlock<*> datanodes<*>,"['01', '01']",e262ffb3_2
+3,[DEBUG],BLOCK* invalidateBlocks: Block on datanode01 listed for deletion,95a590cb,BLOCK* invalidateBlocks: Block on datanode<*> listed for deletion,['01'],e262ffb3_2
+4,[DEBUG],BLOCK* removeStoredBlock: Block storedBlock01 has already been removed from node datanode01,ad7d8b6b,BLOCK* removeStoredBlock: Block storedBlock<*> has already been removed from node datanode<*>,"['01', '01']",e262ffb3_2
+5,[DEBUG],BLOCK* removeStoredBlock: Block storedBlock01 removed from caching related lists on node datanode01,0caf7a7d,BLOCK* removeStoredBlock: Block storedBlock<*> removed from caching related lists on node datanode<*>,"['01', '01']",e262ffb3_2
+6,[DEBUG],"Safe mode is off, skipping decrement",864688ab,"Safe mode is off, skipping decrement",[],e262ffb3_2
+7,[DEBUG],Block is complete and live replicas match safe number,091b7c7b,Block is complete and live replicas match safe number,[],e262ffb3_2
+8,[INFO],Decrementing safe block count,51331462,Decrementing safe block count,[],e262ffb3_2
+9,[DEBUG],Checking if block is striped,30e5b4fa,Checking if block is striped,[],e262ffb3_2
+10,[DEBUG],Calculating real data block number based on erasure coding policy,d5d3498a,Calculating real data block number based on erasure coding policy,[],e262ffb3_2
+1,[DEBUG],Block is not complete or replication queues are not populated,80066f6c,Block is not complete or replication queues are not populated,[],e262ffb3_3
+2,[INFO],Block reconstruction skipped,3679d437,Block reconstruction skipped,[],e262ffb3_3
+3,[DEBUG],Effective replicas are sufficient,77a55c1e,Effective replicas are sufficient,[],e262ffb3_3
+4,[INFO],Block removed from reconstruction queue,b4b7dd32,Block removed from reconstruction queue,[],e262ffb3_3
+1,[DEBUG],Block is not complete or replication queues are not populated,80066f6c,Block is not complete or replication queues are not populated,[],e262ffb3_4
+2,[INFO],Block reconstruction skipped,3679d437,Block reconstruction skipped,[],e262ffb3_4
+3,[DEBUG],BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block Block01 from priority queue PriorityLevel01,3ba45ac2,BLOCK* NameSystem.LowRedundancyBlock.remove: Removing block Block<*> from priority queue PriorityLevel<*>,"['01', '01']",e262ffb3_4
+1,[DEBUG],Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED,fbc3d936,Reported block blk_<*> on datanode<*> size <*>MB replicaState = FINALIZED,"['12345', '01', '128']",cb32ad64_1
+2,[DEBUG],Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED,fbc3d936,Reported block blk_<*> on datanode<*> size <*>MB replicaState = FINALIZED,"['12345', '01', '128']",cb32ad64_1
+3,[DEBUG],Reported block blk_12345 on datanode02 size 128MB replicaState = FINALIZED,fbc3d936,Reported block blk_<*> on datanode<*> size <*>MB replicaState = FINALIZED,"['12345', '02', '128']",cb32ad64_1
+4,[DEBUG],In memory blockUCState = UNDER_CONSTRUCTION,fe2dbd0d,In memory blockUCState = UNDER_CONSTRUCTION,[],cb32ad64_1
+5,[DEBUG],BLOCK* addStoredBlock: blk_12345 on node01 size 128MB but it does not belong to any file,47fdb2b3,BLOCK* addStoredBlock: blk_<*> on node<*> size <*>MB but it does not belong to any file,"['12345', '01', '128']",cb32ad64_1
+6,[DEBUG],BLOCK* addStoredBlock: node01 is added to blk_12345 (size=128MB),3c724a2b,BLOCK* addStoredBlock: node<*> is added to blk_<*> (size=<*>MB),"['01', '12345', '128']",cb32ad64_1
+7,[WARN],BLOCK* addStoredBlock: block blk_12345 moved to storageType DISK on node node01,ade24c57,BLOCK* addStoredBlock: block blk_<*> moved to storageType DISK on node node<*>,"['12345', '01']",cb32ad64_1
+8,[DEBUG],BLOCK* addStoredBlock: Redundant addStoredBlock request received for blk_12345 on node node01 size 128MB,dfa4fb9e,BLOCK* addStoredBlock: Redundant addStoredBlock request received for blk_<*> on node node<*> size <*>MB,"['12345', '01', '128']",cb32ad64_1
+9,[WARN],Inconsistent number of corrupt replicas for blk_12345. blockMap has 2 but corrupt replicas map has 3,53fae65a,Inconsistent number of corrupt replicas for blk_<*>. blockMap has <*> but corrupt replicas map has <*>,"['12345', '2', '3']",cb32ad64_1
+10,[DEBUG],BLOCK* InvalidateBlocks: add blk_12345 to datanode01,3954c910,BLOCK* InvalidateBlocks: add blk_<*> to datanode<*>,"['12345', '01']",cb32ad64_1
+11,[DEBUG],BLOCK* addToInvalidates: blk_12345 datanode01 datanode02,5267420e,BLOCK* addToInvalidates: blk_<*> datanode<*> datanode<*>,"['12345', '01', '02']",cb32ad64_1
+12,[DEBUG],BLOCK markBlockAsCorrupt: blk_12345 cannot be marked as corrupt as it does not belong to any file,a1bcd1de,BLOCK markBlockAsCorrupt: blk_<*> cannot be marked as corrupt as it does not belong to any file,['12345'],cb32ad64_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",166c8990_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],166c8990_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",44a0857e_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],44a0857e_1
+1,[INFO],Fetched 256MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['256', '01']",5e556f95_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],5e556f95_1
+1,[INFO],Can't send invalid block block_12345,70883592,Can't send invalid block block_<*>,['12345'],dcde8ff6_1
+2,[WARN],Cannot find FsVolumeSpi to report bad block: block_12345,10c7ce13,Cannot find FsVolumeSpi to report bad block: block_<*>,['12345'],dcde8ff6_1
+3,[WARN],"Can't replicate block block_12345 because the block file doesn't exist, or is not accessible",89205fdd,"Can<*>t exist, or is not accessible","[""'t replicate block block_12345 because the block file doesn'""]",dcde8ff6_1
+4,[WARN],Can't replicate block block_12345 because on-disk length is shorter than NameNode recorded length,bc24305f,Can't replicate block block_<*> because on-disk length is shorter than NameNode recorded length,['12345'],dcde8ff6_1
+5,[INFO],BP-01 Starting thread to transfer block_12345 to targetNode01,1a18774f,BP-<*> Starting thread to transfer block_<*> to targetNode<*>,"['01', '12345', '01']",dcde8ff6_1
+1,[WARN],Failed to transfer block block_001,563f4dd0,Failed to transfer block block_<*>,['001'],b9f75a67_1
+2,[INFO],Can't send invalid block block_001,70883592,Can't send invalid block block_<*>,['001'],b9f75a67_1
+3,[WARN],Cannot find FsVolumeSpi to report bad block: block_001,10c7ce13,Cannot find FsVolumeSpi to report bad block: block_<*>,['001'],b9f75a67_1
+4,[WARN],"Can't replicate block block_001 because the block file doesn't exist, or is not accessible",89205fdd,"Can<*>t exist, or is not accessible","[""'t replicate block block_001 because the block file doesn'""]",b9f75a67_1
+5,[WARN],Can't replicate block block_001 because on-disk length is shorter than NameNode recorded length,bc24305f,Can't replicate block block_<*> because on-disk length is shorter than NameNode recorded length,['001'],b9f75a67_1
+6,[INFO],"pool-01 Starting thread to transfer block_001 to target_node_01,target_node_02",3a4231ec,"pool-<*> Starting thread to transfer block_<*> to target_node_<*>,target_node_<*>","['01', '001', '01', '02']",b9f75a67_1

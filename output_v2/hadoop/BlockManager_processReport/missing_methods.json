@@ -1,0 +1,26 @@
+{
+    "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo:getClass()": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeStorageInfo.java"
+    },
+    "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$StatefulBlockInfo:<init>(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.protocol.Block,org.apache.hadoop.hdfs.server.common.HdfsServerConstants$ReplicaState)": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockManager.java"
+    },
+    "org.apache.hadoop.hdfs.server.blockmanagement.BlockInfoContiguous:<init>(org.apache.hadoop.hdfs.protocol.Block,short)": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockInfoContiguous.java"
+    },
+    "org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo:getNumBytes()": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockInfo.java"
+    },
+    "org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo:getBlockId()": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockInfo.java"
+    },
+    "org.apache.hadoop.hdfs.server.blockmanagement.BlockInfoContiguous:getNext(int)": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockInfoContiguous.java"
+    },
+    "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$BlockInfoToAdd:<init>(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.protocol.Block)": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/BlockManager.java"
+    },
+    "org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo$BlockIterator:<init>(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo)": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/blockmanagement/DatanodeStorageInfo.java"
+    }
+}

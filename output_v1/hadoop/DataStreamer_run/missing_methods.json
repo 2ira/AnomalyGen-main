@@ -1,0 +1,5 @@
+{
+    "org.apache.hadoop.hdfs.protocol.DatanodeInfo:getXferAddr()": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/DatanodeInfo.java"
+    }
+}

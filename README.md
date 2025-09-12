@@ -25,8 +25,12 @@ AnomalyGen-main/
 │   ├── venv  # Python virtual environment for the project(created by build_env.sh)
 │   ├── auto_callgraph_config.py  # Collects class files and configures java-callgraph2
 │   ├── auto_run.py  # Main execution script
+│   ├── auto_global_callgraph_generation.py  # Automatically config the compile setting,generate global callgraph, prune for the log-related node.
+│   ├── auto_run_ablation_v1.py  # Ablation data generation script, which is without cot
+│   ├── auto_run_ablation_v2.py  # Ablation data generation script, which is without analysis
 |   ├── auto_prepare.py  # Store global call path script
 │   ├── build_env.sh  # Script to prepare the environment
+│   ├── label_anomaly.py # Label logs and struture script
 │   ├── [ELSE FILE:Additional component files used by auto_run]
 │   └── run_example.txt  # Examples of how to run AnomalyGen
 ├── models
@@ -48,9 +52,15 @@ AnomalyGen-main/
 │   │   ├── hdfs_block_labels.csv  # Anomaly labels for HDFS log sequences
 │   │   └── hdfs_combined_parsed_logs.csv  # Parsed HDFS log sequences
 |   ├── model_run_logs # Log files for 3 anomaly detection model execution results
+├── output_v1 and output_v2 is the ablation logs
 ├──statistic
-│   ├── compress_single_node.py  # Compression for similar logs
+│   ├── compress_single_node.py  # Compression for similar logs.
+│   ├── standard_all_logs.py  # Standalize all logs.
 │   └── log_parser  # Uses LogParser3 Drain for log parsing
+├── ablation_v1_compressed_log.json # Ablation(without cot) generated logs 
+├── ablation_v2_compressed_log.json # Ablation(without static analysis) generated logs 
+├── baseline_compressed_log.json # Baseline logs 
+
 ```
 
 **Note:** The provided Hadoop repository can be used directly for step 2 (i.e., using its compiled classes for the java-callgraph2 analysis). If you wish to analyze a different project, compile it and update the project root directory parameter accordingly.
@@ -142,6 +152,7 @@ Then, navigate to the output directory and execute:
 cd java-callgraph2/jar_output_dir/
 ./run.sh
 ```
+More easily, you can directly run auto_global_callgraph_generation.py
 
 The analysis output will typically be generated in a directory named similarly to `cosn-javacg2_merged.jar-output_javacg2`. Note the location of this directory as it will be needed in subsequent steps.
 

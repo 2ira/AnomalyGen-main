@@ -5,10 +5,10 @@ python3 main/auto_prepare.py \
 
 python3 main/auto_run.py \
 --project_dir hadoop \
---input_dir /your/path/to/cosn-javacg2_merged.jar-output_javacg2 \
 --entry_functions "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:main(java.lang.String[])" \
 --depth 3
 
+--input_dir /your/path/to/cosn-javacg2_merged.jar-output_javacg2 \
 
 python3 merge_node.py \
 --call_chain_file "output/hadoop/MRAppMaster_main/call_deps.txt" \
@@ -22,3 +22,51 @@ python3 main/auto_run.py \
 --input_dir /home/yxsu/Desktop/cosn-javacg2_merged.jar-output_javacg2 \
 --entry_functions "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:main(java.lang.String[])" \
 --depth 3
+
+
+python3 main/auto_run.py \
+--project_dir hadoop \
+--depth 3 \
+--entry_functions "org.apache.hadoop.hdfs.DataStreamer$ResponseProcessor:run()" \
+"org.apache.hadoop.hdfs.DataStreamer:run()" \
+"org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer:run()" \
+"org.apache.hadoop.hdfs.DFSClient:addLocatedBlocksRefresh(org.apache.hadoop.hdfs.DFSInputStream)" \
+"org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$RedundancyMonitor:run()" \
+"org.apache.hadoop.hdfs.protocol.datatransfer.Receiver:processOp(org.apache.hadoop.hdfs.protocol.datatransfer.Op)" \
+"org.apache.hadoop.hdfs.server.datanode.BlockReceiver:adjustCrcFilePosition()" \
+"org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReport(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs)" \
+"org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks$PendingReconstructionMonitor:run()" \
+"org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlocks(java.lang.String,org.apache.hadoop.hdfs.protocol.Block[],org.apache.hadoop.hdfs.protocol.DatanodeInfo[][],org.apache.hadoop.fs.StorageType[][],java.lang.String[][])" \
+"org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetAsyncDiskService$ReplicaFileDeleteTask:run()"
+
+python3 main/auto_run_ablation_v1.py \
+--project_dir hadoop \
+--depth 3 \
+--entry_functions "org.apache.hadoop.hdfs.DataStreamer$ResponseProcessor:run()" \
+"org.apache.hadoop.hdfs.DataStreamer:run()" \
+"org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer:run()" \
+"org.apache.hadoop.hdfs.DFSClient:addLocatedBlocksRefresh(org.apache.hadoop.hdfs.DFSInputStream)" \
+"org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$RedundancyMonitor:run()" \
+"org.apache.hadoop.hdfs.protocol.datatransfer.Receiver:processOp(org.apache.hadoop.hdfs.protocol.datatransfer.Op)" \
+"org.apache.hadoop.hdfs.server.datanode.BlockReceiver:adjustCrcFilePosition()" \
+"org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReport(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs)" \
+"org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks$PendingReconstructionMonitor:run()" \
+"org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlocks(java.lang.String,org.apache.hadoop.hdfs.protocol.Block[],org.apache.hadoop.hdfs.protocol.DatanodeInfo[][],org.apache.hadoop.fs.StorageType[][],java.lang.String[][])" \
+"org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetAsyncDiskService$ReplicaFileDeleteTask:run()"
+
+
+
+python3 main/auto_run.py \
+--project_dir hadoop \
+--depth 3 \
+--entry_functions "org.apache.hadoop.hdfs.DataStreamer$ResponseProcessor:run()" \
+"org.apache.hadoop.hdfs.DataStreamer:run()" \
+"org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer:run()" \
+"org.apache.hadoop.hdfs.DFSClient:addLocatedBlocksRefresh(org.apache.hadoop.hdfs.DFSInputStream)" \
+"org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$RedundancyMonitor:run()" \
+"org.apache.hadoop.hdfs.protocol.datatransfer.Receiver:processOp(org.apache.hadoop.hdfs.protocol.datatransfer.Op)" \
+"org.apache.hadoop.hdfs.server.datanode.BlockReceiver:adjustCrcFilePosition()" \
+"org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReport(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs)" \
+"org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks$PendingReconstructionMonitor:run()" \
+"org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlocks(java.lang.String,org.apache.hadoop.hdfs.protocol.Block[],org.apache.hadoop.hdfs.protocol.DatanodeInfo[][],org.apache.hadoop.fs.StorageType[][],java.lang.String[][])" \
+"org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetAsyncDiskService$ReplicaFileDeleteTask:run()"

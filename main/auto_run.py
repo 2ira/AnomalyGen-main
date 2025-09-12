@@ -5,6 +5,7 @@ import shutil
 import argparse
 import time
 import signal
+import time
 
 def get_entry_name(entry):
  
@@ -25,7 +26,6 @@ def get_entry_name(entry):
     return simple_entry_name
 
 
-
 def create_output_dirs(project_dir, entry_functions):
     repo_name = os.path.basename(project_dir)
     output_dir = f"output/{repo_name}"
@@ -44,59 +44,6 @@ def create_output_dirs(project_dir, entry_functions):
         entry_dirs[entry] = entry_dir
 
     return output_dir, entry_dirs
-
-
-def store_method_calls_in_db(input_dir):
-    print("store to database...")
-
-    subprocess.run(['python3', 'mysql/import_method_call.py', '--input_file',f"{input_dir}/method_call.txt"])
-
-def run_prune_and_update(output_dir):
-    print("pruning...")
-    subprocess.run(['python3', 'mysql/prune_and_update_db_v2.py', '--output_file', f'{output_dir}/start_nodes.txt'])
-
-def get_global_source_code(project_dir):
-    print("start MethodExtractorGateWay and analyze  code ")
-    subprocess.run(['pkill', '-f', 'com.example.(MethodExtractorGateway|JavaParserServer)'], check=False)
-    time.sleep(2) 
-
-    java_gateway = subprocess.Popen(
-        ['mvn', 'compile', 'exec:java', '-Dexec.mainClass=com.example.MethodExtractorGateway'],
-        cwd='java-parser'
-    )
-    time.sleep(5) 
-
-    try:
-        print("extract all the code ...")
-        subprocess.run(['python3', 'main/get_pruned_node_code.py', '--project_dir',project_dir])
-    finally:
-        java_gateway.send_signal(signal.SIGTERM)
-        java_gateway.wait(timeout=10)
-        print("MethodExtratorGateway ended")
-        time.sleep(3)  
-    
-
-def get_global_cfg(input_file):
-    print("mapping code...")
- 
-    subprocess.run(['pkill', '-f', 'com.example.(MethodExtractorGateway|JavaParserServer)'], check=False)
-    time.sleep(2) 
-   
-    java_server = subprocess.Popen(
-        ['mvn', 'compile', 'exec:java', '-Dexec.mainClass=com.example.JavaParserServer'],
-        cwd='java-parser'
-    )
-    time.sleep(6)  
-
-    try:
-        print("finish all the cfg")
-        subprocess.run(['python3', 'main/get_pruned_node_cfg.py', '--input_file',input_file])
-    finally:
-        #
-        java_server.send_signal(signal.SIGTERM)
-        java_server.wait(timeout=7)
-        print("JavaParserServer ended")
-        time.sleep(3)  
 
 
 def extract_call_deps(entry_functions, output_dir,depth,batch_size=2):
@@ -171,38 +118,72 @@ def merge_results(entry_functions, output_dir):
     for entry in entry_functions:
         simple_entry_name = get_entry_name(entry)
         entry_output_dir = os.path.join(output_dir, simple_entry_name)
-        subprocess.run(['python3', 'main/merge_node.py', '--call_chain_file', f'{entry_output_dir}/pruned_call_deps.txt', '--source_mapping', f'{entry_output_dir}/extracted_methods.json', '--single_log_seq', f'{entry_output_dir}/prune_log_seq_javaparser.json', '--output_dir', entry_output_dir])
+        subprocess.run(['python3', 'main/merge_node.py', '--call_chain_file', f'{entry_output_dir}/pruned_call_deps.txt', '--source_mapping', f'{entry_output_dir}/extracted_methods.json', '--single_call_path', f'{entry_output_dir}/prune_call_path_javaparser.json', '--output_dir', entry_output_dir])
+
+
+def merge_results_without_cot(entry_functions, output_dir):
+    print("Merge results...")
+    for entry in entry_functions:
+        simple_entry_name = get_entry_name(entry)
+        entry_output_dir = os.path.join(output_dir, simple_entry_name)
+        subprocess.run(['python3', 'main/ablation_merge_node.py', '--call_chain_file', f'{entry_output_dir}/pruned_call_deps.txt', '--source_mapping', f'{entry_output_dir}/extracted_methods.json', '--single_call_path', f'{entry_output_dir}/prune_call_path_javaparser.json', '--output_dir', entry_output_dir])
+
+def merge_results_without_static_analysis(entry_functions, output_dir):
+    print("Merge results...")
+    for entry in entry_functions:
+        simple_entry_name = get_entry_name(entry)
+        entry_output_dir = os.path.join(output_dir, simple_entry_name)
+        subprocess.run(['python3', 'main/ablation_merge_node_v2.py', '--call_chain_file', f'{entry_output_dir}/pruned_call_deps.txt', '--source_mapping', f'{entry_output_dir}/extracted_methods.json', '--output_dir', entry_output_dir])
+
+
+def default_process(project_dir,entry_functions, output_dir,depth):
+    extract_call_deps(entry_functions, output_dir,depth)
+    parse_and_match_source_code(entry_functions, output_dir,project_dir)
+    generate_cfg_and_log_seq(entry_functions, output_dir)
+    merge_results(entry_functions, output_dir)
+
 
 def main():
     parser = argparse.ArgumentParser(description="auto process")
     parser.add_argument('--project_dir', type=str, required=True, help="input project dir")
     parser.add_argument('--entry_functions', nargs='+', required=True, help="entries")
     parser.add_argument('--depth', type=int,required=False,default=3, help="depth, default 3")
-    parser.add_argument('--input_dir',type=str,required=True,help="output dir of javacallgraph")
+    # parser.add_argument('--input_dir',type=str,required=True,help="output dir of javacallgraph")
     args = parser.parse_args()
 
   
     project_dir = args.project_dir
     entry_functions = args.entry_functions
     depth = args.depth
-    input_dir = args.input_dir
+    # input_dir = args.input_dir
+
+    start_time = time.time()
 
 
-    output_dir, entry_dirs = create_output_dirs(project_dir, entry_functions)
+    repo_name = os.path.basename(project_dir)
+    output_dir = f"output/{repo_name}"
 
-    # store_method_calls_in_db(input_dir)
-    run_prune_and_update(output_dir)
+    # Create the main output directory
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
-    input_file = "output/extracted_methods.json"
-    #get_global_source_code(project_dir)
-    # get_global_cfg(input_file)
+    need_entry_functions = []
 
-    extract_call_deps(entry_functions, output_dir,depth)
-    parse_and_match_source_code(entry_functions, output_dir,project_dir)
-    generate_cfg_and_log_seq(entry_functions, output_dir)
-    merge_results(entry_functions, output_dir)
-
+    for entry in entry_functions:
+        simple_entry_name = get_entry_name(entry)
+        entry_output_dir = os.path.join(output_dir, simple_entry_name)
+        if not os.path.exists(entry_output_dir):
+            need_entry_functions.append(entry)
+    
+    output_dir, entry_dirs = create_output_dirs(project_dir,need_entry_functions)
+    default_process(project_dir,need_entry_functions, output_dir,depth)
+    
     print("all the task done!")
+
+    end_time = time.time()  
+    print(f"All we address entry function:{len(need_entry_functions)}")
+    print(f"All use time: {end_time - start_time:.2f} seconds.")
+    print(f"average time per entry: {(end_time - start_time)/len(need_entry_functions):.2f} seconds.")
 
 if __name__ == "__main__":
     main()

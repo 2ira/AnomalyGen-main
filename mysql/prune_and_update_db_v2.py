@@ -10,6 +10,7 @@ import json
 import os
 import time
 import argparse
+from mysql.import_method_call import load_db_config
 
 logging.basicConfig(filename="prune_and_update.log",
                     level=logging.INFO,
@@ -18,17 +19,6 @@ logging.basicConfig(filename="prune_and_update.log",
 CHECKPOINT_FILE = "bfs_checkpoint.json"
 CHECKPOINT_INTERVAL = 1000  #address 1000 nodes and save a checkpoint
 
-def load_db_config(config_file='mysql/config.ini'):
-    config = configparser.ConfigParser()
-    config.read(config_file)
-    return {
-        'host': config.get('mysql', 'host'),
-        'port': config.getint('mysql', 'port'),
-        'user': config.get('mysql', 'user'),
-        'password': config.get('mysql', 'password'),
-        'database': config.get('mysql', 'database'),
-        'charset': 'utf8mb4'
-    }
 
 def ensure_log_propagation_column():
     """ make sure log_propagation,if it's not exists,add it  """

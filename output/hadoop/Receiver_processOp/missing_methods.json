@@ -1,0 +1,5 @@
+{
+    "org.apache.hadoop.hdfs.protocol.StripedBlockInfo:<init>(org.apache.hadoop.hdfs.protocol.ExtendedBlock,org.apache.hadoop.hdfs.protocol.DatanodeInfo[],org.apache.hadoop.security.token.Token[],byte[],org.apache.hadoop.hdfs.protocol.ErasureCodingPolicy)": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/StripedBlockInfo.java"
+    }
+}

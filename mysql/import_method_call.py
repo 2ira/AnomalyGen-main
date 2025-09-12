@@ -2,9 +2,12 @@ import mysql.connector
 import configparser
 import re
 import argparse
+import os
 
 def load_db_config(config_file='mysql/config.ini'):
     config = configparser.ConfigParser()
+    if not os.path.exists(config_file):
+        raise FileNotFoundError(f"Config file {config_file} not found.")
     config.read(config_file)
     db_conf = {
         'host': config.get('mysql', 'host'),

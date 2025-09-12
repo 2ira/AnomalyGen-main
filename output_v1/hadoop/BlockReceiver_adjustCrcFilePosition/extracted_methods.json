@@ -1,0 +1,14 @@
+{
+    "org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl:adjustCrcChannelPosition(org.apache.hadoop.hdfs.protocol.ExtendedBlock,org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams,int)": {
+        "source_code": "/**\n * Sets the offset in the meta file so that the\n * last checksum will be overwritten.\n */\n// FsDatasetSpi\n@Override\npublic void adjustCrcChannelPosition(ExtendedBlock b, ReplicaOutputStreams streams, int checksumSize) throws IOException {\n    FileOutputStream file = (FileOutputStream) streams.getChecksumOut();\n    FileChannel channel = file.getChannel();\n    long oldPos = channel.position();\n    long newPos = oldPos - checksumSize;\n    if (LOG.isDebugEnabled()) {\n        LOG.debug(\"Changing meta file offset of block \" + b + \" from \" + oldPos + \" to \" + newPos);\n    }\n    channel.position(newPos);\n}",
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/FsDatasetImpl.java"
+    },
+    "org.apache.hadoop.hdfs.server.datanode.BlockReceiver:adjustCrcFilePosition()": {
+        "source_code": "/**\n * Adjust the file pointer in the local meta file so that the last checksum\n * will be overwritten.\n */\nprivate void adjustCrcFilePosition() throws IOException {\n    streams.flushDataOut();\n    if (checksumOut != null) {\n        checksumOut.flush();\n    }\n    // rollback the position of the meta file\n    datanode.data.adjustCrcChannelPosition(block, streams, checksumSize);\n}",
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BlockReceiver.java"
+    },
+    "org.apache.hadoop.hdfs.server.datanode.fsdataset.FsDatasetSpi:adjustCrcChannelPosition(org.apache.hadoop.hdfs.protocol.ExtendedBlock,org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams,int)": {
+        "source_code": "/**\n * Sets the file pointer of the checksum stream so that the last checksum\n * will be overwritten\n * @param b block\n * @param outs The streams for the data file and checksum file\n * @param checksumSize number of bytes each checksum has\n * @throws IOException\n */\nvoid adjustCrcChannelPosition(ExtendedBlock b, ReplicaOutputStreams outs, int checksumSize) throws IOException;",
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/FsDatasetSpi.java"
+    }
+}

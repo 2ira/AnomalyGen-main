@@ -1,0 +1,5 @@
+{
+    "org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer:<init>(org.apache.hadoop.hdfs.server.datanode.DataNode,org.apache.hadoop.hdfs.protocol.DatanodeInfo[],org.apache.hadoop.fs.StorageType[],java.lang.String[],org.apache.hadoop.hdfs.protocol.ExtendedBlock,org.apache.hadoop.hdfs.protocol.datatransfer.BlockConstructionStage,java.lang.String)": {
+        "file_path": "hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/DataNode.java"
+    }
+}

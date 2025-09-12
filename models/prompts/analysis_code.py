@@ -1,7 +1,7 @@
 import os
 
 def get_java_parser_with_llm(source_code):
-    return f"""
+    yield f"""
     You are an expert in code analysis, complete the following tasks based on the Java code snippet given below:
     1. Control Flow Analysis
         Parse all control flow structures in the code, including but not limited to:
@@ -60,7 +60,7 @@ You should return like below:
 ```
 
 
-The format template for the scope is:
+The format template for the scope must be :
 ```xml
 <elements>
     NODE_kind = {{"kind_num":"content or condition",....}}

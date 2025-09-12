@@ -1,10 +1,11 @@
 {
     "openai": {
-        "api_key":"...",
-        "base_url":"...",
-        "default_model":"...",
+        "api_key":"sk-F5nvXCAAkijuGkHv1eA093Bd8d2a48Ce9fB6Aa63A41dCf32",
+        "base_url":"https://openkey.cloud/v1",
+        "default_model":"gpt-4o",
         "temperature": 0,
-        "max_tokens": 8000,
-        "batch_size": 1
+        "max_tokens": 16000,
+        "batch_size": 1,
+        "max_retries": 3
     }
 }

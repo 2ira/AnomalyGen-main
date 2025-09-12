@@ -1,0 +1,3 @@
+the entry function is {'org.apache.hadoop.hdfs.DataStreamer:run()'}
+all call times 59
+all cost token is 249823
