@@ -1,0 +1,6 @@
+{
+    "org.apache.zookeeper.server.ZooKeeperServer:truncateLog(long)": {
+        "source_code": "/**\n * truncate the log to get in sync with others\n * if in a quorum\n * @param zxid the zxid that it needs to get in sync\n * with others\n * @throws IOException\n */\npublic void truncateLog(long zxid) throws IOException {\n    this.zkDb.truncateLog(zxid);\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java"
+    }
+}

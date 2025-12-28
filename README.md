@@ -132,6 +132,8 @@ cd ..
 cd main
 python main/auto_callgraph_config.py --project_dir your_project_dir
 
+python main/
+
 # Example
 python main/auto_callgraph_config.py --project_dir hadoop(in the main directory )
 ```
@@ -162,14 +164,14 @@ Set the entry function and the maximum call depth for the analysis. It is recomm
 
 There are some other examples in main/run_examples.txt
 
-First, store call paths in the database:
-
+store->
 ```bash
-python3 main/auto_prepare.py \
---input_dir /your/path/to/cosn-javacg2_merged.jar-output_javacg2
+python3 main/path_store_and_prune.py \
+--project_dir zookeeper \
+--input_dir zookeeper/zookeeper-javacg2_merged.jar-output_javacg2/
 ```
 
-Second, prune->analyze->merge and generate your interested log sequences.
+prune->analyze->merge and generate your interested log sequences.
 (Pruning from a large graph costs time , please be patient)
 
 ```bash
@@ -178,6 +180,18 @@ python3 main/auto_run.py \
 --input_dir /your/path/to/cosn-javacg2_merged.jar-output_javacg2 \
 --entry_functions "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:main(java.lang.String[])" \
 --depth 3
+
+### For examples:
+
+python3 main/auto_run.py \
+--project_dir zookeeper \
+--entry_functions "org.apache.zookeeper.ClientCnxn$EventThread:processEvent(java.lang.Object)" \
+--depth 5
+
+python3 main/auto_run.py \
+--project_dir zookeeper \
+--entry_functions "org.apache.zookeeper.server.SyncRequestProcessor$1:run()" \
+--depth 5
 ```
 
 **Important:** 
@@ -186,3 +200,9 @@ If you have any questions about running the code, please feel free to email me.
 
 ## Conclusion
 By following the steps outlined above, you will set up the environment and configure the necessary components to run AnomalyGen. The project integrates multiple tools and technologies to generate detailed call graphs and log analysis results, making it a powerful tool for software analysis and anomaly detection.
+
+zookeeper version: 上游 ZooKeeper 版本：3.4.5 -> 对应 jar包；
+python3 main/auto_prepare.py \
+--input_dir ../zookeeper/zookeeper-javacg2_merged.jar-output_javacg2/
+
+export PYTHONPATH=$PYTHONPATH:~/AnomalyGen-main

@@ -1,0 +1,8 @@
+{
+    "org.apache.zookeeper.Login:<init>(java.lang.String,javax.security.auth.callback.CallbackHandler)": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/Login.java"
+    },
+    "org.apache.zookeeper.server.NIOServerCnxnFactory:configureSaslLogin()": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxnFactory.java"
+    }
+}

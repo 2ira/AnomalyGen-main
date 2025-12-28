@@ -1,0 +1,3 @@
+org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:startup()->org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:startup(), depth 1
+org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:startup()->org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:startup(), depth 2
+org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:startup()->org.apache.zookeeper.server.ZooKeeperServer:startup(), depth 3

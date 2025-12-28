@@ -1,0 +1,11 @@
+{
+    "org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:shutdown()": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java"
+    },
+    "org.apache.zookeeper.jmx.MBeanRegistry:unregisterAll()": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/MBeanRegistry.java"
+    },
+    "org.apache.zookeeper.jmx.ZKMBeanInfo:getClass()": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/ZKMBeanInfo.java"
+    }
+}

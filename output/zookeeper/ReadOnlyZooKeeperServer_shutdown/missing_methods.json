@@ -1,0 +1,8 @@
+{
+    "org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:shutdown()": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java"
+    },
+    "org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:shutdown()": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumZooKeeperServer.java"
+    }
+}

@@ -5,7 +5,7 @@ import shutil
 import argparse
 import time
 import signal
-import time
+import socket
 
 def get_entry_name(entry):
  
@@ -65,28 +65,57 @@ def extract_call_deps(entry_functions, output_dir,depth,batch_size=2):
         print(f" {i // batch_size + 1} finish ,waiting")
         time.sleep(3)  
 
+def wait_for_port(port, host='127.0.0.1', timeout=60):
+    """waiting for the port to be open"""
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            result = sock.connect_ex((host, port))
+            if result == 0:
+                print(f"Java Gateway is ready on port {port}")
+                return True
+        time.sleep(1)
+        print("Waiting for Java Gateway to start...")
+    return False
 
 def parse_and_match_source_code(entry_functions, output_dir,project_dir):
     print("Starting MethodExtractorGateWay")
     subprocess.run(['pkill', '-f', 'com.example.(MethodExtractorGateway|JavaParserServer)'], check=False)
     time.sleep(2)  
 
+    # 1. 创建日志文件，用来查看 Java 端的报错
+    java_log_file = open("java_gateway_debug.log", "w")
+
+    # 2. 启动 Java Gateway，并重定向输出到日志文件
     java_gateway = subprocess.Popen(
-        ['mvn', 'compile', 'exec:java', '-Dexec.mainClass=com.example.MethodExtractorGateway'],
-        cwd='java-parser'
+        ['mvn', 'exec:java', '-Dexec.mainClass=com.example.MethodExtractorGateway'],
+        cwd='java-parser',
+        stdout=java_log_file, # 关键：把标准输出写入文件
+        stderr=java_log_file  # 关键：把错误输出写入文件
     )
     time.sleep(5)  
 
     try:
+        if not wait_for_port(25333):
+            print("Error: Java Gateway failed to start in 60 seconds.")
+            print("Please check 'java_gateway_debug.log' for details.")
+            return # exit 
+
         for entry in entry_functions:
             simple_entry_name = get_entry_name(entry)
             entry_output_dir = os.path.join(output_dir, simple_entry_name)
+            print(f"Processing source code matching for entry: {entry}")
             subprocess.run(['python3', 'main/match_source_code_v2.py', '--call_chain_file', f'{entry_output_dir}/pruned_call_deps.txt','--project_dir',project_dir,'--output_dir', entry_output_dir])
     finally:
-        java_gateway.send_signal(signal.SIGTERM)
-        java_gateway.wait(timeout=5)
-        print("MethodExtratorGateway is Closed")
-        time.sleep(3)  
+        if java_gateway:
+            java_gateway.terminate()
+            try:
+                java_gateway.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                java_gateway.kill()
+        if java_log_file:
+            java_log_file.close()
+        print("MethodExtractorGateway Closed")
         
 
 def generate_cfg_and_log_seq(entry_functions, output_dir):
@@ -183,7 +212,10 @@ def main():
     end_time = time.time()  
     print(f"All we address entry function:{len(need_entry_functions)}")
     print(f"All use time: {end_time - start_time:.2f} seconds.")
-    print(f"average time per entry: {(end_time - start_time)/len(need_entry_functions):.2f} seconds.")
-
+    if len(need_entry_functions) > 0:
+        print(f"average time per entry: {(end_time - start_time)/len(need_entry_functions):.2f} seconds.")
+    else:
+        print("No new entry functions were processed, so average time per entry is not calculated.")
+    
 if __name__ == "__main__":
     main()

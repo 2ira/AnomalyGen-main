@@ -1,0 +1,1 @@
+org.apache.zookeeper.server.ZooKeeperServerMain:<clinit>()->org.slf4j.LoggerFactory:getLogger(java.lang.Class), depth 1

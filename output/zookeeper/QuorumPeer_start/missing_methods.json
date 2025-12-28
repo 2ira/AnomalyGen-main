@@ -1,0 +1,5 @@
+{
+    "org.apache.zookeeper.jmx.MBeanRegistry:unregisterAll()": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/MBeanRegistry.java"
+    }
+}

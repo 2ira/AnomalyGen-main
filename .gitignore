@@ -16,3 +16,5 @@ output/hadoop/cosn-javacg2_merged.jar-output_javacg2/*
 # ((venv) ) (base) lixinyu.222@n199-207-253:~/AnomalyGen$ git lfs track "*.txt"
 # Tracking "*.txt"
 # ((venv) ) (base) lixinyu.222@n199-207-253:~/AnomalyGen$ git lfs track
+
+zookeeper/*

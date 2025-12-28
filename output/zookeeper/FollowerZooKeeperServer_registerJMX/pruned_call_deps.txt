@@ -1,0 +1,9 @@
+org.apache.zookeeper.server.quorum.FollowerZooKeeperServer:registerJMX()->org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:registerJMX(), depth 1
+org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:registerJMX()->org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo), depth 2
+org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:registerJMX()->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 2
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->java.lang.AssertionError:<init>(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->java.lang.AssertionError:<init>(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.ZKMBeanInfo:getName(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.ZKMBeanInfo:isHidden(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.ZKMBeanInfo:getName(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->org.slf4j.Logger:warn(java.lang.String), depth 3

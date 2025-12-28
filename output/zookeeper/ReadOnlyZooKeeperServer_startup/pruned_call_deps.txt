@@ -1,0 +1,11 @@
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:startup()->org.slf4j.Logger:warn(java.lang.String), depth 1
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:startup()->org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:registerJMX(org.apache.zookeeper.server.ZooKeeperServerBean,org.apache.zookeeper.server.quorum.LocalPeerBean), depth 1
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:startup()->org.slf4j.Logger:info(java.lang.String), depth 1
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:registerJMX(org.apache.zookeeper.server.ZooKeeperServerBean,org.apache.zookeeper.server.quorum.LocalPeerBean)->org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo), depth 2
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:registerJMX(org.apache.zookeeper.server.ZooKeeperServerBean,org.apache.zookeeper.server.quorum.LocalPeerBean)->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 2
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->java.lang.AssertionError:<init>(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->java.lang.AssertionError:<init>(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.ZKMBeanInfo:getName(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.ZKMBeanInfo:isHidden(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.ZKMBeanInfo:getName(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)->org.slf4j.Logger:warn(java.lang.String), depth 3

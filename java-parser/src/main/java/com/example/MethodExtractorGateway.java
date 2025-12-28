@@ -48,7 +48,7 @@ public class MethodExtractorGateway {
                     // 处理普通方法
                     for (MethodDeclaration method : classDecl.getMethods()) {
                         String extractedSignature = method.getSignature().asString();
-                        String normExtracted = normalizeSignature(method.getNameAsString() + extractedSignature);
+                        String normExtracted = normalizeSignature(extractedSignature);
                         if (method.getNameAsString().equals(methodName)) {
                             fallbackMethodCode = method.toString();
                             if (normExtracted.equals(expectedNormalized)) {
@@ -61,9 +61,9 @@ public class MethodExtractorGateway {
 
                     if ("<init>".equals(methodName)) {
                         for (ConstructorDeclaration constructor : classDecl.getConstructors()) {
-                            String extractedSignature = constructor.getSignature().asString();
-                            String constructorSignature = "<init>" + extractedSignature;
-                            String normExtracted = normalizeSignature(constructorSignature);
+                            String extractedSignature = constructor.getSignature().asString(); // "ErrorResult(int)"
+                            String paramsOnly = extractedSignature.substring(extractedSignature.indexOf('(')); // "(int)"
+                            String normExtracted = normalizeSignature("<init>" + paramsOnly);  // "<init>(int)"
                             if (normExtracted.equals(expectedNormalized)) {
                                 methodCode = constructor.toString();
                                 return;

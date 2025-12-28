@@ -1,5 +1,8 @@
 export PYTHONPATH="${PYTHONPATH}:.../AnomalyGen"
 
+export PYTHONPATH=$PYTHONPATH:~/AnomalyGen-main/main
+
+
 python3 main/auto_prepare.py \
 --input_dir /home/yxsu/Desktop/cosn-javacg2_merged.jar-output_javacg2
 
@@ -70,3 +73,77 @@ python3 main/auto_run.py \
 "org.apache.hadoop.hdfs.server.blockmanagement.PendingReconstructionBlocks$PendingReconstructionMonitor:run()" \
 "org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlocks(java.lang.String,org.apache.hadoop.hdfs.protocol.Block[],org.apache.hadoop.hdfs.protocol.DatanodeInfo[][],org.apache.hadoop.fs.StorageType[][],java.lang.String[][])" \
 "org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetAsyncDiskService$ReplicaFileDeleteTask:run()"
+
+python3 main/auto_run.py \
+--project_dir zookeeper \
+--entry_functions "org.apache.zookeeper.server.quorum.QuorumPeerConfig:<init>()" \
+"org.apache.zookeeper.server.quorum.QuorumPeerConfig:parse(java.lang.String)" \
+"org.apache.zookeeper.server.quorum.QuorumPeerConfig:parseProperties(java.util.Properties)" \
+"org.apache.zookeeper.server.quorum.QuorumPeerMain:runFromConfig(org.apache.zookeeper.server.quorum.QuorumPeerConfig)" \
+"org.apache.zookeeper.server.quorum.QuorumPeerConfig:parseProperties(java.util.Properties)" \
+"org.apache.zookeeper.server.quorum.QuorumPeer:run()" \
+"org.apache.zookeeper.server.quorum.QuorumPeerMain:main(java.lang.String[])" \
+"org.apache.zookeeper.server.quorum.QuorumPeer:startLeaderElection()" \
+"org.apache.zookeeper.server.quorum.QuorumPeer:start()" \
+--depth 3
+
+
+python3 main/auto_run.py \
+--project_dir zookeeper \
+--entry_functions "org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:run()" \
+"org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:halt()" \
+"org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker:run()" \
+"org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker:<init>(org.apache.zookeeper.server.quorum.QuorumCnxManager,java.net.Socket,java.lang.Long,org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker)" \
+"org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:send(java.nio.ByteBuffer)" \
+"org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:run()" \
+"org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker:start()" \
+--depth 3
+
+
+python3 main/auto_run.py \
+--project_dir zookeeper \
+--entry_functions "org.apache.zookeeper.server.NIOServerCnxnFactory:run()" \
+"org.apache.zookeeper.server.NIOServerCnxnFactory:join()" \
+"org.apache.zookeeper.server.NIOServerCnxn:sendBuffer(java.nio.ByteBuffer)" \
+"org.apache.zookeeper.server.NIOServerCnxn:readPayload()" \
+"org.apache.zookeeper.server.NIOServerCnxn:doIO(java.nio.channels.SelectionKey)" \
+"org.apache.zookeeper.server.NIOServerCnxn:close()" \
+"org.apache.zookeeper.server.NIOServerCnxn:checkFourLetterWord(java.nio.channels.SelectionKey,int)" \
+--depth 3
+
+python3 main/auto_run.py \
+--project_dir zookeeper \
+--entry_functions "org.apache.zookeeper.server.NIOServerCnxn$DumpCommand:run()" \
+"org.apache.zookeeper.server.NIOServerCnxn$MonitorCommand:run()" \
+"org.apache.zookeeper.server.NIOServerCnxn$RuokCommand:run()" \
+"org.apache.zookeeper.server.NIOServerCnxn$CommandThread:commandRun()" \
+"org.apache.zookeeper.server.NIOServerCnxnFactory:registerConnection(org.apache.zookeeper.server.ServerCnxn)" \
+"org.apache.zookeeper.server.NIOServerCnxnFactory:configure(java.net.InetSocketAddress,int)" \
+"org.apache.zookeeper.server.NIOServerCnxnFactory:unregisterConnection(org.apache.zookeeper.server.ServerCnxn)" \
+--depth 3
+
+python3 main/auto_run.py \
+--project_dir zookeeper \
+--entry_functions "org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:dumpConf(java.io.PrintWriter)" \
+"org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:startup()" \
+"org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:unregisterJMX()" \
+"org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:shutdown()" \
+"org.apache.zookeeper.server.ZooKeeperServer$DataTreeBuilder:build()" \
+--depth 3
+
+python3 main/auto_run.py \
+--project_dir zookeeper \
+--entry_functions "org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:reopenSession(org.apache.zookeeper.server.ServerCnxn,long,byte[],int)" \
+"org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:takeSnapshot()" \
+"org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:closeSession(org.apache.zookeeper.server.ServerCnxn,org.apache.zookeeper.proto.RequestHeader)" \
+"org.apache.zookeeper.server.NettyServerCnxn$TraceMaskCommand:run()" \
+"org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:truncateLog(long)" \
+"org.apache.zookeeper.server.quorum.FollowerZooKeeperServer:loadData()" \
+"org.apache.zookeeper.server.quorum.FollowerZooKeeperServer:registerJMX()" \
+"org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:startdata()" \
+"org.apache.zookeeper.server.ZooKeeperServerMain:<clinit>()" \
+"org.apache.zookeeper.server.quorum.LeaderZooKeeperServer:expire(org.apache.zookeeper.server.SessionTracker$Session)" \
+"org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:startup()" \
+"org.apache.zookeeper.server.quorum.FollowerZooKeeperServer:processTxn(org.apache.zookeeper.txn.TxnHeader,org.apache.jute.Record)" \
+--depth 3
+

@@ -7,7 +7,8 @@ sudo apt-get install -y \
     python3-venv \
     python3-distutils \
     mariadb-server \
-    mariadb-client
+    mariadb-client \
+    maven
 
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
@@ -27,7 +28,7 @@ pyenv install 3.10.12
 pyenv local 3.10.12
 
 # build Python virtual environment
-python -m venv main/venv
+python -m venv venv
 source venv/bin/activate
 
 # install build tools for Python packages
@@ -74,6 +75,6 @@ CREATE TABLE ${DB_NAME}.${TABLE_NAME} (
 SQL
 
 
-pip install openai==0.28 tiktoken py4j logparser3
+pip install openai tiktoken py4j logparser3
 
 # if tiktoken is not installed, install it:pip install tiktoken -i https://pypi.org/simple --no-cache-dir

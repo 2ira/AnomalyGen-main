@@ -1,0 +1,9 @@
+{
+  "org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:unregisterJMX(org.apache.zookeeper.server.ZooKeeperServer)": "['ENTRY -> TRY -> IF_TRUE: jmxServerBean != null -> CALL: MBeanRegistry.getInstance().unregister -> EXIT', 'ENTRY -> TRY -> IF_FALSE: jmxServerBean != null -> EXIT']",
+  "org.apache.zookeeper.jmx.ZKMBeanInfo:getName()": "/**\n * @return a string identifying the MBean\n */\nString getName();",
+  "org.apache.zookeeper.server.ServerCnxnFactory:closeAll()": "public abstract void closeAll(ServerCnxn.DisconnectReason reason);",
+  "org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)": "['ENTRY -> IF_TRUE: bean == null -> RETURN -> EXIT', 'ENTRY -> IF_FALSE: bean == null -> TRY -> CALL: unregister -> EXCEPTION: unregister -> CATCH: JMException e -> LOG: LOG.WARN: Error during unregister of [{}], bean.getName(), e -> EXIT', 'ENTRY -> IF_FALSE: bean == null -> TRY -> CALL: unregister -> EXCEPTION: unregister -> CATCH: Throwable t -> LOG: LOG.ERROR: Unexpected exception during unregister of [{}]. It should be reviewed and fixed., bean.getName(), t -> EXIT', 'ENTRY -> IF_FALSE: bean == null -> TRY -> CALL: unregister -> EXIT']",
+  "org.apache.zookeeper.server.NIOServerCnxnFactory:closeAll()": "['ENTRY -> FOREACH: cnxns -> FOREACH_EXIT -> EXIT']",
+  "org.apache.zookeeper.server.NettyServerCnxnFactory:closeAll()": "['ENTRY -> LOG: LOG.DEBUG: closeAll() -> FOREACH: cnxns -> FOREACH_EXIT -> LOG: LOG.DEBUG: allChannels size: {} cnxns size: {}, allChannels.size(), length -> EXIT']",
+  "org.apache.zookeeper.server.ZooKeeperServer:shutdown()": "['ENTRY -> CALL: shutdown -> EXIT']"
+}

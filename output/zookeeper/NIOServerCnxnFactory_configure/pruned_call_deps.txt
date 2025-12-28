@@ -1,0 +1,9 @@
+org.apache.zookeeper.server.NIOServerCnxnFactory:configure(java.net.InetSocketAddress,int)->org.apache.zookeeper.server.NIOServerCnxnFactory:configureSaslLogin(), depth 1
+org.apache.zookeeper.server.NIOServerCnxnFactory:configure(java.net.InetSocketAddress,int)->org.slf4j.Logger:info(java.lang.String), depth 1
+org.apache.zookeeper.server.NIOServerCnxnFactory:configureSaslLogin()->org.apache.zookeeper.server.ServerCnxnFactory:configureSaslLogin(), depth 2
+org.apache.zookeeper.server.ServerCnxnFactory:configureSaslLogin()->javax.security.auth.login.Configuration:getConfiguration(), depth 3
+org.apache.zookeeper.server.ServerCnxnFactory:configureSaslLogin()->javax.security.auth.login.Configuration:getAppConfigurationEntry(java.lang.String), depth 3
+org.apache.zookeeper.server.ServerCnxnFactory:configureSaslLogin()->org.slf4j.Logger:error(java.lang.String), depth 3
+org.apache.zookeeper.server.ServerCnxnFactory:configureSaslLogin()->javax.security.auth.login.Configuration:getConfiguration(), depth 3
+org.apache.zookeeper.server.ServerCnxnFactory:configureSaslLogin()->org.apache.zookeeper.Login:<init>(java.lang.String,javax.security.auth.callback.CallbackHandler), depth 3
+org.apache.zookeeper.server.ServerCnxnFactory:configureSaslLogin()->org.apache.zookeeper.Login:startThreadIfNeeded(), depth 3

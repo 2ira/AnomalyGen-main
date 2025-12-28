@@ -1,0 +1,10 @@
+{
+    "org.apache.zookeeper.server.NIOServerCnxn:closeSock()": {
+        "source_code": "/**\n * Close resources associated with the sock of this cnxn.\n */\nprivate void closeSock() {\n    if (!sock.isOpen()) {\n        return;\n    }\n    String logMsg = String.format(\"Closed socket connection for client %s %s\", sock.socket().getRemoteSocketAddress(), sessionId != 0 ? \"which had sessionid 0x\" + Long.toHexString(sessionId) : \"(no session established for client)\");\n    LOG.debug(logMsg);\n    closeSock(sock);\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxn.java"
+    },
+    "org.apache.zookeeper.server.NIOServerCnxn:close()": {
+        "source_code": "private void close() {\n    setStale();\n    if (!factory.removeCnxn(this)) {\n        return;\n    }\n    if (zkServer != null) {\n        zkServer.removeCnxn(this);\n    }\n    if (sk != null) {\n        try {\n            // need to cancel this selection key from the selector\n            sk.cancel();\n        } catch (Exception e) {\n            LOG.debug(\"ignoring exception during selectionkey cancel\", e);\n        }\n    }\n    closeSock();\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxn.java"
+    }
+}

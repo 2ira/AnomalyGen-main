@@ -1,0 +1,12 @@
+org.apache.zookeeper.server.NIOServerCnxn:close()->org.apache.zookeeper.server.NIOServerCnxn:closeSock(), depth 1
+org.apache.zookeeper.server.NIOServerCnxn:close()->org.slf4j.Logger:isDebugEnabled(), depth 1
+org.apache.zookeeper.server.NIOServerCnxn:close()->org.slf4j.Logger:debug(java.lang.String,java.lang.Throwable), depth 1
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:info(java.lang.String), depth 2
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:isDebugEnabled(), depth 2
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:debug(java.lang.String,java.lang.Throwable), depth 2
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:isDebugEnabled(), depth 2
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:debug(java.lang.String,java.lang.Throwable), depth 2
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:isDebugEnabled(), depth 2
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:debug(java.lang.String,java.lang.Throwable), depth 2
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:isDebugEnabled(), depth 2
+org.apache.zookeeper.server.NIOServerCnxn:closeSock()->org.slf4j.Logger:debug(java.lang.String,java.lang.Throwable), depth 2

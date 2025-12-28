@@ -1,0 +1,3 @@
+{
+  "org.apache.zookeeper.server.ZooKeeperServer:truncateLog(long)": "['ENTRY -> CALL: this.zkDb.truncateLog -> EXIT']"
+}

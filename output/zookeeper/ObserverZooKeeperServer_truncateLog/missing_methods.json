@@ -1,0 +1,11 @@
+{
+    "org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:truncateLog(long)": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/ObserverZooKeeperServer.java"
+    },
+    "org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:truncateLog(long)": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumZooKeeperServer.java"
+    },
+    "org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:truncateLog(long)": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "org.apache.zookeeper.jmx.ZKMBeanInfo:getName()": {
+        "source_code": "/**\n * @return a string identifying the MBean\n */\nString getName();",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/ZKMBeanInfo.java"
+    },
+    "org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:registerJMX()": {
+        "source_code": "@Override\nprotected void registerJMX() {\n    // register with JMX\n    try {\n        jmxDataTreeBean = new DataTreeBean(getZKDatabase().getDataTree());\n        MBeanRegistry.getInstance().register(jmxDataTreeBean, jmxServerBean);\n    } catch (Exception e) {\n        LOG.warn(\"Failed to register with JMX\", e);\n        jmxDataTreeBean = null;\n    }\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java"
+    },
+    "org.apache.zookeeper.jmx.ZKMBeanInfo:isHidden()": {
+        "source_code": "/**\n * If isHidden returns true, the MBean won't be registered with MBean server,\n * and thus won't be available for management tools. Used for grouping MBeans.\n * @return true if the MBean is hidden.\n */\nboolean isHidden();",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/ZKMBeanInfo.java"
+    },
+    "org.apache.zookeeper.server.quorum.FollowerZooKeeperServer:registerJMX()": {
+        "source_code": "boolean registerJMX(LearnerHandlerBean handlerBean) {\n    try {\n        MBeanRegistry.getInstance().register(handlerBean, jmxServerBean);\n        return true;\n    } catch (JMException e) {\n        LOG.warn(\"Could not register connection\", e);\n    }\n    return false;\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java"
+    },
+    "org.apache.zookeeper.jmx.MBeanRegistry:register(org.apache.zookeeper.jmx.ZKMBeanInfo,org.apache.zookeeper.jmx.ZKMBeanInfo)": {
+        "source_code": "/**\n * Registers a new MBean with the platform MBean server.\n * @param bean the bean being registered\n * @param parent if not null, the new bean will be registered as a child\n * node of this parent.\n */\npublic void register(ZKMBeanInfo bean, ZKMBeanInfo parent) throws JMException {\n    assert bean != null;\n    String path = null;\n    if (parent != null) {\n        path = mapBean2Path.get(parent);\n        assert path != null;\n    }\n    path = makeFullPath(path, parent);\n    if (bean.isHidden()) {\n        return;\n    }\n    ObjectName oname = makeObjectName(path, bean);\n    try {\n        synchronized (LOCK) {\n            mBeanServer.registerMBean(bean, oname);\n            mapBean2Path.put(bean, path);\n        }\n    } catch (JMException e) {\n        LOG.warn(\"Failed to register MBean {}\", bean.getName());\n        throw e;\n    }\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/MBeanRegistry.java"
+    }
+}

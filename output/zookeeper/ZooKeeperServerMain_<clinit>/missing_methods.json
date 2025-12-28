@@ -1,0 +1,5 @@
+{
+    "org.apache.zookeeper.server.ZooKeeperServerMain:<clinit>()": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServerMain.java"
+    }
+}

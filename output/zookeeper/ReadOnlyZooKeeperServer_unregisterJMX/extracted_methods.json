@@ -1,0 +1,22 @@
+{
+    "org.apache.zookeeper.jmx.MBeanRegistry:unregister(java.lang.String,org.apache.zookeeper.jmx.ZKMBeanInfo)": {
+        "source_code": "/**\n * Unregister the MBean identified by the path.\n * @param path\n * @param bean\n */\nprivate void unregister(String path, ZKMBeanInfo bean) throws JMException {\n    if (path == null) {\n        return;\n    }\n    if (!bean.isHidden()) {\n        final ObjectName objName = makeObjectName(path, bean);\n        LOG.debug(\"Unregister MBean [{}]\", objName);\n        synchronized (LOCK) {\n            mBeanServer.unregisterMBean(objName);\n        }\n    }\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/MBeanRegistry.java"
+    },
+    "org.apache.zookeeper.jmx.ZKMBeanInfo:isHidden()": {
+        "source_code": "/**\n * If isHidden returns true, the MBean won't be registered with MBean server,\n * and thus won't be available for management tools. Used for grouping MBeans.\n * @return true if the MBean is hidden.\n */\nboolean isHidden();",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/ZKMBeanInfo.java"
+    },
+    "org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:unregisterJMX()": {
+        "source_code": "@Override\nprotected void unregisterJMX() {\n    // unregister from JMX\n    try {\n        if (jmxDataTreeBean != null) {\n            MBeanRegistry.getInstance().unregister(jmxDataTreeBean);\n        }\n    } catch (Exception e) {\n        LOG.warn(\"Failed to unregister with JMX\", e);\n    }\n    jmxDataTreeBean = null;\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java"
+    },
+    "org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)": {
+        "source_code": "/**\n * Unregister MBean.\n * @param bean\n */\npublic void unregister(ZKMBeanInfo bean) {\n    if (bean == null) {\n        return;\n    }\n    String path = mapBean2Path.remove(bean);\n    try {\n        unregister(path, bean);\n    } catch (JMException e) {\n        LOG.warn(\"Error during unregister of [{}]\", bean.getName(), e);\n    } catch (Throwable t) {\n        LOG.error(\"Unexpected exception during unregister of [{}]. It should be reviewed and fixed.\", bean.getName(), t);\n    }\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/MBeanRegistry.java"
+    },
+    "org.apache.zookeeper.jmx.ZKMBeanInfo:getName()": {
+        "source_code": "/**\n * @return a string identifying the MBean\n */\nString getName();",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/ZKMBeanInfo.java"
+    }
+}

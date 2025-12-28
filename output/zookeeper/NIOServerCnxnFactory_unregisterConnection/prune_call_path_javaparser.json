@@ -1,0 +1,5 @@
+{
+  "org.apache.zookeeper.server.ServerCnxnFactory:unregisterConnection(org.apache.zookeeper.server.ServerCnxn)": "['ENTRY -> IF_TRUE: jmxConnectionBean != null -> CALL: MBeanRegistry.getInstance().unregister -> EXIT', 'ENTRY -> IF_FALSE: jmxConnectionBean != null -> EXIT']",
+  "org.apache.zookeeper.jmx.ZKMBeanInfo:getName()": "/**\n * @return a string identifying the MBean\n */\nString getName();",
+  "org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)": "['ENTRY -> IF_TRUE: bean == null -> RETURN -> EXIT', 'ENTRY -> IF_FALSE: bean == null -> TRY -> CALL: unregister -> EXCEPTION: unregister -> CATCH: JMException e -> LOG: LOG.WARN: Error during unregister of [{}], bean.getName(), e -> EXIT', 'ENTRY -> IF_FALSE: bean == null -> TRY -> CALL: unregister -> EXCEPTION: unregister -> CATCH: Throwable t -> LOG: LOG.ERROR: Unexpected exception during unregister of [{}]. It should be reviewed and fixed., bean.getName(), t -> EXIT', 'ENTRY -> IF_FALSE: bean == null -> TRY -> CALL: unregister -> EXIT']"
+}

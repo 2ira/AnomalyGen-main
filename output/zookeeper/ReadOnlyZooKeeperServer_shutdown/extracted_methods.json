@@ -1,0 +1,30 @@
+{
+    "org.apache.zookeeper.server.NIOServerCnxnFactory:closeAll()": {
+        "source_code": "/**\n * clear all the connections in the selector\n */\n@Override\n@SuppressWarnings(\"unchecked\")\npublic void closeAll(ServerCnxn.DisconnectReason reason) {\n    // clear all the connections on which we are selecting\n    for (ServerCnxn cnxn : cnxns) {\n        try {\n            // This will remove the cnxn from cnxns\n            cnxn.close(reason);\n        } catch (Exception e) {\n            LOG.warn(\"Ignoring exception closing cnxn session id 0x{}\", Long.toHexString(cnxn.getSessionId()), e);\n        }\n    }\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxnFactory.java"
+    },
+    "org.apache.zookeeper.server.NettyServerCnxnFactory:closeAll()": {
+        "source_code": "@Override\npublic void closeAll(ServerCnxn.DisconnectReason reason) {\n    LOG.debug(\"closeAll()\");\n    // clear all the connections on which we are selecting\n    int length = cnxns.size();\n    for (ServerCnxn cnxn : cnxns) {\n        try {\n            // This will remove the cnxn from cnxns\n            cnxn.close(reason);\n        } catch (Exception e) {\n            LOG.warn(\"Ignoring exception closing cnxn sessionid 0x{}\", Long.toHexString(cnxn.getSessionId()), e);\n        }\n    }\n    LOG.debug(\"allChannels size: {} cnxns size: {}\", allChannels.size(), length);\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/NettyServerCnxnFactory.java"
+    },
+    "org.apache.zookeeper.server.ServerCnxnFactory:closeAll()": {
+        "source_code": "public abstract void closeAll(ServerCnxn.DisconnectReason reason);",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/ServerCnxnFactory.java"
+    },
+    "org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:unregisterJMX(org.apache.zookeeper.server.ZooKeeperServer)": {
+        "source_code": "protected void unregisterJMX(ZooKeeperServer zks) {\n    // unregister from JMX\n    try {\n        if (jmxServerBean != null) {\n            MBeanRegistry.getInstance().unregister(jmxServerBean);\n        }\n    } catch (Exception e) {\n        LOG.warn(\"Failed to unregister with JMX\", e);\n    }\n    jmxServerBean = null;\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java"
+    },
+    "org.apache.zookeeper.jmx.ZKMBeanInfo:getName()": {
+        "source_code": "/**\n * @return a string identifying the MBean\n */\nString getName();",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/ZKMBeanInfo.java"
+    },
+    "org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)": {
+        "source_code": "/**\n * Unregister MBean.\n * @param bean\n */\npublic void unregister(ZKMBeanInfo bean) {\n    if (bean == null) {\n        return;\n    }\n    String path = mapBean2Path.remove(bean);\n    try {\n        unregister(path, bean);\n    } catch (JMException e) {\n        LOG.warn(\"Error during unregister of [{}]\", bean.getName(), e);\n    } catch (Throwable t) {\n        LOG.error(\"Unexpected exception during unregister of [{}]. It should be reviewed and fixed.\", bean.getName(), t);\n    }\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/jmx/MBeanRegistry.java"
+    },
+    "org.apache.zookeeper.server.ZooKeeperServer:shutdown()": {
+        "source_code": "public final void shutdown() {\n    shutdown(false);\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java"
+    }
+}

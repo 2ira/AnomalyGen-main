@@ -1,0 +1,10 @@
+org.apache.zookeeper.server.NIOServerCnxnFactory:unregisterConnection(org.apache.zookeeper.server.ServerCnxn)->org.apache.zookeeper.server.ServerCnxnFactory:unregisterConnection(org.apache.zookeeper.server.ServerCnxn), depth 1
+org.apache.zookeeper.server.ServerCnxnFactory:unregisterConnection(org.apache.zookeeper.server.ServerCnxn)->java.util.HashMap:remove(java.lang.Object), depth 2
+org.apache.zookeeper.server.ServerCnxnFactory:unregisterConnection(org.apache.zookeeper.server.ServerCnxn)->org.apache.zookeeper.jmx.MBeanRegistry:getInstance(), depth 2
+org.apache.zookeeper.server.ServerCnxnFactory:unregisterConnection(org.apache.zookeeper.server.ServerCnxn)->org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo), depth 2
+org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)->java.util.concurrent.ConcurrentHashMap:get(java.lang.Object), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.MBeanRegistry:unregister(java.lang.String,org.apache.zookeeper.jmx.ZKMBeanInfo), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)->java.util.concurrent.ConcurrentHashMap:remove(java.lang.Object), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.ZKMBeanInfo:getName(), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)->java.util.concurrent.ConcurrentHashMap:remove(java.lang.Object), depth 3

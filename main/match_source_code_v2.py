@@ -68,28 +68,34 @@ def get_java_method_code(gateway, file_path, simple_class_name, method_name, par
         return None
 
 
-def locate_source_code(signature,file_path):
-    gateway = JavaGateway()
+def locate_source_code(gateway,signature,file_path):
+    # gateway = JavaGateway()
 
     fqcn, simple_class_name, method_name, param_signature = parse_method_signature(signature)
     
     method_code = get_java_method_code(gateway, file_path, simple_class_name, method_name, param_signature)
     
-    if method_code is None or method_code.strip() == "":
-        logging.warning("failed：%s", signature)
+    if method_code is None:
+        logging.warning("failed (None): %s", signature)
         return None
-    else:
-        logging.info("success：%s", signature)
-        return method_code
+    if isinstance(method_code, str) and method_code.startswith("ERROR:"):
+        logging.warning("failed (JavaParser ERROR): %s -> %s", signature, method_code)
+        return None
+    if str(method_code).strip() == "":
+        logging.warning("failed (empty): %s", signature)
+        return None
+
+    logging.info("success: %s", signature)
+    return method_code
 
 def load_package(config_file='mysql/config.ini'):
     config = configparser.ConfigParser()
     config.read(config_file)
-    keywords = config.get('package', 'name', fallback='org.apache.hadoop')
+    keywords = config.get('package', 'name', fallback='org.apache')
     return [kw.strip() for kw in keywords.split(',')] if keywords else []
 
 def process_log_file(input_file, project_dir,output_dir="output"):
-    
+    gateway = JavaGateway()  # ✅ 只创建一次
     output_file=os.path.join(output_dir,"extracted_methods.json")
     missing_line_info_file=os.path.join(output_dir,"missing_methods.json")
 
@@ -98,18 +104,17 @@ def process_log_file(input_file, project_dir,output_dir="output"):
     missing_dict = {}
     with open(input_file, 'r', encoding='utf-8') as f:
         for line in f:
-            match = re.match(r'(.+)->(.+), depth (\d+)', line.strip())
+            # match = re.match(r'(.+)->(.+), depth (\d+)', line.strip())
+            match = re.match(r'(.+?)\s*->\s*(.+?)(?:,\s*depth\s*(\d+))?$', line.strip())
             if match:
                 caller = match.group(1).strip()
                 callee = match.group(2).strip()
-                
-                package = load_package()
-                if package is not None:
-                    for pk_name in package:
-                        if caller.startswith(pk_name) and callee.startswith(pk_name):
-                            method_signatures.add(caller)
-                            method_signatures.add(callee)
-                    #print(f"Added method signatures: {caller}, {callee}")
+                packages = load_package()
+                if packages:  # if null, do not filter
+                    if any(caller.startswith(pk) for pk in packages):
+                        method_signatures.add(caller)
+                    if any(callee.startswith(pk) for pk in packages):
+                        method_signatures.add(callee)
                 else:
                     method_signatures.add(caller)
                     method_signatures.add(callee)
@@ -120,7 +125,7 @@ def process_log_file(input_file, project_dir,output_dir="output"):
 
     for method_signature in method_signatures:
         file_path = locate_source_code_file_path(method_signature,project_dir)
-        source_code = locate_source_code(method_signature,file_path)
+        source_code = locate_source_code(gateway,method_signature,file_path)
       
         if source_code:
             result_dict[method_signature] = {
@@ -239,8 +244,6 @@ def main():
     output_dir = args.output_dir
 
     process_log_file(input_file,project_dir,output_dir)
-
-
     prune_call_chain_by_log_node(args.call_chain_file,args.call_chain_file)
     logging.info("Processing complete.")
 

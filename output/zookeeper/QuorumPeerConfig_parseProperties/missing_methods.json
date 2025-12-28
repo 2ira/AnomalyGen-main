@@ -1,0 +1,5 @@
+{
+    "org.apache.zookeeper.server.quorum.flexible.QuorumHierarchical:<init>(int,java.util.HashMap,java.util.HashMap)": {
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java"
+    }
+}

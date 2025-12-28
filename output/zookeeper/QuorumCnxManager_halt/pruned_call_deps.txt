@@ -1,0 +1,12 @@
+org.apache.zookeeper.server.quorum.QuorumCnxManager:halt()->org.slf4j.Logger:debug(java.lang.String), depth 1
+org.apache.zookeeper.server.quorum.QuorumCnxManager:halt()->org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:halt(), depth 1
+org.apache.zookeeper.server.quorum.QuorumCnxManager:halt()->org.apache.zookeeper.server.quorum.QuorumCnxManager:softHalt(), depth 1
+org.apache.zookeeper.server.quorum.QuorumCnxManager:softHalt()->org.slf4j.Logger:debug(java.lang.String), depth 2
+org.apache.zookeeper.server.quorum.QuorumCnxManager:softHalt()->org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:finish(), depth 2
+org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:finish()->org.slf4j.Logger:isDebugEnabled(), depth 3
+org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:finish()->org.slf4j.Logger:debug(java.lang.String), depth 3
+org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:finish()->org.slf4j.Logger:isDebugEnabled(), depth 3
+org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:finish()->org.slf4j.Logger:debug(java.lang.String), depth 3
+org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:halt()->org.slf4j.Logger:debug(java.lang.String), depth 2
+org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:halt()->org.slf4j.Logger:debug(java.lang.String), depth 2
+org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:halt()->org.slf4j.Logger:warn(java.lang.String), depth 2

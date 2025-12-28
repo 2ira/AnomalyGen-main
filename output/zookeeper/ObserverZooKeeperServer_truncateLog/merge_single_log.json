@@ -1,0 +1,6 @@
+{
+  "org.apache.zookeeper.server.ZooKeeperServer:truncateLog(long)": "['ENTRY -> CALL: this.zkDb.truncateLog -> EXIT']",
+  "org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:truncateLog(long)": "```xml\n<merge_result>\n  <valid_paths>\n    <path>\n      <id>P1-C1</id>\n      <eval>true</eval>\n      <exec_flow>\n        Parent method: ENTRY\n        ├─Parent method: CALL: this.zkDb.truncateLog\n        └─Parent method: EXIT\n      </exec_flow>\n      <log_sequence>\n        [org.apache.zookeeper.server.ZooKeeperServer:truncateLog][INFO] ENTRY\n        [org.apache.zookeeper.server.ZooKeeperServer:truncateLog][INFO] CALL: this.zkDb.truncateLog\n        [org.apache.zookeeper.server.ZooKeeperServer:truncateLog][INFO] EXIT\n      </log_sequence>\n    </path>\n  </valid_paths>\n  <wrong_path></wrong_path>\n</merge_result>\n```",
+  "org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:truncateLog(long)": "",
+  "org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:truncateLog(long)": ""
+}

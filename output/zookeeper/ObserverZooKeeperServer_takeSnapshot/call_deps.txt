@@ -1,0 +1,3 @@
+org.apache.zookeeper.server.quorum.ObserverZooKeeperServer:takeSnapshot()->org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:takeSnapshot(), depth 1
+org.apache.zookeeper.server.quorum.LearnerZooKeeperServer:takeSnapshot()->org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:takeSnapshot(), depth 2
+org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:takeSnapshot()->org.apache.zookeeper.server.ZooKeeperServer:takeSnapshot(), depth 3

@@ -1,0 +1,17 @@
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:shutdown()->org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:unregisterJMX(org.apache.zookeeper.server.ZooKeeperServer), depth 1
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:shutdown()->org.apache.zookeeper.server.ServerCnxnFactory:closeAll(), depth 1
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:shutdown()->org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:shutdown(), depth 1
+org.apache.zookeeper.server.quorum.QuorumZooKeeperServer:shutdown()->org.apache.zookeeper.server.ZooKeeperServer:shutdown(), depth 2
+org.apache.zookeeper.server.ZooKeeperServer:shutdown()->org.slf4j.Logger:info(java.lang.String), depth 3
+org.apache.zookeeper.server.ServerCnxnFactory:closeAll()->org.apache.zookeeper.server.NIOServerCnxnFactory:closeAll(), depth 2
+org.apache.zookeeper.server.ServerCnxnFactory:closeAll()->org.apache.zookeeper.server.NettyServerCnxnFactory:closeAll(), depth 2
+org.apache.zookeeper.server.NettyServerCnxnFactory:closeAll()->org.slf4j.Logger:isDebugEnabled(), depth 3
+org.apache.zookeeper.server.NettyServerCnxnFactory:closeAll()->org.slf4j.Logger:debug(java.lang.String), depth 3
+org.apache.zookeeper.server.NettyServerCnxnFactory:closeAll()->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 3
+org.apache.zookeeper.server.NettyServerCnxnFactory:closeAll()->org.slf4j.Logger:isDebugEnabled(), depth 3
+org.apache.zookeeper.server.NettyServerCnxnFactory:closeAll()->org.slf4j.Logger:debug(java.lang.String), depth 3
+org.apache.zookeeper.server.NIOServerCnxnFactory:closeAll()->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 3
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:unregisterJMX(org.apache.zookeeper.server.ZooKeeperServer)->org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo), depth 2
+org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServer:unregisterJMX(org.apache.zookeeper.server.ZooKeeperServer)->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 2
+org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 3
+org.apache.zookeeper.jmx.MBeanRegistry:unregister(org.apache.zookeeper.jmx.ZKMBeanInfo)->org.apache.zookeeper.jmx.ZKMBeanInfo:getName(), depth 3

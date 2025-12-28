@@ -1,0 +1,16 @@
+org.apache.zookeeper.server.quorum.QuorumPeer:startLeaderElection()->org.apache.zookeeper.server.quorum.QuorumPeer:getLastLoggedZxid(), depth 1
+org.apache.zookeeper.server.quorum.QuorumPeer:startLeaderElection()->java.io.IOException:getStackTrace(), depth 1
+org.apache.zookeeper.server.quorum.QuorumPeer:startLeaderElection()->java.lang.RuntimeException:setStackTrace(java.lang.StackTraceElement[]), depth 1
+org.apache.zookeeper.server.quorum.QuorumPeer:startLeaderElection()->org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:start(), depth 1
+org.apache.zookeeper.server.quorum.QuorumPeer:startLeaderElection()->org.apache.zookeeper.server.quorum.QuorumPeer:createElectionAlgorithm(int), depth 1
+org.apache.zookeeper.server.quorum.QuorumPeer:createElectionAlgorithm(int)->org.slf4j.Logger:error(java.lang.String), depth 2
+org.apache.zookeeper.server.quorum.QuorumPeer:createElectionAlgorithm(int)->java.lang.AssertionError:<init>(), depth 2
+org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:start()->org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:run(), depth 2
+org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:run()->org.slf4j.Logger:warn(java.lang.String), depth 3
+org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:run()->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 3
+org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:run()->org.slf4j.Logger:warn(java.lang.String,java.lang.Throwable), depth 3
+org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:run()->org.slf4j.Logger:warn(java.lang.String), depth 3
+org.apache.zookeeper.server.quorum.QuorumPeer:getLastLoggedZxid()->org.apache.zookeeper.server.quorum.QuorumPeer:loadDataBase(), depth 2
+org.apache.zookeeper.server.quorum.QuorumPeer:loadDataBase()->org.slf4j.Logger:info(java.lang.String,java.lang.Object), depth 3
+org.apache.zookeeper.server.quorum.QuorumPeer:loadDataBase()->org.slf4j.Logger:info(java.lang.String,java.lang.Object), depth 3
+org.apache.zookeeper.server.quorum.QuorumPeer:loadDataBase()->org.slf4j.Logger:error(java.lang.String,java.lang.Throwable), depth 3

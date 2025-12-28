@@ -1,0 +1,6 @@
+{
+    "org.apache.zookeeper.server.NIOServerCnxn:sendBuffer(java.nio.ByteBuffer)": {
+        "source_code": "/**\n * sendBuffer pushes a byte buffer onto the outgoing buffer queue for\n * asynchronous writes.\n */\npublic void sendBuffer(ByteBuffer... buffers) {\n    if (LOG.isTraceEnabled()) {\n        LOG.trace(\"Add a buffer to outgoingBuffers, sk {} is valid: {}\", sk, sk.isValid());\n    }\n    synchronized (outgoingBuffers) {\n        for (ByteBuffer buffer : buffers) {\n            outgoingBuffers.add(buffer);\n        }\n        outgoingBuffers.add(packetSentinel);\n    }\n    requestInterestOpsUpdate();\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/NIOServerCnxn.java"
+    }
+}

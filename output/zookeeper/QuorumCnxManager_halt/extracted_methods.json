@@ -1,0 +1,18 @@
+{
+    "org.apache.zookeeper.server.quorum.QuorumCnxManager:halt()": {
+        "source_code": "/**\n * Flag that it is time to wrap up all activities and interrupt the listener.\n */\npublic void halt() {\n    shutdown = true;\n    LOG.debug(\"Halting listener\");\n    listener.halt();\n    // Wait for the listener to terminate.\n    try {\n        listener.join();\n    } catch (InterruptedException ex) {\n        LOG.warn(\"Got interrupted before joining the listener\", ex);\n    }\n    softHalt();\n    // clear data structures used for auth\n    if (connectionExecutor != null) {\n        connectionExecutor.shutdown();\n    }\n    inprogressConnections.clear();\n    resetConnectionThreadCount();\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java"
+    },
+    "org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:halt()": {
+        "source_code": "/**\n * Halts this listener thread.\n */\nvoid halt() {\n    LOG.debug(\"Halt called: Trying to close listeners\");\n    if (listenerHandlers != null) {\n        LOG.debug(\"Closing listener: {}\", QuorumCnxManager.this.mySid);\n        for (ListenerHandler handler : listenerHandlers) {\n            try {\n                handler.close();\n            } catch (IOException e) {\n                LOG.warn(\"Exception when shutting down listener: \", e);\n            }\n        }\n    }\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java"
+    },
+    "org.apache.zookeeper.server.quorum.QuorumCnxManager:softHalt()": {
+        "source_code": "/**\n * A soft halt simply finishes workers.\n */\npublic void softHalt() {\n    for (SendWorker sw : senderWorkerMap.values()) {\n        LOG.debug(\"Server {} is soft-halting sender towards: {}\", self.getMyId(), sw);\n        sw.finish();\n    }\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java"
+    },
+    "org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:finish()": {
+        "source_code": "synchronized boolean finish() {\n    LOG.debug(\"Calling SendWorker.finish for {}\", sid);\n    if (!running) {\n        /*\n                 * Avoids running finish() twice.\n                 */\n        return running;\n    }\n    running = false;\n    closeSocket(sock);\n    this.interrupt();\n    if (recvWorker != null) {\n        recvWorker.finish();\n    }\n    LOG.debug(\"Removing entry from senderWorkerMap sid={}\", sid);\n    senderWorkerMap.remove(sid, this);\n    threadCnt.decrementAndGet();\n    return running;\n}",
+        "file_path": "zookeeper/zookeeper-server/src/main/java/org/apache/zookeeper/server/quorum/QuorumCnxManager.java"
+    }
+}
