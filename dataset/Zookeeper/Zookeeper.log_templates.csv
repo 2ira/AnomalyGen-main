@@ -1,0 +1,78 @@
+EventId,EventTemplate,Occurrences
+ff86b16f,Reading configuration from: /etc/zookeeper/conf/zoo.cfg,36
+91491bf0,Defaulting to majority quorums,36
+8c716832,autopurge.snapRetainCount set to 3,36
+3204f3ff,autopurge.purgeInterval set to 0,36
+0f7cc562,Purge task is not scheduled.,36
+d459c04c,Starting quorum peer,36
+2658fd77,binding to port <*><*>,36
+da7d60d2,tickTime set to 2000,36
+5bd1f197,minSessionTimeout set to -1,36
+689b0f5e,maxSessionTimeout set to -1,36
+dbac73df,initLimit set to 10,36
+36a6e508,currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation,3
+05afa652,acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation,3
+4cbab665,My election bind port: <*><*>,36
+00078e14,LOOKING,49
+e86119cc,New election. My id = <*> proposed <*>,49
+cd9a2201,"Notification: <*> (n.leader), <*> (n.zxid), <*> (n.round), <*> (n.state), <*> (n.sid), <*> (n.peerEPoch), <*> (my state)",505
+1e7a3631,Cannot open channel to <*> at election address <*>,2584
+286299e2,Notification time out: <*>,1322
+9879a9ab,Received connection request <*>,10429
+c172d526,FOLLOWING,34
+4c226563,TCP NoDelay set to: true,39
+ae80a1f9,"Server environment:zookeeper.version=3.4.5--1, built on 06/10/2013 17:26 GMT",36
+8dc08652,Server <*>,468
+d961f4e8,Server environment:java.vendor=Oracle Corporation,36
+72f21490,Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /var/lib/zookeeper/version-2 snapdir /var/lib/zookeeper/version-2,49
+a1237171,FOLLOWING - LEADER ELECTION TOOK - <*>,34
+ac5f8762,Getting a diff from the leader <*>,28
+dfd8b545,Snapshotting: <*> to <*>,65
+036ce310,Connection broken for id <*> my id = <*> error =,10388
+273e53f2,Interrupting SendWorker,10390
+45a3ec5d,Interrupted while waiting for message on queue,10386
+7a2ec7d0,Send worker leaving thread,10390
+cea40c10,Got zxid <*> expected <*>,28
+5cdce00b,Creating new log file: <*>,25
+abe76bf8,Accepted socket connection from <*>,2020
+1bc7bc65,Connection request from old client <*>; will be dropped if server is in r-o mode,1861
+c2a27ab9,Client attempting to <*> <*> <*> at <*>,1861
+37ce0325,Established session <*> with negotiated timeout <*> for client <*>,1856
+ecefe136,caught end of stream exception,1670
+20d23992,Closed socket connection for client <*> which had sessionid <*>,1749
+1caefedb,Revalidating client: <*>,55
+803704ab,Exception when using channel: for id 3 my id = <*> error = java.net.SocketException: Broken pipe,4
+63d9783e,Unexpected Exception:,27
+b43d89e6,Exception causing close of session <*> due to java.io.IOException: Connection reset by peer,8
+cec2484c,Reading snapshot <*>,60
+bfe6d9bf,"Have smaller server identifier, so dropping the connection: <*> <*>",20
+1b298505,Exception when following the leader,11
+feceb4c6,shutdown called,11
+6a7eb108,Shutting down,58
+68a7558d,shutting down,13
+874472f8,FollowerRequestProcessor exited loop!,11
+c7ef5ae9,shutdown of request processor complete,13
+9891c99c,CommitProcessor exited loop!,13
+7f667bb2,SyncRequestProcessor exited!,13
+d7965345,"Unexpected exception, tries=0, connecting to <*>",8
+23719262,LEADING,15
+66c79aaa,LEADING - LEADER ELECTION TOOK - <*>,15
+7c6c9afa,Follower sid: <*> : info : <*>,34
+3e0d808f,Synchronizing with Follower sid: <*> <*> <*> <*>,34
+a5abee94,Sending <*>,34
+c5851f56,Commiting zxid <*> from <*> not first!,15
+9cb3def4,First is 0x0,15
+4d52daa2,Have quorum of supporters; starting up and setting last processed zxid: <*>,15
+c74ac368,Sending snapshot last zxid of peer is <*> zxid of leader is <*> zxid of db as <*>,6
+f8c6d06b,Expiring session <*> timeout of <*> exceeded,1762
+61a003ea,Processed session termination for sessionid: <*>,1790
+0cf47064,Unexpected exception causing shutdown while sock still open,590
+f311a57e,******* GOODBYE <*> ********,590
+4e66438e,Shutdown called,2
+46a7d957,exception while shutting down acceptor: java.net.SocketException: Socket closed,2
+85d5564e,PrepRequestProcessor exited loop!,2
+5b6c983c,SessionTrackerImpl exited loop!,2
+4c5926a1,Getting a snapshot from leader,6
+ecf6827a,Exception causing close of session 0x0 due to java.io.IOException: ZooKeeperServer not running,159
+bed3680d,Closed socket connection for client <*> (no session established for client),159
+5ccedc5f,Got user-level KeeperException when processing <*> type:create <*> <*> txntype:-1 reqpath:n/a Error <*> Error:KeeperErrorCode = NodeExists for <*>,19

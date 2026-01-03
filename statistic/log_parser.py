@@ -3,9 +3,9 @@
 from logparser.Drain import LogParser
 
 log_format = r'<Level>:<Content>'
-input_dir = 'output/log_events/'
-output_dir = 'output/log_events_out/'
-log_file = 'dfs_simple_log_events.log'
+# input_dir = 'output/log_events/'
+# output_dir = 'output/log_events_out/'
+# log_file = 'dfs_simple_log_events.log'
 regex = [
     r'(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)',  
     r'\{.*?\}'  

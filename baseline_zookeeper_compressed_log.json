@@ -1,0 +1,594 @@
+{
+  "d80bcb62_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Connection marked as stale [DEBUG]:Ignoring exception during selection key cancel [ERROR]:Failed to cancel selection key [INFO]:Socket closed successfully"
+  },
+  "2a051a71_1": {
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log": "[WARN]:trying to do i/o on a null socket for session: 0x1A2B3C4D [INFO]:End of stream reached [WARN]:CancelledKeyException causing close of session: 0x1A2B3C4D [DEBUG]:CancelledKeyException stack trace [WARN]:Unexpected exception [WARN]:Closing session 0x1A2B3C4D [WARN]:Close of session 0x1A2B3C4D [DEBUG]:ignoring exception during selectionkey cancel"
+  },
+  "5c6c4b56_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Ignoring exception during selectionkey cancel"
+  },
+  "6d9d2f84_1": {
+    "exec_flow": "ENTRY→FOREACH:cnxns→ENTRY→CALL:setStale→IF_TRUE:!factory.removeCnxn(this)→RETURN→EXIT→FOREACH_EXIT→EXIT%%ENTRY→FOREACH:cnxns→ENTRY→CALL:setStale→IF_FALSE:!factory.removeCnxn(this)→IF_TRUE:zkServer!=null→CALL:zkServer.removeCnxn→IF_TRUE:sk!=null→TRY→CALL:cancel→EXCEPTION:cancel→CATCH:Exception→LOG:ignoring exception during selectionkey cancel→CALL:closeSock→EXIT→FOREACH_EXIT→EXIT%%ENTRY→FOREACH:cnxns→ENTRY→CALL:setStale→IF_FALSE:!factory.removeCnxn(this)→IF_TRUE:zkServer!=null→CALL:zkServer.removeCnxn→IF_FALSE:sk!=null→CALL:closeSock→EXIT→FOREACH_EXIT→EXIT",
+    "log": "[DEBUG]:Ignoring exception during selectionkey cancel"
+  },
+  "70e11b2c_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "fd71111f_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: SecurityException occurred [INFO]:Login user set successfully"
+  },
+  "1d5e10a3_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException [ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException [ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException [ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException [INFO]:Login user set successfully"
+  },
+  "8c261744_1": {
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log": "[ERROR]:SSL isn't supported in NIOServerCnxn"
+  },
+  "afe2aa34_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": "[INFO]:Set text trace mask to 0x1a2b3c4d"
+  },
+  "078913a0_1": {
+    "exec_flow": "ENTRY→!initialized && checkFourLetterWord%%ENTRY→OtherBranch",
+    "log": "[ERROR]:Error cancelling command selection key, Exception [DEBUG]:Command \"UNKNOWN_CMD\" is not executed because it is not in the whitelist. [INFO]:Processing \"KNOWN_CMD\" command from \"192.168.1.10:8080\" [INFO]:Set text trace mask to 0x1a2b3c"
+  },
+  "cfc8639a_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Socket is open, proceeding with operation [INFO]:Closing socket connection"
+  },
+  "a1ca3a63_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Ignoring exception during selection key cancel [DEBUG]:Socket closed successfully"
+  },
+  "d1147373_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[ERROR]:Error cancelling command selection key [DEBUG]:Command \"trace\" is not executed because it is not in the whitelist [INFO]:Processing \"trace\" command from /192.168.1.100:8080 [INFO]:Set text trace mask to 0xFF [WARN]:Trying to do I/O on a null socket for session: 0x123456789ABCDEF [INFO]:Socket error: Connection reset by peer [DEBUG]:Ignoring exception during selection key cancel [DEBUG]:Socket closed successfully"
+  },
+  "f017adf3_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "83e0e7fc_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Invalid name \"zookeeperBean\" for class org.apache.zookeeper.jmx.ZKMBeanInfo"
+  },
+  "8d5fd05c_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "290b45d8_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Accessing mapBean2Path [WARN]:Failed to register MBean \"exampleBean\" [DEBUG]:Invalid name \"exampleBeanName\" for class \"org.apache.zookeeper.jmx.ZKMBeanInfo\""
+  },
+  "771fc8a5_1": {
+    "exec_flow": "ENTRY→TRY→IF_TRUE%%ENTRY→TRY→IF_FALSE",
+    "log": "[INFO]:Unregistered MBean from registry"
+  },
+  "a3d7f8a4_1": {
+    "exec_flow": "ENTRY→CALL: shutdown→TRY→IF_TRUE: jmxServerBean != null→CALL: MBeanRegistry.getInstance().unregister→EXIT%%ENTRY→CALL: shutdown→TRY→IF_FALSE: jmxServerBean != null→EXIT",
+    "log": "[WARN]:Failed to unregister with JMX"
+  },
+  "c4f5362c_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": "[DEBUG]:Initializing leader election protocol..."
+  },
+  "7cf2c02e_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "37b80475_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Accessing /mapBean2Path [WARN]:Failed to register MBean \"bean-01\""
+  },
+  "6f1c930f_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched last logged transaction ID 1024 [ERROR]:Access denied to path /user/data"
+  },
+  "9a354659_1": {
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log": "[INFO]:New election. My id = 1, proposed zxid=0x100 [DEBUG]:Adding vote: from=2, proposed leader=3, proposed zxid=0x100, proposed election epoch=0x200 [INFO]:Notification time out: 5000 ms [DEBUG]:getLastLoggedZxid"
+  },
+  "7d7faa25_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Accessing mapBean2Path [WARN]:Failed to register MBean \"ZooKeeperServerBean\" [DEBUG]:Invalid name \"InvalidBeanName\" for class \"org.apache.zookeeper.server.ZooKeeperServer\""
+  },
+  "a43bbe11_1": {
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log": "[INFO]:New election. My id = 1, proposed zxid=0x100 [DEBUG]:Adding vote: from=2, proposed leader=3, proposed zxid=0x100, proposed election epoch=0x1 [INFO]:Notification time out: 5000 ms [DEBUG]:getLastLoggedZxid"
+  },
+  "0ef137db_1": {
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.PING→CALL: ping→BREAK→EXIT%%ENTRY→SWITCH: qp.getType()→CASE: Leader.REVALIDATE→CALL: revalidate→BREAK→EXIT%%ENTRY→SWITCH: qp.getType()→CASE: Leader.SYNC→CALL: sync→BREAK→EXIT",
+    "log": "[INFO]:Ping operation executed"
+  },
+  "0ef137db_2": {
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.PROPOSAL→BREAK→EXIT%%ENTRY→SWITCH: qp.getType()→CASE: Leader.COMMIT→BREAK→EXIT",
+    "log": "[WARN]:Ignoring proposal"
+  },
+  "0ef137db_3": {
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.UPTODATE→BREAK→EXIT",
+    "log": "[ERROR]:Received an UPTODATE message after Observer started"
+  },
+  "0ef137db_4": {
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.INFORM→CALL: add→CALL: deserializeTxn→CALL: getData→CALL: getData→CALL: logLatency→CALL: commitRequest→BREAK→EXIT",
+    "log": "[INFO]:Learner commit received and processed"
+  },
+  "0ef137db_5": {
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.INFORMANDACTIVATE→CALL: get→CALL: deserializeTxn→CALL: getTxn→CALL: toRequest→CALL: commitRequest→IF_TRUE: majorChange→THROW: Exception→EXIT%%ENTRY→SWITCH: qp.getType()→CASE: Leader.INFORMANDACTIVATE→CALL: get→CALL: deserializeTxn→CALL: getTxn→CALL: toRequest→CALL: commitRequest→IF_FALSE: majorChange→BREAK→EXIT",
+    "log": "[ERROR]:Changes proposed in reconfig"
+  },
+  "0ef137db_6": {
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Unknown→BREAK→EXIT",
+    "log": "[WARN]:Unknown packet type: UnknownType"
+  },
+  "eb7f58f3_1": {
+    "exec_flow": "ENTRY→TRY→EXCEPTION%%ENTRY→TRY→THROW",
+    "log": "[WARN]:Exception when observing the leader [INFO]:Disconnected from leader (with address: https://leader-node:2181). Was connected for 5000ms. Sync state: RECONFIGURED"
+  },
+  "eb7f58f3_2": {
+    "exec_flow": "ENTRY→SWITCH→CASE:Leader.PROPOSAL%%ENTRY→SWITCH→CASE:Leader.COMMIT%%ENTRY→SWITCH→CASE:Leader.UPTODATE%%ENTRY→SWITCH→CASE:Leader.INFORMANDACTIVATE%%ENTRY→SWITCH→CASE:Unknown",
+    "log": "[WARN]:Ignoring proposal [WARN]:Ignoring commit [ERROR]:Received an UPTODATE message after Observer started [WARN]:Unknown packet type: INFORM, LearnerHandler.packetToString(qp)"
+  },
+  "d504b831_1": {
+    "exec_flow": "ENTRY→ShutdownObserver%%ENTRY→Shutdown",
+    "log": "[INFO]:Observer shutdown initiated [INFO]:Shutdown operation completed successfully"
+  },
+  "f9f11c2b_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "5f8a114c_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Got zxid 0x0 expected 0x1 [INFO]:Request logged [ERROR]:Received an UPTODATE message after Follower started [WARN]:Unknown packet type: SYNC"
+  },
+  "fe9d88fb_1": {
+    "exec_flow": "ENTRY→SWITCH: getType%%ENTRY→CALL: configureJobJar",
+    "log": "[WARN]:Got zxid 0x1 expected 0x2 [INFO]:Request logged [ERROR]:Received an UPTODATE message after Follower started [WARN]:Unknown packet type: UNKNOWN_PACKET_TYPE [INFO]:FOLLOWING - LEADER ELECTION TOOK - 500ms ms [INFO]:Disconnected from leader (with address: https://leader-node:2181). Was connected for 3000ms. Sync state: COMPLETED"
+  },
+  "bf2972a2_1": {
+    "exec_flow": "ENTRY→ShutdownFollower",
+    "log": "[INFO]:Shutdown Follower"
+  },
+  "03049d5e_1": {
+    "exec_flow": "ENTRY→QuorumListenOnAllIPsCheck%%ENTRY→QuorumAddressCheck",
+    "log": "[INFO]:Initialized buffer statistics for proposal tracking [INFO]:Fetched quorum addresses: [\"192.168.1.1:2181\", \"192.168.1.2:2181\"] [INFO]:Created server socket at address 192.168.1.1:2181 with SSL enabled [INFO]:Created server socket at address 192.168.1.2:2181 with SSL enabled [ERROR]:Leader failed to initialize any of the following sockets: [\"192.168.1.1:2181\", \"192.168.1.2:2181\"]"
+  },
+  "7e8fa7b0_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Quorum address resolved to wildcard addresses [ERROR]:IOException thrown due to empty server sockets"
+  },
+  "f132ecbd_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Failed to register with JMX, exception occurred [WARN]:Failed to register MBean \"LeaderElectionBean\""
+  },
+  "718b1ec7_1": {
+    "exec_flow": "ENTRY→TRY→IF_TRUE%%ENTRY→TRY→IF_FALSE",
+    "log": "[INFO]:Unregistered MBean from registry"
+  },
+  "f88a8532_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Failed to unregister with JMX [WARN]:Failed to register with JMX, exception occurred [WARN]:Failed to register MBean \"LeaderElectionBean\""
+  },
+  "f88a8532_2": {
+    "exec_flow": "ENTRY→ConfigureJobJar%%ENTRY→SetupDistributedCache",
+    "log": "[INFO]:LEADING - LEADER ELECTION TOOK - 500ms milliseconds [DEBUG]:Set lastSeenQuorumVerifier to currentQuorumVerifier (\"QuorumVerifierData\") [INFO]:NEWLEADER proposal has Zxid of \"0x12345abc\""
+  },
+  "f88a8532_3": {
+    "exec_flow": "ENTRY→ShutdownProcess",
+    "log": "[INFO]:Shutting down [INFO]:Shutdown called. For the reason \"Maintenance\", reason"
+  },
+  "031f8582_1": {
+    "exec_flow": "ENTRY→TRY→EXCEPTION:clear→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put→EXCEPTION:put→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put",
+    "log": "[WARN]:Ignoring unexpected exception [INFO]:Socket closed successfully [INFO]:Thread interrupted [INFO]:Removed learner handler from master [INFO]:Unregistered learner handler bean"
+  },
+  "5ce38c16_1": {
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log": "[INFO]:Shutting down [INFO]:Shutdown called. For the reason \"maintenance\", reason [WARN]:Ignoring unexpected exception, connection error"
+  },
+  "e7589eef_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Unregister MBean \"mbean_01\", objName [DEBUG]:Invalid name \"testBean\" for class org.apache.zookeeper.jmx.ZKMBeanInfo"
+  },
+  "a20ba4b9_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→unregisterAll",
+    "log": "[DEBUG]:Unregister MBean [MBeanObjectName], objName [DEBUG]:Invalid name \"InvalidBeanName\" for class InvalidBeanClass"
+  },
+  "67a23884_1": {
+    "exec_flow": "ENTRY→SWITCH:getPeerState()→CASE:LOOKING→startLeaderElection→makeLEStrategy().lookForLeader%%ENTRY→SWITCH:getPeerState()→CASE:OBSERVING→makeObserver→observer.observeLeader%%ENTRY→SWITCH:getPeerState()→CASE:FOLLOWING→makeFollower→follower.followLeader%%ENTRY→SWITCH:getPeerState()→CASE:LEADING→makeLeader→leader.lead%%ENTRY→SWITCH:getPeerState()→CASE:UnknownState",
+    "log": "[DEBUG]:Starting quorum peer [INFO]:LOOKING [INFO]:OBSERVING [INFO]:FOLLOWING [INFO]:LEADING [WARN]:QuorumPeer main thread exited"
+  },
+  "67a23884_2": {
+    "exec_flow": "ENTRY→makeLeader→IF:self.getQuorumListenOnAllIPs→Quorum address resolved to wildcard addresses→IF:serverSockets.isEmpty→THROW:IOException",
+    "log": "[DEBUG]:Quorum address resolved to wildcard addresses"
+  },
+  "67a23884_3": {
+    "exec_flow": "ENTRY→LOG:Shutting down→IF_FALSE:isShutdown→LOG:Shutdown called. For the reason \"reason\"→IF_TRUE:cnxAcceptor!=null→cnxAcceptor.halt%%ENTRY→LOG:Shutting down→IF_FALSE:isShutdown→LOG:Shutdown called. For the reason \"reason\"→IF_FALSE:cnxAcceptor!=null→closeSockets→setZooKeeperServer→self.adminServer.setZooKeeperServer→closeAllConnections→IF_FALSE:zk!=null→SYNC:learners→FOR_INIT→iterator→FOR_COND:it.hasNext()→shutdown",
+    "log": "[INFO]:Shutting down [INFO]:Shutdown called. For the reason \"reason\" [WARN]:Ignoring unexpected exception, e"
+  },
+  "b917106e_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "f40018ee_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "bb9a49f5_1": {
+    "exec_flow": "ENTRY→IF_TRUE:parent!=null→CALL:get→ENTRY→EXIT→CALL:makeFullPath→ENTRY→EXIT→IF_TRUE:bean.isHidden→RETURN→EXIT%%ENTRY→IF_TRUE:parent!=null→CALL:get→ENTRY→EXIT→CALL:makeFullPath→ENTRY→EXIT→IF_FALSE:bean.isHidden→TRY→SYNC:LOCK→CALL:mBeanServer.registerMBean→CALL:mapBean2Path.put→EXIT→EXIT%%ENTRY→IF_FALSE:parent!=null→CALL:makeFullPath→ENTRY→EXIT→IF_TRUE:bean.isHidden→RETURN→EXIT%%ENTRY→IF_FALSE:parent!=null→CALL:makeFullPath→ENTRY→EXIT→IF_FALSE:bean.isHidden→TRY→SYNC:LOCK→CALL:mBeanServer.registerMBean→CALL:mapBean2Path.put→EXIT→EXIT",
+    "log": "[WARN]:Failed to register MBean \"exampleBeanName\""
+  },
+  "2354eb16_1": {
+    "exec_flow": "ENTRY→TRY→MBeanRegistry.register→ENTRY→ConditionCheck%%ENTRY→TRY→MBeanRegistry.register→ENTRY→ConditionCheck→TRY→LOCK",
+    "log": "[WARN]:Failed to register MBean \"DataNodeBean\" [WARN]:Failed to register with JMX, e"
+  },
+  "86c5ab2d_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Not starting Read-only server as startup follows shutdown! [WARN]:Failed to register MBean \"ZooKeeperBean\" [WARN]:Failed to register with JMX due to exception [INFO]:Read-only server started"
+  },
+  "b330b347_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Socket is not open [INFO]:Closing socket connection"
+  },
+  "66837774_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Ignoring exception during selectionkey cancel [DEBUG]:Closed socket connection for client 192.168.1.100 sessionId 123456789"
+  },
+  "cd596be4_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "24432444_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Unregister MBean [mBeanServer.unregisterMBean], objName"
+  },
+  "7a0c9aa9_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "46e632b7_1": {
+    "exec_flow": "ENTRY→RetryRequest%%ENTRY→AbortRequest",
+    "log": "[ERROR]:Failed to get a response from model gpt-4o after multiple retries"
+  },
+  "b6bdf782_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Error during unregister of bean_name_01 [ERROR]:Unexpected exception during unregister of bean_name_01. It should be reviewed and fixed."
+  },
+  "4ba6b55f_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "2df73235_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Current zxid 1024 is <= 1024 for READ [DEBUG]:Creating new log file: log_1024 [ERROR]:Faulty serialization for header and txn"
+  },
+  "b4602dad_1": {
+    "exec_flow": "ENTRY→CALL:append→IF_FALSE:hdr==null→IF_TRUE:hdr.getZxid()<=lastZxidSeen→[WARN]:Current zxid 100 is <= 100 for WRITE%%ENTRY→CALL:append→IF_FALSE:hdr==null→IF_FALSE:hdr.getZxid()<=lastZxidSeen→IF_TRUE:logStream==null→[DEBUG]:Creating new log file: log_100",
+    "log": "[WARN]:Current zxid 100 is <= 100 for WRITE [DEBUG]:Creating new log file: log_100 [ERROR]:Faulty serialization for header and txn"
+  },
+  "e36f0f69_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Current zxid 100 is <= 99 for CREATE [DEBUG]:Creating new log file: log_100"
+  },
+  "a1a71d12_1": {
+    "exec_flow": "ENTRY→ROLL_LOG%%ENTRY→RESET_TRANSACTION_COUNT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "f30191a5_1": {
+    "exec_flow": "ENTRY→CALL: isTraceEnabled→RETURN→EXIT",
+    "log": ""
+  },
+  "a8e4c544_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[TRACE]:Trace enabled for log with mask 1024 [TRACE]:Request logged with header:rp:/user/data:READ"
+  },
+  "6a09e0b8_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "71602e92_1": {
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_TRUE:committedLog.isEmpty()→CALL:committedLog.add→CALL:getZxid→IF_TRUE:committedLog.size()>1024→CALL:committedLog.remove→CALL:getZxid→CALL:peek→CALL:unlock→EXIT%%ENTRY→TRY→CALL:lock→IF_TRUE:committedLog.isEmpty()→CALL:committedLog.add→CALL:getZxid→IF_FALSE:committedLog.size()>1024→CALL:unlock→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "71602e92_2": {
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_TRUE:request.zxid<=1024→RETURN→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "71602e92_3": {
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_TRUE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→LOG:[ERROR]:Illegal state encountered in proposal processing→EXIT%%ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_FALSE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→CALL:committedLog.add→CALL:getZxid→IF_TRUE:committedLog.size()>1024→CALL:committedLog.remove→CALL:getZxid→CALL:peek→CALL:unlock→EXIT%%ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_FALSE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→CALL:committedLog.add→CALL:getZxid→IF_FALSE:committedLog.size()>1024→CALL:unlock→EXIT",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "fec98a47_1": {
+    "exec_flow": "ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→EXCEPTION: rewind→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→EXCEPTION: rewind→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→EXCEPTION: sendBuffer→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→IF_TRUE: valid→LOG: DEBUG: Established session 0x1a2b3c with negotiated timeout 30000 for client 192.168.1.100→CALL: enableRecv→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→IF_FALSE: valid→LOG: INFO: Invalid session 0x1a2b3c for client 192.168.1.100, probably expired→CALL: sendBuffer→EXIT",
+    "log": "[WARN]:Exception while establishing session, closing, e [DEBUG]:Established session 0x1a2b3c with negotiated timeout 30000 for client 192.168.1.100 [INFO]:Invalid session 0x1a2b3c for client 192.168.1.100, probably expired"
+  },
+  "0c6fb45d_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "1aa67eb1_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "0f9b60b1_1": {
+    "exec_flow": "ENTRY→SEND_OBSERVER_PACKET→EXIT",
+    "log": ""
+  },
+  "eb6185a4_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[TRACE]:Ack zxid: 0x1f4 [TRACE]:Outstanding proposals all [DEBUG]:Outstanding is 0 [DEBUG]:Proposal has already been committed, pzxid: 0x1f4 zxid: 0x1f4 [WARN]:Trying to commit future proposal: zxid 0x1f4 from follower01"
+  },
+  "f367ba94_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Bypassing cache [TRACE]:Ack zxid: 0x100000000 [TRACE]:outstanding proposals all [DEBUG]:outstanding is 0 [DEBUG]:proposal has already been committed, pzxid: 0x100000000 zxid: 0x100000000 [WARN]:Trying to commit future proposal: zxid 0x100000000 from follower01 [ERROR]:Null QuorumPeer"
+  },
+  "92e9aef6_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Processing request: /user/data, request [INFO]:Elapsed time calculated: 3.14ms [INFO]:Added request to queue [INFO]:Commit needed for request: true [INFO]:Added write request to queue [INFO]:Incremented write request count: 1024 [INFO]:Wakeup signal sent [INFO]:Processing request: /user/data, request [INFO]:Elapsed time calculated: 3.14ms [INFO]:Added request to queue [INFO]:Commit needed for request: false [INFO]:Incremented read request count: 512 [INFO]:Wakeup signal sent"
+  },
+  "3d61b616_1": {
+    "exec_flow": "ENTRY→processRequest→request.getHdr() != null→iter.hasNext()→p.request != null && p.request.zxid == zxid→remove%%ENTRY→processRequest→request.getHdr() != null→iter.hasNext()→!(p.request != null && p.request.zxid == zxid)%%ENTRY→processRequest→request.getHdr() != null→!iter.hasNext()%%ENTRY→processRequest→!request.getHdr() != null",
+    "log": "[ERROR]:Committed request not found on toBeApplied: 1024, request"
+  },
+  "4cc5aad5_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[ERROR]:Throttled request sent as proposal: \"ProposalID_12345\". Exiting. [INFO]:System exit requested by ServiceUtils [ERROR]:Xid rollover detected. Shutting down system."
+  },
+  "4cc5aad5_2": {
+    "exec_flow": "ENTRY→ConditionCheck→UpdateProposalStats%%ENTRY→OtherBranch→UpdateProposalStats",
+    "log": "[ERROR]:Throttled request sent as proposal: \"ProposalID_12345\". Exiting. [INFO]:System exit requested by ServiceUtils [INFO]:Proposal statistics updated with last buffer size: 1024 [INFO]:Quorum verifier added successfully [INFO]:Proposal count incremented in server metrics"
+  },
+  "6f2b4c33_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ForwardToNextProcessor%%ENTRY→ProposeTransaction%%ENTRY→ThrottledRequest%%ENTRY→XidRollover",
+    "log": "[INFO]:Processing sync request from LearnerSyncRequest [DEBUG]:Forwarding request to next processor [INFO]:Proposing transaction for consensus [ERROR]:XidRolloverException occurred, throwing RequestProcessorException [ERROR]:Throttled request send as proposal: Exiting. [DEBUG]:Proposing:: TransactionProposal"
+  },
+  "5895bdfa_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[WARN]:Closing connection to leader, exception during packet send"
+  },
+  "59424e85_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "59424e85_2": {
+    "exec_flow": "ENTRY→IF_TRUE:request instanceof LearnerSyncRequest→CALL:processSync→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_FALSE:request.getHdr() != null→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT",
+    "log": "[INFO]:Processing sync request from LearnerSyncRequest [DEBUG]:Forwarding request to next processor [INFO]:Proposing transaction for consensus [ERROR]:XidRolloverException occurred, throwing RequestProcessorException [ERROR]:Throttled request send as proposal: Exiting. [DEBUG]:Proposing:: transaction"
+  },
+  "63d68207_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "ddf273fc_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Log size limit reached: 1024, 2048 [DEBUG]:rollLog"
+  },
+  "8e7e1981_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Log size limit reached: 1024, 2048 [DEBUG]:rollLog"
+  },
+  "e2a7bdaf_1": {
+    "exec_flow": "ENTRY→RetryLogic%%ENTRY→AbortOperation",
+    "log": "[ERROR]:Failed to get a response from model 'gpt-4o' after multiple retries"
+  },
+  "1ada5259_1": {
+    "exec_flow": "ENTRY→TRY→CALL→EXCEPTION→CATCH→CALL→LOG→CALL→IF_TRUE→RETURN→EXIT%%ENTRY→TRY→CALL→currentElapsedTime→WHILE→WHILE_COND→WHILE_EXIT→LOG→CALL→IF_TRUE→RETURN→EXIT",
+    "log": "[INFO]:SyncRequestProcessor exited! [WARN]:Current zxid 100 is <= 200 for CREATE [DEBUG]:Creating new log file: log.100"
+  },
+  "1ada5259_2": {
+    "exec_flow": "ENTRY→CALL→EXIT",
+    "log": "[INFO]:SyncRequestProcessor exited!"
+  },
+  "1ada5259_3": {
+    "exec_flow": "ENTRY→IF_TRUE→CALL→EXIT",
+    "log": "[INFO]:Processing sync request from LearnerSyncRequest"
+  },
+  "1ada5259_4": {
+    "exec_flow": "ENTRY→IF_FALSE→IF_TRUE→CALL→IF_TRUE→TRY→CALL→IF_TRUE→LOG→CALL→IF_FALSE→IF_TRUE→CALL→THROW→CATCH→THROW→CALL→EXIT",
+    "log": "[DEBUG]:Forwarding request to next processor [INFO]:Proposing transaction for consensus [ERROR]:XidRolloverException occurred, throwing RequestProcessorException [ERROR]:Throttled request send as proposal: 300. Exiting. [DEBUG]:Proposing:: 400"
+  },
+  "79b6e40a_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Initialize file found, an empty database will not block voting participation [ERROR]:Something is broken! Empty snapshot warning [WARN]:This should only be allowed during upgrading. Empty snapshot warning [WARN]:Unexpected empty data tree, setting zxid to -1"
+  },
+  "57dfbaa4_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→AnotherBranch",
+    "log": "[INFO]:Initialize file found, an empty database will not block voting participation [WARN]:This should only be allowed during upgrading. [WARN]:Unexpected empty data tree, setting zxid to -1 [INFO]:Snapshot loaded in 150 ms, highest zxid is 0x123456, digest is abcdef123456"
+  },
+  "bf2ec81e_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": ""
+  },
+  "8eee06b0_1": {
+    "exec_flow": "ENTRY→CALL: writeLongToFile→ENTRY→CALL: getSnapDir→ENTRY→RETURN→EXIT→EXIT→EXIT",
+    "log": "[INFO]:Started writing long value to file [INFO]:Accessing snapshot directory [INFO]:Snapshot directory accessed successfully [INFO]:Exiting snapshot directory access [INFO]:Finished writing long value to file"
+  },
+  "b6870033_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→EmptyDataTree",
+    "log": "[INFO]:Initialize file found, an empty database will not block voting participation [WARN]:This should only be allowed during upgrading [WARN]:Unexpected empty data tree, setting zxid to -1 [INFO]:Snapshot loaded in 150 ms, highest zxid is 0x12345, digest is abcdef123456"
+  },
+  "b6870033_2": {
+    "exec_flow": "ENTRY→WriteToFile",
+    "log": "[INFO]:Writing long value to file /snapshots/snapDir [INFO]:Accessing snapshot directory /snapshots/snapDir [INFO]:Snapshot directory accessed successfully [INFO]:Write operation completed"
+  },
+  "609e0468_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Binding to port 8080, localAddress 192.168.1.1 [INFO]:Bound to port 8080, localAddress 192.168.1.1"
+  },
+  "5102e67b_1": {
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/data"
+  },
+  "b67946c5_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Initialize file found, an empty database will not block voting participation [WARN]:This should only be allowed during upgrading [WARN]:Unexpected empty data tree, setting zxid to -1 [INFO]:Snapshot loaded in 500 ms, highest zxid is 0x12345, digest is abcdef1234567890"
+  },
+  "38fc44ff_1": {
+    "exec_flow": "ENTRY→SWITCH:electionAlgorithm→CASE:1→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:2→EXIT",
+    "log": "[ERROR]:Election Algorithm 1 is not supported. [ERROR]:Election Algorithm 2 is not supported."
+  },
+  "38fc44ff_2": {
+    "exec_flow": "ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_TRUE:oldQcm!=null→IF_TRUE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_TRUE:oldQcm!=null→IF_FALSE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_FALSE:oldQcm!=null→IF_TRUE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_FALSE:oldQcm!=null→IF_FALSE:listener!=null→EXIT",
+    "log": "[WARN]:Clobbering already-set QuorumCnxManager (restarting leader election?) [ERROR]:Null listener when initializing cnx manager"
+  },
+  "38fc44ff_3": {
+    "exec_flow": "ENTRY→SWITCH:electionAlgorithm→CASE:[]→EXIT",
+    "log": "[INFO]:Election algorithm returned successfully."
+  },
+  "74e160b2_1": {
+    "exec_flow": "ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_FALSE→CALL→EXIT",
+    "log": "[INFO]:Initialize file found, an empty database will not block voting participation [WARN]:This should only be allowed during upgrading. [WARN]:Unexpected empty data tree, setting zxid to -1"
+  },
+  "74e160b2_2": {
+    "exec_flow": "ENTRY→CALL→ENTRY→SWITCH→CASE→THROW%%ENTRY→CALL→ENTRY→SWITCH→CASE→THROW%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_TRUE→LOG→CALL→IF_TRUE→CALL→CALL→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_TRUE→LOG→CALL→IF_FALSE→LOG→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_FALSE→IF_TRUE→CALL→CALL→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_FALSE→IF_FALSE→LOG→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→RETURN→EXIT",
+    "log": "[WARN]:Clobbering already-set QuorumCnxManager (restarting leader election?) [ERROR]:Null listener when initializing cnx manager"
+  },
+  "1ec2600f_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "8d050e40_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "2bf7ad80_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "4b7a8763_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": "[DEBUG]:Initializing leader election protocol..."
+  },
+  "4cd3addc_1": {
+    "exec_flow": "ENTRY→TRY→CALL: setZabState→TRY→CALL: connectToLeader→EXCEPTION: connectToLeader→CATCH: Exception e→EXIT%%ENTRY→TRY→CALL: setZabState→TRY→CALL: connectToLeader→CALL: currentTimeMillis→THROW: new Exception(\"learned about role change\")→EXIT",
+    "log": "[WARN]:Exception when observing the leader, e"
+  },
+  "a435f286_1": {
+    "exec_flow": "ENTRY→ShutdownObserver",
+    "log": "[INFO]:Shutdown observer process initiated"
+  },
+  "87459097_1": {
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log": "[INFO]:Fetched 1024MB block from https://namenode:8020 [ERROR]:Access denied to path /user/data"
+  },
+  "cd4c5ecf_1": {
+    "exec_flow": "ENTRY→ShutdownFollower",
+    "log": "[INFO]:Follower node shutdown initiated [INFO]:Follower node shutdown completed"
+  },
+  "3b349e70_1": {
+    "exec_flow": "ENTRY→Shutdown%%ENTRY→LeaderElection",
+    "log": "[INFO]:Shutting down [INFO]:Shutdown called. For the reason \"Maintenance\" [INFO]:LEADING - LEADER ELECTION TOOK - 500ms MILLISECONDS [INFO]:NEWLEADER proposal has Zxid of 0x1a2b3c4d"
+  },
+  "61c3ab25_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Shutting down"
+  },
+  "61c3ab25_2": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ShutdownReason%%ENTRY→ShutdownReason→HaltConnections%%ENTRY→ShutdownReason→CloseSockets",
+    "log": "[INFO]:Shutting down [INFO]:Shutdown called. For the reason \"maintenance\""
+  },
+  "61c3ab25_3": {
+    "exec_flow": "ShutdownReason→HaltConnections%%ShutdownReason→CloseSockets",
+    "log": "[INFO]:Halted connection acceptor [INFO]:Set ZooKeeper server [INFO]:Admin server set to ZooKeeper server [INFO]:Closed all connections"
+  },
+  "61c3ab25_4": {
+    "exec_flow": "HaltConnections→LearnersSync%%CloseSockets→LearnersSync",
+    "log": "[INFO]:Synchronized learners [INFO]:Initialized iterator"
+  },
+  "61c3ab25_5": {
+    "exec_flow": "LearnersSync→IteratorCheck",
+    "log": "[INFO]:Checked iterator condition"
+  },
+  "94623e0f_1": {
+    "exec_flow": "ENTRY→LEADING%%ENTRY→SHUTDOWN",
+    "log": "[DEBUG]:Starting quorum peer [INFO]:LEADING - Leader election took 3.14 seconds [INFO]:New leader proposal has Zxid of 0x1234abcd [INFO]:Shutting down [INFO]:Shutdown called. For the reason \"Cluster maintenance\""
+  },
+  "e52b8c91_1": {
+    "exec_flow": "ENTRY→TRY→CALL→ENTRY→ConditionCheck%%ENTRY→TRY→CALL→ENTRY→OtherBranch%%ENTRY→IF_FALSE→CALL→ENTRY→ConditionCheck→CALL→TRY→OtherBranch",
+    "log": "[INFO]:Initialize file found, an empty database will not block voting participation [INFO]:Snapshot loaded in 500 ms, highest zxid is 0x12345, digest is abcdef123456 [WARN]:This should only be allowed during upgrading [WARN]:Unexpected empty data tree, setting zxid to -1 [WARN]:Problem starting AdminServer, AdminServerException"
+  },
+  "e52b8c91_2": {
+    "exec_flow": "ENTRY→CALL→ENTRY→LEADER_ELECTION%%ENTRY→CALL→ENTRY→SHUTDOWN",
+    "log": "[DEBUG]:Starting quorum peer [INFO]:LEADING [INFO]:LEADING - LEADER ELECTION TOOK - 300 ms MILLISECONDS [INFO]:NEWLEADER proposal has Zxid of 0x12345 [INFO]:Shutting down [INFO]:Shutdown called. For the reason \"AdminServer failure\""
+  },
+  "b9bc23e5_1": {
+    "exec_flow": "ENTRY→CALL: truncateLog→EXIT",
+    "log": ""
+  },
+  "cefd1e81_1": {
+    "exec_flow": "ENTRY→CALL:truncateLog→EXIT",
+    "log": "[INFO]:ENTRY [INFO]:CALL:truncateLog [INFO]:EXIT"
+  },
+  "363f5add_1": {
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log": "[INFO]:Fetched 1024MB block from https://namenode:8020 [ERROR]:Access denied to path /user/data"
+  },
+  "e9e11bde_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Registering Log4j MBeans [ERROR]:Problems while registering log4j 1.2 jmx beans!"
+  },
+  "47640e47_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[ERROR]:SSL isn't supported in NIOServerCnxn"
+  },
+  "bfd05602_1": {
+    "exec_flow": "ENTRY→configureSaslLogin→initMaxCnxns→EXIT",
+    "log": "[INFO]:configure this secure: secure on addr addr"
+  },
+  "e2f3e326_1": {
+    "exec_flow": "ENTRY→configure→ConditionCheck%%ENTRY→configureSaslLogin→initMaxCnxns",
+    "log": "[INFO]:Configuring NIO connection handler with 10s sessionless connection timeout, 4 selector thread(s), no worker threads, and gathered writes. [INFO]:binding to port 8080 [INFO]:bound to port 192.168.1.1 [INFO]:configure secure: true on addr 192.168.1.2"
+  },
+  "fe7267fe_1": {
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log": ""
+  },
+  "8db8f97d_1": {
+    "exec_flow": "ENTRY→InitializeLogDirectory%%ENTRY→SetLogDirectory",
+    "log": "[INFO]:Initialized transaction log directory at /var/log/hadoop/txnlogs [ERROR]:Access denied to path /var/log/hadoop/txnlogs"
+  },
+  "ed87a2b8_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[DEBUG]:Opening datadir:/var/lib/zookeeper snapDir:/var/lib/zookeeper/snapshots [INFO]:ZOOKEEPER_SNAPSHOT_TRUST_EMPTY : true"
+  },
+  "6a46fb4d_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": "[INFO]:tickTime set to 3000"
+  },
+  "2d9dd2fe_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": "[INFO]:Min session timeout set to 3000ms"
+  },
+  "cf3c2e79_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": "[INFO]:Max session timeout set to 30000"
+  },
+  "23fc4e45_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": "[INFO]:initLimit set to 10"
+  },
+  "a6f279e6_1": {
+    "exec_flow": "ENTRY→EXIT",
+    "log": ""
+  },
+  "dca58180_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "cb6f77de_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  },
+  "1fa5dfad_1": {
+    "exec_flow": "ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→CALL→RETURN→CALL→CALL→EXIT%%ENTRY→TRY→IF_FALSE→CALL→EXIT",
+    "log": "[DEBUG]:Database not initialized, loading database [INFO]:Last processed Zxid: 0x100000000 [INFO]:Election algorithm created"
+  },
+  "57e09361_1": {
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log": "[INFO]:Fetched 128MB block from namenode01 [ERROR]:Access denied to path /user/test"
+  }
+}

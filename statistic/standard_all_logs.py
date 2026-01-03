@@ -135,7 +135,7 @@ def get_merged_files(input,output):
 
 ## step_2: standilized logs, with interrupt continue
 def compress_log(merged_file,output_file):
-    os.makedirs("output/log_events",exist_ok=True)
+    os.makedirs("output/zookeeper/log_events",exist_ok=True)
     with open(merged_file, 'r') as file:
         merge_map = json.load(file)
 
@@ -180,14 +180,19 @@ def compress_log(merged_file,output_file):
 ## another: for single node, read the single cfg to generate some results.
 
 def main():
-    input_dir = "output/hadoop"
-    output_file  = "output/hadoop/merge_hdfs.json"
-    write_file = "baseline_compressed_log.json"
+    # input_dir = "output/hadoop"
+    # output_file  = "output/hadoop/merge_hdfs.json"
+    # write_file = "baseline_compressed_log.json"
     # output_file  = "output/hadoop/merge_hdfs_without_cot.json"
     # write_file = "ablation_v1_compressed_log.json"
     # input_dir =  "output_v2/hadoop"
     # output_file = "output_v2/hadoop/merge_hdfs_without_static_analysis.json"
     # write_file = "ablation_v2_compressed_log.json"
+
+    input_dir = "output/zookeeper"
+    output_file  = "output/zookeeper/merge_zookeeper.json"
+    write_file = "baseline_zookeeper_compressed_log.json"
+    
     get_merged_files(input_dir,output_file)
     compress_log(output_file,write_file)
     
