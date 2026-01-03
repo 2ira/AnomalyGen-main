@@ -1,0 +1,367 @@
+LineId,Level,Content,EventId,EventTemplate,ParameterList,BlockId
+1,[INFO],Connection marked as stale,d36e62bb,Connection marked as stale,[],d80bcb62_1
+2,[DEBUG],Ignoring exception during selection key cancel,9f204976,Ignoring exception during selection key cancel,[],d80bcb62_1
+3,[ERROR],Failed to cancel selection key,f2996104,Failed to cancel selection key,[],d80bcb62_1
+4,[INFO],Socket closed successfully,2b9c069b,Socket closed successfully,[],d80bcb62_1
+1,[WARN],trying to do i/o on a null socket for session: 0x1A2B3C4D,fd8c9024,trying to do i<*> on a null socket for session: <*>x<*>A<*>B<*>C<*>D,"['/o', '0x1', '2B3', '4']",2a051a71_1
+2,[INFO],End of stream reached,d33b9afa,End of stream reached,[],2a051a71_1
+3,[WARN],CancelledKeyException causing close of session: 0x1A2B3C4D,44342189,CancelledKeyException causing close of session: <*>x<*>A<*>B<*>C<*>D,"['0x1', '2B3', '4']",2a051a71_1
+4,[DEBUG],CancelledKeyException stack trace,dfab07dc,CancelledKeyException stack trace,[],2a051a71_1
+5,[WARN],Unexpected exception,d66d276c,Unexpected exception,[],2a051a71_1
+6,[WARN],Closing session 0x1A2B3C4D,cee2328f,Closing session <*>x<*>A<*>B<*>C<*>D,"['0x1', '2B3', '4']",2a051a71_1
+7,[WARN],Close of session 0x1A2B3C4D,c3ef453e,Close of session <*>x<*>A<*>B<*>C<*>D,"['0x1', '2B3', '4']",2a051a71_1
+8,[DEBUG],ignoring exception during selectionkey cancel,f96cce3f,ignoring exception during selectionkey cancel,[],2a051a71_1
+1,[DEBUG],Ignoring exception during selectionkey cancel,5e464cd0,Ignoring exception during selectionkey cancel,[],5c6c4b56_1
+1,[DEBUG],Ignoring exception during selectionkey cancel,5e464cd0,Ignoring exception during selectionkey cancel,[],6d9d2f84_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",70e11b2c_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],70e11b2c_1
+1,[ERROR],Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: SecurityException occurred,fc19e375,Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: SecurityException occurred,[],fd71111f_1
+2,[INFO],Login user set successfully,7fe3ee7b,Login user set successfully,[],fd71111f_1
+1,[ERROR],Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException,7a3a0ea5,Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException,[],1d5e10a3_1
+2,[ERROR],Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException,7a3a0ea5,Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException,[],1d5e10a3_1
+3,[ERROR],Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException,7a3a0ea5,Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException,[],1d5e10a3_1
+4,[ERROR],Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException,7a3a0ea5,Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException,[],1d5e10a3_1
+5,[INFO],Login user set successfully,7fe3ee7b,Login user set successfully,[],1d5e10a3_1
+1,[ERROR],SSL isn't supported in NIOServerCnxn,dc400e49,SSL isn't supported in NIOServerCnxn,[],8c261744_1
+1,[INFO],Set text trace mask to 0x1a2b3c4d,fb6ebbe4,Set text trace mask to <*>x<*>a<*>b<*>c<*>d,"['0x1', '2b3', '4']",afe2aa34_1
+1,[ERROR],"Error cancelling command selection key, Exception",62505a54,"Error cancelling command selection key, Exception",[],078913a0_1
+2,[DEBUG],"Command ""UNKNOWN_CMD"" is not executed because it is not in the whitelist.",935b9237,Command <*> is not executed because it is not in the whitelist.,"['""UNKNOWN_CMD""']",078913a0_1
+3,[INFO],"Processing ""KNOWN_CMD"" command from ""192.168.1.10:8080""",9398c26d,Processing <*> command from <*>,"['""KNOWN_CMD""', '""192.168.1.10:8080""']",078913a0_1
+4,[INFO],Set text trace mask to 0x1a2b3c,59a4a48d,Set text trace mask to <*>x<*>a<*>b<*>c,"['0x1', '2b3']",078913a0_1
+1,[DEBUG],"Socket is open, proceeding with operation",ba635213,"Socket is open, proceeding with operation",[],cfc8639a_1
+2,[INFO],Closing socket connection,b06a919f,Closing socket connection,[],cfc8639a_1
+1,[DEBUG],Ignoring exception during selection key cancel,9f204976,Ignoring exception during selection key cancel,[],a1ca3a63_1
+2,[DEBUG],Socket closed successfully,2b9c069b,Socket closed successfully,[],a1ca3a63_1
+1,[ERROR],Error cancelling command selection key,6fb4dc3d,Error cancelling command selection key,[],d1147373_1
+2,[DEBUG],"Command ""trace"" is not executed because it is not in the whitelist",3f492019,Command <*> is not executed because it is not in the whitelist,"['""trace""']",d1147373_1
+3,[INFO],"Processing ""trace"" command from /192.168.1.100:8080",12487043,Processing <*> command from /<*>.<*>.<*>.<*>:<*>,"['""trace""', '192', '168.1.100', '8080']",d1147373_1
+4,[INFO],Set text trace mask to 0xFF,94eb13aa,Set text trace mask to <*>xFF,['0'],d1147373_1
+5,[WARN],Trying to do I/O on a null socket for session: 0x123456789ABCDEF,3081887d,Trying to do I<*> on a null socket for session: <*>x<*>ABCDEF,"['/O', '0x123456789']",d1147373_1
+6,[INFO],Socket error: Connection reset by peer,6b318d6f,Socket error: Connection reset by peer,[],d1147373_1
+7,[DEBUG],Ignoring exception during selection key cancel,9f204976,Ignoring exception during selection key cancel,[],d1147373_1
+8,[DEBUG],Socket closed successfully,2b9c069b,Socket closed successfully,[],d1147373_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f017adf3_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f017adf3_1
+1,[DEBUG],"Invalid name ""zookeeperBean"" for class org.apache.zookeeper.jmx.ZKMBeanInfo",9f15f2cf,Invalid name <*> for class org.apache.zookeeper.jmx.ZKMBeanInfo,"['""zookeeperBean""']",83e0e7fc_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",8d5fd05c_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],8d5fd05c_1
+1,[INFO],Accessing mapBean2Path,2200aab2,Accessing mapBean<*>Path,['2'],290b45d8_1
+2,[WARN],"Failed to register MBean ""exampleBean""",a6109f76,Failed to register MBean <*>,"['""exampleBean""']",290b45d8_1
+3,[DEBUG],"Invalid name ""exampleBeanName"" for class ""org.apache.zookeeper.jmx.ZKMBeanInfo""",48809ea0,Invalid name <*> for class <*>,"['""exampleBeanName""', '""org.apache.zookeeper.jmx.ZKMBeanInfo""']",290b45d8_1
+1,[INFO],Unregistered MBean from registry,1f819b56,Unregistered MBean from registry,[],771fc8a5_1
+1,[WARN],Failed to unregister with JMX,b62126e3,Failed to unregister with JMX,[],a3d7f8a4_1
+1,[DEBUG],Initializing leader election protocol...,d51c79d6,Initializing leader election protocol...,[],c4f5362c_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",7cf2c02e_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],7cf2c02e_1
+1,[INFO],Accessing /mapBean2Path,e30328c8,Accessing <*><*>Path,['/mapBean2'],37b80475_1
+2,[WARN],"Failed to register MBean ""bean-01""",a6109f76,Failed to register MBean <*>,"['""bean-01""']",37b80475_1
+1,[INFO],Fetched last logged transaction ID 1024,3f6d6538,Fetched last logged transaction ID <*>,['1024'],6f1c930f_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],6f1c930f_1
+1,[INFO],"New election. My id = 1, proposed zxid=0x100",b27194cc,"New election. My id = <*>, proposed zxid=<*>x<*>","['1', '0x100']",9a354659_1
+2,[DEBUG],"Adding vote: from=2, proposed leader=3, proposed zxid=0x100, proposed election epoch=0x200",67dd74ae,"Adding vote: from=<*>, proposed leader=<*>, proposed zxid=<*>x<*>, proposed election epoch=<*>x<*>","['2', '3', '0x100', '0x200']",9a354659_1
+3,[INFO],Notification time out: 5000 ms,8a31fc3a,Notification time out: <*> ms,['5000'],9a354659_1
+4,[DEBUG],getLastLoggedZxid,07b40b32,getLastLoggedZxid,[],9a354659_1
+1,[INFO],Accessing mapBean2Path,2200aab2,Accessing mapBean<*>Path,['2'],7d7faa25_1
+2,[WARN],"Failed to register MBean ""ZooKeeperServerBean""",a6109f76,Failed to register MBean <*>,"['""ZooKeeperServerBean""']",7d7faa25_1
+3,[DEBUG],"Invalid name ""InvalidBeanName"" for class ""org.apache.zookeeper.server.ZooKeeperServer""",48809ea0,Invalid name <*> for class <*>,"['""InvalidBeanName""', '""org.apache.zookeeper.server.ZooKeeperServer""']",7d7faa25_1
+1,[INFO],"New election. My id = 1, proposed zxid=0x100",b27194cc,"New election. My id = <*>, proposed zxid=<*>x<*>","['1', '0x100']",a43bbe11_1
+2,[DEBUG],"Adding vote: from=2, proposed leader=3, proposed zxid=0x100, proposed election epoch=0x1",67dd74ae,"Adding vote: from=<*>, proposed leader=<*>, proposed zxid=<*>x<*>, proposed election epoch=<*>x<*>","['2', '3', '0x100', '0x1']",a43bbe11_1
+3,[INFO],Notification time out: 5000 ms,8a31fc3a,Notification time out: <*> ms,['5000'],a43bbe11_1
+4,[DEBUG],getLastLoggedZxid,07b40b32,getLastLoggedZxid,[],a43bbe11_1
+1,[INFO],Ping operation executed,fefd1bf9,Ping operation executed,[],0ef137db_1
+1,[WARN],Ignoring proposal,da172c3b,Ignoring proposal,[],0ef137db_2
+1,[ERROR],Received an UPTODATE message after Observer started,176089c7,Received an UPTODATE message after Observer started,[],0ef137db_3
+1,[INFO],Learner commit received and processed,2c3d9458,Learner commit received and processed,[],0ef137db_4
+1,[ERROR],Changes proposed in reconfig,65c5d400,Changes proposed in reconfig,[],0ef137db_5
+1,[WARN],Unknown packet type: UnknownType,4b184fa9,Unknown packet type: UnknownType,[],0ef137db_6
+1,[WARN],Exception when observing the leader,04a61618,Exception when observing the leader,[],eb7f58f3_1
+2,[INFO],Disconnected from leader (with address: https://leader-node:2181). Was connected for 5000ms. Sync state: RECONFIGURED,19bd3784,Disconnected from leader (with address: https:<*>:<*>). Was connected for <*>ms. Sync state: RECONFIGURED,"['//leader-node:2181', '5000']",eb7f58f3_1
+1,[WARN],Ignoring proposal,cce6fcca,Ignoring <*>,['proposal'],eb7f58f3_2
+2,[WARN],Ignoring commit,cce6fcca,Ignoring <*>,['commit'],eb7f58f3_2
+3,[ERROR],Received an UPTODATE message after Observer started,176089c7,Received an UPTODATE message after Observer started,[],eb7f58f3_2
+4,[WARN],"Unknown packet type: INFORM, LearnerHandler.packetToString(qp)",884e59d9,"Unknown packet type: INFORM, LearnerHandler.packetToString(qp)",[],eb7f58f3_2
+1,[INFO],Observer shutdown initiated,261b5a02,Observer shutdown initiated,[],d504b831_1
+2,[INFO],Shutdown operation completed successfully,20afaaf4,Shutdown operation completed successfully,[],d504b831_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f9f11c2b_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f9f11c2b_1
+1,[WARN],Got zxid 0x0 expected 0x1,468bee9d,Got zxid <*>x<*> expected <*>x<*>,"['0x0', '0x1']",5f8a114c_1
+2,[INFO],Request logged,b10ddc41,Request logged,[],5f8a114c_1
+3,[ERROR],Received an UPTODATE message after Follower started,2035b352,Received an UPTODATE message after Follower started,[],5f8a114c_1
+4,[WARN],Unknown packet type: SYNC,3bd6bc25,Unknown packet type: SYNC,[],5f8a114c_1
+1,[WARN],Got zxid 0x1 expected 0x2,468bee9d,Got zxid <*>x<*> expected <*>x<*>,"['0x1', '0x2']",fe9d88fb_1
+2,[INFO],Request logged,b10ddc41,Request logged,[],fe9d88fb_1
+3,[ERROR],Received an UPTODATE message after Follower started,2035b352,Received an UPTODATE message after Follower started,[],fe9d88fb_1
+4,[WARN],Unknown packet type: UNKNOWN_PACKET_TYPE,b7c8c0a6,Unknown packet type: UNKNOWN_PACKET_TYPE,[],fe9d88fb_1
+5,[INFO],FOLLOWING - LEADER ELECTION TOOK - 500ms ms,96ed693e,FOLLOWING - LEADER ELECTION TOOK - <*>ms ms,['500'],fe9d88fb_1
+6,[INFO],Disconnected from leader (with address: https://leader-node:2181). Was connected for 3000ms. Sync state: COMPLETED,70e023c9,Disconnected from leader (with address: https:<*>:<*>). Was connected for <*>ms. Sync state: COMPLETED,"['//leader-node:2181', '3000']",fe9d88fb_1
+1,[INFO],Shutdown Follower,b171c9f7,Shutdown Follower,[],bf2972a2_1
+1,[INFO],Initialized buffer statistics for proposal tracking,4a5ec58b,Initialized buffer statistics for proposal tracking,[],03049d5e_1
+2,[INFO],"Fetched quorum addresses: [""192.168.1.1:2181"", ""192.168.1.2:2181""]",eccf4bc0,Fetched quorum addresses: <*>,"['[""192.168.1.1:2181"", ""192.168.1.2:2181""]']",03049d5e_1
+3,[INFO],Created server socket at address 192.168.1.1:2181 with SSL enabled,b1a23f05,Created server socket at address <*>.<*>.<*>.<*>:<*> with SSL enabled,"['192', '168.1.1', '2181']",03049d5e_1
+4,[INFO],Created server socket at address 192.168.1.2:2181 with SSL enabled,b1a23f05,Created server socket at address <*>.<*>.<*>.<*>:<*> with SSL enabled,"['192', '168.1.2', '2181']",03049d5e_1
+5,[ERROR],"Leader failed to initialize any of the following sockets: [""192.168.1.1:2181"", ""192.168.1.2:2181""]",d51680a7,Leader failed to initialize any of the following sockets: <*>,"['[""192.168.1.1:2181"", ""192.168.1.2:2181""]']",03049d5e_1
+1,[DEBUG],Quorum address resolved to wildcard addresses,aa908556,Quorum address resolved to wildcard addresses,[],7e8fa7b0_1
+2,[ERROR],IOException thrown due to empty server sockets,90f7eedc,IOException thrown due to empty server sockets,[],7e8fa7b0_1
+1,[WARN],"Failed to register with JMX, exception occurred",760ca0ca,"Failed to register with JMX, exception occurred",[],f132ecbd_1
+2,[WARN],"Failed to register MBean ""LeaderElectionBean""",a6109f76,Failed to register MBean <*>,"['""LeaderElectionBean""']",f132ecbd_1
+1,[INFO],Unregistered MBean from registry,1f819b56,Unregistered MBean from registry,[],718b1ec7_1
+1,[WARN],Failed to unregister with JMX,b62126e3,Failed to unregister with JMX,[],f88a8532_1
+2,[WARN],"Failed to register with JMX, exception occurred",760ca0ca,"Failed to register with JMX, exception occurred",[],f88a8532_1
+3,[WARN],"Failed to register MBean ""LeaderElectionBean""",a6109f76,Failed to register MBean <*>,"['""LeaderElectionBean""']",f88a8532_1
+1,[INFO],LEADING - LEADER ELECTION TOOK - 500ms milliseconds,9cdf0c19,LEADING - LEADER ELECTION TOOK - <*>ms milliseconds,['500'],f88a8532_2
+2,[DEBUG],"Set lastSeenQuorumVerifier to currentQuorumVerifier (""QuorumVerifierData"")",5ad374ba,Set lastSeenQuorumVerifier to currentQuorumVerifier (<*>),"['""QuorumVerifierData""']",f88a8532_2
+3,[INFO],"NEWLEADER proposal has Zxid of ""0x12345abc""",edb98c4e,NEWLEADER proposal has Zxid of <*>,"['""0x12345abc""']",f88a8532_2
+1,[INFO],Shutting down,6a7eb108,Shutting down,[],f88a8532_3
+2,[INFO],"Shutdown called. For the reason ""Maintenance"", reason",952a35f5,"Shutdown called. For the reason <*>, reason","['""Maintenance""']",f88a8532_3
+1,[WARN],Ignoring unexpected exception,b9566af4,Ignoring unexpected exception,[],031f8582_1
+2,[INFO],Socket closed successfully,2b9c069b,Socket closed successfully,[],031f8582_1
+3,[INFO],Thread interrupted,2ab078e1,Thread interrupted,[],031f8582_1
+4,[INFO],Removed learner handler from master,c0a27b54,Removed learner handler from master,[],031f8582_1
+5,[INFO],Unregistered learner handler bean,9333f24d,Unregistered learner handler bean,[],031f8582_1
+1,[INFO],Shutting down,6a7eb108,Shutting down,[],5ce38c16_1
+2,[INFO],"Shutdown called. For the reason ""maintenance"", reason",952a35f5,"Shutdown called. For the reason <*>, reason","['""maintenance""']",5ce38c16_1
+3,[WARN],"Ignoring unexpected exception, connection error",a7247214,"Ignoring unexpected exception, connection error",[],5ce38c16_1
+1,[DEBUG],"Unregister MBean ""mbean_01"", objName",233b375a,"Unregister MBean <*>, objName","['""mbean_01""']",e7589eef_1
+2,[DEBUG],"Invalid name ""testBean"" for class org.apache.zookeeper.jmx.ZKMBeanInfo",9f15f2cf,Invalid name <*> for class org.apache.zookeeper.jmx.ZKMBeanInfo,"['""testBean""']",e7589eef_1
+1,[DEBUG],"Unregister MBean [MBeanObjectName], objName",233b375a,"Unregister MBean <*>, objName",['[MBeanObjectName]'],a20ba4b9_1
+2,[DEBUG],"Invalid name ""InvalidBeanName"" for class InvalidBeanClass",faed1bc4,Invalid name <*> for class InvalidBeanClass,"['""InvalidBeanName""']",a20ba4b9_1
+1,[DEBUG],Starting quorum peer,d459c04c,Starting quorum peer,[],67a23884_1
+2,[INFO],LOOKING,00078e14,LOOKING,[],67a23884_1
+3,[INFO],OBSERVING,fceda1bc,OBSERVING,[],67a23884_1
+4,[INFO],FOLLOWING,c172d526,FOLLOWING,[],67a23884_1
+5,[INFO],LEADING,23719262,LEADING,[],67a23884_1
+6,[WARN],QuorumPeer main thread exited,a8e24942,QuorumPeer main thread exited,[],67a23884_1
+1,[DEBUG],Quorum address resolved to wildcard addresses,aa908556,Quorum address resolved to wildcard addresses,[],67a23884_2
+1,[INFO],Shutting down,6a7eb108,Shutting down,[],67a23884_3
+2,[INFO],"Shutdown called. For the reason ""reason""",2d018faa,Shutdown called. For the reason <*>,"['""reason""']",67a23884_3
+3,[WARN],"Ignoring unexpected exception, e",b3fe2208,"Ignoring unexpected exception, e",[],67a23884_3
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",b917106e_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],b917106e_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",f40018ee_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],f40018ee_1
+1,[WARN],"Failed to register MBean ""exampleBeanName""",a6109f76,Failed to register MBean <*>,"['""exampleBeanName""']",bb9a49f5_1
+1,[WARN],"Failed to register MBean ""DataNodeBean""",a6109f76,Failed to register MBean <*>,"['""DataNodeBean""']",2354eb16_1
+2,[WARN],"Failed to register with JMX, e",98ef3d8b,"Failed to register with JMX, e",[],2354eb16_1
+1,[WARN],Not starting Read-only server as startup follows shutdown!,94ac0a57,Not starting Read-only server as startup follows shutdown!,[],86c5ab2d_1
+2,[WARN],"Failed to register MBean ""ZooKeeperBean""",a6109f76,Failed to register MBean <*>,"['""ZooKeeperBean""']",86c5ab2d_1
+3,[WARN],Failed to register with JMX due to exception,b56be535,Failed to register with JMX due to exception,[],86c5ab2d_1
+4,[INFO],Read-only server started,dd776012,Read-only server started,[],86c5ab2d_1
+1,[DEBUG],Socket is not open,ab89bd1f,Socket is not open,[],b330b347_1
+2,[INFO],Closing socket connection,b06a919f,Closing socket connection,[],b330b347_1
+1,[DEBUG],Ignoring exception during selectionkey cancel,5e464cd0,Ignoring exception during selectionkey cancel,[],66837774_1
+2,[DEBUG],Closed socket connection for client 192.168.1.100 sessionId 123456789,f58bffea,Closed socket connection for client <*>.<*>.<*>.<*> sessionId <*>,"['192', '168.1.100', '123456789']",66837774_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",cd596be4_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],cd596be4_1
+1,[DEBUG],"Unregister MBean [mBeanServer.unregisterMBean], objName",233b375a,"Unregister MBean <*>, objName",['[mBeanServer.unregisterMBean]'],24432444_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",7a0c9aa9_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],7a0c9aa9_1
+1,[ERROR],Failed to get a response from model gpt-4o after multiple retries,d8f729cd,Failed to get a response from model gpt-<*>o after multiple retries,['4'],46e632b7_1
+1,[WARN],Error during unregister of bean_name_01,3d132b03,Error during unregister of bean_name_<*>,['01'],b6bdf782_1
+2,[ERROR],Unexpected exception during unregister of bean_name_01. It should be reviewed and fixed.,1bef4cb0,Unexpected exception during unregister of bean_name_<*>. It should be reviewed and fixed.,['01'],b6bdf782_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",4ba6b55f_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],4ba6b55f_1
+1,[WARN],Current zxid 1024 is <= 1024 for READ,0076be86,Current zxid <*> is <= <*> for READ,"['1024', '<= 1024']",2df73235_1
+2,[DEBUG],Creating new log file: log_1024,2ff922ae,Creating new log file: log_<*>,['1024'],2df73235_1
+3,[ERROR],Faulty serialization for header and txn,fe6b8ed0,Faulty serialization for header and txn,[],2df73235_1
+1,[WARN],Current zxid 100 is <= 100 for WRITE,b001afc7,Current zxid <*> is <= <*> for WRITE,"['100', '<= 100']",b4602dad_1
+2,[DEBUG],Creating new log file: log_100,2ff922ae,Creating new log file: log_<*>,['100'],b4602dad_1
+3,[ERROR],Faulty serialization for header and txn,fe6b8ed0,Faulty serialization for header and txn,[],b4602dad_1
+1,[WARN],Current zxid 100 is <= 99 for CREATE,e7006b39,Current zxid <*> is <= <*> for CREATE,"['100', '<= 99']",e36f0f69_1
+2,[DEBUG],Creating new log file: log_100,2ff922ae,Creating new log file: log_<*>,['100'],e36f0f69_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",a1a71d12_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],a1a71d12_1
+1,[TRACE],Trace enabled for log with mask 1024,b7bf6e60,Trace enabled for log with mask <*>,['1024'],a8e4c544_1
+2,[TRACE],Request logged with header:rp:/user/data:READ,3758dd26,Request logged with header:rp:<*>:READ,['/user/data'],a8e4c544_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",6a09e0b8_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],6a09e0b8_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",71602e92_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],71602e92_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",71602e92_2
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],71602e92_2
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",71602e92_3
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],71602e92_3
+1,[WARN],"Exception while establishing session, closing, e",95acc1a8,"Exception while establishing session, closing, e",[],fec98a47_1
+2,[DEBUG],Established session 0x1a2b3c with negotiated timeout 30000 for client 192.168.1.100,76500044,Established session <*>x<*>a<*>b<*>c with negotiated timeout <*> for client <*>.<*>.<*>.<*>,"['0x1', '2b3', '30000', '192', '168.1.100']",fec98a47_1
+3,[INFO],"Invalid session 0x1a2b3c for client 192.168.1.100, probably expired",e4cd4dfd,"Invalid session <*>x<*>a<*>b<*>c for client <*>.<*>.<*>.<*>, probably expired","['0x1', '2b3', '192', '168.1.100']",fec98a47_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",0c6fb45d_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],0c6fb45d_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",1aa67eb1_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],1aa67eb1_1
+1,[TRACE],Ack zxid: 0x1f4,7a2967a2,Ack zxid: <*>x<*>f<*>,"['0x1', '4']",eb6185a4_1
+2,[TRACE],Outstanding proposals all,ae50c205,Outstanding proposals all,[],eb6185a4_1
+3,[DEBUG],Outstanding is 0,8216383e,Outstanding is <*>,['0'],eb6185a4_1
+4,[DEBUG],"Proposal has already been committed, pzxid: 0x1f4 zxid: 0x1f4",b4055bc7,"Proposal has already been committed, pzxid: <*>x<*>f<*> zxid: <*>x<*>f<*>","['0x1', '4', '0x1', '4']",eb6185a4_1
+5,[WARN],Trying to commit future proposal: zxid 0x1f4 from follower01,6282eb07,Trying to commit future proposal: zxid <*>x<*>f<*> from follower<*>,"['0x1', '4', '01']",eb6185a4_1
+1,[DEBUG],Bypassing cache,b5568f5b,Bypassing cache,[],f367ba94_1
+2,[TRACE],Ack zxid: 0x100000000,1d653c9c,Ack zxid: <*>x<*>,['0x100000000'],f367ba94_1
+3,[TRACE],outstanding proposals all,3676964f,outstanding proposals all,[],f367ba94_1
+4,[DEBUG],outstanding is 0,a369f3f8,outstanding is <*>,['0'],f367ba94_1
+5,[DEBUG],"proposal has already been committed, pzxid: 0x100000000 zxid: 0x100000000",f9c59012,"proposal has already been committed, pzxid: <*>x<*> zxid: <*>x<*>","['0x100000000', '0x100000000']",f367ba94_1
+6,[WARN],Trying to commit future proposal: zxid 0x100000000 from follower01,953d4f52,Trying to commit future proposal: zxid <*>x<*> from follower<*>,"['0x100000000', '01']",f367ba94_1
+7,[ERROR],Null QuorumPeer,6dfc055d,Null QuorumPeer,[],f367ba94_1
+1,[INFO],"Processing request: /user/data, request",e0948ecb,"Processing request: <*>, request",['/user/data'],92e9aef6_1
+2,[INFO],Elapsed time calculated: 3.14ms,98b87da5,Elapsed time calculated: <*>.<*>ms,['3.14'],92e9aef6_1
+3,[INFO],Added request to queue,7e49daf1,Added request to queue,[],92e9aef6_1
+4,[INFO],Commit needed for request: true,76d6f802,Commit needed for request: <*>,['true'],92e9aef6_1
+5,[INFO],Added write request to queue,1441b5d2,Added write request to queue,[],92e9aef6_1
+6,[INFO],Incremented write request count: 1024,07aad86c,Incremented <*> request count: <*>,"['write', '1024']",92e9aef6_1
+7,[INFO],Wakeup signal sent,62468e04,Wakeup signal sent,[],92e9aef6_1
+8,[INFO],"Processing request: /user/data, request",e0948ecb,"Processing request: <*>, request",['/user/data'],92e9aef6_1
+9,[INFO],Elapsed time calculated: 3.14ms,98b87da5,Elapsed time calculated: <*>.<*>ms,['3.14'],92e9aef6_1
+10,[INFO],Added request to queue,7e49daf1,Added request to queue,[],92e9aef6_1
+11,[INFO],Commit needed for request: false,76d6f802,Commit needed for request: <*>,['false'],92e9aef6_1
+12,[INFO],Incremented read request count: 512,07aad86c,Incremented <*> request count: <*>,"['read', '512']",92e9aef6_1
+13,[INFO],Wakeup signal sent,62468e04,Wakeup signal sent,[],92e9aef6_1
+1,[ERROR],"Committed request not found on toBeApplied: 1024, request",86a55d40,"Committed request not found on toBeApplied: <*>, request",['1024'],3d61b616_1
+1,[ERROR],"Throttled request sent as proposal: ""ProposalID_12345"". Exiting.",b076a528,Throttled request sent as proposal: <*>. Exiting.,"['""ProposalID_12345""']",4cc5aad5_1
+2,[INFO],System exit requested by ServiceUtils,e133f60d,System exit requested by ServiceUtils,[],4cc5aad5_1
+3,[ERROR],Xid rollover detected. Shutting down system.,dc17ed8e,Xid rollover detected. Shutting down system.,[],4cc5aad5_1
+1,[ERROR],"Throttled request sent as proposal: ""ProposalID_12345"". Exiting.",b076a528,Throttled request sent as proposal: <*>. Exiting.,"['""ProposalID_12345""']",4cc5aad5_2
+2,[INFO],System exit requested by ServiceUtils,e133f60d,System exit requested by ServiceUtils,[],4cc5aad5_2
+3,[INFO],Proposal statistics updated with last buffer size: 1024,f11b2453,Proposal statistics updated with last buffer size: <*>,['1024'],4cc5aad5_2
+4,[INFO],Quorum verifier added successfully,05093525,Quorum verifier added successfully,[],4cc5aad5_2
+5,[INFO],Proposal count incremented in server metrics,13f5afbc,Proposal count incremented in server metrics,[],4cc5aad5_2
+1,[INFO],Processing sync request from LearnerSyncRequest,37d6fb6a,Processing sync request from LearnerSyncRequest,[],6f2b4c33_1
+2,[DEBUG],Forwarding request to next processor,d86bb3ef,Forwarding request to next processor,[],6f2b4c33_1
+3,[INFO],Proposing transaction for consensus,7e1ba404,Proposing transaction for consensus,[],6f2b4c33_1
+4,[ERROR],"XidRolloverException occurred, throwing RequestProcessorException",e25c3721,"XidRolloverException occurred, throwing RequestProcessorException",[],6f2b4c33_1
+5,[ERROR],Throttled request send as proposal: Exiting.,d3e34bc9,Throttled request send as proposal: Exiting.,[],6f2b4c33_1
+6,[DEBUG],Proposing:: TransactionProposal,1b3b56cb,Proposing:: TransactionProposal,[],6f2b4c33_1
+1,[WARN],"Closing connection to leader, exception during packet send",939e92d1,"Closing connection to leader, exception during packet send",[],5895bdfa_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",59424e85_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],59424e85_1
+1,[INFO],Processing sync request from LearnerSyncRequest,37d6fb6a,Processing sync request from LearnerSyncRequest,[],59424e85_2
+2,[DEBUG],Forwarding request to next processor,d86bb3ef,Forwarding request to next processor,[],59424e85_2
+3,[INFO],Proposing transaction for consensus,7e1ba404,Proposing transaction for consensus,[],59424e85_2
+4,[ERROR],"XidRolloverException occurred, throwing RequestProcessorException",e25c3721,"XidRolloverException occurred, throwing RequestProcessorException",[],59424e85_2
+5,[ERROR],Throttled request send as proposal: Exiting.,d3e34bc9,Throttled request send as proposal: Exiting.,[],59424e85_2
+6,[DEBUG],Proposing:: transaction,74691683,Proposing:: transaction,[],59424e85_2
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",63d68207_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],63d68207_1
+1,[DEBUG],"Log size limit reached: 1024, 2048",0ced69e9,"Log size limit reached: <*>, <*>","['1024', '2048']",ddf273fc_1
+2,[DEBUG],rollLog,433fc242,rollLog,[],ddf273fc_1
+1,[DEBUG],"Log size limit reached: 1024, 2048",0ced69e9,"Log size limit reached: <*>, <*>","['1024', '2048']",8e7e1981_1
+2,[DEBUG],rollLog,433fc242,rollLog,[],8e7e1981_1
+1,[ERROR],Failed to get a response from model 'gpt-4o' after multiple retries,18b38e25,Failed to get a response from model <*> after multiple retries,"[""'gpt-4o'""]",e2a7bdaf_1
+1,[INFO],SyncRequestProcessor exited!,7f667bb2,SyncRequestProcessor exited!,[],1ada5259_1
+2,[WARN],Current zxid 100 is <= 200 for CREATE,e7006b39,Current zxid <*> is <= <*> for CREATE,"['100', '<= 200']",1ada5259_1
+3,[DEBUG],Creating new log file: log.100,53c73c05,Creating new log file: log.<*>,['100'],1ada5259_1
+1,[INFO],SyncRequestProcessor exited!,7f667bb2,SyncRequestProcessor exited!,[],1ada5259_2
+1,[INFO],Processing sync request from LearnerSyncRequest,37d6fb6a,Processing sync request from LearnerSyncRequest,[],1ada5259_3
+1,[DEBUG],Forwarding request to next processor,d86bb3ef,Forwarding request to next processor,[],1ada5259_4
+2,[INFO],Proposing transaction for consensus,7e1ba404,Proposing transaction for consensus,[],1ada5259_4
+3,[ERROR],"XidRolloverException occurred, throwing RequestProcessorException",e25c3721,"XidRolloverException occurred, throwing RequestProcessorException",[],1ada5259_4
+4,[ERROR],Throttled request send as proposal: 300. Exiting.,6eef2aaa,Throttled request send as proposal: <*>. Exiting.,['300'],1ada5259_4
+5,[DEBUG],Proposing:: 400,e4f92e5b,Proposing:: <*>,['400'],1ada5259_4
+1,[INFO],"Initialize file found, an empty database will not block voting participation",6759d06a,"Initialize file found, an empty database will not block voting participation",[],79b6e40a_1
+2,[ERROR],Something is broken! Empty snapshot warning,00fa770b,Something is broken! Empty snapshot warning,[],79b6e40a_1
+3,[WARN],This should only be allowed during upgrading. Empty snapshot warning,7aa4fd38,This should only be allowed during upgrading. Empty snapshot warning,[],79b6e40a_1
+4,[WARN],"Unexpected empty data tree, setting zxid to -1",5d24db8e,"Unexpected empty data tree, setting zxid to -<*>",['1'],79b6e40a_1
+1,[INFO],"Initialize file found, an empty database will not block voting participation",6759d06a,"Initialize file found, an empty database will not block voting participation",[],57dfbaa4_1
+2,[WARN],This should only be allowed during upgrading.,3022f455,This should only be allowed during upgrading.,[],57dfbaa4_1
+3,[WARN],"Unexpected empty data tree, setting zxid to -1",5d24db8e,"Unexpected empty data tree, setting zxid to -<*>",['1'],57dfbaa4_1
+4,[INFO],"Snapshot loaded in 150 ms, highest zxid is 0x123456, digest is abcdef123456",8c19bc97,"Snapshot loaded in <*> ms, highest zxid is <*>x<*>, digest is abcdef<*>","['150', '0x123456', '123456']",57dfbaa4_1
+1,[INFO],Started writing long value to file,b85caa55,<*> writing long value to file,['Started'],8eee06b0_1
+2,[INFO],Accessing snapshot directory,3cbad69a,Accessing snapshot directory,[],8eee06b0_1
+3,[INFO],Snapshot directory accessed successfully,affe0b2b,Snapshot directory accessed successfully,[],8eee06b0_1
+4,[INFO],Exiting snapshot directory access,f09c116d,Exiting snapshot directory access,[],8eee06b0_1
+5,[INFO],Finished writing long value to file,b85caa55,<*> writing long value to file,['Finished'],8eee06b0_1
+1,[INFO],"Initialize file found, an empty database will not block voting participation",6759d06a,"Initialize file found, an empty database will not block voting participation",[],b6870033_1
+2,[WARN],This should only be allowed during upgrading,3e4ed47a,This should only be allowed during upgrading,[],b6870033_1
+3,[WARN],"Unexpected empty data tree, setting zxid to -1",5d24db8e,"Unexpected empty data tree, setting zxid to -<*>",['1'],b6870033_1
+4,[INFO],"Snapshot loaded in 150 ms, highest zxid is 0x12345, digest is abcdef123456",8c19bc97,"Snapshot loaded in <*> ms, highest zxid is <*>x<*>, digest is abcdef<*>","['150', '0x12345', '123456']",b6870033_1
+1,[INFO],Writing long value to file /snapshots/snapDir,6a2aa078,Writing long value to file <*>,['/snapshots/snapDir'],b6870033_2
+2,[INFO],Accessing snapshot directory /snapshots/snapDir,f78e9c70,Accessing snapshot directory <*>,['/snapshots/snapDir'],b6870033_2
+3,[INFO],Snapshot directory accessed successfully,affe0b2b,Snapshot directory accessed successfully,[],b6870033_2
+4,[INFO],Write operation completed,dc8dbefc,Write operation completed,[],b6870033_2
+1,[INFO],"Binding to port 8080, localAddress 192.168.1.1",75342a10,"<*> to port <*>, localAddress <*>.<*>.<*>.<*>","['Binding', '8080', '192', '168.1.1']",609e0468_1
+2,[INFO],"Bound to port 8080, localAddress 192.168.1.1",75342a10,"<*> to port <*>, localAddress <*>.<*>.<*>.<*>","['Bound', '8080', '192', '168.1.1']",609e0468_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",5102e67b_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],5102e67b_1
+1,[INFO],"Initialize file found, an empty database will not block voting participation",6759d06a,"Initialize file found, an empty database will not block voting participation",[],b67946c5_1
+2,[WARN],This should only be allowed during upgrading,3e4ed47a,This should only be allowed during upgrading,[],b67946c5_1
+3,[WARN],"Unexpected empty data tree, setting zxid to -1",5d24db8e,"Unexpected empty data tree, setting zxid to -<*>",['1'],b67946c5_1
+4,[INFO],"Snapshot loaded in 500 ms, highest zxid is 0x12345, digest is abcdef1234567890",8c19bc97,"Snapshot loaded in <*> ms, highest zxid is <*>x<*>, digest is abcdef<*>","['500', '0x12345', '1234567890']",b67946c5_1
+1,[ERROR],Election Algorithm 1 is not supported.,a0eda635,Election Algorithm <*> is not supported.,['1'],38fc44ff_1
+2,[ERROR],Election Algorithm 2 is not supported.,a0eda635,Election Algorithm <*> is not supported.,['2'],38fc44ff_1
+1,[WARN],Clobbering already-set QuorumCnxManager (restarting leader election?),8685f2b2,Clobbering already-set QuorumCnxManager (restarting leader election?),[],38fc44ff_2
+2,[ERROR],Null listener when initializing cnx manager,1ebaec33,Null listener when initializing cnx manager,[],38fc44ff_2
+1,[INFO],Election algorithm returned successfully.,ccee6c09,Election algorithm returned successfully.,[],38fc44ff_3
+1,[INFO],"Initialize file found, an empty database will not block voting participation",6759d06a,"Initialize file found, an empty database will not block voting participation",[],74e160b2_1
+2,[WARN],This should only be allowed during upgrading.,3022f455,This should only be allowed during upgrading.,[],74e160b2_1
+3,[WARN],"Unexpected empty data tree, setting zxid to -1",5d24db8e,"Unexpected empty data tree, setting zxid to -<*>",['1'],74e160b2_1
+1,[WARN],Clobbering already-set QuorumCnxManager (restarting leader election?),8685f2b2,Clobbering already-set QuorumCnxManager (restarting leader election?),[],74e160b2_2
+2,[ERROR],Null listener when initializing cnx manager,1ebaec33,Null listener when initializing cnx manager,[],74e160b2_2
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",1ec2600f_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],1ec2600f_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",8d050e40_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],8d050e40_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",2bf7ad80_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],2bf7ad80_1
+1,[DEBUG],Initializing leader election protocol...,d51c79d6,Initializing leader election protocol...,[],4b7a8763_1
+1,[WARN],"Exception when observing the leader, e",974f2246,"Exception when observing the leader, e",[],4cd3addc_1
+1,[INFO],Shutdown observer process initiated,c6b7e4a2,Shutdown observer process initiated,[],a435f286_1
+1,[INFO],Fetched 1024MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['1024', '//namenode:8020']",87459097_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],87459097_1
+1,[INFO],Follower node shutdown initiated,e40be5fc,Follower node shutdown <*>,['initiated'],cd4c5ecf_1
+2,[INFO],Follower node shutdown completed,e40be5fc,Follower node shutdown <*>,['completed'],cd4c5ecf_1
+1,[INFO],Shutting down,6a7eb108,Shutting down,[],3b349e70_1
+2,[INFO],"Shutdown called. For the reason ""Maintenance""",2d018faa,Shutdown called. For the reason <*>,"['""Maintenance""']",3b349e70_1
+3,[INFO],LEADING - LEADER ELECTION TOOK - 500ms MILLISECONDS,ff373046,LEADING - LEADER ELECTION TOOK - <*>ms MILLISECONDS,['500'],3b349e70_1
+4,[INFO],NEWLEADER proposal has Zxid of 0x1a2b3c4d,39c8754b,NEWLEADER proposal has Zxid of <*>x<*>a<*>b<*>c<*>d,"['0x1', '2b3', '4']",3b349e70_1
+1,[INFO],Shutting down,6a7eb108,Shutting down,[],61c3ab25_1
+1,[INFO],Shutting down,6a7eb108,Shutting down,[],61c3ab25_2
+2,[INFO],"Shutdown called. For the reason ""maintenance""",2d018faa,Shutdown called. For the reason <*>,"['""maintenance""']",61c3ab25_2
+1,[INFO],Halted connection acceptor,932099f7,Halted connection acceptor,[],61c3ab25_3
+2,[INFO],Set ZooKeeper server,984860a8,Set ZooKeeper server,[],61c3ab25_3
+3,[INFO],Admin server set to ZooKeeper server,848ae847,Admin server set to ZooKeeper server,[],61c3ab25_3
+4,[INFO],Closed all connections,04dd2ac5,Closed all connections,[],61c3ab25_3
+1,[INFO],Synchronized learners,9f6db83f,Synchronized learners,[],61c3ab25_4
+2,[INFO],Initialized iterator,d1179d89,Initialized iterator,[],61c3ab25_4
+1,[INFO],Checked iterator condition,9834ce68,Checked iterator condition,[],61c3ab25_5
+1,[DEBUG],Starting quorum peer,d459c04c,Starting quorum peer,[],94623e0f_1
+2,[INFO],LEADING - Leader election took 3.14 seconds,b2011b7b,LEADING - Leader election took <*>.<*> seconds,['3.14'],94623e0f_1
+3,[INFO],New leader proposal has Zxid of 0x1234abcd,77e81814,New leader proposal has Zxid of <*>x<*>abcd,['0x1234'],94623e0f_1
+4,[INFO],Shutting down,6a7eb108,Shutting down,[],94623e0f_1
+5,[INFO],"Shutdown called. For the reason ""Cluster maintenance""",2d018faa,Shutdown called. For the reason <*>,"['""Cluster maintenance""']",94623e0f_1
+1,[INFO],"Initialize file found, an empty database will not block voting participation",6759d06a,"Initialize file found, an empty database will not block voting participation",[],e52b8c91_1
+2,[INFO],"Snapshot loaded in 500 ms, highest zxid is 0x12345, digest is abcdef123456",8c19bc97,"Snapshot loaded in <*> ms, highest zxid is <*>x<*>, digest is abcdef<*>","['500', '0x12345', '123456']",e52b8c91_1
+3,[WARN],This should only be allowed during upgrading,3e4ed47a,This should only be allowed during upgrading,[],e52b8c91_1
+4,[WARN],"Unexpected empty data tree, setting zxid to -1",5d24db8e,"Unexpected empty data tree, setting zxid to -<*>",['1'],e52b8c91_1
+5,[WARN],"Problem starting AdminServer, AdminServerException",6d0624c3,"Problem starting AdminServer, AdminServerException",[],e52b8c91_1
+1,[DEBUG],Starting quorum peer,d459c04c,Starting quorum peer,[],e52b8c91_2
+2,[INFO],LEADING,23719262,LEADING,[],e52b8c91_2
+3,[INFO],LEADING - LEADER ELECTION TOOK - 300 ms MILLISECONDS,c515083f,LEADING - LEADER ELECTION TOOK - <*> ms MILLISECONDS,['300'],e52b8c91_2
+4,[INFO],NEWLEADER proposal has Zxid of 0x12345,e441fec6,NEWLEADER proposal has Zxid of <*>x<*>,['0x12345'],e52b8c91_2
+5,[INFO],Shutting down,6a7eb108,Shutting down,[],e52b8c91_2
+6,[INFO],"Shutdown called. For the reason ""AdminServer failure""",2d018faa,Shutdown called. For the reason <*>,"['""AdminServer failure""']",e52b8c91_2
+1,[INFO],ENTRY,5d5fa847,ENTRY,[],cefd1e81_1
+2,[INFO],CALL:truncateLog,0d809cf3,CALL:truncateLog,[],cefd1e81_1
+3,[INFO],EXIT,a42b2fb0,EXIT,[],cefd1e81_1
+1,[INFO],Fetched 1024MB block from https://namenode:8020,ec915a36,Fetched <*>MB block from https:<*>:<*>,"['1024', '//namenode:8020']",363f5add_1
+2,[ERROR],Access denied to path /user/data,658cc3ae,Access denied to path <*>,['/user/data'],363f5add_1
+1,[DEBUG],Registering Log4j MBeans,671e955b,Registering Log<*>j MBeans,['4'],e9e11bde_1
+2,[ERROR],Problems while registering log4j 1.2 jmx beans!,f0564e9c,Problems while registering log<*>j <*>.<*> jmx beans!,"['4', '1.2']",e9e11bde_1
+1,[ERROR],SSL isn't supported in NIOServerCnxn,dc400e49,SSL isn't supported in NIOServerCnxn,[],47640e47_1
+1,[INFO],configure this secure: secure on addr addr,a7c45d2f,configure this secure: secure on addr addr,[],bfd05602_1
+1,[INFO],"Configuring NIO connection handler with 10s sessionless connection timeout, 4 selector thread(s), no worker threads, and gathered writes.",40f882e5,"Configuring NIO connection handler with <*>s sessionless connection timeout, <*> selector thread(s), no worker threads, and gathered writes.","['10', '4']",e2f3e326_1
+2,[INFO],binding to port 8080,b8dd8904,<*> to port <*>,"['binding', '8080']",e2f3e326_1
+3,[INFO],bound to port 192.168.1.1,b8dd8904,<*> to port <*>,"['bound', '192.168.1.1']",e2f3e326_1
+4,[INFO],configure secure: true on addr 192.168.1.2,82585edf,configure secure: true on addr <*>.<*>.<*>.<*>,"['192', '168.1.2']",e2f3e326_1
+1,[INFO],Initialized transaction log directory at /var/log/hadoop/txnlogs,de2a8659,Initialized transaction log directory at <*>,['/var/log/hadoop/txnlogs'],8db8f97d_1
+2,[ERROR],Access denied to path /var/log/hadoop/txnlogs,658cc3ae,Access denied to path <*>,['/var/log/hadoop/txnlogs'],8db8f97d_1
+1,[DEBUG],Opening datadir:/var/lib/zookeeper snapDir:/var/lib/zookeeper/snapshots,23a4e53a,Opening datadir:<*> snapDir:<*>,"['/var/lib/zookeeper', '/var/lib/zookeeper/snapshots']",ed87a2b8_1
+2,[INFO],ZOOKEEPER_SNAPSHOT_TRUST_EMPTY : true,b56eb472,ZOOKEEPER_SNAPSHOT_TRUST_EMPTY : true,[],ed87a2b8_1
+1,[INFO],tickTime set to 3000,5ccf7096,tickTime set to <*>,['3000'],6a46fb4d_1
+1,[INFO],Min session timeout set to 3000ms,c3033786,Min session timeout set to <*>ms,['3000'],2d9dd2fe_1
+1,[INFO],Max session timeout set to 30000,c6663f5e,Max session timeout set to <*>,['30000'],cf3c2e79_1
+1,[INFO],initLimit set to 10,29a51a82,initLimit set to <*>,['10'],23fc4e45_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",dca58180_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],dca58180_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",cb6f77de_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],cb6f77de_1
+1,[DEBUG],"Database not initialized, loading database",74570f9e,"Database not initialized, loading database",[],1fa5dfad_1
+2,[INFO],Last processed Zxid: 0x100000000,6b4d0cf0,Last processed Zxid: <*>x<*>,['0x100000000'],1fa5dfad_1
+3,[INFO],Election algorithm created,ce18d282,Election algorithm created,[],1fa5dfad_1
+1,[INFO],Fetched 128MB block from namenode01,39521d5a,Fetched <*>MB block from namenode<*>,"['128', '01']",57e09361_1
+2,[ERROR],Access denied to path /user/test,658cc3ae,Access denied to path <*>,['/user/test'],57e09361_1

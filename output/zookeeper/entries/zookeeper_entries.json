@@ -1,0 +1,3296 @@
+{
+  "1": {
+    "entry_id": 1,
+    "BlockId": "d80bcb62_1",
+    "log_key": "d80bcb62_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Connection marked as stale",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "2": {
+    "entry_id": 2,
+    "BlockId": "d80bcb62_1",
+    "log_key": "d80bcb62_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Ignoring exception during selection key cancel",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "3": {
+    "entry_id": 3,
+    "BlockId": "d80bcb62_1",
+    "log_key": "d80bcb62_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Failed to cancel selection key",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "4": {
+    "entry_id": 4,
+    "BlockId": "d80bcb62_1",
+    "log_key": "d80bcb62_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Socket closed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "5": {
+    "entry_id": 5,
+    "BlockId": "2a051a71_1",
+    "log_key": "2a051a71_1",
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log_segment": "[WARN]:trying to do i/o on a null socket for session: 0x1A2B3C4D",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "6": {
+    "entry_id": 6,
+    "BlockId": "2a051a71_1",
+    "log_key": "2a051a71_1",
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log_segment": "[INFO]:End of stream reached",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "7": {
+    "entry_id": 7,
+    "BlockId": "2a051a71_1",
+    "log_key": "2a051a71_1",
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log_segment": "[WARN]:CancelledKeyException causing close of session: 0x1A2B3C4D",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "8": {
+    "entry_id": 8,
+    "BlockId": "2a051a71_1",
+    "log_key": "2a051a71_1",
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log_segment": "[DEBUG]:CancelledKeyException stack trace",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "9": {
+    "entry_id": 9,
+    "BlockId": "2a051a71_1",
+    "log_key": "2a051a71_1",
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log_segment": "[WARN]:Unexpected exception",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "10": {
+    "entry_id": 10,
+    "BlockId": "2a051a71_1",
+    "log_key": "2a051a71_1",
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log_segment": "[WARN]:Closing session 0x1A2B3C4D",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "11": {
+    "entry_id": 11,
+    "BlockId": "2a051a71_1",
+    "log_key": "2a051a71_1",
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log_segment": "[WARN]:Close of session 0x1A2B3C4D",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "12": {
+    "entry_id": 12,
+    "BlockId": "2a051a71_1",
+    "log_key": "2a051a71_1",
+    "exec_flow": "ENTRY→TRY→IF: !isSocketOpen()→IF: k.isReadable()→IF: rc < 0→TRY→CATCH: EndOfStreamException e→IF: incomingBuffer.remaining() == 0→IF: k.isWritable()→CATCH: CancelledKeyException e→CATCH: EndOfStreamException e→CATCH: ClientCnxnLimitException e→CATCH: IOException e→EXIT%%ENTRY→close→ENTRY",
+    "log_segment": "[DEBUG]:ignoring exception during selectionkey cancel",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "13": {
+    "entry_id": 13,
+    "BlockId": "5c6c4b56_1",
+    "log_key": "5c6c4b56_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Ignoring exception during selectionkey cancel",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "14": {
+    "entry_id": 14,
+    "BlockId": "6d9d2f84_1",
+    "log_key": "6d9d2f84_1",
+    "exec_flow": "ENTRY→FOREACH:cnxns→ENTRY→CALL:setStale→IF_TRUE:!factory.removeCnxn(this)→RETURN→EXIT→FOREACH_EXIT→EXIT%%ENTRY→FOREACH:cnxns→ENTRY→CALL:setStale→IF_FALSE:!factory.removeCnxn(this)→IF_TRUE:zkServer!=null→CALL:zkServer.removeCnxn→IF_TRUE:sk!=null→TRY→CALL:cancel→EXCEPTION:cancel→CATCH:Exception→LOG:ignoring exception during selectionkey cancel→CALL:closeSock→EXIT→FOREACH_EXIT→EXIT%%ENTRY→FOREACH:cnxns→ENTRY→CALL:setStale→IF_FALSE:!factory.removeCnxn(this)→IF_TRUE:zkServer!=null→CALL:zkServer.removeCnxn→IF_FALSE:sk!=null→CALL:closeSock→EXIT→FOREACH_EXIT→EXIT",
+    "log_segment": "[DEBUG]:Ignoring exception during selectionkey cancel",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "15": {
+    "entry_id": 15,
+    "BlockId": "70e11b2c_1",
+    "log_key": "70e11b2c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "16": {
+    "entry_id": 16,
+    "BlockId": "70e11b2c_1",
+    "log_key": "70e11b2c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "17": {
+    "entry_id": 17,
+    "BlockId": "fd71111f_1",
+    "log_key": "fd71111f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: SecurityException occurred",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "18": {
+    "entry_id": 18,
+    "BlockId": "fd71111f_1",
+    "log_key": "fd71111f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Login user set successfully",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "19": {
+    "entry_id": 19,
+    "BlockId": "1d5e10a3_1",
+    "log_key": "1d5e10a3_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "20": {
+    "entry_id": 20,
+    "BlockId": "1d5e10a3_1",
+    "log_key": "1d5e10a3_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "21": {
+    "entry_id": 21,
+    "BlockId": "1d5e10a3_1",
+    "log_key": "1d5e10a3_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "22": {
+    "entry_id": 22,
+    "BlockId": "1d5e10a3_1",
+    "log_key": "1d5e10a3_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Could not configure server because SASL configuration did not allow the ZooKeeper server to authenticate itself properly: securityException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "23": {
+    "entry_id": 23,
+    "BlockId": "1d5e10a3_1",
+    "log_key": "1d5e10a3_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Login user set successfully",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "24": {
+    "entry_id": 24,
+    "BlockId": "8c261744_1",
+    "log_key": "8c261744_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[ERROR]:SSL isn't supported in NIOServerCnxn",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "25": {
+    "entry_id": 25,
+    "BlockId": "afe2aa34_1",
+    "log_key": "afe2aa34_1",
+    "exec_flow": "ENTRY→EXIT",
+    "log_segment": "[INFO]:Set text trace mask to 0x1a2b3c4d",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "26": {
+    "entry_id": 26,
+    "BlockId": "078913a0_1",
+    "log_key": "078913a0_1",
+    "exec_flow": "ENTRY→!initialized && checkFourLetterWord%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Error cancelling command selection key, Exception",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "27": {
+    "entry_id": 27,
+    "BlockId": "078913a0_1",
+    "log_key": "078913a0_1",
+    "exec_flow": "ENTRY→!initialized && checkFourLetterWord%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Command \"UNKNOWN_CMD\" is not executed because it is not in the whitelist.",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "28": {
+    "entry_id": 28,
+    "BlockId": "078913a0_1",
+    "log_key": "078913a0_1",
+    "exec_flow": "ENTRY→!initialized && checkFourLetterWord%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Processing \"KNOWN_CMD\" command from \"192.168.1.10:8080\"",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "29": {
+    "entry_id": 29,
+    "BlockId": "078913a0_1",
+    "log_key": "078913a0_1",
+    "exec_flow": "ENTRY→!initialized && checkFourLetterWord%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Set text trace mask to 0x1a2b3c",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "30": {
+    "entry_id": 30,
+    "BlockId": "cfc8639a_1",
+    "log_key": "cfc8639a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Socket is open, proceeding with operation",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "31": {
+    "entry_id": 31,
+    "BlockId": "cfc8639a_1",
+    "log_key": "cfc8639a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Closing socket connection",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "32": {
+    "entry_id": 32,
+    "BlockId": "a1ca3a63_1",
+    "log_key": "a1ca3a63_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Ignoring exception during selection key cancel",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "33": {
+    "entry_id": 33,
+    "BlockId": "a1ca3a63_1",
+    "log_key": "a1ca3a63_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Socket closed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "34": {
+    "entry_id": 34,
+    "BlockId": "d1147373_1",
+    "log_key": "d1147373_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Error cancelling command selection key",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "35": {
+    "entry_id": 35,
+    "BlockId": "d1147373_1",
+    "log_key": "d1147373_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Command \"trace\" is not executed because it is not in the whitelist",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "36": {
+    "entry_id": 36,
+    "BlockId": "d1147373_1",
+    "log_key": "d1147373_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Processing \"trace\" command from /192.168.1.100:8080",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "37": {
+    "entry_id": 37,
+    "BlockId": "d1147373_1",
+    "log_key": "d1147373_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Set text trace mask to 0xFF",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "38": {
+    "entry_id": 38,
+    "BlockId": "d1147373_1",
+    "log_key": "d1147373_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Trying to do I/O on a null socket for session: 0x123456789ABCDEF",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "39": {
+    "entry_id": 39,
+    "BlockId": "d1147373_1",
+    "log_key": "d1147373_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Socket error: Connection reset by peer",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "40": {
+    "entry_id": 40,
+    "BlockId": "d1147373_1",
+    "log_key": "d1147373_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Ignoring exception during selection key cancel",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "41": {
+    "entry_id": 41,
+    "BlockId": "d1147373_1",
+    "log_key": "d1147373_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Socket closed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "42": {
+    "entry_id": 42,
+    "BlockId": "f017adf3_1",
+    "log_key": "f017adf3_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "43": {
+    "entry_id": 43,
+    "BlockId": "f017adf3_1",
+    "log_key": "f017adf3_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "44": {
+    "entry_id": 44,
+    "BlockId": "83e0e7fc_1",
+    "log_key": "83e0e7fc_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Invalid name \"zookeeperBean\" for class org.apache.zookeeper.jmx.ZKMBeanInfo",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "45": {
+    "entry_id": 45,
+    "BlockId": "8d5fd05c_1",
+    "log_key": "8d5fd05c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "46": {
+    "entry_id": 46,
+    "BlockId": "8d5fd05c_1",
+    "log_key": "8d5fd05c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "47": {
+    "entry_id": 47,
+    "BlockId": "290b45d8_1",
+    "log_key": "290b45d8_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Accessing mapBean2Path",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "48": {
+    "entry_id": 48,
+    "BlockId": "290b45d8_1",
+    "log_key": "290b45d8_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register MBean \"exampleBean\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "49": {
+    "entry_id": 49,
+    "BlockId": "290b45d8_1",
+    "log_key": "290b45d8_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Invalid name \"exampleBeanName\" for class \"org.apache.zookeeper.jmx.ZKMBeanInfo\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "50": {
+    "entry_id": 50,
+    "BlockId": "771fc8a5_1",
+    "log_key": "771fc8a5_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE%%ENTRY→TRY→IF_FALSE",
+    "log_segment": "[INFO]:Unregistered MBean from registry",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "51": {
+    "entry_id": 51,
+    "BlockId": "a3d7f8a4_1",
+    "log_key": "a3d7f8a4_1",
+    "exec_flow": "ENTRY→CALL: shutdown→TRY→IF_TRUE: jmxServerBean != null→CALL: MBeanRegistry.getInstance().unregister→EXIT%%ENTRY→CALL: shutdown→TRY→IF_FALSE: jmxServerBean != null→EXIT",
+    "log_segment": "[WARN]:Failed to unregister with JMX",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "52": {
+    "entry_id": 52,
+    "BlockId": "c4f5362c_1",
+    "log_key": "c4f5362c_1",
+    "exec_flow": "ENTRY→EXIT",
+    "log_segment": "[DEBUG]:Initializing leader election protocol...",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "53": {
+    "entry_id": 53,
+    "BlockId": "7cf2c02e_1",
+    "log_key": "7cf2c02e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "54": {
+    "entry_id": 54,
+    "BlockId": "7cf2c02e_1",
+    "log_key": "7cf2c02e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "55": {
+    "entry_id": 55,
+    "BlockId": "37b80475_1",
+    "log_key": "37b80475_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Accessing /mapBean2Path",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "56": {
+    "entry_id": 56,
+    "BlockId": "37b80475_1",
+    "log_key": "37b80475_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register MBean \"bean-01\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "57": {
+    "entry_id": 57,
+    "BlockId": "6f1c930f_1",
+    "log_key": "6f1c930f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched last logged transaction ID 1024",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "58": {
+    "entry_id": 58,
+    "BlockId": "6f1c930f_1",
+    "log_key": "6f1c930f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/data",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "59": {
+    "entry_id": 59,
+    "BlockId": "9a354659_1",
+    "log_key": "9a354659_1",
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log_segment": "[INFO]:New election. My id = 1, proposed zxid=0x100",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "60": {
+    "entry_id": 60,
+    "BlockId": "9a354659_1",
+    "log_key": "9a354659_1",
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log_segment": "[DEBUG]:Adding vote: from=2, proposed leader=3, proposed zxid=0x100, proposed election epoch=0x200",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "61": {
+    "entry_id": 61,
+    "BlockId": "9a354659_1",
+    "log_key": "9a354659_1",
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log_segment": "[INFO]:Notification time out: 5000 ms",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "62": {
+    "entry_id": 62,
+    "BlockId": "9a354659_1",
+    "log_key": "9a354659_1",
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log_segment": "[DEBUG]:getLastLoggedZxid",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "63": {
+    "entry_id": 63,
+    "BlockId": "7d7faa25_1",
+    "log_key": "7d7faa25_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Accessing mapBean2Path",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "64": {
+    "entry_id": 64,
+    "BlockId": "7d7faa25_1",
+    "log_key": "7d7faa25_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register MBean \"ZooKeeperServerBean\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "65": {
+    "entry_id": 65,
+    "BlockId": "7d7faa25_1",
+    "log_key": "7d7faa25_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Invalid name \"InvalidBeanName\" for class \"org.apache.zookeeper.server.ZooKeeperServer\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "66": {
+    "entry_id": 66,
+    "BlockId": "a43bbe11_1",
+    "log_key": "a43bbe11_1",
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log_segment": "[INFO]:New election. My id = 1, proposed zxid=0x100",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "67": {
+    "entry_id": 67,
+    "BlockId": "a43bbe11_1",
+    "log_key": "a43bbe11_1",
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log_segment": "[DEBUG]:Adding vote: from=2, proposed leader=3, proposed zxid=0x100, proposed election epoch=0x1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "68": {
+    "entry_id": 68,
+    "BlockId": "a43bbe11_1",
+    "log_key": "a43bbe11_1",
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log_segment": "[INFO]:Notification time out: 5000 ms",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "69": {
+    "entry_id": 69,
+    "BlockId": "a43bbe11_1",
+    "log_key": "a43bbe11_1",
+    "exec_flow": "ENTRY→lookForLeader→ConditionCheck%%ENTRY→getInitLastLoggedZxid→ConditionCheck",
+    "log_segment": "[DEBUG]:getLastLoggedZxid",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "70": {
+    "entry_id": 70,
+    "BlockId": "0ef137db_1",
+    "log_key": "0ef137db_1",
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.PING→CALL: ping→BREAK→EXIT%%ENTRY→SWITCH: qp.getType()→CASE: Leader.REVALIDATE→CALL: revalidate→BREAK→EXIT%%ENTRY→SWITCH: qp.getType()→CASE: Leader.SYNC→CALL: sync→BREAK→EXIT",
+    "log_segment": "[INFO]:Ping operation executed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "71": {
+    "entry_id": 71,
+    "BlockId": "0ef137db_2",
+    "log_key": "0ef137db_2",
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.PROPOSAL→BREAK→EXIT%%ENTRY→SWITCH: qp.getType()→CASE: Leader.COMMIT→BREAK→EXIT",
+    "log_segment": "[WARN]:Ignoring proposal",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "72": {
+    "entry_id": 72,
+    "BlockId": "0ef137db_3",
+    "log_key": "0ef137db_3",
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.UPTODATE→BREAK→EXIT",
+    "log_segment": "[ERROR]:Received an UPTODATE message after Observer started",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "73": {
+    "entry_id": 73,
+    "BlockId": "0ef137db_4",
+    "log_key": "0ef137db_4",
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.INFORM→CALL: add→CALL: deserializeTxn→CALL: getData→CALL: getData→CALL: logLatency→CALL: commitRequest→BREAK→EXIT",
+    "log_segment": "[INFO]:Learner commit received and processed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "74": {
+    "entry_id": 74,
+    "BlockId": "0ef137db_5",
+    "log_key": "0ef137db_5",
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Leader.INFORMANDACTIVATE→CALL: get→CALL: deserializeTxn→CALL: getTxn→CALL: toRequest→CALL: commitRequest→IF_TRUE: majorChange→THROW: Exception→EXIT%%ENTRY→SWITCH: qp.getType()→CASE: Leader.INFORMANDACTIVATE→CALL: get→CALL: deserializeTxn→CALL: getTxn→CALL: toRequest→CALL: commitRequest→IF_FALSE: majorChange→BREAK→EXIT",
+    "log_segment": "[ERROR]:Changes proposed in reconfig",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "75": {
+    "entry_id": 75,
+    "BlockId": "0ef137db_6",
+    "log_key": "0ef137db_6",
+    "exec_flow": "ENTRY→SWITCH: qp.getType()→CASE: Unknown→BREAK→EXIT",
+    "log_segment": "[WARN]:Unknown packet type: UnknownType",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "76": {
+    "entry_id": 76,
+    "BlockId": "eb7f58f3_1",
+    "log_key": "eb7f58f3_1",
+    "exec_flow": "ENTRY→TRY→EXCEPTION%%ENTRY→TRY→THROW",
+    "log_segment": "[WARN]:Exception when observing the leader",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "77": {
+    "entry_id": 77,
+    "BlockId": "eb7f58f3_1",
+    "log_key": "eb7f58f3_1",
+    "exec_flow": "ENTRY→TRY→EXCEPTION%%ENTRY→TRY→THROW",
+    "log_segment": "[INFO]:Disconnected from leader (with address: https://leader-node:2181). Was connected for 5000ms. Sync state: RECONFIGURED",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "78": {
+    "entry_id": 78,
+    "BlockId": "eb7f58f3_2",
+    "log_key": "eb7f58f3_2",
+    "exec_flow": "ENTRY→SWITCH→CASE:Leader.PROPOSAL%%ENTRY→SWITCH→CASE:Leader.COMMIT%%ENTRY→SWITCH→CASE:Leader.UPTODATE%%ENTRY→SWITCH→CASE:Leader.INFORMANDACTIVATE%%ENTRY→SWITCH→CASE:Unknown",
+    "log_segment": "[WARN]:Ignoring proposal",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "79": {
+    "entry_id": 79,
+    "BlockId": "eb7f58f3_2",
+    "log_key": "eb7f58f3_2",
+    "exec_flow": "ENTRY→SWITCH→CASE:Leader.PROPOSAL%%ENTRY→SWITCH→CASE:Leader.COMMIT%%ENTRY→SWITCH→CASE:Leader.UPTODATE%%ENTRY→SWITCH→CASE:Leader.INFORMANDACTIVATE%%ENTRY→SWITCH→CASE:Unknown",
+    "log_segment": "[WARN]:Ignoring commit",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "80": {
+    "entry_id": 80,
+    "BlockId": "eb7f58f3_2",
+    "log_key": "eb7f58f3_2",
+    "exec_flow": "ENTRY→SWITCH→CASE:Leader.PROPOSAL%%ENTRY→SWITCH→CASE:Leader.COMMIT%%ENTRY→SWITCH→CASE:Leader.UPTODATE%%ENTRY→SWITCH→CASE:Leader.INFORMANDACTIVATE%%ENTRY→SWITCH→CASE:Unknown",
+    "log_segment": "[ERROR]:Received an UPTODATE message after Observer started",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "81": {
+    "entry_id": 81,
+    "BlockId": "eb7f58f3_2",
+    "log_key": "eb7f58f3_2",
+    "exec_flow": "ENTRY→SWITCH→CASE:Leader.PROPOSAL%%ENTRY→SWITCH→CASE:Leader.COMMIT%%ENTRY→SWITCH→CASE:Leader.UPTODATE%%ENTRY→SWITCH→CASE:Leader.INFORMANDACTIVATE%%ENTRY→SWITCH→CASE:Unknown",
+    "log_segment": "[WARN]:Unknown packet type: INFORM, LearnerHandler.packetToString(qp)",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "82": {
+    "entry_id": 82,
+    "BlockId": "d504b831_1",
+    "log_key": "d504b831_1",
+    "exec_flow": "ENTRY→ShutdownObserver%%ENTRY→Shutdown",
+    "log_segment": "[INFO]:Observer shutdown initiated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "83": {
+    "entry_id": 83,
+    "BlockId": "d504b831_1",
+    "log_key": "d504b831_1",
+    "exec_flow": "ENTRY→ShutdownObserver%%ENTRY→Shutdown",
+    "log_segment": "[INFO]:Shutdown operation completed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "84": {
+    "entry_id": 84,
+    "BlockId": "f9f11c2b_1",
+    "log_key": "f9f11c2b_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "85": {
+    "entry_id": 85,
+    "BlockId": "f9f11c2b_1",
+    "log_key": "f9f11c2b_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "86": {
+    "entry_id": 86,
+    "BlockId": "5f8a114c_1",
+    "log_key": "5f8a114c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Got zxid 0x0 expected 0x1",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "87": {
+    "entry_id": 87,
+    "BlockId": "5f8a114c_1",
+    "log_key": "5f8a114c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Request logged",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "88": {
+    "entry_id": 88,
+    "BlockId": "5f8a114c_1",
+    "log_key": "5f8a114c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Received an UPTODATE message after Follower started",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "89": {
+    "entry_id": 89,
+    "BlockId": "5f8a114c_1",
+    "log_key": "5f8a114c_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Unknown packet type: SYNC",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "90": {
+    "entry_id": 90,
+    "BlockId": "fe9d88fb_1",
+    "log_key": "fe9d88fb_1",
+    "exec_flow": "ENTRY→SWITCH: getType%%ENTRY→CALL: configureJobJar",
+    "log_segment": "[WARN]:Got zxid 0x1 expected 0x2",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "91": {
+    "entry_id": 91,
+    "BlockId": "fe9d88fb_1",
+    "log_key": "fe9d88fb_1",
+    "exec_flow": "ENTRY→SWITCH: getType%%ENTRY→CALL: configureJobJar",
+    "log_segment": "[INFO]:Request logged",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "92": {
+    "entry_id": 92,
+    "BlockId": "fe9d88fb_1",
+    "log_key": "fe9d88fb_1",
+    "exec_flow": "ENTRY→SWITCH: getType%%ENTRY→CALL: configureJobJar",
+    "log_segment": "[ERROR]:Received an UPTODATE message after Follower started",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "93": {
+    "entry_id": 93,
+    "BlockId": "fe9d88fb_1",
+    "log_key": "fe9d88fb_1",
+    "exec_flow": "ENTRY→SWITCH: getType%%ENTRY→CALL: configureJobJar",
+    "log_segment": "[WARN]:Unknown packet type: UNKNOWN_PACKET_TYPE",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "94": {
+    "entry_id": 94,
+    "BlockId": "fe9d88fb_1",
+    "log_key": "fe9d88fb_1",
+    "exec_flow": "ENTRY→SWITCH: getType%%ENTRY→CALL: configureJobJar",
+    "log_segment": "[INFO]:FOLLOWING - LEADER ELECTION TOOK - 500ms ms",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "95": {
+    "entry_id": 95,
+    "BlockId": "fe9d88fb_1",
+    "log_key": "fe9d88fb_1",
+    "exec_flow": "ENTRY→SWITCH: getType%%ENTRY→CALL: configureJobJar",
+    "log_segment": "[INFO]:Disconnected from leader (with address: https://leader-node:2181). Was connected for 3000ms. Sync state: COMPLETED",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "96": {
+    "entry_id": 96,
+    "BlockId": "bf2972a2_1",
+    "log_key": "bf2972a2_1",
+    "exec_flow": "ENTRY→ShutdownFollower",
+    "log_segment": "[INFO]:Shutdown Follower",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "97": {
+    "entry_id": 97,
+    "BlockId": "03049d5e_1",
+    "log_key": "03049d5e_1",
+    "exec_flow": "ENTRY→QuorumListenOnAllIPsCheck%%ENTRY→QuorumAddressCheck",
+    "log_segment": "[INFO]:Initialized buffer statistics for proposal tracking",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "98": {
+    "entry_id": 98,
+    "BlockId": "03049d5e_1",
+    "log_key": "03049d5e_1",
+    "exec_flow": "ENTRY→QuorumListenOnAllIPsCheck%%ENTRY→QuorumAddressCheck",
+    "log_segment": "[INFO]:Fetched quorum addresses: [\"192.168.1.1:2181\", \"192.168.1.2:2181\"]",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "99": {
+    "entry_id": 99,
+    "BlockId": "03049d5e_1",
+    "log_key": "03049d5e_1",
+    "exec_flow": "ENTRY→QuorumListenOnAllIPsCheck%%ENTRY→QuorumAddressCheck",
+    "log_segment": "[INFO]:Created server socket at address 192.168.1.1:2181 with SSL enabled",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "100": {
+    "entry_id": 100,
+    "BlockId": "03049d5e_1",
+    "log_key": "03049d5e_1",
+    "exec_flow": "ENTRY→QuorumListenOnAllIPsCheck%%ENTRY→QuorumAddressCheck",
+    "log_segment": "[INFO]:Created server socket at address 192.168.1.2:2181 with SSL enabled",
+    "single_log_label": "normal",
+    "block_log_label": "both"
+  },
+  "101": {
+    "entry_id": 101,
+    "BlockId": "03049d5e_1",
+    "log_key": "03049d5e_1",
+    "exec_flow": "ENTRY→QuorumListenOnAllIPsCheck%%ENTRY→QuorumAddressCheck",
+    "log_segment": "[ERROR]:Leader failed to initialize any of the following sockets: [\"192.168.1.1:2181\", \"192.168.1.2:2181\"]",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "102": {
+    "entry_id": 102,
+    "BlockId": "7e8fa7b0_1",
+    "log_key": "7e8fa7b0_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Quorum address resolved to wildcard addresses",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "103": {
+    "entry_id": 103,
+    "BlockId": "7e8fa7b0_1",
+    "log_key": "7e8fa7b0_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:IOException thrown due to empty server sockets",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "104": {
+    "entry_id": 104,
+    "BlockId": "f132ecbd_1",
+    "log_key": "f132ecbd_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register with JMX, exception occurred",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "105": {
+    "entry_id": 105,
+    "BlockId": "f132ecbd_1",
+    "log_key": "f132ecbd_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register MBean \"LeaderElectionBean\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "106": {
+    "entry_id": 106,
+    "BlockId": "718b1ec7_1",
+    "log_key": "718b1ec7_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE%%ENTRY→TRY→IF_FALSE",
+    "log_segment": "[INFO]:Unregistered MBean from registry",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "107": {
+    "entry_id": 107,
+    "BlockId": "f88a8532_1",
+    "log_key": "f88a8532_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to unregister with JMX",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "108": {
+    "entry_id": 108,
+    "BlockId": "f88a8532_1",
+    "log_key": "f88a8532_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register with JMX, exception occurred",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "109": {
+    "entry_id": 109,
+    "BlockId": "f88a8532_1",
+    "log_key": "f88a8532_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register MBean \"LeaderElectionBean\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "110": {
+    "entry_id": 110,
+    "BlockId": "f88a8532_2",
+    "log_key": "f88a8532_2",
+    "exec_flow": "ENTRY→ConfigureJobJar%%ENTRY→SetupDistributedCache",
+    "log_segment": "[INFO]:LEADING - LEADER ELECTION TOOK - 500ms milliseconds",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "111": {
+    "entry_id": 111,
+    "BlockId": "f88a8532_2",
+    "log_key": "f88a8532_2",
+    "exec_flow": "ENTRY→ConfigureJobJar%%ENTRY→SetupDistributedCache",
+    "log_segment": "[DEBUG]:Set lastSeenQuorumVerifier to currentQuorumVerifier (\"QuorumVerifierData\")",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "112": {
+    "entry_id": 112,
+    "BlockId": "f88a8532_2",
+    "log_key": "f88a8532_2",
+    "exec_flow": "ENTRY→ConfigureJobJar%%ENTRY→SetupDistributedCache",
+    "log_segment": "[INFO]:NEWLEADER proposal has Zxid of \"0x12345abc\"",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "113": {
+    "entry_id": 113,
+    "BlockId": "f88a8532_3",
+    "log_key": "f88a8532_3",
+    "exec_flow": "ENTRY→ShutdownProcess",
+    "log_segment": "[INFO]:Shutting down",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "114": {
+    "entry_id": 114,
+    "BlockId": "f88a8532_3",
+    "log_key": "f88a8532_3",
+    "exec_flow": "ENTRY→ShutdownProcess",
+    "log_segment": "[INFO]:Shutdown called. For the reason \"Maintenance\", reason",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "115": {
+    "entry_id": 115,
+    "BlockId": "031f8582_1",
+    "log_key": "031f8582_1",
+    "exec_flow": "ENTRY→TRY→EXCEPTION:clear→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put→EXCEPTION:put→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put",
+    "log_segment": "[WARN]:Ignoring unexpected exception",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "116": {
+    "entry_id": 116,
+    "BlockId": "031f8582_1",
+    "log_key": "031f8582_1",
+    "exec_flow": "ENTRY→TRY→EXCEPTION:clear→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put→EXCEPTION:put→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put",
+    "log_segment": "[INFO]:Socket closed successfully",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "117": {
+    "entry_id": 117,
+    "BlockId": "031f8582_1",
+    "log_key": "031f8582_1",
+    "exec_flow": "ENTRY→TRY→EXCEPTION:clear→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put→EXCEPTION:put→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put",
+    "log_segment": "[INFO]:Thread interrupted",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "118": {
+    "entry_id": 118,
+    "BlockId": "031f8582_1",
+    "log_key": "031f8582_1",
+    "exec_flow": "ENTRY→TRY→EXCEPTION:clear→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put→EXCEPTION:put→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put",
+    "log_segment": "[INFO]:Removed learner handler from master",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "119": {
+    "entry_id": 119,
+    "BlockId": "031f8582_1",
+    "log_key": "031f8582_1",
+    "exec_flow": "ENTRY→TRY→EXCEPTION:clear→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put→EXCEPTION:put→CATCH:InterruptedException→LOG:Ignoring unexpected exception%%ENTRY→TRY→CALL:queuedPackets.put",
+    "log_segment": "[INFO]:Unregistered learner handler bean",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "120": {
+    "entry_id": 120,
+    "BlockId": "5ce38c16_1",
+    "log_key": "5ce38c16_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[INFO]:Shutting down",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "121": {
+    "entry_id": 121,
+    "BlockId": "5ce38c16_1",
+    "log_key": "5ce38c16_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[INFO]:Shutdown called. For the reason \"maintenance\", reason",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "122": {
+    "entry_id": 122,
+    "BlockId": "5ce38c16_1",
+    "log_key": "5ce38c16_1",
+    "exec_flow": "ENTRY→ConditionCheck",
+    "log_segment": "[WARN]:Ignoring unexpected exception, connection error",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "123": {
+    "entry_id": 123,
+    "BlockId": "e7589eef_1",
+    "log_key": "e7589eef_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Unregister MBean \"mbean_01\", objName",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "124": {
+    "entry_id": 124,
+    "BlockId": "e7589eef_1",
+    "log_key": "e7589eef_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Invalid name \"testBean\" for class org.apache.zookeeper.jmx.ZKMBeanInfo",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "125": {
+    "entry_id": 125,
+    "BlockId": "a20ba4b9_1",
+    "log_key": "a20ba4b9_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→unregisterAll",
+    "log_segment": "[DEBUG]:Unregister MBean [MBeanObjectName], objName",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "126": {
+    "entry_id": 126,
+    "BlockId": "a20ba4b9_1",
+    "log_key": "a20ba4b9_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→unregisterAll",
+    "log_segment": "[DEBUG]:Invalid name \"InvalidBeanName\" for class InvalidBeanClass",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "127": {
+    "entry_id": 127,
+    "BlockId": "67a23884_1",
+    "log_key": "67a23884_1",
+    "exec_flow": "ENTRY→SWITCH:getPeerState()→CASE:LOOKING→startLeaderElection→makeLEStrategy().lookForLeader%%ENTRY→SWITCH:getPeerState()→CASE:OBSERVING→makeObserver→observer.observeLeader%%ENTRY→SWITCH:getPeerState()→CASE:FOLLOWING→makeFollower→follower.followLeader%%ENTRY→SWITCH:getPeerState()→CASE:LEADING→makeLeader→leader.lead%%ENTRY→SWITCH:getPeerState()→CASE:UnknownState",
+    "log_segment": "[DEBUG]:Starting quorum peer",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "128": {
+    "entry_id": 128,
+    "BlockId": "67a23884_1",
+    "log_key": "67a23884_1",
+    "exec_flow": "ENTRY→SWITCH:getPeerState()→CASE:LOOKING→startLeaderElection→makeLEStrategy().lookForLeader%%ENTRY→SWITCH:getPeerState()→CASE:OBSERVING→makeObserver→observer.observeLeader%%ENTRY→SWITCH:getPeerState()→CASE:FOLLOWING→makeFollower→follower.followLeader%%ENTRY→SWITCH:getPeerState()→CASE:LEADING→makeLeader→leader.lead%%ENTRY→SWITCH:getPeerState()→CASE:UnknownState",
+    "log_segment": "[INFO]:LOOKING",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "129": {
+    "entry_id": 129,
+    "BlockId": "67a23884_1",
+    "log_key": "67a23884_1",
+    "exec_flow": "ENTRY→SWITCH:getPeerState()→CASE:LOOKING→startLeaderElection→makeLEStrategy().lookForLeader%%ENTRY→SWITCH:getPeerState()→CASE:OBSERVING→makeObserver→observer.observeLeader%%ENTRY→SWITCH:getPeerState()→CASE:FOLLOWING→makeFollower→follower.followLeader%%ENTRY→SWITCH:getPeerState()→CASE:LEADING→makeLeader→leader.lead%%ENTRY→SWITCH:getPeerState()→CASE:UnknownState",
+    "log_segment": "[INFO]:OBSERVING",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "130": {
+    "entry_id": 130,
+    "BlockId": "67a23884_1",
+    "log_key": "67a23884_1",
+    "exec_flow": "ENTRY→SWITCH:getPeerState()→CASE:LOOKING→startLeaderElection→makeLEStrategy().lookForLeader%%ENTRY→SWITCH:getPeerState()→CASE:OBSERVING→makeObserver→observer.observeLeader%%ENTRY→SWITCH:getPeerState()→CASE:FOLLOWING→makeFollower→follower.followLeader%%ENTRY→SWITCH:getPeerState()→CASE:LEADING→makeLeader→leader.lead%%ENTRY→SWITCH:getPeerState()→CASE:UnknownState",
+    "log_segment": "[INFO]:FOLLOWING",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "131": {
+    "entry_id": 131,
+    "BlockId": "67a23884_1",
+    "log_key": "67a23884_1",
+    "exec_flow": "ENTRY→SWITCH:getPeerState()→CASE:LOOKING→startLeaderElection→makeLEStrategy().lookForLeader%%ENTRY→SWITCH:getPeerState()→CASE:OBSERVING→makeObserver→observer.observeLeader%%ENTRY→SWITCH:getPeerState()→CASE:FOLLOWING→makeFollower→follower.followLeader%%ENTRY→SWITCH:getPeerState()→CASE:LEADING→makeLeader→leader.lead%%ENTRY→SWITCH:getPeerState()→CASE:UnknownState",
+    "log_segment": "[INFO]:LEADING",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "132": {
+    "entry_id": 132,
+    "BlockId": "67a23884_1",
+    "log_key": "67a23884_1",
+    "exec_flow": "ENTRY→SWITCH:getPeerState()→CASE:LOOKING→startLeaderElection→makeLEStrategy().lookForLeader%%ENTRY→SWITCH:getPeerState()→CASE:OBSERVING→makeObserver→observer.observeLeader%%ENTRY→SWITCH:getPeerState()→CASE:FOLLOWING→makeFollower→follower.followLeader%%ENTRY→SWITCH:getPeerState()→CASE:LEADING→makeLeader→leader.lead%%ENTRY→SWITCH:getPeerState()→CASE:UnknownState",
+    "log_segment": "[WARN]:QuorumPeer main thread exited",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "133": {
+    "entry_id": 133,
+    "BlockId": "67a23884_2",
+    "log_key": "67a23884_2",
+    "exec_flow": "ENTRY→makeLeader→IF:self.getQuorumListenOnAllIPs→Quorum address resolved to wildcard addresses→IF:serverSockets.isEmpty→THROW:IOException",
+    "log_segment": "[DEBUG]:Quorum address resolved to wildcard addresses",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "134": {
+    "entry_id": 134,
+    "BlockId": "67a23884_3",
+    "log_key": "67a23884_3",
+    "exec_flow": "ENTRY→LOG:Shutting down→IF_FALSE:isShutdown→LOG:Shutdown called. For the reason \"reason\"→IF_TRUE:cnxAcceptor!=null→cnxAcceptor.halt%%ENTRY→LOG:Shutting down→IF_FALSE:isShutdown→LOG:Shutdown called. For the reason \"reason\"→IF_FALSE:cnxAcceptor!=null→closeSockets→setZooKeeperServer→self.adminServer.setZooKeeperServer→closeAllConnections→IF_FALSE:zk!=null→SYNC:learners→FOR_INIT→iterator→FOR_COND:it.hasNext()→shutdown",
+    "log_segment": "[INFO]:Shutting down",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "135": {
+    "entry_id": 135,
+    "BlockId": "67a23884_3",
+    "log_key": "67a23884_3",
+    "exec_flow": "ENTRY→LOG:Shutting down→IF_FALSE:isShutdown→LOG:Shutdown called. For the reason \"reason\"→IF_TRUE:cnxAcceptor!=null→cnxAcceptor.halt%%ENTRY→LOG:Shutting down→IF_FALSE:isShutdown→LOG:Shutdown called. For the reason \"reason\"→IF_FALSE:cnxAcceptor!=null→closeSockets→setZooKeeperServer→self.adminServer.setZooKeeperServer→closeAllConnections→IF_FALSE:zk!=null→SYNC:learners→FOR_INIT→iterator→FOR_COND:it.hasNext()→shutdown",
+    "log_segment": "[INFO]:Shutdown called. For the reason \"reason\"",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "136": {
+    "entry_id": 136,
+    "BlockId": "67a23884_3",
+    "log_key": "67a23884_3",
+    "exec_flow": "ENTRY→LOG:Shutting down→IF_FALSE:isShutdown→LOG:Shutdown called. For the reason \"reason\"→IF_TRUE:cnxAcceptor!=null→cnxAcceptor.halt%%ENTRY→LOG:Shutting down→IF_FALSE:isShutdown→LOG:Shutdown called. For the reason \"reason\"→IF_FALSE:cnxAcceptor!=null→closeSockets→setZooKeeperServer→self.adminServer.setZooKeeperServer→closeAllConnections→IF_FALSE:zk!=null→SYNC:learners→FOR_INIT→iterator→FOR_COND:it.hasNext()→shutdown",
+    "log_segment": "[WARN]:Ignoring unexpected exception, e",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "137": {
+    "entry_id": 137,
+    "BlockId": "b917106e_1",
+    "log_key": "b917106e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "138": {
+    "entry_id": 138,
+    "BlockId": "b917106e_1",
+    "log_key": "b917106e_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "139": {
+    "entry_id": 139,
+    "BlockId": "f40018ee_1",
+    "log_key": "f40018ee_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "140": {
+    "entry_id": 140,
+    "BlockId": "f40018ee_1",
+    "log_key": "f40018ee_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "141": {
+    "entry_id": 141,
+    "BlockId": "bb9a49f5_1",
+    "log_key": "bb9a49f5_1",
+    "exec_flow": "ENTRY→IF_TRUE:parent!=null→CALL:get→ENTRY→EXIT→CALL:makeFullPath→ENTRY→EXIT→IF_TRUE:bean.isHidden→RETURN→EXIT%%ENTRY→IF_TRUE:parent!=null→CALL:get→ENTRY→EXIT→CALL:makeFullPath→ENTRY→EXIT→IF_FALSE:bean.isHidden→TRY→SYNC:LOCK→CALL:mBeanServer.registerMBean→CALL:mapBean2Path.put→EXIT→EXIT%%ENTRY→IF_FALSE:parent!=null→CALL:makeFullPath→ENTRY→EXIT→IF_TRUE:bean.isHidden→RETURN→EXIT%%ENTRY→IF_FALSE:parent!=null→CALL:makeFullPath→ENTRY→EXIT→IF_FALSE:bean.isHidden→TRY→SYNC:LOCK→CALL:mBeanServer.registerMBean→CALL:mapBean2Path.put→EXIT→EXIT",
+    "log_segment": "[WARN]:Failed to register MBean \"exampleBeanName\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "142": {
+    "entry_id": 142,
+    "BlockId": "2354eb16_1",
+    "log_key": "2354eb16_1",
+    "exec_flow": "ENTRY→TRY→MBeanRegistry.register→ENTRY→ConditionCheck%%ENTRY→TRY→MBeanRegistry.register→ENTRY→ConditionCheck→TRY→LOCK",
+    "log_segment": "[WARN]:Failed to register MBean \"DataNodeBean\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "143": {
+    "entry_id": 143,
+    "BlockId": "2354eb16_1",
+    "log_key": "2354eb16_1",
+    "exec_flow": "ENTRY→TRY→MBeanRegistry.register→ENTRY→ConditionCheck%%ENTRY→TRY→MBeanRegistry.register→ENTRY→ConditionCheck→TRY→LOCK",
+    "log_segment": "[WARN]:Failed to register with JMX, e",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "144": {
+    "entry_id": 144,
+    "BlockId": "86c5ab2d_1",
+    "log_key": "86c5ab2d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Not starting Read-only server as startup follows shutdown!",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "145": {
+    "entry_id": 145,
+    "BlockId": "86c5ab2d_1",
+    "log_key": "86c5ab2d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register MBean \"ZooKeeperBean\"",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "146": {
+    "entry_id": 146,
+    "BlockId": "86c5ab2d_1",
+    "log_key": "86c5ab2d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Failed to register with JMX due to exception",
+    "single_log_label": "implicit",
+    "block_log_label": "implicit"
+  },
+  "147": {
+    "entry_id": 147,
+    "BlockId": "86c5ab2d_1",
+    "log_key": "86c5ab2d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Read-only server started",
+    "single_log_label": "normal",
+    "block_log_label": "implicit"
+  },
+  "148": {
+    "entry_id": 148,
+    "BlockId": "b330b347_1",
+    "log_key": "b330b347_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Socket is not open",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "149": {
+    "entry_id": 149,
+    "BlockId": "b330b347_1",
+    "log_key": "b330b347_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Closing socket connection",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "150": {
+    "entry_id": 150,
+    "BlockId": "66837774_1",
+    "log_key": "66837774_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Ignoring exception during selectionkey cancel",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "151": {
+    "entry_id": 151,
+    "BlockId": "66837774_1",
+    "log_key": "66837774_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Closed socket connection for client 192.168.1.100 sessionId 123456789",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "152": {
+    "entry_id": 152,
+    "BlockId": "cd596be4_1",
+    "log_key": "cd596be4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "153": {
+    "entry_id": 153,
+    "BlockId": "cd596be4_1",
+    "log_key": "cd596be4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "154": {
+    "entry_id": 154,
+    "BlockId": "24432444_1",
+    "log_key": "24432444_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Unregister MBean [mBeanServer.unregisterMBean], objName",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "155": {
+    "entry_id": 155,
+    "BlockId": "7a0c9aa9_1",
+    "log_key": "7a0c9aa9_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "156": {
+    "entry_id": 156,
+    "BlockId": "7a0c9aa9_1",
+    "log_key": "7a0c9aa9_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "157": {
+    "entry_id": 157,
+    "BlockId": "46e632b7_1",
+    "log_key": "46e632b7_1",
+    "exec_flow": "ENTRY→RetryRequest%%ENTRY→AbortRequest",
+    "log_segment": "[ERROR]:Failed to get a response from model gpt-4o after multiple retries",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "158": {
+    "entry_id": 158,
+    "BlockId": "b6bdf782_1",
+    "log_key": "b6bdf782_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Error during unregister of bean_name_01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "159": {
+    "entry_id": 159,
+    "BlockId": "b6bdf782_1",
+    "log_key": "b6bdf782_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Unexpected exception during unregister of bean_name_01. It should be reviewed and fixed.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "160": {
+    "entry_id": 160,
+    "BlockId": "4ba6b55f_1",
+    "log_key": "4ba6b55f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "161": {
+    "entry_id": 161,
+    "BlockId": "4ba6b55f_1",
+    "log_key": "4ba6b55f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "162": {
+    "entry_id": 162,
+    "BlockId": "2df73235_1",
+    "log_key": "2df73235_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Current zxid 1024 is <= 1024 for READ",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "163": {
+    "entry_id": 163,
+    "BlockId": "2df73235_1",
+    "log_key": "2df73235_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Creating new log file: log_1024",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "164": {
+    "entry_id": 164,
+    "BlockId": "2df73235_1",
+    "log_key": "2df73235_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Faulty serialization for header and txn",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "165": {
+    "entry_id": 165,
+    "BlockId": "b4602dad_1",
+    "log_key": "b4602dad_1",
+    "exec_flow": "ENTRY→CALL:append→IF_FALSE:hdr==null→IF_TRUE:hdr.getZxid()<=lastZxidSeen→[WARN]:Current zxid 100 is <= 100 for WRITE%%ENTRY→CALL:append→IF_FALSE:hdr==null→IF_FALSE:hdr.getZxid()<=lastZxidSeen→IF_TRUE:logStream==null→[DEBUG]:Creating new log file: log_100",
+    "log_segment": "[WARN]:Current zxid 100 is <= 100 for WRITE",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "166": {
+    "entry_id": 166,
+    "BlockId": "b4602dad_1",
+    "log_key": "b4602dad_1",
+    "exec_flow": "ENTRY→CALL:append→IF_FALSE:hdr==null→IF_TRUE:hdr.getZxid()<=lastZxidSeen→[WARN]:Current zxid 100 is <= 100 for WRITE%%ENTRY→CALL:append→IF_FALSE:hdr==null→IF_FALSE:hdr.getZxid()<=lastZxidSeen→IF_TRUE:logStream==null→[DEBUG]:Creating new log file: log_100",
+    "log_segment": "[DEBUG]:Creating new log file: log_100",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "167": {
+    "entry_id": 167,
+    "BlockId": "b4602dad_1",
+    "log_key": "b4602dad_1",
+    "exec_flow": "ENTRY→CALL:append→IF_FALSE:hdr==null→IF_TRUE:hdr.getZxid()<=lastZxidSeen→[WARN]:Current zxid 100 is <= 100 for WRITE%%ENTRY→CALL:append→IF_FALSE:hdr==null→IF_FALSE:hdr.getZxid()<=lastZxidSeen→IF_TRUE:logStream==null→[DEBUG]:Creating new log file: log_100",
+    "log_segment": "[ERROR]:Faulty serialization for header and txn",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "168": {
+    "entry_id": 168,
+    "BlockId": "e36f0f69_1",
+    "log_key": "e36f0f69_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Current zxid 100 is <= 99 for CREATE",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "169": {
+    "entry_id": 169,
+    "BlockId": "e36f0f69_1",
+    "log_key": "e36f0f69_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Creating new log file: log_100",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "170": {
+    "entry_id": 170,
+    "BlockId": "a1a71d12_1",
+    "log_key": "a1a71d12_1",
+    "exec_flow": "ENTRY→ROLL_LOG%%ENTRY→RESET_TRANSACTION_COUNT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "171": {
+    "entry_id": 171,
+    "BlockId": "a1a71d12_1",
+    "log_key": "a1a71d12_1",
+    "exec_flow": "ENTRY→ROLL_LOG%%ENTRY→RESET_TRANSACTION_COUNT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "172": {
+    "entry_id": 172,
+    "BlockId": "a8e4c544_1",
+    "log_key": "a8e4c544_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[TRACE]:Trace enabled for log with mask 1024",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "173": {
+    "entry_id": 173,
+    "BlockId": "a8e4c544_1",
+    "log_key": "a8e4c544_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[TRACE]:Request logged with header:rp:/user/data:READ",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "174": {
+    "entry_id": 174,
+    "BlockId": "6a09e0b8_1",
+    "log_key": "6a09e0b8_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "175": {
+    "entry_id": 175,
+    "BlockId": "6a09e0b8_1",
+    "log_key": "6a09e0b8_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "176": {
+    "entry_id": 176,
+    "BlockId": "71602e92_1",
+    "log_key": "71602e92_1",
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_TRUE:committedLog.isEmpty()→CALL:committedLog.add→CALL:getZxid→IF_TRUE:committedLog.size()>1024→CALL:committedLog.remove→CALL:getZxid→CALL:peek→CALL:unlock→EXIT%%ENTRY→TRY→CALL:lock→IF_TRUE:committedLog.isEmpty()→CALL:committedLog.add→CALL:getZxid→IF_FALSE:committedLog.size()>1024→CALL:unlock→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "177": {
+    "entry_id": 177,
+    "BlockId": "71602e92_1",
+    "log_key": "71602e92_1",
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_TRUE:committedLog.isEmpty()→CALL:committedLog.add→CALL:getZxid→IF_TRUE:committedLog.size()>1024→CALL:committedLog.remove→CALL:getZxid→CALL:peek→CALL:unlock→EXIT%%ENTRY→TRY→CALL:lock→IF_TRUE:committedLog.isEmpty()→CALL:committedLog.add→CALL:getZxid→IF_FALSE:committedLog.size()>1024→CALL:unlock→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "178": {
+    "entry_id": 178,
+    "BlockId": "71602e92_2",
+    "log_key": "71602e92_2",
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_TRUE:request.zxid<=1024→RETURN→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "179": {
+    "entry_id": 179,
+    "BlockId": "71602e92_2",
+    "log_key": "71602e92_2",
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_TRUE:request.zxid<=1024→RETURN→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "180": {
+    "entry_id": 180,
+    "BlockId": "71602e92_3",
+    "log_key": "71602e92_3",
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_TRUE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→LOG:[ERROR]:Illegal state encountered in proposal processing→EXIT%%ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_FALSE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→CALL:committedLog.add→CALL:getZxid→IF_TRUE:committedLog.size()>1024→CALL:committedLog.remove→CALL:getZxid→CALL:peek→CALL:unlock→EXIT%%ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_FALSE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→CALL:committedLog.add→CALL:getZxid→IF_FALSE:committedLog.size()>1024→CALL:unlock→EXIT",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "181": {
+    "entry_id": 181,
+    "BlockId": "71602e92_3",
+    "log_key": "71602e92_3",
+    "exec_flow": "ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_TRUE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→LOG:[ERROR]:Illegal state encountered in proposal processing→EXIT%%ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_FALSE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→CALL:committedLog.add→CALL:getZxid→IF_TRUE:committedLog.size()>1024→CALL:committedLog.remove→CALL:getZxid→CALL:peek→CALL:unlock→EXIT%%ENTRY→TRY→CALL:lock→IF_FALSE:committedLog.isEmpty()→IF_FALSE:request.zxid<=1024→IF_FALSE:!allowDiscontinuousProposals&&request.zxid!=1025&&ZxidUtils.getEpochFromZxid(request.zxid)<=ZxidUtils.getEpochFromZxid(1024)→CALL:committedLog.add→CALL:getZxid→IF_FALSE:committedLog.size()>1024→CALL:unlock→EXIT",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "182": {
+    "entry_id": 182,
+    "BlockId": "fec98a47_1",
+    "log_key": "fec98a47_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→EXCEPTION: rewind→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→EXCEPTION: rewind→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→EXCEPTION: sendBuffer→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→IF_TRUE: valid→LOG: DEBUG: Established session 0x1a2b3c with negotiated timeout 30000 for client 192.168.1.100→CALL: enableRecv→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→IF_FALSE: valid→LOG: INFO: Invalid session 0x1a2b3c for client 192.168.1.100, probably expired→CALL: sendBuffer→EXIT",
+    "log_segment": "[WARN]:Exception while establishing session, closing, e",
+    "single_log_label": "explicit",
+    "block_log_label": "both"
+  },
+  "183": {
+    "entry_id": 183,
+    "BlockId": "fec98a47_1",
+    "log_key": "fec98a47_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→EXCEPTION: rewind→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→EXCEPTION: rewind→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→EXCEPTION: sendBuffer→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→IF_TRUE: valid→LOG: DEBUG: Established session 0x1a2b3c with negotiated timeout 30000 for client 192.168.1.100→CALL: enableRecv→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→IF_FALSE: valid→LOG: INFO: Invalid session 0x1a2b3c for client 192.168.1.100, probably expired→CALL: sendBuffer→EXIT",
+    "log_segment": "[DEBUG]:Established session 0x1a2b3c with negotiated timeout 30000 for client 192.168.1.100",
+    "single_log_label": "explicit",
+    "block_log_label": "both"
+  },
+  "184": {
+    "entry_id": 184,
+    "BlockId": "fec98a47_1",
+    "log_key": "fec98a47_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_TRUE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_TRUE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→CALL: registerConnection→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_TRUE: valid→IF_FALSE: serverCnxnFactory != null && serverCnxnFactory.cnxns.contains(cnxn)→IF_FALSE: secureServerCnxnFactory != null && secureServerCnxnFactory.cnxns.contains(cnxn)→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→EXCEPTION: rewind→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→EXCEPTION: writeInt→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→EXCEPTION: serializeConnectResponse→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→EXCEPTION: close→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→EXCEPTION: rewind→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→EXCEPTION: sendBuffer→CATCH: Exception e→LOG: WARN: Exception while establishing session, closing, e→CALL: close→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→IF_TRUE: valid→LOG: DEBUG: Established session 0x1a2b3c with negotiated timeout 30000 for client 192.168.1.100→CALL: enableRecv→EXIT%%ENTRY→TRY→IF_FALSE: valid→TRY→CALL: writeInt→CALL: serializeConnectResponse→CALL: close→CALL: rewind→CALL: sendBuffer→IF_FALSE: valid→LOG: INFO: Invalid session 0x1a2b3c for client 192.168.1.100, probably expired→CALL: sendBuffer→EXIT",
+    "log_segment": "[INFO]:Invalid session 0x1a2b3c for client 192.168.1.100, probably expired",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "185": {
+    "entry_id": 185,
+    "BlockId": "0c6fb45d_1",
+    "log_key": "0c6fb45d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "186": {
+    "entry_id": 186,
+    "BlockId": "0c6fb45d_1",
+    "log_key": "0c6fb45d_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "187": {
+    "entry_id": 187,
+    "BlockId": "1aa67eb1_1",
+    "log_key": "1aa67eb1_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "188": {
+    "entry_id": 188,
+    "BlockId": "1aa67eb1_1",
+    "log_key": "1aa67eb1_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "189": {
+    "entry_id": 189,
+    "BlockId": "eb6185a4_1",
+    "log_key": "eb6185a4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[TRACE]:Ack zxid: 0x1f4",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "190": {
+    "entry_id": 190,
+    "BlockId": "eb6185a4_1",
+    "log_key": "eb6185a4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[TRACE]:Outstanding proposals all",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "191": {
+    "entry_id": 191,
+    "BlockId": "eb6185a4_1",
+    "log_key": "eb6185a4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Outstanding is 0",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "192": {
+    "entry_id": 192,
+    "BlockId": "eb6185a4_1",
+    "log_key": "eb6185a4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Proposal has already been committed, pzxid: 0x1f4 zxid: 0x1f4",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "193": {
+    "entry_id": 193,
+    "BlockId": "eb6185a4_1",
+    "log_key": "eb6185a4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Trying to commit future proposal: zxid 0x1f4 from follower01",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "194": {
+    "entry_id": 194,
+    "BlockId": "f367ba94_1",
+    "log_key": "f367ba94_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Bypassing cache",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "195": {
+    "entry_id": 195,
+    "BlockId": "f367ba94_1",
+    "log_key": "f367ba94_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[TRACE]:Ack zxid: 0x100000000",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "196": {
+    "entry_id": 196,
+    "BlockId": "f367ba94_1",
+    "log_key": "f367ba94_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[TRACE]:outstanding proposals all",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "197": {
+    "entry_id": 197,
+    "BlockId": "f367ba94_1",
+    "log_key": "f367ba94_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:outstanding is 0",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "198": {
+    "entry_id": 198,
+    "BlockId": "f367ba94_1",
+    "log_key": "f367ba94_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:proposal has already been committed, pzxid: 0x100000000 zxid: 0x100000000",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "199": {
+    "entry_id": 199,
+    "BlockId": "f367ba94_1",
+    "log_key": "f367ba94_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Trying to commit future proposal: zxid 0x100000000 from follower01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "200": {
+    "entry_id": 200,
+    "BlockId": "f367ba94_1",
+    "log_key": "f367ba94_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Null QuorumPeer",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "201": {
+    "entry_id": 201,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Processing request: /user/data, request",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "202": {
+    "entry_id": 202,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Elapsed time calculated: 3.14ms",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "203": {
+    "entry_id": 203,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Added request to queue",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "204": {
+    "entry_id": 204,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Commit needed for request: true",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "205": {
+    "entry_id": 205,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Added write request to queue",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "206": {
+    "entry_id": 206,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Incremented write request count: 1024",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "207": {
+    "entry_id": 207,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Wakeup signal sent",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "208": {
+    "entry_id": 208,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Processing request: /user/data, request",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "209": {
+    "entry_id": 209,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Elapsed time calculated: 3.14ms",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "210": {
+    "entry_id": 210,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Added request to queue",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "211": {
+    "entry_id": 211,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Commit needed for request: false",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "212": {
+    "entry_id": 212,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Incremented read request count: 512",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "213": {
+    "entry_id": 213,
+    "BlockId": "92e9aef6_1",
+    "log_key": "92e9aef6_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Wakeup signal sent",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "214": {
+    "entry_id": 214,
+    "BlockId": "3d61b616_1",
+    "log_key": "3d61b616_1",
+    "exec_flow": "ENTRY→processRequest→request.getHdr() != null→iter.hasNext()→p.request != null && p.request.zxid == zxid→remove%%ENTRY→processRequest→request.getHdr() != null→iter.hasNext()→!(p.request != null && p.request.zxid == zxid)%%ENTRY→processRequest→request.getHdr() != null→!iter.hasNext()%%ENTRY→processRequest→!request.getHdr() != null",
+    "log_segment": "[ERROR]:Committed request not found on toBeApplied: 1024, request",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "215": {
+    "entry_id": 215,
+    "BlockId": "4cc5aad5_1",
+    "log_key": "4cc5aad5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Throttled request sent as proposal: \"ProposalID_12345\". Exiting.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "216": {
+    "entry_id": 216,
+    "BlockId": "4cc5aad5_1",
+    "log_key": "4cc5aad5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:System exit requested by ServiceUtils",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "217": {
+    "entry_id": 217,
+    "BlockId": "4cc5aad5_1",
+    "log_key": "4cc5aad5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Xid rollover detected. Shutting down system.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "218": {
+    "entry_id": 218,
+    "BlockId": "4cc5aad5_2",
+    "log_key": "4cc5aad5_2",
+    "exec_flow": "ENTRY→ConditionCheck→UpdateProposalStats%%ENTRY→OtherBranch→UpdateProposalStats",
+    "log_segment": "[ERROR]:Throttled request sent as proposal: \"ProposalID_12345\". Exiting.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "219": {
+    "entry_id": 219,
+    "BlockId": "4cc5aad5_2",
+    "log_key": "4cc5aad5_2",
+    "exec_flow": "ENTRY→ConditionCheck→UpdateProposalStats%%ENTRY→OtherBranch→UpdateProposalStats",
+    "log_segment": "[INFO]:System exit requested by ServiceUtils",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "220": {
+    "entry_id": 220,
+    "BlockId": "4cc5aad5_2",
+    "log_key": "4cc5aad5_2",
+    "exec_flow": "ENTRY→ConditionCheck→UpdateProposalStats%%ENTRY→OtherBranch→UpdateProposalStats",
+    "log_segment": "[INFO]:Proposal statistics updated with last buffer size: 1024",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "221": {
+    "entry_id": 221,
+    "BlockId": "4cc5aad5_2",
+    "log_key": "4cc5aad5_2",
+    "exec_flow": "ENTRY→ConditionCheck→UpdateProposalStats%%ENTRY→OtherBranch→UpdateProposalStats",
+    "log_segment": "[INFO]:Quorum verifier added successfully",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "222": {
+    "entry_id": 222,
+    "BlockId": "4cc5aad5_2",
+    "log_key": "4cc5aad5_2",
+    "exec_flow": "ENTRY→ConditionCheck→UpdateProposalStats%%ENTRY→OtherBranch→UpdateProposalStats",
+    "log_segment": "[INFO]:Proposal count incremented in server metrics",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "223": {
+    "entry_id": 223,
+    "BlockId": "6f2b4c33_1",
+    "log_key": "6f2b4c33_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ForwardToNextProcessor%%ENTRY→ProposeTransaction%%ENTRY→ThrottledRequest%%ENTRY→XidRollover",
+    "log_segment": "[INFO]:Processing sync request from LearnerSyncRequest",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "224": {
+    "entry_id": 224,
+    "BlockId": "6f2b4c33_1",
+    "log_key": "6f2b4c33_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ForwardToNextProcessor%%ENTRY→ProposeTransaction%%ENTRY→ThrottledRequest%%ENTRY→XidRollover",
+    "log_segment": "[DEBUG]:Forwarding request to next processor",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "225": {
+    "entry_id": 225,
+    "BlockId": "6f2b4c33_1",
+    "log_key": "6f2b4c33_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ForwardToNextProcessor%%ENTRY→ProposeTransaction%%ENTRY→ThrottledRequest%%ENTRY→XidRollover",
+    "log_segment": "[INFO]:Proposing transaction for consensus",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "226": {
+    "entry_id": 226,
+    "BlockId": "6f2b4c33_1",
+    "log_key": "6f2b4c33_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ForwardToNextProcessor%%ENTRY→ProposeTransaction%%ENTRY→ThrottledRequest%%ENTRY→XidRollover",
+    "log_segment": "[ERROR]:XidRolloverException occurred, throwing RequestProcessorException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "227": {
+    "entry_id": 227,
+    "BlockId": "6f2b4c33_1",
+    "log_key": "6f2b4c33_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ForwardToNextProcessor%%ENTRY→ProposeTransaction%%ENTRY→ThrottledRequest%%ENTRY→XidRollover",
+    "log_segment": "[ERROR]:Throttled request send as proposal: Exiting.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "228": {
+    "entry_id": 228,
+    "BlockId": "6f2b4c33_1",
+    "log_key": "6f2b4c33_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ForwardToNextProcessor%%ENTRY→ProposeTransaction%%ENTRY→ThrottledRequest%%ENTRY→XidRollover",
+    "log_segment": "[DEBUG]:Proposing:: TransactionProposal",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "229": {
+    "entry_id": 229,
+    "BlockId": "5895bdfa_1",
+    "log_key": "5895bdfa_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Closing connection to leader, exception during packet send",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "230": {
+    "entry_id": 230,
+    "BlockId": "59424e85_1",
+    "log_key": "59424e85_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "231": {
+    "entry_id": 231,
+    "BlockId": "59424e85_1",
+    "log_key": "59424e85_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "232": {
+    "entry_id": 232,
+    "BlockId": "59424e85_2",
+    "log_key": "59424e85_2",
+    "exec_flow": "ENTRY→IF_TRUE:request instanceof LearnerSyncRequest→CALL:processSync→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_FALSE:request.getHdr() != null→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT",
+    "log_segment": "[INFO]:Processing sync request from LearnerSyncRequest",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "233": {
+    "entry_id": 233,
+    "BlockId": "59424e85_2",
+    "log_key": "59424e85_2",
+    "exec_flow": "ENTRY→IF_TRUE:request instanceof LearnerSyncRequest→CALL:processSync→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_FALSE:request.getHdr() != null→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Forwarding request to next processor",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "234": {
+    "entry_id": 234,
+    "BlockId": "59424e85_2",
+    "log_key": "59424e85_2",
+    "exec_flow": "ENTRY→IF_TRUE:request instanceof LearnerSyncRequest→CALL:processSync→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_FALSE:request.getHdr() != null→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT",
+    "log_segment": "[INFO]:Proposing transaction for consensus",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "235": {
+    "entry_id": 235,
+    "BlockId": "59424e85_2",
+    "log_key": "59424e85_2",
+    "exec_flow": "ENTRY→IF_TRUE:request instanceof LearnerSyncRequest→CALL:processSync→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_FALSE:request.getHdr() != null→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT",
+    "log_segment": "[ERROR]:XidRolloverException occurred, throwing RequestProcessorException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "236": {
+    "entry_id": 236,
+    "BlockId": "59424e85_2",
+    "log_key": "59424e85_2",
+    "exec_flow": "ENTRY→IF_TRUE:request instanceof LearnerSyncRequest→CALL:processSync→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_FALSE:request.getHdr() != null→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT",
+    "log_segment": "[ERROR]:Throttled request send as proposal: Exiting.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "237": {
+    "entry_id": 237,
+    "BlockId": "59424e85_2",
+    "log_key": "59424e85_2",
+    "exec_flow": "ENTRY→IF_TRUE:request instanceof LearnerSyncRequest→CALL:processSync→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_TRUE:shouldForwardToNextProcessor→CALL:processRequest→IF_FALSE:request.getHdr() != null→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_TRUE:request.isThrottled()→LOG:ERROR:Throttled request send as proposal: Exiting.→CALL:requestSystemExit→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_TRUE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:shutdown→THROW:XidRolloverException→EXIT%%ENTRY→IF_FALSE:request instanceof LearnerSyncRequest→IF_FALSE:shouldForwardToNextProcessor→IF_TRUE:request.getHdr() != null→TRY→CALL:propose→IF_FALSE:request.isThrottled()→IF_FALSE:(request.zxid & 0xffffffffL) == 0xffffffffL→CALL:setLastBufferSize→SYNC:this→CALL:addQuorumVerifier→CALL:PROPOSAL_COUNT.add→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Proposing:: transaction",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "238": {
+    "entry_id": 238,
+    "BlockId": "63d68207_1",
+    "log_key": "63d68207_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "239": {
+    "entry_id": 239,
+    "BlockId": "63d68207_1",
+    "log_key": "63d68207_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "240": {
+    "entry_id": 240,
+    "BlockId": "ddf273fc_1",
+    "log_key": "ddf273fc_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Log size limit reached: 1024, 2048",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "241": {
+    "entry_id": 241,
+    "BlockId": "ddf273fc_1",
+    "log_key": "ddf273fc_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:rollLog",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "242": {
+    "entry_id": 242,
+    "BlockId": "8e7e1981_1",
+    "log_key": "8e7e1981_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Log size limit reached: 1024, 2048",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "243": {
+    "entry_id": 243,
+    "BlockId": "8e7e1981_1",
+    "log_key": "8e7e1981_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:rollLog",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "244": {
+    "entry_id": 244,
+    "BlockId": "e2a7bdaf_1",
+    "log_key": "e2a7bdaf_1",
+    "exec_flow": "ENTRY→RetryLogic%%ENTRY→AbortOperation",
+    "log_segment": "[ERROR]:Failed to get a response from model 'gpt-4o' after multiple retries",
+    "single_log_label": "both",
+    "block_log_label": "both"
+  },
+  "245": {
+    "entry_id": 245,
+    "BlockId": "1ada5259_1",
+    "log_key": "1ada5259_1",
+    "exec_flow": "ENTRY→TRY→CALL→EXCEPTION→CATCH→CALL→LOG→CALL→IF_TRUE→RETURN→EXIT%%ENTRY→TRY→CALL→currentElapsedTime→WHILE→WHILE_COND→WHILE_EXIT→LOG→CALL→IF_TRUE→RETURN→EXIT",
+    "log_segment": "[INFO]:SyncRequestProcessor exited!",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "246": {
+    "entry_id": 246,
+    "BlockId": "1ada5259_1",
+    "log_key": "1ada5259_1",
+    "exec_flow": "ENTRY→TRY→CALL→EXCEPTION→CATCH→CALL→LOG→CALL→IF_TRUE→RETURN→EXIT%%ENTRY→TRY→CALL→currentElapsedTime→WHILE→WHILE_COND→WHILE_EXIT→LOG→CALL→IF_TRUE→RETURN→EXIT",
+    "log_segment": "[WARN]:Current zxid 100 is <= 200 for CREATE",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "247": {
+    "entry_id": 247,
+    "BlockId": "1ada5259_1",
+    "log_key": "1ada5259_1",
+    "exec_flow": "ENTRY→TRY→CALL→EXCEPTION→CATCH→CALL→LOG→CALL→IF_TRUE→RETURN→EXIT%%ENTRY→TRY→CALL→currentElapsedTime→WHILE→WHILE_COND→WHILE_EXIT→LOG→CALL→IF_TRUE→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Creating new log file: log.100",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "248": {
+    "entry_id": 248,
+    "BlockId": "1ada5259_2",
+    "log_key": "1ada5259_2",
+    "exec_flow": "ENTRY→CALL→EXIT",
+    "log_segment": "[INFO]:SyncRequestProcessor exited!",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "249": {
+    "entry_id": 249,
+    "BlockId": "1ada5259_3",
+    "log_key": "1ada5259_3",
+    "exec_flow": "ENTRY→IF_TRUE→CALL→EXIT",
+    "log_segment": "[INFO]:Processing sync request from LearnerSyncRequest",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "250": {
+    "entry_id": 250,
+    "BlockId": "1ada5259_4",
+    "log_key": "1ada5259_4",
+    "exec_flow": "ENTRY→IF_FALSE→IF_TRUE→CALL→IF_TRUE→TRY→CALL→IF_TRUE→LOG→CALL→IF_FALSE→IF_TRUE→CALL→THROW→CATCH→THROW→CALL→EXIT",
+    "log_segment": "[DEBUG]:Forwarding request to next processor",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "251": {
+    "entry_id": 251,
+    "BlockId": "1ada5259_4",
+    "log_key": "1ada5259_4",
+    "exec_flow": "ENTRY→IF_FALSE→IF_TRUE→CALL→IF_TRUE→TRY→CALL→IF_TRUE→LOG→CALL→IF_FALSE→IF_TRUE→CALL→THROW→CATCH→THROW→CALL→EXIT",
+    "log_segment": "[INFO]:Proposing transaction for consensus",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "252": {
+    "entry_id": 252,
+    "BlockId": "1ada5259_4",
+    "log_key": "1ada5259_4",
+    "exec_flow": "ENTRY→IF_FALSE→IF_TRUE→CALL→IF_TRUE→TRY→CALL→IF_TRUE→LOG→CALL→IF_FALSE→IF_TRUE→CALL→THROW→CATCH→THROW→CALL→EXIT",
+    "log_segment": "[ERROR]:XidRolloverException occurred, throwing RequestProcessorException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "253": {
+    "entry_id": 253,
+    "BlockId": "1ada5259_4",
+    "log_key": "1ada5259_4",
+    "exec_flow": "ENTRY→IF_FALSE→IF_TRUE→CALL→IF_TRUE→TRY→CALL→IF_TRUE→LOG→CALL→IF_FALSE→IF_TRUE→CALL→THROW→CATCH→THROW→CALL→EXIT",
+    "log_segment": "[ERROR]:Throttled request send as proposal: 300. Exiting.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "254": {
+    "entry_id": 254,
+    "BlockId": "1ada5259_4",
+    "log_key": "1ada5259_4",
+    "exec_flow": "ENTRY→IF_FALSE→IF_TRUE→CALL→IF_TRUE→TRY→CALL→IF_TRUE→LOG→CALL→IF_FALSE→IF_TRUE→CALL→THROW→CATCH→THROW→CALL→EXIT",
+    "log_segment": "[DEBUG]:Proposing:: 400",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "255": {
+    "entry_id": 255,
+    "BlockId": "79b6e40a_1",
+    "log_key": "79b6e40a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Initialize file found, an empty database will not block voting participation",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "256": {
+    "entry_id": 256,
+    "BlockId": "79b6e40a_1",
+    "log_key": "79b6e40a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Something is broken! Empty snapshot warning",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "257": {
+    "entry_id": 257,
+    "BlockId": "79b6e40a_1",
+    "log_key": "79b6e40a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:This should only be allowed during upgrading. Empty snapshot warning",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "258": {
+    "entry_id": 258,
+    "BlockId": "79b6e40a_1",
+    "log_key": "79b6e40a_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Unexpected empty data tree, setting zxid to -1",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "259": {
+    "entry_id": 259,
+    "BlockId": "57dfbaa4_1",
+    "log_key": "57dfbaa4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→AnotherBranch",
+    "log_segment": "[INFO]:Initialize file found, an empty database will not block voting participation",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "260": {
+    "entry_id": 260,
+    "BlockId": "57dfbaa4_1",
+    "log_key": "57dfbaa4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→AnotherBranch",
+    "log_segment": "[WARN]:This should only be allowed during upgrading.",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "261": {
+    "entry_id": 261,
+    "BlockId": "57dfbaa4_1",
+    "log_key": "57dfbaa4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→AnotherBranch",
+    "log_segment": "[WARN]:Unexpected empty data tree, setting zxid to -1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "262": {
+    "entry_id": 262,
+    "BlockId": "57dfbaa4_1",
+    "log_key": "57dfbaa4_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→AnotherBranch",
+    "log_segment": "[INFO]:Snapshot loaded in 150 ms, highest zxid is 0x123456, digest is abcdef123456",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "263": {
+    "entry_id": 263,
+    "BlockId": "8eee06b0_1",
+    "log_key": "8eee06b0_1",
+    "exec_flow": "ENTRY→CALL: writeLongToFile→ENTRY→CALL: getSnapDir→ENTRY→RETURN→EXIT→EXIT→EXIT",
+    "log_segment": "[INFO]:Started writing long value to file",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "264": {
+    "entry_id": 264,
+    "BlockId": "8eee06b0_1",
+    "log_key": "8eee06b0_1",
+    "exec_flow": "ENTRY→CALL: writeLongToFile→ENTRY→CALL: getSnapDir→ENTRY→RETURN→EXIT→EXIT→EXIT",
+    "log_segment": "[INFO]:Accessing snapshot directory",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "265": {
+    "entry_id": 265,
+    "BlockId": "8eee06b0_1",
+    "log_key": "8eee06b0_1",
+    "exec_flow": "ENTRY→CALL: writeLongToFile→ENTRY→CALL: getSnapDir→ENTRY→RETURN→EXIT→EXIT→EXIT",
+    "log_segment": "[INFO]:Snapshot directory accessed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "266": {
+    "entry_id": 266,
+    "BlockId": "8eee06b0_1",
+    "log_key": "8eee06b0_1",
+    "exec_flow": "ENTRY→CALL: writeLongToFile→ENTRY→CALL: getSnapDir→ENTRY→RETURN→EXIT→EXIT→EXIT",
+    "log_segment": "[INFO]:Exiting snapshot directory access",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "267": {
+    "entry_id": 267,
+    "BlockId": "8eee06b0_1",
+    "log_key": "8eee06b0_1",
+    "exec_flow": "ENTRY→CALL: writeLongToFile→ENTRY→CALL: getSnapDir→ENTRY→RETURN→EXIT→EXIT→EXIT",
+    "log_segment": "[INFO]:Finished writing long value to file",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "268": {
+    "entry_id": 268,
+    "BlockId": "b6870033_1",
+    "log_key": "b6870033_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→EmptyDataTree",
+    "log_segment": "[INFO]:Initialize file found, an empty database will not block voting participation",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "269": {
+    "entry_id": 269,
+    "BlockId": "b6870033_1",
+    "log_key": "b6870033_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→EmptyDataTree",
+    "log_segment": "[WARN]:This should only be allowed during upgrading",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "270": {
+    "entry_id": 270,
+    "BlockId": "b6870033_1",
+    "log_key": "b6870033_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→EmptyDataTree",
+    "log_segment": "[WARN]:Unexpected empty data tree, setting zxid to -1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "271": {
+    "entry_id": 271,
+    "BlockId": "b6870033_1",
+    "log_key": "b6870033_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch%%ENTRY→EmptyDataTree",
+    "log_segment": "[INFO]:Snapshot loaded in 150 ms, highest zxid is 0x12345, digest is abcdef123456",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "272": {
+    "entry_id": 272,
+    "BlockId": "b6870033_2",
+    "log_key": "b6870033_2",
+    "exec_flow": "ENTRY→WriteToFile",
+    "log_segment": "[INFO]:Writing long value to file /snapshots/snapDir",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "273": {
+    "entry_id": 273,
+    "BlockId": "b6870033_2",
+    "log_key": "b6870033_2",
+    "exec_flow": "ENTRY→WriteToFile",
+    "log_segment": "[INFO]:Accessing snapshot directory /snapshots/snapDir",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "274": {
+    "entry_id": 274,
+    "BlockId": "b6870033_2",
+    "log_key": "b6870033_2",
+    "exec_flow": "ENTRY→WriteToFile",
+    "log_segment": "[INFO]:Snapshot directory accessed successfully",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "275": {
+    "entry_id": 275,
+    "BlockId": "b6870033_2",
+    "log_key": "b6870033_2",
+    "exec_flow": "ENTRY→WriteToFile",
+    "log_segment": "[INFO]:Write operation completed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "276": {
+    "entry_id": 276,
+    "BlockId": "609e0468_1",
+    "log_key": "609e0468_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Binding to port 8080, localAddress 192.168.1.1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "277": {
+    "entry_id": 277,
+    "BlockId": "609e0468_1",
+    "log_key": "609e0468_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Bound to port 8080, localAddress 192.168.1.1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "278": {
+    "entry_id": 278,
+    "BlockId": "5102e67b_1",
+    "log_key": "5102e67b_1",
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "279": {
+    "entry_id": 279,
+    "BlockId": "5102e67b_1",
+    "log_key": "5102e67b_1",
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log_segment": "[ERROR]:Access denied to path /user/data",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "280": {
+    "entry_id": 280,
+    "BlockId": "b67946c5_1",
+    "log_key": "b67946c5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Initialize file found, an empty database will not block voting participation",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "281": {
+    "entry_id": 281,
+    "BlockId": "b67946c5_1",
+    "log_key": "b67946c5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:This should only be allowed during upgrading",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "282": {
+    "entry_id": 282,
+    "BlockId": "b67946c5_1",
+    "log_key": "b67946c5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[WARN]:Unexpected empty data tree, setting zxid to -1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "283": {
+    "entry_id": 283,
+    "BlockId": "b67946c5_1",
+    "log_key": "b67946c5_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Snapshot loaded in 500 ms, highest zxid is 0x12345, digest is abcdef1234567890",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "284": {
+    "entry_id": 284,
+    "BlockId": "38fc44ff_1",
+    "log_key": "38fc44ff_1",
+    "exec_flow": "ENTRY→SWITCH:electionAlgorithm→CASE:1→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:2→EXIT",
+    "log_segment": "[ERROR]:Election Algorithm 1 is not supported.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "285": {
+    "entry_id": 285,
+    "BlockId": "38fc44ff_1",
+    "log_key": "38fc44ff_1",
+    "exec_flow": "ENTRY→SWITCH:electionAlgorithm→CASE:1→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:2→EXIT",
+    "log_segment": "[ERROR]:Election Algorithm 2 is not supported.",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "286": {
+    "entry_id": 286,
+    "BlockId": "38fc44ff_2",
+    "log_key": "38fc44ff_2",
+    "exec_flow": "ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_TRUE:oldQcm!=null→IF_TRUE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_TRUE:oldQcm!=null→IF_FALSE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_FALSE:oldQcm!=null→IF_TRUE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_FALSE:oldQcm!=null→IF_FALSE:listener!=null→EXIT",
+    "log_segment": "[WARN]:Clobbering already-set QuorumCnxManager (restarting leader election?)",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "287": {
+    "entry_id": 287,
+    "BlockId": "38fc44ff_2",
+    "log_key": "38fc44ff_2",
+    "exec_flow": "ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_TRUE:oldQcm!=null→IF_TRUE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_TRUE:oldQcm!=null→IF_FALSE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_FALSE:oldQcm!=null→IF_TRUE:listener!=null→EXIT%%ENTRY→SWITCH:electionAlgorithm→CASE:3→IF_FALSE:oldQcm!=null→IF_FALSE:listener!=null→EXIT",
+    "log_segment": "[ERROR]:Null listener when initializing cnx manager",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "288": {
+    "entry_id": 288,
+    "BlockId": "38fc44ff_3",
+    "log_key": "38fc44ff_3",
+    "exec_flow": "ENTRY→SWITCH:electionAlgorithm→CASE:[]→EXIT",
+    "log_segment": "[INFO]:Election algorithm returned successfully.",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "289": {
+    "entry_id": 289,
+    "BlockId": "74e160b2_1",
+    "log_key": "74e160b2_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_FALSE→CALL→EXIT",
+    "log_segment": "[INFO]:Initialize file found, an empty database will not block voting participation",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "290": {
+    "entry_id": 290,
+    "BlockId": "74e160b2_1",
+    "log_key": "74e160b2_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_FALSE→CALL→EXIT",
+    "log_segment": "[WARN]:This should only be allowed during upgrading.",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "291": {
+    "entry_id": 291,
+    "BlockId": "74e160b2_1",
+    "log_key": "74e160b2_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→EXIT→CALL→CALL→EXIT%%ENTRY→TRY→IF_FALSE→CALL→EXIT",
+    "log_segment": "[WARN]:Unexpected empty data tree, setting zxid to -1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "292": {
+    "entry_id": 292,
+    "BlockId": "74e160b2_2",
+    "log_key": "74e160b2_2",
+    "exec_flow": "ENTRY→CALL→ENTRY→SWITCH→CASE→THROW%%ENTRY→CALL→ENTRY→SWITCH→CASE→THROW%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_TRUE→LOG→CALL→IF_TRUE→CALL→CALL→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_TRUE→LOG→CALL→IF_FALSE→LOG→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_FALSE→IF_TRUE→CALL→CALL→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_FALSE→IF_FALSE→LOG→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→RETURN→EXIT",
+    "log_segment": "[WARN]:Clobbering already-set QuorumCnxManager (restarting leader election?)",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "293": {
+    "entry_id": 293,
+    "BlockId": "74e160b2_2",
+    "log_key": "74e160b2_2",
+    "exec_flow": "ENTRY→CALL→ENTRY→SWITCH→CASE→THROW%%ENTRY→CALL→ENTRY→SWITCH→CASE→THROW%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_TRUE→LOG→CALL→IF_TRUE→CALL→CALL→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_TRUE→LOG→CALL→IF_FALSE→LOG→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_FALSE→IF_TRUE→CALL→CALL→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→IF_FALSE→IF_FALSE→LOG→BREAK%%ENTRY→CALL→ENTRY→SWITCH→CASE→RETURN→EXIT",
+    "log_segment": "[ERROR]:Null listener when initializing cnx manager",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "294": {
+    "entry_id": 294,
+    "BlockId": "1ec2600f_1",
+    "log_key": "1ec2600f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "295": {
+    "entry_id": 295,
+    "BlockId": "1ec2600f_1",
+    "log_key": "1ec2600f_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "296": {
+    "entry_id": 296,
+    "BlockId": "8d050e40_1",
+    "log_key": "8d050e40_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "297": {
+    "entry_id": 297,
+    "BlockId": "8d050e40_1",
+    "log_key": "8d050e40_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "298": {
+    "entry_id": 298,
+    "BlockId": "2bf7ad80_1",
+    "log_key": "2bf7ad80_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "299": {
+    "entry_id": 299,
+    "BlockId": "2bf7ad80_1",
+    "log_key": "2bf7ad80_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "300": {
+    "entry_id": 300,
+    "BlockId": "4b7a8763_1",
+    "log_key": "4b7a8763_1",
+    "exec_flow": "ENTRY→RETURN→EXIT",
+    "log_segment": "[DEBUG]:Initializing leader election protocol...",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "301": {
+    "entry_id": 301,
+    "BlockId": "4cd3addc_1",
+    "log_key": "4cd3addc_1",
+    "exec_flow": "ENTRY→TRY→CALL: setZabState→TRY→CALL: connectToLeader→EXCEPTION: connectToLeader→CATCH: Exception e→EXIT%%ENTRY→TRY→CALL: setZabState→TRY→CALL: connectToLeader→CALL: currentTimeMillis→THROW: new Exception(\"learned about role change\")→EXIT",
+    "log_segment": "[WARN]:Exception when observing the leader, e",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "302": {
+    "entry_id": 302,
+    "BlockId": "a435f286_1",
+    "log_key": "a435f286_1",
+    "exec_flow": "ENTRY→ShutdownObserver",
+    "log_segment": "[INFO]:Shutdown observer process initiated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "303": {
+    "entry_id": 303,
+    "BlockId": "87459097_1",
+    "log_key": "87459097_1",
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log_segment": "[INFO]:Fetched 1024MB block from https://namenode:8020",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "304": {
+    "entry_id": 304,
+    "BlockId": "87459097_1",
+    "log_key": "87459097_1",
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log_segment": "[ERROR]:Access denied to path /user/data",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "305": {
+    "entry_id": 305,
+    "BlockId": "cd4c5ecf_1",
+    "log_key": "cd4c5ecf_1",
+    "exec_flow": "ENTRY→ShutdownFollower",
+    "log_segment": "[INFO]:Follower node shutdown initiated",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "306": {
+    "entry_id": 306,
+    "BlockId": "cd4c5ecf_1",
+    "log_key": "cd4c5ecf_1",
+    "exec_flow": "ENTRY→ShutdownFollower",
+    "log_segment": "[INFO]:Follower node shutdown completed",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "307": {
+    "entry_id": 307,
+    "BlockId": "3b349e70_1",
+    "log_key": "3b349e70_1",
+    "exec_flow": "ENTRY→Shutdown%%ENTRY→LeaderElection",
+    "log_segment": "[INFO]:Shutting down",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "308": {
+    "entry_id": 308,
+    "BlockId": "3b349e70_1",
+    "log_key": "3b349e70_1",
+    "exec_flow": "ENTRY→Shutdown%%ENTRY→LeaderElection",
+    "log_segment": "[INFO]:Shutdown called. For the reason \"Maintenance\"",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "309": {
+    "entry_id": 309,
+    "BlockId": "3b349e70_1",
+    "log_key": "3b349e70_1",
+    "exec_flow": "ENTRY→Shutdown%%ENTRY→LeaderElection",
+    "log_segment": "[INFO]:LEADING - LEADER ELECTION TOOK - 500ms MILLISECONDS",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "310": {
+    "entry_id": 310,
+    "BlockId": "3b349e70_1",
+    "log_key": "3b349e70_1",
+    "exec_flow": "ENTRY→Shutdown%%ENTRY→LeaderElection",
+    "log_segment": "[INFO]:NEWLEADER proposal has Zxid of 0x1a2b3c4d",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "311": {
+    "entry_id": 311,
+    "BlockId": "61c3ab25_1",
+    "log_key": "61c3ab25_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Shutting down",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "312": {
+    "entry_id": 312,
+    "BlockId": "61c3ab25_2",
+    "log_key": "61c3ab25_2",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ShutdownReason%%ENTRY→ShutdownReason→HaltConnections%%ENTRY→ShutdownReason→CloseSockets",
+    "log_segment": "[INFO]:Shutting down",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "313": {
+    "entry_id": 313,
+    "BlockId": "61c3ab25_2",
+    "log_key": "61c3ab25_2",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→ShutdownReason%%ENTRY→ShutdownReason→HaltConnections%%ENTRY→ShutdownReason→CloseSockets",
+    "log_segment": "[INFO]:Shutdown called. For the reason \"maintenance\"",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "314": {
+    "entry_id": 314,
+    "BlockId": "61c3ab25_3",
+    "log_key": "61c3ab25_3",
+    "exec_flow": "ShutdownReason→HaltConnections%%ShutdownReason→CloseSockets",
+    "log_segment": "[INFO]:Halted connection acceptor",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "315": {
+    "entry_id": 315,
+    "BlockId": "61c3ab25_3",
+    "log_key": "61c3ab25_3",
+    "exec_flow": "ShutdownReason→HaltConnections%%ShutdownReason→CloseSockets",
+    "log_segment": "[INFO]:Set ZooKeeper server",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "316": {
+    "entry_id": 316,
+    "BlockId": "61c3ab25_3",
+    "log_key": "61c3ab25_3",
+    "exec_flow": "ShutdownReason→HaltConnections%%ShutdownReason→CloseSockets",
+    "log_segment": "[INFO]:Admin server set to ZooKeeper server",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "317": {
+    "entry_id": 317,
+    "BlockId": "61c3ab25_3",
+    "log_key": "61c3ab25_3",
+    "exec_flow": "ShutdownReason→HaltConnections%%ShutdownReason→CloseSockets",
+    "log_segment": "[INFO]:Closed all connections",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "318": {
+    "entry_id": 318,
+    "BlockId": "61c3ab25_4",
+    "log_key": "61c3ab25_4",
+    "exec_flow": "HaltConnections→LearnersSync%%CloseSockets→LearnersSync",
+    "log_segment": "[INFO]:Synchronized learners",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "319": {
+    "entry_id": 319,
+    "BlockId": "61c3ab25_4",
+    "log_key": "61c3ab25_4",
+    "exec_flow": "HaltConnections→LearnersSync%%CloseSockets→LearnersSync",
+    "log_segment": "[INFO]:Initialized iterator",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "320": {
+    "entry_id": 320,
+    "BlockId": "61c3ab25_5",
+    "log_key": "61c3ab25_5",
+    "exec_flow": "LearnersSync→IteratorCheck",
+    "log_segment": "[INFO]:Checked iterator condition",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "321": {
+    "entry_id": 321,
+    "BlockId": "94623e0f_1",
+    "log_key": "94623e0f_1",
+    "exec_flow": "ENTRY→LEADING%%ENTRY→SHUTDOWN",
+    "log_segment": "[DEBUG]:Starting quorum peer",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "322": {
+    "entry_id": 322,
+    "BlockId": "94623e0f_1",
+    "log_key": "94623e0f_1",
+    "exec_flow": "ENTRY→LEADING%%ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:LEADING - Leader election took 3.14 seconds",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "323": {
+    "entry_id": 323,
+    "BlockId": "94623e0f_1",
+    "log_key": "94623e0f_1",
+    "exec_flow": "ENTRY→LEADING%%ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:New leader proposal has Zxid of 0x1234abcd",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "324": {
+    "entry_id": 324,
+    "BlockId": "94623e0f_1",
+    "log_key": "94623e0f_1",
+    "exec_flow": "ENTRY→LEADING%%ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:Shutting down",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "325": {
+    "entry_id": 325,
+    "BlockId": "94623e0f_1",
+    "log_key": "94623e0f_1",
+    "exec_flow": "ENTRY→LEADING%%ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:Shutdown called. For the reason \"Cluster maintenance\"",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "326": {
+    "entry_id": 326,
+    "BlockId": "e52b8c91_1",
+    "log_key": "e52b8c91_1",
+    "exec_flow": "ENTRY→TRY→CALL→ENTRY→ConditionCheck%%ENTRY→TRY→CALL→ENTRY→OtherBranch%%ENTRY→IF_FALSE→CALL→ENTRY→ConditionCheck→CALL→TRY→OtherBranch",
+    "log_segment": "[INFO]:Initialize file found, an empty database will not block voting participation",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "327": {
+    "entry_id": 327,
+    "BlockId": "e52b8c91_1",
+    "log_key": "e52b8c91_1",
+    "exec_flow": "ENTRY→TRY→CALL→ENTRY→ConditionCheck%%ENTRY→TRY→CALL→ENTRY→OtherBranch%%ENTRY→IF_FALSE→CALL→ENTRY→ConditionCheck→CALL→TRY→OtherBranch",
+    "log_segment": "[INFO]:Snapshot loaded in 500 ms, highest zxid is 0x12345, digest is abcdef123456",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "328": {
+    "entry_id": 328,
+    "BlockId": "e52b8c91_1",
+    "log_key": "e52b8c91_1",
+    "exec_flow": "ENTRY→TRY→CALL→ENTRY→ConditionCheck%%ENTRY→TRY→CALL→ENTRY→OtherBranch%%ENTRY→IF_FALSE→CALL→ENTRY→ConditionCheck→CALL→TRY→OtherBranch",
+    "log_segment": "[WARN]:This should only be allowed during upgrading",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "329": {
+    "entry_id": 329,
+    "BlockId": "e52b8c91_1",
+    "log_key": "e52b8c91_1",
+    "exec_flow": "ENTRY→TRY→CALL→ENTRY→ConditionCheck%%ENTRY→TRY→CALL→ENTRY→OtherBranch%%ENTRY→IF_FALSE→CALL→ENTRY→ConditionCheck→CALL→TRY→OtherBranch",
+    "log_segment": "[WARN]:Unexpected empty data tree, setting zxid to -1",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "330": {
+    "entry_id": 330,
+    "BlockId": "e52b8c91_1",
+    "log_key": "e52b8c91_1",
+    "exec_flow": "ENTRY→TRY→CALL→ENTRY→ConditionCheck%%ENTRY→TRY→CALL→ENTRY→OtherBranch%%ENTRY→IF_FALSE→CALL→ENTRY→ConditionCheck→CALL→TRY→OtherBranch",
+    "log_segment": "[WARN]:Problem starting AdminServer, AdminServerException",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "331": {
+    "entry_id": 331,
+    "BlockId": "e52b8c91_2",
+    "log_key": "e52b8c91_2",
+    "exec_flow": "ENTRY→CALL→ENTRY→LEADER_ELECTION%%ENTRY→CALL→ENTRY→SHUTDOWN",
+    "log_segment": "[DEBUG]:Starting quorum peer",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "332": {
+    "entry_id": 332,
+    "BlockId": "e52b8c91_2",
+    "log_key": "e52b8c91_2",
+    "exec_flow": "ENTRY→CALL→ENTRY→LEADER_ELECTION%%ENTRY→CALL→ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:LEADING",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "333": {
+    "entry_id": 333,
+    "BlockId": "e52b8c91_2",
+    "log_key": "e52b8c91_2",
+    "exec_flow": "ENTRY→CALL→ENTRY→LEADER_ELECTION%%ENTRY→CALL→ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:LEADING - LEADER ELECTION TOOK - 300 ms MILLISECONDS",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "334": {
+    "entry_id": 334,
+    "BlockId": "e52b8c91_2",
+    "log_key": "e52b8c91_2",
+    "exec_flow": "ENTRY→CALL→ENTRY→LEADER_ELECTION%%ENTRY→CALL→ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:NEWLEADER proposal has Zxid of 0x12345",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "335": {
+    "entry_id": 335,
+    "BlockId": "e52b8c91_2",
+    "log_key": "e52b8c91_2",
+    "exec_flow": "ENTRY→CALL→ENTRY→LEADER_ELECTION%%ENTRY→CALL→ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:Shutting down",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "336": {
+    "entry_id": 336,
+    "BlockId": "e52b8c91_2",
+    "log_key": "e52b8c91_2",
+    "exec_flow": "ENTRY→CALL→ENTRY→LEADER_ELECTION%%ENTRY→CALL→ENTRY→SHUTDOWN",
+    "log_segment": "[INFO]:Shutdown called. For the reason \"AdminServer failure\"",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "337": {
+    "entry_id": 337,
+    "BlockId": "cefd1e81_1",
+    "log_key": "cefd1e81_1",
+    "exec_flow": "ENTRY→CALL:truncateLog→EXIT",
+    "log_segment": "[INFO]:ENTRY",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "338": {
+    "entry_id": 338,
+    "BlockId": "cefd1e81_1",
+    "log_key": "cefd1e81_1",
+    "exec_flow": "ENTRY→CALL:truncateLog→EXIT",
+    "log_segment": "[INFO]:CALL:truncateLog",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "339": {
+    "entry_id": 339,
+    "BlockId": "cefd1e81_1",
+    "log_key": "cefd1e81_1",
+    "exec_flow": "ENTRY→CALL:truncateLog→EXIT",
+    "log_segment": "[INFO]:EXIT",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "340": {
+    "entry_id": 340,
+    "BlockId": "363f5add_1",
+    "log_key": "363f5add_1",
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log_segment": "[INFO]:Fetched 1024MB block from https://namenode:8020",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "341": {
+    "entry_id": 341,
+    "BlockId": "363f5add_1",
+    "log_key": "363f5add_1",
+    "exec_flow": "ENTRY→CheckPermissions%%ENTRY→AlternativePath",
+    "log_segment": "[ERROR]:Access denied to path /user/data",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "342": {
+    "entry_id": 342,
+    "BlockId": "e9e11bde_1",
+    "log_key": "e9e11bde_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Registering Log4j MBeans",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "343": {
+    "entry_id": 343,
+    "BlockId": "e9e11bde_1",
+    "log_key": "e9e11bde_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Problems while registering log4j 1.2 jmx beans!",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "344": {
+    "entry_id": 344,
+    "BlockId": "47640e47_1",
+    "log_key": "47640e47_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:SSL isn't supported in NIOServerCnxn",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "345": {
+    "entry_id": 345,
+    "BlockId": "bfd05602_1",
+    "log_key": "bfd05602_1",
+    "exec_flow": "ENTRY→configureSaslLogin→initMaxCnxns→EXIT",
+    "log_segment": "[INFO]:configure this secure: secure on addr addr",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "346": {
+    "entry_id": 346,
+    "BlockId": "e2f3e326_1",
+    "log_key": "e2f3e326_1",
+    "exec_flow": "ENTRY→configure→ConditionCheck%%ENTRY→configureSaslLogin→initMaxCnxns",
+    "log_segment": "[INFO]:Configuring NIO connection handler with 10s sessionless connection timeout, 4 selector thread(s), no worker threads, and gathered writes.",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "347": {
+    "entry_id": 347,
+    "BlockId": "e2f3e326_1",
+    "log_key": "e2f3e326_1",
+    "exec_flow": "ENTRY→configure→ConditionCheck%%ENTRY→configureSaslLogin→initMaxCnxns",
+    "log_segment": "[INFO]:binding to port 8080",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "348": {
+    "entry_id": 348,
+    "BlockId": "e2f3e326_1",
+    "log_key": "e2f3e326_1",
+    "exec_flow": "ENTRY→configure→ConditionCheck%%ENTRY→configureSaslLogin→initMaxCnxns",
+    "log_segment": "[INFO]:bound to port 192.168.1.1",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "349": {
+    "entry_id": 349,
+    "BlockId": "e2f3e326_1",
+    "log_key": "e2f3e326_1",
+    "exec_flow": "ENTRY→configure→ConditionCheck%%ENTRY→configureSaslLogin→initMaxCnxns",
+    "log_segment": "[INFO]:configure secure: true on addr 192.168.1.2",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "350": {
+    "entry_id": 350,
+    "BlockId": "8db8f97d_1",
+    "log_key": "8db8f97d_1",
+    "exec_flow": "ENTRY→InitializeLogDirectory%%ENTRY→SetLogDirectory",
+    "log_segment": "[INFO]:Initialized transaction log directory at /var/log/hadoop/txnlogs",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "351": {
+    "entry_id": 351,
+    "BlockId": "8db8f97d_1",
+    "log_key": "8db8f97d_1",
+    "exec_flow": "ENTRY→InitializeLogDirectory%%ENTRY→SetLogDirectory",
+    "log_segment": "[ERROR]:Access denied to path /var/log/hadoop/txnlogs",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "352": {
+    "entry_id": 352,
+    "BlockId": "ed87a2b8_1",
+    "log_key": "ed87a2b8_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[DEBUG]:Opening datadir:/var/lib/zookeeper snapDir:/var/lib/zookeeper/snapshots",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "353": {
+    "entry_id": 353,
+    "BlockId": "ed87a2b8_1",
+    "log_key": "ed87a2b8_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:ZOOKEEPER_SNAPSHOT_TRUST_EMPTY : true",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "354": {
+    "entry_id": 354,
+    "BlockId": "6a46fb4d_1",
+    "log_key": "6a46fb4d_1",
+    "exec_flow": "ENTRY→EXIT",
+    "log_segment": "[INFO]:tickTime set to 3000",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "355": {
+    "entry_id": 355,
+    "BlockId": "2d9dd2fe_1",
+    "log_key": "2d9dd2fe_1",
+    "exec_flow": "ENTRY→EXIT",
+    "log_segment": "[INFO]:Min session timeout set to 3000ms",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "356": {
+    "entry_id": 356,
+    "BlockId": "cf3c2e79_1",
+    "log_key": "cf3c2e79_1",
+    "exec_flow": "ENTRY→EXIT",
+    "log_segment": "[INFO]:Max session timeout set to 30000",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "357": {
+    "entry_id": 357,
+    "BlockId": "23fc4e45_1",
+    "log_key": "23fc4e45_1",
+    "exec_flow": "ENTRY→EXIT",
+    "log_segment": "[INFO]:initLimit set to 10",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "358": {
+    "entry_id": 358,
+    "BlockId": "dca58180_1",
+    "log_key": "dca58180_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "359": {
+    "entry_id": 359,
+    "BlockId": "dca58180_1",
+    "log_key": "dca58180_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "360": {
+    "entry_id": 360,
+    "BlockId": "cb6f77de_1",
+    "log_key": "cb6f77de_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "361": {
+    "entry_id": 361,
+    "BlockId": "cb6f77de_1",
+    "log_key": "cb6f77de_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  },
+  "362": {
+    "entry_id": 362,
+    "BlockId": "1fa5dfad_1",
+    "log_key": "1fa5dfad_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→CALL→RETURN→CALL→CALL→EXIT%%ENTRY→TRY→IF_FALSE→CALL→EXIT",
+    "log_segment": "[DEBUG]:Database not initialized, loading database",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "363": {
+    "entry_id": 363,
+    "BlockId": "1fa5dfad_1",
+    "log_key": "1fa5dfad_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→CALL→RETURN→CALL→CALL→EXIT%%ENTRY→TRY→IF_FALSE→CALL→EXIT",
+    "log_segment": "[INFO]:Last processed Zxid: 0x100000000",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "364": {
+    "entry_id": 364,
+    "BlockId": "1fa5dfad_1",
+    "log_key": "1fa5dfad_1",
+    "exec_flow": "ENTRY→TRY→IF_TRUE→NEW→CALL→ENTRY→IF_TRUE→CALL→CALL→RETURN→CALL→CALL→EXIT%%ENTRY→TRY→IF_FALSE→CALL→EXIT",
+    "log_segment": "[INFO]:Election algorithm created",
+    "single_log_label": "normal",
+    "block_log_label": "normal"
+  },
+  "365": {
+    "entry_id": 365,
+    "BlockId": "57e09361_1",
+    "log_key": "57e09361_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[INFO]:Fetched 128MB block from namenode01",
+    "single_log_label": "normal",
+    "block_log_label": "explicit"
+  },
+  "366": {
+    "entry_id": 366,
+    "BlockId": "57e09361_1",
+    "log_key": "57e09361_1",
+    "exec_flow": "ENTRY→ConditionCheck%%ENTRY→OtherBranch",
+    "log_segment": "[ERROR]:Access denied to path /user/test",
+    "single_log_label": "explicit",
+    "block_log_label": "explicit"
+  }
+}
