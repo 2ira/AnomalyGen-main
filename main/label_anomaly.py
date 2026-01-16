@@ -142,11 +142,11 @@ def process_merged_logs(merged_json_path: str, output_root: str = "log_process_o
     print(f"\n💾 Starting saving {len(block_mapping)} Blocks, {len(entry_mapping)} numbers of logs in total.")
     
     # 4.1 store block_id mapping 
-    block_json_path = os.path.join(block_label_dir, "hdfs_block_labels.json")
+    block_json_path = os.path.join(block_label_dir, "zookeeper_block_labels.json")
     with open(block_json_path, "w", encoding='utf-8') as f:
         json.dump(block_mapping, f, indent=2, ensure_ascii=False)
     
-    block_csv_path = os.path.join(block_label_dir, "hdfs_block_labels.csv")
+    block_csv_path = os.path.join(block_label_dir, "zookeeper_block_labels.csv")
     with open(block_csv_path, "w", newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(["BlockId", "Label"])
@@ -154,11 +154,11 @@ def process_merged_logs(merged_json_path: str, output_root: str = "log_process_o
             writer.writerow([bid, label])
 
     # 4.2 store detailed logs
-    entry_json_path = os.path.join(entry_dir, "hdfs_entries.json")
+    entry_json_path = os.path.join(entry_dir, "zookeeper_entries.json")
     with open(entry_json_path, "w", encoding='utf-8') as f:
         json.dump(entry_mapping, f, indent=2, ensure_ascii=False)
     
-    entry_csv_path = os.path.join(entry_dir, "hdfs_entries.csv")
+    entry_csv_path = os.path.join(entry_dir, "zookeeper_entries.csv")
     with open(entry_csv_path, "w", newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=["entry_id", "BlockId", "log_key", "exec_flow", "log_segment", "single_log_label","block_log_label"])
         writer.writeheader()
@@ -250,7 +250,7 @@ def parse_logs_with_drain(block_log_paths: Dict, output_root: str = "log_process
     # merge all results and save them
     if all_parsed_dfs:
         combined_parsed_df = pd.concat(all_parsed_dfs, ignore_index=True)
-        combined_csv_path = os.path.join(parsed_log_dir, "hdfs_combined_parsed_logs.csv")
+        combined_csv_path = os.path.join(parsed_log_dir, "zookeeper_combined_parsed_logs.csv")
         combined_parsed_df.to_csv(combined_csv_path, index=False, encoding='utf-8')
         print(f"\n✅ All results are parsed：{combined_csv_path}")
     else:
@@ -263,8 +263,11 @@ def main():
     # MERGED_JSON_PATH = "ablation_v1_compressed_log.json" 
     # OUTPUT_ROOT = "output/hadoop"
 
-    MERGED_JSON_PATH = "baseline_compressed_log.json"
-    OUTPUT_ROOT = "output/hadoop"
+    # MERGED_JSON_PATH = "baseline_compressed_log.json"
+    # OUTPUT_ROOT = "output/hadoop"
+
+    MERGED_JSON_PATH = "baseline_zookeeper_compressed_log.json"
+    OUTPUT_ROOT = "output/zookeeper"
     
     try:
         # Step 1: label,gpoup and store
