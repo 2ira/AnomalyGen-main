@@ -201,8 +201,5 @@ If you have any questions about running the code, please feel free to email me.
 ## Conclusion
 By following the steps outlined above, you will set up the environment and configure the necessary components to run AnomalyGen. The project integrates multiple tools and technologies to generate detailed call graphs and log analysis results, making it a powerful tool for software analysis and anomaly detection.
 
-zookeeper version: 上游 ZooKeeper 版本：3.4.5 -> 对应 jar包；
-python3 main/auto_prepare.py \
---input_dir ../zookeeper/zookeeper-javacg2_merged.jar-output_javacg2/
-
-export PYTHONPATH=$PYTHONPATH:~/AnomalyGen-main
+Aditionally:
+zookeeper version 3.4.5
