@@ -1,6 +1,6 @@
 {
     "openai": {
-        "api_key":"sk-F5nvXCAAkijuGkHv1eA093Bd8d2a48Ce9fB6Aa63A41dCf32",
+        "api_key":"sk-xxxx",
         "base_url":"https://openkey.cloud/v1",
         "default_model":"gpt-4o",
         "temperature": 0,
