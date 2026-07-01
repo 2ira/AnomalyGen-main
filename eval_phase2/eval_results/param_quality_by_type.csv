@@ -1,0 +1,12 @@
+SlotType,N(decidable),Valid,TypeValidity
+nodeid,88,87,0.9886
+int,38,38,1.0
+path,31,30,0.9677
+hex_fragment,14,9,0.6429
+status,6,6,1.0
+ip_fragment,5,2,0.4
+hex,1,0,0.0
+
+OVERALL type_validity,183,,0.9399
+OVERALL ctx_consistency,70,,0.3286
+slot_count_mismatch (param↔slot),29,,0.1401

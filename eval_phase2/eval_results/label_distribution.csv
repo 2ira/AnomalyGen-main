@@ -1,0 +1,6 @@
+Group,Total,normal,explicit,implicit,both,normal%,anomalous%
+"baseline (w/ CoT, full)",106,57,42,4,3,53.8,46.2
+w/o CoT,99,30,61,2,6,30.3,69.7
+w/o analysis,103,38,56,3,6,36.9,63.1
+hadoop (full),106,57,42,4,3,53.8,46.2
+zookeeper (full),142,61,64,12,5,43.0,57.0

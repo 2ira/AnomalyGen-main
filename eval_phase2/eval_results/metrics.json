@@ -1,0 +1,50 @@
+{
+  "experiment_A_path_feasibility": {},
+  "experiment_B_param_quality": {
+    "type_validity_acc": 0.9399,
+    "type_validity_n": 183,
+    "ctx_consistency_acc": 0.3286,
+    "ctx_consistency_n": 70,
+    "joint_acc": 0.2714,
+    "joint_n": 70,
+    "slot_count_mismatch": 29,
+    "total_param_slots": 207,
+    "type_validity_by_slot_type": {
+      "nodeid": {
+        "n": 88,
+        "ok": 87,
+        "acc": 0.9886
+      },
+      "int": {
+        "n": 38,
+        "ok": 38,
+        "acc": 1.0
+      },
+      "path": {
+        "n": 31,
+        "ok": 30,
+        "acc": 0.9677
+      },
+      "hex_fragment": {
+        "n": 14,
+        "ok": 9,
+        "acc": 0.6429
+      },
+      "status": {
+        "n": 6,
+        "ok": 6,
+        "acc": 1.0
+      },
+      "ip_fragment": {
+        "n": 5,
+        "ok": 2,
+        "acc": 0.4
+      },
+      "hex": {
+        "n": 1,
+        "ok": 0,
+        "acc": 0.0
+      }
+    }
+  }
+}

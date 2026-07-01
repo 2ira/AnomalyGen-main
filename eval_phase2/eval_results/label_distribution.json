@@ -1,0 +1,62 @@
+{
+  "baseline (w/ CoT, full)": {
+    "source": "output_v1/ablation/baseline/block_labels/hdfs_block_labels.csv",
+    "total": 106,
+    "counts": {
+      "normal": 57,
+      "explicit": 42,
+      "implicit": 4,
+      "both": 3
+    },
+    "normal_pct": 53.8,
+    "anomalous_pct": 46.2
+  },
+  "w/o CoT": {
+    "source": "output_v1/ablation/without_cot/block_labels/hdfs_block_labels.csv",
+    "total": 99,
+    "counts": {
+      "normal": 30,
+      "explicit": 61,
+      "implicit": 2,
+      "both": 6
+    },
+    "normal_pct": 30.3,
+    "anomalous_pct": 69.7
+  },
+  "w/o analysis": {
+    "source": "output_v1/ablation/without_analysis/block_labels/hdfs_block_labels.csv",
+    "total": 103,
+    "counts": {
+      "normal": 38,
+      "explicit": 56,
+      "implicit": 3,
+      "both": 6
+    },
+    "normal_pct": 36.9,
+    "anomalous_pct": 63.1
+  },
+  "hadoop (full)": {
+    "source": "output_v1/hadoop/block_labels/hdfs_block_labels.csv",
+    "total": 106,
+    "counts": {
+      "normal": 57,
+      "explicit": 42,
+      "implicit": 4,
+      "both": 3
+    },
+    "normal_pct": 53.8,
+    "anomalous_pct": 46.2
+  },
+  "zookeeper (full)": {
+    "source": "output/zookeeper/zookeeper_block_labels.csv",
+    "total": 142,
+    "counts": {
+      "normal": 61,
+      "explicit": 64,
+      "implicit": 12,
+      "both": 5
+    },
+    "normal_pct": 43.0,
+    "anomalous_pct": 57.0
+  }
+}

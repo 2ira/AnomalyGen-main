@@ -1,0 +1,109 @@
+{
+  "csv": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv",
+  "n_sessions": 106,
+  "gt_distribution": {
+    "anomaly": 45,
+    "normal": 61
+  },
+  "baseline_level_heuristic": {
+    "n": 106,
+    "TP": 39,
+    "FP": 1,
+    "FN": 6,
+    "TN": 60,
+    "accuracy": 0.934,
+    "PC": 0.975,
+    "RC": 0.8667,
+    "F1": 0.9176,
+    "ci_95": [
+      0.8699,
+      0.9676
+    ]
+  },
+  "recovery_aware": {
+    "n": 106,
+    "TP": 44,
+    "FP": 0,
+    "FN": 1,
+    "TN": 61,
+    "accuracy": 0.9906,
+    "PC": 1.0,
+    "RC": 0.9778,
+    "F1": 0.9888,
+    "ci_95": [
+      0.9485,
+      0.9983
+    ]
+  },
+  "accuracy_gain": 0.0566,
+  "miscls_baseline": {
+    "structural": 5,
+    "kw_miss": 1,
+    "recovery_fp": 1
+  },
+  "miscls_recovery_aware": {
+    "kw_miss": 1
+  },
+  "recovery_fp_fixed_by_new_rule": [
+    "d51b1764_1"
+  ],
+  "sessions_flipped_by_new_rule": [
+    "ceb06c8d_1",
+    "33220b2e_1",
+    "d51b1764_1",
+    "44a0857e_1",
+    "dcde8ff6_1",
+    "b9f75a67_1"
+  ],
+  "newly_correct": [
+    "ceb06c8d_1",
+    "33220b2e_1",
+    "d51b1764_1",
+    "44a0857e_1",
+    "dcde8ff6_1",
+    "b9f75a67_1"
+  ],
+  "newly_wrong": [],
+  "rationale_cases": {
+    "d51b1764_1": [
+      "normal",
+      "两条 ERROR 'Cannot complete block' 后紧跟 'Block successfully converted to complete' —— 错误被恢复，最终成功 (benign recovery)"
+    ],
+    "ceb06c8d_1": [
+      "anomaly",
+      "'Already retried 5 times' + 'Pipeline setup failed due to missing nodes' —— 重试耗尽仍失败，真异常 (旧规则因无 ERROR 级而漏报)"
+    ],
+    "83761ad5_1": [
+      "anomaly",
+      "'Datanode did not restart within 30000 ms' + ERROR 'Illegal state exception' —— 重启超时致命"
+    ],
+    "b9f75a67_1": [
+      "anomaly",
+      "WARN 'Failed to transfer block, IOException' + 'Cannot find FsVolumeSpi' —— 传输失败未恢复 (旧规则无 ERROR 级而漏报)"
+    ],
+    "3a4fb26e_1": [
+      "anomaly",
+      "WARN 'Could not get block locations ... Aborting' —— 主动中止，真失败"
+    ],
+    "44a0857e_1": [
+      "anomaly",
+      "WARN 'Cannot find FsVolumeSpi to report bad block' —— 坏块且无法上报"
+    ],
+    "dcde8ff6_1": [
+      "anomaly",
+      "'Can't send invalid block' + 'Error report sent' + WARN 'Cannot find FsVolumeSpi' —— 坏块未恢复"
+    ],
+    "33220b2e_1": [
+      "anomaly",
+      "'Thread interrupted, InterruptedException' 中断异常，无后续恢复 -> 真异常"
+    ],
+    "e262ffb3_1": [
+      "normal",
+      "block 不属于任何文件而无法标 corrupt，随后正常 addToInvalidates/invalidateBlock 失效流程 —— 常规块失效维护，非异常"
+    ],
+    "cb32ad64_1": [
+      "normal",
+      "corrupt replica 上报 + addToInvalidates 常规流程，无未恢复失败 —— 非异常"
+    ]
+  }
+}

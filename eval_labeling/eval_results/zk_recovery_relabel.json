@@ -1,0 +1,48 @@
+{
+  "n_sessions": 142,
+  "gt_distribution": {
+    "anomaly": 47,
+    "normal": 95
+  },
+  "baseline_level_heuristic": {
+    "n": 142,
+    "TP": 47,
+    "FP": 14,
+    "FN": 0,
+    "TN": 81,
+    "accuracy": 0.9014,
+    "PC": 0.7705,
+    "RC": 1.0,
+    "F1": 0.8704
+  },
+  "recovery_aware": {
+    "n": 142,
+    "TP": 47,
+    "FP": 5,
+    "FN": 0,
+    "TN": 90,
+    "accuracy": 0.9648,
+    "PC": 0.9038,
+    "RC": 1.0,
+    "F1": 0.9495
+  },
+  "accuracy_gain": 0.0634,
+  "miscls_baseline": {
+    "recovery_fp": 14
+  },
+  "miscls_recovery_aware": {
+    "recovery_fp": 5
+  },
+  "newly_correct": [
+    "d80bcb62_1",
+    "fd71111f_1",
+    "1d5e10a3_1",
+    "d1147373_1",
+    "eb7f58f3_2",
+    "fe9d88fb_1",
+    "b6bdf782_1",
+    "79b6e40a_1",
+    "e9e11bde_1"
+  ],
+  "newly_wrong": []
+}
