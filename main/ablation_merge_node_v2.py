@@ -4,7 +4,7 @@ import os
 import json
 import logging
 import argparse
-from models.prompts.merge_node_info import get_merge_nodes_by_llm_v4
+from models.prompts.merge_node_info import get_merge_nodes_by_llm_v7
 from models.get_resp import get_response
 import xml.etree.ElementTree as ET
 import tiktoken
@@ -145,7 +145,7 @@ class StackDFSMerger:
 
              ## call llm
             self.call_to_times = self.call_to_times + 1
-            prompts = list(get_merge_nodes_by_llm_v4(parent_info,child_info))
+            prompts = list(get_merge_nodes_by_llm_v7(parent_info,child_info))
             merged = get_response(prompts)
             ## calculate token
             self.total_cost_token +=  count_string_tokens(prompts[0]) + count_string_tokens(merged)

@@ -12,55 +12,73 @@ The project directory is organized as follows:
 
 ```
 AnomalyGen-main/
-├── hadoop [Project directory to be analyzed]
-├── java-callgraph2
-│   ├── jar-output_dir
+├── hadoop/                        # Project directory to be analyzed
+├── java-callgraph2/
+│   ├── jar-output_dir/
 │   │   └── _javacg2_config/
 │   │       └── config.properties  # Main configuration file
 │   └── [Tool to generate global call graphs]
-├── java-parser
-│   ├── JavaParserServer.java  # Generates single node log-related CFG
+├── java-parser/
+│   ├── JavaParserServer.java      # Generates single node log-related CFG
 │   └── MethodExtractorGateway.java  # Maps signatures to source code
-├── main
-│   ├── venv  # Python virtual environment for the project(created by build_env.sh)
-│   ├── auto_callgraph_config.py  # Collects class files and configures java-callgraph2
-│   ├── auto_run.py  # Main execution script
-│   ├── auto_global_callgraph_generation.py  # Automatically config the compile setting,generate global callgraph, prune for the log-related node.
-│   ├── auto_run_ablation_v1.py  # Ablation data generation script, which is without cot
-│   ├── auto_run_ablation_v2.py  # Ablation data generation script, which is without analysis
-|   ├── auto_prepare.py  # Store global call path script
-│   ├── build_env.sh  # Script to prepare the environment
-│   ├── label_anomaly.py # Label logs and struture script
-│   ├── [ELSE FILE:Additional component files used by auto_run]
-│   └── run_example.txt  # Examples of how to run AnomalyGen
-├── models
-│   ├── config/config.json  # Configure API key, base URL, model selection, temperature, etc.
-│   ├── prompts  # Different versions of prompts for various stages
+├── main/
+│   ├── venv/                      # Python virtual environment (created by build_env.sh)
+│   ├── auto_callgraph_config.py   # Collects class files and configures java-callgraph2
+│   ├── auto_run.py                # Main execution script
+│   ├── auto_global_callgraph_generation.py  # Compile, generate global callgraph, prune
+│   ├── auto_run_ablation_v1.py    # Ablation: without CoT
+│   ├── auto_run_ablation_v2.py    # Ablation: without static analysis
+│   ├── auto_prepare.py            # Store global call path script
+│   ├── build_env.sh               # Script to prepare the environment
+│   ├── label_anomaly.py           # Label logs and structure script
+│   └── run_example.txt            # Examples of how to run AnomalyGen
+├── models/
+│   ├── config/config.json         # API key, base URL, model, temperature
+│   ├── prompts/                   # LLM prompts for each pipeline stage
+│   │   ├── merge_node_info.py     # Path merge prompt (CoT + no-CoT baseline)
+│   │   ├── generate_node_info.py  # Single-node log sequence generation
+│   │   ├── standard_log.py        # Log simulation / standardisation
+│   │   └── analysis_code.py       # Java code CFG analysis
 │   ├── decoder.py
 │   ├── get_resp.py
 │   └── model_factory.py
-├── mysql
-│   └── [MySQL configuration and database interaction files]
-├── output
-│   ├── enhanced_cfg
-│   │   └── merged_enhanced_cfg.json  # Results from enhanced CFG analysiss
-│   ├── log_events
-│   │   ├── block_labels.csv  # Anomaly labels for Hadoop log sequences
-│   │   ├── combined_parsed_logs.csv  # Parsed Hadoop log sequences
+├── mysql/                         # MySQL configuration and database interaction
+├── output/                        # Main pipeline output
+│   ├── enhanced_cfg/
+│   │   └── merged_enhanced_cfg.json
+│   ├── log_events/
+│   │   ├── block_labels.csv       # Anomaly labels for Hadoop log sequences
+│   │   ├── combined_parsed_logs.csv
 │   │   ├── compressed_log_all.json
-│   │   ├── final_logs.json  # Final saved output: <exec_flow, log, label>
-│   │   ├── hdfs_block_labels.csv  # Anomaly labels for HDFS log sequences
-│   │   └── hdfs_combined_parsed_logs.csv  # Parsed HDFS log sequences
-|   ├── model_run_logs # Log files for 3 anomaly detection model execution results
-├── output_v1 and output_v2 is the ablation logs
-├──statistic
-│   ├── compress_single_node.py  # Compression for similar logs.
-│   ├── standard_all_logs.py  # Standalize all logs.
-│   └── log_parser  # Uses LogParser3 Drain for log parsing
-├── ablation_v1_compressed_log.json # Ablation(without cot) generated logs 
-├── ablation_v2_compressed_log.json # Ablation(without static analysis) generated logs 
-├── baseline_compressed_log.json # Baseline logs 
-
+│   │   ├── final_logs.json        # Final output: <exec_flow, log, label>
+│   │   ├── hdfs_block_labels.csv
+│   │   └── hdfs_combined_parsed_logs.csv
+│   └── model_run_logs/            # Anomaly detection model execution results
+├── output_v1/                     # Ablation output (without CoT)
+├── output_v2/                     # Ablation output (without static analysis)
+├── statistic/
+│   ├── compress_single_node.py    # Compression for similar logs
+│   ├── standard_all_logs.py       # Standardise all logs
+│   └── log_parser/                # LogParser3 Drain for log parsing
+├── eval_labeling/                 # Supplementary evaluation: label accuracy (M.2)
+│   ├── hdfs_recovery_relabel.py   # HDFS baseline vs recovery-aware relabelling
+│   ├── zk_recovery_relabel.py     # ZooKeeper relabelling
+│   ├── utils.py                   # Shared evaluation utilities
+│   ├── README.md                  # Experiment documentation
+│   └── eval_results/              # Pre-computed metrics (JSON + CSV)
+├── eval_phase2/                   # Supplementary evaluation: Phase II direct eval (M.3)
+│   ├── common.py                  # Shared I/O, call-graph parsing, XML parsing
+│   ├── build_feasibility_dataset.py  # 40 merge-point benchmark construction
+│   ├── run_feasibility_eval.py    # CoT vs no-CoT feasibility prediction
+│   ├── build_param_set.py         # Parameter slot extraction + stratified sampling
+│   ├── run_param_eval.py          # Rule-based scoring + Cohen's kappa
+│   ├── compute_metrics.py         # Aggregate metrics into JSON/CSV
+│   ├── README.md                  # Experiment documentation
+│   ├── eval_data/                 # Input datasets
+│   └── eval_results/              # Pre-computed predictions and metrics
+├── ablation_v1_compressed_log.json  # Ablation (without CoT) generated logs
+├── ablation_v2_compressed_log.json  # Ablation (without static analysis) generated logs
+└── baseline_compressed_log.json     # Baseline logs
 ```
 
 **Note:** The provided Hadoop repository can be used directly for step 2 (i.e., using its compiled classes for the java-callgraph2 analysis). If you wish to analyze a different project, compile it and update the project root directory parameter accordingly.
@@ -196,10 +214,86 @@ python3 main/auto_run.py \
 
 **Important:** 
 If you have any questions about running the code, please feel free to email me.
+
+---
+
+## Supplementary Evaluation Experiments
+
+Two supplementary experiments are provided to independently validate AnomalyGen's label quality (M.2) and Phase II pipeline correctness (M.3).
+
+### M.2: Label Accuracy Evaluation (`eval_labeling/`)
+
+Validates AnomalyGen's automatic anomaly labelling by comparing a **baseline rule** (ERROR-level keyword matching) against a **recovery-aware rule** (which accounts for benign error-recovery patterns) on hand-reviewed ground truth.
+
+| System    | Sessions | Ground-truth basis |
+|-----------|----------|--------------------|
+| HDFS      | 106      | 10 semantically reviewed sessions + access-denied heuristic |
+| ZooKeeper | 17+      | 17 hand-reviewed sessions with rationale |
+
+**How to run:**
+
+```bash
+cd AnomalyGen-main
+
+# HDFS (requires output_v1/ablation/baseline/parsed_logs/)
+python eval_labeling/hdfs_recovery_relabel.py
+
+# ZooKeeper (requires output/zookeeper/)
+python eval_labeling/zk_recovery_relabel.py
+```
+
+Pre-computed results are in `eval_labeling/eval_results/`.  See `eval_labeling/README.md` for details.
+
+### M.3: Phase II Direct Evaluation (`eval_phase2/`)
+
+Directly evaluates two aspects of Phase II's output quality:
+
+**Experiment A — Path Feasibility (CoT vs no-CoT):**  
+Tests whether CoT reasoning improves the LLM's ability to identify feasible execution paths at merge points.
+
+- Benchmark: 40 HDFS merge points (27 original + 13 extended) with manual ground truth
+- Metrics: Accuracy, Precision, Recall, F1
+
+```bash
+cd AnomalyGen-main
+
+# Build the benchmark dataset (if not already present)
+python eval_phase2/build_feasibility_dataset.py
+
+# Run evaluation (requires API key in models/config/config.json)
+python eval_phase2/run_feasibility_eval.py --variant cot
+python eval_phase2/run_feasibility_eval.py --variant nocot
+
+# Generate comparison report
+python eval_phase2/run_feasibility_eval.py --report
+```
+
+**Experiment B — Parameter Quality:**  
+Assesses whether LLM-filled template parameters are semantically valid and contextually consistent.
+
+- Sample: 207 parameter slots stratified by semantic type (hex, path, int, nodeid, etc.)
+- Dimensions: type validity (format conformance) + cross-entry consistency
+- Method: fully automated rule-based scoring (zero LLM re-runs)
+
+```bash
+cd AnomalyGen-main
+
+# Extract and sample parameter slots (requires parsed_logs CSVs)
+python eval_phase2/build_param_set.py
+
+# Score sampled slots
+python eval_phase2/run_param_eval.py
+
+# Aggregate all metrics
+python eval_phase2/compute_metrics.py
+```
+
+Pre-computed results are in `eval_phase2/eval_results/`.  See `eval_phase2/README.md` for details.
+
 ---
 
 ## Conclusion
 By following the steps outlined above, you will set up the environment and configure the necessary components to run AnomalyGen. The project integrates multiple tools and technologies to generate detailed call graphs and log analysis results, making it a powerful tool for software analysis and anomaly detection.
 
-Aditionally:
-zookeeper version 3.4.5
+Additionally:
+ZooKeeper version 3.4.5

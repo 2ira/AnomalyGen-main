@@ -132,7 +132,7 @@ def parse_merge_xml(message: str) -> Tuple[List[str], List[str]]:
     Extract valid / pruned paths from the LLM-returned <merge_result>.
     Returns (valid_ids, pruned_ids).
 
-    Key: The CoT variant (get_merge_nodes_by_llm_v4) uses <wrong_path> to mark
+    Key: The CoT variant (get_merge_nodes_by_llm_v7) uses <wrong_path> to mark
     pruned paths, while the no-CoT variant (get_merge_nodes_by_llm_without_cot)
     uses <pruned_paths>.  Both tags must be parsed; otherwise CoT results would
     miss pruned paths (a bug in the original scheme).
