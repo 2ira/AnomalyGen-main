@@ -1,0 +1,13 @@
+{
+  "n": 40,
+  "n_valid": 26,
+  "n_infeasible": 14,
+  "prompt": {
+    "function": "get_merge_nodes_by_llm_v7",
+    "sha256": "1dfae785342d3c3dcc8fd4061b9ae920649818518077240f35612db907090822",
+    "contains_eval_true_example": true,
+    "output_tag_rejected": "wrong_path",
+    "eval_harness_edits": "none \u2014 identical to generation"
+  },
+  "protocol": "r2_redesign/PROTOCOL.md"
+}

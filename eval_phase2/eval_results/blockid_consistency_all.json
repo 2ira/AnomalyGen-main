@@ -1,0 +1,265 @@
+{
+  "session_level": {
+    "n_sessions": 4792,
+    "n_decidable": 73,
+    "n_pass": 59,
+    "rate": 0.8082,
+    "n_undecidable": 4719
+  },
+  "slot_level": {
+    "n_decidable": 53,
+    "n_pass": 53,
+    "rate": 1.0
+  },
+  "strict_slot_value": {
+    "n_decidable": 27,
+    "n_pass": 26,
+    "rate": 0.963
+  },
+  "failing_sessions": [
+    {
+      "session": "49a530e1_1",
+      "file": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "lines": [
+        "Abandoning block block-12345",
+        "Excluding datanode datanode-01",
+        "Nodes are empty for write pipeline of block block-67890",
+        "Pipeline = [datanode-02, datanode-03], restartingNode",
+        "Resetting internal error state",
+        "Restarting node due to timeout"
+      ]
+    },
+    {
+      "session": "140856cf_1",
+      "file": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1",
+        "2",
+        "3"
+      ],
+      "lines": [
+        "Thread interrupted, exception occurred",
+        "Pipeline stage is PIPELINE_SETUP_CREATE, current state is active",
+        "Start processing datanode/external error, current state is active",
+        "Closing old block block-01",
+        "Initializing data streaming with nodes [node1, node2], storage types [DISK, SSD], storage IDs [id1, id2]",
+        "Abandoning block block-02",
+        "Excluding datanode badNode-01",
+        "Nodes are empty for write pipeline of block-03",
+        "Pipeline = [node3, node4], current state is active",
+        "Resetting internal error state",
+        "Restarting node due to error recovery"
+      ]
+    },
+    {
+      "session": "140856cf_1",
+      "file": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1",
+        "2"
+      ],
+      "lines": [
+        "Thread interrupted",
+        "Stage initialized, DataStreamer",
+        "Allocating new block: block-01",
+        "Append to block block-01",
+        "DataStreamer Exception",
+        "DataStreamer Quota Exception",
+        "Start process datanode/external error, DataStreamer",
+        "Error Recovery for block-01 waiting for responder to exit.",
+        "Error recovering pipeline for writing block-01. Already retried 5 times for the same packet.",
+        "Closing old block block-01",
+        "Abandoning block block-02",
+        "Excluding datanode badNode01",
+        "Nodes are empty for write pipeline of block-02",
+        "Pipeline = [node01, node02], DataStreamer",
+        "Exception in createBlockOutputStream DataStreamer, IOException",
+        "Will fetch a new encryption key and retry, encryption key was invalid when connecting to node01 : IOException",
+        "Could not get block locations. Source file \"/user/data/file01\" - Aborting... DataStreamer",
+        "Nodes [node01, node02] storageTypes [DISK, SSD] storageIDs [id01, id02]"
+      ]
+    },
+    {
+      "session": "98efcc52_1",
+      "file": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "lines": [
+        "Invalidate corrupt replicas error in deleting bad block blk_12345 on node_01",
+        "BLOCK* invalidateBlocks: postponing invalidation of blk_67890 on datanode_02 because 3 replica(s) are located on nodes with potentially out-of-date block reports",
+        "BLOCK* addToInvalidates: block_78901 [datanode_03, datanode_04]",
+        "BLOCK* invalidateBlocks: blk_67890 on datanode_02 listed for deletion",
+        "BLOCK* removeStoredBlock: block_78901 has already been removed from node datanode_03",
+        "BLOCK* removeStoredBlock: block_78901 removed from caching related lists on node datanode_03",
+        "Safe mode is off, skipping decrement",
+        "Block is complete and live replicas match safe number",
+        "Decrementing safe block count",
+        "Checking if block is striped",
+        "Calculating real data block number based on erasure coding policy"
+      ]
+    },
+    {
+      "session": "49f63ad4_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1004",
+        "123456789",
+        "987654321"
+      ],
+      "lines": [
+        "Fetched 128MB block from namenode01",
+        "ReportBadBlocks for block: blk_123456789 on datanode: datanode01",
+        "ReportBadBlocks for block: blk_987654321 on datanode: datanode02",
+        "Access denied to path /user/test",
+        "Report bad blocks for block: blk_1004 on datanode: dn_34",
+        "BLOCK* findAndMarkBlockAsCorrupt: blk_1004 not found",
+        "BLOCK* findAndMarkBlockAsCorrupt: blk_1004 not found on dn_34"
+      ]
+    },
+    {
+      "session": "d0ecda7d_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "12345",
+        "88421"
+      ],
+      "lines": [
+        "Client 192.168.1.100 did not send a valid status code after reading. Will close connection.",
+        "Got exception while serving block-12345 to 192.168.1.100: java.io.IOException",
+        "opReadBlock block-12345 received exception: java.io.IOException",
+        "datanode-01: Got exception while serving block-12345 to 192.168.1.100: java.io.IOException",
+        "datanode-01: Ignoring exception while serving block-12345 to 192.168.1.100: java.net.SocketTimeoutException",
+        "Read 256MB block blk_88421 from dn23",
+        "Disk /dev/sdd latency 2100ms exceeds threshold"
+      ]
+    },
+    {
+      "session": "1390761e_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1048576",
+        "1234567890"
+      ],
+      "lines": [
+        "Slow ReadProcessor read fields for block blk_1234567890 took 123ms",
+        "DFSClient PacketResponder 1",
+        "Slow ReadProcessor read fields for block blk_1048576 took 125ms",
+        "DFSClient PipelineAck"
+      ]
+    },
+    {
+      "session": "dbfc2347_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1234567890",
+        "987654321"
+      ],
+      "lines": [
+        "Will fetch a new encryption key and retry, encryption key was invalid when connecting to datanode01",
+        "fetchBlockByteRange(). Got a checksum exception for /user/data/file.txt at blk_1234567890:1024 from datanode02",
+        "Connection failure: Failed to connect to datanode03 for file /user/data/file.txt for block blk_0987654321"
+      ]
+    },
+    {
+      "session": "7149c8f6_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1024",
+        "1234567890"
+      ],
+      "lines": [
+        "Cannot find block info for block blk_1234567890",
+        "Removing lazyPersist file /user/hadoop/file_to_delete with no replicas.",
+        "Cannot find block info for block blk_1024"
+      ]
+    },
+    {
+      "session": "6a6c2ad3_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "134567890",
+        "987654321"
+      ],
+      "lines": [
+        "updatePipeline( blk_134567890 with old generation stamp, newGS=2, newLength=1024, newNodes=[datanode01, datanode02, datanode03], client=hdfs_client )",
+        "updatePipeline( blk_134567890 => blk_987654321 ) success",
+        "updatePipeline success",
+        "Number of suppressed write-lock reports: 0 Longest write-lock held at 00:00:00 for 0ms via null Total suppressed write-lock held time: 0",
+        "logSync(tx) synctxid=0 lastJournalledTxId=0 mytxid=0",
+        "Could not sync enough journals to persistent storage due to No journals available to flush. Unsynced transactions: 0",
+        "Logging exit info",
+        "Detailed exit debug info",
+        "An error occurred when terminating",
+        "Exception in closing null",
+        "Update but the new block does not have a larger generation stamp",
+        "Update to a smaller size block",
+        "BLOCK* NameSystem.getDatanode: null",
+        "BLOCK* Removing stale replica null of null",
+        "BLOCK* removeStoredBlock: null from null",
+        "BLOCK* removeStoredBlock: null has already been removed from node null",
+        "logRpcIds",
+        "logEdit",
+        "persistBlocks: null with 0 blocks is persisted to the file system"
+      ]
+    },
+    {
+      "session": "1d8d0a40_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1073741825",
+        "1073741826",
+        "1234"
+      ],
+      "lines": [
+        "Mismatched block IDs or generation stamps, attempting to replace block blk_1073741825_1001 with blk_1073741826_1002 as block # 1/3 of /user/data/file.txt",
+        "Removing stored block blk_1234 from datanode_01",
+        "Removing stored block blk_1234 has already been removed from node datanode_02",
+        "ExcessRedundancyMap.remove(blk_1234, datanode_03)",
+        "Removing stale replica blk_1234 of file /path/to/file"
+      ]
+    },
+    {
+      "session": "0dfc2e4f_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1234567890",
+        "1234567891"
+      ],
+      "lines": [
+        "BlockRecoveryWorker: datanode01 calls recoverBlock(blk_1234567890, targets=[datanode02, datanode03], newGenerationStamp=1001, newBlock=blk_1234567891, isStriped=false)"
+      ]
+    },
+    {
+      "session": "75db3b09_1",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "1073741825",
+        "1073741826",
+        "1073741827"
+      ],
+      "lines": [
+        "Reported block blk_1073741825 on datanode01 size 67108864 replicaState = FINALIZED",
+        "BLOCK* addBlock: block blk_1073741826 on node datanode02 size 134217728 does not belong to any file",
+        "BLOCK* addBlock: logged info for blk_1073741827 of 2 reported."
+      ]
+    },
+    {
+      "session": "c8a9c4c1_2",
+      "file": "output/log_events/hdfs_combined_parsed_logs.csv",
+      "distinct": [
+        "12345",
+        "54321"
+      ],
+      "lines": [
+        "Block blk_12345: removing from PENDING_CACHED for node dn_12 because it cannot fit in remaining cache size 1024.",
+        "Block blk_54321: cannot be found in block manager and hence skipped from calculation for node dn_34."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "protocol": {
+    "same_input": true,
+    "n_methods": 15,
+    "n_gpt4o_ok": 15,
+    "deepseek_slots_on_these_methods": 162,
+    "source": "output_v1/hadoop/merge_hdfs.json"
+  },
+  "deepseek_archived_162": {
+    "n_slots": 162,
+    "type_valid_true": 141,
+    "type_valid_false": 3,
+    "type_valid_none": 18,
+    "n_decidable": 144,
+    "type_validity": 0.9792,
+    "by_type": {
+      "path": 24,
+      "nodeid": 81,
+      "generic": 18,
+      "int": 31,
+      "ip_fragment": 2,
+      "status": 6
+    }
+  },
+  "gpt4o_same_input": {
+    "n_slots": 39,
+    "type_valid_true": 32,
+    "type_valid_false": 1,
+    "type_valid_none": 6,
+    "type_validity": 0.9697,
+    "n_decidable": 33,
+    "by_type": {
+      "generic": {
+        "n": 6,
+        "true": 0,
+        "false": 0,
+        "none": 6,
+        "rate": null
+      },
+      "int": {
+        "n": 8,
+        "true": 8,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      },
+      "nodeid": {
+        "n": 13,
+        "true": 13,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      },
+      "path": {
+        "n": 9,
+        "true": 8,
+        "false": 1,
+        "none": 0,
+        "rate": 0.8889
+      },
+      "status": {
+        "n": 3,
+        "true": 3,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      }
+    },
+    "lines": {
+      "n_line": 68,
+      "n_matched": 25,
+      "n_ok_calls": 15
+    },
+    "block_consistency": {
+      "n_sessions": 15,
+      "n_decidable": 3,
+      "n_pass": 1,
+      "n_fail": 2,
+      "rate": 0.3333
+    }
+  }
+}

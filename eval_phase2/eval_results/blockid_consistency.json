@@ -1,0 +1,20 @@
+{
+  "session_level": {
+    "n_sessions": 49,
+    "n_decidable": 4,
+    "n_pass": 4,
+    "rate": 1.0,
+    "n_undecidable": 45
+  },
+  "slot_level": {
+    "n_decidable": 53,
+    "n_pass": 53,
+    "rate": 1.0
+  },
+  "strict_slot_value": {
+    "n_decidable": 27,
+    "n_pass": 26,
+    "rate": 0.963
+  },
+  "failing_sessions": []
+}

@@ -1,0 +1,349 @@
+{
+  "n_merge_points": 40,
+  "gt_distribution": {
+    "valid": 26,
+    "infeasible": 14
+  },
+  "stratum_distribution": {
+    "simple": 28,
+    "complex": 12
+  },
+  "runs": {
+    "archive_truncated": {
+      "cot": {
+        "n_responses": 40,
+        "max_response_chars": 500,
+        "n_at_500_char_limit": 40,
+        "scores": {
+          "first_eval": {
+            "overall": {
+              "n": 40,
+              "TP": 26,
+              "TN": 0,
+              "FP": 14,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.65,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            },
+            "simple": {
+              "n": 28,
+              "TP": 17,
+              "TN": 0,
+              "FP": 11,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.6071,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            },
+            "complex": {
+              "n": 12,
+              "TP": 9,
+              "TN": 0,
+              "FP": 3,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.75,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            }
+          },
+          "wrong_path": {
+            "overall": {
+              "n": 40,
+              "TP": 0,
+              "TN": 0,
+              "FP": 1,
+              "FN": 0,
+              "unparsed": 39,
+              "accuracy": 0.0,
+              "recall_feasible": 0.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.0
+            },
+            "simple": {
+              "n": 28,
+              "TP": 0,
+              "TN": 0,
+              "FP": 1,
+              "FN": 0,
+              "unparsed": 27,
+              "accuracy": 0.0,
+              "recall_feasible": 0.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.0
+            },
+            "complex": {
+              "n": 12,
+              "TP": 0,
+              "TN": 0,
+              "FP": 0,
+              "FN": 0,
+              "unparsed": 12,
+              "accuracy": 0.0,
+              "recall_feasible": 0.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.0
+            }
+          }
+        }
+      },
+      "nocot": {
+        "n_responses": 40,
+        "max_response_chars": 500,
+        "n_at_500_char_limit": 40,
+        "scores": {
+          "first_eval": {
+            "overall": {
+              "n": 40,
+              "TP": 26,
+              "TN": 8,
+              "FP": 6,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.85,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.5714,
+              "balanced_accuracy": 0.7857
+            },
+            "simple": {
+              "n": 28,
+              "TP": 17,
+              "TN": 7,
+              "FP": 4,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.8571,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.6364,
+              "balanced_accuracy": 0.8182
+            },
+            "complex": {
+              "n": 12,
+              "TP": 9,
+              "TN": 1,
+              "FP": 2,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.8333,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.3333,
+              "balanced_accuracy": 0.6667
+            }
+          },
+          "wrong_path": {
+            "overall": {
+              "n": 40,
+              "TP": 0,
+              "TN": 0,
+              "FP": 4,
+              "FN": 0,
+              "unparsed": 36,
+              "accuracy": 0.0,
+              "recall_feasible": 0.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.0
+            },
+            "simple": {
+              "n": 28,
+              "TP": 0,
+              "TN": 0,
+              "FP": 4,
+              "FN": 0,
+              "unparsed": 24,
+              "accuracy": 0.0,
+              "recall_feasible": 0.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.0
+            },
+            "complex": {
+              "n": 12,
+              "TP": 0,
+              "TN": 0,
+              "FP": 0,
+              "FN": 0,
+              "unparsed": 12,
+              "accuracy": 0.0,
+              "recall_feasible": 0.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.0
+            }
+          }
+        }
+      }
+    },
+    "x1_untruncated": {
+      "cot": {
+        "n_responses": 40,
+        "max_response_chars": 3169,
+        "n_at_500_char_limit": 0,
+        "scores": {
+          "first_eval": {
+            "overall": {
+              "n": 40,
+              "TP": 26,
+              "TN": 0,
+              "FP": 14,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.65,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            },
+            "simple": {
+              "n": 28,
+              "TP": 17,
+              "TN": 0,
+              "FP": 11,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.6071,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            },
+            "complex": {
+              "n": 12,
+              "TP": 9,
+              "TN": 0,
+              "FP": 3,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.75,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            }
+          },
+          "wrong_path": {
+            "overall": {
+              "n": 40,
+              "TP": 13,
+              "TN": 9,
+              "FP": 5,
+              "FN": 13,
+              "unparsed": 0,
+              "accuracy": 0.55,
+              "recall_feasible": 0.5,
+              "specificity_infeasible": 0.6429,
+              "balanced_accuracy": 0.5714
+            },
+            "simple": {
+              "n": 28,
+              "TP": 9,
+              "TN": 8,
+              "FP": 3,
+              "FN": 8,
+              "unparsed": 0,
+              "accuracy": 0.6071,
+              "recall_feasible": 0.5294,
+              "specificity_infeasible": 0.7273,
+              "balanced_accuracy": 0.6283
+            },
+            "complex": {
+              "n": 12,
+              "TP": 4,
+              "TN": 1,
+              "FP": 2,
+              "FN": 5,
+              "unparsed": 0,
+              "accuracy": 0.4167,
+              "recall_feasible": 0.4444,
+              "specificity_infeasible": 0.3333,
+              "balanced_accuracy": 0.3889
+            }
+          }
+        }
+      },
+      "nocot": {
+        "n_responses": 40,
+        "max_response_chars": 2681,
+        "n_at_500_char_limit": 0,
+        "scores": {
+          "first_eval": {
+            "overall": {
+              "n": 40,
+              "TP": 26,
+              "TN": 0,
+              "FP": 14,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.65,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            },
+            "simple": {
+              "n": 28,
+              "TP": 17,
+              "TN": 0,
+              "FP": 11,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.6071,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            },
+            "complex": {
+              "n": 12,
+              "TP": 9,
+              "TN": 0,
+              "FP": 3,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.75,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            }
+          },
+          "wrong_path": {
+            "overall": {
+              "n": 40,
+              "TP": 26,
+              "TN": 0,
+              "FP": 14,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.65,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            },
+            "simple": {
+              "n": 28,
+              "TP": 17,
+              "TN": 0,
+              "FP": 11,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.6071,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            },
+            "complex": {
+              "n": 12,
+              "TP": 9,
+              "TN": 0,
+              "FP": 3,
+              "FN": 0,
+              "unparsed": 0,
+              "accuracy": 0.75,
+              "recall_feasible": 1.0,
+              "specificity_infeasible": 0.0,
+              "balanced_accuracy": 0.5
+            }
+          }
+        }
+      }
+    }
+  }
+}

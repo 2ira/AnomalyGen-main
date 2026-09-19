@@ -1,0 +1,1105 @@
+src/java/main/org/apache/zookeeper/client/FourLetterWordMain.java: connecting to 
+src/java/main/org/apache/zookeeper/client/StaticHostProvider.java: Unexpected exception
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: Client will use DIGEST-MD5 as SASL mechanism.
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: Client will use GSSAPI as SASL mechanism.
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: ClientCnxn:sendSaslPacket:length=
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: ClientCnxn:sendSaslPacket:length=
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: Could not login: the client is being asked for a password, but the Zookeeper
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: Could not retrieve login configuration: 
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: Error creating SASL client:
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: Exception while trying to create SASL client: 
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: JAAS loginContext is: 
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: SASL authentication failed using login context '
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: ServerSaslResponseCallback(): saslToken server response: (length=
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: ServerSaslResponseCallback(): using empty data[] as server response (length=
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: creating sasl client: client=
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: sasl client was unexpectedly null: cannot respond to Zookeeper server.
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: saslClient is unexpectedly null. Cannot respond to server's SASL message; ignoring.
+src/java/main/org/apache/zookeeper/client/ZooKeeperSaslClient.java: saslClient.evaluateChallenge(len=
+src/java/main/org/apache/zookeeper/ClientCnxn.java: , closing socket connection
+src/java/main/org/apache/zookeeper/ClientCnxn.java: An exception was thrown while closing send thread for session 0x
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Caught unexpected throwable
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Checking server 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Closing client for session: 0x
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Disconnecting client for session: 0x
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Error while calling watcher 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Event thread exiting due to interruption
+src/java/main/org/apache/zookeeper/ClientCnxn.java: EventThread shut down
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Exception while seeking for r/w server 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Got 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Got auth sessionid:0x
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Got notification sessionid:0x
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Got ping response for sessionid: 0x
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Got server path 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Ignoring unexpected exception
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Read/write client got connected to read-only server
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Reading reply sessionid:0x
+src/java/main/org/apache/zookeeper/ClientCnxn.java: SASL authentication with Zookeeper Quorum member failed: 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: SASL configuration failed: 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Session 0x
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Session establishment complete on server 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Session establishment request sent on 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Socket connection established to 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Somehow a null cb got to EventThread!
+src/java/main/org/apache/zookeeper/ClientCnxn.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ClientCnxn.java: from 
+src/java/main/org/apache/zookeeper/ClientCnxn.java: zookeeper.disableAutoWatchReset is 
+src/java/main/org/apache/zookeeper/ClientCnxnSocket.java: Connected to an old server; r-o mode will be unavailable
+src/java/main/org/apache/zookeeper/ClientCnxnSocket.java: readConnectResult 
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: Closed client selector
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: Doing client selector close
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: Ignoring exception during channel close
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: Ignoring exception during selector close
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: Ignoring exception during shutdown input
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: Ignoring exception during shutdown output
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: Ignoring exception during socket close
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: SendThread interrupted during sleep, ignoring
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: Unable to open socket to 
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: deferring non-priming packet: 
+src/java/main/org/apache/zookeeper/ClientCnxnSocketNIO.java: testableCloseSocket() called
+src/java/main/org/apache/zookeeper/common/AtomicFileOutputStream.java: Unable to abort file 
+src/java/main/org/apache/zookeeper/common/AtomicFileOutputStream.java: Unable to delete tmp file 
+src/java/main/org/apache/zookeeper/common/AtomicFileOutputStream.java: Unable to delete tmp file during abort 
+src/java/main/org/apache/zookeeper/common/IOUtils.java: Exception in closing 
+src/java/main/org/apache/zookeeper/common/PathTrie.java: {}
+src/java/main/org/apache/zookeeper/CreateMode.java: Received an invalid flag value to convert to a CreateMode
+src/java/main/org/apache/zookeeper/jmx/MBeanRegistry.java: Error during unregister
+src/java/main/org/apache/zookeeper/jmx/MBeanRegistry.java: Error during unregister
+src/java/main/org/apache/zookeeper/jmx/MBeanRegistry.java: Failed to register MBean 
+src/java/main/org/apache/zookeeper/jmx/MBeanRegistry.java: Failed to unregister MBean 
+src/java/main/org/apache/zookeeper/jmx/MBeanRegistry.java: Invalid name "
+src/java/main/org/apache/zookeeper/Login.java: Could not refresh TGT for principal: 
+src/java/main/org/apache/zookeeper/Login.java: Could not renew TGT due to problem running shell command: '
+src/java/main/org/apache/zookeeper/Login.java: Failed to refresh TGT: refresh thread exiting now.
+src/java/main/org/apache/zookeeper/Login.java: Found tgt 
+src/java/main/org/apache/zookeeper/Login.java: Initiating logout for 
+src/java/main/org/apache/zookeeper/Login.java: Initiating re-login for 
+src/java/main/org/apache/zookeeper/Login.java: Interrupted during login retry after LoginException:
+src/java/main/org/apache/zookeeper/Login.java: Interrupted while renewing TGT, exiting Login thread
+src/java/main/org/apache/zookeeper/Login.java: No TGT found: will try again at 
+src/java/main/org/apache/zookeeper/Login.java: Not attempting to re-login since the last re-login was 
+src/java/main/org/apache/zookeeper/Login.java: TGT expires:                  
+src/java/main/org/apache/zookeeper/Login.java: TGT refresh sleeping until: 
+src/java/main/org/apache/zookeeper/Login.java: TGT refresh thread started.
+src/java/main/org/apache/zookeeper/Login.java: TGT refresh thread time adjusted from : 
+src/java/main/org/apache/zookeeper/Login.java: TGT renewal thread has been interrupted and will exit.
+src/java/main/org/apache/zookeeper/Login.java: TGT valid starting at:        
+src/java/main/org/apache/zookeeper/Login.java: The TGT cannot be renewed beyond the next expiry date: 
+src/java/main/org/apache/zookeeper/Login.java: error while waiting for Login thread to shutdown: 
+src/java/main/org/apache/zookeeper/Login.java: next refresh: 
+src/java/main/org/apache/zookeeper/Login.java: nextRefresh:
+src/java/main/org/apache/zookeeper/Login.java: refreshing now because expiry is before next scheduled refresh time.
+src/java/main/org/apache/zookeeper/Login.java: running ticket cache refresh command: 
+src/java/main/org/apache/zookeeper/Login.java: successfully logged in.
+src/java/main/org/apache/zookeeper/server/auth/DigestAuthenticationProvider.java: Missing algorithm
+src/java/main/org/apache/zookeeper/server/auth/ProviderRegistry.java: Problems loading 
+src/java/main/org/apache/zookeeper/server/auth/SaslServerCallbackHandler.java: Failed to set name based on Kerberos authentication rules.
+src/java/main/org/apache/zookeeper/server/auth/SaslServerCallbackHandler.java: No password found for user: 
+src/java/main/org/apache/zookeeper/server/auth/SaslServerCallbackHandler.java: Setting authorizedID: 
+src/java/main/org/apache/zookeeper/server/auth/SaslServerCallbackHandler.java: Successfully authenticated client: authenticationID=
+src/java/main/org/apache/zookeeper/server/auth/SaslServerCallbackHandler.java: User '
+src/java/main/org/apache/zookeeper/server/auth/SaslServerCallbackHandler.java: client supplied realm: 
+src/java/main/org/apache/zookeeper/server/ConnectionBean.java: Unable to closeSession() for session: 0x
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: Error occured while purging.
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: Purge task completed.
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: Purge task is already running.
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: Purge task is not scheduled.
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: Purge task not started. Ignoring shutdown!
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: Purge task started.
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: Shutting down purge task.
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: autopurge.purgeInterval set to 
+src/java/main/org/apache/zookeeper/server/DatadirCleanupManager.java: autopurge.snapRetainCount set to 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Adjusting parent cversion for Txn: 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Deleting ephemeral node 
+src/java/main/org/apache/zookeeper/server/DataTree.java: ERROR: ACL not available for long 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Failed to set parent cversion for: 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Failed: 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Failed: 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Ignoring NoNodeException for path 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Ignoring processTxn failure hdr: 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Missing count node for quota 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Missing count node for stat 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Missing quota node for bytes 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Missing quota stat node 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Missing stat node for bytes 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Quota exceeded: 
+src/java/main/org/apache/zookeeper/server/DataTree.java: Quota exceeded: 
+src/java/main/org/apache/zookeeper/server/FinalRequestProcessor.java: Dumping request buffer: 0x
+src/java/main/org/apache/zookeeper/server/FinalRequestProcessor.java: FIXMSG
+src/java/main/org/apache/zookeeper/server/FinalRequestProcessor.java: Failed to process 
+src/java/main/org/apache/zookeeper/server/FinalRequestProcessor.java: Processing request:: 
+src/java/main/org/apache/zookeeper/server/FinalRequestProcessor.java: Zxid outstanding 
+src/java/main/org/apache/zookeeper/server/FinalRequestProcessor.java: shutdown of request processor complete
+src/java/main/org/apache/zookeeper/server/FinalRequestProcessor.java: {}
+src/java/main/org/apache/zookeeper/server/LogFormatter.java: Last transaction was partial.
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java:  bb 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java:  bbLen 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java:  bbLen 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java:  bbLen len is 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Closing connection to 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Error closing PrintWriter 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Error closing a command socket 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Error in running command 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Error serializing response
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Problem sending to 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Processing 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Sending unthrottle event 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Stat command output
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: Throttling - disabling recv 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: after readBytes message readable 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: after readbytes 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: close called for sessionid:0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: close in progress for sessionid:0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: cnxns size:
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: got conn req request from 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: message readable 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxn.java: message readable 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java:  buf 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java:  queuedBuffer 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java:  queuedBuffer 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java:  queuedBuffer 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java:  queuedBuffer 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java:  queuedBuffer: 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Before copy 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Channel closed 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Channel connected 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Channel disconnect caused close 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Channel disconnected 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Closing 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Copy is 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Exception caught 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Ignoring exception closing cnxn sessionid 0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: New message 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Processed queue - bytes remaining
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Processed queue - bytes remaining
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Processed queue - no bytes remaining
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Processed queue - no bytes remaining
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Received ResumeMessageEvent
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Received message while throttled
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: Unexpected exception in receive
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: allChannels size:
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: allocating queue
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: binding to port 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: closeAll()
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: closeSession sessionid:0x
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: exception during session close
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: message received called 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: not throttled
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: processing queue 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: queue empty
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: shutdown called 
+src/java/main/org/apache/zookeeper/server/NettyServerCnxnFactory.java: write complete 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Add a buffer to outgoingBuffers, sk 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: CancelledKeyException stack trace
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Closed socket connection for client 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Error cancelling command selection key 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Error closing PrintWriter 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Error closing a command socket 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Error in running command 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Error sending data synchronously 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Error serializing response
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Exception causing close of session 0x
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Exception causing close of session 0x
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: IOException stack trace
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Processing 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Stat command output
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Throttling recv 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Unexpected Exception: 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: Unexpected exception. Destruction averted.
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: caught end of stream exception
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: ignoring exception during input shutdown
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: ignoring exception during output shutdown
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: ignoring exception during selectionkey cancel
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: ignoring exception during socket close
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: ignoring exception during socketchannel close
+src/java/main/org/apache/zookeeper/server/NIOServerCnxn.java: trying to do i/o on a null socket for session:0x
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Accepted socket connection from 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Ignoring exception
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Ignoring exception closing cnxn sessionid 0x
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Ignoring interrupted exception during shutdown
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Ignoring unexpected exception during shutdown
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Ignoring unexpected runtime exception
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: NIOServerCnxn factory exited run method
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Selector closing
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Selector failed to open
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Thread 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Too many connections from 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: Unexpected ops in select 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: binding to port 
+src/java/main/org/apache/zookeeper/server/NIOServerCnxnFactory.java: exception during session close
+src/java/main/org/apache/zookeeper/server/persistence/FileSnap.java: Reading snapshot 
+src/java/main/org/apache/zookeeper/server/persistence/FileSnap.java: invalid snapshot 
+src/java/main/org/apache/zookeeper/server/persistence/FileSnap.java: problem reading snap file 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java:  is not a valid value for preAllocSize
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: Created new input archive 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: Created new input stream 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: Creating new log file: log.
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: Current zxid 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: EOF excepton 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: Ignoring exception during close
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: Unable to truncate 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java: fsync-ing the write ahead log in 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java: (higestZxid) > 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java: Ignoring processTxn failure hdr: 
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java: Opening datadir:{} snapDir:{}
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java: Parent {} missing for {}
+src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java: Snapshotting: 0x{} to {}
+src/java/main/org/apache/zookeeper/server/persistence/Util.java: Invalid snapshot 
+src/java/main/org/apache/zookeeper/server/persistence/Util.java: Invalid snapshot 
+src/java/main/org/apache/zookeeper/server/persistence/Util.java: Last transaction was partial.
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Dumping request buffer: 0x
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Failed to process 
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Got user-level KeeperException when processing 
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Got user-level KeeperException when processing 
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Invalid path 
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Invalid path 
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Missing AuthenticationProvider for 
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Prep>>> cxid = 
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: PrepRequestProcessor exited loop!
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Processed session termination for sessionid: 0x
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Shutting down
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: Unexpected interruption
+src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java: zookeeper.skipACL=="yes", ACL checks will be skipped
+src/java/main/org/apache/zookeeper/server/quorum/AckRequestProcessor.java: Null QuorumPeer
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Ack exception: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Address is not in the configuration: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Challenge request exception: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Election tally
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Empty ack semaphore
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Exception while sending ack: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Exception while sending challenge: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Exception while sending challenge: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Got a short response: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Got bad Msg type: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Ignoring exception receiving
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Incorrect challenge: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: No challenge for host: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: No challenge mutex object
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: No challenge with tag: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: No such address in the ensemble configuration 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Passed predicate
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Proposed leader: 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Received message of incorrect type 
+src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java: Sending exception: 
+src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java: CommitProcessor exited loop!
+src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java: Committed a null!
+src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java: Committing request:: 
+src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java: Interrupted exception while waiting
+src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java: Processing request:: 
+src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java: Shutting down
+src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java: Unexpected exception causing CommitProcessor to exit
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: About to leave FLE instance: leader=
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Adding vote: from=
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Backward compatibility mode, server id=
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: FLE is down
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Got a short response: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: I'm a participant: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: I'm an observer: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Ignoring notification from non-cluster member 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: New election. My id =  
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Notification election epoch is smaller than logicalclock. n.electionEpoch = 0x
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Notification from observer: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Notification state unrecoginized: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Notification time out: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Notification: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Receive new notification message. My id = 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Sending Notification: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Sending new notification. My id =  
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Shutting down connection manager
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Shutting down messenger
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: Updating proposal: 
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: WorkerReceiver is down
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: WorkerSender is down
+src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java: id: 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: , 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: Group info: 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: Group weight: 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: Majority group counter: 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: Negative set size: 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: One zero-weight group: 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: Positive set size: 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: Reading configuration from: 
+src/java/main/org/apache/zookeeper/server/quorum/flexible/QuorumHierarchical.java: Set size: 
+src/java/main/org/apache/zookeeper/server/quorum/Follower.java: Exception when following the leader
+src/java/main/org/apache/zookeeper/server/quorum/Follower.java: FOLLOWING - LEADER ELECTION TOOK - 
+src/java/main/org/apache/zookeeper/server/quorum/Follower.java: Got zxid 0x
+src/java/main/org/apache/zookeeper/server/quorum/Follower.java: Proposed leader epoch 
+src/java/main/org/apache/zookeeper/server/quorum/Follower.java: Received an UPTODATE message after Follower started
+src/java/main/org/apache/zookeeper/server/quorum/Follower.java: error getting zxid
+src/java/main/org/apache/zookeeper/server/quorum/Follower.java: shutdown called
+src/java/main/org/apache/zookeeper/server/quorum/FollowerRequestProcessor.java: FollowerRequestProcessor exited loop!
+src/java/main/org/apache/zookeeper/server/quorum/FollowerRequestProcessor.java: Shutting down
+src/java/main/org/apache/zookeeper/server/quorum/FollowerRequestProcessor.java: Unexpected exception causing exit
+src/java/main/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java: Committing 
+src/java/main/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java: Committing zxid 0x
+src/java/main/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java: Ignoring unexpected exception during shutdown
+src/java/main/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java: Ignoring unexpected exception in syncprocessor shutdown
+src/java/main/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java: Not expecting a sync.
+src/java/main/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java: Shutting down
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Ack zxid: 0x{}
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Commiting zxid 0x{} from {} not first!
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Couldn't bind to port 
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Count for zxid: 0x{} is {}
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Enough followers present. 
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Exception while accepting follower
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: First is 0x{}
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Going to commmit null request for proposal: {}
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Have quorum of supporters; starting up and setting last processed zxid: 0x{}
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Ignoring unexpected exception during close
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: LEADING - LEADER ELECTION TOOK - 
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: NEWLEADER proposal has Zxid of 
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Proposing:: 
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Shutdown called
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Shutting down
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Shutting down
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: TCP NoDelay set to: 
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: This really should be impossible
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: Trying to commit future proposal: zxid 0x{} from {}
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: exception while shutting down acceptor: 
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: outstanding is 0
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: outstanding proposal: 0x{}
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: outstanding proposals all
+src/java/main/org/apache/zookeeper/server/quorum/Leader.java: proposal has already been committed, pzxid: 0x{} zxid: 0x{}
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: 	-> 
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Election tally: 
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Found leader: my type is: 
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Got a short response: 
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Got bad xid: expected 
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Ignoring exception while looking for leader
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: OBSERVER elected as leader!
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Server address: 
+src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java: Socket exception when creating socket for leader election
+src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Committing 
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Couldn't find the leader with id = 
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: First packet should have been NEWLEADER
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Getting a diff from the leader 0x
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Getting a snapshot from leader
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Got unexpected packet from leader 
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Got zxid 0x
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Missing session 0x
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Missing signature. Got 
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Not able to truncate the log 
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Revalidating client: 0x
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: TCP NoDelay set to: 
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Truncating log to get in sync with the leader 0x
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/Learner.java: Unexpected exception, tries=
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java:  is not ACKEPOCH
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: ******* GOODBYE 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Error closing socket for handler 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: First packet 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Follower sid: 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Ignoring unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Ignoring unexpected exception during socket close
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Next packet was supposed to be an ACK
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Received ACK from Observer  
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Sending 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Sending TRUNC to follower zxidToSend=0x{} updates=0x{}
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Sending proposals to follower
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Sending snapshot last zxid of peer is 0x
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Somehow session 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Synchronizing with Follower sid: 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Unexpected exception at 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Unexpected exception causing shutdown
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Unexpected exception causing shutdown while sock 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Unexpected interruption
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: Unhandled proposal scenario
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: committedLog is empty but leader and follower 
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: proposal size is {}
+src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java: proposals is empty
+src/java/main/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/Observer.java: Exception when observing the leader
+src/java/main/org/apache/zookeeper/server/quorum/Observer.java: Ignoring commit
+src/java/main/org/apache/zookeeper/server/quorum/Observer.java: Ignoring proposal
+src/java/main/org/apache/zookeeper/server/quorum/Observer.java: Observing 
+src/java/main/org/apache/zookeeper/server/quorum/Observer.java: Received an UPTODATE message after Observer started
+src/java/main/org/apache/zookeeper/server/quorum/Observer.java: shutdown called
+src/java/main/org/apache/zookeeper/server/quorum/ObserverRequestProcessor.java: ObserverRequestProcessor exited loop!
+src/java/main/org/apache/zookeeper/server/quorum/ObserverRequestProcessor.java: Shutting down
+src/java/main/org/apache/zookeeper/server/quorum/ObserverRequestProcessor.java: Unexpected exception causing exit
+src/java/main/org/apache/zookeeper/server/quorum/ObserverZooKeeperServer.java: Not expecting a sync.
+src/java/main/org/apache/zookeeper/server/quorum/ProposalRequestProcessor.java: Ack>>> cxid = 
+src/java/main/org/apache/zookeeper/server/quorum/ProposalRequestProcessor.java: Shutting down
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Address of remote peer: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: As I'm leaving the listener thread, 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Attempting to send lastMessage to sid=
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: BufferUnderflowException 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Calling finish for 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Cannot open channel to 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Cannot open channel to 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Closing listener: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Connected to server 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Connection broken for id 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Create new connection to server: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Error closing server socket
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Error while accessing socket for 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Exception reading or writing challenge: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Exception when shutting down listener: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Exception when using channel: for id 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Exception while closing
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Exception while listening
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Failed to send last message. Shutting down thread.
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Halting listener
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Halting sender: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Have smaller server identifier, so dropping the 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Ignoring exception reading or writing challenge: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Interrupted while sleeping. 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Interrupted while waiting for message on queue
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Interrupting SendWorker
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Invalid server id: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Leaving listener
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: My election bind port: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: No queue for server 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: No queue of incoming messages for 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Opening channel to server 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Opening channel to server 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Queue size: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Received connection request 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Removing entry from senderWorkerMap sid=
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Send worker leaving thread
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Setting arbitrary identifier to observer: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: There is a connection already for server 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Trying to close listener: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Trying to remove from an empty 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Trying to remove from an empty 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Unable to access socket output stream
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Unable to insert an element in the queue 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java: Unable to insert element in the recvQueue 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java:  not found! Creating with a reasonable default of {}. This should only happen when you are upgrading your installation
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java:  not found! Creating with a reasonable default of {}. This should only happen when you are upgrading your installation
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Attempting to start ReadOnlyZooKeeperServer
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Error closing logs 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: FAILED to start ReadOnlyZooKeeperServer
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: FOLLOWING
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Failed to write new file 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Got more than just an xid! Len = 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Initializing leader election protocol...
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Interrupted while attempting to start ReadOnlyZooKeeperServer, not started
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: LEADING
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: LOOKING
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Null listener when initializing cnx manager
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: OBSERVING
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: QuorumPeer main thread exited
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: QuorumPeer responder thread exited
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Setting LearnerType to 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Starting quorum peer
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Unable to load database on disk
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Unexpected IO exception in ResponderThread
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: Unexpected runtime exception in ResponderThread
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: initLimit set to 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: maxSessionTimeout set to 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: minSessionTimeout set to 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java: tickTime set to 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java:  does not have the form host:port or host:port:port 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java: Defaulting to majority quorums
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java: Invalid autopurge.snapRetainCount: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java: Invalid configuration, only one server specified (ignoring)
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java: No server failure will be tolerated. 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java: Non-optimial configuration, consider an odd number of servers.
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java: Peer type from servers list (
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java: Reading configuration from: 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java: Either no config or no quorum defined in config, running 
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java: Exiting normally
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java: Invalid arguments, exiting abnormally
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java: Invalid config, exiting abnormally
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java: Quorum Peer interrupted
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java: Starting quorum peer
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java: Unable to register log4j JMX control
+src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java: Unexpected exception, exiting abnormally
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyRequestProcessor.java: IO exception while sending response
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyRequestProcessor.java: ReadOnlyRequestProcessor exited loop!
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyRequestProcessor.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyRequestProcessor.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyRequestProcessor.java: Unexpected interruption
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java: Not starting Read-only server as startup follows shutdown!
+src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java: Read-only server started
+src/java/main/org/apache/zookeeper/server/quorum/SendAckRequestProcessor.java: Closing connection to leader, exception during packet send
+src/java/main/org/apache/zookeeper/server/quorum/SendAckRequestProcessor.java: Closing connection to leader, exception during packet send
+src/java/main/org/apache/zookeeper/server/quorum/SendAckRequestProcessor.java: Ignoring error closing the connection
+src/java/main/org/apache/zookeeper/server/quorum/SendAckRequestProcessor.java: Ignoring error closing the connection
+src/java/main/org/apache/zookeeper/server/ServerCnxnFactory.java: Could not register connection
+src/java/main/org/apache/zookeeper/server/SessionTrackerImpl.java: Session closing: 0x
+src/java/main/org/apache/zookeeper/server/SessionTrackerImpl.java: SessionTrackerImpl exited loop!
+src/java/main/org/apache/zookeeper/server/SessionTrackerImpl.java: Shutting down
+src/java/main/org/apache/zookeeper/server/SessionTrackerImpl.java: Unexpected interruption
+src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java: Interrupted while wating for 
+src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java: Severe unrecoverable error, exiting
+src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java: Shutting down
+src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java: SyncRequestProcessor exited!
+src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java: Too busy to snap, skipping
+src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java: Unexpected exception
+src/java/main/org/apache/zookeeper/server/upgrade/DataTreeV1.java: Deleting ephemeral node 
+src/java/main/org/apache/zookeeper/server/upgrade/DataTreeV1.java: Failed:
+src/java/main/org/apache/zookeeper/server/upgrade/DataTreeV1.java: Ignoring NoNodeException for path 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Creating current data dir 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Creating current snapshot dir 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Creating new data tree
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Creating previous version data dir 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Creating previous version snapshot dir 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Failed in backing up.
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Renaming 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Upgrade Error: Please read the 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: Upgrade is complete
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeMain.java: snapshotting the new datatree
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeSnapShotV1.java: (higestZxid) >= 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeSnapShotV1.java: Invalid snapshot 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeSnapShotV1.java: Last transaction was partial.
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeSnapShotV1.java: Processing log file: 
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeSnapShotV1.java: Upgrading from an empty snapshot.
+src/java/main/org/apache/zookeeper/server/upgrade/UpgradeSnapShotV1.java: Zxids not equal 
+src/java/main/org/apache/zookeeper/server/util/Profiler.java: Elapsed 
+src/java/main/org/apache/zookeeper/server/ZKDatabase.java: This really should be impossible
+src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java: SASL mechanism(mech) is 
+src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java: Zookeeper Quorum member experienced a PrivilegedActionException exception while creating a SaslServer using a JAAS principal context:
+src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java: Zookeeper Quorum member failed to create a SaslServer to interact with a client during session initiation: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java: Zookeeper Server failed to create a SaslServer to interact with a client during session initiation: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java: failed to create saslServer object.
+src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java: server principal name/hostname determination error: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java: serviceHostname is '
+src/java/main/org/apache/zookeeper/server/ZooKeeperSaslServer.java: servicePrincipalName is 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: *****>>>>> Got 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Authentication failed for scheme: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Authentication succeeded for scheme: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Caught runtime exception from AuthenticationProvider: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Client attempting to establish new session at 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Client attempting to renew session 0x
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Client failed to SASL authenticate: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Closing client connection due to SASL authentication failure.
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Closing session 0x
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Connection request from old client 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Created server with tickTime 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Dropping packet at server of type 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Dropping request: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Established session 0x
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Exception while establishing session, closing
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Expiring session 0x
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Failed to register with JMX
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Failed to unregister with JMX
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Invalid session 0x
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Maintaining client connection despite SASL authentication failure.
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: No authentication provider for scheme: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Responding to client SASL token.
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Session establishment request from client 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Severe unrecoverable error, exiting
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Size of client SASL token: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Size of server SASL response: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Unable to process request:
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: Unexpected interruption
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: adding SASL authorization for authorizationID: 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: auth success 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: cnxn.saslServer is null: cnxn object did not initialize its saslServer properly.
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: got auth packet 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: maxSessionTimeout set to 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: minSessionTimeout set to 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: shutting down
+src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java: tickTime set to 
+src/java/main/org/apache/zookeeper/server/ZooKeeperServerMain.java: Exiting normally
+src/java/main/org/apache/zookeeper/server/ZooKeeperServerMain.java: Invalid arguments, exiting abnormally
+src/java/main/org/apache/zookeeper/server/ZooKeeperServerMain.java: Invalid config, exiting abnormally
+src/java/main/org/apache/zookeeper/server/ZooKeeperServerMain.java: Server interrupted
+src/java/main/org/apache/zookeeper/server/ZooKeeperServerMain.java: Starting server
+src/java/main/org/apache/zookeeper/server/ZooKeeperServerMain.java: Unable to register log4j JMX control
+src/java/main/org/apache/zookeeper/server/ZooKeeperServerMain.java: Unexpected exception, exiting abnormally
+src/java/main/org/apache/zookeeper/server/ZooTrace.java: :
+src/java/main/org/apache/zookeeper/server/ZooTrace.java: Set text trace mask to 0x
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/ServerAdminClient.java: Unexpected exception
+src/java/main/org/apache/zookeeper/Shell.java: Error reading the error stream
+src/java/main/org/apache/zookeeper/Shell.java: Error while closing the error stream
+src/java/main/org/apache/zookeeper/Shell.java: Error while closing the input stream
+src/java/main/org/apache/zookeeper/Shell.java: Interrupted while reading the error stream
+src/java/main/org/apache/zookeeper/ZKUtil.java: Deleting 
+src/java/main/org/apache/zookeeper/ZKUtil.java: Deleting 
+src/java/main/org/apache/zookeeper/ZKUtil.java: Deleting 
+src/java/main/org/apache/zookeeper/ZKUtil.java: Deleting 
+src/java/main/org/apache/zookeeper/ZooKeeper.java: Close called on already closed client
+src/java/main/org/apache/zookeeper/ZooKeeper.java: Closing session: 0x
+src/java/main/org/apache/zookeeper/ZooKeeper.java: Ignoring unexpected exception during close
+src/java/main/org/apache/zookeeper/ZooKeeper.java: Initiating client connection, connectString=
+src/java/main/org/apache/zookeeper/ZooKeeper.java: Initiating client connection, connectString=
+src/java/main/org/apache/zookeeper/ZooKeeper.java: Session: 0x
+src/java/main/org/apache/zookeeper/ZooKeeper.java: We are triggering an exists watch for delete! Shouldn't happen!
+src/java/main/org/apache/zookeeper/ZooKeeperMain.java: Processing 
+src/java/main/org/apache/zookeeper/ZooKeeperMain.java: Unable to start jline
+src/java/main/org/apache/zookeeper/ZooKeeperMain.java: Unable to start jline
+src/java/main/org/apache/zookeeper/ZooKeeperMain.java: Unable to start jline
+src/java/main/org/apache/zookeeper/ZooKeeperMain.java: Unable to start jline
+src/java/main/org/apache/zookeeper/ZooKeeperMain.java: Unable to start jline
+src/java/main/org/apache/zookeeper/ZooKeeperMain.java: child removed during quota check
+src/java/systest/org/apache/zookeeper/test/system/GenerateLoad.java: keeper exception thrown
+src/java/systest/org/apache/zookeeper/test/system/InstanceContainer.java: Caused by
+src/java/systest/org/apache/zookeeper/test/system/InstanceContainer.java: Lost session
+src/java/systest/org/apache/zookeeper/test/system/InstanceContainer.java: Skipping 
+src/java/systest/org/apache/zookeeper/test/system/InstanceManager.java: Got 
+src/java/systest/org/apache/zookeeper/test/system/InstanceManager.java: Got Data: 
+src/java/systest/org/apache/zookeeper/test/system/InstanceManager.java: Reconfiguring 
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: Peer 
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: Reporting 
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: Running command: 
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: Setting up server 
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: Starting quorumPeer 
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: Stopping peer 
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: Unhandled error
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: Unhandled exception
+src/java/systest/org/apache/zookeeper/test/system/QuorumPeerInstance.java: looking for host:port,... start|stop, but found 
+src/java/systest/org/apache/zookeeper/test/system/SimpleSysTest.java: Connecting to 
+src/java/systest/org/apache/zookeeper/test/system/SimpleSysTest.java: Starting server 
+src/java/test/org/apache/zookeeper/JUnit4ZKTestRunner.java: FINISHED TEST METHOD 
+src/java/test/org/apache/zookeeper/JUnit4ZKTestRunner.java: RUNNING TEST METHOD 
+src/java/test/org/apache/zookeeper/JUnit4ZKTestRunner.java: TEST METHOD FAILED 
+src/java/test/org/apache/zookeeper/PortAssignment.java: assigning port 
+src/java/test/org/apache/zookeeper/server/CRCTest.java: Event:
+src/java/test/org/apache/zookeeper/server/CRCTest.java: crc corruption
+src/java/test/org/apache/zookeeper/server/CRCTest.java: file is 
+src/java/test/org/apache/zookeeper/server/CRCTest.java: starting up the zookeeper server .. waiting
+src/java/test/org/apache/zookeeper/server/DeserializationPerfTest.java: Deserialized 
+src/java/test/org/apache/zookeeper/server/InvalidSnapshotTest.java: Corrupting 
+src/java/test/org/apache/zookeeper/server/quorum/QuorumPeerTestBase.java: id = 
+src/java/test/org/apache/zookeeper/server/quorum/QuorumPeerTestBase.java: unexpected exception in run
+src/java/test/org/apache/zookeeper/server/quorum/Zab1_0Test.java: Follower thread interrupted
+src/java/test/org/apache/zookeeper/server/quorum/Zab1_0Test.java: Leader thread interrupted
+src/java/test/org/apache/zookeeper/server/quorum/Zab1_0Test.java: Unexpected exception in follower thread
+src/java/test/org/apache/zookeeper/server/quorum/Zab1_0Test.java: Unexpected exception in leader thread
+src/java/test/org/apache/zookeeper/server/quorum/Zab1_0Test.java: zkdb2 sessions:
+src/java/test/org/apache/zookeeper/server/SerializationPerfTest.java: Serialized 
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: <<<EVENT>>> 
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: Creating node test3
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: Interrupted while shutting down
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: List of children at zk1
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: List of children at zk1 before zk1 became master
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: List of children at zk2
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: List of children at zk2 before zk1 became master
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: Started zookeeper server on port 
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: Waiting for zk2 and zk3 to form a quorum
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: Zk1 and zk3 have a quorum, now starting zk2
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: await failed in {}
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: await succeeded after 
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: interrupted network connection ... waiting for zk1 and zk2 to realize
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: re-establishing network connection and waiting for zk1 to reconnect
+src/java/test/org/apache/zookeeper/server/TruncateCorruptionTest.java: restarting zk2 and zk3 while cleaning zk3 to enforce zk1 to become master
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: Interrupted
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: Interrupted to:
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: Shutting down forward for 
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: Unexpected exception
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: Unexpected exception
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: Unexpected exception to:
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: accepted: local:
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: accepting socket local:
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: connected: local:
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: connection exception local:
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: connection failed, retrying(
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: exception during write
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: socket timed out local:
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: socket timeout
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: starting forward for 
+src/java/test/org/apache/zookeeper/server/util/PortForwarder.java: unexpected exception local:
+src/java/test/org/apache/zookeeper/server/ZooKeeperServerMainTest.java: unexpected exception in run
+src/java/test/org/apache/zookeeper/server/ZxidRolloverTest.java: Creating nodes 
+src/java/test/org/apache/zookeeper/server/ZxidRolloverTest.java: Exists zxid:
+src/java/test/org/apache/zookeeper/server/ZxidRolloverTest.java: STARTING 
+src/java/test/org/apache/zookeeper/server/ZxidRolloverTest.java: Validating nodes 
+src/java/test/org/apache/zookeeper/server/ZxidRolloverTest.java: tearDown starting
+src/java/test/org/apache/zookeeper/test/ACLCountTest.java: Event:
+src/java/test/org/apache/zookeeper/test/ACLCountTest.java: Something is fundamentally wrong with ArrayList's add() method. add()ing four times to an empty ArrayList should result in an ArrayList with 4 members.
+src/java/test/org/apache/zookeeper/test/ACLCountTest.java: starting up the zookeeper server .. waiting
+src/java/test/org/apache/zookeeper/test/ACLCountTest.java: startsignal 
+src/java/test/org/apache/zookeeper/test/ACLCountTest.java: startsignal.countDown()
+src/java/test/org/apache/zookeeper/test/ACLTest.java: Event:
+src/java/test/org/apache/zookeeper/test/ACLTest.java: starting creating acls
+src/java/test/org/apache/zookeeper/test/ACLTest.java: starting up the zookeeper server .. waiting
+src/java/test/org/apache/zookeeper/test/ACLTest.java: starting up the zookeeper server .. waiting
+src/java/test/org/apache/zookeeper/test/ACLTest.java: startsignal 
+src/java/test/org/apache/zookeeper/test/ACLTest.java: startsignal.countDown()
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Client create operation Assert.failed
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Client delete Assert.failed
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Client did not shutdown
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Create Assert.failed for 0x
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Delete Assert.failed for 0x
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Hammers stopped, verifying consistency
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Interrupted
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: RESTARTING 
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Started hammers
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Starting hammers
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Stopping hammers
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Test clients shutting down
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: Verifying hammers 2
+src/java/test/org/apache/zookeeper/test/AsyncHammerTest.java: sanity check Assert.failed!!!
+src/java/test/org/apache/zookeeper/test/AsyncOpsTest.java: Creating client 
+src/java/test/org/apache/zookeeper/test/AsyncOpsTest.java: Test clients shutting down
+src/java/test/org/apache/zookeeper/test/AsyncTest.java: Test clients shutting down
+src/java/test/org/apache/zookeeper/test/ChrootAsyncTest.java: Creating client 
+src/java/test/org/apache/zookeeper/test/ChrootClientTest.java: STARTING 
+src/java/test/org/apache/zookeeper/test/ClientBase.java: Client test setup finished
+src/java/test/org/apache/zookeeper/test/ClientBase.java: Error closing logs 
+src/java/test/org/apache/zookeeper/test/ClientBase.java: Found match with array:
+src/java/test/org/apache/zookeeper/test/ClientBase.java: Initial fdcount is: 
+src/java/test/org/apache/zookeeper/test/ClientBase.java: STARTING server
+src/java/test/org/apache/zookeeper/test/ClientBase.java: STOPPING server
+src/java/test/org/apache/zookeeper/test/ClientBase.java: Thread 
+src/java/test/org/apache/zookeeper/test/ClientBase.java: allClients never setup
+src/java/test/org/apache/zookeeper/test/ClientBase.java: ignoring interrupt
+src/java/test/org/apache/zookeeper/test/ClientBase.java: server 
+src/java/test/org/apache/zookeeper/test/ClientBase.java: sleeping for 20 secs
+src/java/test/org/apache/zookeeper/test/ClientBase.java: tearDown starting
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java:  Total time 
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java:  never finished creation, current:
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: ******************* Connected to ZooKeeper
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: Client create operation Assert.failed
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: Client create operation Assert.failed
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: Doing thread: 
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: Hammer threads completed creation operations
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: Starting check for completed hammers
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: Unexpected
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: Unexpected
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: test Assert.failed
+src/java/test/org/apache/zookeeper/test/ClientHammerTest.java: test Assert.failed
+src/java/test/org/apache/zookeeper/test/ClientPortBindTest.java: Event:
+src/java/test/org/apache/zookeeper/test/ClientPortBindTest.java: Unable to determine loop back address, skipping test
+src/java/test/org/apache/zookeeper/test/ClientPortBindTest.java: Using 
+src/java/test/org/apache/zookeeper/test/ClientPortBindTest.java: Using 
+src/java/test/org/apache/zookeeper/test/ClientPortBindTest.java: starting up the the server, waiting
+src/java/test/org/apache/zookeeper/test/ClientTest.java: After create /benwashere
+src/java/test/org/apache/zookeeper/test/ClientTest.java: After delete /benwashere
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Before create /ben
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Before create /benwashere
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Before delete /
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Before delete /benwashere
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Before getChildren /pat
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Closed client: 
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Comment: asseting passed for frog setting /
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Comment: checking for events length 
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Created a new client: 
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Test successful, invalid acl received : 
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Test successful, invalid acl received : 
+src/java/test/org/apache/zookeeper/test/ClientTest.java: Testing 
+src/java/test/org/apache/zookeeper/test/ClientTest.java: ignoring interrupt during event.put
+src/java/test/org/apache/zookeeper/test/ClientTest.java: skipping testClientCleanup, only available on Unix
+src/java/test/org/apache/zookeeper/test/ClientTest.java: test Assert.failed
+src/java/test/org/apache/zookeeper/test/ClientTest.java: {}
+src/java/test/org/apache/zookeeper/test/ClientTest.java: {}
+src/java/test/org/apache/zookeeper/test/ClientTest.java: {}
+src/java/test/org/apache/zookeeper/test/ClientTest.java: {}
+src/java/test/org/apache/zookeeper/test/ClientTest.java: {}
+src/java/test/org/apache/zookeeper/test/ClientTest.java: {}
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Election port: 
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Election port: 
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Exception while running mock thread
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Null listener when initializing cnx manager
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Null listener when initializing cnx manager
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Null listener when initializing cnx manager
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Null listener when initializing cnx manager
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Null listener when initializing cnx manager
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Round 
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Round 
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Socket has been closed as expected
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: Starting peer 
+src/java/test/org/apache/zookeeper/test/CnxManagerTest.java: This is the dead address I'm trying: 
+src/java/test/org/apache/zookeeper/test/DisconnectedWatcherTest.java: ignoring interrupt during event.put
+src/java/test/org/apache/zookeeper/test/FLEBackwardElectionRoundTest.java: TestLE: 
+src/java/test/org/apache/zookeeper/test/FLELostMessageTest.java: TestLE: 
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Constructor: 
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Finished election: 
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: First peer, do nothing, just join
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Going to call leader election again: 
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Second entering case
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Second is going to start second round
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Setting flag to false
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Started threads 
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: TestLE: 
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Third leaving
+src/java/test/org/apache/zookeeper/test/FLENewEpochTest.java: Third peer, shutting it down
+src/java/test/org/apache/zookeeper/test/FLEPredicateTest.java: Exception while creating quorum peer
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: Constructor: 
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: Finished election: 
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: First peer, do nothing, just join
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: First peer, shutting it down
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: Going to call leader election again.
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: Release
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: Release
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: Second entering case
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: Started threads 
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: TestLE: 
+src/java/test/org/apache/zookeeper/test/FLERestartTest.java: Thread 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Constructor: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Finished election: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Going to call leader election again.
+src/java/test/org/apache/zookeeper/test/FLETest.java: Got majority: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Got majority: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: I am following
+src/java/test/org/apache/zookeeper/test/FLETest.java: I am leading
+src/java/test/org/apache/zookeeper/test/FLETest.java: I'm the leader: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Leader 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Leader 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Logical clock 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Logical clock: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Notified or expired: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Sleep failed 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Started threads 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Starting peer 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Starting peer 
+src/java/test/org/apache/zookeeper/test/FLETest.java: TestLE: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: The leader: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Thread 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Thread 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Threads didn't join: 
+src/java/test/org/apache/zookeeper/test/FLETest.java: Voting on 
+src/java/test/org/apache/zookeeper/test/FLETestUtils.java: Constructor: 
+src/java/test/org/apache/zookeeper/test/FLETestUtils.java: Finished election: 
+src/java/test/org/apache/zookeeper/test/FLETestUtils.java: Going to call leader election: 
+src/java/test/org/apache/zookeeper/test/FLETestUtils.java: Joining
+src/java/test/org/apache/zookeeper/test/FLEZeroWeightTest.java: Constructor: 
+src/java/test/org/apache/zookeeper/test/FLEZeroWeightTest.java: Finished election: 
+src/java/test/org/apache/zookeeper/test/FLEZeroWeightTest.java: Going to call leader election.
+src/java/test/org/apache/zookeeper/test/FLEZeroWeightTest.java: Started threads 
+src/java/test/org/apache/zookeeper/test/FLEZeroWeightTest.java: TestZeroWeightQuorum: 
+src/java/test/org/apache/zookeeper/test/FLEZeroWeightTest.java: Thread 
+src/java/test/org/apache/zookeeper/test/FLEZeroWeightTest.java: Thread 
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Connecting to follower:
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Connecting to follower:
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Connecting to follower:
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Connecting to follower:
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Did not aquire semaphore fast enough
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Did not aquire semaphore fast enough
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Follower doesn't contain ephemeral from leader 
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Restarted follower doesn't contain ephemeral 
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Setting up server: 
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Setting up server: 
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Shutting down s1
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: Shutting down s1
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: ignoring interrupt during event.put
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: mytestfooThread is still alive
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: mytestfooThread is still alive
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk1 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk1 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk1 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk1 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk2 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk2 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk2 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk3 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk3 has session id 0x
+src/java/test/org/apache/zookeeper/test/FollowerResyncConcurrencyTest.java: zk3 has session id 0x
+src/java/test/org/apache/zookeeper/test/FourLetterWordsQuorumTest.java: cmd 
+src/java/test/org/apache/zookeeper/test/FourLetterWordsTest.java: cmd 
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java:  is accepting client connections
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java:  is no longer accepting client connections
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: Closing ports 
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: Ports are: 
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: Setup finished
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: Shutting down server 1
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: Shutting down server 2
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: Shutting down server 3
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: Shutting down server 4
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: Shutting down server 5
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: TearDown started
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: creating QuorumPeer 1 port 
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: creating QuorumPeer 2 port 
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: creating QuorumPeer 3 port 
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: creating QuorumPeer 4 port 
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: creating QuorumPeer 5 port 
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: start QuorumPeer 1
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: start QuorumPeer 2
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: start QuorumPeer 3
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: start QuorumPeer 4
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: start QuorumPeer 5
+src/java/test/org/apache/zookeeper/test/HierarchicalQuorumTest.java: started QuorumPeer 5
+src/java/test/org/apache/zookeeper/test/IntegrityCheck.java: Creating znode 
+src/java/test/org/apache/zookeeper/test/IntegrityCheck.java: Creating znodes for 
+src/java/test/org/apache/zookeeper/test/IntegrityCheck.java: ERROR: Got 
+src/java/test/org/apache/zookeeper/test/IntegrityCheck.java: Staring read cycle for 
+src/java/test/org/apache/zookeeper/test/IntegrityCheck.java: Staring the test loop for 
+src/java/test/org/apache/zookeeper/test/IntegrityCheck.java: Staring write cycle for 
+src/java/test/org/apache/zookeeper/test/IntegrityCheck.java: Test loop terminated for 
+src/java/test/org/apache/zookeeper/test/InvalidSnapshotTest.java: Event:
+src/java/test/org/apache/zookeeper/test/InvalidSnapshotTest.java: starting up the zookeeper server .. waiting
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: JMXEnv.dump() follows
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: Unexpected, ignoring
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: Unexpected, ignoring
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: bean:
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: didntexpect:
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: ensureOnly:
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: expect:
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: found:
+src/java/test/org/apache/zookeeper/test/JMXEnv.java: unexpected:
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Constructor: 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Finished election: 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Found leader: my type is: 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: From 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Going to call leader election: 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Got a short response: 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Got bad xid: expected 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Ignoring exception while looking for leader
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: In MockServer
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Joining
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: OBSERVER elected as leader!
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Received 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Returning mocked leader election
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Server address: 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Socket exception when creating socket for leader election
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: TestNonTermination: 
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: Waiting for first round of voting to complete
+src/java/test/org/apache/zookeeper/test/LENonTerminateTest.java: exception
+src/java/test/org/apache/zookeeper/test/LETest.java: Leader 
+src/java/test/org/apache/zookeeper/test/LETest.java: Thread 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: (cverions, pzxid): 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: (cverions, pzxid): 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Attempting to create 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Attempting to create 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Attempting to create 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Attempting to create 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Attempting to delete 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Children: 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Children: 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Expected 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Intrrupted
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Intrrupted
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Intrrupted
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Received magic : 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Set lastProcessedZxid to 
+src/java/test/org/apache/zookeeper/test/LoadFromLogTest.java: Set lastProcessedZxid to 
+src/java/test/org/apache/zookeeper/test/MultiTransactionTest.java: ERROR RESULT: 
+src/java/test/org/apache/zookeeper/test/MultiTransactionTest.java: RESULT==> 
+src/java/test/org/apache/zookeeper/test/MultiTransactionTest.java: STACKTRACE: 
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Closing zk client
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Connection loss exception caught - ensemble not quorate (this is expected)
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Latch got event :: 
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Latch returned
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Restarting server 2
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Server 2 down
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Server 2 started, waiting for latch
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Shutting down all servers
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Shutting down server 2
+src/java/test/org/apache/zookeeper/test/ObserverTest.java: Waiting for server 2 to come up
+src/java/test/org/apache/zookeeper/test/QuorumBase.java:  is accepting client connections
+src/java/test/org/apache/zookeeper/test/QuorumBase.java:  is no longer accepting client connections
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: Checking ports 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: Initial fdcount is: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: No election available to shutdown 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: Ports are: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: QP interrupted: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: QuorumBase.setup 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: QuorumPeer 1 voting view: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: QuorumPeer 2 voting view: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: QuorumPeer 3 voting view: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: QuorumPeer 4 voting view: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: QuorumPeer 5 voting view: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: Setup finished
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: Shutting down leader election 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: Shutting down quorum peer 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: TearDown started
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: Waiting for 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 1 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 1 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 2 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 2 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 3 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 3 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 4 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 4 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 5 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: creating QuorumPeer 5 port 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: fdcount after test is: 
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: start QuorumPeer 1
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: start QuorumPeer 2
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: start QuorumPeer 3
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: start QuorumPeer 4
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: start QuorumPeer 5
+src/java/test/org/apache/zookeeper/test/QuorumBase.java: started QuorumPeer 5
+src/java/test/org/apache/zookeeper/test/QuorumTest.java:  Sync returned 
+src/java/test/org/apache/zookeeper/test/QuorumTest.java: Setting up server: 
+src/java/test/org/apache/zookeeper/test/QuorumTest.java: Shutting down s1
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java:  is accepting client connections
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java:  is no longer accepting client connections
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: Checking ports 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: Creating QuorumPeer 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: Creating QuorumPeer 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: Creating QuorumPeer 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: IOException during JMXEnv operation
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: No election available to shutdown 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: QP interrupted: 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: Shutting down leader election 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: Shutting down quorum peer 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: Started QuorumPeer 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: TearDown started
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: Waiting for 
+src/java/test/org/apache/zookeeper/test/QuorumUtil.java: fdcount after test is: 
+src/java/test/org/apache/zookeeper/test/RecoveryTest.java: Check 2
+src/java/test/org/apache/zookeeper/test/RecoveryTest.java: Checking 
+src/java/test/org/apache/zookeeper/test/RecoveryTest.java: Event:
+src/java/test/org/apache/zookeeper/test/RecoveryTest.java: starting creating nodes
+src/java/test/org/apache/zookeeper/test/RecoveryTest.java: starting up the the server, waiting
+src/java/test/org/apache/zookeeper/test/RestoreCommittedLogTest.java: committedLog size = 
+src/java/test/org/apache/zookeeper/test/SaslAuthFailDesignatedClientTest.java: Got exception as expected: 
+src/java/test/org/apache/zookeeper/test/SaslAuthFailTest.java: Got exception as expected: 
+src/java/test/org/apache/zookeeper/test/SaslAuthMissingClientConfigTest.java: Got exception as expected: 
+src/java/test/org/apache/zookeeper/test/SessionTest.java:  Sync returned 
+src/java/test/org/apache/zookeeper/test/SessionTest.java:  event:
+src/java/test/org/apache/zookeeper/test/SessionTest.java: After get data /e
+src/java/test/org/apache/zookeeper/test/SessionTest.java: Closed first session
+src/java/test/org/apache/zookeeper/test/SessionTest.java: Got connection loss exception as expected
+src/java/test/org/apache/zookeeper/test/SessionTest.java: Opened reuse
+src/java/test/org/apache/zookeeper/test/SessionTest.java: before close zk with session id 0x
+src/java/test/org/apache/zookeeper/test/SessionTest.java: zk with session id 0x
+src/java/test/org/apache/zookeeper/test/SessionTest.java: zk with session id 0x
+src/java/test/org/apache/zookeeper/test/SyncCallTest.java: Beginning test:
+src/java/test/org/apache/zookeeper/test/SyncCallTest.java: Starting ZK:
+src/java/test/org/apache/zookeeper/test/SyncCallTest.java: Submitted all operations:
+src/java/test/org/apache/zookeeper/test/TruncateTest.java: Error closing logs 
+src/java/test/org/apache/zookeeper/test/UpgradeTest.java: Event:
+src/java/test/org/apache/zookeeper/test/UpgradeTest.java: starting up the zookeeper server .. waiting
+src/java/test/org/apache/zookeeper/test/WatcherTest.java: bad
+src/java/test/org/apache/zookeeper/test/WatcherTest.java: ignoring interrupt during event.put
+src/java/test/org/apache/zookeeper/test/ZkDatabaseCorruptionTest.java:  is accepting client connections
+src/java/test/org/apache/zookeeper/test/ZkDatabaseCorruptionTest.java: Got an error: expected
+src/java/test/org/apache/zookeeper/test/ZkDatabaseCorruptionTest.java: STARTING quorum 
+src/java/test/org/apache/zookeeper/test/ZkDatabaseCorruptionTest.java: STOPPING quorum 
+src/java/test/org/apache/zookeeper/ZKTestCase.java: FAILED 
+src/java/test/org/apache/zookeeper/ZKTestCase.java: FINISHED 
+src/java/test/org/apache/zookeeper/ZKTestCase.java: STARTING 
+src/java/test/org/apache/zookeeper/ZKTestCase.java: SUCCEEDED 

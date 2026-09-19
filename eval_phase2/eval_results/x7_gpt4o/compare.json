@@ -1,0 +1,183 @@
+{
+  "protocol": {
+    "archived_fill": "DeepSeek-V3",
+    "new_fill": "GPT-4o get_log_simulate_v2",
+    "same_207_slots": false,
+    "unfilled_source": "output_v1/hadoop/merge_hdfs.json",
+    "n_gpt4o_methods": 95,
+    "n_gpt4o_ok": 95
+  },
+  "deepseek_drain_baseline_csv": {
+    "n_slots": 304,
+    "type_valid_true": 249,
+    "type_valid_false": 7,
+    "type_valid_none": 48,
+    "type_validity": 0.9727,
+    "n_decidable": 256,
+    "by_type": {
+      "generic": {
+        "n": 48,
+        "true": 0,
+        "false": 0,
+        "none": 48,
+        "rate": null
+      },
+      "int": {
+        "n": 51,
+        "true": 51,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      },
+      "ip_fragment": {
+        "n": 4,
+        "true": 2,
+        "false": 2,
+        "none": 0,
+        "rate": 0.5
+      },
+      "nodeid": {
+        "n": 138,
+        "true": 134,
+        "false": 4,
+        "none": 0,
+        "rate": 0.971
+      },
+      "path": {
+        "n": 41,
+        "true": 40,
+        "false": 1,
+        "none": 0,
+        "rate": 0.9756
+      },
+      "status": {
+        "n": 22,
+        "true": 22,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      }
+    }
+  },
+  "deepseek_paired_template_match": {
+    "n_slots": 325,
+    "type_valid_true": 270,
+    "type_valid_false": 4,
+    "type_valid_none": 51,
+    "type_validity": 0.9854,
+    "n_decidable": 274,
+    "by_type": {
+      "generic": {
+        "n": 51,
+        "true": 0,
+        "false": 0,
+        "none": 51,
+        "rate": null
+      },
+      "int": {
+        "n": 50,
+        "true": 50,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      },
+      "ip_fragment": {
+        "n": 8,
+        "true": 8,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      },
+      "nodeid": {
+        "n": 135,
+        "true": 134,
+        "false": 1,
+        "none": 0,
+        "rate": 0.9926
+      },
+      "path": {
+        "n": 42,
+        "true": 39,
+        "false": 3,
+        "none": 0,
+        "rate": 0.9286
+      },
+      "status": {
+        "n": 39,
+        "true": 39,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      }
+    },
+    "lines": {
+      "n_line": 285,
+      "n_matched": 189,
+      "n_methods": 111
+    },
+    "block_consistency": {
+      "n_sessions": 111,
+      "n_decidable": 11,
+      "n_pass": 9,
+      "n_fail": 2,
+      "rate": 0.8182
+    }
+  },
+  "gpt4o_template_match": {
+    "n_slots": 239,
+    "type_valid_true": 204,
+    "type_valid_false": 6,
+    "type_valid_none": 29,
+    "type_validity": 0.9714,
+    "n_decidable": 210,
+    "by_type": {
+      "generic": {
+        "n": 29,
+        "true": 0,
+        "false": 0,
+        "none": 29,
+        "rate": null
+      },
+      "int": {
+        "n": 54,
+        "true": 54,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      },
+      "nodeid": {
+        "n": 86,
+        "true": 83,
+        "false": 3,
+        "none": 0,
+        "rate": 0.9651
+      },
+      "path": {
+        "n": 53,
+        "true": 50,
+        "false": 3,
+        "none": 0,
+        "rate": 0.9434
+      },
+      "status": {
+        "n": 17,
+        "true": 17,
+        "false": 0,
+        "none": 0,
+        "rate": 1.0
+      }
+    },
+    "lines": {
+      "n_line": 291,
+      "n_matched": 154,
+      "n_ok_calls": 95
+    },
+    "block_consistency": {
+      "n_sessions": 95,
+      "n_decidable": 7,
+      "n_pass": 5,
+      "n_fail": 2,
+      "rate": 0.7143
+    }
+  }
+}

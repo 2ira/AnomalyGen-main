@@ -1,0 +1,1664 @@
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/AuthenticatedURL.java: Cannot parse cookie header, header = {}, reason = {} 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/AuthenticatedURL.java: Setting token value to null ({}), resp={}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/AuthenticatedURL.java: Setting token value to null ({}), resp={}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/KerberosAuthenticator.java: JDK performed authentication on our behalf.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/KerberosAuthenticator.java: No subject in context, logging in
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/KerberosAuthenticator.java: Performing our own SPNEGO sequence.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/KerberosAuthenticator.java: Unable to wrap exception of type {}, it has 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/KerberosAuthenticator.java: Using fallback authenticator sequence.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/client/KerberosAuthenticator.java: Using subject: 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java: Authentication exception: 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java: Authentication exception: 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java: AuthenticationToken ignored: 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java: Got token {} from httpRequest {}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java: Request [{}] triggering authentication. handler: {}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java: Request [{}] user [{}] authenticated
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java: Unable to initialize FileSignerSecretProvider, 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/AuthenticationFilter.java: managementOperation returned false for request {}.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java:  cookie has been found and is being processed
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: Audience validation failed.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: Error while validating signature
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: Expiration validation failed.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: Issuing AuthenticationToken for user.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT audience validation failed.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT expiration date validation failed.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT expiration date validation failed.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT signature verification failed.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT token audience has been successfully validated
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT token expiration date has been 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT token has been successfully verified
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT token is in a SIGNED state
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: JWT token signature is not null
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: Signature could not be verified
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: USERNAME: 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: Unable to parse the JWT token
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: Unable to parse the JWT token.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: jwtToken failed validation: 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: sending redirect to: 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/JWTRedirectAuthenticationHandler.java: token validation failed - sending redirect to: 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler.java: '
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler.java: SPNEGO completed for client principal [{}]
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler.java: SPNEGO in progress
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler.java: SPNEGO initiated with server principal [{}]
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler.java: SPNEGO starting for url: {}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/KerberosAuthenticationHandler.java: Using keytab {}, for principal {}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/LdapAuthenticationHandler.java: '
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/LdapAuthenticationHandler.java: Authentication successful for {}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/LdapAuthenticationHandler.java: Authentication successful for {}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/LdapAuthenticationHandler.java: Basic auth starting
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/MultiSchemeAuthenticationHandler.java: Failed to initialize authentication handler 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/MultiSchemeAuthenticationHandler.java: Initializing Authentication handler of type 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/MultiSchemeAuthenticationHandler.java: Successfully initialized Authentication handler of type 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/MultiSchemeAuthenticationHandler.java: Successfully initialized MultiSchemeAuthenticationHandler
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/MultiSchemeAuthenticationHandler.java: Token generated with type {}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/server/MultiSchemeAuthenticationHandler.java: {} : {}
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/KerberosName.java: Kerberos krb5 configuration not found, setting default realm to empty
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/KerberosName.java: auth_to_local rule mechanism not set.
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/KerberosName.java: resetting default realm failed, 
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/RolloverSignerSecretProvider.java: rolling secret
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider.java: An unexpected exception occurred pushing data to ZooKeeper
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider.java: An unexpected exception occurred while pulling data from
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider.java: Connecting to ZooKeeper with SASL/Kerberos
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider.java: Connecting to ZooKeeper without authentication
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider.java: Creating secret znode
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider.java: The secret znode already exists, retrieving data
+hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/ZKSignerSecretProvider.java: Unable to push to znode; another server already did it
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java:  not found
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java:  not found
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: :an attempt to override final parameter: 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: Could not make 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: DEPRECATED: hadoop-site.xml found in the classpath. 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: Error adding tags in configuration
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: Handling deprecation for 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: Handling deprecation for all properties in config...
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: Regular expression '
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: Reloading 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: Tag '{}' for property:{} Source:{}
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: Unexpected SecurityException in Configuration
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: [
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: error parsing conf 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: error parsing conf 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: found resource 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: found resource 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: parsing File 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: parsing URL 
+hadoop-common/src/main/java/org/apache/hadoop/conf/Configuration.java: parsing input stream 
+hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigurationWithLogging.java: Got {} = '{}'
+hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigurationWithLogging.java: Got {} = '{}' (default '{}')
+hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigurationWithLogging.java: Got {} = '{}' (default '{}')
+hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigurationWithLogging.java: Got {} = '{}' (default '{}')
+hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigurationWithLogging.java: Got {} = '{}' (default '{}')
+hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigurationWithLogging.java: Got {} = '{}' (default '{}')
+hadoop-common/src/main/java/org/apache/hadoop/conf/ConfigurationWithLogging.java: Set {} to '{}'{}
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurableBase.java: Change property: 
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurableBase.java: Property %s is not configurable: old value: %s, new value: %s
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurableBase.java: Starting reconfiguration task.
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurableBase.java: changing property 
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurationServlet.java: GET
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurationServlet.java: POST
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurationServlet.java: getting attribute: 
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurationServlet.java: property 
+hadoop-common/src/main/java/org/apache/hadoop/conf/ReconfigurationServlet.java: servlet path: 
+hadoop-common/src/main/java/org/apache/hadoop/crypto/CryptoCodec.java: Class {} is not a CryptoCodec.
+hadoop-common/src/main/java/org/apache/hadoop/crypto/CryptoCodec.java: Crypto codec {} doesn't meet the cipher suite {}.
+hadoop-common/src/main/java/org/apache/hadoop/crypto/CryptoCodec.java: Crypto codec {} is not available.
+hadoop-common/src/main/java/org/apache/hadoop/crypto/CryptoCodec.java: Crypto codec {} not found.
+hadoop-common/src/main/java/org/apache/hadoop/crypto/CryptoCodec.java: No crypto codec classes with cipher suite configured.
+hadoop-common/src/main/java/org/apache/hadoop/crypto/CryptoCodec.java: Using crypto codec {}.
+hadoop-common/src/main/java/org/apache/hadoop/crypto/CryptoStreamUtils.java: Failed to free the buffer
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/JavaKeyStoreProvider.java: Could not flush Keystore..
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/JavaKeyStoreProvider.java: Could not reset Keystore to previous state
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/JavaKeyStoreProvider.java: KeyStore initialized anew successfully !!
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/JavaKeyStoreProvider.java: KeyStore loaded successfully !!
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/JavaKeyStoreProvider.java: KeyStore loaded successfully from '%s' since '%s'
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/JavaKeyStoreProvider.java: KeyStore loaded successfully from '%s'!!
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/JavaKeyStoreProvider.java: KeyStore resetting to previously flushed state !!
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Canceling delegation token {}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Cancelling delegation token {} with url:{}, as:{}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Creating key provider with token service value {}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Failed to connect to {}:{}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Getting new token from {}, renewer:{}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: KMSClientProvider created for KMS url: {} delegation token 
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Looking for delegation token. creds: {}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: New token created: ({})
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Renewing delegation token {}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Renewing delegation token {} with url:{}, as:{}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Response={}({}), resetting authToken
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Searching for KMS delegation token in user {}'s credentials
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: Using loginUser when Kerberos is enabled but the actual user
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: selected by alias={} token={}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/KMSClientProvider.java: selected by service={} token={}
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/LoadBalancingKMSClientProvider.java: Aborting since the Request has failed with all KMS
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/LoadBalancingKMSClientProvider.java: Created LoadBalancingKMSClientProvider for KMS url: {} with {} 
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/LoadBalancingKMSClientProvider.java: Error closing provider with url
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/LoadBalancingKMSClientProvider.java: Error flushing provider with url
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/LoadBalancingKMSClientProvider.java: Error warming up keys for provider with url
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/LoadBalancingKMSClientProvider.java: KMS provider at [{}] threw an IOException: 
+hadoop-common/src/main/java/org/apache/hadoop/crypto/key/kms/LoadBalancingKMSClientProvider.java: New token service set. Token: ({})
+hadoop-common/src/main/java/org/apache/hadoop/crypto/OpensslAesCtrCryptoCodec.java: Unable to use 
+hadoop-common/src/main/java/org/apache/hadoop/crypto/OpensslAesCtrCryptoCodec.java: Using 
+hadoop-common/src/main/java/org/apache/hadoop/crypto/OpensslCipher.java: Build does not support openssl
+hadoop-common/src/main/java/org/apache/hadoop/crypto/OpensslCipher.java: Failed to load OpenSSL Cipher.
+hadoop-common/src/main/java/org/apache/hadoop/crypto/random/OpensslSecureRandom.java: Build does not support openssl, 
+hadoop-common/src/main/java/org/apache/hadoop/crypto/random/OpensslSecureRandom.java: Failed to load Openssl SecureRandom
+hadoop-common/src/main/java/org/apache/hadoop/fs/AbstractFileSystem.java: Unable to get user name. Fall back to system property 
+hadoop-common/src/main/java/org/apache/hadoop/fs/audit/CommonAuditContext.java: Adding context entry {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/audit/CommonAuditContext.java: Remove context entry {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/CachingGetSpaceUsed.java: Thread Interrupted waiting to refresh disk information: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/ChecksumFileSystem.java: Problem opening checksum file: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/ChecksumFs.java: Problem opening checksum file: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/DelegationTokenRenewer.java: Exception in removeRenewAction: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/DelegationTokenRenewer.java: Failed to renew token, action=
+hadoop-common/src/main/java/org/apache/hadoop/fs/DelegationTokenRenewer.java: Failed to reset renewer
+hadoop-common/src/main/java/org/apache/hadoop/fs/DelegationTokenRenewer.java: Interrupted while canceling token for 
+hadoop-common/src/main/java/org/apache/hadoop/fs/DelegationTokenRenewer.java: does not have a token for renewal
+hadoop-common/src/main/java/org/apache/hadoop/fs/DU.java: Could not get disk usage information for path {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileContext.java: Exception in getCurrentUser: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileContext.java: Ignoring failure to deleteOnExit for path 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: "
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: "local" is a deprecated filesystem name.
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Bypassing cache to create filesystem {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Cannot get all trash roots
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Cannot load filesystem: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Cannot load: {} from {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Cleaner thread interrupted, will stop
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Directory {} deleted while attempting for recursive listing
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Duplicate FS created for {}; discarding {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Exception in the cleaner thread but it will
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: FS for {} is {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Failed to initialize filesystem
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Failed to initialize filesystem {}: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: FileSystem.Cache.closeAll() threw an exception:
+
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: FileSystem.{}() by method: {}); {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: FileSystem.{}() full stack trace:
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Filesystem {} created while awaiting semaphore
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Filesystem {} defined in configuration option
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Full exception loading: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Ignoring failure to deleteOnExit for path {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Loading filesystems
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Looking for FS supporting {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Looking in service filesystems for implementation class
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: No configuration: skipping check for fs.{}.impl
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Stack Trace
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Unable to get user name. Fall back to system property 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: looking for configuration option {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: {}:// = {} from {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Can not create a symLink with a target = 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Can not read a null symLink
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Command '
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Could not compare file-systems. Unknown host: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Could not set last modfied time for {} file(s)
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Error while changing permission : 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Error while create symlink 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Fail to create symbolic links on Windows. 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: Failed to delete file or dir [
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: executing [{}]
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: mkdirs false for 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FileUtil.java: null file argument.
+hadoop-common/src/main/java/org/apache/hadoop/fs/FSInputChecker.java: Found checksum error: b[
+hadoop-common/src/main/java/org/apache/hadoop/fs/FSInputStream.java: Downgrading EOFException raised trying to
+hadoop-common/src/main/java/org/apache/hadoop/fs/FsShell.java: Error
+hadoop-common/src/main/java/org/apache/hadoop/fs/FsShellPermissions.java: Error changing ownership of 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FsShellPermissions.java: Error changing permissions of 
+hadoop-common/src/main/java/org/apache/hadoop/fs/FsUrlConnection.java: Connecting to {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FsUrlStreamHandlerFactory.java: Creating handler for protocol {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FsUrlStreamHandlerFactory.java: Found implementation of {}: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/FsUrlStreamHandlerFactory.java: Unknown protocol {}, delegating to default implementation
+hadoop-common/src/main/java/org/apache/hadoop/fs/FsUrlStreamHandlerFactory.java: Using handler for protocol {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/ftp/FTPFileSystem.java: Cannot parse the value for 
+hadoop-common/src/main/java/org/apache/hadoop/fs/ftp/FTPFileSystem.java: Cannot parse the value for 
+hadoop-common/src/main/java/org/apache/hadoop/fs/ftp/FTPFileSystem.java: Logout failed while disconnecting, error code - 
+hadoop-common/src/main/java/org/apache/hadoop/fs/GetSpaceUsed.java: Doesn't look like the class 
+hadoop-common/src/main/java/org/apache/hadoop/fs/GetSpaceUsed.java: Error trying to create 
+hadoop-common/src/main/java/org/apache/hadoop/fs/GetSpaceUsed.java: Error trying to create 
+hadoop-common/src/main/java/org/apache/hadoop/fs/GetSpaceUsed.java: Error trying to create an instance of 
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: Component {}, patterned={}
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: Created Globber for path={}, symlinks={}
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: Created Globber path={}, symlinks={}
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: File/directory {} not found:
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: Filesystem glob {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: No matches found and there was no wildcard in the path {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: Pattern: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: Resolved entry is a file; skipping: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: getFileStatus({}) failed; returning null
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: listStatus found one entry; disambiguating {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/Globber.java: listStatus({}) failed; returning empty array
+hadoop-common/src/main/java/org/apache/hadoop/fs/HarFileSystem.java: Encountered exception 
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/FSBuilderSupport.java: The option {} has a negative value {}, replacing with the default {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/FSBuilderSupport.java: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/BlockOperations.java: Start op not found: {}({})
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/BufferPool.java: releasing 'ready' block: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/BufferPool.java: state = {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/BufferPool.java: waiting to acquire block: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: error adding block to cache after wait: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: error adding block to cache after wait: {}. {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: error prefetching block {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: error prefetching block {}. {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: error reading block {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: error waiting on blockFuture: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: error waiting on blockFuture: {}. {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: state = {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/CachingBlockManager.java: waiting to get block: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/SingleFilePerBlockCache.java: Cache file {} deletion would not be attempted as write lock could not
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/SingleFilePerBlockCache.java: Deleted {} cache files
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/SingleFilePerBlockCache.java: Failed to delete cache file {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/SingleFilePerBlockCache.java: Thread interrupted while trying to acquire {} lock
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/SingleFilePerBlockCache.java: fileSize = {}, freeSpace = {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/impl/prefetch/SingleFilePerBlockCache.java: isCacheSpaceAvailable
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalDirAllocator.java:  is not writable
+
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalDirAllocator.java: Disk Error Exception: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalDirAllocator.java: DiskException caught for dir {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalDirAllocator.java: Failed to create 
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalDirAllocator.java: Failed to create 
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalDirAllocator.java: mkdirs of {}={}
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalFileSystem.java: Error moving bad file 
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalFileSystem.java: Ignoring failure of renameTo
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalFileSystem.java: Ignoring failure of renameTo
+hadoop-common/src/main/java/org/apache/hadoop/fs/LocalFileSystem.java: Moving bad file 
+hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java: Deleting empty destination and renaming 
+hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java: Exception occurred during vectored read 
+hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java: Failed while reading range 
+hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java: Falling through to a copy of 
+hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java: Native call failed
+hadoop-common/src/main/java/org/apache/hadoop/fs/RawLocalFileSystem.java: NativeIO.createDirectoryWithMode error, path = %s, mode = %o
+hadoop-common/src/main/java/org/apache/hadoop/fs/sftp/SFTPConnectionPool.java: Error encountered while closing connection to 
+hadoop-common/src/main/java/org/apache/hadoop/fs/sftp/SFTPConnectionPool.java: Inside shutdown, con2infoMap size=
+hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Command.java: {} failure
+hadoop-common/src/main/java/org/apache/hadoop/fs/shell/CommandWithDestination.java: Destination file exists: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsContextImpl.java: Taking snapshot of IOStatisticsContext id {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsContextImpl.java: clearing IOStatisticsContext id {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsContextIntegration.java: Created instance {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsContextIntegration.java: Enabling Thread IOStatistics..
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsContextIntegration.java: IOStatsContext thread ID required: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsContextIntegration.java: Reference lost for threadID for the context: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsStoreImpl.java: Ignoring counter increment for unknown counter {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsStoreImpl.java: Ignoring negative increment value {} for counter {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsStoreImpl.java: Incrementing counter {} by {} with final value {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/impl/IOStatisticsStoreImpl.java: Setting counter {} to {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/IOStatisticsLogging.java: IOStatistics: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/IOStatisticsLogging.java: IOStatistics: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/IOStatisticsLogging.java: IOStatistics: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/statistics/IOStatisticsLogging.java: Ignoring
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Block[{}]: Buffer file {} exists âclose upload stream
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Block[{}]: Deleting buffer file as upload did not start
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: ByteBufferInputStream.close() for {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Closed {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Closing {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Creating ByteBufferInputStream of size {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Creating DataFactory of type : {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: File deleted in BlockUploadData close: {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Releasing buffer
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Requesting buffer of size {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: Start datablock[{}] upload
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: block[{}]: closeBlock()
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: block[{}]: skipping re-entrant closeBlock()
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: delete({}) returned false
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: mark at {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: reset
+hadoop-common/src/main/java/org/apache/hadoop/fs/store/DataBlocks.java: {}: entering state {}
+hadoop-common/src/main/java/org/apache/hadoop/fs/StreamCapabilitiesPolicy.java: :
+hadoop-common/src/main/java/org/apache/hadoop/fs/Trash.java: Failed to get server trash configuration
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Can't create trash directory: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Can't create(mkdir) trash directory: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Couldn't delete checkpoint: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Created trash checkpoint: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Deleted trash checkpoint: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Invalid value {} for deletion interval,
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Moved: '
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Namenode trash configuration: Deletion interval = 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: RuntimeException during Trash.Emptier.run(): 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: The configured checkpoint interval is 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Trash cannot close FileSystem: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Trash caught: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: TrashPolicyDefault#createCheckpoint for trashRoot: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: TrashPolicyDefault#deleteCheckpoint for trashRoot: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: TrashPolicyDefault#deleteCheckpoint for trashRoot: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/TrashPolicyDefault.java: Unexpected item in trash: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/HCFSMountTableConfigLoader.java: Invalid file name format for mount-table version file: {}. 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/HCFSMountTableConfigLoader.java: Loading the mount-table {} into configuration.
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/HCFSMountTableConfigLoader.java: No valid mount-table file exist at: {}. At least one 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/InodeTree.java: Add regex mount point:
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/InodeTree.java: Got Exception while build resolve result.
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/InodeTree.java: Not able to initialize target file system.
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/NflyFSystem.java: : Failed to open at 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/NflyFSystem.java: Exceptions occurred: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/NflyFSystem.java: Failed to set timestamp: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/RegexMountPoint.java: Path to resolve:
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/RegexMountPoint.java: parsedDestPath value is:
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystem.java: Cannot get one of the children's(
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystem.java: Could not add child filesystems for source path 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystem.java: Could not initialize the underlying FileSystem 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystem.java: Exception in get all trash roots for mount points
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystem.java: Fail closing ViewFileSystem's child filesystem 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystemOverloadScheme.java: Could not get fallback filesystem 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystemOverloadScheme.java: Initializing the ViewFileSystemOverloadScheme with the uri: 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystemOverloadScheme.java: Missing configuration for fs.viewfs.mounttable.path. Proceeding
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystemOverloadScheme.java: The file system initialized uri scheme is matching with the 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFileSystemOverloadScheme.java: The file system initialized uri scheme is matching with the 
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFs.java: Cannot get one of the children's(
+hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/ViewFs.java: Could not initialize underlying FileSystem object
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Already in election. Not re-connecting.
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Attempting active election for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Becoming active for {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Becoming standby for {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: But old node has our own data, so don't need to fence it.
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Checking for any old active which needs to be fenced...
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Connection timed out: couldn't connect to ZooKeeper in 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: CreateNode result: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Created new connection for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Deleting bread-crumb of active node...
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Ensuring existence of 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Entering neutral mode for {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Establishing zookeeper connection for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Event received with stale zk
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Exception handling the winning of election
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Ignore duplicate monitor lock-node request.
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Ignoring stale result from old client with sessionId {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Lock acquisition failed because session was lost
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Lock monitoring failed because session was lost
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Monitoring active leader for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: No old node to fence
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Not joining election since service has not yet been 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Old node exists: {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Recursively deleting 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Retrying createNode createRetryCount: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Session connected.
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Session disconnected. Entering neutral mode...
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Session expired. Entering neutral mode and rejoining...
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: StatNode result: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Successfully authenticated to ZooKeeper using SASL.
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Successfully created 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Successfully deleted 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Terminating ZK connection for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Trying to re-establish ZK session
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Unable to delete our own bread-crumb of being active at {}.
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Unexpected node event: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Watcher event type: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Writing znode {} to indicate that the local 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ActiveStandbyElector.java: Yielding from election
+hadoop-common/src/main/java/org/apache/hadoop/ha/FailoverController.java: Service is not ready to become active, but forcing: {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/FailoverController.java: Unable to gracefully make {} standby (unable to connect)
+hadoop-common/src/main/java/org/apache/hadoop/ha/FailoverController.java: Unable to gracefully make {} standby ({})
+hadoop-common/src/main/java/org/apache/hadoop/ha/FailoverController.java: Unable to make {} active (unable to connect). Failing back.
+hadoop-common/src/main/java/org/apache/hadoop/ha/FailoverController.java: Unable to make {} active ({}). Failing back.
+hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java: Aborted
+hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java: Operation failed
+hadoop-common/src/main/java/org/apache/hadoop/ha/HAAdmin.java: Proceeding with manual HA state management even though
+
+hadoop-common/src/main/java/org/apache/hadoop/ha/HealthMonitor.java: Could not connect to local service at 
+hadoop-common/src/main/java/org/apache/hadoop/ha/HealthMonitor.java: Entering state {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/HealthMonitor.java: Health monitor failed
+hadoop-common/src/main/java/org/apache/hadoop/ha/HealthMonitor.java: Service health check failed for {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/HealthMonitor.java: Stopping HealthMonitor thread
+hadoop-common/src/main/java/org/apache/hadoop/ha/HealthMonitor.java: Transport-level exception trying to monitor health of {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/NodeFencer.java: ====== Beginning Service Fencing Process... ======
+hadoop-common/src/main/java/org/apache/hadoop/ha/NodeFencer.java: ====== Fencing on target failed, skipping fencing 
+hadoop-common/src/main/java/org/apache/hadoop/ha/NodeFencer.java: ====== Fencing successful by method 
+hadoop-common/src/main/java/org/apache/hadoop/ha/NodeFencer.java: Fencing method 
+hadoop-common/src/main/java/org/apache/hadoop/ha/NodeFencer.java: Fencing method 
+hadoop-common/src/main/java/org/apache/hadoop/ha/NodeFencer.java: Fencing method 
+hadoop-common/src/main/java/org/apache/hadoop/ha/NodeFencer.java: Trying method 
+hadoop-common/src/main/java/org/apache/hadoop/ha/NodeFencer.java: Unable to fence service by any configured method.
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: Building PowerShell script to kill 
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: Cannot build PowerShell script
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: Cannot close PowerShell script
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: Cannot create PowerShell script
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: Executing 
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: Interrupted while waiting for fencing command: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: PowerShell command: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: The parameter for the PowerShell fencer is 
+hadoop-common/src/main/java/org/apache/hadoop/ha/PowerShellFencer.java: Unable to execute 
+hadoop-common/src/main/java/org/apache/hadoop/ha/protocolPB/HAServiceProtocolServerSideTranslatorPB.java: Unknown request source: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ShellCommandFencer.java: Interrupted while waiting for fencing command: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ShellCommandFencer.java: Launched fencing command '
+hadoop-common/src/main/java/org/apache/hadoop/ha/ShellCommandFencer.java: Unable to determine pid for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ShellCommandFencer.java: Unable to determine pid for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ShellCommandFencer.java: Unable to execute 
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Connected to 
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Connecting to 
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Couldn't disconnect ssh channel
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Indeterminate response from trying to kill service. 
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Interrupted while trying to fence via ssh
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Looking for process running on port 
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Running cmd: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Successfully killed process that was 
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Unable to achieve fencing on remote host
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Unable to connect to 
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Unable to create SSH session
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Unable to fence - it is running but we cannot kill it
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Unknown failure while trying to fence via ssh
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: Verified that the service is down.
+hadoop-common/src/main/java/org/apache/hadoop/ha/SshFenceByTcpPort.java: rc: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/StreamPumper.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/ha/StreamPumper.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/ha/StreamPumper.java: : Unable to pump output from 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Asking 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Automatic failover is not enabled for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Couldn't fence old active 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Couldn't transition 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Ensuring that 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Failed to confirm
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Fatal error occurred:
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Fencing is not configured for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Local node 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Local service 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Local service 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: No filesystem found for the hdfs scheme
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Quitting election but indicating that fencing is 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Quitting master election for 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Requested by 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Should fence: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Successfully became active. 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Successfully ensured local node is in standby mode
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Successfully transitioned 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Successfully transitioned 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: The failover controller encounters runtime error
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: The failover controller encounters runtime error: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Trying to make 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Unable to clear zk parent znode
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Unable to start failover controller. 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Unable to start failover controller. Unable to connect 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Unable to transition local node to standby: 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: Would have joined master election, but this node is 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: ZK Election indicated that 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: ZKFC RpcServer binding to {}
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: ms timeout elapsed waiting for an attempt 
+hadoop-common/src/main/java/org/apache/hadoop/ha/ZKFailoverController.java: rechecking for electability from bad state
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java: Could not load Log4JLogger class
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java: Http request log for {} could not be created
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java: Http request log for {} is not defined
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java: Jetty request log can only be enabled using Log4j
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java: Jetty request log for {} was of the wrong class
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Added filter 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Added filter 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Added global filter '
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Enabled protocols: {}
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Error while canceling configuration monitoring timer for webapp
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Error while stopping listener for webapp
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Error while stopping web app context for webapp 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Error while stopping web server for webapp 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Excluded Cipher List:
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Failed to reload SSL keystore 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Found existing 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Found existing 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: HttpServer.start() threw a MultiException
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: HttpServer.start() threw a non Bind IOException
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Jetty bound to port 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Reloading keystore and truststore certificates.
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Removed {} from exclude protocol list
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Reset exclude protocol list: {}
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: User 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: Web server is in development mode. Resources 
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: addJerseyResourcePackage: packageName=
+hadoop-common/src/main/java/org/apache/hadoop/http/HttpServer2.java: opening listeners: {}
+hadoop-common/src/main/java/org/apache/hadoop/http/lib/StaticUserWebFilter.java:  should not be used. Instead, use 
+hadoop-common/src/main/java/org/apache/hadoop/io/BloomMapFile.java: Can't open BloomFilter: 
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/bzip2/Bzip2Compressor.java: Reinit compressor with new compression configuration
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/bzip2/Bzip2Factory.java: Failed to load/initialize native-bzip2 library 
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/bzip2/Bzip2Factory.java: Successfully loaded & initialized native-bzip2 library 
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/bzip2/Bzip2Factory.java: Using pure-Java version of bzip2 library
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/CodecPool.java: Got brand-new compressor [
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/CodecPool.java: Got brand-new decompressor [
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/CodecPool.java: Got recycled compressor
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/CodecPool.java: Got recycled decompressor
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/PassthroughCodec.java: Registering fake codec for extension {}
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/zlib/BuiltInZlibDeflater.java:  not supported by BuiltInZlibDeflater.
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/zlib/BuiltInZlibDeflater.java: Reinit compressor with new compression configuration
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/zlib/ZlibCompressor.java: Reinit compressor with new compression configuration
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/zlib/ZlibFactory.java: Failed to load/initialize native-zlib library
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/zlib/ZlibFactory.java: Successfully loaded & initialized native-zlib library
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/zstd/ZStandardCompressor.java: Error loading zstandard native libraries: 
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/zstd/ZStandardCompressor.java: Reinit compressor with new compression configuration
+hadoop-common/src/main/java/org/apache/hadoop/io/compress/zstd/ZStandardDecompressor.java: Error loading zstandard native libraries: 
+hadoop-common/src/main/java/org/apache/hadoop/io/erasurecode/CodecRegistry.java: Codec registered: codec = {}, coder = {}
+hadoop-common/src/main/java/org/apache/hadoop/io/erasurecode/CodecRegistry.java: Codec registered: codec = {}, coder = {}
+hadoop-common/src/main/java/org/apache/hadoop/io/erasurecode/CodecRegistry.java: Coder {} cannot be registered because its coder name 
+hadoop-common/src/main/java/org/apache/hadoop/io/erasurecode/CodecUtil.java: Failed to create raw erasure decoder 
+hadoop-common/src/main/java/org/apache/hadoop/io/erasurecode/CodecUtil.java: Failed to create raw erasure encoder 
+hadoop-common/src/main/java/org/apache/hadoop/io/erasurecode/ErasureCodeNative.java: ISA-L support is not available in your platform... 
+hadoop-common/src/main/java/org/apache/hadoop/io/erasurecode/rawcoder/AbstractNativeRawDecoder.java: convertToByteBufferState is invoked, 
+hadoop-common/src/main/java/org/apache/hadoop/io/erasurecode/rawcoder/AbstractNativeRawEncoder.java: convertToByteBufferState is invoked, 
+hadoop-common/src/main/java/org/apache/hadoop/io/FastByteComparisons.java: Lexicographical comparer selected
+hadoop-common/src/main/java/org/apache/hadoop/io/FastByteComparisons.java: Lexicographical comparer selected for 
+hadoop-common/src/main/java/org/apache/hadoop/io/FastByteComparisons.java: Unsafe comparer selected for 
+hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/Compression.java: Compressor obtained from CodecPool already finished()
+hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/Compression.java: Deompressor obtained from CodecPool already finished()
+hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/Compression.java: Got a compressor: 
+hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/Compression.java: Got a decompressor: 
+hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/Compression.java: Return a compressor: 
+hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/Compression.java: Returned a decompressor: 
+hadoop-common/src/main/java/org/apache/hadoop/io/file/tfile/Compression.java: Trying to load Lzo codec class: 
+hadoop-common/src/main/java/org/apache/hadoop/io/IOUtils.java: Exception in closing 
+hadoop-common/src/main/java/org/apache/hadoop/io/IOUtils.java: Exception in closing {}
+hadoop-common/src/main/java/org/apache/hadoop/io/IOUtils.java: Ignoring exception while closing socket
+hadoop-common/src/main/java/org/apache/hadoop/io/MapFile.java: Unexpected EOF reading 
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Failed to unmap the buffer
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Got 
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Got UserName 
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Initialized cache for IDs to User/Group mapping with a 
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Initialized cache for UID to User mapping with a cache
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: NativeIO.chmod error (%d): %s
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: NativeIO.getFstat error (%d): %s
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: NativeIO.getStat error ({}): {} -- file path: {}
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: The state code: 
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Unable to get operating system page size.  Guessing 4096.
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Unable to initialize NativeIO libraries
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Unable to initialize NativeIO libraries
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: Unable to initialize NativeIO libraries
+hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java: mlocking 
+hadoop-common/src/main/java/org/apache/hadoop/io/ReadaheadPool.java: Failed readahead on 
+hadoop-common/src/main/java/org/apache/hadoop/io/ReadaheadPool.java: submit readahead: 
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: #{} invoke: ASYNC_INVOKED
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: #{} invoke: initAsyncCall
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: #{} invoke: lowerLayerAsyncGet.isDone()? {}
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: #{} processRetryInfo: waitTime={}
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: #{}: {}
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: Killing 
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: Starting AsyncCallQueue.Processor 
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: add 
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/AsyncCallHandler.java: {}.invoke {}
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/LossyRetryInvocationHandler.java: Drop the response. Current retryCount == 
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/LossyRetryInvocationHandler.java: retryCount == 
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryInvocationHandler.java: #{} processRetryInfo: retryInfo={}, waitTime={}
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryInvocationHandler.java: A failover has occurred since the start of call #
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryInvocationHandler.java: Exception while invoking call #
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryInvocationHandler.java: Interrupted while waiting to retry
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java: Failed to parse "
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java: Illegal value: the number of elements in "
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java: Illegal value: there is no element in "
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java: The value 
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryUtils.java: RETRY {}) policy={}
+hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryUtils.java: multipleLinearRandomRetry = {}
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:  is a zero-length value
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java:  is a zero-length value
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java: Bad checksum at 
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java: MetaData Option is ignored during append
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java: available bytes: 
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java: available bytes: 
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java: flushing segment 
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java: running merge pass
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java: running sort pass
+hadoop-common/src/main/java/org/apache/hadoop/io/SequenceFile.java: writing intermediate results to 
+hadoop-common/src/main/java/org/apache/hadoop/io/serializer/SerializationFactory.java: Serialization class not found: 
+hadoop-common/src/main/java/org/apache/hadoop/io/UTF8.java: truncating long string: 
+hadoop-common/src/main/java/org/apache/hadoop/io/UTF8.java: truncating long string: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/CallQueueManager.java: .
+hadoop-common/src/main/java/org/apache/hadoop/ipc/CallQueueManager.java: Old Queue: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/CallQueueManager.java: Using callQueue: {}, queueCapacity: {}, 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java:  got value #
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: : closed
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: : starting, having connections 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: : stopped, remaining connections 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: A connection is closed for no cause and calls are not empty
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Address change detected. Old: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Auth method is not set, yield from setting auth fallback.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Binding {} to {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Connecting to 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Connection {} will skip to set fallbackToSimpleAuth as it is null.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Detailed error code not set by server on rpc error
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Disabling fallbackToSimpleAuth, target does not use SIMPLE authentication.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Enabling fallbackToSimpleAuth for target, as we are allowed to fall back.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Exception encountered while connecting to the server {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Exception encountered while connecting to the server {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Exception encountered while connecting to the server {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Exception when handle ConnectionFailure: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Failed to connect to server: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Interrupted while trying for connection
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Interrupted while waiting on all connections to be closed.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Interrupted while waiting to retrieve RPC response.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Negotiated QOP is :
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Not able to close a socket
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Retrying connect to server: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Retrying connect to server: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Setup connection to 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Stopping client
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: The connection is not in the closed state
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: The ping interval is 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: Unexpected error reading responses on connection 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: closing ipc connection to 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Client.java: {} sending #{} {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ClientCache.java: getting client out of cache: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ClientCache.java: removing client from cache: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ClientCache.java: stopping actual client because no more references remain: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ClientCache.java: stopping client from cache: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java:  is deprecated. Please use 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java:  is deprecated. Please use 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java:  is deprecated. Please use 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: After decaying the stored costs, totalDecayedCost: {}, 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: Cache priority for: {} with priority: {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: CostProvider not specified, defaulting to DefaultCostProvider
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: Current Caller: {}  Priority: {} 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: Decaying costs for the user: {}, its decayedCost: {}, rawCost: {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: Exception thrown while metric collection. Exception : 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: Found multiple CostProviders; using: {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: IdentityProvider not specified, 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: Queue: {} responseTime: {} backoffThreshold: {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: Setting priority for user:
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: Start to decay current costs.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: The decayed cost for the user {} is zero 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: addResponseTime for call: {}  priority: {} queueTime: {} 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: compute priority for {} priority {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: decayCurrentCosts exception: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/DecayRpcScheduler.java: updateAverageResponseTime queue: {} Average: {} Count: {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/FairCallQueue.java: FairCallQueue is in use with 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/metrics/DecayRpcSchedulerDetailedMetrics.java: Initializing RPC stats for {} priority levels
+hadoop-common/src/main/java/org/apache/hadoop/ipc/metrics/RetryCacheMetrics.java: Initialized 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/metrics/RpcMetrics.java: Config key {} 's value {} does not correspond to enum values
+hadoop-common/src/main/java/org/apache/hadoop/ipc/metrics/RpcMetrics.java: Initialized 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine.java: : Call -> 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine.java: : Exception <- 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine.java: : Response <- 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine.java: Call: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine2.java: : Call -> 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine2.java: : Exception <- 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine2.java: : Response <- 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine2.java: Call: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProtobufRpcEngine2.java: Call: connectionProtocolName=
+hadoop-common/src/main/java/org/apache/hadoop/ipc/ProxyCombiner.java: BUG: Method {} was unable to be found on any of the 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RefreshRegistry.java:  responds to '
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RetryCache.java: Adding Rpc request clientId 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: Closing proxy or invocation handler caused exception
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: Failed to set scheduling priority for 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: Interface 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: No route to host for server: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: Problem connecting to server: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: Protocol 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: RPC.stopProxy called on non proxy: class=
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: RpcKind = 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: Server at 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/RPC.java: Size of protoMap for 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java:  authentication enabled for secret manager
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java:  caught an exception
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java:  got #
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java:  unexpectedly interrupted
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java:  unexpectedly interrupted
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: , call 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : connection aborted from 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : connection aborted from 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : disconnecting client 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : doAsyncWrite threw exception 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : exiting
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : processOneRpc from client 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : readAndProcess caught InterruptedException
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : readAndProcess from client 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : responding to 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : responding to 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : responding to 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : skipped 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : starting
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : starting
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : starting
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: : task running
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: :Exception in closing listener socket. 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Adding a server listener on port 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Adding saslServer wrapped token of size 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Bug in read selector!
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Checking for old call responses.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Connection from 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Connection: unable to set socket send buffer size to 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Couldn't close write selector in 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Deferring response for callId: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Error closing read selector in 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Error in Reader
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Error serializing call response for call 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Exception in Responder
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Exception while changing ops : 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Failed to send deferred response. ThreadName=
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Failed to setup deferred error response. ThreadName=
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Failed to setup deferred successful response. ThreadName=
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Hadoop Metrics Updater executor could not be shutdown.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Hadoop Metrics Updater executor shutdown interrupted.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Have read input token of size 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Have read input token of size 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Ignoring socket shutdown exception
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Incorrect RPC Header length from {}:{} / {}:{}. Expected: {}. Actual: {}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Large response size 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Listener at {}:{}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Out of Memory in server select
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Out of Memory in server select
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Received ping message
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: SASL server context established. Negotiated QoP is 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: SASL server successfully authenticated client: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Served: [{}]{} name={} user={} details={}
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Server accepts auth methods:
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Server connection from 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Slow RPC : {} took {} {} to process from client {},
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Starting 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Stopping 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Stopping 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Stopping server on 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Successfully authorized 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Unable to read call parameters for client 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Unknown rpc kind 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Version mismatch from {}:{} / {}:{}. 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: Will send 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/Server.java: rpcKind=
+hadoop-common/src/main/java/org/apache/hadoop/ipc/WeightedRoundRobinMultiplexer.java: Moving to next queue from queue index {} to index {}, 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/WeightedRoundRobinMultiplexer.java: WeightedRoundRobinMultiplexer is being used.
+hadoop-common/src/main/java/org/apache/hadoop/ipc/WritableRpcEngine.java: Call: 
+hadoop-common/src/main/java/org/apache/hadoop/ipc/WritableRpcEngine.java: Unexpected throwable object 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: Caught an exception while processing JMX request
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: Caught an exception while processing JMX request
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: Listing beans for 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: Problem while trying to process JMX query: 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: Problem while trying to process JMX query: 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute 
+hadoop-common/src/main/java/org/apache/hadoop/jmx/JMXJsonServlet.java: getting attribute {} of {} threw an exception
+hadoop-common/src/main/java/org/apache/hadoop/log/LogThrottlingHelper.java: Received {} large request(s) with a total of {} objects 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MBeanInfoBuilder.java: {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Cannot locate configuration: tried 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Class name for prefix {} is {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Could not locate file {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Loaded properties from {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Metrics Config: {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Parsing URL for {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Properties: {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Returning '{}' for key: {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: Using plugin jars: {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsConfig.java: poking parent '
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java:  couldn't fulfill an immediate putMetrics request in time.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java:  has a full queue and can't consume the given metrics.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java:  thread interrupted while waiting for retry
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java:  thread interrupted.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java: Done
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java: Got sink exception and over retry limit, 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java: Got sink exception, retry in 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java: Pushing record 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java: Sink 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java: Stop interrupted
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSinkAdapter.java: enqueue, logicalTime=
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: Done
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: Done. # tags & metrics=
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: Error getting metrics from source 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: MBean 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: MBean for source 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: Stacktrace: 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: Updating attr cache...
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSourceAdapter.java: Updating info cache...
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system already initialized!
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system already started!
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system not yet started!
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system shutdown complete.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system started
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system started (again)
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system started in standby mode
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system stopped (again)
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system stopped.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system timer already started!
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java:  metrics system timer already stopped!
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: , 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: , 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Caught exception in callback 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Error creating sink '
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Error getting localhost name. Using 'localhost'...
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Error invoking metrics timer
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Error stopping the metrics system
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Metrics system not started: 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Redundant shutdown
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Registered sink 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Registered source 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Scheduled Metric snapshot period at 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Sink 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Snapshotted source 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Stacktrace: 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Stopping 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Stopping metrics sink 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: Stopping metrics source 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: from environment variable: 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: from system property: 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/impl/MetricsSystemImpl.java: refCount=
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/Interns.java: Metrics intern cache overflow at {} for {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/Interns.java: Metrics intern cache overflow at {} for {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/MethodMetric.java: Error invoking method 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/MethodMetric.java: Error invoking method 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/MethodMetric.java: Error invoking method 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/MetricsSourceBuilder.java: Error accessing field 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/MetricsSourceBuilder.java: Error accessing field 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/MutableMetricsFactory.java: field 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/MutableMetricsFactory.java: method 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/lib/MutableRates.java: Error creating rate metrics for 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/MetricsJsonBuilder.java: Failed to dump to Json.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/AbstractGangliaSink.java: Enabling multicast for Ganglia with TTL 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/AbstractGangliaSink.java: Initializing the GangliaSink for Ganglia metrics.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/AbstractGangliaSink.java: Invalid propertylist for 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/GangliaSink30.java: Emitting metric 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/GangliaSink30.java: Metric name 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/GangliaSink30.java: Metric name 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/GangliaSink30.java: Metric was emitted with no name.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/GangliaSink31.java: Emitting metric 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/GangliaSink31.java: Metric name 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/GangliaSink31.java: Metric name 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/ganglia/GangliaSink31.java: Metric was emitted with no name.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/GraphiteSink.java: Error flushing metrics to Graphite
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/GraphiteSink.java: Error sending metrics to Graphite
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/GraphiteSink.java: Too many connection failures, would not try to connect again.
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/StatsDSink.java: Error sending metrics to StatsD
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/sink/StatsDSink.java: Sending metric: {}
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MBeans.java: Error creating MBean object name: 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MBeans.java: Error unregistering 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MBeans.java: Failed to register MBean "
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MBeans.java: Failed to register MBean "
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MBeans.java: Failed to register MBean "
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MBeans.java: Registered 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MBeans.java: Stacktrace: 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MBeans.java: Unregistering 
+hadoop-common/src/main/java/org/apache/hadoop/metrics2/util/MetricsCache.java: Metrics cache overflow at 
+hadoop-common/src/main/java/org/apache/hadoop/net/DNS.java: I/O error finding interface {}
+hadoop-common/src/main/java/org/apache/hadoop/net/DNS.java: I/O error finding interface {}: {}
+hadoop-common/src/main/java/org/apache/hadoop/net/DNS.java: Unable to determine address of the host 
+hadoop-common/src/main/java/org/apache/hadoop/net/DNS.java: Unable to determine hostname for interface {}
+hadoop-common/src/main/java/org/apache/hadoop/net/DNS.java: Unable to determine local hostname -falling back to '{}'
+hadoop-common/src/main/java/org/apache/hadoop/net/DNS.java: Unable to determine local loopback address of '{}' 
+hadoop-common/src/main/java/org/apache/hadoop/net/DNSDomainNameResolver.java: Failed to perform reverse lookup: {}
+hadoop-common/src/main/java/org/apache/hadoop/net/DNSDomainNameResolver.java: IP address returned for FQDN detected: {}
+hadoop-common/src/main/java/org/apache/hadoop/net/NetUtils.java: Detected a loopback TCP socket, disconnecting it
+hadoop-common/src/main/java/org/apache/hadoop/net/NetUtils.java: Unable to get host interfaces
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Adding a new node: 
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: BUG: Found lastValidNode {} but not nth valid node. 
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Choosing random from {} available nodes on node {},
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Chosen node {} from first random
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Current numOfEmptyRacks is {}
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Error: can't add leaf node {} at depth {} to topology:{}
+
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Failed to find datanode (scope="{}" excludedScope="{}").
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: NetworkTopology became:
+{}
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: NetworkTopology became:
+{}
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Node {} is excluded, continuing.
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: One of the nodes is a null pointer
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: One of the nodes is a null pointer
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Removing a node: 
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: The cluster does not contain node: 
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: The cluster does not contain node: 
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: Total Nodes in scope : {} are less than Available Nodes : {}
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: chooseRandom returning {}
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopology.java: nthValidToReturn is {}
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopologyWithNodeGroup.java: Adding a new node: 
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopologyWithNodeGroup.java: NetworkTopology became:
+
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopologyWithNodeGroup.java: NetworkTopology became:
+
+hadoop-common/src/main/java/org/apache/hadoop/net/NetworkTopologyWithNodeGroup.java: Removing a node: 
+hadoop-common/src/main/java/org/apache/hadoop/net/ScriptBasedMapping.java: Exception running 
+hadoop-common/src/main/java/org/apache/hadoop/net/ScriptBasedMapping.java: Invalid value 
+hadoop-common/src/main/java/org/apache/hadoop/net/ScriptBasedMapping.java: Script 
+hadoop-common/src/main/java/org/apache/hadoop/net/SocketIOWithTimeout.java: Unexpected Exception while clearing selector : 
+hadoop-common/src/main/java/org/apache/hadoop/net/SocketIOWithTimeout.java: Unexpected exception while closing selector : 
+hadoop-common/src/main/java/org/apache/hadoop/net/TableMapping.java:  cannot be read.
+hadoop-common/src/main/java/org/apache/hadoop/net/TableMapping.java:  not configured. 
+hadoop-common/src/main/java/org/apache/hadoop/net/TableMapping.java: Failed to read topology table. 
+hadoop-common/src/main/java/org/apache/hadoop/net/TableMapping.java: Failed to reload the topology table.  The cached 
+hadoop-common/src/main/java/org/apache/hadoop/net/TableMapping.java: Line does not have two columns. Ignoring. 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocket.java: shutdown error: 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java:  terminating on InterruptedException
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java:  terminating on exception
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java:  terminating on unexpected exception
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java:  thread terminating.
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : NotificationHandler: doing a read on 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : NotificationHandler: got EOF on 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : NotificationHandler: read succeeded on 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : NotificationHandler: setting closed to 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : adding fd 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : adding notificationSocket 
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : closing
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : error writing to notificationSockets[0]
+hadoop-common/src/main/java/org/apache/hadoop/net/unix/DomainSocketWatcher.java: : starting with interruptCheckPeriodMs = 
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/AbstractJavaKeyStoreProvider.java: Keystore hasn't changed, returning.
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/AbstractJavaKeyStoreProvider.java: Writing out keystore.
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/AbstractJavaKeyStoreProvider.java: backing jks path initialized to 
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/LocalKeyStoreProvider.java: Resetting permissions to '
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/LocalKeyStoreProvider.java: initialized local file as '
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/LocalKeyStoreProvider.java: the local file does not exist.
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/LocalKeyStoreProvider.java: the local file exists and is size 
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/LocalKeyStoreProvider.java: using '
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/LocalKeyStoreProvider.java: we can read the local file.
+hadoop-common/src/main/java/org/apache/hadoop/security/alias/LocalKeyStoreProvider.java: we can write the local file.
+hadoop-common/src/main/java/org/apache/hadoop/security/authentication/server/ProxyUserAuthenticationFilter.java: Proxy user Authentication exception
+hadoop-common/src/main/java/org/apache/hadoop/security/authentication/server/ProxyUserAuthenticationFilter.java: Proxy user Authentication successful
+hadoop-common/src/main/java/org/apache/hadoop/security/authentication/server/ProxyUserAuthenticationFilter.java: doAsUser = {}, RemoteUser = {} , RemoteAddress = {} 
+hadoop-common/src/main/java/org/apache/hadoop/security/CompositeGroupsMapping.java: Stacktrace: 
+hadoop-common/src/main/java/org/apache/hadoop/security/CompositeGroupsMapping.java: The mapping provider, 
+hadoop-common/src/main/java/org/apache/hadoop/security/CompositeGroupsMapping.java: Unable to get groups for user {} via {} because: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/Credentials.java: Null token ignored for 
+hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java:  Creating new Groups object
+hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java: Error caching groups
+hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java: Error refreshing groups cache
+hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java: Group mapping impl=
+hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java: GroupCacheLoader - load.
+hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java: GroupCacheLoader - reload (async).
+hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java: Potential performance problem: getGroups(user=
+hadoop-common/src/main/java/org/apache/hadoop/security/Groups.java: clearing userToGroupsMap cache
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Access control headers '
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Access control method '
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Allow All Origins: 
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Allowed Headers: 
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Allowed Methods: 
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Allowed Origin pattern '
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Allowed Origins: 
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Completed cross origin filter checks. Populating 
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Header origin is null. Returning
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Header origins '
+hadoop-common/src/main/java/org/apache/hadoop/security/http/CrossOriginFilter.java: Max Age: 
+hadoop-common/src/main/java/org/apache/hadoop/security/http/RestCsrfPreventionFilter.java: Adding cross-site request forgery (CSRF) protection, 
+hadoop-common/src/main/java/org/apache/hadoop/security/HttpCrossOriginFilterInitializer.java: CORS filter not enabled. Please set 
+hadoop-common/src/main/java/org/apache/hadoop/security/IngressPortBasedResolver.java: An un-configured port is being requested 
+hadoop-common/src/main/java/org/apache/hadoop/security/IngressPortBasedResolver.java: Configured with port to QOP mapping as:
+hadoop-common/src/main/java/org/apache/hadoop/security/IngressPortBasedResolver.java: Resolving SASL properties for 
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsMapping.java: Error getting groups for 
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsMapping.java: Error getting groups for 
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsMapping.java: Using JniBasedUnixGroupsMapping for Group resolution
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsMapping.java: error looking up the name of group 
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsMappingWithFallback.java: Falling back to shell based
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsMappingWithFallback.java: Group mapping impl=
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsNetgroupMapping.java: Error getting users for netgroup 
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsNetgroupMapping.java: Error getting users for netgroup 
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsNetgroupMapping.java: Using JniBasedUnixGroupsNetgroupMapping for Netgroup resolution
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsNetgroupMappingWithFallback.java: Falling back to shell based
+hadoop-common/src/main/java/org/apache/hadoop/security/JniBasedUnixGroupsNetgroupMappingWithFallback.java: Group mapping impl=
+hadoop-common/src/main/java/org/apache/hadoop/security/KDiag.java: Failed to reset UGI: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/KDiag.java: Loading resource {}
+hadoop-common/src/main/java/org/apache/hadoop/security/KDiag.java: Security is not enabled for the Hadoop cluster
+hadoop-common/src/main/java/org/apache/hadoop/security/KDiag.java: The default cluster security is insecure
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Exception while trying to get password for alias {}:
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Exception while trying to get password for alias {}: 
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Failed to get groups for user {} (attempt={}/{}) using {}. 
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Failed to get groups from the first lookup. Initiating 
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Groupsearch baseDN: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Ldap group query string: 
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Reached {} attempts on {}, failing over to {}
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Successfully instantiated LdapSslSocketFactory with 
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Switched from {} to {} after an AuthenticationException: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: TRACE
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: Usersearch baseDN: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: doGetGroups({}) returned no groups because the 
+hadoop-common/src/main/java/org/apache/hadoop/security/LdapGroupsMapping.java: doGetGroups({}) returned {}
+hadoop-common/src/main/java/org/apache/hadoop/security/ProviderUtils.java: Credential Provider URI is invalid.
+hadoop-common/src/main/java/org/apache/hadoop/security/ProviderUtils.java: Filesystem based provider excluded from provider 
+hadoop-common/src/main/java/org/apache/hadoop/security/RuleBasedLdapGroupsMapping.java: Invalid {} configured: '{}'. Using default value: '{}'
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslInputStream.java: Actual length is 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: Creating SASL 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: Get kerberos info proto:
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: Get token info proto:
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: RPC Server's Kerberos principal name for protocol=
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: SASL client callback: setting realm: 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: SASL client callback: setting userPassword
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: SASL client callback: setting username: 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: Sending sasl message 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: Use 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: client isn't using kerberos
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: getting serverKey: 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: protocol doesn't use kerberos
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: reading next wrapped RPC packet
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: tokens aren't supported for this protocol
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: unwrapping token of length:
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcClient.java: wrapping token of length:
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcServer.java: Created SASL server with mechanism = 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcServer.java: Kerberos principal name is 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcServer.java: SASL server DIGEST-MD5 callback: setting 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcServer.java: SASL server DIGEST-MD5 callback: setting password 
+hadoop-common/src/main/java/org/apache/hadoop/security/SaslRpcServer.java: SASL server GSSAPI callback: setting 
+hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java: Acquired token 
+hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java: Couldn't read Auth based on {}
+hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java: Exception while getting login user
+hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java: Failed to get token for service 
+hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java: Name lookup for 
+hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java: Setting 
+hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java: Slow name lookup for 
+hadoop-common/src/main/java/org/apache/hadoop/security/SecurityUtil.java: Updating Configuration
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Can't close BufferedReader of command result
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Can't find group name for gid 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Can't find user name for uid 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Can't map group 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Can't map user 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Can't update 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Can't update the maps. Will use the old ones,
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Could not parse line '
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Not doing static UID/GID mapping because '
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Platform is not supported:
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Update cache now
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Updated 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: User configured user account update time is less
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: Using 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedIdMapping.java: add to 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedUnixGroupsMapping.java: Some group names for '{}' are not resolvable. {}
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedUnixGroupsMapping.java: Unable to return groups for user '{}' as shell group lookup 
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedUnixGroupsMapping.java: unable to return groups for user {}
+hadoop-common/src/main/java/org/apache/hadoop/security/ShellBasedUnixGroupsNetgroupMapping.java: error getting users for netgroup 
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/DelegatingSSLSocketFactory.java: Attempting to register OpenSSL provider
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/DelegatingSSLSocketFactory.java: Failed to load OpenSSL. Falling back to the JSSE default.
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/DelegatingSSLSocketFactory.java: Initializing SSL Context to channel mode {}
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/DelegatingSSLSocketFactory.java: Removed Cipher - {} from list of enabled SSLSocket ciphers
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/DelegatingSSLSocketFactory.java: Resetting default SSL Socket Factory
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/FileBasedKeyStoresFactory.java:  KeyStore: 
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/FileBasedKeyStoresFactory.java:  Loaded TrustStore: 
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/FileBasedKeyStoresFactory.java:  TrustStore: 
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/FileBasedKeyStoresFactory.java: Exception while trying to get password for alias 
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/FileBasedKeyStoresFactory.java: The property '
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/ReloadingX509KeystoreManager.java:  Loaded KeyStore: 
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/ReloadingX509TrustManager.java: Loaded truststore '
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java: Disabling cipher suite {}.
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLFactory.java: will exclude cipher suites: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLHostnameVerifier.java: Host check error {}
+hadoop-common/src/main/java/org/apache/hadoop/security/ssl/SSLHostnameVerifier.java: Hosts:{}, CNs:{} subjectAlts:{}, ie6:{}, 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Could not store token 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Creating password for identifier: 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: ExpiredTokenRemover received 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: ExpiredTokenRemover thread received unexpected exception
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Initialized {}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Master key updating failed: 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: No KEY found for persisted identifier, expiring stored token 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Removing expired token 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Starting expired delegation token remover thread, 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Stopping expired delegation token remover thread
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Token cancellation requested for identifier: 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Token renewal for identifier: 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: Updating the current master key for generating delegation tokens
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: {}, Token={}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/AbstractDelegationTokenSecretManager.java: {}, Token={}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/SQLDelegationTokenSecretManager.java: Failed to get delegation key in SQL secret manager
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/SQLDelegationTokenSecretManager.java: Failed to get token in SQL secret manager
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/SQLDelegationTokenSecretManager.java: Failed to remove delegation key in SQL secret manager
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/SQLDelegationTokenSecretManager.java: Failed to remove token in SQL secret manager
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticatedURL.java: Connecting to url {} with token {} as {}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticatedURL.java: Token not set, looking for delegation token. Creds:{},
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticatedURL.java: Using delegation token {} from service:{}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticationFilter.java: Authentication exception: 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticationFilter.java: Authentication exception: 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticationHandler.java: Authenticating with dt param: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticationHandler.java: Falling back to {} (req={})
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticationHandler.java: Got token: {}.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticationHandler.java: Processing operation for req=({}), token: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticator.java: Authenticated from delegation token. url={}, token={}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticator.java: Delegation token found: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticator.java: No delegation token found for url={}, 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenAuthenticator.java: hasDt={}, queryStr={}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenManager.java: Cancelling token:{} with canceler:{}.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenManager.java: Creating token with ugi:{}, renewer:{}, service:{}.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/web/DelegationTokenManager.java: Renewing token:{} with renewer:{}.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java:  znode already exists !!
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java:  znode already exists !!
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java:  znode could not be removed!!
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Attempted to delete a non-existing znode 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Attempted to remove a non-existing znode 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Attempted to update a non-existing znode 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Connecting to ZooKeeper with SASL/Kerberos
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Connecting to ZooKeeper without authentication
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Could not stop Curator Framework
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Could not stop Delegation Token Cache
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Could not stop Delegation Token Counter
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Could not stop Key Id Counter
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Could not stop KeyCache
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Error retrieving key [
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Error retrieving tokenInfo [
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Error retrieving tokenInfo [
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Error while processing Curator keyCacheListener 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Error while processing Curator tokenCacheListener 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Error while processing Curator tokenCacheListener 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Failure exception:
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Fetched initial range of seq num, from {} to {} 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Fetched new range of seq num, from {} to {} 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Ignored {} nodes while loading {} cache.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Ignoring node {} because it failed to load.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Key with path [
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Loaded {} cache.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: No node in path [
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: No node in path [
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Node already deleted by peer 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Node already deleted by peer 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Node already renewed by peer 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Removing ZKDTSMDelegationKey_
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Removing ZKDTSMDelegationToken_
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Starting to load {} cache.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Storing ZKDTSMDelegationKey_
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Thread interrupted while performing keyId increment
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Thread interrupted while performing token counter increment
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: TokenCache is enabled
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Updating 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/delegation/ZKDelegationTokenSecretManager.java: Updating non existent Key path [
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtFileOperations.java: Add token with service 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtFileOperations.java: Add token with service {}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtFileOperations.java: Canceled 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtFileOperations.java: Failed to decode token identifier
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtFileOperations.java: Failed to load token fetcher implementation
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtFileOperations.java: Renewed
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: -alias flag is not optional for remove or cancel
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: -alias flag is not optional for renew
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: -format must be '
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: -principal and -keytab not both specified!  
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: Must provide -service with http/https URL.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: Must provide a filename to all commands.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: Only provide -service with http/https URL.
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: URL does not contain a service specification: 
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: must pass -alias field with dtutil edit command
+hadoop-common/src/main/java/org/apache/hadoop/security/token/DtUtilShell.java: must pass -service field with dtutil edit command
+hadoop-common/src/main/java/org/apache/hadoop/security/token/Token.java: Added {}:{} into tokenKindMap
+hadoop-common/src/main/java/org/apache/hadoop/security/token/Token.java: Cannot find class for token kind {}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/Token.java: Cloned private token {} from {}
+hadoop-common/src/main/java/org/apache/hadoop/security/token/Token.java: Failed to load token identifier implementation
+hadoop-common/src/main/java/org/apache/hadoop/security/token/Token.java: Failed to load token renewer implementation
+hadoop-common/src/main/java/org/apache/hadoop/security/token/Token.java: No TokenRenewer defined for token kind {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java:  UGI: 
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: +token:
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Cannot add token {}: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Current time is {}, next refresh is {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Exception encountered while running the 
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Exception when calculating next tgt renewal time
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Failed to get groups for user {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Failure to load login credentials
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Hadoop login
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Hadoop logout
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Initiating logout for {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Initiating logout for {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Initiating re-login for {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Loaded {} base64 tokens
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Loaded {} tokens from {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Login successful for user {} using keytab file {}. Keytab auto
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Logout successful for user 
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: NPE thrown while getting KerberosTicket endTime. 
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: No TGT after renewal. Aborting renew thread for 
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Not attempting to re-login since the last re-login was 
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: PrivilegedAction [as: {}][action: {}]
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: PrivilegedAction [as: {}][action: {}]
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: PrivilegedActionException as: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Reading credentials from location {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Renewed ticket. kinit output: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: TGT is destroyed. 
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: TGT is expired. Aborting renew thread for {}.
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Terminating renewal thread
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: The first kerberos ticket is not TGT
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Ticket is already destroyed, remove it.
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Token file {} does not exist
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: UGI loginUser: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Unable to find JAAS classes:
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: User entry: "{}"
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Using existing subject: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Using kerberos user: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Using local user: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Using user: "{}" with name: {}
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: Warning, no kerberos ticket found while attempting to renew ticket
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: destroy ticket failed
+hadoop-common/src/main/java/org/apache/hadoop/security/UserGroupInformation.java: hadoop login commit
+hadoop-common/src/main/java/org/apache/hadoop/service/AbstractService.java: Config has been overridden during init
+hadoop-common/src/main/java/org/apache/hadoop/service/AbstractService.java: Exception while notifying listeners of {}
+hadoop-common/src/main/java/org/apache/hadoop/service/AbstractService.java: Ignoring re-entrant call to stop()
+hadoop-common/src/main/java/org/apache/hadoop/service/AbstractService.java: Service {} failed in state {}
+hadoop-common/src/main/java/org/apache/hadoop/service/AbstractService.java: Service {} is started
+hadoop-common/src/main/java/org/apache/hadoop/service/AbstractService.java: Service: {} entered state {}
+hadoop-common/src/main/java/org/apache/hadoop/service/AbstractService.java: noteFailure
+hadoop-common/src/main/java/org/apache/hadoop/service/CompositeService.java: : initing services, size=
+hadoop-common/src/main/java/org/apache/hadoop/service/CompositeService.java: : starting services, size=
+hadoop-common/src/main/java/org/apache/hadoop/service/CompositeService.java: : stopping services, size=
+hadoop-common/src/main/java/org/apache/hadoop/service/CompositeService.java: Adding service 
+hadoop-common/src/main/java/org/apache/hadoop/service/CompositeService.java: Removing service {}
+hadoop-common/src/main/java/org/apache/hadoop/service/CompositeService.java: Stopping service #
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/AbstractLaunchableService.java: Service {} passed in {} arguments:
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/HadoopUncaughtExceptionHandler.java: Thread {} threw an error during shutdown: {}.
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/HadoopUncaughtExceptionHandler.java: Thread {} threw an error: {}. Shutting down
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/HadoopUncaughtExceptionHandler.java: Thread {} threw an exception: {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/InterruptEscalator.java: Service did not shut down in time
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java: Interrupted: {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Command line: {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Conf file {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Configuration classes {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Configuration files {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Exception raised with exit code {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Exception raised {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Failed to create {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Failed to load {} because it is not on the classpath
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Failure during shutdown: {} 
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: LaunchableService {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Launched service {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: No empty constructor {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Remaining arguments {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Service {} execution returned exit code {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Service {} implements LaunchableService
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: Uncaught exception in thread {} -exiting
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: waiting for service threads to terminate
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceLauncher.java: {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceShutdownHook.java: Error stopping {}
+hadoop-common/src/main/java/org/apache/hadoop/service/launcher/ServiceShutdownHook.java: Failed to unregister shutdown hook: {}
+hadoop-common/src/main/java/org/apache/hadoop/service/LoggingStateChangeListener.java: Entry to state 
+hadoop-common/src/main/java/org/apache/hadoop/service/ServiceOperations.java: When stopping the service 
+hadoop-common/src/main/java/org/apache/hadoop/service/ServiceOperations.java: When stopping the service {}
+hadoop-common/src/main/java/org/apache/hadoop/util/ApplicationClassLoader.java: Loaded class from parent: 
+hadoop-common/src/main/java/org/apache/hadoop/util/ApplicationClassLoader.java: Loaded class: 
+hadoop-common/src/main/java/org/apache/hadoop/util/ApplicationClassLoader.java: Loading class: 
+hadoop-common/src/main/java/org/apache/hadoop/util/ApplicationClassLoader.java: Remove leading / off 
+hadoop-common/src/main/java/org/apache/hadoop/util/ApplicationClassLoader.java: classpath: 
+hadoop-common/src/main/java/org/apache/hadoop/util/ApplicationClassLoader.java: getResource(
+hadoop-common/src/main/java/org/apache/hadoop/util/ApplicationClassLoader.java: system classes: 
+hadoop-common/src/main/java/org/apache/hadoop/util/AsyncDiskService.java: All AsyncDiskService threads are terminated.
+hadoop-common/src/main/java/org/apache/hadoop/util/AsyncDiskService.java: AsyncDiskService awaitTermination timeout.
+hadoop-common/src/main/java/org/apache/hadoop/util/AsyncDiskService.java: Shutting down all AsyncDiskService threads immediately...
+hadoop-common/src/main/java/org/apache/hadoop/util/AsyncDiskService.java: Shutting down all AsyncDiskService threads...
+hadoop-common/src/main/java/org/apache/hadoop/util/BlockingThreadPoolExecutorService.java: Could not submit task to executor {}
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/AsyncGetFuture.java: TRACE
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/AsyncGetFuture.java: TRACE
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/ExecutorHelper.java: Caught exception in thread {}  + : 
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/ExecutorHelper.java: Execution exception when running task in {}
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/ExecutorHelper.java: Thread ( {} ) interrupted: 
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/ExecutorHelper.java: afterExecute in thread: 
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopExecutors.java: Exception closing executor service
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopExecutors.java: Exception closing executor service {}
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopExecutors.java: Executor service has not shutdown yet. Forcing. 
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopExecutors.java: Gracefully shutting down executor service {}. Waiting max {} {}
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopExecutors.java: Interrupted while attempting to shutdown
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopExecutors.java: Succesfully shutdown executor service
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopExecutors.java: Unable to shutdown executor service after timeout {} {}
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopScheduledThreadPoolExecutor.java: beforeExecute in thread: 
+hadoop-common/src/main/java/org/apache/hadoop/util/concurrent/HadoopThreadPoolExecutor.java: beforeExecute in thread: 
+hadoop-common/src/main/java/org/apache/hadoop/util/CrcComposer.java: crcPolynomial=0x{}, precomputedMonomialForHint=0x{}, 
+hadoop-common/src/main/java/org/apache/hadoop/util/curator/ZKCuratorManager.java: Configuring zookeeper to use {} as the server principal
+hadoop-common/src/main/java/org/apache/hadoop/util/curator/ZKCuratorManager.java: Couldn't read ACLs based on {}
+hadoop-common/src/main/java/org/apache/hadoop/util/curator/ZKCuratorManager.java: JaasConfiguration has not been set since kerberos principal 
+hadoop-common/src/main/java/org/apache/hadoop/util/DataChecksum.java: CRC32C creation failed, switching to PureJavaCrc32C
+hadoop-common/src/main/java/org/apache/hadoop/util/DurationInfo.java: Starting: {}
+hadoop-common/src/main/java/org/apache/hadoop/util/DurationInfo.java: Starting: {}
+hadoop-common/src/main/java/org/apache/hadoop/util/DurationInfo.java: {}
+hadoop-common/src/main/java/org/apache/hadoop/util/DurationInfo.java: {}
+hadoop-common/src/main/java/org/apache/hadoop/util/ExitUtil.java: Exiting with status {}: {}
+hadoop-common/src/main/java/org/apache/hadoop/util/ExitUtil.java: Exiting with status {}: {}
+hadoop-common/src/main/java/org/apache/hadoop/util/ExitUtil.java: Halt called
+hadoop-common/src/main/java/org/apache/hadoop/util/ExitUtil.java: Halt with status {}: {}
+hadoop-common/src/main/java/org/apache/hadoop/util/ExitUtil.java: Terminate called
+hadoop-common/src/main/java/org/apache/hadoop/util/FileBasedIPList.java: Loaded IP list of size = 
+hadoop-common/src/main/java/org/apache/hadoop/util/FileBasedIPList.java: Missing ip list file : 
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/CommonCallableSupplier.java: Ignoring exception raised in task completion: 
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/RemoteIterators.java: Closing {}
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Aborting task
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Executing task
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Failed to abort task
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Failed to abort task
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Failed to clean up on failure
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Failed to clean up on failure
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Failed to revert task
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Failed to revert task
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Finished count -> {}/{}
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: IOException when iterating through {}
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: IOException when iterating through {}
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Reverting all {} succeeded tasks from {} futures
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Task failed
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Task failed {}
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Task succeeded
+hadoop-common/src/main/java/org/apache/hadoop/util/functional/TaskPool.java: Waiting for {} tasks to complete
+hadoop-common/src/main/java/org/apache/hadoop/util/GenericOptionsParser.java:  does not have jars in it. It will be ignored.
+hadoop-common/src/main/java/org/apache/hadoop/util/GenericOptionsParser.java: The libjars file 
+hadoop-common/src/main/java/org/apache/hadoop/util/GenericOptionsParser.java: options parsing failed: 
+hadoop-common/src/main/java/org/apache/hadoop/util/GenericOptionsParser.java: setting conf tokensFile: 
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: Adding a node "
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: Adding a node "
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: Refreshing hosts (include/exclude) list
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: Refreshing hosts (include/exclude) list (lazy refresh = {})
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: Setting the excludes file to 
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: Setting the excludes file to 
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: Setting the includes file to 
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: Setting the includes file to 
+hadoop-common/src/main/java/org/apache/hadoop/util/HostsFileReader.java: error parsing 
+hadoop-common/src/main/java/org/apache/hadoop/util/InstrumentedLock.java: Lock held time above threshold(%d ms): 
+hadoop-common/src/main/java/org/apache/hadoop/util/InstrumentedLock.java: Waited above threshold(%d ms) to acquire lock: 
+hadoop-common/src/main/java/org/apache/hadoop/util/JsonSerialization.java: Exception while parsing json : {}
+{}
+hadoop-common/src/main/java/org/apache/hadoop/util/JsonSerialization.java: Exception while parsing json file {}
+hadoop-common/src/main/java/org/apache/hadoop/util/JsonSerialization.java: Exception while parsing json resource {}
+hadoop-common/src/main/java/org/apache/hadoop/util/JvmPauseMonitor.java: Starting JVM pause monitor
+hadoop-common/src/main/java/org/apache/hadoop/util/KMSUtil.java: Creating key provider with config key {}
+hadoop-common/src/main/java/org/apache/hadoop/util/LightWeightGSet.java: % max memory 
+hadoop-common/src/main/java/org/apache/hadoop/util/LightWeightGSet.java: Computing capacity for map 
+hadoop-common/src/main/java/org/apache/hadoop/util/LightWeightGSet.java: VM type       = 
+hadoop-common/src/main/java/org/apache/hadoop/util/LightWeightGSet.java: capacity      = 2^
+hadoop-common/src/main/java/org/apache/hadoop/util/LightWeightGSet.java: recommended=
+hadoop-common/src/main/java/org/apache/hadoop/util/MachineList.java: Invalid CIDR syntax : 
+hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java: Failed to load native-hadoop with error: 
+hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java: Loaded the native-hadoop library
+hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java: Trying to load the custom-built native-hadoop library...
+hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java: Unable to load native-hadoop library for your platform... 
+hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java: java.library.path=
+hadoop-common/src/main/java/org/apache/hadoop/util/NativeLibraryChecker.java: No Winutils: 
+hadoop-common/src/main/java/org/apache/hadoop/util/Preconditions.java: Error formatting message
+hadoop-common/src/main/java/org/apache/hadoop/util/Preconditions.java: Error formatting message
+hadoop-common/src/main/java/org/apache/hadoop/util/Preconditions.java: Error formatting message
+hadoop-common/src/main/java/org/apache/hadoop/util/Preconditions.java: Error formatting message
+hadoop-common/src/main/java/org/apache/hadoop/util/Preconditions.java: Error formatting message
+hadoop-common/src/main/java/org/apache/hadoop/util/Preconditions.java: Error formatting message
+hadoop-common/src/main/java/org/apache/hadoop/util/Progress.java: Illegal progress value found, progress is 
+hadoop-common/src/main/java/org/apache/hadoop/util/Progress.java: Illegal progress value found, progress is 
+hadoop-common/src/main/java/org/apache/hadoop/util/Progress.java: Illegal progress value found, progress is Float.NaN. 
+hadoop-common/src/main/java/org/apache/hadoop/util/Progress.java: Illegal progress value found, progress is larger than 1.
+hadoop-common/src/main/java/org/apache/hadoop/util/Progress.java: Illegal progress value found, progress is less than 0.
+hadoop-common/src/main/java/org/apache/hadoop/util/Progress.java: Sum of weightages can not be more than 1.0; But sum = 
+hadoop-common/src/main/java/org/apache/hadoop/util/RunJar.java: Could not set last modfied time for {} file(s)
+hadoop-common/src/main/java/org/apache/hadoop/util/RunJar.java: Could not set last modfied time for {} file(s)
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Avoiding JDK-8047340 on BSD-based systems.
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Bash execution is not allowed by the JVM 
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Bash is not supported by the OS
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Caught 
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Did not find {}: {}
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Error reading the error stream
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Error reading the error stream due to shell 
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Error while closing the error stream
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Error while closing the input stream
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Failed to detect a valid hadoop home directory
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Failed to find 
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Interrupted while joining on: 
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: Interrupted, unable to determine if bash is supported
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: setsid exited with exit code 
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: setsid is not allowed to run by the JVM 
+hadoop-common/src/main/java/org/apache/hadoop/util/Shell.java: setsid is not available on this machine. So not using it.
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownHookManager.java: Completed shutdown in %.3f seconds; Timeouts: %d
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownHookManager.java: Failed to add the ShutdownHook
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownHookManager.java: Shutdown process invoked a second time: ignoring
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownHookManager.java: ShutdownHook '
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownHookManager.java: ShutdownHook '
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownHookManager.java: ShutdownHookManager completed shutdown.
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownHookManager.java: ShutdownHookManager interrupted while waiting for 
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownHookManager.java: ShutdownHookManager shutdown forcefully after
+hadoop-common/src/main/java/org/apache/hadoop/util/ShutdownThreadsHelper.java: Interrupted while shutting down thread - 
+hadoop-common/src/main/java/org/apache/hadoop/util/SignalLogger.java: RECEIVED SIGNAL 
+hadoop-common/src/main/java/org/apache/hadoop/util/StringUtils.java: SHUTDOWN_MSG: 
+hadoop-common/src/main/java/org/apache/hadoop/util/StringUtils.java: failed to register any UNIX signal loggers: 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Couldn't read 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Couldn't read 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error closing the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error reading the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error reading the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error reading the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error reading the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error reading the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoLinux.java: Error reading the stream 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoWindows.java: Error parsing sysInfo
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoWindows.java: Expected split length of sysInfo to be 
+hadoop-common/src/main/java/org/apache/hadoop/util/SysInfoWindows.java: Wrong output from sysInfo: 
+hadoop-common/src/main/java/org/apache/hadoop/util/ThreadUtil.java: interrupted while sleeping
+hadoop-common/src/main/java/org/apache/hadoop/util/ThreadUtil.java: interrupted while sleeping
+hadoop-common/src/main/java/org/apache/hadoop/util/VersionInfo.java: version: 
+hadoop-common/src/main/java/org/apache/hadoop/util/WeakReferenceMap.java: Created instance for key {}: {} overwritten by {}
+hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java: Issue setting TransformerFactory attribute {}: {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Batch reencrypting {} Encrypted Keys for key name {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Creating key with name {}, cipher being used{}, 
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Decrypting key for {}, the edek Operation is {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Deleting key with name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering createKey Method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering decryptEncryptedKey method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering deleteKey method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering generateEncryptedKeys method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering getCurrentVersion method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering getKey method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering getKeyNames method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering getKeyVersion method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering getKeyVersions method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering getKeysMetadata method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering getMetadata method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering invalidateCache Method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering reencryptEncryptedKeys method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Entering rolloverKey Method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in createKey.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in deleteKey.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in generateEncryptedKeys.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in generateEncryptedKeys:
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in getCurrentVersion.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in getKey.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in getKeyVersion.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in getKeyVersions.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in getKeysmetadata.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in getMetadata.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in getkeyNames.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in handleEncryptedKeyOp.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in invalidateCache for key name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in reencryptEncryptedKeys.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exception in rolloverKey.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting createKey Method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting deleteKey method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting generateEncryptedKeys method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting getCurrentVersion method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting getKey method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting getKeyNames method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting getKeyVersion method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting getKeyVersions method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting getKeysMetadata method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting getMetadata method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting handleEncryptedKeyOp method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting invalidateCache for key name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting reencryptEncryptedKeys method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Exiting rolloverKey Method.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Generated Encrypted key for {} number of 
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Generating encrypted key with name {},
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Getting key information for key with name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Getting key version for key with name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Getting key versions for key {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Getting key with version name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Getting metadata for key with name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Invalidating cache with key name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Payload size {} too big for reencryptEncryptedKeys from
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: Rolling key with name {}.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: edek Operation is Generate.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMS.java: reencryptEncryptedKeys {} keys for key {} took {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: '{}' ACL '{}'
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: '{}' Blacklist '{}'
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: Checking user [{}] for: {} {} 
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: Checking user [{}] for: {}: {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: Could not reload ACLs file: '%s'
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: Invalid KEY_OP '{}' for {}, ignoring
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: Invalid key Operation '{}'
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: Invalid key name '{}'
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: KEY_NAME '{}' KEY_OP '{}' ACL '{}'
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: Key: {} has no ACLs defined, using defaults.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: Loading ACLs file
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: No ACL available for key, denying access for {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: No blacklist for {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: User: [{}], OpType: {}, KeyName: {} Result: {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: User: [{}], Type: {} Result: {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: user is in {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: user is not in {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSACLs.java: {} for KEY_OP '{}' is set to '*'
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSAudit.java: Failed to cleanup logger {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSAudit.java: Initializing audit logger {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSAudit.java: No audit logger configured, using default.
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSAuthenticationFilter.java: The wrapped response object is instance of {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSConfiguration.java: Checking file {}, modification time is {}, last reload time is
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSConfiguration.java: KMS log starting
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSConfiguration.java: Log4j configuration file '{}' not found
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSConfiguration.java: Logging with INFO level to standard output
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSExceptionsProvider.java: User:'{}' Method:{} URL:{} From:{} Response:{}-{}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java:   Java runtime version : {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java:   KMS Hadoop Version: 
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java:   User: {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java: -------------------------------------------------------------
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java: -------------------------------------------------------------
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java: Default key bitlength is {}
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java: Error closing KeyProviderCryptoExtension
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java: Initialized KeyProvider 
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java: Initialized KeyProviderCryptoExtension 
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java: KMS Started
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebApp.java: KMS Stopped
+hadoop-kms/src/main/java/org/apache/hadoop/crypto/key/kms/server/KMSWebServer.java: Environment variable {} is deprecated and overriding
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java:   {}: {}
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java: ---------------------------------------------------------------
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java: ---------------------------------------------------------------
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java: Configuration:
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java: Failed to delete keytab file: 
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java: MiniKdc started.
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java: MiniKdc stopped.
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java: WARNING: cannot delete directory 
+hadoop-minikdc/src/main/java/org/apache/hadoop/minikdc/MiniKdc.java: WARNING: cannot delete file 
+hadoop-nfs/src/main/java/org/apache/hadoop/mount/MountdBase.java: Failed to register the MOUNT service.
+hadoop-nfs/src/main/java/org/apache/hadoop/mount/MountdBase.java: Failed to start the TCP server.
+hadoop-nfs/src/main/java/org/apache/hadoop/mount/MountdBase.java: Failed to start the UDP server.
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/nfs3/FileHandle.java: MD5 MessageDigest unavailable.
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/nfs3/Nfs3Base.java: Failed to register the NFSv3 service.
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/nfs3/Nfs3Base.java: Failed to start the TCP server.
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/nfs3/Nfs3Base.java: NFS server port set to: 
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: CIDRNMatcher low = 
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: CIDRNMatcher low = 
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: ExactMatcher '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: ExactMatcher '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: Invalid NFS Exports provided: 
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: Processing match string '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: RegexMatcher '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: RegexMatcher '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: Using CIDR match for '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: Using CIDR match for '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: Using Regex match for '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: Using exact match for '
+hadoop-nfs/src/main/java/org/apache/hadoop/nfs/NfsExports.java: Using match all for '
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RegistrationClient.java: Portmap mapping registration failed,
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RegistrationClient.java: Portmap mapping registration failed, accept state:
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RegistrationClient.java: Portmap mapping registration request was denied , 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RegistrationClient.java: Portmap mapping registration succeeded
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java:  failure with 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java:  procedure #
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java: Connection attempted from '
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java: Could not determine remote port of socket address '
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java: Invalid RPC call program 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java: Invalid RPC call version 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java: The bound port is 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java: The bound port is 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java: Will 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcProgram.java: Will not allow connections from unprivileged ports. 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/RpcUtil.java: Malformed RPC request from 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/security/CredentialsSys.java: Error setting HOSTNAME
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/security/CredentialsSys.java: HOSTNAME = 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/SimpleTcpClientHandler.java: Unexpected exception from downstream: 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/SimpleTcpClientHandler.java: sending PRC request
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/SimpleTcpServer.java: Started listening to TCP requests at port 
+hadoop-nfs/src/main/java/org/apache/hadoop/oncrpc/SimpleUdpServer.java: Started listening to UDP requests at port 
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/Portmap.java: Failed to start the server. Cause:
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/Portmap.java: Portmap server started at tcp://
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/RpcProgramPortmap.java: Encountered 
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/RpcProgramPortmap.java: Found mapping for key: 
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/RpcProgramPortmap.java: Portmap GETPORT key=
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/RpcProgramPortmap.java: Portmap remove key=
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/RpcProgramPortmap.java: Portmap set key=
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/RpcProgramPortmap.java: PortmapHandler unknown rpc procedure=
+hadoop-nfs/src/main/java/org/apache/hadoop/portmap/RpcProgramPortmap.java: Warning, no mapping for key: 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java: Operation {} on path {} failed with exception {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryUtils.java: Invalid record at {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryUtils.java: No record at {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryUtils.java: data too short for {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryUtils.java: stat failed on {}: moved? {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/FSRegistryOperationsService.java: Bound record to path 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/FSRegistryOperationsService.java: Failed to get FileSystem for registry
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/FSRegistryOperationsService.java: Initialized Yarn-registry with Filesystem 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Creating CuratorService with connection {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Creating Registry with root {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Creating path {} with mode {} and ACL {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Creating {} with {} bytes of data and ACL {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Deleting {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Error while processing Curator listener 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Error while processing Curator listener 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: GetACLS {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Ignoring exception:  {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Informing listener of added/updated node {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Informing listener of removed node {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Reading {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Stat {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: Updating {} with {} bytes
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: ls {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/CuratorService.java: path already present: {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistryOperationsService.java: Bound at {} : ServiceRecord = {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistryOperationsService.java: Stat {} => {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Added ACL {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Appending kerberos realm to make {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Auth is Digest ACL: {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Auth is SASL user="{}" JAAS context="{}"
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Auth is anonymous
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Binding {} to {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Cleared digest ACLs
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Creating ACL For 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Current user = {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Enabling ZK sasl client: jaasClientEntry = 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Failed to get current user {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Failed to get current user, {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Ignoring added ACL - registry is insecure{}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Real User = {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Registry User ACLs 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Registry default system acls: 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Registry has no security
+hadoop-registry/src/main/java/org/apache/hadoop/registry/client/impl/zk/RegistrySecurity.java: Using existing ZK sasl configuration: 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/ApplicationServiceRecordProcessor.java: : No external endpoints defined.
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/PrivilegedRegistryDNSStarter.java: Error initializing Registry DNS
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Adding {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Adding {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Adding {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Can not resolve DNS servers: 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Creating ApplicationServiceRecordProcessor for {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Error during message receipt
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Error initializing DNS TCP listener
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Error initializing DNS UDP listener
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Error initializing Registry DNS Server
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Failed to lookup: {} type: {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: No data found the given name {} and type {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Not simple resolver!!!?
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Opening TCP and UDP channels on {} port {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Received query {}.  Forwarding query {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Registered {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Registering {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Removed {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Unable to add NXTRecord to AUTHORITY Section
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Unable to convert {} to DNS name
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Unable to find zone matching record {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Unable to obtain default zone for unknown name response
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Unable to remove record because zone is null: {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Yarn Registry record {} does not contain {} attribute 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: Zone subnet is not configured.  Reverse lookups disabled
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: calling addAnswer
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: finding record
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: found answers {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: found local record? {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: received TCP query {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: returning null
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: {}:  sending response
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNS.java: {}: received UDP query {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNSServer.java: Deleting DNS records for {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNSServer.java: Error starting Registry DNS Server
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNSServer.java: Registering DNS records for {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/RegistryDNSServer.java: Unable to monitor the registry.  DNS support disabled.
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/ReverseZoneUtils.java: Base IP address is invalid
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/ReverseZoneUtils.java: The subnet or mask is invalid: Subnet: {} Mask: {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/dns/ReverseZoneUtils.java: The supplied range is not a valid integer: Supplied range: 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/DeleteCompletionCallback.java: Delete event {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/MicroZookeeperService.java: ERROR during selecting random port for ZooKeeper server to bind.
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/MicroZookeeperService.java: In memory ZK started at {}
+
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/MicroZookeeperService.java: Instance directory is {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/MicroZookeeperService.java: Starting Local Zookeeper service
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/MicroZookeeperService.java: ZooKeeper config:
+
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java:  Failure {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: Executing {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: Failing deletion operation
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: Match on record @ {} with children 
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: Registry System ACLs:
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: Scheduling for deletion with children
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: Skipping deletion
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: Started Registry operations in realm {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: Submitting {}
+hadoop-registry/src/main/java/org/apache/hadoop/registry/server/services/RegistryAdminService.java: System ACLs {}

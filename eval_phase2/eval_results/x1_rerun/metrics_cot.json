@@ -1,0 +1,14 @@
+{
+  "variant": "cot",
+  "N": 40,
+  "TP": 26,
+  "TN": 0,
+  "FP": 14,
+  "FN": 0,
+  "parse_errors": 0,
+  "ACC": 0.65,
+  "ok_calls": 3,
+  "fail_calls": 0,
+  "model": "gpt-4o",
+  "base_url": "https://api.chatanywhere.tech/v1"
+}

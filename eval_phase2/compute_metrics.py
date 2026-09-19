@@ -47,7 +47,7 @@ def binary_metrics(pred_rows):
 
 
 def load_pred(variant):
-    path = os.path.join(C.EVAL_DATA_DIR, f"feasibility_pred_{variant}.jsonl")
+    path = os.path.join(C.EVAL_RESULT_DIR, f"feasibility_pred_{variant}.jsonl")
     return C.read_jsonl(path) if os.path.exists(path) else []
 
 

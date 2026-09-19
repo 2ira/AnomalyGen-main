@@ -33,8 +33,12 @@ especially in fault-tolerant systems where errors may be recovered?
 | ZK | baseline | see `eval_results/zk_recovery_relabel.json` |
 | ZK | recovery-aware | see `eval_results/zk_recovery_relabel.json` |
 
-HDFS recovery-aware rule fixes 6 mislabelled sessions (5 keyword-miss false
-negatives + 1 recovery false positive) with **0 side effects**.
+The level-only baseline makes **7** errors on the 106 HDFS sessions (1 FP + 6 FN).
+**5** of the 6 FN are `structural` (true anomalies with no ERROR-level line) —
+that is the original-submission “5 mislabels”. The remaining errors are
+`kw_miss` 1 + `recovery_fp` 1. Recovery-aware flips 6 sessions (5 structural +
+1 recovery FP) and leaves `kw_miss`. See `analyze_5_vs_7.py` and
+`eval_results/hdfs_recovery_relabel.json` (`miscls_baseline`).
 
 ## Directory Structure
 ```
@@ -43,6 +47,7 @@ eval_labeling/
 ├── utils.py                               # shared: session loading, metrics, I/O
 ├── hdfs_recovery_relabel.py               # HDFS experiment (106 sessions)
 ├── zk_recovery_relabel.py                 # ZooKeeper experiment
+├── analyze_5_vs_7.py                      # R2.8: 5 vs 7, keyword overlap, LOSO
 ├── eval_results/
 │   ├── hdfs_recovery_relabel.{json,csv}   # HDFS metrics + per-session detail
 │   └── zk_recovery_relabel.{json,csv}     # ZK metrics + per-session detail

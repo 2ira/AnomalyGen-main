@@ -1,0 +1,509 @@
+{
+  "n_sessions": 40,
+  "n_decidable": 10,
+  "n_pass": 3,
+  "n_fail": 7,
+  "n_undecidable": 30,
+  "rate": 0.3,
+  "failing": [
+    {
+      "session_id": "ctxv2_002",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:markBlockAsCorrupt(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 3,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK* invalidateBlock: block-12345 on datanode-01\n    [DEBUG]:BLOCK* addToInvalidates: storedBlock-67890 [datanode-01, datanode-02]\n    [DEBUG]:BLOCK* invalidateBlocks: block-12345 on datanode-01 listed for deletion."
+    },
+    {
+      "session_id": "ctxv2_008",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:removeStoredBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"block-12345\" has already been removed from node \"node-01\"\n    [DEBUG]:Block \"block-67890\" removed from caching related lists on node \"node-02\"\n    [DEBUG]:Block is complete and safe mode check initiated"
+    },
+    {
+      "session_id": "ctxv2_024",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.protocol.DatanodeInfo,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"blk_12345\" has already been removed from node \"node_01\"\n    [DEBUG]:Block \"blk_67890\" removed from caching related lists on node \"node_02\"\n    [INFO]:Block is not complete or safe mode conditions not met"
+    },
+    {
+      "session_id": "ctxv2_025",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:removeStoredBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"blk_12345\" has already been removed from node \"datanode01\"\n    [DEBUG]:Block \"blk_67890\" removed from caching related lists on node \"datanode02\"\n    [INFO]:Safe mode is off, no operation performed"
+    },
+    {
+      "session_id": "ctxv2_026",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.protocol.DatanodeInfo,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"blk_12345\" has already been removed from node \"datanode01\"\n    [DEBUG]:Block \"blk_67890\" removed from caching related lists on node \"datanode02\"\n    [INFO]:Safe mode is off, no operation performed"
+    },
+    {
+      "session_id": "ctxv2_027",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:removeStoredBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"blk_12345\" has already been removed from node \"node_01\"\n    [DEBUG]:Block \"blk_67890\" removed from caching related lists on node \"node_02\"\n    [INFO]:Block is not complete or safe mode conditions not met"
+    },
+    {
+      "session_id": "ctxv2_028",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.protocol.DatanodeInfo,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"block-12345\" has already been removed from node \"node-01\"\n    [DEBUG]:Block \"block-67890\" removed from caching related lists on node \"node-02\"\n    [DEBUG]:Block is complete and safe mode check initiated"
+    }
+  ],
+  "rows": [
+    {
+      "session_id": "ctxv2_000",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:addStoredBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.protocol.Block,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor,boolean)",
+      "n_mentions": 4,
+      "distinct": [
+        "123"
+      ],
+      "verdict": true,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK addStoredBlock: block-123 is added to pool-01 (size=128MB)\n    [WARN]:BLOCK addStoredBlock: block block-123 moved to storageType DISK on node datanode01\n    [DEBUG]:BLOCK addStoredBlock: Redundant addStoredBlock request received for block-123 on node datanode01 size 128MB\n    [WARN]:Inconsistent number of corrupt replicas for block-123. blockMap has 3 but corrupt replicas map has 2"
+    },
+    {
+      "session_id": "ctxv2_001",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.protocol.DatanodeInfo,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK* invalidateBlock: block_12345 on datanode01\n    [DEBUG]:BLOCK* addToInvalidates: block_12345 [datanode01, datanode02]\n    [DEBUG]:BLOCK* invalidateBlocks: block_12345 on datanode01 listed for deletion."
+    },
+    {
+      "session_id": "ctxv2_002",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:markBlockAsCorrupt(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 3,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK* invalidateBlock: block-12345 on datanode-01\n    [DEBUG]:BLOCK* addToInvalidates: storedBlock-67890 [datanode-01, datanode-02]\n    [DEBUG]:BLOCK* invalidateBlocks: block-12345 on datanode-01 listed for deletion."
+    },
+    {
+      "session_id": "ctxv2_003",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReport(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK markBlockAsCorrupt: Block cannot be marked as corrupt as it does not belong to any file\n    [DEBUG]:BLOCK* addToInvalidates: Block_01 [datanode01, datanode02]\n    [DEBUG]:BLOCK* InvalidateBlocks: add Block_01 to datanode01"
+    },
+    {
+      "session_id": "ctxv2_004",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:reportDiff(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Reported block blk_12345 on datanode01 size 134217728 replicaState = FINALIZED\n    [DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION"
+    },
+    {
+      "session_id": "ctxv2_005",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReportedBlock(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.Block,org.apache.hadoop.hdfs.server.common.HdfsServerConstants$ReplicaState,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Reported block blk_12345 on datanode01 size 134217728 replicaState = FINALIZED\n    [DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION"
+    },
+    {
+      "session_id": "ctxv2_006",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:addToInvalidates(org.apache.hadoop.hdfs.protocol.Block,org.apache.hadoop.hdfs.protocol.DatanodeInfo)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK* addToInvalidates: block_12345 [datanode01, datanode02]\n    [DEBUG]:BLOCK* InvalidateBlocks: add block_12345 to datanode01"
+    },
+    {
+      "session_id": "ctxv2_007",
+      "method": "org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlocks(java.lang.String,org.apache.hadoop.hdfs.protocol.Block[],org.apache.hadoop.hdfs.protocol.DatanodeInfo[][],org.apache.hadoop.fs.StorageType[][],java.lang.String[][])",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[WARN]:Cannot find FsVolumeSpi to report bad block: volume_null, block_12345\n    [WARN]:Failed to transfer block block_12345, IOException: Connection reset"
+    },
+    {
+      "session_id": "ctxv2_008",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:removeStoredBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"block-12345\" has already been removed from node \"node-01\"\n    [DEBUG]:Block \"block-67890\" removed from caching related lists on node \"node-02\"\n    [DEBUG]:Block is complete and safe mode check initiated"
+    },
+    {
+      "session_id": "ctxv2_009",
+      "method": "org.apache.hadoop.hdfs.server.datanode.fsdataset.FsDatasetSpi:adjustCrcChannelPosition(org.apache.hadoop.hdfs.protocol.ExtendedBlock,org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams,int)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Changing meta file offset of block 1024 from 4096 to 8192"
+    },
+    {
+      "session_id": "ctxv2_010",
+      "method": "org.apache.hadoop.hdfs.server.datanode.BlockReceiver:adjustCrcFilePosition()",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Changing meta file offset of block 1024 from 2048 to 4096"
+    },
+    {
+      "session_id": "ctxv2_011",
+      "method": "org.apache.hadoop.hdfs.DataStreamer:createBlockOutputStream(org.apache.hadoop.hdfs.protocol.DatanodeInfo[],org.apache.hadoop.fs.StorageType[],java.lang.String[],long,boolean)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Nodes are empty for write pipeline of block_12345\n    [DEBUG]:Pipeline = [datanode01, datanode02, datanode03], DataStreamerInstance\n    [INFO]:Resetting internal error state\n    [INFO]:Waiting for node restart\n    [INFO]:Node restart completed"
+    },
+    {
+      "session_id": "ctxv2_012",
+      "method": "org.apache.hadoop.hdfs.DataStreamer:run()",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Nodes are empty for write pipeline of block_12345\n    [DEBUG]:Pipeline = [datanode01, datanode02, datanode03], DataStreamerInstance\n    [INFO]:Resetting internal error state\n    [INFO]:Restarting node due to timeout"
+    },
+    {
+      "session_id": "ctxv2_013",
+      "method": "org.apache.hadoop.hdfs.DataStreamer:nextBlockOutputStream()",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Nodes are empty for write pipeline of block_12345\n    [DEBUG]:Pipeline = [datanode01, datanode02, datanode03], DataStreamerInstance\n    [INFO]:Resetting internal error state\n    [INFO]:Restarting node due to timeout"
+    },
+    {
+      "session_id": "ctxv2_014",
+      "method": "org.apache.hadoop.hdfs.DataStreamer:setupPipelineInternal(org.apache.hadoop.hdfs.protocol.DatanodeInfo[],org.apache.hadoop.fs.StorageType[],java.lang.String[])",
+      "n_mentions": 1,
+      "distinct": [
+        "1"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Nodes are empty for write pipeline of block-01\n    [DEBUG]:Pipeline = [node01, node02, node03], restartingNode\n    [INFO]:Resetting internal error state\n    [INFO]:Fetched 128MB block from namenode01"
+    },
+    {
+      "session_id": "ctxv2_015",
+      "method": "org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlock(org.apache.hadoop.hdfs.protocol.ExtendedBlock,org.apache.hadoop.hdfs.protocol.DatanodeInfo[],org.apache.hadoop.fs.StorageType[],java.lang.String[])",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Error report sent to NameNode\n    [WARN]:Cannot find FsVolumeSpi to report bad block: /user/data/block-12345"
+    },
+    {
+      "session_id": "ctxv2_016",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateCorruptReplicas(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.protocol.Block,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Invalidate corrupt replicas error in deleting bad block blk_12345 on datanode01"
+    },
+    {
+      "session_id": "ctxv2_017",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:updateNeededReconstructions(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,int,int)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Removing block blk_12345 from priority queue 3"
+    },
+    {
+      "session_id": "ctxv2_018",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processExtraRedundancyBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,short,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[TRACE]:BLOCK processExtraRedundancyBlock: Postponing block-12345 since storage storage-01 does not yet have up-to-date information."
+    },
+    {
+      "session_id": "ctxv2_019",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:markBlockAsCorrupt(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK markBlockAsCorrupt: Block_12345 cannot be marked as corrupt as it does not belong to any file\n    [DEBUG]:BLOCK* addToInvalidates: Block_12345 [datanode01, datanode02]\n    [DEBUG]:BLOCK* InvalidateBlocks: add Block_12345 to datanode01"
+    },
+    {
+      "session_id": "ctxv2_020",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReport(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Reported block blk_12345 on datanode01 size 134217728 replicaState = FINALIZED\n    [DEBUG]:In memory blockUCState = UNDER_CONSTRUCTION"
+    },
+    {
+      "session_id": "ctxv2_021",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.protocol.DatanodeInfo,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK* invalidateBlock: block_01 on datanode_01\n    [DEBUG]:BLOCK* invalidateBlocks: postponing invalidation of block_01 on datanode_01 because 3 replica(s) are located on nodes with potentially out-of-date block reports"
+    },
+    {
+      "session_id": "ctxv2_022",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReportedBlock(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.Block,org.apache.hadoop.hdfs.server.common.HdfsServerConstants$ReplicaState,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Reported block block_01 on datanode01 size 128MB replicaState = FINALIZED"
+    },
+    {
+      "session_id": "ctxv2_023",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReportedBlock(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.Block,org.apache.hadoop.hdfs.server.common.HdfsServerConstants$ReplicaState,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Reported block blk_12345 on datanode01 size 134217728 replicaState = FINALIZED"
+    },
+    {
+      "session_id": "ctxv2_024",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.protocol.DatanodeInfo,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"blk_12345\" has already been removed from node \"node_01\"\n    [DEBUG]:Block \"blk_67890\" removed from caching related lists on node \"node_02\"\n    [INFO]:Block is not complete or safe mode conditions not met"
+    },
+    {
+      "session_id": "ctxv2_025",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:removeStoredBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"blk_12345\" has already been removed from node \"datanode01\"\n    [DEBUG]:Block \"blk_67890\" removed from caching related lists on node \"datanode02\"\n    [INFO]:Safe mode is off, no operation performed"
+    },
+    {
+      "session_id": "ctxv2_026",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.protocol.DatanodeInfo,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"blk_12345\" has already been removed from node \"datanode01\"\n    [DEBUG]:Block \"blk_67890\" removed from caching related lists on node \"datanode02\"\n    [INFO]:Safe mode is off, no operation performed"
+    },
+    {
+      "session_id": "ctxv2_027",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:removeStoredBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockInfo,org.apache.hadoop.hdfs.server.blockmanagement.DatanodeDescriptor)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"blk_12345\" has already been removed from node \"node_01\"\n    [DEBUG]:Block \"blk_67890\" removed from caching related lists on node \"node_02\"\n    [INFO]:Block is not complete or safe mode conditions not met"
+    },
+    {
+      "session_id": "ctxv2_028",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:invalidateBlock(org.apache.hadoop.hdfs.server.blockmanagement.BlockToMarkCorrupt,org.apache.hadoop.hdfs.protocol.DatanodeInfo,org.apache.hadoop.hdfs.server.blockmanagement.NumberReplicas)",
+      "n_mentions": 2,
+      "distinct": [
+        "12345",
+        "67890"
+      ],
+      "verdict": false,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Block \"block-12345\" has already been removed from node \"node-01\"\n    [DEBUG]:Block \"block-67890\" removed from caching related lists on node \"node-02\"\n    [DEBUG]:Block is complete and safe mode check initiated"
+    },
+    {
+      "session_id": "ctxv2_029",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReport(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Reported block blk_12345 on datanode01 size 134217728 replicaState = FINALIZED\n    [INFO]:Collecting blocks not reported"
+    },
+    {
+      "session_id": "ctxv2_030",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:reportDiff(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Reported block blk_12345 on datanode01 size 134217728 replicaState = FINALIZED\n    [INFO]:Collecting blocks not reported"
+    },
+    {
+      "session_id": "ctxv2_031",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:reportDiff(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection,java.util.Collection)",
+      "n_mentions": 1,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Reported block blk_12345 on datanode01 size 128MB replicaState = FINALIZED\n    [INFO]:Collecting blocks not reported"
+    },
+    {
+      "session_id": "ctxv2_032",
+      "method": "org.apache.hadoop.hdfs.server.datanode.BlockReceiver:adjustCrcFilePosition()",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:Changing meta file offset of block 1024 from 2048 to 4096"
+    },
+    {
+      "session_id": "ctxv2_033",
+      "method": "org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlocks(java.lang.String,org.apache.hadoop.hdfs.protocol.Block[],org.apache.hadoop.hdfs.protocol.DatanodeInfo[][],org.apache.hadoop.fs.StorageType[][],java.lang.String[][])",
+      "n_mentions": 3,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": true,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Can’t send invalid block blk_12345\n    [INFO]:Error report sent to NameNode namenode01\n    [WARN]:Volume is null, reporting bad block blk_12345\n    [WARN]:Failed to transfer block blk_12345, IOException: Connection reset"
+    },
+    {
+      "session_id": "ctxv2_034",
+      "method": "org.apache.hadoop.hdfs.DataStreamer:createBlockOutputStream(org.apache.hadoop.hdfs.protocol.DatanodeInfo[],org.apache.hadoop.fs.StorageType[],java.lang.String[],long,boolean)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Nodes are empty for write pipeline of block_12345\n    [DEBUG]:Pipeline = [datanode01, datanode02, datanode03], DataStreamerInstance\n    [INFO]:Resetting internal error state\n    [INFO]:Restarting node due to failure"
+    },
+    {
+      "session_id": "ctxv2_035",
+      "method": "org.apache.hadoop.hdfs.DataStreamer:setupPipelineInternal(org.apache.hadoop.hdfs.protocol.DatanodeInfo[],org.apache.hadoop.fs.StorageType[],java.lang.String[])",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Nodes are empty for write pipeline of block_12345\n    [DEBUG]:Pipeline = [datanode01, datanode02, datanode03], DataStreamerInstance\n    [INFO]:Resetting internal error state\n    [INFO]:Waiting for 5 seconds before retry\n    [INFO]:Retrying operation after wait"
+    },
+    {
+      "session_id": "ctxv2_036",
+      "method": "org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlocks(java.lang.String,org.apache.hadoop.hdfs.protocol.Block[],org.apache.hadoop.hdfs.protocol.DatanodeInfo[][],org.apache.hadoop.fs.StorageType[][],java.lang.String[][])",
+      "n_mentions": 2,
+      "distinct": [
+        "12345"
+      ],
+      "verdict": true,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Can’t send invalid block blk_12345\n    [INFO]:Error report sent to NameNode\n    [WARN]:Failed to transfer block blk_12345, IOException"
+    },
+    {
+      "session_id": "ctxv2_037",
+      "method": "org.apache.hadoop.hdfs.server.datanode.DataNode:transferBlock(org.apache.hadoop.hdfs.protocol.ExtendedBlock,org.apache.hadoop.hdfs.protocol.DatanodeInfo[],org.apache.hadoop.fs.StorageType[],java.lang.String[])",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[INFO]:Can’t send invalid block 128MB_block\n    [INFO]:Error report sent to https://namenode:8020\n    [WARN]:Cannot find FsVolumeSpi to report bad block: /user/data, 128MB_block"
+    },
+    {
+      "session_id": "ctxv2_038",
+      "method": "org.apache.hadoop.hdfs.server.blockmanagement.BlockManager:processReport(org.apache.hadoop.hdfs.server.blockmanagement.DatanodeStorageInfo,org.apache.hadoop.hdfs.protocol.BlockListAsLongs)",
+      "n_mentions": 0,
+      "distinct": [],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[DEBUG]:BLOCK markBlockAsCorrupt: Block_12345 cannot be marked as corrupt as it does not belong to any file\n    [DEBUG]:BLOCK NameSystem.addToCorruptReplicasMap: Block_12345 added as corrupt on datanode01 by 192.168.1.100 DiskFailure"
+    },
+    {
+      "session_id": "ctxv2_039",
+      "method": "org.apache.hadoop.hdfs.DataStreamer:run()",
+      "n_mentions": 1,
+      "distinct": [
+        "1024"
+      ],
+      "verdict": null,
+      "finish_reason": "stop",
+      "filled_excerpt": "[WARN]:Abandoning block-1024\n    [WARN]:Excluding datanode datanode-03"
+    }
+  ]
+}

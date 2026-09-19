@@ -1,0 +1,166 @@
+{
+  "cot_neutral": {
+    "model": "gpt-4o-2024-11-20",
+    "n": 40,
+    "mean_response_chars": 2666,
+    "overall": {
+      "n": 40,
+      "TP": 26,
+      "TN": 7,
+      "FP": 7,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.825,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.5,
+      "balanced_accuracy": 0.75
+    },
+    "simple": {
+      "n": 28,
+      "TP": 17,
+      "TN": 5,
+      "FP": 6,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.7857,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.4545,
+      "balanced_accuracy": 0.7273
+    },
+    "complex": {
+      "n": 12,
+      "TP": 9,
+      "TN": 2,
+      "FP": 1,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.9167,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.6667,
+      "balanced_accuracy": 0.8333
+    }
+  },
+  "nocot_neutral": {
+    "model": "gpt-4o-2024-11-20",
+    "n": 40,
+    "mean_response_chars": 27,
+    "overall": {
+      "n": 40,
+      "TP": 26,
+      "TN": 6,
+      "FP": 8,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.8,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.4286,
+      "balanced_accuracy": 0.7143
+    },
+    "simple": {
+      "n": 28,
+      "TP": 17,
+      "TN": 4,
+      "FP": 7,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.75,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.3636,
+      "balanced_accuracy": 0.6818
+    },
+    "complex": {
+      "n": 12,
+      "TP": 9,
+      "TN": 2,
+      "FP": 1,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.9167,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.6667,
+      "balanced_accuracy": 0.8333
+    }
+  },
+  "cot": {
+    "model": "gpt-4o-2024-11-20",
+    "n": 40,
+    "mean_response_chars": 2823,
+    "overall": {
+      "n": 40,
+      "TP": 26,
+      "TN": 0,
+      "FP": 14,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.65,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    "simple": {
+      "n": 28,
+      "TP": 17,
+      "TN": 0,
+      "FP": 11,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.6071,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    "complex": {
+      "n": 12,
+      "TP": 9,
+      "TN": 0,
+      "FP": 3,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.75,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.0,
+      "balanced_accuracy": 0.5
+    }
+  },
+  "nocot": {
+    "model": "gpt-4o-2024-11-20",
+    "n": 40,
+    "mean_response_chars": 27,
+    "overall": {
+      "n": 40,
+      "TP": 26,
+      "TN": 0,
+      "FP": 14,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.65,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    "simple": {
+      "n": 28,
+      "TP": 17,
+      "TN": 0,
+      "FP": 11,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.6071,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    "complex": {
+      "n": 12,
+      "TP": 9,
+      "TN": 0,
+      "FP": 3,
+      "FN": 0,
+      "unparsed": 0,
+      "accuracy": 0.75,
+      "recall_feasible": 1.0,
+      "specificity_infeasible": 0.0,
+      "balanced_accuracy": 0.5
+    }
+  }
+}

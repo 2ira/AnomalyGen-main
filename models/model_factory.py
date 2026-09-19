@@ -1,5 +1,6 @@
 # model_factory.py
 import logging
+import os
 from openai import OpenAI
 from models.decoder import APIChatDecoder  # 我们将把 OpenAIChatDecoder 重命名为更通用的名字
 
@@ -11,13 +12,17 @@ class ModelFactory:
     def create_model(self, backend: str) -> APIChatDecoder:
         if backend == "openai":
             api_config = self.config["openai"]
+            api_key = os.environ.get("OPENAI_API_KEY") or api_config["api_key"]
+            base_url = os.environ.get("OPENAI_BASE_URL") or api_config["base_url"]
+            model_name = os.environ.get("OPENAI_MODEL") or api_config["default_model"]
+            timeout = float(os.environ.get("OPENAI_TIMEOUT", "180"))
             
             try:
                 client = OpenAI(
-                    api_key=api_config["api_key"],
-                    base_url=api_config["base_url"],
-                    max_retries=api_config.get("max_retries", 3),  # 从配置读取重试次数，默认为3
-                    timeout= 40.0
+                    api_key=api_key,
+                    base_url=base_url,
+                    max_retries=api_config.get("max_retries", 5),
+                    timeout=timeout,
                 )
             except Exception as e:
                 self.logger.error(f"Failed to create OpenAI client: {e}")
@@ -25,7 +30,7 @@ class ModelFactory:
 
             return APIChatDecoder(
                 client=client,
-                name=api_config["default_model"],
+                name=model_name,
                 logger=self.logger,
                 temperature=api_config["temperature"],
                 max_tokens=api_config["max_tokens"],

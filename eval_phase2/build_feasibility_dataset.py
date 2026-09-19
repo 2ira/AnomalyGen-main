@@ -298,10 +298,10 @@ def build(repo_root):
                                     or extract_method(caller_file, caller_mtd, 40))
             entry["callee_code"] = (extract_snippet(callee_file, callee_mtd)
                                     or extract_method(callee_file, callee_mtd, 40))
-            if "infeasible_reason" in mp and entry["caller_code"]:
-                entry["caller_code"] = (
-                    f"// INFEASIBLE: {mp['infeasible_reason']}\n\n"
-                    + entry["caller_code"])
+            # Do not prefix caller_code with "// INFEASIBLE: ...": that
+            # string is concatenated into the LLM prompt by run_one() and
+            # leaks the ground-truth label.  The reason stays in
+            # infeasible_reason / gt_detail, which are not sent to the model.
 
         # Add CFG path info
         cfg = CFG_PATHS.get(mp["mp_id"], {})
