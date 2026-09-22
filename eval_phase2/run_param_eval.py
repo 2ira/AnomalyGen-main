@@ -16,6 +16,8 @@ Input : eval_phase2/eval_data/param_pool.jsonl
 Output: eval_phase2/eval_data/param_scored.jsonl
 Optional: --human eval_phase2/eval_data/param_human.jsonl  (human-annotated subset for kappa)
 """
+from __future__ import annotations
+
 import os
 import re
 import csv
@@ -42,9 +44,34 @@ def _valid_int(v: str) -> bool:
     return bool(re.fullmatch(r"\d+", v.strip()))
 
 
-def _valid_nodeid(v: str) -> bool:
-    # Node/pool identifier: numeric or alphanumeric id (namenode01 -> 01, data_pool_3 -> 3)
-    return bool(re.fullmatch(r"[A-Za-z0-9_\-]+", v.strip()))
+# Drain template already carries the role prefix. The slot is the numeric suffix
+# (namenode01 -> "01", datanode02 -> "02", node-01 -> "01"). A full hostname such
+# as "namenode01" stuffed into node-<*> or datanode<*> is type-invalid.
+ROLE_PREFIX_LEFT = re.compile(
+    r"(namenode|datanode|node-|(?<![A-Za-z])node)\s*$",
+    re.IGNORECASE,
+)
+HOST_IN_VALUE = re.compile(r"(?i)(namenode|datanode)")
+
+
+def _valid_nodeid(v: str, item: dict | None = None) -> bool:
+    v = (v or "").strip()
+    if not re.fullmatch(r"[A-Za-z0-9_\-]+", v):
+        return False
+    if not item:
+        return True
+    tmpl = item.get("event_template") or ""
+    try:
+        idx = int(item.get("slot_idx") or 0)
+    except (TypeError, ValueError):
+        idx = 0
+    parts = tmpl.split("<*>")
+    left = parts[idx] if idx < len(parts) else ""
+    if ROLE_PREFIX_LEFT.search(left[-40:]):
+        if HOST_IN_VALUE.search(v):
+            return False
+        return bool(re.fullmatch(r"\d+", v))
+    return True
 
 
 def _valid_status(v: str) -> bool:
@@ -82,7 +109,12 @@ TYPE_VALIDATORS = {
 
 
 def score_type_validity(item: dict):
-    fn = TYPE_VALIDATORS.get(item["slot_type"])
+    stype = item.get("slot_type")
+    if stype == "generic":
+        return None
+    if stype == "nodeid":
+        return bool(_valid_nodeid(str(item.get("param_value", "")), item))
+    fn = TYPE_VALIDATORS.get(stype)
     if fn is None:
         return None
     return bool(fn(str(item["param_value"])))

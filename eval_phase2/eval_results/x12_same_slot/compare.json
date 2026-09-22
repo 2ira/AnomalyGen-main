@@ -1,0 +1,347 @@
+{
+  "protocol": {
+    "same_slot": true,
+    "n_locked": 144,
+    "n_methods": 15,
+    "denominator": "144 DeepSeek type-decidable slots; GPT-4o missing = False",
+    "nodeid_rule": "role prefix namenode/datanode/node-/node already in the template: slot value must be digits, not a hostname",
+    "n_gpt4o_ok": 15,
+    "filled_path": "eval_phase2/eval_results/x12_same_slot/filled.jsonl"
+  },
+  "matched_n_144": {
+    "label": "same_slot_gpt4o_locked_templates",
+    "n": 144,
+    "deepseek_true": 141,
+    "deepseek_type_validity": 0.9792,
+    "gpt4o_true_over_144": 127,
+    "gpt4o_type_validity": 0.8819,
+    "n_recovered": 130,
+    "n_missing": 14,
+    "gpt4o_true_among_recovered": 127,
+    "gpt4o_recovered_validity": 0.9769,
+    "by_type": {
+      "int": {
+        "n": 31,
+        "deepseek_true": 31,
+        "gpt4o_true": 30,
+        "recovered": 30,
+        "missing": 1,
+        "gpt4o_rate": 0.9677,
+        "deepseek_rate": 1.0
+      },
+      "ip_fragment": {
+        "n": 2,
+        "deepseek_true": 1,
+        "gpt4o_true": 2,
+        "recovered": 2,
+        "missing": 0,
+        "gpt4o_rate": 1.0,
+        "deepseek_rate": 0.5
+      },
+      "nodeid": {
+        "n": 81,
+        "deepseek_true": 80,
+        "gpt4o_true": 67,
+        "recovered": 68,
+        "missing": 13,
+        "gpt4o_rate": 0.8272,
+        "deepseek_rate": 0.9877
+      },
+      "path": {
+        "n": 24,
+        "deepseek_true": 23,
+        "gpt4o_true": 24,
+        "recovered": 24,
+        "missing": 0,
+        "gpt4o_rate": 1.0,
+        "deepseek_rate": 0.9583
+      },
+      "status": {
+        "n": 6,
+        "deepseek_true": 6,
+        "gpt4o_true": 4,
+        "recovered": 6,
+        "missing": 0,
+        "gpt4o_rate": 0.6667,
+        "deepseek_rate": 1.0
+      }
+    }
+  },
+  "missing_audit": {
+    "n_missing": 14,
+    "by_reason": {
+      "camelcase_wording": 5,
+      "role_prefix_dropped_namenode01": 9
+    },
+    "missing_rows": [
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::2::0",
+        "method_prefix": "675fdd79",
+        "event_template": "invalidateCorruptReplicas error in deleting bad block Block<*> on node datanode<*>",
+        "slot_idx": 0,
+        "slot_type": "nodeid",
+        "deepseek_value": "456",
+        "reason": "camelcase_wording"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::8::0",
+        "method_prefix": "3a4fb26e",
+        "event_template": "Datanode <*> did not restart within <*>ms: datanode<*>",
+        "slot_idx": 0,
+        "slot_type": "nodeid",
+        "deepseek_value": "1",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::7::1",
+        "method_prefix": "3a4fb26e",
+        "event_template": "Datanode <*> is restarting: datanode<*>",
+        "slot_idx": 1,
+        "slot_type": "nodeid",
+        "deepseek_value": "02",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv::2::0",
+        "method_prefix": "18c30f2e",
+        "event_template": "BLOCK* removeStoredBlock: block-<*> removed from caching related lists on node node-<*>",
+        "slot_idx": 0,
+        "slot_type": "nodeid",
+        "deepseek_value": "123",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::1::0",
+        "method_prefix": "675fdd79",
+        "event_template": "BLOCK* processExtraRedundancyBlock: Postponing Block<*> since storage Storage<*> does not yet have up-to-date information.",
+        "slot_idx": 0,
+        "slot_type": "nodeid",
+        "deepseek_value": "999",
+        "reason": "camelcase_wording"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::8::1",
+        "method_prefix": "3a4fb26e",
+        "event_template": "Datanode <*> did not restart within <*>ms: datanode<*>",
+        "slot_idx": 1,
+        "slot_type": "int",
+        "deepseek_value": "30000",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv::2::1",
+        "method_prefix": "18c30f2e",
+        "event_template": "BLOCK* removeStoredBlock: block-<*> removed from caching related lists on node node-<*>",
+        "slot_idx": 1,
+        "slot_type": "nodeid",
+        "deepseek_value": "01",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv::1::1",
+        "method_prefix": "18c30f2e",
+        "event_template": "BLOCK* removeStoredBlock: block-<*> has already been removed from node node-<*>",
+        "slot_idx": 1,
+        "slot_type": "nodeid",
+        "deepseek_value": "01",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::1::0",
+        "method_prefix": "675fdd79",
+        "event_template": "invalidateCorruptReplicas error in deleting bad block Block<*> on node datanode<*>",
+        "slot_idx": 0,
+        "slot_type": "nodeid",
+        "deepseek_value": "456",
+        "reason": "camelcase_wording"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::2::1",
+        "method_prefix": "675fdd79",
+        "event_template": "invalidateCorruptReplicas error in deleting bad block Block<*> on node datanode<*>",
+        "slot_idx": 1,
+        "slot_type": "nodeid",
+        "deepseek_value": "01",
+        "reason": "camelcase_wording"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::8::2",
+        "method_prefix": "3a4fb26e",
+        "event_template": "Datanode <*> did not restart within <*>ms: datanode<*>",
+        "slot_idx": 2,
+        "slot_type": "nodeid",
+        "deepseek_value": "02",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv::1::0",
+        "method_prefix": "18c30f2e",
+        "event_template": "BLOCK* removeStoredBlock: block-<*> has already been removed from node node-<*>",
+        "slot_idx": 0,
+        "slot_type": "nodeid",
+        "deepseek_value": "123",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::7::0",
+        "method_prefix": "3a4fb26e",
+        "event_template": "Datanode <*> is restarting: datanode<*>",
+        "slot_idx": 0,
+        "slot_type": "nodeid",
+        "deepseek_value": "1",
+        "reason": "role_prefix_dropped_namenode01"
+      },
+      {
+        "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::1::1",
+        "method_prefix": "675fdd79",
+        "event_template": "invalidateCorruptReplicas error in deleting bad block Block<*> on node datanode<*>",
+        "slot_idx": 1,
+        "slot_type": "nodeid",
+        "deepseek_value": "01",
+        "reason": "camelcase_wording"
+      }
+    ],
+    "recovered_hostname_in_role_slot": [
+      {
+        "param_id": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv::1::1",
+        "event_template": "BLOCK* ExcessRedundancyMap.remove(block-<*>, node-<*>)",
+        "slot_idx": 1,
+        "gpt4o_value": "namenode01",
+        "gpt4o_type_valid": false
+      }
+    ],
+    "note": "Missing slots never reach the format checker; they score False so both models share denominator 144. Role-prefixed nodeid slots (namenode/datanode/node-/node) now require a numeric suffix; a recovered 'node-namenode01' is type-invalid."
+  },
+  "blockid_consistency": {
+    "protocol": "R2.7 invariant: one block id per session. Strict same-slot uses the 27 locked slots whose left context is blk_/Block/block-/storedBlock/block; GPT-4o missing or no unique session block = False.",
+    "session_level": {
+      "deepseek_full_csv": {
+        "n_sessions": 36,
+        "n_decidable": 4,
+        "n_pass": 4,
+        "n_fail": 0,
+        "n_undecidable": 32,
+        "rate": 1.0
+      },
+      "gpt4o_method_fill": {
+        "n_sessions": 15,
+        "n_decidable": 2,
+        "n_pass": 2,
+        "n_fail": 0,
+        "n_undecidable": 13,
+        "rate": 1.0
+      },
+      "note": "DeepSeek sessions are (source_file, block_id) reconstructed from the parsed CSVs. GPT-4o sessions are the 15 locked-template fills, so many have <2 block mentions."
+    },
+    "slot_level_inherit": {
+      "deepseek": {
+        "n_decidable": 49,
+        "n_pass": 49,
+        "rate": 1.0
+      },
+      "gpt4o": {
+        "n_decidable": 49,
+        "n_pass": 49,
+        "rate": 1.0
+      }
+    },
+    "strict_block_typed": {
+      "n": 27,
+      "denominator": "27 locked block-prefix slots; missing / no unique session block counted False",
+      "deepseek_true": 26,
+      "deepseek_rate": 0.963,
+      "gpt4o_true": 19,
+      "gpt4o_rate": 0.7037,
+      "n_gpt4o_missing": 5,
+      "n_gpt4o_no_unique_session_block": 3,
+      "gpt4o_fail_rows": [
+        {
+          "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::2::0",
+          "event_template": "invalidateCorruptReplicas error in deleting bad block Block<*> on node datanode<*>",
+          "deepseek_value": "456",
+          "gpt4o_value": null,
+          "gpt4o_session_block": [],
+          "reason": "missing_template"
+        },
+        {
+          "param_id": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv::2::0",
+          "event_template": "BLOCK* removeStoredBlock: block-<*> removed from caching related lists on node node-<*>",
+          "deepseek_value": "123",
+          "gpt4o_value": null,
+          "gpt4o_session_block": [
+            "1024"
+          ],
+          "reason": "missing_template"
+        },
+        {
+          "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::1::0",
+          "event_template": "BLOCK* processExtraRedundancyBlock: Postponing Block<*> since storage Storage<*> does not yet have up-to-date information.",
+          "deepseek_value": "999",
+          "gpt4o_value": null,
+          "gpt4o_session_block": [],
+          "reason": "missing_template"
+        },
+        {
+          "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::4::0",
+          "event_template": "BLOCK* removeStoredBlock: Block storedBlock<*> has already been removed from node datanode<*>",
+          "deepseek_value": "01",
+          "gpt4o_value": "_2048",
+          "gpt4o_session_block": [],
+          "reason": "no_unique_session_block"
+        },
+        {
+          "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::5::0",
+          "event_template": "BLOCK* removeStoredBlock: Block storedBlock<*> removed from caching related lists on node datanode<*>",
+          "deepseek_value": "01",
+          "gpt4o_value": "_2048",
+          "gpt4o_session_block": [],
+          "reason": "no_unique_session_block"
+        },
+        {
+          "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::1::0",
+          "event_template": "invalidateCorruptReplicas error in deleting bad block Block<*> on node datanode<*>",
+          "deepseek_value": "456",
+          "gpt4o_value": null,
+          "gpt4o_session_block": [],
+          "reason": "missing_template"
+        },
+        {
+          "param_id": "output_v1/ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv::2::0",
+          "event_template": "BLOCK* addToInvalidates: Block storedBlock<*> datanodes<*>",
+          "deepseek_value": "01",
+          "gpt4o_value": "_2048",
+          "gpt4o_session_block": [],
+          "reason": "no_unique_session_block"
+        },
+        {
+          "param_id": "output_v1/ablation/baseline/parsed_logs/hdfs_combined_parsed_logs.csv::1::0",
+          "event_template": "BLOCK* removeStoredBlock: block-<*> has already been removed from node node-<*>",
+          "deepseek_value": "123",
+          "gpt4o_value": null,
+          "gpt4o_session_block": [
+            "1024"
+          ],
+          "reason": "missing_template"
+        }
+      ]
+    },
+    "old_ctx_consistent_diagnostic": {
+      "deepseek": {
+        "true": 11,
+        "false": 47,
+        "none": 86,
+        "n_decidable": 58,
+        "rate_among_decidable": 0.1897,
+        "note": "Deprecated diagnostic. The rule conflates datanode/node ids; a legal replication pipeline with several datanodes scores False."
+      },
+      "gpt4o": {
+        "true": 17,
+        "false": 51,
+        "none": 76,
+        "n_decidable": 68,
+        "rate_among_decidable": 0.25,
+        "note": "Deprecated diagnostic. The rule conflates datanode/node ids; a legal replication pipeline with several datanodes scores False."
+      }
+    }
+  }
+}

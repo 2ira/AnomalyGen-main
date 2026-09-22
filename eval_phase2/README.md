@@ -18,6 +18,8 @@ Do not cite CoT 85% or type validity 162/163.
 | Block-id consistency (archived corpus, same 207-slot sample) | **4/4** sessions; appendix 59/73 = 80.8% | `run_blockid_consistency.py` |
 | Ctx v2 (GPT-4o Phase III refill) | **3/10 = 30%** | `eval_results/ctx_v2/` |
 | X7 GPT-4o vs archived DeepSeek-V3 fill | 0.971 vs 0.985 type validity; not the same 207 Drain ids | `eval_results/x7_gpt4o/` |
+| **X12 same-slot** (R2.12 headline) | type-valid **141/144 vs 127/144**; block-id strict **26/27 vs 19/27**. DeepSeek is the stronger fill model. | `eval_results/x12_same_slot/compare.json` |
+| X2 Deep-Loglizer Table 5 reruns | lstm-sequentials w/o analysis **0.958/0.996/0.923**; lstm-next_log w/o analysis **0.916/0.942/0.891**; semantic cells not replaced (MPS float64) | `eval_results/x2_deeploglizer/` (repo root, not this folder) |
 
 `simple`/`complex` in `feasibility_manual.jsonl` is an **author-assigned** stratum, not `common.py::stratum_of`.
 
@@ -28,9 +30,11 @@ eval_phase2/
 ├── run_feasibility_eval.py       # X1 protocol (first <eval>)
 ├── run_param_eval.py             # type-validity regexes
 ├── run_blockid_consistency.py    # session-level block-id invariant (replaces old ctx_consistent)
-├── r2_redesign/                  # CoT v2, ctx v2, X7, generic-slot export
+├── r2_redesign/                  # CoT v2, ctx v2, X7, X12 same-slot, generic-slot export
 ├── eval_data/
 └── eval_results/
 ```
 
 Rebuild protocol: `r2_redesign/PROTOCOL.md`. Key from `OPENAI_API_KEY` only; never write it to `config.json`.
+
+Same-slot refill: `python3 r2_redesign/run_x12_same_slot.py {build,run,score}`. Scoring does not call the API; `score` reads `eval_results/x12_same_slot/filled.jsonl`.

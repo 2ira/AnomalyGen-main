@@ -1,0 +1,69 @@
+{
+  "protocol": {
+    "same_slot": true,
+    "n_locked": 144,
+    "n_methods": 15,
+    "denominator": "144 DeepSeek type-decidable slots; GPT-4o missing = False",
+    "n_gpt4o_ok": 15,
+    "filled_path": "eval_phase2/eval_results/x12_same_slots/filled.jsonl"
+  },
+  "matched_n_144": {
+    "label": "locked_extract_from_previous_same_prompt_fill",
+    "n": 144,
+    "deepseek_true": 141,
+    "deepseek_type_validity": 0.9792,
+    "gpt4o_true_over_144": 62,
+    "gpt4o_type_validity": 0.4306,
+    "n_recovered": 63,
+    "n_missing": 81,
+    "gpt4o_true_among_recovered": 62,
+    "gpt4o_recovered_validity": 0.9841,
+    "by_type": {
+      "int": {
+        "n": 31,
+        "deepseek_true": 31,
+        "gpt4o_true": 17,
+        "recovered": 17,
+        "missing": 14,
+        "gpt4o_rate": 0.5484,
+        "deepseek_rate": 1.0
+      },
+      "ip_fragment": {
+        "n": 2,
+        "deepseek_true": 1,
+        "gpt4o_true": 0,
+        "recovered": 0,
+        "missing": 2,
+        "gpt4o_rate": 0.0,
+        "deepseek_rate": 0.5
+      },
+      "nodeid": {
+        "n": 81,
+        "deepseek_true": 80,
+        "gpt4o_true": 24,
+        "recovered": 24,
+        "missing": 57,
+        "gpt4o_rate": 0.2963,
+        "deepseek_rate": 0.9877
+      },
+      "path": {
+        "n": 24,
+        "deepseek_true": 23,
+        "gpt4o_true": 19,
+        "recovered": 20,
+        "missing": 4,
+        "gpt4o_rate": 0.7917,
+        "deepseek_rate": 0.9583
+      },
+      "status": {
+        "n": 6,
+        "deepseek_true": 6,
+        "gpt4o_true": 2,
+        "recovered": 2,
+        "missing": 4,
+        "gpt4o_rate": 0.3333,
+        "deepseek_rate": 1.0
+      }
+    }
+  }
+}
