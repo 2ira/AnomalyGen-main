@@ -1,0 +1,61 @@
+# Volume-control data prep (not PreLog F1).
+# python aug_hdfs_data.py --use_original_resample ...
+# At tar=0.0, extras are resampled from a training set with 0 anomalies.
+
+MODE: w/o synthesis (Random Resampling from Original Training Data)
+
+hdfs_0.0_tar, aug_ratio=0.01
+Original train size: 446663
+Sessions added: 4466 (4442 unique, 24 repeated)
+Resampled data: 4466 total, 0 anomalies (0.00%)
+Final train size: 451129 (0.00% anomaly)
+Output: deep-loglizer/data/processed/HDFS/hdfs_wo_synthesis/hdfs_0.0_tar_plus_resample_0.01
+
+hdfs_0.0_tar, aug_ratio=0.001
+Original train size: 446663
+Sessions added: 446 (446 unique, 0 repeated)
+Resampled data: 446 total, 0 anomalies (0.00%)
+Final train size: 447109 (0.00% anomaly)
+Output: deep-loglizer/data/processed/HDFS/hdfs_wo_synthesis/hdfs_0.0_tar_plus_resample_0.001
+
+hdfs_0.0_tar, aug_ratio=0.1
+Original train size: 446663
+Sessions added: 44666 (42550 unique, 2116 repeated)
+Resampled data: 44666 total, 0 anomalies (0.00%)
+Final train size: 491329 (0.00% anomaly)
+Output: deep-loglizer/data/processed/HDFS/hdfs_wo_synthesis/hdfs_0.0_tar_plus_resample_0.1
+
+hdfs_0.0_tar, aug_ratio=1.0
+Original train size: 446663
+Sessions added: 446663 (282568 unique, 164095 repeated)
+Resampled data: 446663 total, 0 anomalies (0.00%)
+Final train size: 893326 (0.00% anomaly)
+Output: deep-loglizer/data/processed/HDFS/hdfs_wo_synthesis/hdfs_0.0_tar_plus_resample_1.0
+
+hdfs_1.0_tar, aug_ratio=0.001
+Original train size: 460048
+Sessions added: 460 (460 unique, 0 repeated)
+Resampled data: 460 total, 13 anomalies (2.83%)
+Final train size: 460508 (2.91% anomaly)
+Output: deep-loglizer/data/processed/HDFS/hdfs_wo_synthesis/hdfs_1.0_tar_plus_resample_0.001
+
+hdfs_1.0_tar, aug_ratio=0.01
+Original train size: 460048
+Sessions added: 4600 (4586 unique, 14 repeated)
+Resampled data: 4600 total, 148 anomalies (3.22%)
+Final train size: 464648 (2.91% anomaly)
+Output: deep-loglizer/data/processed/HDFS/hdfs_wo_synthesis/hdfs_1.0_tar_plus_resample_0.01
+
+hdfs_1.0_tar, aug_ratio=0.1
+Original train size: 460048
+Sessions added: 46004 (43853 unique, 2151 repeated)
+Resampled data: 46004 total, 1358 anomalies (2.95%)
+Final train size: 506052 (2.91% anomaly)
+Output: deep-loglizer/data/processed/HDFS/hdfs_wo_synthesis/hdfs_1.0_tar_plus_resample_0.1
+
+hdfs_1.0_tar, aug_ratio=1.0
+Original train size: 460048
+Sessions added: 460048 (290944 unique, 169104 repeated)
+Resampled data: 460048 total, 13289 anomalies (2.89%)
+Final train size: 920096 (2.90% anomaly)
+Output: deep-loglizer/data/processed/HDFS/hdfs_wo_synthesis/hdfs_1.0_tar_plus_resample_1.0

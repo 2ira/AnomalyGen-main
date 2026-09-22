@@ -1,0 +1,89 @@
+{
+  "positive_class": "anomalous",
+  "test_support": {"anomalous": 3453, "normal": 111559, "total": 115012},
+  "hdfs_main_tar1.0": {
+    "note": "Appendix Table 9 PreLog row uses sklearn weighted avg as F1=f1, RC=recall, PC=precision.",
+    "R=0.0": {
+      "file": "hdfs_1.0_tar_baseline.log",
+      "train_file": "prelog_data/HDFS/hdfs_1.0_tar/train.json",
+      "timestamp": "01/06/2026 01:28:09",
+      "anomalous": {"pc": 0.978, "rc": 0.645, "f1": 0.777},
+      "weighted_avg": {"pc": 0.989, "rc": 0.989, "f1": 0.988},
+      "accuracy": 0.989,
+      "previously_printed_F1_RC_PC": [0.989, 0.989, 0.989]
+    },
+    "R=0.001": {
+      "file": "hdfs_1.0_tar_plus_new_aug_0.001.log",
+      "train_file": "prelog_data/HDFS/hdfs_baseline/hdfs_1.0_tar_plus_new_aug_0.001/train.json",
+      "timestamp": "01/05/2026 22:48:07",
+      "anomalous": {"pc": 0.906, "rc": 0.763, "f1": 0.828},
+      "weighted_avg": {"pc": 0.990, "rc": 0.991, "f1": 0.990},
+      "accuracy": 0.991,
+      "previously_printed_F1_RC_PC": [0.990, 0.991, 0.990]
+    },
+    "R=0.01": {
+      "file": "hdfs_1.0_tar_plus_new_aug_0.01.log",
+      "train_file": "prelog_data/HDFS/hdfs_baseline/hdfs_1.0_tar_plus_new_aug_0.01/train.json",
+      "timestamp": "01/05/2026 03:14:23",
+      "anomalous": {"pc": 0.918, "rc": 0.815, "f1": 0.863},
+      "weighted_avg": {"pc": 0.992, "rc": 0.992, "f1": 0.992},
+      "accuracy": 0.992,
+      "previously_printed_F1_RC_PC": [0.992, 0.992, 0.992]
+    },
+    "R=0.1": {
+      "file": "hdfs_1.0_tar_plus_new_aug_0.1.log",
+      "train_file": "prelog_data/HDFS/hdfs_baseline/hdfs_1.0_tar_plus_new_aug_0.1/train.json",
+      "timestamp": "01/06/2026 03:04:07",
+      "anomalous": {"pc": 1.000, "rc": 0.218, "f1": 0.358},
+      "weighted_avg": {"pc": 0.977, "rc": 0.977, "f1": 0.969},
+      "accuracy": 0.977,
+      "previously_printed_F1_RC_PC": [0.977, 0.977, 0.969],
+      "note": "Printed F1 0.977 is sklearn weighted precision/accuracy; printed PC 0.969 is weighted F1. Harmonic mean of 0.977 and 0.969 is 0.973, not 0.977."
+    },
+    "R=1.0": {
+      "file": "hdfs_1.0_tar_plus_new_aug_1.0.log",
+      "train_file": "prelog_data/HDFS/hdfs_baseline/hdfs_1.0_tar_plus_new_aug_1.0/train.json",
+      "timestamp": "01/07/2026 22:08:49",
+      "anomalous": {"pc": 0.971, "rc": 0.484, "f1": 0.646},
+      "weighted_avg": {"pc": 0.984, "rc": 0.984, "f1": 0.981},
+      "accuracy": 0.984,
+      "previously_printed_F1_RC_PC": [0.984, 0.984, 0.981]
+    }
+  },
+  "hdfs_tar0.0_all_normal": {
+    "note": "Not a 106-session Table 5 ablation. Anomaly-class F1 is 0.000. Weighted F1 0.955 was printed as Table 5 ablation F1.",
+    "anomalous": {"pc": 0.0, "rc": 0.0, "f1": 0.0},
+    "weighted_avg": {"pc": 0.941, "rc": 0.970, "f1": 0.955},
+    "accuracy": 0.970,
+    "runs": [
+      {"file": "hdfs_0.0_tar_plus_heuristic_label_0.001.log", "timestamp": "01/27/2026 01:19:18", "data": "hdfs_wo_label/hdfs_0.0_tar_plus_heuristic_label_0.001"},
+      {"file": "hdfs_0.0_tar_plus_resample_0.001.log", "timestamp": "01/27/2026 02:02:39", "data": "hdfs_wo_synthesis/hdfs_0.0_tar_plus_resample_0.001"},
+      {"file": "hdfs_0.0_without_cot_plus_new_aug_0.001.log", "timestamp": "01/27/2026 12:21:36", "data": "hdfs_without_cot/hdfs_0.0_tar_plus_new_aug_0.001"},
+      {"file": "hdfs_0.0_without_analysis_plus_new_aug_0.001.log", "timestamp": "01/27/2026 22:53:29", "data": "hdfs_without_analysis/hdfs_0.0_tar_plus_new_aug_0.001"}
+    ]
+  },
+  "derived": {
+    "table_reporting": "sklearn weighted avg, mapped as F1=f1-score, RC=recall, PC=precision",
+    "table9_F1_RC_PC": {
+      "R=0.0": [0.988, 0.989, 0.989],
+      "R=0.001": [0.990, 0.991, 0.990],
+      "R=0.01": [0.992, 0.992, 0.992],
+      "R=0.1": [0.969, 0.977, 0.977],
+      "R=1.0": [0.981, 0.984, 0.984]
+    },
+    "heatmap_delta_f1_pp": {
+      "R=0.001": 0.2,
+      "R=0.01": 0.4,
+      "R=0.1": -1.9,
+      "R=1.0": -0.7
+    },
+    "hdfs_12model_mean_peak_delta_f1_pp": 1.75,
+    "previous_printed_peak_delta_f1_pp": 0.3,
+    "note": "Previous Table 9 copied sklearn (P,R,F1) into (F1,RC,PC). Corrected F1 column is weighted f1-score. Peak +0.4 instead of +0.3 changes 20.9/12=1.741 to 21.0/12=1.750. Anomalous-class triples are kept above for audit, not used in the manuscript."
+  },
+  "not_recovered": [
+    "Zookeeper PreLog classification reports",
+    "Table 5 106-session AnomalyGen PreLog run",
+    "lstm-next_log w/o-label Deep-Loglizer log"
+  ]
+}

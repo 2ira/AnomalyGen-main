@@ -1,0 +1,12 @@
+# PreLog HDFS tar=0.0, resample-from-original, R=0.001
+# data: prelog_data/HDFS/hdfs_wo_synthesis/hdfs_0.0_tar_plus_resample_0.001
+# All-normal predictor. Resampled extras contain 0 anomalies (see data_prep_resample.log).
+
+01/27/2026 02:02:39 - __main__ - INFO -               precision    recall  f1-score   support
+
+   anomalous      0.000     0.000     0.000      3453
+      normal      0.970     1.000     0.985    111559
+
+    accuracy                          0.970    115012
+   macro avg      0.485     0.500     0.492    115012
+weighted avg      0.941     0.970     0.955    115012

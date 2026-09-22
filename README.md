@@ -57,6 +57,13 @@ AnomalyGen-main/
 ├── output_v1/                     # Ablation output (without CoT)
 ├── output_v2/                     # Ablation output (without static analysis)
 ├── statistic/
+│   ├── README.md                  # Reproduce Table 1 / Table 4 coverage (D1)
+│   ├── coverage_stats.py          # D1 matcher (min_tokens=2, both sides)
+│   ├── d1_long_all.py             # Aggregator + --check against paper numbers
+│   ├── extract_log_templates.py   # Java first-literal extractor
+│   ├── extract_python_log_templates.py
+│   ├── extract_scala_log_templates.py
+│   ├── x5_out/                    # Frozen source extracts + LogHub CSVs
 │   ├── compress_single_node.py    # Compression for similar logs
 │   ├── standard_all_logs.py       # Standardise all logs
 │   └── log_parser/                # LogParser3 Drain for log parsing
@@ -76,6 +83,9 @@ AnomalyGen-main/
 │   ├── README.md                  # Experiment documentation
 │   ├── eval_data/                 # Input datasets
 │   └── eval_results/              # Pre-computed predictions and metrics
+├── eval_results/
+│   ├── prelog/                    # R2.3: Table 9 PreLog stdout + check_table9.py
+│   └── x2_deeploglizer/           # R2.3: Deep-Loglizer ablation reruns (partial)
 ├── ablation_v1_compressed_log.json  # Ablation (without CoT) generated logs
 ├── ablation_v2_compressed_log.json  # Ablation (without static analysis) generated logs
 └── baseline_compressed_log.json     # Baseline logs
@@ -289,6 +299,41 @@ python eval_phase2/compute_metrics.py
 ```
 
 Pre-computed results are in `eval_phase2/eval_results/`.  See `eval_phase2/README.md` for details.
+
+---
+
+## Reproducing Table 1 and Table 4 coverage
+
+All coverage cells use D1 (`statistic/coverage_stats.py`): unique production
+format strings with at least two literal tokens; a format is covered when a
+corpus message contains those tokens in order. Short templates leave both
+numerator and denominator.
+
+```bash
+python3 statistic/d1_long_all.py --check
+```
+
+Frozen extracts and LogHub CSVs are in `statistic/x5_out/`. See
+`statistic/README.md` for the convention, the paper freeze, and optional
+re-extraction from Hadoop / Nova 13.1.4 / Spark 2.4.8 / ZooKeeper 3.4.5.
+
+---
+
+## Reproducing Appendix Table 9 PreLog (HDFS)
+
+Deposited stdout is in `eval_results/prelog/`. Table 9 uses sklearn
+`weighted avg` (F1 = f1-score, RC = recall, PC = precision). From repo root:
+
+```bash
+python3 eval_results/prelog/check_table9.py
+```
+
+No GPU. Expected cells: `0.988/0.989/0.989`, `0.990/0.991/0.990`,
+`0.992/0.992/0.992`, `0.969/0.977/0.977`, `0.981/0.984/0.984`; heatmap
+`+0.2 / +0.4 / −1.9 / −0.7`. Retrain needs the PreLog HuggingFace checkpoint
+and `prelog_data/` JSON, which are not in git. ZooKeeper PreLog and the
+Table 5 106-session PreLog run were not recovered. See
+`eval_results/prelog/README.md`.
 
 ---
 

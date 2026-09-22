@@ -1,0 +1,26 @@
+# PreLog HDFS main experiment, R=1.0
+# train-file: prelog_data/HDFS/hdfs_baseline/hdfs_1.0_tar_plus_new_aug_1.0/train.json
+# command:
+# accelerate launch --num_processes=1 train.py \
+#   --dataset HDFS --model-name bart --model-path $MODEL_PATH \
+#   --train-file prelog_data/HDFS/hdfs_baseline/hdfs_1.0_tar_plus_new_aug_1.0/train.json \
+#   --test-file  prelog_data/HDFS/hdfs_baseline/hdfs_1.0_tar_plus_new_aug_1.0/test.json \
+#   --prompt-template prompt_template.txt \
+#   --verbalizer anomaly_detection/verbalizer.txt \
+#   --batch-size 4 --lr 3e-5 --max-steps 1000 \
+#   --lr-scheduler-type polynomial --do-train --do-eval \
+#   --grouping --window-size 5 \
+#   --output-dir prelog_out_hdfs_hdfs_1.0_tar_plus_new_aug_1.0
+#
+# Table 9 uses weighted avg as F1/RC/PC = 0.981/0.984/0.984.
+# Previously printed 0.984/0.984/0.981 copied sklearn (P,R,F1) into (F1,RC,PC).
+
+01/07/2026 22:08:49 - __main__ - INFO - ******* results *******
+01/07/2026 22:08:50 - __main__ - INFO -               precision    recall  f1-score   support
+
+   anomalous      0.971     0.484     0.646      3453
+      normal      0.984     1.000     0.992    111559
+
+    accuracy                          0.984    115012
+   macro avg      0.978     0.742     0.819    115012
+weighted avg      0.984     0.984     0.981    115012
