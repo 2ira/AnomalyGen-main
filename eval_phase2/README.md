@@ -19,7 +19,7 @@ Do not cite CoT 85% or type validity 162/163.
 | Ctx v2 (GPT-4o Phase III refill) | **3/10 = 30%** | `eval_results/ctx_v2/` |
 | X7 GPT-4o vs archived DeepSeek-V3 fill | 0.971 vs 0.985 type validity; not the same 207 Drain ids | `eval_results/x7_gpt4o/` |
 | **X12 same-slot** (R2.12 headline) | type-valid **141/144 vs 127/144**; block-id strict **26/27 vs 19/27**. DeepSeek is the stronger fill model. | `eval_results/x12_same_slot/compare.json` |
-| X2 Deep-Loglizer Table 5 reruns | lstm-sequentials w/o analysis **0.958/0.996/0.923**; lstm-next_log w/o analysis **0.916/0.942/0.891**; semantic cells not replaced (MPS float64) | `eval_results/x2_deeploglizer/` (repo root, not this folder) |
+| X2 Deep-Loglizer Table 5 reruns | lstm-sequentials w/o analysis **0.958/0.996/0.923**; lstm-next_log **0.916/0.942/0.891**; lstm-semantic-next_log **0.766/0.632/0.974** (the copied cell); transformer-semantic **0.697** kept as genuine | `eval_results/x2_deeploglizer/` (repo root) |
 
 `simple`/`complex` in `feasibility_manual.jsonl` is an **author-assigned** stratum, not `common.py::stratum_of`.
 

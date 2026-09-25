@@ -1,0 +1,89 @@
+{
+  "convention": "D1 min_tokens=2 on both numerator (hits among long templates) and denominator",
+  "rows": [
+    {
+      "name": "HDFS",
+      "source_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/hdfs_3.3.6_log_templates.txt",
+      "unique_all": 2886,
+      "unique_long": 2739,
+      "dropped_short": 147,
+      "public_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/loghub/HDFS_templates.csv",
+      "public_list": 30,
+      "d1_hits": 13,
+      "d1": "13/2739",
+      "coverage_pct": 0.47,
+      "generated_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/output/log_events/final_logs.json",
+      "ag_hits": 2646,
+      "ag_d1": "2646/2739",
+      "ag_pct": 96.6,
+      "improvement": 203.5
+    },
+    {
+      "name": "Hadoop_Common",
+      "source_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/hadoop_common_log_templates.txt",
+      "unique_all": 1471,
+      "unique_long": 1344,
+      "dropped_short": 127,
+      "public_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/loghub/Hadoop_2k.log_templates.csv",
+      "public_list": 114,
+      "d1_hits": 17,
+      "d1": "17/1344",
+      "coverage_pct": 1.26
+    },
+    {
+      "name": "OpenStack_Nova",
+      "source_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/nova_13.1.4_log_templates.txt",
+      "unique_all": 1845,
+      "unique_long": 1812,
+      "dropped_short": 33,
+      "public_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/loghub/OpenStack_2k.log_templates.csv",
+      "public_list": 43,
+      "d1_hits": 31,
+      "d1": "31/1812",
+      "coverage_pct": 1.71
+    },
+    {
+      "name": "ZK_3.4.5",
+      "source_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/zk_3.4.5_main_log_templates.txt",
+      "unique_all": 534,
+      "unique_long": 499,
+      "dropped_short": 35,
+      "public_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/loghub/Zookeeper.log_templates.csv",
+      "public_list": 77,
+      "d1_hits": 55,
+      "d1": "55/499",
+      "coverage_pct": 11.02
+    },
+    {
+      "name": "Spark",
+      "source_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/spark_2.4.8_log_templates.txt",
+      "unique_all": 2515,
+      "unique_long": 2391,
+      "dropped_short": 124,
+      "public_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/loghub/Spark_2k.log_templates.csv",
+      "public_list": 36,
+      "d1_hits": 16,
+      "d1": "16/2391",
+      "coverage_pct": 0.67
+    },
+    {
+      "name": "MapReduce",
+      "source_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/mapreduce_log_templates.txt",
+      "unique_all": 1014,
+      "unique_long": 874,
+      "dropped_short": 140,
+      "public_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/loghub/Hadoop_2k.log_templates.csv",
+      "public_list": 114,
+      "d1_hits": 57,
+      "d1": "57/874",
+      "coverage_pct": 6.52
+    }
+  ],
+  "pooled": {
+    "source_long": 9659,
+    "observed_hits": 189,
+    "coverage_pct": 1.96,
+    "mean_source": 1610,
+    "mean_observed": 32
+  }
+}

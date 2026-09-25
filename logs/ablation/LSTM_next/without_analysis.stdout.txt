@@ -1,0 +1,166 @@
+2026-09-22 20:03:08,109 P18292 INFO {
+    "model_name": "LSTM",
+    "use_attention": false,
+    "hidden_size": 128,
+    "num_layers": 2,
+    "num_directions": 2,
+    "embedding_dim": 32,
+    "dataset": "HDFS",
+    "data_dir": "../data/processed/HDFS/hdfs_without_analysis/hdfs_0.0_tar_plus_new_aug_0.001",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "sequentials",
+    "label_type": "next_log",
+    "use_tfidf": false,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "0d4ca3d7"
+}
+2026-09-22 20:03:09,384 P18292 INFO Load from ../data/processed/HDFS/hdfs_without_analysis/hdfs_0.0_tar_plus_new_aug_0.001
+2026-09-22 20:03:09,384 P18292 INFO {
+    "aug_label_file": "/Users/ira/Desktop/tosem_anomlygen/TOSEM-2026-0301.R2_cover_letter/deeploglizer_prep/x2_without_analysis/hdfs_block_labels.csv",
+    "aug_log_file": "/Users/ira/Desktop/tosem_anomlygen/TOSEM-2026-0301.R2_cover_letter/deeploglizer_prep/x2_without_analysis/hdfs_combined_parsed_logs.csv",
+    "aug_ratio_vs_base": 0.001,
+    "augmentation_added": true,
+    "final_train_size": 447109,
+    "original_train_size": 446663,
+    "seed": 42,
+    "source_dataset": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/data/processed/HDFS/hdfs_0.0_tar",
+    "train_anomaly_ratio_for_aug": 0.0
+}
+2026-09-22 20:03:09,384 P18292 INFO # train sessions 447109 (0.00 anomalies)
+2026-09-22 20:03:09,384 P18292 INFO # test sessions 115012 (0.03 anomalies)
+2026-09-22 20:03:09,385 P18292 INFO Cannot load cached feature extractor.
+2026-09-22 20:03:09,472 P18292 INFO 105 tempaltes are found.
+2026-09-22 20:03:09,478 P18292 INFO Transforming train data.
+2026-09-22 20:03:13,311 P18292 INFO 4693393 sliding windows generated.
+2026-09-22 20:03:17,024 P18292 INFO Finish feature extraction (train).
+2026-09-22 20:03:17,024 P18292 INFO Transforming test data.
+2026-09-22 20:03:17,047 P18292 INFO 10 new templates show while testing.
+2026-09-22 20:03:17,461 P18292 INFO 1206665 sliding windows generated.
+2026-09-22 20:03:18,363 P18292 INFO Finish feature extraction (test).
+2026-09-22 20:03:19,241 P18292 INFO Start training on 4584 batches with mps.
+2026-09-22 20:04:36,865 P18292 INFO Epoch 1/100, training loss: 0.18694 [77.62s]
+2026-09-22 20:04:36,866 P18292 INFO Evaluating test data.
+2026-09-22 20:04:45,702 P18292 INFO Finish inference. [8.84s]
+2026-09-22 20:04:48,611 P18292 INFO Calculating acc sum.
+2026-09-22 20:04:48,652 P18292 INFO Finish generating store_df.
+2026-09-22 20:04:48,718 P18292 INFO {'f1': '0.165', 'rc': '0.999', 'pc': '0.090', 'top1-acc': '0.970'}
+2026-09-22 20:04:48,731 P18292 INFO {'f1': '0.223', 'rc': '0.891', 'pc': '0.127', 'top2-acc': '0.970'}
+2026-09-22 20:04:48,742 P18292 INFO {'f1': '0.325', 'rc': '0.753', 'pc': '0.208', 'top3-acc': '0.970'}
+2026-09-22 20:04:48,753 P18292 INFO {'f1': '0.792', 'rc': '0.733', 'pc': '0.861', 'top4-acc': '0.970'}
+2026-09-22 20:04:48,764 P18292 INFO {'f1': '0.820', 'rc': '0.719', 'pc': '0.954', 'top5-acc': '0.970'}
+2026-09-22 20:04:48,774 P18292 INFO {'f1': '0.815', 'rc': '0.699', 'pc': '0.978', 'top6-acc': '0.970'}
+2026-09-22 20:04:48,785 P18292 INFO {'f1': '0.770', 'rc': '0.631', 'pc': '0.986', 'top7-acc': '0.970'}
+2026-09-22 20:04:48,795 P18292 INFO {'f1': '0.732', 'rc': '0.581', 'pc': '0.989', 'top8-acc': '0.970'}
+2026-09-22 20:04:48,806 P18292 INFO {'f1': '0.698', 'rc': '0.539', 'pc': '0.990', 'top9-acc': '0.970'}
+2026-09-22 20:04:48,816 P18292 INFO {'f1': '0.681', 'rc': '0.518', 'pc': '0.991', 'top10-acc': '0.970'}
+2026-09-22 20:04:48,816 P18292 INFO Finish counting [2.30s]
+2026-09-22 20:04:48,902 P18292 INFO Saving model to ./experiment_records/0d4ca3d7/model.ckpt
+2026-09-22 20:06:01,962 P18292 INFO Epoch 2/100, training loss: 0.17359 [73.05s]
+2026-09-22 20:06:01,962 P18292 INFO Evaluating test data.
+2026-09-22 20:06:11,178 P18292 INFO Finish inference. [9.22s]
+2026-09-22 20:06:14,025 P18292 INFO Calculating acc sum.
+2026-09-22 20:06:14,057 P18292 INFO Finish generating store_df.
+2026-09-22 20:06:14,129 P18292 INFO {'f1': '0.165', 'rc': '1.000', 'pc': '0.090', 'top1-acc': '0.970'}
+2026-09-22 20:06:14,141 P18292 INFO {'f1': '0.231', 'rc': '0.967', 'pc': '0.131', 'top2-acc': '0.970'}
+2026-09-22 20:06:14,152 P18292 INFO {'f1': '0.372', 'rc': '0.877', 'pc': '0.236', 'top3-acc': '0.970'}
+2026-09-22 20:06:14,162 P18292 INFO {'f1': '0.794', 'rc': '0.736', 'pc': '0.863', 'top4-acc': '0.970'}
+2026-09-22 20:06:14,173 P18292 INFO {'f1': '0.772', 'rc': '0.652', 'pc': '0.946', 'top5-acc': '0.970'}
+2026-09-22 20:06:14,183 P18292 INFO {'f1': '0.746', 'rc': '0.606', 'pc': '0.968', 'top6-acc': '0.970'}
+2026-09-22 20:06:14,194 P18292 INFO {'f1': '0.733', 'rc': '0.584', 'pc': '0.986', 'top7-acc': '0.970'}
+2026-09-22 20:06:14,204 P18292 INFO {'f1': '0.716', 'rc': '0.561', 'pc': '0.988', 'top8-acc': '0.970'}
+2026-09-22 20:06:14,214 P18292 INFO {'f1': '0.709', 'rc': '0.552', 'pc': '0.990', 'top9-acc': '0.970'}
+2026-09-22 20:06:14,225 P18292 INFO {'f1': '0.701', 'rc': '0.541', 'pc': '0.993', 'top10-acc': '0.970'}
+2026-09-22 20:06:14,225 P18292 INFO Finish counting [2.33s]
+2026-09-22 20:07:27,943 P18292 INFO Epoch 3/100, training loss: 0.17233 [73.65s]
+2026-09-22 20:07:27,945 P18292 INFO Evaluating test data.
+2026-09-22 20:07:36,764 P18292 INFO Finish inference. [8.82s]
+2026-09-22 20:07:39,686 P18292 INFO Calculating acc sum.
+2026-09-22 20:07:39,720 P18292 INFO Finish generating store_df.
+2026-09-22 20:07:39,788 P18292 INFO {'f1': '0.166', 'rc': '1.000', 'pc': '0.090', 'top1-acc': '0.970'}
+2026-09-22 20:07:39,800 P18292 INFO {'f1': '0.233', 'rc': '0.990', 'pc': '0.132', 'top2-acc': '0.970'}
+2026-09-22 20:07:39,811 P18292 INFO {'f1': '0.387', 'rc': '0.920', 'pc': '0.245', 'top3-acc': '0.970'}
+2026-09-22 20:07:39,822 P18292 INFO {'f1': '0.887', 'rc': '0.892', 'pc': '0.882', 'top4-acc': '0.970'}
+2026-09-22 20:07:39,834 P18292 INFO {'f1': '0.871', 'rc': '0.800', 'pc': '0.957', 'top5-acc': '0.970'}
+2026-09-22 20:07:39,845 P18292 INFO {'f1': '0.813', 'rc': '0.694', 'pc': '0.979', 'top6-acc': '0.970'}
+2026-09-22 20:07:39,857 P18292 INFO {'f1': '0.753', 'rc': '0.608', 'pc': '0.988', 'top7-acc': '0.970'}
+2026-09-22 20:07:39,868 P18292 INFO {'f1': '0.735', 'rc': '0.584', 'pc': '0.991', 'top8-acc': '0.970'}
+2026-09-22 20:07:39,879 P18292 INFO {'f1': '0.720', 'rc': '0.564', 'pc': '0.993', 'top9-acc': '0.970'}
+2026-09-22 20:07:39,890 P18292 INFO {'f1': '0.705', 'rc': '0.546', 'pc': '0.995', 'top10-acc': '0.970'}
+2026-09-22 20:07:39,890 P18292 INFO Finish counting [2.37s]
+2026-09-22 20:07:39,962 P18292 INFO Saving model to ./experiment_records/0d4ca3d7/model.ckpt
+2026-09-22 20:08:52,528 P18292 INFO Epoch 4/100, training loss: 0.17207 [72.56s]
+2026-09-22 20:08:52,531 P18292 INFO Evaluating test data.
+2026-09-22 20:09:00,721 P18292 INFO Finish inference. [8.19s]
+2026-09-22 20:09:03,503 P18292 INFO Calculating acc sum.
+2026-09-22 20:09:03,534 P18292 INFO Finish generating store_df.
+2026-09-22 20:09:03,595 P18292 INFO {'f1': '0.164', 'rc': '0.999', 'pc': '0.089', 'top1-acc': '0.970'}
+2026-09-22 20:09:03,607 P18292 INFO {'f1': '0.244', 'rc': '0.995', 'pc': '0.139', 'top2-acc': '0.970'}
+2026-09-22 20:09:03,618 P18292 INFO {'f1': '0.407', 'rc': '0.976', 'pc': '0.257', 'top3-acc': '0.970'}
+2026-09-22 20:09:03,629 P18292 INFO {'f1': '0.916', 'rc': '0.942', 'pc': '0.891', 'top4-acc': '0.970'}
+2026-09-22 20:09:03,640 P18292 INFO {'f1': '0.852', 'rc': '0.766', 'pc': '0.960', 'top5-acc': '0.970'}
+2026-09-22 20:09:03,650 P18292 INFO {'f1': '0.795', 'rc': '0.669', 'pc': '0.980', 'top6-acc': '0.970'}
+2026-09-22 20:09:03,660 P18292 INFO {'f1': '0.760', 'rc': '0.617', 'pc': '0.989', 'top7-acc': '0.970'}
+2026-09-22 20:09:03,671 P18292 INFO {'f1': '0.663', 'rc': '0.499', 'pc': '0.991', 'top8-acc': '0.970'}
+2026-09-22 20:09:03,681 P18292 INFO {'f1': '0.655', 'rc': '0.489', 'pc': '0.992', 'top9-acc': '0.970'}
+2026-09-22 20:09:03,691 P18292 INFO {'f1': '0.646', 'rc': '0.478', 'pc': '0.996', 'top10-acc': '0.970'}
+2026-09-22 20:09:03,691 P18292 INFO Finish counting [2.30s]
+2026-09-22 20:09:03,760 P18292 INFO Saving model to ./experiment_records/0d4ca3d7/model.ckpt
+2026-09-22 20:10:17,499 P18292 INFO Epoch 5/100, training loss: 0.17218 [73.73s]
+2026-09-22 20:10:17,503 P18292 INFO Evaluating test data.
+2026-09-22 20:10:27,296 P18292 INFO Finish inference. [9.79s]
+2026-09-22 20:10:30,096 P18292 INFO Calculating acc sum.
+2026-09-22 20:10:30,128 P18292 INFO Finish generating store_df.
+2026-09-22 20:10:30,192 P18292 INFO {'f1': '0.166', 'rc': '1.000', 'pc': '0.090', 'top1-acc': '0.970'}
+2026-09-22 20:10:30,204 P18292 INFO {'f1': '0.238', 'rc': '0.990', 'pc': '0.135', 'top2-acc': '0.970'}
+2026-09-22 20:10:30,215 P18292 INFO {'f1': '0.405', 'rc': '0.961', 'pc': '0.257', 'top3-acc': '0.970'}
+2026-09-22 20:10:30,226 P18292 INFO {'f1': '0.845', 'rc': '0.816', 'pc': '0.877', 'top4-acc': '0.970'}
+2026-09-22 20:10:30,236 P18292 INFO {'f1': '0.822', 'rc': '0.723', 'pc': '0.954', 'top5-acc': '0.970'}
+2026-09-22 20:10:30,247 P18292 INFO {'f1': '0.805', 'rc': '0.684', 'pc': '0.977', 'top6-acc': '0.970'}
+2026-09-22 20:10:30,258 P18292 INFO {'f1': '0.742', 'rc': '0.594', 'pc': '0.987', 'top7-acc': '0.970'}
+2026-09-22 20:10:30,268 P18292 INFO {'f1': '0.722', 'rc': '0.568', 'pc': '0.991', 'top8-acc': '0.970'}
+2026-09-22 20:10:30,279 P18292 INFO {'f1': '0.668', 'rc': '0.502', 'pc': '0.995', 'top9-acc': '0.970'}
+2026-09-22 20:10:30,289 P18292 INFO {'f1': '0.655', 'rc': '0.488', 'pc': '0.997', 'top10-acc': '0.970'}
+2026-09-22 20:10:30,290 P18292 INFO Finish counting [2.31s]
+2026-09-22 20:11:46,467 P18292 INFO Epoch 6/100, training loss: 0.17200 [76.11s]
+2026-09-22 20:11:46,471 P18292 INFO Evaluating test data.
+2026-09-22 20:11:55,244 P18292 INFO Finish inference. [8.77s]
+2026-09-22 20:11:58,251 P18292 INFO Calculating acc sum.
+2026-09-22 20:11:58,287 P18292 INFO Finish generating store_df.
+2026-09-22 20:11:58,358 P18292 INFO {'f1': '0.164', 'rc': '1.000', 'pc': '0.089', 'top1-acc': '0.970'}
+2026-09-22 20:11:58,371 P18292 INFO {'f1': '0.233', 'rc': '0.977', 'pc': '0.132', 'top2-acc': '0.970'}
+2026-09-22 20:11:58,384 P18292 INFO {'f1': '0.317', 'rc': '0.823', 'pc': '0.196', 'top3-acc': '0.970'}
+2026-09-22 20:11:58,398 P18292 INFO {'f1': '0.814', 'rc': '0.764', 'pc': '0.872', 'top4-acc': '0.970'}
+2026-09-22 20:11:58,412 P18292 INFO {'f1': '0.766', 'rc': '0.642', 'pc': '0.948', 'top5-acc': '0.970'}
+2026-09-22 20:11:58,426 P18292 INFO {'f1': '0.763', 'rc': '0.627', 'pc': '0.975', 'top6-acc': '0.970'}
+2026-09-22 20:11:58,439 P18292 INFO {'f1': '0.753', 'rc': '0.608', 'pc': '0.988', 'top7-acc': '0.970'}
+2026-09-22 20:11:58,452 P18292 INFO {'f1': '0.743', 'rc': '0.594', 'pc': '0.991', 'top8-acc': '0.970'}
+2026-09-22 20:11:58,463 P18292 INFO {'f1': '0.733', 'rc': '0.581', 'pc': '0.993', 'top9-acc': '0.970'}
+2026-09-22 20:11:58,475 P18292 INFO {'f1': '0.709', 'rc': '0.551', 'pc': '0.995', 'top10-acc': '0.970'}
+2026-09-22 20:11:58,475 P18292 INFO Finish counting [2.42s]
+2026-09-22 20:13:16,572 P18292 INFO Epoch 7/100, training loss: 0.17235 [78.02s]
+2026-09-22 20:13:16,575 P18292 INFO Evaluating test data.
+2026-09-22 20:13:24,986 P18292 INFO Finish inference. [8.41s]
+2026-09-22 20:13:27,673 P18292 INFO Calculating acc sum.
+2026-09-22 20:13:27,705 P18292 INFO Finish generating store_df.
+2026-09-22 20:13:27,770 P18292 INFO {'f1': '0.166', 'rc': '1.000', 'pc': '0.091', 'top1-acc': '0.970'}
+2026-09-22 20:13:27,782 P18292 INFO {'f1': '0.237', 'rc': '0.990', 'pc': '0.135', 'top2-acc': '0.970'}
+2026-09-22 20:13:27,793 P18292 INFO {'f1': '0.378', 'rc': '0.889', 'pc': '0.240', 'top3-acc': '0.970'}
+2026-09-22 20:13:27,804 P18292 INFO {'f1': '0.825', 'rc': '0.782', 'pc': '0.873', 'top4-acc': '0.970'}
+2026-09-22 20:13:27,814 P18292 INFO {'f1': '0.829', 'rc': '0.732', 'pc': '0.955', 'top5-acc': '0.970'}
+2026-09-22 20:13:27,825 P18292 INFO {'f1': '0.762', 'rc': '0.624', 'pc': '0.978', 'top6-acc': '0.970'}
+2026-09-22 20:13:27,836 P18292 INFO {'f1': '0.692', 'rc': '0.531', 'pc': '0.991', 'top7-acc': '0.970'}
+2026-09-22 20:13:27,847 P18292 INFO {'f1': '0.676', 'rc': '0.512', 'pc': '0.993', 'top8-acc': '0.970'}
+2026-09-22 20:13:27,858 P18292 INFO {'f1': '0.672', 'rc': '0.507', 'pc': '0.995', 'top9-acc': '0.970'}
+2026-09-22 20:13:27,868 P18292 INFO {'f1': '0.662', 'rc': '0.496', 'pc': '0.996', 'top10-acc': '0.970'}
+2026-09-22 20:13:27,868 P18292 INFO Finish counting [2.20s]
+2026-09-22 20:13:27,936 P18292 INFO Early stop at epoch: 7
+2026-09-22 20:13:27,936 P18292 INFO Loading model from ./experiment_records/0d4ca3d7/model.ckpt

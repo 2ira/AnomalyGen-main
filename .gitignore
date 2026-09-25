@@ -25,3 +25,17 @@ third_party_src/
 !eval_results/**/*.log
 !eval_phase2/eval_results/**/*.log
 !deep-loglizer/cpu_reruns/*.log
+!logs/
+!logs/**/*.log
+!logs/**/*.txt
+!logs/**/*.md
+
+output/hadoop/ 
+output/hadoop/**/*
+output/hadoop_javacg2/ 
+output/hadoop_javacg2/**/*
+output/hadoop_javacg2/
+output/hadoop_javacg2/**/*
+
+output/hadoop_javacg2/
+output/hadoop_javacg2/**/*

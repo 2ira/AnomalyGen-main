@@ -1,0 +1,69 @@
+{
+  "rows": {
+    "HDFS": {
+      "path": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/hadoop/hadoop-hdfs-project/log_templates.txt",
+      "exists": true,
+      "logging_stmts": 2985,
+      "unique_formats": 2886,
+      "unique_long_min_tokens_2": 2739,
+      "public_templates": 30,
+      "d1_hits": 13,
+      "d1_universe": 2886,
+      "d1_coverage": "0.45%",
+      "d1_long": "13/2739",
+      "paper": {
+        "source": 2886,
+        "observed": 13,
+        "coverage": "0.45%"
+      }
+    },
+    "ZK_3.4.5": {
+      "path": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/zk_3.4.5_main_log_templates.txt",
+      "exists": true,
+      "logging_stmts": 674,
+      "unique_formats": 534,
+      "unique_long_min_tokens_2": 499,
+      "public_templates": 77,
+      "d1_hits": 55,
+      "d1_universe": 534,
+      "d1_coverage": "10.30%",
+      "d1_long": "55/499",
+      "paper": {
+        "source": 534,
+        "observed": 55,
+        "coverage": "10.30%"
+      }
+    },
+    "Hadoop_Common": {
+      "path": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/hadoop_common_log_templates.txt",
+      "exists": true,
+      "logging_stmts": 1656,
+      "unique_formats": 1471,
+      "unique_long_min_tokens_2": 1344,
+      "paper": {
+        "source": 15223,
+        "observed": 248,
+        "coverage": "1.62%"
+      }
+    },
+    "MapReduce": {
+      "path": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/statistic/x5_out/mapreduce_log_templates.txt",
+      "exists": true,
+      "logging_stmts": 1169,
+      "unique_formats": 1014,
+      "unique_long_min_tokens_2": 874,
+      "paper": {
+        "source": 1564,
+        "observed": 200,
+        "coverage": "12.79%"
+      }
+    }
+  },
+  "recommendation": "Unify Java rows (HDFS, ZK, Hadoop Common, MapReduce) to unique production format strings + D1. Keep OpenStack/Spark as captioned original lexical counts, or drop them: they cannot be D1-reproduced from this artifact. Do not mix 15,223 lexical-whole-Hadoop with HDFS 2,886 unique formats.",
+  "missing": {
+    "OpenStack_Nova": "no Nova tree; no LogHub Drain CSV in artifact; Java extractor does not apply",
+    "Spark": "no Spark tree; Scala Logger extractor missing; no Drain CSV",
+    "Hadoop_Common_observed_248": "no LogHub Hadoop Drain CSV on disk (third-party list was 349, not 248)",
+    "MapReduce_observed_200": "no LogHub MapReduce Drain CSV on disk"
+  }
+}

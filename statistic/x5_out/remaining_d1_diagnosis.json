@@ -1,0 +1,121 @@
+{
+  "universe": 2886,
+  "archived_hit": 2646,
+  "combined_hit": 2655,
+  "combined_pct": 92.0,
+  "source_harvest_hit": 2650,
+  "source_harvest_pct": 91.82,
+  "new_source_only_hit": 1364,
+  "usable_ge2": 2739,
+  "d1_ceiling_if_all_long": "2739/2886 = 94.91%",
+  "remaining": 231,
+  "remaining_by_cause": {
+    "short_lt2": 147,
+    "selected_class_not_in_extracted": 76,
+    "in_start_nodes_not_selected": 8
+  },
+  "need_for_90pct": 0,
+  "new_merge_dirs": 401,
+  "new_fail_empty_graph": 35,
+  "merge_files_with_api_timeout_string": 0,
+  "remaining_long_entries": 62,
+  "samples": {
+    "short_lt2": [
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DFSClient",
+        "method": "cancelDelegationToken",
+        "text": "Cancelling ",
+        "ntok": 1
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DFSClient",
+        "method": "getDelegationToken",
+        "text": "Created ",
+        "ntok": 1
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DFSClient",
+        "method": "renewDelegationToken",
+        "text": "Renewing ",
+        "ntok": 1
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DFSClient",
+        "method": "DFSClient",
+        "text": "Sets ",
+        "ntok": 1
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DFSClient",
+        "method": "create",
+        "text": "{}: masked={}",
+        "ntok": 1
+      }
+    ],
+    "selected_class_not_in_extracted": [
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DFSClient",
+        "method": "rejectedExecution",
+        "text": "Using hedged reads; pool threads={}",
+        "ntok": 5
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DFSStripedOutputStream",
+        "method": "flipDataBuffers",
+        "text": "Creating DFSStripedOutputStream for ",
+        "ntok": 3
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DataStreamer",
+        "method": "closeInternal",
+        "text": "No ack received, took {}ms (threshold={}ms). ",
+        "ntok": 7
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DataStreamer",
+        "method": "closeInternal",
+        "text": "Slow waitForAckedSeqno took {}ms (threshold={}ms). File being",
+        "ntok": 8
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.FileChecksumHelper",
+        "method": "FileChecksumHelper",
+        "text": "Added blockCrc 0x{} for block index {} of size {}",
+        "ntok": 8
+      }
+    ],
+    "in_start_nodes_not_selected": [
+      {
+        "fqcn": "org.apache.hadoop.hdfs.DFSStripedInputStream",
+        "method": null,
+        "text": "Creating an striped input stream for file ",
+        "ntok": 7
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.nfs.nfs3.WriteManager",
+        "method": "MultipleCachedStreamException",
+        "text": "Can't add new stream. Close it. Tell client to retry.",
+        "ntok": 11
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.nfs.nfs3.WriteManager",
+        "method": "MultipleCachedStreamException",
+        "text": "Opened stream for appending file: ",
+        "ntok": 5
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.server.federation.router.ConnectionPool",
+        "method": null,
+        "text": "Created connection pool \"{}\" with {} connections",
+        "ntok": 5
+      },
+      {
+        "fqcn": "org.apache.hadoop.hdfs.server.federation.store.RecordStore",
+        "method": "getDriver",
+        "text": "Cannot create new instance for ",
+        "ntok": 5
+      }
+    ]
+  },
+  "note": "short_lt2 can never count under D1 min_tokens=2. reached_but_d1_miss = format (prefix) already in extracted/merge text but token subsequence still fails. in_start_nodes_not_selected = logging class is in start_nodes.txt but was not one of the 325 refill entries. class_never_in_pipeline = not even listed as a log-relevant start."
+}

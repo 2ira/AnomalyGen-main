@@ -1,0 +1,71 @@
+2026-09-22 20:17:03,711 P35490 INFO {
+    "model_name": "Transformer",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "nhead": 2,
+    "dataset": "HDFS",
+    "data_dir": "../data/processed/HDFS/hdfs_without_cot/hdfs_0.0_tar_plus_new_aug_0.001",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "semantics",
+    "use_attention": false,
+    "label_type": "next_log",
+    "use_tfidf": true,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "3015461f"
+}
+2026-09-22 20:17:05,014 P35490 INFO Load from ../data/processed/HDFS/hdfs_without_cot/hdfs_0.0_tar_plus_new_aug_0.001
+2026-09-22 20:17:05,014 P35490 INFO {
+    "aug_label_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/output_v1/ablation/without_cot/block_labels/hdfs_block_labels.csv",
+    "aug_log_file": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/output_v1/ablation/without_cot/parsed_logs/hdfs_combined_parsed_logs.csv",
+    "aug_ratio_vs_base": 0.001,
+    "augmentation_added": true,
+    "final_train_size": 447109,
+    "original_train_size": 446663,
+    "seed": 42,
+    "source_dataset": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/data/processed/HDFS/hdfs_0.0_tar",
+    "train_anomaly_ratio_for_aug": 0.0
+}
+2026-09-22 20:17:05,014 P35490 INFO # train sessions 447109 (0.00 anomalies)
+2026-09-22 20:17:05,014 P35490 INFO # test sessions 115012 (0.03 anomalies)
+2026-09-22 20:17:05,015 P35490 INFO Cannot load cached feature extractor.
+2026-09-22 20:17:05,099 P35490 INFO 112 tempaltes are found.
+2026-09-22 20:17:05,099 P35490 INFO Using semantics.
+2026-09-22 20:17:05,099 P35490 INFO Building vocab.
+2026-09-22 20:17:05,100 P35490 INFO Building vocab done.
+2026-09-22 20:17:05,100 P35490 INFO Fitting tfidf.
+/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/.venv/lib/python3.9/site-packages/sklearn/feature_extraction/text.py:517: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+  warnings.warn(
+/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/.venv/lib/python3.9/site-packages/sklearn/feature_extraction/text.py:1368: UserWarning: Upper case characters found in vocabulary while 'lowercase' is True. These entries will not be matched with any documents
+  warnings.warn(
+2026-09-22 20:17:41,724 P35490 INFO Transforming train data.
+2026-09-22 20:17:45,504 P35490 INFO 4693709 sliding windows generated.
+2026-09-22 20:17:45,505 P35490 INFO Extracting semantic features.
+2026-09-22 20:17:59,183 P35490 INFO Finish feature extraction (train).
+2026-09-22 20:17:59,183 P35490 INFO Transforming test data.
+2026-09-22 20:17:59,207 P35490 INFO 10 new templates show while testing.
+2026-09-22 20:17:59,641 P35490 INFO 1206665 sliding windows generated.
+2026-09-22 20:17:59,642 P35490 INFO Extracting semantic features.
+2026-09-22 20:18:04,134 P35490 INFO Finish feature extraction (test).
+/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/.venv/lib/python3.9/site-packages/torch/nn/modules/transformer.py:392: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+2026-09-22 20:18:05,131 P35490 INFO Start training on 4584 batches with mps.
+Traceback (most recent call last):
+  File "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/demo/transformer_demo.py", line 84, in <module>
+    eval_results = model.fit(
+  File "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/demo/../deeploglizer/models/base_model.py", line 295, in fit
+    loss = model.forward(self.__input2device(batch_input))["loss"]
+  File "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/demo/../deeploglizer/models/base_model.py", line 260, in __input2device
+    return {k: v.to(self.device) for k, v in batch_input.items()}
+  File "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/demo/../deeploglizer/models/base_model.py", line 260, in <dictcomp>
+    return {k: v.to(self.device) for k, v in batch_input.items()}
+TypeError: Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead.

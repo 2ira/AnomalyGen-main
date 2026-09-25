@@ -142,8 +142,7 @@ class APIChatDecoder(DecoderBase):
                     # 使用第一个 choice 的回复来构建记忆
                     memory += slice_msg + (response.choices[0].message.content or "")
 
-            except APIError as e:
-                # 如果所有重试都失败了，库会抛出 APIError
+            except Exception as e:
                 self.logger.error(f"OpenAI API error after all retries: {e}")
                 self.logger.error(f"Request config that failed: {config}")
                 return [] # 返回空列表表示失败

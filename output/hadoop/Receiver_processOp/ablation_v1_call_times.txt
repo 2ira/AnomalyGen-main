@@ -1,3 +1,0 @@
-the entry function is {'org.apache.hadoop.hdfs.protocol.datatransfer.Receiver:processOp(org.apache.hadoop.hdfs.protocol.datatransfer.Op)'}
-all call times 44
-all cost token is 75595

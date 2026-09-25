@@ -1,0 +1,62 @@
+{
+  "protocol": {
+    "denominator": "unique production format strings in log_templates.txt (src/main, tests dropped), then drop D1-short (<2 literal tokens), then unique Drain clusters under the named preset",
+    "numerator_logs": "AG = output/log_events/final_logs.json (archived, reproducible); LogHub = dataset/HDFS/HDFS_templates.csv EventTemplate. No remaining_source instantiate, no unreached merge sidecar.",
+    "short_filter": "same skeleton() as coverage_stats.min_tokens=2",
+    "placeholder_unify": "{} / {n} / <*> / %s → <*> on both sides before Drain"
+  },
+  "raw_unique_source": 2886,
+  "short_dropped": 147,
+  "long_source": 2739,
+  "ag_messages": 51663,
+  "loghub_templates": 30,
+  "d1_on_long_only": {
+    "note": "same matcher both sides; denominator = long source strings, not Drain clusters",
+    "universe": 2739,
+    "ag_hit": 2195,
+    "ag_cov": "2195/2739 = 80.14%",
+    "loghub_hit": 13,
+    "loghub_cov": "13/2739 = 0.47%",
+    "improvement": 168.8
+  },
+  "drain": [
+    {
+      "preset": "pipeline label_anomaly.py",
+      "st": 0.5,
+      "depth": 2,
+      "rex": "label_anomaly",
+      "denom_drain_clusters": 2134,
+      "ag_drain_clusters": 15180,
+      "loghub_drain_clusters": 29,
+      "overlap_ag": 483,
+      "overlap_ag_cov": 0.2263,
+      "overlap_loghub": 0,
+      "overlap_loghub_cov": 0.0,
+      "joint_ag": 1443,
+      "joint_ag_cov": 0.5268,
+      "joint_loghub": 1,
+      "joint_loghub_cov": 0.0004,
+      "improvement_overlap": null,
+      "improvement_joint": 1443.0
+    },
+    {
+      "preset": "paper log_parser.py",
+      "st": 0.4,
+      "depth": 1,
+      "rex": "log_parser",
+      "denom_drain_clusters": 1974,
+      "ag_drain_clusters": 14779,
+      "loghub_drain_clusters": 28,
+      "overlap_ag": 322,
+      "overlap_ag_cov": 0.1631,
+      "overlap_loghub": 0,
+      "overlap_loghub_cov": 0.0,
+      "joint_ag": 1584,
+      "joint_ag_cov": 0.5783,
+      "joint_loghub": 2,
+      "joint_loghub_cov": 0.0007,
+      "improvement_overlap": null,
+      "improvement_joint": 792.0
+    }
+  ]
+}

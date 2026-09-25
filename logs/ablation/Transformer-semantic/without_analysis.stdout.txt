@@ -1,0 +1,127 @@
+ root@lixy769-8f9c:/mnt/lixy769/AnomalyGen-main/deep-loglizer/demo# python transformer_demo.py --label_type next_log --feature_type semantics --use_tfidf --topk 10 --dataset HDFS --data_dir ../data/processed/HDFS/hdfs_without_analysis/hdfs_0.0_tar_plus_new_aug_0.001
+2025-09-10 20:05:02,759 P27904 INFO {
+    "model_name": "Transformer",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "nhead": 2,
+    "dataset": "HDFS",
+    "data_dir": "../data/processed/HDFS/hdfs_without_analysis/hdfs_0.0_tar_plus_new_aug_0.001",
+    "window_size": 5,
+    "stride": 5,
+    "feature_type": "semantics",
+    "use_attention": false,
+    "label_type": "next_log",
+    "use_tfidf": true,
+    "max_token_len": 30,
+    "min_token_count": 3,
+    "epoches": 100,
+    "batch_size": 256,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "359ff04b"
+}
+2025-09-10 20:05:05,583 P27904 INFO Load from ../data/processed/HDFS/hdfs_without_analysis/hdfs_0.0_tar_plus_new_aug_0.001
+2025-09-10 20:05:05,583 P27904 INFO {
+    "aug_label_file": "ablation/without_analysis/block_labels/hdfs_block_labels.csv",
+    "aug_log_file": "ablation/without_analysis/parsed_logs/hdfs_combined_parsed_logs.csv",
+    "aug_ratio_vs_base": 0.001,
+    "augmentation_added": true,
+    "final_train_size": 447109,
+    "original_train_size": 446663,
+    "seed": 42,
+    "source_dataset": "deep-loglizer/data/processed/HDFS/hdfs_0.0_tar",
+    "train_anomaly_ratio_for_aug": 0.0
+}
+2025-09-10 20:05:05,583 P27904 INFO # train sessions 447109 (0.00 anomalies)
+2025-09-10 20:05:05,583 P27904 INFO # test sessions 115012 (0.03 anomalies)
+2025-09-10 20:05:05,584 P27904 INFO Cannot load cached feature extractor.
+2025-09-10 20:05:05,867 P27904 INFO 105 tempaltes are found.
+2025-09-10 20:05:05,867 P27904 INFO Using semantics.
+2025-09-10 20:05:05,867 P27904 INFO Building vocab.
+2025-09-10 20:05:05,869 P27904 INFO Building vocab done.
+2025-09-10 20:05:05,869 P27904 INFO Fitting tfidf.
+/mnt/lixy769/AnomalyGen-main/main/venv/lib/python3.9/site-packages/sklearn/feature_extraction/text.py:517: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+  warnings.warn(
+/mnt/lixy769/AnomalyGen-main/main/venv/lib/python3.9/site-packages/sklearn/feature_extraction/text.py:1368: UserWarning: Upper case characters found in vocabulary while 'lowercase' is True. These entries will not be matched with any documents
+  warnings.warn(
+2025-09-10 20:06:22,710 P27904 INFO Transforming train data.
+2025-09-10 20:06:28,780 P27904 INFO 1866253 sliding windows generated.
+2025-09-10 20:06:28,784 P27904 INFO Extracting semantic features.
+2025-09-10 20:07:08,377 P27904 INFO Finish feature extraction (train).
+2025-09-10 20:07:08,378 P27904 INFO Transforming test data.
+2025-09-10 20:07:08,986 P27904 INFO 10 new templates show while testing.
+2025-09-10 20:07:21,490 P27904 INFO 478465 sliding windows generated.
+2025-09-10 20:07:21,492 P27904 INFO Extracting semantic features.
+2025-09-10 20:07:48,083 P27904 INFO Finish feature extraction (test).
+2025-09-10 20:08:09,085 P27904 INFO Start training on 7291 batches with cuda:0.
+2025-09-10 21:04:49,784 P27904 INFO Epoch 1/100, training loss: 0.18875 [3400.70s]
+2025-09-10 21:04:49,786 P27904 INFO Evaluating test data.
+2025-09-10 21:07:52,374 P27904 INFO Finish inference. [182.50s]
+2025-09-10 21:11:19,090 P27904 INFO Calculating acc sum.
+2025-09-10 21:11:19,989 P27904 INFO Finish generating store_df.
+2025-09-10 21:11:23,484 P27904 INFO {'f1': '0.190', 'rc': '0.807', 'pc': '0.108', 'top1-acc': '0.973'}
+2025-09-10 21:11:25,886 P27904 INFO {'f1': '0.300', 'rc': '0.674', 'pc': '0.193', 'top2-acc': '0.973'}
+2025-09-10 21:11:28,083 P27904 INFO {'f1': '0.611', 'rc': '0.636', 'pc': '0.587', 'top3-acc': '0.973'}
+2025-09-10 21:11:31,190 P27904 INFO {'f1': '0.671', 'rc': '0.568', 'pc': '0.819', 'top4-acc': '0.973'}
+2025-09-10 21:11:33,478 P27904 INFO {'f1': '0.681', 'rc': '0.567', 'pc': '0.850', 'top5-acc': '0.973'}
+2025-09-10 21:11:36,377 P27904 INFO {'f1': '0.692', 'rc': '0.563', 'pc': '0.899', 'top6-acc': '0.973'}
+2025-09-10 21:11:38,080 P27904 INFO {'f1': '0.697', 'rc': '0.561', 'pc': '0.920', 'top7-acc': '0.973'}
+2025-09-10 21:11:40,275 P27904 INFO {'f1': '0.675', 'rc': '0.532', 'pc': '0.924', 'top8-acc': '0.973'}
+2025-09-10 21:11:42,075 P27904 INFO {'f1': '0.667', 'rc': '0.521', 'pc': '0.929', 'top9-acc': '0.973'}
+2025-09-10 21:11:44,188 P27904 INFO {'f1': '0.655', 'rc': '0.504', 'pc': '0.936', 'top10-acc': '0.973'}
+2025-09-10 21:11:44,188 P27904 INFO Finish counting [183.61s]
+2025-09-10 21:11:46,187 P27904 INFO Saving model to ./experiment_records/359ff04b/model.ckpt
+2025-09-10 22:59:33,091 P27904 INFO Epoch 2/100, training loss: 0.22591 [6466.62s]
+2025-09-10 22:59:33,174 P27904 INFO Evaluating test data.
+2025-09-10 23:02:22,287 P27904 INFO Finish inference. [169.11s]
+2025-09-10 23:07:00,680 P27904 INFO Calculating acc sum.
+2025-09-10 23:07:01,576 P27904 INFO Finish generating store_df.
+2025-09-10 23:07:06,078 P27904 INFO {'f1': '0.156', 'rc': '0.831', 'pc': '0.086', 'top1-acc': '0.973'}
+2025-09-10 23:07:09,275 P27904 INFO {'f1': '0.262', 'rc': '0.669', 'pc': '0.163', 'top2-acc': '0.973'}
+2025-09-10 23:07:11,991 P27904 INFO {'f1': '0.589', 'rc': '0.586', 'pc': '0.591', 'top3-acc': '0.973'}
+2025-09-10 23:07:14,981 P27904 INFO {'f1': '0.667', 'rc': '0.573', 'pc': '0.797', 'top4-acc': '0.973'}
+2025-09-10 23:07:17,881 P27904 INFO {'f1': '0.686', 'rc': '0.570', 'pc': '0.862', 'top5-acc': '0.973'}
+2025-09-10 23:07:21,190 P27904 INFO {'f1': '0.682', 'rc': '0.546', 'pc': '0.907', 'top6-acc': '0.973'}
+2025-09-10 23:07:24,978 P27904 INFO {'f1': '0.666', 'rc': '0.522', 'pc': '0.922', 'top7-acc': '0.973'}
+2025-09-10 23:07:28,186 P27904 INFO {'f1': '0.649', 'rc': '0.493', 'pc': '0.946', 'top8-acc': '0.973'}
+2025-09-10 23:07:31,776 P27904 INFO {'f1': '0.636', 'rc': '0.477', 'pc': '0.952', 'top9-acc': '0.973'}
+2025-09-10 23:07:34,682 P27904 INFO {'f1': '0.635', 'rc': '0.473', 'pc': '0.966', 'top10-acc': '0.973'}
+2025-09-10 23:07:34,683 P27904 INFO Finish counting [251.00s]
+2025-09-11 00:43:13,188 P27904 INFO Epoch 3/100, training loss: 0.23132 [5734.50s]
+2025-09-11 00:43:13,189 P27904 INFO Evaluating test data.
+2025-09-11 00:45:30,480 P27904 INFO Finish inference. [137.29s]
+2025-09-11 00:48:59,984 P27904 INFO Calculating acc sum.
+2025-09-11 00:49:02,875 P27904 INFO Finish generating store_df.
+2025-09-11 00:49:07,385 P27904 INFO {'f1': '0.156', 'rc': '0.841', 'pc': '0.086', 'top1-acc': '0.973'}
+2025-09-11 00:49:08,575 P27904 INFO {'f1': '0.278', 'rc': '0.662', 'pc': '0.176', 'top2-acc': '0.973'}
+2025-09-11 00:49:11,478 P27904 INFO {'f1': '0.587', 'rc': '0.637', 'pc': '0.544', 'top3-acc': '0.973'}
+2025-09-11 00:49:14,176 P27904 INFO {'f1': '0.628', 'rc': '0.571', 'pc': '0.696', 'top4-acc': '0.973'}
+2025-09-11 00:49:17,279 P27904 INFO {'f1': '0.593', 'rc': '0.462', 'pc': '0.826', 'top5-acc': '0.973'}
+2025-09-11 00:49:19,687 P27904 INFO {'f1': '0.595', 'rc': '0.458', 'pc': '0.847', 'top6-acc': '0.973'}
+2025-09-11 00:49:21,177 P27904 INFO {'f1': '0.599', 'rc': '0.455', 'pc': '0.879', 'top7-acc': '0.973'}
+2025-09-11 00:49:23,685 P27904 INFO {'f1': '0.609', 'rc': '0.451', 'pc': '0.935', 'top8-acc': '0.973'}
+2025-09-11 00:49:26,275 P27904 INFO {'f1': '0.583', 'rc': '0.421', 'pc': '0.947', 'top9-acc': '0.973'}
+2025-09-11 00:49:28,577 P27904 INFO {'f1': '0.544', 'rc': '0.380', 'pc': '0.956', 'top10-acc': '0.973'}
+2025-09-11 00:49:28,577 P27904 INFO Finish counting [194.89s]
+2025-09-11 02:40:18,778 P27904 INFO Epoch 4/100, training loss: 0.22057 [6648.09s]
+2025-09-11 02:40:18,779 P27904 INFO Evaluating test data.
+2025-09-11 02:43:05,786 P27904 INFO Finish inference. [167.01s]
+2025-09-11 02:47:11,084 P27904 INFO Calculating acc sum.
+2025-09-11 02:47:19,288 P27904 INFO Finish generating store_df.
+2025-09-11 02:47:23,791 P27904 INFO {'f1': '0.165', 'rc': '0.820', 'pc': '0.092', 'top1-acc': '0.973'}
+2025-09-11 02:47:26,679 P27904 INFO {'f1': '0.321', 'rc': '0.673', 'pc': '0.211', 'top2-acc': '0.973'}
+2025-09-11 02:47:30,284 P27904 INFO {'f1': '0.646', 'rc': '0.648', 'pc': '0.643', 'top3-acc': '0.973'}
+2025-09-11 02:47:35,389 P27904 INFO {'f1': '0.674', 'rc': '0.586', 'pc': '0.791', 'top4-acc': '0.973'}
+2025-09-11 02:47:38,078 P27904 INFO {'f1': '0.678', 'rc': '0.542', 'pc': '0.905', 'top5-acc': '0.973'}
+2025-09-11 02:47:41,584 P27904 INFO {'f1': '0.562', 'rc': '0.407', 'pc': '0.909', 'top6-acc': '0.973'}
+2025-09-11 02:47:43,488 P27904 INFO {'f1': '0.562', 'rc': '0.401', 'pc': '0.942', 'top7-acc': '0.973'}
+2025-09-11 02:47:46,691 P27904 INFO {'f1': '0.536', 'rc': '0.374', 'pc': '0.942', 'top8-acc': '0.973'}
+2025-09-11 02:47:49,485 P27904 INFO {'f1': '0.527', 'rc': '0.365', 'pc': '0.944', 'top9-acc': '0.973'}
+2025-09-11 02:47:52,690 P27904 INFO {'f1': '0.509', 'rc': '0.348', 'pc': '0.949', 'top10-acc': '0.973'}
+2025-09-11 02:47:52,690 P27904 INFO Finish counting [233.40s]
+2025-09-11 02:47:55,976 P27904 INFO Early stop at epoch: 4
+2025-09-11 02:47:55,977 P27904 INFO Loading model from ./experiment_records/359ff04b/model.ckpt

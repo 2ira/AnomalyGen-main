@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "n_test": 115012,
+    "train_vocab": 17,
+    "confusion": {
+      "tp": 3090,
+      "fp": 118,
+      "tn": 111441,
+      "fn": 363
+    },
+    "normals_with_unseen_template": 0,
+    "normals_all_seen": 111559,
+    "fp_with_unseen": 0,
+    "fp_all_seen": 118,
+    "false_alarm_rate_unseen_normals": null,
+    "false_alarm_rate_seen_normals": 0.0010577362651153202,
+    "share_of_fps_that_have_unseen": 0.0
+  },
+  "example_fp_unseen": []
+}

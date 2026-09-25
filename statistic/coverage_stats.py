@@ -1,22 +1,25 @@
 """
-Unified log-template coverage statistics (single counting convention).
+Unified log-template coverage statistics (D1).
 
-Convention (applies to every cell of the coverage table):
-  * Universe / denominator = the set of *distinct* logging statements that
-    exist in the **production** source tree of the target system
-    (``src/main/java``; test code excluded), extracted by the AST pass and
-    deduplicated on the normalised format string.
-  * A source template is *covered* by a log corpus if at least one message in
-    that corpus matches the template after normalisation (placeholders ``{}``
-    / ``<*>`` become wildcards, whitespace/case/punctuation normalised).
-  * Coverage = |covered| / |universe|.
-  * Improvement = |covered by AnomalyGen| / |covered by the public dataset|.
+Paper convention (Table 1 and Table 4, R2):
+  * Universe / denominator = unique production format strings whose skeleton
+    has at least two literal tokens (``min_tokens=2``). Short templates never
+    score, so they are dropped from both numerator and denominator.
+  * A source template is covered when a corpus message contains all of its
+    literal tokens in order (placeholders ``{}`` / ``<*>`` / ``%s`` /
+    ``%(name)s`` / ``{0}`` stripped).
+  * Coverage = |covered long templates| / |long universe|.
 
-Usage:
-    python statistic/coverage_stats.py \
-        --source-templates hadoop/hadoop-hdfs-project/log_templates.txt \
-        --generated output/log_events/final_logs.json \
-        [--public dataset/HDFS/HDFS.log_templates.csv]
+Reproduce every Table 1 / Table 4 cell:
+
+    python3 statistic/d1_long_all.py --check
+
+Single-system:
+
+    python3 statistic/coverage_stats.py \\
+        --source-templates statistic/x5_out/hdfs_3.3.6_log_templates.txt \\
+        --generated output/log_events/final_logs.json \\
+        --public statistic/x5_out/loghub/HDFS_templates.csv
 """
 
 import argparse
@@ -26,7 +29,9 @@ import os
 import re
 
 
-PLACEHOLDER = re.compile(r"\{\}|<\*>|%[sdxfo]|\$\{[^}]*\}")
+PLACEHOLDER = re.compile(
+    r"\{\}|<\*>|%\([^)]+\)[-+#0-9.l]*[sdxfo%]|%[sdxfo]|\$\{[^}]*\}|\{[0-9]+\}"
+)
 NON_ALNUM = re.compile(r"[^a-z0-9]+")
 LEVEL_PREFIX = re.compile(r"^\s*\[?(trace|debug|info|warn|warning|error|fatal)\]?\s*:?\s*", re.I)
 
@@ -39,7 +44,7 @@ def read_source_templates(path):
     reflects production logging only.
     """
     statements = []
-    line_re = re.compile(r"^([^:]*\.java):\s?(.*)$")
+    line_re = re.compile(r"^([^:]*\.(?:java|py|scala|kt)):\s?(.*)$")
     with open(path, encoding="utf-8", errors="replace") as fh:
         for line in fh:
             if not line.strip():
@@ -47,7 +52,7 @@ def read_source_templates(path):
             m = line_re.match(line.rstrip("\n"))
             if m:
                 java_path, text = m.group(1), m.group(2)
-                if "src/test" in java_path or "/test/" in java_path:
+                if "src/test" in java_path or "/test/" in java_path or "/tests/" in java_path:
                     continue
             else:
                 text = line.rstrip("\n")
@@ -146,32 +151,42 @@ def load_public(path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source-templates", required=True)
-    ap.add_argument("--generated", required=True)
+    ap.add_argument("--generated", default=None,
+                    help="AnomalyGen corpus (output/log_events/final_logs.json)")
     ap.add_argument("--public", default=None,
                     help="parsed templates of the public dataset (csv)")
+    ap.add_argument("--include-short", action="store_true",
+                    help="use all unique formats as the denominator (not the paper convention)")
     args = ap.parse_args()
 
     stmts, templates = read_source_templates(args.source_templates)
+    min_tok = 1 if args.include_short else 2
+    _, usable = covered_templates([], templates, min_tokens=min_tok)
+    n_denom = len(templates) if args.include_short else len(usable)
     print(f"[universe] file            : {args.source_templates}")
     print(f"[universe] logging stmts   : {len(stmts)}")
     print(f"[universe] unique templates: {len(templates)}")
+    print(f"[universe] long (>=2 tok)  : {len(usable)}")
+    if not args.include_short:
+        print("[note    ] paper convention: shorts dropped from numerator and denominator")
 
-    gen = load_generated(args.generated)
-    gcov, usable = covered_templates(gen, templates)
-    print(f"[AG      ] messages        : {len(gen)}  ({args.generated})")
-    print(f"[AG      ] templates hit   : {len(gcov)}")
-    print(f"[AG      ] coverage        : {len(gcov)}/{len(templates)} = "
-          f"{100.0 * len(gcov) / len(templates):.2f}%")
-    print(f"[note    ] non-degenerate templates (>=2 literal tokens): {len(usable)}")
+    gcov = set()
+    if args.generated and os.path.exists(args.generated):
+        gen = load_generated(args.generated)
+        gcov, _ = covered_templates(gen, templates, min_tokens=min_tok)
+        print(f"[AG      ] messages        : {len(gen)}  ({args.generated})")
+        print(f"[AG      ] templates hit   : {len(gcov)}")
+        print(f"[AG      ] coverage        : {len(gcov)}/{n_denom} = "
+              f"{100.0 * len(gcov) / n_denom:.2f}%")
 
     if args.public and os.path.exists(args.public):
         pub = load_public(args.public)
-        pcov, _ = covered_templates(pub, templates)
+        pcov, _ = covered_templates(pub, templates, min_tokens=min_tok)
         print(f"[public  ] templates       : {len(pub)}  ({args.public})")
         print(f"[public  ] templates hit   : {len(pcov)}")
-        print(f"[public  ] coverage        : {len(pcov)}/{len(templates)} = "
-              f"{100.0 * len(pcov) / len(templates):.2f}%")
-        if pcov:
+        print(f"[public  ] coverage        : {len(pcov)}/{n_denom} = "
+              f"{100.0 * len(pcov) / n_denom:.2f}%")
+        if gcov and pcov:
             print(f"[compare ] improvement     : {len(gcov) / len(pcov):.1f}x")
 
 

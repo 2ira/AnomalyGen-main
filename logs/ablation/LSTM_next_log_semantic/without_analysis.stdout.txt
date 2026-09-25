@@ -1,0 +1,143 @@
+2026-09-22 20:28:17,285 P50042 INFO {
+    "model_name": "LSTM",
+    "use_attention": true,
+    "hidden_size": 128,
+    "num_layers": 2,
+    "num_directions": 2,
+    "embedding_dim": 32,
+    "dataset": "HDFS",
+    "data_dir": "../data/processed/HDFS/hdfs_without_analysis/hdfs_0.0_tar_plus_new_aug_0.001",
+    "window_size": 5,
+    "stride": 5,
+    "feature_type": "semantics",
+    "label_type": "next_log",
+    "use_tfidf": true,
+    "max_token_len": 30,
+    "min_token_count": 3,
+    "epoches": 100,
+    "batch_size": 256,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": -1,
+    "hash_id": "d65380d6"
+}
+2026-09-22 20:28:18,682 P50042 INFO Load from ../data/processed/HDFS/hdfs_without_analysis/hdfs_0.0_tar_plus_new_aug_0.001
+2026-09-22 20:28:18,682 P50042 INFO {
+    "aug_label_file": "/Users/ira/Desktop/tosem_anomlygen/TOSEM-2026-0301.R2_cover_letter/deeploglizer_prep/x2_without_analysis/hdfs_block_labels.csv",
+    "aug_log_file": "/Users/ira/Desktop/tosem_anomlygen/TOSEM-2026-0301.R2_cover_letter/deeploglizer_prep/x2_without_analysis/hdfs_combined_parsed_logs.csv",
+    "aug_ratio_vs_base": 0.001,
+    "augmentation_added": true,
+    "final_train_size": 447109,
+    "original_train_size": 446663,
+    "seed": 42,
+    "source_dataset": "/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/data/processed/HDFS/hdfs_0.0_tar",
+    "train_anomaly_ratio_for_aug": 0.0
+}
+2026-09-22 20:28:18,682 P50042 INFO # train sessions 447109 (0.00 anomalies)
+2026-09-22 20:28:18,682 P50042 INFO # test sessions 115012 (0.03 anomalies)
+2026-09-22 20:28:18,682 P50042 INFO Cannot load cached feature extractor.
+2026-09-22 20:28:18,772 P50042 INFO 105 tempaltes are found.
+2026-09-22 20:28:18,772 P50042 INFO Using semantics.
+2026-09-22 20:28:18,772 P50042 INFO Building vocab.
+2026-09-22 20:28:18,773 P50042 INFO Building vocab done.
+2026-09-22 20:28:18,773 P50042 INFO Fitting tfidf.
+/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/.venv/lib/python3.9/site-packages/sklearn/feature_extraction/text.py:517: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+  warnings.warn(
+/Users/ira/Desktop/tosem_anomlygen/AnomalyGen-main/deep-loglizer/.venv/lib/python3.9/site-packages/sklearn/feature_extraction/text.py:1368: UserWarning: Upper case characters found in vocabulary while 'lowercase' is True. These entries will not be matched with any documents
+  warnings.warn(
+2026-09-22 20:28:56,122 P50042 INFO Transforming train data.
+2026-09-22 20:28:58,424 P50042 INFO 1866253 sliding windows generated.
+2026-09-22 20:28:58,427 P50042 INFO Extracting semantic features.
+2026-09-22 20:29:01,067 P50042 INFO Finish feature extraction (train).
+2026-09-22 20:29:01,067 P50042 INFO Transforming test data.
+2026-09-22 20:29:01,091 P50042 INFO 10 new templates show while testing.
+2026-09-22 20:29:01,295 P50042 INFO 478465 sliding windows generated.
+2026-09-22 20:29:01,296 P50042 INFO Extracting semantic features.
+2026-09-22 20:29:01,895 P50042 INFO Finish feature extraction (test).
+2026-09-22 20:29:02,372 P50042 INFO Start training on 7291 batches with cpu.
+2026-09-22 20:31:02,634 P50042 INFO Epoch 1/100, training loss: 0.11173 [120.26s]
+2026-09-22 20:31:02,634 P50042 INFO Evaluating test data.
+2026-09-22 20:31:09,841 P50042 INFO Finish inference. [7.21s]
+2026-09-22 20:31:11,044 P50042 INFO Calculating acc sum.
+2026-09-22 20:31:11,064 P50042 INFO Finish generating store_df.
+2026-09-22 20:31:11,119 P50042 INFO {'f1': '0.252', 'rc': '0.738', 'pc': '0.152', 'top1-acc': '0.973'}
+2026-09-22 20:31:11,131 P50042 INFO {'f1': '0.566', 'rc': '0.683', 'pc': '0.483', 'top2-acc': '0.973'}
+2026-09-22 20:31:11,141 P50042 INFO {'f1': '0.726', 'rc': '0.648', 'pc': '0.825', 'top3-acc': '0.973'}
+2026-09-22 20:31:11,152 P50042 INFO {'f1': '0.748', 'rc': '0.623', 'pc': '0.936', 'top4-acc': '0.973'}
+2026-09-22 20:31:11,163 P50042 INFO {'f1': '0.751', 'rc': '0.610', 'pc': '0.975', 'top5-acc': '0.973'}
+2026-09-22 20:31:11,174 P50042 INFO {'f1': '0.732', 'rc': '0.584', 'pc': '0.979', 'top6-acc': '0.973'}
+2026-09-22 20:31:11,185 P50042 INFO {'f1': '0.724', 'rc': '0.571', 'pc': '0.987', 'top7-acc': '0.973'}
+2026-09-22 20:31:11,195 P50042 INFO {'f1': '0.709', 'rc': '0.552', 'pc': '0.990', 'top8-acc': '0.973'}
+2026-09-22 20:31:11,206 P50042 INFO {'f1': '0.640', 'rc': '0.473', 'pc': '0.990', 'top9-acc': '0.973'}
+2026-09-22 20:31:11,217 P50042 INFO {'f1': '0.639', 'rc': '0.471', 'pc': '0.991', 'top10-acc': '0.973'}
+2026-09-22 20:31:11,217 P50042 INFO Finish counting [1.07s]
+2026-09-22 20:31:11,299 P50042 INFO Saving model to ./experiment_records/d65380d6/model.ckpt
+2026-09-22 20:33:05,045 P50042 INFO Epoch 2/100, training loss: 0.10239 [113.74s]
+2026-09-22 20:33:05,046 P50042 INFO Evaluating test data.
+2026-09-22 20:33:13,305 P50042 INFO Finish inference. [8.26s]
+2026-09-22 20:33:14,405 P50042 INFO Calculating acc sum.
+2026-09-22 20:33:14,419 P50042 INFO Finish generating store_df.
+2026-09-22 20:33:14,452 P50042 INFO {'f1': '0.253', 'rc': '0.737', 'pc': '0.153', 'top1-acc': '0.973'}
+2026-09-22 20:33:14,463 P50042 INFO {'f1': '0.587', 'rc': '0.684', 'pc': '0.513', 'top2-acc': '0.973'}
+2026-09-22 20:33:14,473 P50042 INFO {'f1': '0.741', 'rc': '0.657', 'pc': '0.851', 'top3-acc': '0.973'}
+2026-09-22 20:33:14,483 P50042 INFO {'f1': '0.766', 'rc': '0.632', 'pc': '0.974', 'top4-acc': '0.973'}
+2026-09-22 20:33:14,493 P50042 INFO {'f1': '0.748', 'rc': '0.605', 'pc': '0.981', 'top5-acc': '0.973'}
+2026-09-22 20:33:14,504 P50042 INFO {'f1': '0.718', 'rc': '0.564', 'pc': '0.986', 'top6-acc': '0.973'}
+2026-09-22 20:33:14,514 P50042 INFO {'f1': '0.653', 'rc': '0.487', 'pc': '0.987', 'top7-acc': '0.973'}
+2026-09-22 20:33:14,524 P50042 INFO {'f1': '0.637', 'rc': '0.470', 'pc': '0.987', 'top8-acc': '0.973'}
+2026-09-22 20:33:14,534 P50042 INFO {'f1': '0.634', 'rc': '0.467', 'pc': '0.990', 'top9-acc': '0.973'}
+2026-09-22 20:33:14,544 P50042 INFO {'f1': '0.608', 'rc': '0.438', 'pc': '0.992', 'top10-acc': '0.973'}
+2026-09-22 20:33:14,544 P50042 INFO Finish counting [0.94s]
+2026-09-22 20:33:14,602 P50042 INFO Saving model to ./experiment_records/d65380d6/model.ckpt
+2026-09-22 20:35:09,624 P50042 INFO Epoch 3/100, training loss: 0.10134 [115.02s]
+2026-09-22 20:35:09,625 P50042 INFO Evaluating test data.
+2026-09-22 20:35:17,295 P50042 INFO Finish inference. [7.67s]
+2026-09-22 20:35:18,521 P50042 INFO Calculating acc sum.
+2026-09-22 20:35:18,538 P50042 INFO Finish generating store_df.
+2026-09-22 20:35:18,580 P50042 INFO {'f1': '0.249', 'rc': '0.736', 'pc': '0.150', 'top1-acc': '0.973'}
+2026-09-22 20:35:18,592 P50042 INFO {'f1': '0.569', 'rc': '0.672', 'pc': '0.494', 'top2-acc': '0.973'}
+2026-09-22 20:35:18,604 P50042 INFO {'f1': '0.733', 'rc': '0.635', 'pc': '0.865', 'top3-acc': '0.973'}
+2026-09-22 20:35:18,617 P50042 INFO {'f1': '0.763', 'rc': '0.625', 'pc': '0.979', 'top4-acc': '0.973'}
+2026-09-22 20:35:18,629 P50042 INFO {'f1': '0.679', 'rc': '0.518', 'pc': '0.985', 'top5-acc': '0.973'}
+2026-09-22 20:35:18,641 P50042 INFO {'f1': '0.663', 'rc': '0.498', 'pc': '0.989', 'top6-acc': '0.973'}
+2026-09-22 20:35:18,654 P50042 INFO {'f1': '0.654', 'rc': '0.488', 'pc': '0.989', 'top7-acc': '0.973'}
+2026-09-22 20:35:18,666 P50042 INFO {'f1': '0.626', 'rc': '0.457', 'pc': '0.991', 'top8-acc': '0.973'}
+2026-09-22 20:35:18,679 P50042 INFO {'f1': '0.623', 'rc': '0.454', 'pc': '0.992', 'top9-acc': '0.973'}
+2026-09-22 20:35:18,691 P50042 INFO {'f1': '0.611', 'rc': '0.441', 'pc': '0.993', 'top10-acc': '0.973'}
+2026-09-22 20:35:18,691 P50042 INFO Finish counting [1.09s]
+2026-09-22 20:37:15,308 P50042 INFO Epoch 4/100, training loss: 0.10154 [116.53s]
+2026-09-22 20:37:15,309 P50042 INFO Evaluating test data.
+2026-09-22 20:37:23,084 P50042 INFO Finish inference. [7.77s]
+2026-09-22 20:37:24,361 P50042 INFO Calculating acc sum.
+2026-09-22 20:37:24,380 P50042 INFO Finish generating store_df.
+2026-09-22 20:37:24,431 P50042 INFO {'f1': '0.253', 'rc': '0.731', 'pc': '0.153', 'top1-acc': '0.973'}
+2026-09-22 20:37:24,446 P50042 INFO {'f1': '0.585', 'rc': '0.680', 'pc': '0.513', 'top2-acc': '0.973'}
+2026-09-22 20:37:24,460 P50042 INFO {'f1': '0.729', 'rc': '0.628', 'pc': '0.868', 'top3-acc': '0.973'}
+2026-09-22 20:37:24,474 P50042 INFO {'f1': '0.693', 'rc': '0.538', 'pc': '0.974', 'top4-acc': '0.973'}
+2026-09-22 20:37:24,486 P50042 INFO {'f1': '0.687', 'rc': '0.529', 'pc': '0.980', 'top5-acc': '0.973'}
+2026-09-22 20:37:24,500 P50042 INFO {'f1': '0.675', 'rc': '0.512', 'pc': '0.989', 'top6-acc': '0.973'}
+2026-09-22 20:37:24,517 P50042 INFO {'f1': '0.594', 'rc': '0.425', 'pc': '0.989', 'top7-acc': '0.973'}
+2026-09-22 20:37:24,531 P50042 INFO {'f1': '0.579', 'rc': '0.409', 'pc': '0.990', 'top8-acc': '0.973'}
+2026-09-22 20:37:24,544 P50042 INFO {'f1': '0.566', 'rc': '0.396', 'pc': '0.991', 'top9-acc': '0.973'}
+2026-09-22 20:37:24,556 P50042 INFO {'f1': '0.561', 'rc': '0.391', 'pc': '0.993', 'top10-acc': '0.973'}
+2026-09-22 20:37:24,556 P50042 INFO Finish counting [1.14s]
+2026-09-22 20:39:25,897 P50042 INFO Epoch 5/100, training loss: 0.10117 [121.26s]
+2026-09-22 20:39:25,898 P50042 INFO Evaluating test data.
+2026-09-22 20:39:34,016 P50042 INFO Finish inference. [8.12s]
+2026-09-22 20:39:35,250 P50042 INFO Calculating acc sum.
+2026-09-22 20:39:35,266 P50042 INFO Finish generating store_df.
+2026-09-22 20:39:35,306 P50042 INFO {'f1': '0.264', 'rc': '0.770', 'pc': '0.160', 'top1-acc': '0.973'}
+2026-09-22 20:39:35,318 P50042 INFO {'f1': '0.582', 'rc': '0.703', 'pc': '0.497', 'top2-acc': '0.973'}
+2026-09-22 20:39:35,329 P50042 INFO {'f1': '0.735', 'rc': '0.643', 'pc': '0.858', 'top3-acc': '0.973'}
+2026-09-22 20:39:35,341 P50042 INFO {'f1': '0.639', 'rc': '0.476', 'pc': '0.970', 'top4-acc': '0.973'}
+2026-09-22 20:39:35,352 P50042 INFO {'f1': '0.524', 'rc': '0.358', 'pc': '0.976', 'top5-acc': '0.973'}
+2026-09-22 20:39:35,363 P50042 INFO {'f1': '0.498', 'rc': '0.334', 'pc': '0.978', 'top6-acc': '0.973'}
+2026-09-22 20:39:35,374 P50042 INFO {'f1': '0.476', 'rc': '0.314', 'pc': '0.982', 'top7-acc': '0.973'}
+2026-09-22 20:39:35,386 P50042 INFO {'f1': '0.469', 'rc': '0.308', 'pc': '0.983', 'top8-acc': '0.973'}
+2026-09-22 20:39:35,397 P50042 INFO {'f1': '0.463', 'rc': '0.303', 'pc': '0.987', 'top9-acc': '0.973'}
+2026-09-22 20:39:35,408 P50042 INFO {'f1': '0.457', 'rc': '0.298', 'pc': '0.988', 'top10-acc': '0.973'}
+2026-09-22 20:39:35,408 P50042 INFO Finish counting [1.08s]
+2026-09-22 20:39:35,467 P50042 INFO Early stop at epoch: 5
+2026-09-22 20:39:35,467 P50042 INFO Loading model from ./experiment_records/d65380d6/model.ckpt

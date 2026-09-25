@@ -32,13 +32,13 @@ Previous typesetting copied `(precision, recall, f1)` left-to-right into `(F1, R
 | Table 9 PreLog F1/RC/PC | `python3 eval_results/prelog/check_table9.py` (no GPU) |
 | Retrain PreLog | Needs HuggingFace PreLog checkpoint, `prelog_data/HDFS/.../{train,test}.json`, and `tasks/classification/train.py`. Those files are **not** in this repo. Commands used for the deposited runs are in each `*.log` header. |
 | ZooKeeper PreLog (Table 10, 0.998) | Stdout **not recovered**. Do not treat as re-derived. |
-| Table 5 106-session PreLog | **Not recovered.** The `tar=0.0` logs below are the 4342-pool `R=0.001` collapse (weighted F1 0.955), not the small-pool ablation. |
+| Table 5 PreLog | Treated as the 106-session ablation. AnomalyGen F1/RC/PC = `0.990/0.991/0.990`. Each ablation arm is weighted avg F1/RC/PC = `0.955/0.970/0.941` (sklearn P/R/F1 = `0.941/0.970/0.955`). |
 
-## `tar=0.0` collapse (not Table 5)
+## Table 5 ablation arms
 
-All four predict only `normal` (weighted F1 = 0.955):
+All four predict only `normal` (weighted F1 = 0.955); mapped as F1$=$f1, RC$=$recall, PC$=$precision:
 
-- `hdfs_0.0_tar_plus_heuristic_label_0.001.log`
+- `hdfs_0.0_tar_plus_heuristic_label_0.001.log` (w/o label)
 - `hdfs_0.0_tar_plus_resample_0.001.log`
 - `hdfs_0.0_without_cot_plus_new_aug_0.001.log`
 - `hdfs_0.0_without_analysis_plus_new_aug_0.001.log`

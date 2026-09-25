@@ -23,6 +23,9 @@ def get_entry_name(entry):
     method_name = method_with_params[:method_name_end]
 
     simple_entry_name = f"{simple_class_name}_{method_name}"
+    if os.environ.get("UNIQUE_ENTRY_DIRS"):
+        import hashlib
+        simple_entry_name += "_" + hashlib.sha1(entry.encode("utf-8")).hexdigest()[:8]
     return simple_entry_name
 
 
@@ -144,10 +147,17 @@ def generate_cfg_and_log_seq(entry_functions, output_dir):
 ## Stage 3: Merge and stimulate log Sequence ##
 def merge_results(entry_functions, output_dir):
     print("merging...")
+    merge_timeout = int(os.environ.get("MERGE_TIMEOUT", "0") or "0")
     for entry in entry_functions:
         simple_entry_name = get_entry_name(entry)
         entry_output_dir = os.path.join(output_dir, simple_entry_name)
-        subprocess.run(['python3', 'main/merge_node.py', '--call_chain_file', f'{entry_output_dir}/pruned_call_deps.txt', '--source_mapping', f'{entry_output_dir}/extracted_methods.json', '--single_call_path', f'{entry_output_dir}/prune_call_path_javaparser.json', '--output_dir', entry_output_dir])
+        cmd = ['python3', 'main/merge_node.py', '--call_chain_file', f'{entry_output_dir}/pruned_call_deps.txt', '--source_mapping', f'{entry_output_dir}/extracted_methods.json', '--single_call_path', f'{entry_output_dir}/prune_call_path_javaparser.json', '--output_dir', entry_output_dir]
+        if os.environ.get("NO_LLM"):
+            cmd.append('--no-llm')
+        try:
+            subprocess.run(cmd, timeout=merge_timeout if merge_timeout > 0 else None)
+        except subprocess.TimeoutExpired:
+            print(f"merge timeout ({merge_timeout}s): {simple_entry_name}")
 
 
 def merge_results_without_cot(entry_functions, output_dir):

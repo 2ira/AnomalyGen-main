@@ -1,3 +1,0 @@
-the entry function is {'org.apache.hadoop.hdfs.server.datanode.BlockReceiver:adjustCrcFilePosition()'}
-all call times 2
-all cost token is 2383

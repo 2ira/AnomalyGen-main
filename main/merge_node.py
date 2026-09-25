@@ -16,6 +16,75 @@ logging.basicConfig(level=logging.DEBUG,
                     ])
 logger = logging.getLogger()
 
+_JAVA_STRING = r'"(?:\\.|[^"\\])*"'
+_JAVA_CONCAT = rf'{_JAVA_STRING}(?:\s*\+\s*{_JAVA_STRING})*'
+_LOG_CALL = re.compile(
+    r'(?:[A-Za-z_][\w\.]*\.)?(?:LOG|log|LOGGER|logger)\s*\.\s*'
+    r'(trace|debug|info|warn|warning|error|fatal)\s*\(\s*(' + _JAVA_CONCAT + ')',
+    re.I,
+)
+_LLM_FAIL = re.compile(
+    r'(Failed to get a response|Error: Failed to get|Error: Empty response|Error: Prompts list)',
+    re.I,
+)
+
+
+def extract_log_literals(source_code: str):
+    """Pull SLF4J/Log4j format strings out of a Java method body."""
+    if not source_code:
+        return []
+    out = []
+    seen = set()
+    for m in _LOG_CALL.finditer(source_code):
+        level = m.group(1).upper()
+        if level == "WARNING":
+            level = "WARN"
+        raw = m.group(2)
+        parts = re.findall(_JAVA_STRING, raw)
+        msg = "".join(_unescape_java_string(p[1:-1]) for p in parts)
+        key = (level, msg)
+        if msg and key not in seen:
+            seen.add(key)
+            out.append(key)
+    return out
+
+
+def _unescape_java_string(s: str) -> str:
+    return (
+        s.replace(r"\\", "\\")
+        .replace(r"\"", '"')
+        .replace(r"\n", "\n")
+        .replace(r"\t", "\t")
+    )
+
+
+def llm_failed(text) -> bool:
+    if text is None:
+        return True
+    s = str(text).strip()
+    return (not s) or bool(_LLM_FAIL.search(s))
+
+
+def source_log_xml(node: str, source_code: str) -> str:
+    lits = extract_log_literals(source_code)
+    if not lits:
+        return ""
+    lines = "\n".join(f"        [{node}][{lvl}] {msg}" for lvl, msg in lits)
+    return (
+        "```xml\n<merge_result>\n  <valid_paths>\n    <path>\n"
+        "      <id>SRC</id>\n      <eval>true</eval>\n      <log_sequence>\n"
+        f"{lines}\n"
+        "      </log_sequence>\n    </path>\n  </valid_paths>\n</merge_result>\n```"
+    )
+
+
+def combine_with_source_logs(existing, source_xml: str):
+    if llm_failed(existing):
+        return source_xml or existing or ""
+    if not source_xml:
+        return existing
+    return str(existing).rstrip() + "\n" + source_xml
+
 
 def address_log_seq(message):
 
@@ -46,15 +115,15 @@ def address_log_seq(message):
     return xml_data
 
 class StackDFSMerger:
-    def __init__(self, simple_call_graph, code_map,single_log_map):
-        self.simple_call_graph = simple_call_graph
-        self.code_map = code_map
-        self.single_log_map = single_log_map
-        self.processed = {}        
+    def __init__(self, simple_call_graph, code_map, single_log_map, no_llm=False):
+        self.simple_call_graph = simple_call_graph or {}
+        self.code_map = code_map or {}
+        self.single_log_map = single_log_map or {}
+        self.no_llm = no_llm
+        self.processed = {}
         self.stack = []
         self.in_stack = set()
-        
-        self.merged_info = {}       
+        self.merged_info = {}
         self.merged_logs = ""
 
     def _is_leaf(self, node):
@@ -68,66 +137,92 @@ class StackDFSMerger:
         else:
             return ""
 
-   
+    def _source_text(self, node) -> str:
+        code = self._get_node_code(node)
+        if isinstance(code, dict):
+            return code.get("source_code") or ""
+        return str(code) if code else ""
+
+    def _attach_source_logs(self, node, existing):
+        xml = source_log_xml(node, self._source_text(node))
+        return combine_with_source_logs(existing, xml)
 
     def _process_leaf(self, node):
         code = self._get_node_code(node)
-        if not code:
+        src = self._source_text(node)
+        if not code and not src:
             print(f"[WARN] {node} no code")
             return
-        
-        log_seq = self.single_log_map.get(node,"")
-        if not log_seq:
+
+        log_seq = self.single_log_map.get(node, "")
+        if log_seq:
+            log_seq = address_log_seq(log_seq)
+        combined = self._attach_source_logs(node, log_seq)
+        if not combined:
             print(f"[WARN] {node} no log analysis")
             return
+        print(f"{node}-------log_seq----- leaf  -----{combined[:500]}")
+        self.merged_info[node] = combined
+        self.single_log_map[node] = combined
+        self.merged_logs = combined
 
-        log_seq = address_log_seq(log_seq)
-        print(f"{node}-------log_seq----- leaf  -----{log_seq}")
-        
-        self.merged_info[node] = log_seq
-        address_log = address_log_seq(log_seq)
-        self.single_log_map[node] = address_log
-   
     def _merge_parent(self, node):
         parent_code = self._get_node_code(node)
         if not parent_code:
             print(f"[WARN] {node} no code")
             parent_code = ""
-        parent_log = self.single_log_map.get(node,"")
+        parent_log = self.single_log_map.get(node, "")
         if not parent_log:
             print(f"[WARN] {node} no log analysis")
             parent_log = ""
 
-        parent_log = address_log_seq(parent_log)
-        print(f"{node}-------log_seq------parent -----{parent_log}")
+        parent_log = address_log_seq(parent_log) if parent_log else ""
+        parent_log = self._attach_source_logs(node, parent_log)
+        print(f"{node}-------log_seq------parent -----{str(parent_log)[:500]}")
 
-        self.merged_info[node]=parent_log
-        address_log = address_log_seq(parent_log)
-        self.single_log_map[node]=address_log
-        
-        for child in self.simple_call_graph[node]:
+        self.merged_info[node] = parent_log
+        self.single_log_map[node] = parent_log
+
+        for child in self.simple_call_graph.get(node, []):
             child_code = self._get_node_code(child)
             if not child_code:
-             
                 continue
-                
-            child_log = self.single_log_map.get(child,"")
+
+            child_log = self.single_log_map.get(child, "")
+            if not child_log:
+                child_log = self._attach_source_logs(child, "")
             if not child_log:
                 continue
-            
+
             child_log = address_log_seq(child_log)
-            print(f"{child}-------log_seq----- child  ----{child_log}")
-            
+            child_log = self._attach_source_logs(child, child_log)
+            print(f"{child}-------log_seq----- child  ----{str(child_log)[:500]}")
+
+            if self.no_llm:
+                parent_log = self._attach_source_logs(
+                    node, str(parent_log) + "\n" + str(child_log)
+                )
+                self.merged_info[node] = parent_log
+                self.single_log_map[node] = parent_log
+                self.merged_logs = parent_log
+                continue
+
             parent_info = "node name is "+node+"node log is"+str(parent_log)+"souce code:"+ str(parent_code)
             child_info ="node name is"+child+ "node log is"+str(child_log)+"source code:"+str(child_code)
             prompts = list(get_merge_nodes_by_llm_v7(parent_info,child_info))
-            
+
             merged = get_response(prompts)
-            self.merged_info[node]=merged
-            addressed_merged = address_log_seq(merged)
+            if llm_failed(merged):
+                logger.warning("LLM merge failed for %s + %s; keeping source logs", node, child)
+                addressed_merged = self._attach_source_logs(
+                    node, str(parent_log) + "\n" + str(child_log)
+                )
+            else:
+                addressed_merged = self._attach_source_logs(node, address_log_seq(merged))
+            self.merged_info[node] = addressed_merged
             self.single_log_map[node] = addressed_merged
             print("--------merged info is ---------------------")
-            print(addressed_merged)
+            print(str(addressed_merged)[:500])
             self.merged_logs = addressed_merged
             print(f"[MERGE] {node}merged {child} ")
             parent_log = addressed_merged
@@ -212,6 +307,8 @@ def load_json(json_file):
 def parse_call_file(filename):
     call_graph_with_depth = {}
     all_callees = set()
+    if not filename or not os.path.exists(filename):
+        return call_graph_with_depth, all_callees
     with open(filename, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
@@ -284,6 +381,8 @@ def main():
     parser.add_argument('--source_mapping', type=str, required=True,help="source_code mapping file path")
     parser.add_argument('--single_call_path', type=str, required=True,help="single log generation mapping file path")
     parser.add_argument('--output_dir', type=str, required=True,help="output dir of mapping json")
+    parser.add_argument('--no-llm', action='store_true',
+                        help="Attach source log literals without calling the merge LLM")
     
     args = parser.parse_args()
 
@@ -294,20 +393,35 @@ def main():
 
     call_graph_with_depth, all_callees = parse_call_file(call_file)
     simple_call_graph = build_simple_call_graph(call_graph_with_depth)
-    
-    all_callers = set(simple_call_graph.keys())
-    roots = all_callers - all_callees
-    if not roots:
-        print("have no root,auto set")
-        roots = {list(simple_call_graph.keys())[0]}
-    code_map =  load_json(source_mapping)
-    # print(source_mapping)
+    code_map = load_json(source_mapping) or {}
     single_log_map = load_json(single_call_path)
     if single_log_map is None:
         print(f"load {single_call_path} failed")
+        single_log_map = {}
 
-    
-    merger = StackDFSMerger(simple_call_graph, code_map,single_log_map)
+    all_callers = set(simple_call_graph.keys())
+    roots = all_callers - all_callees
+    if not simple_call_graph and code_map:
+        simple_call_graph = {sig: [] for sig in code_map}
+        roots = set(code_map)
+        print("empty call graph, treating extracted methods as leaves")
+    elif not roots:
+        print("have no root,auto set")
+        if simple_call_graph:
+            roots = {next(iter(simple_call_graph.keys()))}
+        elif code_map:
+            simple_call_graph = {sig: [] for sig in code_map}
+            roots = set(code_map)
+        else:
+            print("empty graph and no extracted methods")
+            os.makedirs(output_dir, exist_ok=True)
+            with open(os.path.join(output_dir, "merge_single_info.json"), "w") as f:
+                json.dump({}, f)
+            with open(os.path.join(output_dir, "merge_single_log.json"), "w") as f:
+                json.dump({}, f)
+            return
+
+    merger = StackDFSMerger(simple_call_graph, code_map, single_log_map, no_llm=args.no_llm)
     merger.merge(roots)
     
     single_log_seq_json = merger.merged_info

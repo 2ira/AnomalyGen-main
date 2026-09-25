@@ -1,0 +1,23 @@
+# Keep frozen extracts + LogHub CSVs + the paper-number dump.
+# Drop pipeline leftovers that are not needed to reproduce Table 1 / Table 4.
+*.log
+*.jsonl
+final_logs_*.json
+timeout_*
+unreached_*
+loghub/Hadoop_full_try.csv
+drain_sweep.csv
+remaining_d3_auto_run.log
+remaining_source_logs.json
+remaining_entries_resolved_d3.txt
+remaining_entries_unresolved_d3.txt
+remaining_entries_resolved.txt
+d3_merged_d1.json
+unreached_merged_d1.json
+unreached_refill.jsonl
+unreached_refill_summary.json
+unreached_auto_run.log
+timeout_llm_done.txt
+timeout_llm_remaining.txt
+timeout_merge_dirs.txt
+remaining_fill_d1.json

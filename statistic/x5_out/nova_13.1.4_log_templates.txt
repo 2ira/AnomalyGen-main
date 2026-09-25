@@ -1,0 +1,2024 @@
+nova/service.py: Updating service version for %(binary)s on
+nova/service.py: Starting %(topic)s node (version %(version)s)
+nova/service.py: Creating RPC server for service %s
+nova/service.py: Join ServiceGroup membership for this service %s
+nova/service.py: Service killed that has no database entry
+nova/service.py: Service error occurred during cleanup_host
+nova/service.py: Temporary directory is invalid: %s
+nova/exception.py: Exception in string format operation
+nova/exception.py: %s: %s
+nova/hooks.py: Hooks are deprecated as of Nova 13.0 and
+nova/hooks.py: Running %(name)s %(type)s-hook: %(obj)s
+nova/hooks.py: name
+nova/hooks.py: name
+nova/version.py: Failed to load %(cfgfile)s: %(ex)s
+nova/quota.py: Getting all quota usages for project: %s
+nova/quota.py: Getting quotas for user %(user_id)s and project
+nova/quota.py: Getting quotas for project %(project_id)s. Resources:
+nova/quota.py: Reserving resources using context.project_id: %s
+nova/quota.py: Reserving resources using context.user_id: %s
+nova/quota.py: Attempting to reserve resources for project %(project_id)s
+nova/quota.py: Quota limits for project %(project_id)s:
+nova/quota.py: Quotas for project %(project_id)s after resource sync:
+nova/quota.py: Quotas for project %(project_id)s and user %(user_id)s
+nova/quota.py: Created reservations %s
+nova/quota.py: Failed to commit reservations %s
+nova/quota.py: Committed reservations %s
+nova/quota.py: Failed to roll back reservations %s
+nova/quota.py: Rolled back reservations %s
+nova/policy.py: Policy check for %(action)s failed with credentials
+nova/block_device.py: block_device_list %s
+nova/debugger.py: Listening on %(host)s:%(port)s for debug connection
+nova/debugger.py: WARNING: Using the remote debug option changes how
+nova/rpc.py: event_type
+nova/crypto.py: Failed to write inbound.csr
+nova/crypto.py: Flags path: %s
+nova/context.py: Arguments dropped when creating context: %s
+nova/utils.py: Expected to receive %(exp)s bytes,
+nova/utils.py: Executing RootwrapDaemonHelper.execute
+nova/utils.py: Invalid server_string: %s
+nova/utils.py: Hostname %(hostname)s is longer than 63,
+nova/utils.py: Could not remove tmpdir: %s
+nova/utils.py: Reloading cached file %s
+nova/notifications.py: Failed to send instance update notification. The
+nova/notifications.py: Failed to send state update notification
+nova/notifications.py: Failed to send instance update notification. The
+nova/notifications.py: Failed to send state update notification
+nova/notifications.py: Failed to get nw_info
+nova/filters.py: Starting with %d host(s)
+nova/filters.py: Filter %s says to stop filtering
+nova/filters.py: Filter %s returned 0 hosts
+nova/filters.py: Filter %(cls_name)s returned
+nova/wsgi.py: Could not bind to %(host)s:%(port)s
+nova/wsgi.py: %(name)s listening on %(host)s:%(port)s
+nova/wsgi.py: Failed to start %(name)s on %(host)s
+nova/wsgi.py: Stopping WSGI server.
+nova/wsgi.py: WSGI server has stopped.
+nova/wsgi.py: Loading app %(name)s from %(path)s
+nova/wsgi.py: Couldn't lookup app: %s
+nova/cmd/all.py: Failed to load %s-api
+nova/cmd/all.py: Failed to load %s
+nova/cmd/all.py: Failed to load %s
+nova/cmd/api.py: %s. ``enabled_apis`` includes bad values.
+nova/cmd/api.py: No APIs were started.
+nova/cmd/network.py: No db access allowed in nova-network: %s
+nova/cmd/network.py: Conductor local mode is deprecated and will
+nova/cmd/dhcpbridge.py: No db access allowed in nova-dhcpbridge: %s
+nova/cmd/dhcpbridge.py: Conductor local mode is deprecated and will
+nova/cmd/dhcpbridge.py: Called '%(action)s' for mac '%(mac)s' with IP '%(ip)s'
+nova/cmd/dhcpbridge.py: Environment variable 'NETWORK_ID' must be set.
+nova/cmd/compute.py: No db access allowed in nova-compute: %s
+nova/cmd/compute.py: Conductor local mode is deprecated and will
+nova/cells/rpcapi.py: Failed to notify cells of BDM update/create.
+nova/cells/rpcapi.py: Failed to notify cells of BDM destroy.
+nova/cells/scheduler.py: Weighted cells: %(weighted_cells)s
+nova/cells/scheduler.py: Building instances with routing_path=%(routing_path)s
+nova/cells/scheduler.py: Couldn't communicate with cell '%s'
+nova/cells/scheduler.py: Couldn't communicate with any cells
+nova/cells/scheduler.py: No cells available when scheduling.  Will
+nova/cells/scheduler.py: Error scheduling instances %(instance_uuids)s
+nova/cells/manager.py: The cells feature of Nova is considered experimental
+nova/cells/manager.py: The same keypair name '%(name)s' exists in the
+nova/cells/state.py: DB error
+nova/cells/state.py: Unknown cell '%(cell_name)s' when trying to
+nova/cells/state.py: Unknown cell '%(cell_name)s' when trying to
+nova/cells/state.py: Updating cell cache from db.
+nova/cells/state.py: Updating cell cache from config file.
+nova/cells/messaging.py: Error processing message locally
+nova/cells/messaging.py: Error locating next hop for message
+nova/cells/messaging.py: next_hop
+nova/cells/messaging.py: Error locating next hops for message
+nova/cells/messaging.py: Error sending message to next hops.
+nova/cells/messaging.py: Error waiting for responses from
+nova/cells/messaging.py: Received capabilities from child cell
+nova/cells/messaging.py: Received capacities from child cell
+nova/cells/messaging.py: Got update for instance: %(instance)s
+nova/cells/messaging.py: Got update to delete instance
+nova/cells/messaging.py: Got broadcast to %(delete_type)s delete instance
+nova/cells/messaging.py: Got message to create instance fault: %s
+nova/cells/messaging.py: Forcing a sync of instances, project_id=
+nova/cells/messaging.py: Calling db.block_device_mapping_update_or_create from
+nova/cells/messaging.py: Calling db.block_device_mapping_create from API
+nova/cells/messaging.py: No match when trying to update BDM: %(bdm)s
+nova/cells/messaging.py: Calling db.block_device_mapping_update from API cell with
+nova/cells/messaging.py: Updating parents [%(parent_cell_names)s] with
+nova/cells/messaging.py: Updating parents [%(parent_cell_names)s] with
+nova/cells/messaging.py: No cell_name for %(method)s() from API
+nova/cells/messaging.py: No cell_name for instance update from API
+nova/cells/messaging.py: Returning exception %s to caller
+nova/cells/filters/target_cell.py: Forcing direct route to %(cell_name)s because
+nova/cells/weights/mute_child.py: %(cell)s has not been seen since %(last_seen)s
+nova/pci/stats.py: Failed to allocate PCI devices for instance.
+nova/pci/manager.py: Trying to remove device with %(status)s
+nova/pci/manager.py: Assigning a pci device without numa affinity to
+nova/network/minidns.py: minidns file is |%s|
+nova/network/minidns.py: Cannot delete entry |%s|
+nova/network/minidns.py: deleted %s
+nova/network/minidns.py: Cannot delete domain |%s|
+nova/network/floating_ips.py: Fixed IP %s not found
+nova/network/floating_ips.py: Interface %s not found
+nova/network/floating_ips.py: floating IP allocation for instance
+nova/network/floating_ips.py: Floating IP %s is not associated. Ignore.
+nova/network/floating_ips.py: Address |%(address)s| is not allocated
+nova/network/floating_ips.py: Address |%(address)s| is not allocated
+nova/network/floating_ips.py: Quota exceeded for %s, tried to allocate
+nova/network/floating_ips.py: Failed to update usages deallocating
+nova/network/floating_ips.py: Failed to disassociated floating
+nova/network/floating_ips.py: Interface %s not found
+nova/network/floating_ips.py: Starting migration network for instance %s
+nova/network/floating_ips.py: Floating IP address |%(address)s| no longer
+nova/network/floating_ips.py: Finishing migration network for instance %s
+nova/network/floating_ips.py: Floating IP address |%(address)s| no longer
+nova/network/floating_ips.py: Database inconsistency: DNS domain |%s| is
+nova/network/floating_ips.py: Domain |%(domain)s| already exists,
+nova/network/floating_ips.py: Domain |%(domain)s| already exists,
+nova/network/l3.py: Initializing linux_net L3 driver
+nova/network/linux_net.py: Attempted to remove chain %s which does not
+nova/network/linux_net.py: Skipping duplicate iptables rule addition.
+nova/network/linux_net.py: Tried to remove rule that was not there:
+nova/network/linux_net.py: Skipping apply due to lack of new rules
+nova/network/linux_net.py: IPTablesManager.apply completed with success
+nova/network/linux_net.py: arping error for IP %s
+nova/network/linux_net.py: num
+nova/network/linux_net.py: Error deleting conntrack entries for %s
+nova/network/linux_net.py: Pid %d is stale, skip killing dnsmasq
+nova/network/linux_net.py: kill -HUP dnsmasq threw %s
+nova/network/linux_net.py: Pid %d is stale, relaunching dnsmasq
+nova/network/linux_net.py: killing radvd threw %s
+nova/network/linux_net.py: Pid %d is stale, relaunching radvd
+nova/network/linux_net.py: hostname %s too long, truncating.
+nova/network/linux_net.py: FAKE NET: %s
+nova/network/linux_net.py: Unable to execute %(cmd)s. Exception: %(exception)s
+nova/network/linux_net.py: MTU not set on %(interface_name)s interface
+nova/network/linux_net.py: Net device removed: '%s'
+nova/network/linux_net.py: Failed removing net device: '%s'
+nova/network/linux_net.py: Failed removing bridge device: '%s'
+nova/network/linux_net.py: Starting VLAN interface %s
+nova/network/linux_net.py: Starting Bridge %s
+nova/network/linux_net.py: Adding interface %(interface)s to bridge %(bridge)s
+nova/network/linux_net.py: %s failed. Not Retrying.
+nova/network/linux_net.py: %(cmd)s failed. Sleeping %(time)s
+nova/network/linux_net.py: %s failed. Not Retrying.
+nova/network/linux_net.py: Starting bridge %s
+nova/network/linux_net.py: Done starting bridge %s
+nova/network/base_api.py: Updating instance_info_cache with network_info: %s
+nova/network/base_api.py: Failed storing info cache
+nova/network/__init__.py: Config mismatch. The network_api_class specifies %s,
+nova/network/ldapdns.py: Found multiple matches for domain
+nova/network/ldapdns.py: Unable to dequalify.  %(name)s is not in
+nova/network/ldapdns.py: This shouldn't be getting called except during
+nova/network/api.py: re-assign floating IP %(address)s from
+nova/network/driver.py: Network driver option required, but not specified
+nova/network/driver.py: Loading network driver '%s'
+nova/network/manager.py: Get DHCP leases for network %s
+nova/network/manager.py: Update DNS on network %s for host %s
+nova/network/manager.py: Configured network %(network)s on host %(host)s
+nova/network/manager.py: Disassociated %s stale fixed IP(s)
+nova/network/manager.py: Setting host %s for network %s
+nova/network/manager.py: Get instance uuids by IP filters. Fixed IP filter: %s.
+nova/network/manager.py: Networks retrieved for instance: |%s|
+nova/network/manager.py: Allocated network: '%s' for instance
+nova/network/manager.py: Network deallocation for instance
+nova/network/manager.py: Network deallocated for instance (fixed IPs: '%s')
+nova/network/manager.py: Get instance network info
+nova/network/manager.py: Found %d fixed IPs associated to the instance in the
+nova/network/manager.py: No VirtualInterface for FixedIP: %s
+nova/network/manager.py: No Network for FixedIP: %s
+nova/network/manager.py: Built network info: |%s|
+nova/network/manager.py: Add fixed IP on network %s
+nova/network/manager.py: Remove fixed IP %s
+nova/network/manager.py: instance-dns-zone not found |%s|.
+nova/network/manager.py: instance-dns-zone is |%(domain)s|,
+nova/network/manager.py: Allocate fixed IP on network %s
+nova/network/manager.py: Quota exceeded for project %(pid)s, tried to
+nova/network/manager.py: vif for network %(network)s is used up,
+nova/network/manager.py: Associating instance with specified fixed IP
+nova/network/manager.py: Associating instance with fixed IP from pool
+nova/network/manager.py: Associated instance with fixed IP: %s
+nova/network/manager.py: Refreshing security group members for instance.
+nova/network/manager.py: Setting up network %(network)s on host %(host)s.
+nova/network/manager.py: Fixed IP is setup on network %s but not returning
+nova/network/manager.py: Allocated fixed IP %s on network %s
+nova/network/manager.py: Error cleaning up fixed IP
+nova/network/manager.py: Deallocate fixed IP %s
+nova/network/manager.py: Failed to update usages deallocating
+nova/network/manager.py: Unable to release %s because vif
+nova/network/manager.py: Unable to release %s because vif
+nova/network/manager.py: Error releasing DHCP for IP %(address)s
+nova/network/manager.py: Explicitly disassociating fixed IP %s from
+nova/network/manager.py: Failed to rollback quota for
+nova/network/manager.py: Leased IP |%s|
+nova/network/manager.py: IP %s leased that is not associated
+nova/network/manager.py: IP |%s| leased that isn\'t allocated
+nova/network/manager.py: Released IP |%s|
+nova/network/manager.py: IP %s released that is not associated
+nova/network/manager.py: IP %s released that was not leased
+nova/network/manager.py: Checking to see if virtual interface with MAC
+nova/network/manager.py: Found VIF: %s
+nova/network/manager.py: Ignoring request to release fixed IP
+nova/network/manager.py: No VIF was found for MAC: %s
+nova/network/manager.py: Disassociating fixed IP %s from instance.
+nova/network/manager.py: Create network: |%s|
+nova/network/manager.py: Delete network %s
+nova/network/manager.py: Setup networks on host
+nova/network/manager.py: Validate networks
+nova/network/manager.py: Get VIFs for instance
+nova/network/manager.py: Get instance for floating address %s
+nova/network/manager.py: Update DNS for network ids: %s
+nova/network/manager.py: Setup network on host %s
+nova/network/manager.py: Allocate fixed IP on network %s
+nova/network/manager.py: vif for network %(network)s and instance
+nova/network/manager.py: Allocated fixed IP %s on network %s
+nova/network/manager.py: Add network %s to project %s
+nova/network/manager.py: Associate network %s: |%s|
+nova/network/manager.py: Create network: |%s|
+nova/network/manager.py: Remove unused gateway %s
+nova/network/security_group/neutron_driver.py: Neutron Error creating security group %s
+nova/network/security_group/neutron_driver.py: Neutron Error updating security group %s
+nova/network/security_group/neutron_driver.py: Neutron security group %s not found
+nova/network/security_group/neutron_driver.py: Neutron Error: %s
+nova/network/security_group/neutron_driver.py: Neutron Error: %s
+nova/network/security_group/neutron_driver.py: Neutron Error getting security groups
+nova/network/security_group/neutron_driver.py: Neutron Error: %s
+nova/network/security_group/neutron_driver.py: Neutron Error getting security group %s
+nova/network/security_group/neutron_driver.py: Neutron Error adding rules to security
+nova/network/security_group/neutron_driver.py: Neutron Error: %s
+nova/network/security_group/neutron_driver.py: Neutron Error:
+nova/network/security_group/neutron_driver.py: Neutron Error unable to delete %s
+nova/network/security_group/neutron_driver.py: Neutron security group rule %s not found
+nova/network/security_group/neutron_driver.py: Neutron Error: %s
+nova/network/security_group/neutron_driver.py: Neutron Error:
+nova/network/security_group/neutron_driver.py: Neutron Error:
+nova/network/security_group/neutron_driver.py: Cannot add security group %(name)s to
+nova/network/security_group/neutron_driver.py: Adding security group %(security_group_id)s to
+nova/network/security_group/neutron_driver.py: Neutron Error:
+nova/network/security_group/neutron_driver.py: Neutron Error:
+nova/network/security_group/neutron_driver.py: Neutron Error:
+nova/network/security_group/neutron_driver.py: Adding security group %(security_group_id)s to
+nova/network/security_group/neutron_driver.py: Neutron Error:
+nova/network/neutronv2/api.py: %(item)s already exists in list: %(list_name)s
+nova/network/neutronv2/api.py: Successfully created port: %s
+nova/network/neutronv2/api.py: Neutron error: %(ip)s is not a valid IP address
+nova/network/neutronv2/api.py: Neutron error: Fixed IP %s is
+nova/network/neutronv2/api.py: Neutron error: Port quota exceeded in tenant: %s
+nova/network/neutronv2/api.py: Neutron error: No more fixed IPs in network: %s
+nova/network/neutronv2/api.py: Neutron error: MAC address %(mac)s is already
+nova/network/neutronv2/api.py: Neutron error creating port on network %s
+nova/network/neutronv2/api.py: Unable to clear device ID
+nova/network/neutronv2/api.py: Port %(port)s mac address %(mac)s is
+nova/network/neutronv2/api.py: allocate_for_instance()
+nova/network/neutronv2/api.py: No network configured
+nova/network/neutronv2/api.py: Neutron error: Instance hostname
+nova/network/neutronv2/api.py: Port %s does not exist
+nova/network/neutronv2/api.py: Failed to delete port %s for instance.
+nova/network/neutronv2/api.py: deallocate_for_instance()
+nova/network/neutronv2/api.py: _get_instance_nw_info()
+nova/network/neutronv2/api.py: portid
+nova/network/neutronv2/api.py: portid
+nova/network/neutronv2/api.py: validate_networks() for %s
+nova/network/neutronv2/api.py: re-assign floating IP %(address)s from
+nova/network/neutronv2/api.py: Unable to access floating IP %s
+nova/network/neutronv2/api.py: The port(%s) is not found
+nova/network/neutronv2/api.py: Unable to access floating IP for %s
+nova/network/neutronv2/api.py: Network %(id)s not matched with the tenants
+nova/network/neutronv2/api.py: Instance cache missing network info.
+nova/network/neutronv2/api.py: Port %s from network info_cache is no
+nova/network/neutronv2/api.py: Unable to update host of port %s
+nova/network/neutronv2/api.py: Unable to update instance VNIC index
+nova/scheduler/scheduler_options.py: Could not stat scheduler options file
+nova/scheduler/scheduler_options.py: Could not decode scheduler options
+nova/scheduler/utils.py: Failed to %(service)s_%(method)s: %(ex)s
+nova/scheduler/utils.py: Setting instance to %s state.
+nova/scheduler/utils.py: Error from last host: %(last_host)s (node %(last_node)s):
+nova/scheduler/utils.py: Ignoring the invalid elements of the option
+nova/scheduler/utils.py: Retrying %(name)s after a MessagingTimeout,
+nova/scheduler/driver.py: DEPRECATED: scheduler_host_manager uses
+nova/scheduler/filter_scheduler.py: There are %(hosts)d hosts available but
+nova/scheduler/filter_scheduler.py: Filtered %(hosts)s
+nova/scheduler/filter_scheduler.py: Weighed %(hosts)s
+nova/scheduler/filter_scheduler.py: Selected host: %(host)s
+nova/scheduler/host_manager.py: Selected host: %(host)s failed to consume from
+nova/scheduler/host_manager.py: Update host state from compute node: %s
+nova/scheduler/host_manager.py: Update host state with aggregates: %s
+nova/scheduler/host_manager.py: Update host state with service dict: %s
+nova/scheduler/host_manager.py: Update host state with instances: %s
+nova/scheduler/host_manager.py: Host %(hostname)s has more disk space than
+nova/scheduler/host_manager.py: START:_async_init_instance_info
+nova/scheduler/host_manager.py: Total number of compute nodes: %s
+nova/scheduler/host_manager.py: Adding %s instances for hosts %s-%s
+nova/scheduler/host_manager.py: END:_async_init_instance_info
+nova/scheduler/host_manager.py: Host filter ignoring hosts: %s
+nova/scheduler/host_manager.py: No compute service record found for host %(host)s
+nova/scheduler/host_manager.py: Removing dead compute node %(host)s:%(node)s
+nova/scheduler/host_manager.py: Received an update from an unknown host '%s'.
+nova/scheduler/host_manager.py: Received a delete update from an unknown host '%s'.
+nova/scheduler/host_manager.py: The instance sync for host '%s' did not match.
+nova/scheduler/host_manager.py: Successfully synced instances from host '%s'.
+nova/scheduler/host_manager.py: Received a sync request from an unknown host '%s'.
+nova/scheduler/manager.py: DEPRECATED: scheduler_driver uses
+nova/scheduler/filters/trusted_filter.py: The TrustedFilter is considered experimental
+nova/scheduler/filters/aggregate_multitenancy_isolation.py: %s fails tenant id on aggregate
+nova/scheduler/filters/aggregate_multitenancy_isolation.py: Host tenant id %s matched
+nova/scheduler/filters/aggregate_multitenancy_isolation.py: No tenant id's defined on host. Host passes.
+nova/scheduler/filters/availability_zone_filter.py: Availability Zone '%(az)s' requested.
+nova/scheduler/filters/exact_ram_filter.py: %(host_state)s does not have exactly
+nova/scheduler/filters/compute_filter.py: %(host_state)s is disabled, reason: %(reason)s
+nova/scheduler/filters/compute_filter.py: %(host_state)s has not been heard from in a
+nova/scheduler/filters/exact_disk_filter.py: %(host_state)s does not have exactly
+nova/scheduler/filters/metrics_filter.py: %(host_state)s does not have the following
+nova/scheduler/filters/io_ops_filter.py: %(host_state)s fails I/O ops check: Max IOs per host
+nova/scheduler/filters/io_ops_filter.py: Could not decode max_io_ops_per_host: '%s'
+nova/scheduler/filters/aggregate_instance_extra_specs.py: %(host_state)s fails instance_type extra_specs
+nova/scheduler/filters/aggregate_instance_extra_specs.py: %(host_state)s fails instance_type extra_specs
+nova/scheduler/filters/num_instances_filter.py: %(host_state)s fails num_instances check: Max
+nova/scheduler/filters/num_instances_filter.py: Could not decode max_instances_per_host: '%s'
+nova/scheduler/filters/image_props_filter.py: Instance contains properties %(image_props)s,
+nova/scheduler/filters/image_props_filter.py: Instance contains properties %(image_props)s
+nova/scheduler/filters/image_props_filter.py: %(host_state)s does not support requested
+nova/scheduler/filters/retry_filter.py: Re-scheduling is disabled
+nova/scheduler/filters/retry_filter.py: Host %(host)s fails.  Previously tried hosts:
+nova/scheduler/filters/exact_core_filter.py: VCPUs not set; assuming CPU collection broken
+nova/scheduler/filters/exact_core_filter.py: %(host_state)s does not have exactly
+nova/scheduler/filters/numa_topology_filter.py: %(host_state)s fails CPU policy requirements.
+nova/scheduler/filters/numa_topology_filter.py: %(host)s, %(node)s fails NUMA topology
+nova/scheduler/filters/numa_topology_filter.py: %(host)s, %(node)s fails NUMA topology requirements.
+nova/scheduler/filters/utils.py: %(num_values)d values found,
+nova/scheduler/filters/utils.py: %(num_values)d values found,
+nova/scheduler/filters/affinity_filter.py: Group anti affinity: check if %(host)s not
+nova/scheduler/filters/affinity_filter.py: Group affinity: check if %(host)s in
+nova/scheduler/filters/aggregate_image_properties_isolation.py: Host '%(host)s' has a metadata key '%(key)s'
+nova/scheduler/filters/aggregate_image_properties_isolation.py: %(host_state)s fails image aggregate properties
+nova/scheduler/filters/core_filter.py: VCPUs not set; assuming CPU collection broken
+nova/scheduler/filters/core_filter.py: %(host_state)s does not have %(instance_vcpus)d
+nova/scheduler/filters/core_filter.py: %(host_state)s does not have %(instance_vcpus)d
+nova/scheduler/filters/core_filter.py: Could not decode cpu_allocation_ratio: '%s'
+nova/scheduler/filters/disk_filter.py: %(host_state)s does not have %(requested_disk)s MB
+nova/scheduler/filters/disk_filter.py: Could not decode disk_allocation_ratio: '%s'
+nova/scheduler/filters/compute_capabilities_filter.py: %(host_state)s fails. The capabilities
+nova/scheduler/filters/compute_capabilities_filter.py: %(host_state)s fails. The capabilities couldn't
+nova/scheduler/filters/compute_capabilities_filter.py: %(host_state)s fails. There are no capabilities
+nova/scheduler/filters/compute_capabilities_filter.py: %(host_state)s fails extra_spec requirements.
+nova/scheduler/filters/compute_capabilities_filter.py: %(host_state)s fails instance_type extra_specs
+nova/scheduler/filters/ram_filter.py: %(host_state)s does not have %(requested_ram)s MB
+nova/scheduler/filters/ram_filter.py: %(host_state)s does not have %(requested_ram)s MB
+nova/scheduler/filters/ram_filter.py: Could not decode ram_allocation_ratio: '%s'
+nova/scheduler/filters/pci_passthrough_filter.py: %(host_state)s doesn't have the required PCI devices
+nova/scheduler/weights/affinity.py: For the soft_affinity_weight_multiplier only a
+nova/scheduler/weights/affinity.py: For the soft_anti_affinity_weight_multiplier only a
+nova/vnc/xvp_proxy.py: Error in handshake format: %s
+nova/vnc/xvp_proxy.py: Error in handshake: %s
+nova/vnc/xvp_proxy.py: Invalid request: %s
+nova/vnc/xvp_proxy.py: Request: %s
+nova/vnc/xvp_proxy.py: Request made with missing token: %s
+nova/vnc/xvp_proxy.py: Request made with invalid token: %s
+nova/vnc/xvp_proxy.py: Unexpected error: %s
+nova/vnc/xvp_proxy.py: Starting nova-xvpvncproxy node (version %s)
+nova/objects/instance.py: No save handler for %s
+nova/objects/instance.py: Trying to apply a migration context that does not
+nova/objects/instance.py: Trying to revert a migration context that does not
+nova/objects/instance.py: Lazy-loading '%(attr)s' on %(name)s uuid %(uuid)s
+nova/objects/aggregate.py: Generating UUID %(uuid)s for aggregate %(agg)i
+nova/objects/aggregate.py: Generated uuid %(uuid)s for aggregate
+nova/objects/service.py: Lazy-loading '%(attr)s' on %(name)s id %(id)s
+nova/objects/service.py: get_minimum_version called with likely-incorrect
+nova/objects/build_request.py: No load handler for %s
+nova/objects/pci_device.py: Physical function addr: %(pf_addr)s parent of
+nova/objects/pci_device.py: Physical function addr: %(pf_addr)s parent of
+nova/objects/pci_device.py: Physical function addr: %(pf_addr)s parent of
+nova/objects/instance_fault.py: Failed to notify cells of instance fault
+nova/objects/block_device.py: Legacy get_by_volume_id() call found multiple
+nova/objects/block_device.py: Lazy-loading '%(attr)s' on %(name)s uuid %(uuid)s
+nova/objects/migrate_data.py: Converting to legacy: %s
+nova/objects/migrate_data.py: Legacy result: %s
+nova/objects/migrate_data.py: Converting legacy dict to obj: %s
+nova/objects/migrate_data.py: Converted object: %s
+nova/objects/compute_node.py: Generated UUID %(uuid)s for compute node %(id)i
+nova/objects/instance_info_cache.py: Failed to notify cells of instance info
+nova/image/glance.py: Unable to determine the glance API version
+nova/image/glance.py: No protocol specified in for api_server '%s',
+nova/image/glance.py: Treating negative config value (%(retries)s) for
+nova/image/glance.py: Error contacting glance server
+nova/image/glance.py: When loading the module %(module_str)s the
+nova/image/glance.py: Failed to instantiate the download handler
+nova/image/glance.py: Successfully transferred
+nova/image/glance.py: Download image error
+nova/image/glance.py: Image signature verification failed
+nova/image/glance.py: Image signature verification succeeded
+nova/image/glance.py: Image signature verification failed
+nova/image/glance.py: Image signature verification succeeded
+nova/image/glance.py: Image signature verification failed
+nova/image/glance.py: Error writing to %(path)s: %(exception)s
+nova/image/s3.py: Failed to download %(image_location)s
+nova/image/s3.py: Failed to decrypt %(image_location)s
+nova/image/s3.py: Failed to untar %(image_location)s
+nova/image/s3.py: Failed to upload %(image_location)s
+nova/image/s3.py: Image %s was deleted underneath us
+nova/image/download/__init__.py: %(scheme)s is registered as a module twice.
+nova/image/download/file.py: Copied %(source_file)s using %(module_str)s
+nova/virt/osinfo.py: Cannot load Libosinfo: (%s)
+nova/virt/osinfo.py: Cannot find OS information - Reason: (%s)
+nova/virt/fake.py: Key '%(key)s' not in instances '%(inst)s'
+nova/virt/firewall.py: Attempted to unfilter instance which is not
+nova/virt/firewall.py: Filters added to instance: %s
+nova/virt/firewall.py: ignoring deleted cache
+nova/virt/firewall.py: ips: %r
+nova/virt/firewall.py: Security Group Rules %s translated to ipv4: %r, ipv6: %r
+nova/virt/firewall.py: instance chain %s disappeared during refresh,
+nova/virt/storage_users.py: Cannot decode JSON from %(id_path)s
+nova/virt/storage_users.py: Cannot decode JSON from %(id_path)s
+nova/virt/block_device.py: preserve multipath_id %s
+nova/virt/block_device.py: Driver failed to attach volume
+nova/virt/block_device.py: Driver failed to detach volume
+nova/virt/block_device.py: Failed to delete volume: %(volume_id)s
+nova/virt/block_device.py: Booting with volume %(volume_id)s at
+nova/virt/block_device.py: Booting with volume snapshot %(snapshot_id)s at
+nova/virt/block_device.py: Booting with volume-backed-image %(image_id)s at
+nova/virt/block_device.py: Booting with blank volume at %(mountpoint)s
+nova/virt/images.py: %(base)s virtual size %(disk_size)s
+nova/virt/images.py: %s was %s, converting to raw
+nova/virt/hardware.py: Flavor limits %(sockets)d:%(cores)d:%(threads)d
+nova/virt/hardware.py: Image limits %(sockets)d:%(cores)d:%(threads)d
+nova/virt/hardware.py: Flavor pref %(sockets)d:%(cores)d:%(threads)d
+nova/virt/hardware.py: Image pref %(sockets)d:%(cores)d:%(threads)d
+nova/virt/hardware.py: Chosen %(sockets)d:%(cores)d:%(threads)d limits
+nova/virt/hardware.py: Build topologies for %(vcpus)d vcpu(s)
+nova/virt/hardware.py: Got %d possible topologies
+nova/virt/hardware.py: Getting desirable topologies for flavor %(flavor)s
+nova/virt/hardware.py: Topology preferred %(preferred)s, maximum %(maximum)s
+nova/virt/hardware.py: Possible topologies %s
+nova/virt/hardware.py: Filtering topologies best for %d threads
+nova/virt/hardware.py: Remaining possible topologies %s
+nova/virt/hardware.py: Sorted desired topologies %s
+nova/virt/hardware.py: Requested 'require' thread policy for %d cores
+nova/virt/hardware.py: Request 'prefer' thread policy for %d cores
+nova/virt/hardware.py: Requested 'isolate' thread policy for %d cores
+nova/virt/hardware.py: User did not specify a thread policy. Using default
+nova/virt/hardware.py: Require both a host and instance NUMA topology to
+nova/virt/hardware.py: There are not enough free cores on the system to schedule
+nova/virt/driver.py: Discarding event %s
+nova/virt/driver.py: Emitting event %s
+nova/virt/driver.py: Exception dispatching event %(event)s: %(ex)s
+nova/virt/driver.py: Compute driver option required, but not specified
+nova/virt/driver.py: Loading compute driver '%s'
+nova/virt/driver.py: Unable to load the virtualization driver
+nova/virt/hyperv/hostops.py: Windows version: %s
+nova/virt/hyperv/hostops.py: get_available_resource called
+nova/virt/hyperv/hostops.py: Host IP address is: %s
+nova/virt/hyperv/volumeops.py: Could not determine iscsi initiator name
+nova/virt/hyperv/volumeops.py: Cannot log in target %(target_iqn)s. Unsupported
+nova/virt/hyperv/volumeops.py: Already logged in on storage target. No need to
+nova/virt/hyperv/volumeops.py: Logging in on storage target. Portal:
+nova/virt/hyperv/volumeops.py: Logging off storage target %s
+nova/virt/hyperv/volumeops.py: Skipping disconnecting target %s as there
+nova/virt/hyperv/volumeops.py: Attach_volume: %(connection_info)s to %(instance_name)s
+nova/virt/hyperv/volumeops.py: Unable to attach volume to instance %s
+nova/virt/hyperv/volumeops.py: Detach_volume: %(connection_info)s
+nova/virt/hyperv/volumeops.py: Detaching physical disk from instance: %s
+nova/virt/hyperv/volumeops.py: Attempt %d to get device_number
+nova/virt/hyperv/volumeops.py: Device number: %(device_number)s,
+nova/virt/hyperv/volumeops.py: Attach volume failed to %(instance_name)s:
+nova/virt/hyperv/volumeops.py: Detaching volume: %(connection_info)s
+nova/virt/hyperv/migrationops.py: Migration target is the source host
+nova/virt/hyperv/migrationops.py: Migration target host: %s
+nova/virt/hyperv/migrationops.py: Copying disk "%(disk_file)s" to
+nova/virt/hyperv/migrationops.py: Cannot cleanup migration files
+nova/virt/hyperv/migrationops.py: migrate_disk_and_power_off called
+nova/virt/hyperv/migrationops.py: confirm_migration called
+nova/virt/hyperv/migrationops.py: finish_revert_migration called
+nova/virt/hyperv/migrationops.py: Copying base disk %(base_vhd_path)s to
+nova/virt/hyperv/migrationops.py: Reconnecting copied base VHD
+nova/virt/hyperv/migrationops.py: Merging differential disk %s into its parent.
+nova/virt/hyperv/migrationops.py: Getting parent disk info for disk: %s
+nova/virt/hyperv/migrationops.py: Resizing disk \"%(vhd_path)s\" to new max
+nova/virt/hyperv/migrationops.py: Reconnecting copied base VHD
+nova/virt/hyperv/migrationops.py: finish_migration called
+nova/virt/hyperv/eventhandler.py: Instance uuid could not be retrieved for
+nova/virt/hyperv/imagecache.py: Copying VHD %(vhd_path)s to
+nova/virt/hyperv/imagecache.py: Resizing VHD %(resized_vhd_path)s to new
+nova/virt/hyperv/livemigrationops.py: live_migration called
+nova/virt/hyperv/livemigrationops.py: Calling live migration recover_method
+nova/virt/hyperv/livemigrationops.py: Calling live migration post_method for instance: %s
+nova/virt/hyperv/livemigrationops.py: pre_live_migration called
+nova/virt/hyperv/livemigrationops.py: post_live_migration_at_destination called
+nova/virt/hyperv/livemigrationops.py: check_can_live_migrate_destination called
+nova/virt/hyperv/livemigrationops.py: check_can_live_migrate_destination_cleanup called
+nova/virt/hyperv/livemigrationops.py: check_can_live_migrate_source called
+nova/virt/hyperv/vmops.py: Notes not found or not resembling a GUID for
+nova/virt/hyperv/vmops.py: get_info called for instance
+nova/virt/hyperv/vmops.py: Creating differencing VHD. Parent:
+nova/virt/hyperv/vmops.py: Copying VHD image %(base_vhd_path)s to target:
+nova/virt/hyperv/vmops.py: Resizing VHD %(vhd_path)s to new
+nova/virt/hyperv/vmops.py: Spawning new instance
+nova/virt/hyperv/vmops.py: Creating nic for instance
+nova/virt/hyperv/vmops.py: Using config drive for instance
+nova/virt/hyperv/vmops.py: Creating config drive at %(path)s
+nova/virt/hyperv/vmops.py: Creating config drive failed with
+nova/virt/hyperv/vmops.py: Got request to destroy instance
+nova/virt/hyperv/vmops.py: Instance not found
+nova/virt/hyperv/vmops.py: Failed to destroy instance: %s
+nova/virt/hyperv/vmops.py: Rebooting instance
+nova/virt/hyperv/vmops.py: Performing Soft shutdown on instance
+nova/virt/hyperv/vmops.py: Soft shutdown instance, timeout remaining: %d
+nova/virt/hyperv/vmops.py: Soft shutdown succeeded.
+nova/virt/hyperv/vmops.py: Soft shutdown failed: %s
+nova/virt/hyperv/vmops.py: Timed out while waiting for soft shutdown.
+nova/virt/hyperv/vmops.py: Pause instance
+nova/virt/hyperv/vmops.py: Unpause instance
+nova/virt/hyperv/vmops.py: Suspend instance
+nova/virt/hyperv/vmops.py: Resume instance
+nova/virt/hyperv/vmops.py: Power off instance
+nova/virt/hyperv/vmops.py: Instance not found. Skipping power off
+nova/virt/hyperv/vmops.py: Power on instance
+nova/virt/hyperv/vmops.py: Successfully changed state of VM %(instance_name)s
+nova/virt/hyperv/vmops.py: Failed to change vm state of %(instance_name)s
+nova/virt/hyperv/vmops.py: Instance %s log writer is already running.
+nova/virt/hyperv/vmops.py: vNIC hot plugging is supported only in newer
+nova/virt/hyperv/vmops.py: Cannot hot plug vNIC to a first generation VM.
+nova/virt/hyperv/vmops.py: Attaching vif: %s
+nova/virt/hyperv/vmops.py: Detaching vif: %s
+nova/virt/hyperv/vmops.py: Instance not found during detach interface. It
+nova/virt/hyperv/snapshotops.py: Creating snapshot for instance %s
+nova/virt/hyperv/snapshotops.py: Getting info for VHD %s
+nova/virt/hyperv/snapshotops.py: Copying VHD %(src_vhd_path)s to %(dest_vhd_path)s
+nova/virt/hyperv/snapshotops.py: Copying base disk %(src_vhd_path)s to
+nova/virt/hyperv/snapshotops.py: Reconnecting copied base VHD
+nova/virt/hyperv/snapshotops.py: Merging diff disk %s into its parent.
+nova/virt/hyperv/snapshotops.py: Updating Glance image %(image_id)s with content from
+nova/virt/hyperv/snapshotops.py: Snapshot image %(image_id)s updated for VM
+nova/virt/hyperv/snapshotops.py: Removing snapshot %s
+nova/virt/hyperv/snapshotops.py: Failed to remove snapshot for VM %s
+nova/virt/hyperv/snapshotops.py: Removing directory: %s
+nova/virt/hyperv/driver.py: You are running nova-compute on an unsupported
+nova/virt/hyperv/driver.py: ensure_filtering_rules_for_instance called
+nova/virt/hyperv/driver.py: unfilter_instance called
+nova/virt/hyperv/rdpconsoleops.py: get_rdp_console called
+nova/virt/hyperv/rdpconsoleops.py: RDP console: %(host)s:%(port)s, %(vm_id)s
+nova/virt/libvirt/config.py: Generated XML %s
+nova/virt/libvirt/compat.py: Race detected in libvirt.virDomain.info,
+nova/virt/libvirt/firewall.py: Libvirt module could not be loaded.
+nova/virt/libvirt/firewall.py: Called setup_basic_filtering in nwfilter
+nova/virt/libvirt/firewall.py: Ensuring static filters
+nova/virt/libvirt/firewall.py: Cannot find UUID for filter '%(name)s': '%(e)s'
+nova/virt/libvirt/firewall.py: UUID for filter '%s' is '%s'
+nova/virt/libvirt/firewall.py: Failed to undefine network filter
+nova/virt/libvirt/firewall.py: The nwfilter(%s) is not found.
+nova/virt/libvirt/firewall.py: The nwfilter(%(instance_filter_name)s) for
+nova/virt/libvirt/firewall.py: Attempted to unfilter instance which is not
+nova/virt/libvirt/host.py: Domain has shutdown/gone away: %s
+nova/virt/libvirt/host.py: Failed to get job info: %s
+nova/virt/libvirt/host.py: Missing remote virDomainGetJobStats: %s
+nova/virt/libvirt/host.py: Domain has shutdown/gone away: %s
+nova/virt/libvirt/host.py: Failed to get job stats: %s
+nova/virt/libvirt/host.py: Missing local virDomainGetJobStats: %s
+nova/virt/libvirt/host.py: Connection to libvirt broke
+nova/virt/libvirt/host.py: Removed pending event for %s due to
+nova/virt/libvirt/host.py: Starting native event thread
+nova/virt/libvirt/host.py: Starting green dispatch thread
+nova/virt/libvirt/host.py: Connecting to libvirt: %s
+nova/virt/libvirt/host.py: Registering for lifecycle events %s
+nova/virt/libvirt/host.py: URI %(uri)s does not support events: %(error)s
+nova/virt/libvirt/host.py: Registering for connection events: %s
+nova/virt/libvirt/host.py: The version of python-libvirt does not support
+nova/virt/libvirt/host.py: URI %(uri)s does not support connection
+nova/virt/libvirt/host.py: Connection to libvirt failed: %s
+nova/virt/libvirt/host.py: Unable to use bulk domain list APIs,
+nova/virt/libvirt/host.py: Libvirt host capabilities %s
+nova/virt/libvirt/host.py: URI %(uri)s does not support full set
+nova/virt/libvirt/host.py: Hostname has changed from %(old)s
+nova/virt/libvirt/host.py: Secret XML: %s
+nova/virt/libvirt/host.py: Error defining a secret with XML: %s
+nova/virt/libvirt/host.py: couldn't obtain the memory from domain:
+nova/virt/libvirt/imagecache.py: Error reading image info file %(filename)s:
+nova/virt/libvirt/imagecache.py: Reading image info file: %s
+nova/virt/libvirt/imagecache.py: Writing stored info to %s
+nova/virt/libvirt/imagecache.py: Adding %s into backend swap images
+nova/virt/libvirt/imagecache.py: %s is a valid instance name
+nova/virt/libvirt/imagecache.py: %s has a disk file
+nova/virt/libvirt/imagecache.py: Failed to get disk backing file: %s
+nova/virt/libvirt/imagecache.py: Instance %(instance)s is backed by
+nova/virt/libvirt/imagecache.py: Instance %(instance)s is using a
+nova/virt/libvirt/imagecache.py: image %(id)s at (%(base_file)s): image
+nova/virt/libvirt/imagecache.py: image %(id)s at (%(base_file)s): image
+nova/virt/libvirt/imagecache.py: %(id)s (%(base_file)s): generating
+nova/virt/libvirt/imagecache.py: Cannot remove %s, it does not exist
+nova/virt/libvirt/imagecache.py: Removing base or swap file: %s
+nova/virt/libvirt/imagecache.py: Failed to remove %(base_file)s,
+nova/virt/libvirt/imagecache.py: Base or swap file too young to remove: %s
+nova/virt/libvirt/imagecache.py: Failed to remove %(lock_file)s,
+nova/virt/libvirt/imagecache.py: image %(id)s at (%(base_file)s): checking
+nova/virt/libvirt/imagecache.py: image %(id)s at (%(base_file)s):
+nova/virt/libvirt/imagecache.py: image %(id)s at (%(base_file)s): warning
+nova/virt/libvirt/imagecache.py: image %(id)s at (%(base_file)s): image is not in
+nova/virt/libvirt/imagecache.py: image %(id)s at (%(base_file)s): image is in
+nova/virt/libvirt/imagecache.py: Verify swap images
+nova/virt/libvirt/imagecache.py: %s swap image was used by instance
+nova/virt/libvirt/imagecache.py: Verify base images
+nova/virt/libvirt/imagecache.py: Image id %(id)s yields fingerprint %(fingerprint)s
+nova/virt/libvirt/imagecache.py: Unknown base file: %s
+nova/virt/libvirt/imagecache.py: Active base files: %s
+nova/virt/libvirt/imagecache.py: Corrupt base files: %s
+nova/virt/libvirt/imagecache.py: Removable base files: %s
+nova/virt/libvirt/imagecache.py: Verification complete
+nova/virt/libvirt/imagecache.py: Skipping verification, no base directory at %s
+nova/virt/libvirt/instancejobtracker.py: Failed to kill process %(pid)s
+nova/virt/libvirt/instancejobtracker.py: Unexpected error while checking process
+nova/virt/libvirt/instancejobtracker.py: Failed to kill a long running process
+nova/virt/libvirt/utils.py: xend is not found
+nova/virt/libvirt/utils.py: xend is not started
+nova/virt/libvirt/utils.py: tap-ctl check: %s
+nova/virt/libvirt/utils.py: tap-ctl tool is not installed
+nova/virt/libvirt/utils.py: findmnt tool is not installed
+nova/virt/libvirt/guest.py: Error defining a domain with XML: %s
+nova/virt/libvirt/guest.py: Error launching a defined domain
+nova/virt/libvirt/guest.py: Error enabling hairpin mode with XML: %s
+nova/virt/libvirt/guest.py: Error from libvirt during undefineFlags. %d
+nova/virt/libvirt/vif.py: Queues are not a vhostuser supported feature.
+nova/virt/libvirt/vif.py: vif_type=%(vif_type)s instance=%(instance)s
+nova/virt/libvirt/vif.py: Ensuring vlan %(vlan)s and bridge %(bridge)s
+nova/virt/libvirt/vif.py: Ensuring bridge %s
+nova/virt/libvirt/vif.py: Failed while plugging ib hostdev vif
+nova/virt/libvirt/vif.py: Failed while plugging vif
+nova/virt/libvirt/vif.py: Failed while plugging vif
+nova/virt/libvirt/vif.py: Failed while plugging vif
+nova/virt/libvirt/vif.py: Failed while plugging vif
+nova/virt/libvirt/vif.py: vif_type=%(vif_type)s instance=%(instance)s
+nova/virt/libvirt/vif.py: Failed while unplugging vif
+nova/virt/libvirt/vif.py: Failed while unplugging vif
+nova/virt/libvirt/vif.py: Failed while unplugging vif
+nova/virt/libvirt/vif.py: Failed while unplugging ib hostdev vif
+nova/virt/libvirt/vif.py: Failed while unplugging vif
+nova/virt/libvirt/vif.py: Failed while unplugging vif
+nova/virt/libvirt/vif.py: Failed while unplugging vif
+nova/virt/libvirt/vif.py: Failed while unplugging vif
+nova/virt/libvirt/vif.py: Failed while unplugging vif
+nova/virt/libvirt/vif.py: vif_type=%(vif_type)s instance=%(instance)s
+nova/virt/libvirt/driver.py: Invalid cachemode %(cache_mode)s specified
+nova/virt/libvirt/driver.py: The libvirt driver is not tested on
+nova/virt/libvirt/driver.py: Connection event '%(enabled)d' reason '%(reason)s'
+nova/virt/libvirt/driver.py: Running libvirt-lxc without user namespaces is
+nova/virt/libvirt/driver.py: Running Nova with a libvirt version less than
+nova/virt/libvirt/driver.py: Removing the VIR_MIGRATE_PEER2PEER flag from
+nova/virt/libvirt/driver.py: Adding the VIR_MIGRATE_PEER2PEER flag to
+nova/virt/libvirt/driver.py: Adding the VIR_MIGRATE_UNDEFINE_SOURCE flag to
+nova/virt/libvirt/driver.py: Removing the VIR_MIGRATE_PERSIST_DEST flag from
+nova/virt/libvirt/driver.py: Removing the VIR_MIGRATE_NON_SHARED_INC flag
+nova/virt/libvirt/driver.py: Adding the VIR_MIGRATE_NON_SHARED_INC flag to
+nova/virt/libvirt/driver.py: The %(config_name)s config option does not
+nova/virt/libvirt/driver.py: The %(config_name)s config option contains
+nova/virt/libvirt/driver.py: Ignoring unknown libvirt live migration
+nova/virt/libvirt/driver.py: Attempting to teardown container at path %(dir)s with
+nova/virt/libvirt/driver.py: Cannot destroy instance, operation time
+nova/virt/libvirt/driver.py: Error from libvirt during destroy.
+nova/virt/libvirt/driver.py: Error from libvirt during destroy.
+nova/virt/libvirt/driver.py: During wait destroy, instance disappeared.
+nova/virt/libvirt/driver.py: Instance destroyed successfully.
+nova/virt/libvirt/driver.py: Instance may be started again.
+nova/virt/libvirt/driver.py: Going to destroy instance again.
+nova/virt/libvirt/driver.py: Error from libvirt during undefine.
+nova/virt/libvirt/driver.py: Instance may be still running, destroy
+nova/virt/libvirt/driver.py: Error from libvirt during unfilter.
+nova/virt/libvirt/driver.py: Ignoring Volume Error on vol %(vol_id)s
+nova/virt/libvirt/driver.py: Attempting to attach volume %(id)s with discard
+nova/virt/libvirt/driver.py: Failed to attach volume at mountpoint: %s
+nova/virt/libvirt/driver.py: During detach_volume, instance disappeared.
+nova/virt/libvirt/driver.py: During detach_volume, instance disappeared.
+nova/virt/libvirt/driver.py: attaching network adapter failed.
+nova/virt/libvirt/driver.py: During detach_interface,
+nova/virt/libvirt/driver.py: detaching network adapter failed.
+nova/virt/libvirt/driver.py: Detaching interface %(mac)s failed  because
+nova/virt/libvirt/driver.py: Beginning live snapshot process
+nova/virt/libvirt/driver.py: Beginning cold snapshot process
+nova/virt/libvirt/driver.py: Performing standard snapshot because direct
+nova/virt/libvirt/driver.py: Snapshot extracted, beginning image upload
+nova/virt/libvirt/driver.py: Failed to snapshot image
+nova/virt/libvirt/driver.py: Snapshot image upload complete
+nova/virt/libvirt/driver.py: Skipping quiescing instance: %(reason)s.
+nova/virt/libvirt/driver.py: Failed to send updated snapshot status
+nova/virt/libvirt/driver.py: snap xml: %s
+nova/virt/libvirt/driver.py: Unable to create quiesced VM snapshot,
+nova/virt/libvirt/driver.py: Unable to create VM snapshot,
+nova/virt/libvirt/driver.py: volume_snapshot_create: create_info: %(c_info)s
+nova/virt/libvirt/driver.py: Error occurred during
+nova/virt/libvirt/driver.py: volume_snapshot_delete: delete_info: %s
+nova/virt/libvirt/driver.py: Domain XML: %s
+nova/virt/libvirt/driver.py: found device at %s
+nova/virt/libvirt/driver.py: XML: %s
+nova/virt/libvirt/driver.py: active disk object: %s
+nova/virt/libvirt/driver.py: found match: %s
+nova/virt/libvirt/driver.py: index of match (%s) is %s
+nova/virt/libvirt/driver.py: Relative blockrebase support was not detected.
+nova/virt/libvirt/driver.py: disk: %(disk)s, base: %(base)s,
+nova/virt/libvirt/driver.py: blockRebase started successfully
+nova/virt/libvirt/driver.py: waiting for blockRebase job completion
+nova/virt/libvirt/driver.py: Guest is not running so doing a block rebase
+nova/virt/libvirt/driver.py: will call blockCommit with commit_disk=%(commit_disk)s
+nova/virt/libvirt/driver.py: blockCommit started successfully
+nova/virt/libvirt/driver.py: waiting for blockCommit job completion
+nova/virt/libvirt/driver.py: Error occurred during
+nova/virt/libvirt/driver.py: Instance soft reboot failed: %s
+nova/virt/libvirt/driver.py: Instance soft rebooted successfully.
+nova/virt/libvirt/driver.py: Failed to soft reboot instance.
+nova/virt/libvirt/driver.py: Instance shutdown successfully.
+nova/virt/libvirt/driver.py: Instance may have been rebooted during soft
+nova/virt/libvirt/driver.py: Instance rebooted successfully.
+nova/virt/libvirt/driver.py: Instance already shutdown.
+nova/virt/libvirt/driver.py: Shutting down instance from state %s
+nova/virt/libvirt/driver.py: Instance shutdown successfully after %d
+nova/virt/libvirt/driver.py: Instance in state %s after %d seconds -
+nova/virt/libvirt/driver.py: Ignoring libvirt exception from shutdown
+nova/virt/libvirt/driver.py: Instance failed to shutdown in %d seconds.
+nova/virt/libvirt/driver.py: Error from libvirt while injecting an NMI to
+nova/virt/libvirt/driver.py: Instance is running
+nova/virt/libvirt/driver.py: Instance spawned successfully.
+nova/virt/libvirt/driver.py: data: %(data)r, fpath: %(fpath)r
+nova/virt/libvirt/driver.py: Instance is configured with a file console,
+nova/virt/libvirt/driver.py: Truncated console log returned,
+nova/virt/libvirt/driver.py: Truncated console log returned,
+nova/virt/libvirt/driver.py: my_ip address (%(my_ip)s) was not found on
+nova/virt/libvirt/driver.py: This python runtime does not support direct I/O
+nova/virt/libvirt/driver.py: Path '%(path)s' supports direct I/O
+nova/virt/libvirt/driver.py: Path '%(path)s' does not support direct I/O:
+nova/virt/libvirt/driver.py: Error on '%(path)s' while checking
+nova/virt/libvirt/driver.py: Error on '%(path)s' while checking direct I/O:
+nova/virt/libvirt/driver.py: Image %s not found on disk storage.
+nova/virt/libvirt/driver.py: Error injecting data into image
+nova/virt/libvirt/driver.py: Creating image
+nova/virt/libvirt/driver.py: Using config drive
+nova/virt/libvirt/driver.py: Creating config drive at %(path)s
+nova/virt/libvirt/driver.py: Creating config drive failed
+nova/virt/libvirt/driver.py: File injection into a boot from volume
+nova/virt/libvirt/driver.py: Instance disappeared while detaching
+nova/virt/libvirt/driver.py: Attaching PCI devices %(dev)s to %(dom)s failed.
+nova/virt/libvirt/driver.py: Attaching SR-IOV port %(port)s to %(dom)s
+nova/virt/libvirt/driver.py: Updating compute service status to %s
+nova/virt/libvirt/driver.py: Not overriding manual compute service
+nova/virt/libvirt/driver.py: Cannot update service status on host "%s"
+nova/virt/libvirt/driver.py: Cannot update service status on host "%s"
+nova/virt/libvirt/driver.py: CPU mode '%(mode)s' model '%(model)s' was chosen
+nova/virt/libvirt/driver.py: Config drive not found in RBD, falling back to the
+nova/virt/libvirt/driver.py: Too many id maps, only included first five.
+nova/virt/libvirt/driver.py: Invalid value for id mapping %s
+nova/virt/libvirt/driver.py: Configuring timezone for windows instance to
+nova/virt/libvirt/driver.py: Qemu guest agent is enabled through image
+nova/virt/libvirt/driver.py: uefi support is without some kind of
+nova/virt/libvirt/driver.py: Old property name "hw_watchdog_action" is now
+nova/virt/libvirt/driver.py: End _get_guest_xml xml=%(xml)s
+nova/virt/libvirt/driver.py: Attempting to unmount container filesystem: %s
+nova/virt/libvirt/driver.py: Neutron Reported failure on event
+nova/virt/libvirt/driver.py: Timeout waiting for vif plugging callback for
+nova/virt/libvirt/driver.py: Cannot get the number of cpu, because this
+nova/virt/libvirt/driver.py: Couldn't retrieve the online CPUs due to a Libvirt
+nova/virt/libvirt/driver.py: couldn't obtain the vcpu count from domain id:
+nova/virt/libvirt/driver.py: URI %(uri)s does not support
+nova/virt/libvirt/driver.py: You are running with libvirt version %s
+nova/virt/libvirt/driver.py: Trying to get stats for the volume %s
+nova/virt/libvirt/driver.py: Got volume usage stats for the volume=%(volume)s,
+nova/virt/libvirt/driver.py: Getting block stats failed, device might have
+nova/virt/libvirt/driver.py: Could not find domain in libvirt for instance %s.
+nova/virt/libvirt/driver.py: Creating tmpfile %s to verify with other
+nova/virt/libvirt/driver.py: Instance launched has CPU info: %s
+nova/virt/libvirt/driver.py: URI %(uri)s does not support cpu comparison.
+nova/virt/libvirt/driver.py: ret
+nova/virt/libvirt/driver.py: ret
+nova/virt/libvirt/driver.py: Creating tmpfile %s to notify to other
+nova/virt/libvirt/driver.py: Failed to cancel migration %s
+nova/virt/libvirt/driver.py: Find same serial number: pos=%(pos)s,
+nova/virt/libvirt/driver.py: Your libvirt version does not support the
+nova/virt/libvirt/driver.py: An error occurred trying to live
+nova/virt/libvirt/driver.py: Live Migration failure: %s
+nova/virt/libvirt/driver.py: Migration operation thread has finished
+nova/virt/libvirt/driver.py: Unable to stat %(disk)s: %(ex)s
+nova/virt/libvirt/driver.py: Operation thread is still running
+nova/virt/libvirt/driver.py: VM running on src, migration failed
+nova/virt/libvirt/driver.py: VM is shutoff, migration finished
+nova/virt/libvirt/driver.py: Error checking domain status %(ex)s
+nova/virt/libvirt/driver.py: VM is missing, migration finished
+nova/virt/libvirt/driver.py: Error %(ex)s, migration failed
+nova/virt/libvirt/driver.py: Fixed incorrect job type to be %d
+nova/virt/libvirt/driver.py: Migration not running yet
+nova/virt/libvirt/driver.py: Live migration stuck for %d sec
+nova/virt/libvirt/driver.py: Live migration not completed after %d sec
+nova/virt/libvirt/driver.py: Failed to abort migration %s
+nova/virt/libvirt/driver.py: Increasing downtime to %(downtime)d ms
+nova/virt/libvirt/driver.py: Unable to increase max downtime to %(time)d
+nova/virt/libvirt/driver.py: Migration operation has completed
+nova/virt/libvirt/driver.py: Migration operation has aborted
+nova/virt/libvirt/driver.py: Migration operation was cancelled
+nova/virt/libvirt/driver.py: Unexpected migration job type: %d
+nova/virt/libvirt/driver.py: Migration operation thread notification
+nova/virt/libvirt/driver.py: Starting monitoring of live migration
+nova/virt/libvirt/driver.py: Error monitoring migration: %(ex)s
+nova/virt/libvirt/driver.py: Live migration monitoring is all done
+nova/virt/libvirt/driver.py: Image %(image_id)s doesn't exist anymore on
+nova/virt/libvirt/driver.py: migrate_data in pre_live_migration: %s
+nova/virt/libvirt/driver.py: Creating instance directory: %s
+nova/virt/libvirt/driver.py: Creating disk.info with the contents: %s
+nova/virt/libvirt/driver.py: Checking to make sure images and backing files are
+nova/virt/libvirt/driver.py: Touch instance console log: %s
+nova/virt/libvirt/driver.py: Connecting volumes before live migration.
+nova/virt/libvirt/driver.py: Plugging VIFs before live migration.
+nova/virt/libvirt/driver.py: plug_vifs() failed %(cnt)d. Retry up to
+nova/virt/libvirt/driver.py: Image %(image_id)s doesn't exist anymore
+nova/virt/libvirt/driver.py: skipping disk for %s as it does not have a path
+nova/virt/libvirt/driver.py: skipping disk because it looks like a volume
+nova/virt/libvirt/driver.py: skipping disk %(path)s (%(target)s) as it is a
+nova/virt/libvirt/driver.py: skipping disk %(path)s (%(target)s) - unable to
+nova/virt/libvirt/driver.py: Error from libvirt while getting description of
+nova/virt/libvirt/driver.py: Error from libvirt while getting description of
+nova/virt/libvirt/driver.py: Periodic task is updating the host stat,
+nova/virt/libvirt/driver.py: Periodic task is updating the host stat,
+nova/virt/libvirt/driver.py: Periodic task is updating the host stats,
+nova/virt/libvirt/driver.py: Starting migrate_disk_and_power_off
+nova/virt/libvirt/driver.py: Instance running successfully.
+nova/virt/libvirt/driver.py: Skipping resize of non-local image
+nova/virt/libvirt/driver.py: Starting finish_migration
+nova/virt/libvirt/driver.py: finish_migration finished successfully.
+nova/virt/libvirt/driver.py: Starting finish_revert_migration
+nova/virt/libvirt/driver.py: Failed to rollback snapshot (%s)
+nova/virt/libvirt/driver.py: finish_revert_migration finished successfully.
+nova/virt/libvirt/driver.py: Checking instance files accessibility %s
+nova/virt/libvirt/driver.py: Deleting instance files %s
+nova/virt/libvirt/driver.py: Failed to cleanup directory %(target)s:
+nova/virt/libvirt/driver.py: Deletion of %s failed
+nova/virt/libvirt/driver.py: Deletion of %s complete
+nova/virt/libvirt/driver.py: Ignoring supplied device name: %(device_name)s.
+nova/virt/libvirt/driver.py: Ignoring supplied device name: %(suggested_dev)s
+nova/virt/libvirt/imagebackend.py: Unable to preallocate image at path:
+nova/virt/libvirt/imagebackend.py: base
+nova/virt/libvirt/imagebackend.py: Failed to get image info from path %(path)s;
+nova/virt/libvirt/imagebackend.py: Failed to retrieve ephemeral encryption
+nova/virt/libvirt/imagebackend.py: Image locations are: %(locs)s
+nova/virt/libvirt/imagebackend.py: No parent info for %s; asking the Image API where its
+nova/virt/libvirt/imagebackend.py: Unable to get image %(image_id)s; error: %(error)s
+nova/virt/libvirt/storage/dmcrypt.py: Could not start encryption for disk %(device)s:
+nova/virt/libvirt/storage/dmcrypt.py: Ignoring exit code 4, volume already destroyed
+nova/virt/libvirt/storage/dmcrypt.py: Could not disconnect encrypted volume
+nova/virt/libvirt/storage/lvm.py: Volume group %(vg)s will not be able
+nova/virt/libvirt/storage/lvm.py: ignoring missing logical volume %(path)s
+nova/virt/libvirt/storage/rbd_utils.py: rbd image %s does not exist
+nova/virt/libvirt/storage/rbd_utils.py: error opening rbd image %s
+nova/virt/libvirt/storage/rbd_utils.py: not cloneable: %s
+nova/virt/libvirt/storage/rbd_utils.py: Unable to open image %(loc)s: %(err)s
+nova/virt/libvirt/storage/rbd_utils.py: cloning %(pool)s/%(img)s@%(snap)s to
+nova/virt/libvirt/storage/rbd_utils.py: resizing rbd image %s to %d
+nova/virt/libvirt/storage/rbd_utils.py: flattening %(pool)s/%(vol)s
+nova/virt/libvirt/storage/rbd_utils.py: image %(volume)s in pool %(pool)s can not be
+nova/virt/libvirt/storage/rbd_utils.py: image %(volume)s in pool %(pool)s has
+nova/virt/libvirt/storage/rbd_utils.py: rbd remove %(volume)s in pool %(pool)s
+nova/virt/libvirt/storage/rbd_utils.py: creating snapshot(%(snap)s) on rbd image(%(img)s)
+nova/virt/libvirt/storage/rbd_utils.py: snapshot(%(name)s) on rbd
+nova/virt/libvirt/storage/rbd_utils.py: removing snapshot(%(name)s) on rbd image(%(img)s)
+nova/virt/libvirt/storage/rbd_utils.py: no snapshot(%(name)s) found on rbd
+nova/virt/libvirt/storage/rbd_utils.py: rolling back rbd image(%(img)s) to
+nova/virt/libvirt/volume/glusterfs.py: The GlusterFS share %s is still in use.
+nova/virt/libvirt/volume/glusterfs.py: Couldn't unmount the GlusterFS share %s
+nova/virt/libvirt/volume/glusterfs.py: %s is already mounted
+nova/virt/libvirt/volume/fibrechannel.py: Calling os-brick to attach FC Volume
+nova/virt/libvirt/volume/fibrechannel.py: Attached FC volume %s
+nova/virt/libvirt/volume/fibrechannel.py: calling os-brick to detach FC Volume
+nova/virt/libvirt/volume/fibrechannel.py: Disconnected FC Volume %s
+nova/virt/libvirt/volume/volume.py: Unknown content in connection_info/
+nova/virt/libvirt/volume/volume.py: Unknown content in
+nova/virt/libvirt/volume/volume.py: Unable to attach %(type)s volume
+nova/virt/libvirt/volume/scaleio.py: Attached ScaleIO volume %s.
+nova/virt/libvirt/volume/scaleio.py: Disconnected volume %s.
+nova/virt/libvirt/volume/nfs.py: The NFS share %s is still in use.
+nova/virt/libvirt/volume/nfs.py: The NFS share %s has already been unmounted.
+nova/virt/libvirt/volume/nfs.py: Couldn't unmount the NFS share %s
+nova/virt/libvirt/volume/nfs.py: %s is already mounted
+nova/virt/libvirt/volume/quobyte.py: Mounting volume %s at mount point %s ...
+nova/virt/libvirt/volume/quobyte.py: Mounted volume: %s
+nova/virt/libvirt/volume/quobyte.py: The Quobyte volume at %s is still in use.
+nova/virt/libvirt/volume/quobyte.py: Couldn't unmount the Quobyte Volume at %s
+nova/virt/libvirt/volume/quobyte.py: Fixing previous mount %s which was not
+nova/virt/libvirt/volume/quobyte.py: Trying to disconnected unmounted volume at %s
+nova/virt/libvirt/volume/aoe.py: Calling os-brick to attach AoE Volume
+nova/virt/libvirt/volume/aoe.py: Attached AoE volume %s
+nova/virt/libvirt/volume/aoe.py: calling os-brick to detach AoE Volume %s
+nova/virt/libvirt/volume/aoe.py: Disconnected AoE Volume %s
+nova/virt/libvirt/volume/iscsi.py: Calling os-brick to attach iSCSI Volume
+nova/virt/libvirt/volume/iscsi.py: Attached iSCSI volume %s
+nova/virt/libvirt/volume/iscsi.py: calling os-brick to detach iSCSI Volume
+nova/virt/libvirt/volume/iscsi.py: Ignoring VolumeDeviceNotFound: %s
+nova/virt/libvirt/volume/iscsi.py: Disconnected iSCSI Volume %s
+nova/virt/libvirt/volume/remotefs.py: %s is already mounted
+nova/virt/libvirt/volume/remotefs.py: The share %s is still in use.
+nova/virt/libvirt/volume/remotefs.py: Couldn't unmount the share %s
+nova/virt/libvirt/volume/remotefs.py: Creating file %s on remote host %s
+nova/virt/libvirt/volume/remotefs.py: Removing file %s on remote host %s
+nova/virt/libvirt/volume/remotefs.py: Creating directory %s on remote host %s
+nova/virt/libvirt/volume/remotefs.py: Removing directory %s on remote host %s
+nova/virt/libvirt/volume/remotefs.py: Copying file %s to %s
+nova/virt/vmwareapi/volumeops.py: Reconfiguring VM instance %(instance_name)s to attach
+nova/virt/vmwareapi/volumeops.py: Reconfigured VM instance %(instance_name)s to attach
+nova/virt/vmwareapi/volumeops.py: Reconfiguring VM instance %(instance_name)s to detach
+nova/virt/vmwareapi/volumeops.py: Reconfigured VM instance %(instance_name)s to detach
+nova/virt/vmwareapi/volumeops.py: Adding iSCSI host %s to send targets
+nova/virt/vmwareapi/volumeops.py: Rescanning HBA %s
+nova/virt/vmwareapi/volumeops.py: Rescanned HBA %s
+nova/virt/vmwareapi/volumeops.py: Discovering iSCSI target %(target_iqn)s from
+nova/virt/vmwareapi/volumeops.py: Storage target found. No need to discover
+nova/virt/vmwareapi/volumeops.py: Discovered iSCSI target %(target_iqn)s from
+nova/virt/vmwareapi/volumeops.py: Unable to discovered iSCSI target %(target_iqn)s
+nova/virt/vmwareapi/volumeops.py: _attach_volume_vmdk: %s
+nova/virt/vmwareapi/volumeops.py: Attached VMDK: %s
+nova/virt/vmwareapi/volumeops.py: _attach_volume_iscsi: %s
+nova/virt/vmwareapi/volumeops.py: Attached ISCSI: %s
+nova/virt/vmwareapi/volumeops.py: Volume attach. Driver type: %s
+nova/virt/vmwareapi/volumeops.py: The volume has not been displaced from
+nova/virt/vmwareapi/volumeops.py: The volume's backing has been relocated to %s. Need to
+nova/virt/vmwareapi/volumeops.py: Relocating volume's backing: %(backing)s to resource
+nova/virt/vmwareapi/volumeops.py: Virtual disk: %s of volume's backing not found.
+nova/virt/vmwareapi/volumeops.py: Removing disk device of volume's backing and
+nova/virt/vmwareapi/volumeops.py: _detach_volume_vmdk: %s
+nova/virt/vmwareapi/volumeops.py: Detached VMDK: %s
+nova/virt/vmwareapi/volumeops.py: _detach_volume_iscsi: %s
+nova/virt/vmwareapi/volumeops.py: Detached ISCSI: %s
+nova/virt/vmwareapi/volumeops.py: Volume detach. Driver type: %s
+nova/virt/vmwareapi/volumeops.py: Root volume attach. Driver type: %s
+nova/virt/vmwareapi/network_util.py: Network %s not found on cluster!
+nova/virt/vmwareapi/network_util.py: Creating Port Group with name %s on
+nova/virt/vmwareapi/network_util.py: Port Group %s already exists.
+nova/virt/vmwareapi/network_util.py: Created Port Group with name %s on
+nova/virt/vmwareapi/imagecache.py: Unable to delete %(file)s. Exception: %(ex)s
+nova/virt/vmwareapi/imagecache.py: File not found: %s
+nova/virt/vmwareapi/imagecache.py: Timestamp path %s exists. Deleting!
+nova/virt/vmwareapi/imagecache.py: Timestamp already exists.
+nova/virt/vmwareapi/imagecache.py: Image %s is no longer used by this node.
+nova/virt/vmwareapi/imagecache.py: Image %s is no longer used.
+nova/virt/vmwareapi/ds_util.py: Deleting the datastore file %s
+nova/virt/vmwareapi/ds_util.py: Deleted the datastore file
+nova/virt/vmwareapi/ds_util.py: Copying the datastore file from %(src)s to %(dst)s
+nova/virt/vmwareapi/ds_util.py: Copied the datastore file
+nova/virt/vmwareapi/ds_util.py: Moving virtual disk from %(src)s to %(dst)s.
+nova/virt/vmwareapi/ds_util.py: Moved virtual disk from %(src)s to %(dst)s.
+nova/virt/vmwareapi/ds_util.py: Copying virtual disk from %(src)s to %(dst)s.
+nova/virt/vmwareapi/ds_util.py: Copied virtual disk from %(src)s to %(dst)s.
+nova/virt/vmwareapi/ds_util.py: Deleting virtual disk %s
+nova/virt/vmwareapi/ds_util.py: Deleted virtual disk %s.
+nova/virt/vmwareapi/ds_util.py: Moving file from %(src)s to %(dst)s.
+nova/virt/vmwareapi/ds_util.py: File moved
+nova/virt/vmwareapi/ds_util.py: Creating directory with path %s
+nova/virt/vmwareapi/ds_util.py: Created directory with path %s
+nova/virt/vmwareapi/ds_util.py: Unable to retrieve storage policy with name %s
+nova/virt/vmwareapi/ds_util.py: Datacenter %s doesn't have any datastore
+nova/virt/vmwareapi/vmops.py: Extending root virtual disk to %s
+nova/virt/vmwareapi/vmops.py: Extending virtual disk failed with error: %s
+nova/virt/vmwareapi/vmops.py: Extended root virtual disk
+nova/virt/vmwareapi/vmops.py: Unable to delete %(ds)s. There may be more than
+nova/virt/vmwareapi/vmops.py: Downloading image file data %(image_id)s to
+nova/virt/vmwareapi/vmops.py: Get esx cookies failed: %s
+nova/virt/vmwareapi/vmops.py: Downloading stream optimized image %(image_id)s to
+nova/virt/vmwareapi/vmops.py: Destination %s already exists! Concurrent moves
+nova/virt/vmwareapi/vmops.py: Processing image %s
+nova/virt/vmwareapi/vmops.py: Preparing fetch location
+nova/virt/vmwareapi/vmops.py: Fetch image to %s
+nova/virt/vmwareapi/vmops.py: Caching image
+nova/virt/vmwareapi/vmops.py: Cleaning up location %s
+nova/virt/vmwareapi/vmops.py: Using config drive for instance
+nova/virt/vmwareapi/vmops.py: Creating config drive failed with error: %s
+nova/virt/vmwareapi/vmops.py: Reconfiguring VM instance to attach cdrom %s
+nova/virt/vmwareapi/vmops.py: Reconfigured VM instance to attach cdrom %s
+nova/virt/vmwareapi/vmops.py: Creating Snapshot of the VM instance
+nova/virt/vmwareapi/vmops.py: Created Snapshot of the VM instance
+nova/virt/vmwareapi/vmops.py: Deleting Snapshot of the VM instance
+nova/virt/vmwareapi/vmops.py: Deleted Snapshot of the VM instance
+nova/virt/vmwareapi/vmops.py: Creating linked-clone VM from snapshot
+nova/virt/vmwareapi/vmops.py: Created linked-clone VM from snapshot
+nova/virt/vmwareapi/vmops.py: No root disk defined. Unable to snapshot.
+nova/virt/vmwareapi/vmops.py: Rebooting guest OS of VM
+nova/virt/vmwareapi/vmops.py: Rebooted guest OS of VM
+nova/virt/vmwareapi/vmops.py: Doing hard reboot of VM
+nova/virt/vmwareapi/vmops.py: Did hard reboot of VM
+nova/virt/vmwareapi/vmops.py: Unregistering the VM
+nova/virt/vmwareapi/vmops.py: Unregistered the VM
+nova/virt/vmwareapi/vmops.py: In vmwareapi:vmops:_destroy_instance, got
+nova/virt/vmwareapi/vmops.py: Deleting contents of the VM from
+nova/virt/vmwareapi/vmops.py: Deleted contents of the VM from
+nova/virt/vmwareapi/vmops.py: In vmwareapi:vmops:_destroy_instance,
+nova/virt/vmwareapi/vmops.py: Instance does not exist on backend
+nova/virt/vmwareapi/vmops.py: Destroy instance failed
+nova/virt/vmwareapi/vmops.py: Destroying instance
+nova/virt/vmwareapi/vmops.py: Instance destroyed
+nova/virt/vmwareapi/vmops.py: Suspending the VM
+nova/virt/vmwareapi/vmops.py: Suspended the VM
+nova/virt/vmwareapi/vmops.py: VM was already in suspended state. So returning
+nova/virt/vmwareapi/vmops.py: Resuming the VM
+nova/virt/vmwareapi/vmops.py: Resumed the VM
+nova/virt/vmwareapi/vmops.py: Unable to access the rescue disk
+nova/virt/vmwareapi/vmops.py: Updating instance '%(instance_uuid)s' progress to
+nova/virt/vmwareapi/vmops.py: No root disk attached!
+nova/virt/vmwareapi/vmops.py: Found %(instance_count)d hung reboots
+nova/virt/vmwareapi/vmops.py: Automatically hard rebooting
+nova/virt/vmwareapi/vmops.py: Reconfiguring VM instance to set the machine id
+nova/virt/vmwareapi/vmops.py: Reconfigured VM instance to set the machine id
+nova/virt/vmwareapi/vmops.py: Reconfiguring VM instance to enable vnc on
+nova/virt/vmwareapi/vmops.py: Reconfigured VM instance to enable vnc on
+nova/virt/vmwareapi/vmops.py: Folder %s created.
+nova/virt/vmwareapi/vmops.py: Image aging disabled. Aging will not be done.
+nova/virt/vmwareapi/vmops.py: Reconfiguring VM to attach interface
+nova/virt/vmwareapi/vmops.py: Attaching network adapter failed. Exception:
+nova/virt/vmwareapi/vmops.py: Reconfigured VM to attach interface
+nova/virt/vmwareapi/vmops.py: Reconfiguring VM to detach interface
+nova/virt/vmwareapi/vmops.py: Detaching network adapter failed. Exception:
+nova/virt/vmwareapi/vmops.py: Reconfigured VM to detach interface
+nova/virt/vmwareapi/vmops.py: Copying root disk of size %sGb
+nova/virt/vmwareapi/vmops.py: Root disk file creation
+nova/virt/vmwareapi/vmops.py: Failed to copy cached
+nova/virt/vmwareapi/vmops.py: Getting list of instances from cluster %s
+nova/virt/vmwareapi/vmops.py: Got total of %s instances
+nova/virt/vmwareapi/vmops.py: VM %(uuid)s is currently on host %(host_name)s
+nova/virt/vmwareapi/images.py: Uploading iso %s to datastore
+nova/virt/vmwareapi/images.py: Uploading iso of size : %s
+nova/virt/vmwareapi/images.py: Uploaded iso %s to datastore
+nova/virt/vmwareapi/images.py: Downloading image file data %(image_ref)s to the
+nova/virt/vmwareapi/images.py: Downloaded image file data %(image_ref)s to
+nova/virt/vmwareapi/images.py: Downloading image file data %(image_ref)s to the ESX
+nova/virt/vmwareapi/images.py: Downloaded image file data %(image_ref)s
+nova/virt/vmwareapi/images.py: The imported VM was unregistered
+nova/virt/vmwareapi/images.py: Downloading OVA image file %(image_ref)s to the ESX
+nova/virt/vmwareapi/images.py: Downloaded OVA image file %(image_ref)s
+nova/virt/vmwareapi/images.py: The imported VM was unregistered
+nova/virt/vmwareapi/images.py: Uploading image %s
+nova/virt/vmwareapi/images.py: Uploaded image %s to the Glance image server
+nova/virt/vmwareapi/vm_util.py: Failed to get cluster references %s
+nova/virt/vmwareapi/vm_util.py: Creating VM on the ESX host
+nova/virt/vmwareapi/vm_util.py: vmware_ostype from image is not recognised:
+nova/virt/vmwareapi/vm_util.py: Created VM on the ESX host
+nova/virt/vmwareapi/vm_util.py: Destroying the VM
+nova/virt/vmwareapi/vm_util.py: Destroyed the VM
+nova/virt/vmwareapi/vm_util.py: Destroy VM failed
+nova/virt/vmwareapi/vm_util.py: Creating Virtual Disk of size
+nova/virt/vmwareapi/vm_util.py: Created Virtual Disk of size %(vmdk_file_size_in_kb)s
+nova/virt/vmwareapi/vm_util.py: Copying Virtual Disk %(source)s to %(dest)s
+nova/virt/vmwareapi/vm_util.py: Copied Virtual Disk %(source)s to %(dest)s
+nova/virt/vmwareapi/vm_util.py: Powering on the VM
+nova/virt/vmwareapi/vm_util.py: Powered on the VM
+nova/virt/vmwareapi/vm_util.py: VM already powered on
+nova/virt/vmwareapi/vm_util.py: Powering off the VM
+nova/virt/vmwareapi/vm_util.py: Powered off the VM
+nova/virt/vmwareapi/vm_util.py: VM already powered off
+nova/virt/vmwareapi/vm_util.py: Creating folder: %(name)s. Parent ref: %(parent)s.
+nova/virt/vmwareapi/vm_util.py: Created folder: %(name)s in parent %(parent)s.
+nova/virt/vmwareapi/vm_util.py: Folder already exists: %(name)s. Parent ref: %(parent)s.
+nova/virt/vmwareapi/vif.py: VMware vCenter version less than %(version)s
+nova/virt/vmwareapi/driver.py: VMware vCenter version: %s
+nova/virt/vmwareapi/driver.py: Running Nova with a VMware vCenter version less
+nova/virt/vmwareapi/driver.py: datastore_regex is ignored when PBM is enabled
+nova/virt/vmwareapi/driver.py: Registering extension %s with vCenter
+nova/virt/vmwareapi/driver.py: Extension does not exist. Registering type %s.
+nova/virt/vmwareapi/driver.py: The volume %s does not exist!
+nova/virt/vmwareapi/driver.py: Failed to detach %(device_name)s.
+nova/virt/vmwareapi/driver.py: Instance does not exists. Proceeding to
+nova/virt/ironic/client_wrapper.py: The Ironic client became unauthorized.
+nova/virt/ironic/driver.py: Power state %s not found.
+nova/virt/ironic/driver.py: Still waiting for ironic node %(node)s to %(what)s:
+nova/virt/ironic/driver.py: Node %(uuid)s has a malformed "%(prop)s".
+nova/virt/ironic/driver.py: cpu_arch not defined for node '%s'
+nova/virt/ironic/driver.py: Node %(uuid)s has a malformed "%(prop)s".
+nova/virt/ironic/driver.py: Ignoring malformed capability '%s'.
+nova/virt/ironic/driver.py: Failed to remove deploy parameters from node
+nova/virt/ironic/driver.py: Ironic node %(node)s is now ACTIVE
+nova/virt/ironic/driver.py: Returning %(num_nodes)s available node(s)
+nova/virt/ironic/driver.py: Using cache for node %(node)s, age: %(age)s
+nova/virt/ironic/driver.py: Node %(node)s not found in cache, age: %(age)s
+nova/virt/ironic/driver.py: Warning, memory usage is 0 for
+nova/virt/ironic/driver.py: Warning, number of cpus is 0 for
+nova/virt/ironic/driver.py: Spawn called for instance
+nova/virt/ironic/driver.py: Error preparing deploy for instance
+nova/virt/ironic/driver.py: Config drive for instance %(instance)s on
+nova/virt/ironic/driver.py: Successfully provisioned Ironic node %s
+nova/virt/ironic/driver.py: Error deploying instance %(instance)s on
+nova/virt/ironic/driver.py: Instance already removed from Ironic
+nova/virt/ironic/driver.py: Ironic node %(node)s is in state %(state)s,
+nova/virt/ironic/driver.py: Destroy called for instance
+nova/virt/ironic/driver.py: Destroy called on non-existing instance %s.
+nova/virt/ironic/driver.py: Successfully unprovisioned Ironic node %s
+nova/virt/ironic/driver.py: Reboot called for instance
+nova/virt/ironic/driver.py: Successfully rebooted Ironic node %s
+nova/virt/ironic/driver.py: Power off called for instance
+nova/virt/ironic/driver.py: Successfully powered off Ironic node %s
+nova/virt/ironic/driver.py: Power on called for instance
+nova/virt/ironic/driver.py: Successfully powered on Ironic node %s
+nova/virt/ironic/driver.py: plug: instance_uuid=%(uuid)s vif=%(network_info)s
+nova/virt/ironic/driver.py: unplug: instance_uuid=%(uuid)s vif=%(network_info)s
+nova/virt/ironic/driver.py: Rebuild called for instance
+nova/virt/ironic/driver.py: Instance was successfully rebuilt
+nova/virt/xenapi/volumeops.py: Connected volume (vdi_uuid): %s
+nova/virt/xenapi/volumeops.py: Connect volume to hypervisor: %s
+nova/virt/xenapi/volumeops.py: Attach_volume vdi: %(vdi_ref)s vm: %(vm_ref)s
+nova/virt/xenapi/volumeops.py: Plugging VBD: %s
+nova/virt/xenapi/volumeops.py: Dev %(dev_number)s attached to
+nova/virt/xenapi/volumeops.py: Detach_volume: %(instance_name)s, %(mountpoint)s
+nova/virt/xenapi/volumeops.py: Skipping detach because VBD for %s was
+nova/virt/xenapi/volumeops.py: Mountpoint %(mountpoint)s detached from instance
+nova/virt/xenapi/volumeops.py: Ignoring error while purging sr: %s
+nova/virt/xenapi/fake.py: Raising NotImplemented
+nova/virt/xenapi/fake.py: Calling %(name)s %(impl)s
+nova/virt/xenapi/fake.py: Calling getter %s
+nova/virt/xenapi/fake.py: Calling setter %s
+nova/virt/xenapi/fake.py: Raising NotImplemented
+nova/virt/xenapi/fake.py: Raising NotImplemented
+nova/virt/xenapi/fake.py: Raising NotImplemented
+nova/virt/xenapi/volume_utils.py: (vol_id,host,port,iqn):
+nova/virt/xenapi/volume_utils.py: Introducing SR %s
+nova/virt/xenapi/volume_utils.py: Creating PBD for SR
+nova/virt/xenapi/volume_utils.py: Plugging SR
+nova/virt/xenapi/volume_utils.py: Unable to introduce VDI on SR
+nova/virt/xenapi/volume_utils.py: Unable to get record of VDI
+nova/virt/xenapi/volume_utils.py: Unable to introduce VDI for SR
+nova/virt/xenapi/volume_utils.py: vdi_uuid: %s
+nova/virt/xenapi/volume_utils.py: Cannot purge SR with referenced VDIs
+nova/virt/xenapi/volume_utils.py: Forgetting SR...
+nova/virt/xenapi/volume_utils.py: Ignoring exception %(exc)s when getting PBDs
+nova/virt/xenapi/volume_utils.py: Ignoring exception %(exc)s when unplugging
+nova/virt/xenapi/volume_utils.py: Mountpoint cannot be translated: %s
+nova/virt/xenapi/volume_utils.py: Unable to find SR from VBD
+nova/virt/xenapi/volume_utils.py: Unable to find SR from VDI
+nova/virt/xenapi/host.py: Instance %(name)s running on
+nova/virt/xenapi/host.py: Unable to migrate VM %(vm_ref)s
+nova/virt/xenapi/host.py: Updating host stats
+nova/virt/xenapi/host.py: Hostname has changed from %(old)s to %(new)s.
+nova/virt/xenapi/host.py: Failed to extract instance support from %s
+nova/virt/xenapi/host.py: Unable to get updated status
+nova/virt/xenapi/host.py: The call to %(method)s returned
+nova/virt/xenapi/vm_utils.py: Created VM
+nova/virt/xenapi/vm_utils.py: Destroy VM failed
+nova/virt/xenapi/vm_utils.py: VM destroyed
+nova/virt/xenapi/vm_utils.py: VM already halted, skipping shutdown...
+nova/virt/xenapi/vm_utils.py: Shutting down VM (cleanly)
+nova/virt/xenapi/vm_utils.py: Shutting down VM (cleanly) failed.
+nova/virt/xenapi/vm_utils.py: VM already halted, skipping shutdown...
+nova/virt/xenapi/vm_utils.py: Shutting down VM (hard)
+nova/virt/xenapi/vm_utils.py: Shutting down VM (hard) failed
+nova/virt/xenapi/vm_utils.py: VBD %s already detached
+nova/virt/xenapi/vm_utils.py: VBD %(vbd_ref)s uplug failed with "%(err)s",
+nova/virt/xenapi/vm_utils.py: Unable to unplug VBD
+nova/virt/xenapi/vm_utils.py: Unable to destroy VBD
+nova/virt/xenapi/vm_utils.py: Creating %(vbd_type)s-type VBD for VM %(vm_ref)s,
+nova/virt/xenapi/vm_utils.py: Created VBD %(vbd_ref)s for VM %(vm_ref)s,
+nova/virt/xenapi/vm_utils.py: Unable to destroy VDI %s
+nova/virt/xenapi/vm_utils.py: Ignoring error while destroying VDI: %s
+nova/virt/xenapi/vm_utils.py: Created VDI %(vdi_ref)s (%(name_label)s,
+nova/virt/xenapi/vm_utils.py: Cloned VDI %(vdi_ref)s from VDI
+nova/virt/xenapi/vm_utils.py: Error while removing sm_config
+nova/virt/xenapi/vm_utils.py: No VHD chain.
+nova/virt/xenapi/vm_utils.py: No snapshots to remove.
+nova/virt/xenapi/vm_utils.py: Deleted %s snapshots.
+nova/virt/xenapi/vm_utils.py: Starting remove_old_snapshots for VM
+nova/virt/xenapi/vm_utils.py: Starting snapshot for VM
+nova/virt/xenapi/vm_utils.py: Destroying cached VDI '%(vdi_uuid)s'
+nova/virt/xenapi/vm_utils.py: Multiple base images for image: %s
+nova/virt/xenapi/vm_utils.py: vdi_ref
+nova/virt/xenapi/vm_utils.py: No need to change vdi virtual size.
+nova/virt/xenapi/vm_utils.py: Skipping auto_config_disk as destination size is 0GB
+nova/virt/xenapi/vm_utils.py: Error when generating ephemeral disk.
+nova/virt/xenapi/vm_utils.py: Removing kernel/ramdisk files from dom0
+nova/virt/xenapi/vm_utils.py: Fast cloning is only supported on default local SR
+nova/virt/xenapi/vm_utils.py: Unrecognized cache_images value '%s', defaulting to
+nova/virt/xenapi/vm_utils.py: Image creation data, cacheable: %(cache)s,
+nova/virt/xenapi/vm_utils.py: Fetched VDIs of type '%(vdi_type)s' with UUID
+nova/virt/xenapi/vm_utils.py: Invalid value '%s' for torrent_images
+nova/virt/xenapi/vm_utils.py: Invalid value '%d' for image_compression_level
+nova/virt/xenapi/vm_utils.py: Asking xapi to fetch vhd image %s
+nova/virt/xenapi/vm_utils.py: Download handler '%(handler)s' raised an
+nova/virt/xenapi/vm_utils.py: vdi_uuid=%(cur_vdi_uuid)s vdi_size_bytes=
+nova/virt/xenapi/vm_utils.py: Image size %(size)d exceeded flavor
+nova/virt/xenapi/vm_utils.py: Fetching image %(image_id)s, type %(image_type_str)s
+nova/virt/xenapi/vm_utils.py: Size for image %(image_id)s: %(virtual_size)d
+nova/virt/xenapi/vm_utils.py: Copying VDI %s to /boot/guest on dom0
+nova/virt/xenapi/vm_utils.py: Kernel/Ramdisk VDI %s destroyed
+nova/virt/xenapi/vm_utils.py: Failed to fetch glance image
+nova/virt/xenapi/vm_utils.py: Detected %(type)s format for image %(image)s
+nova/virt/xenapi/vm_utils.py: VDI %s is still available
+nova/virt/xenapi/vm_utils.py: "Look for the VDIs failed
+nova/virt/xenapi/vm_utils.py: Unable to parse rrd of %s
+nova/virt/xenapi/vm_utils.py: Scanning SR %s
+nova/virt/xenapi/vm_utils.py: Retry SR scan due to error:
+nova/virt/xenapi/vm_utils.py: Flag sr_matching_filter '%s' does not respect
+nova/virt/xenapi/vm_utils.py: XenAPI is unable to find a Storage Repository to
+nova/virt/xenapi/vm_utils.py: ISO: looking at SR %s
+nova/virt/xenapi/vm_utils.py: ISO: not iso content
+nova/virt/xenapi/vm_utils.py: ISO: iso content_type, no 'i18n-key' key
+nova/virt/xenapi/vm_utils.py: ISO: iso content_type, i18n-key value not
+nova/virt/xenapi/vm_utils.py: ISO: SR MATCHing our criteria
+nova/virt/xenapi/vm_utils.py: ISO: ISO, looking to see if it is host local
+nova/virt/xenapi/vm_utils.py: ISO: PBD %s disappeared
+nova/virt/xenapi/vm_utils.py: ISO: PBD matching, want %(pbd_rec)s, have %(host)s
+nova/virt/xenapi/vm_utils.py: ISO: SR with local PBD
+nova/virt/xenapi/vm_utils.py: Unable to obtain RRD XML for VM %(vm_uuid)s with
+nova/virt/xenapi/vm_utils.py: VHD %(vdi_uuid)s has parent %(parent_uuid)s
+nova/virt/xenapi/vm_utils.py: Old chain is single VHD, coalesce not possible.
+nova/virt/xenapi/vm_utils.py: Parent has other children, coalesce is unlikely.
+nova/virt/xenapi/vm_utils.py: Parent %(parent_uuid)s not yet in parent list
+nova/virt/xenapi/vm_utils.py: Coalesce detected, because parent is: %s
+nova/virt/xenapi/vm_utils.py: Disconnecting stale VDI %s from compute domU
+nova/virt/xenapi/vm_utils.py: Plugging VBD %s ...
+nova/virt/xenapi/vm_utils.py: Plugging VBD %s done.
+nova/virt/xenapi/vm_utils.py: VBD %(vbd_ref)s plugged as %(orig_dev)s
+nova/virt/xenapi/vm_utils.py: VBD %(vbd_ref)s plugged into wrong dev,
+nova/virt/xenapi/vm_utils.py: Destroying VBD for VDI %s ...
+nova/virt/xenapi/vm_utils.py: Destroying VBD for VDI %s done.
+nova/virt/xenapi/vm_utils.py: Partitions:
+nova/virt/xenapi/vm_utils.py: %(num)s: %(fstype)s %(size)d sectors
+nova/virt/xenapi/vm_utils.py: Writing partition table %(primary_first)d %(primary_last)d
+nova/virt/xenapi/vm_utils.py: Writing partition table %s done.
+nova/virt/xenapi/vm_utils.py: Sparse copy in progress,
+nova/virt/xenapi/vm_utils.py: Starting sparse_copy src=%(src_path)s dst=%(dst_path)s
+nova/virt/xenapi/vm_utils.py: Finished sparse_copy in %(duration).2f secs,
+nova/virt/xenapi/vm_utils.py: Manipulating interface files directly
+nova/virt/xenapi/vm_utils.py: Failed to mount filesystem (expected for
+nova/virt/xenapi/vm_utils.py: Migrating VHD '%(vdi_uuid)s' with seq_num %(seq_num)d
+nova/virt/xenapi/vm_utils.py: ipxe_boot_menu_url not set, user will have to
+nova/virt/xenapi/vm_utils.py: ipxe_network_name not set, user will have to
+nova/virt/xenapi/vm_utils.py: Unable to find network matching '%(network_name)s',
+nova/virt/xenapi/vm_utils.py: ISO creation tool '%s' does not exist.
+nova/virt/xenapi/vmops.py: Importing image upload handler: %s
+nova/virt/xenapi/vmops.py: Block device information present: %s
+nova/virt/xenapi/vmops.py: Starting instance
+nova/virt/xenapi/vmops.py: Block device information present: %s
+nova/virt/xenapi/vmops.py: ipxe_boot is True but no ISO image
+nova/virt/xenapi/vmops.py: wait for instance event:%s
+nova/virt/xenapi/vmops.py: Timeout waiting for vif plugging callback
+nova/virt/xenapi/vmops.py: Update instance when power on
+nova/virt/xenapi/vmops.py: Neutron Reported failure on event %(event)s
+nova/virt/xenapi/vmops.py: vm_mode not found in rescue image properties.
+nova/virt/xenapi/vmops.py: Using PV kernel: %s
+nova/virt/xenapi/vmops.py: 'hw_auto_disk_config' value not found in
+nova/virt/xenapi/vmops.py: Auto configuring disk, attempting to
+nova/virt/xenapi/vmops.py: Waiting for instance state to become running
+nova/virt/xenapi/vmops.py: Skip agent setup, not enabled.
+nova/virt/xenapi/vmops.py: Skip agent setup, unable to contact agent.
+nova/virt/xenapi/vmops.py: Detected agent version: %s
+nova/virt/xenapi/vmops.py: Finished snapshot and upload for VM, duration:
+nova/virt/xenapi/vmops.py: Updating progress to %d
+nova/virt/xenapi/vmops.py: VM was already shutdown.
+nova/virt/xenapi/vmops.py: Clean shutdown did not complete successfully,
+nova/virt/xenapi/vmops.py: _migrate_disk_resizing_down failed.
+nova/virt/xenapi/vmops.py: Migrated root base vhds
+nova/virt/xenapi/vmops.py: Migrated all base vhds.
+nova/virt/xenapi/vmops.py: Read-only migrated for disk: %s
+nova/virt/xenapi/vmops.py: Not snapshotting root disk since it is a volume
+nova/virt/xenapi/vmops.py: _migrate_disk_resizing_up failed.
+nova/virt/xenapi/vmops.py: _migrate_disk_resizing_up failed to
+nova/virt/xenapi/vmops.py: Not resizing the root volume.
+nova/virt/xenapi/vmops.py: Generating new ephemeral vdi %d during resize
+nova/virt/xenapi/vmops.py: Starting halted instance found during reboot
+nova/virt/xenapi/vmops.py: Reboot failed due to bad volumes, detaching
+nova/virt/xenapi/vmops.py: Unable to update metadata, VM not found.
+nova/virt/xenapi/vmops.py: Destroying VDIs
+nova/virt/xenapi/vmops.py: Using RAW or VHD, skipping kernel and ramdisk
+nova/virt/xenapi/vmops.py: kernel/ramdisk files removed
+nova/virt/xenapi/vmops.py: Destroying VM
+nova/virt/xenapi/vmops.py: VM is not present, skipping destroy...
+nova/virt/xenapi/vmops.py: Failed to find an SR for volume %s
+nova/virt/xenapi/vmops.py: Volume %s is associated with the
+nova/virt/xenapi/vmops.py: Failed to forget the SR for volume %s
+nova/virt/xenapi/vmops.py: Clean shutdown did not complete successfully,
+nova/virt/xenapi/vmops.py: VM is not present, skipping soft delete...
+nova/virt/xenapi/vmops.py: Found %(instance_count)d hung reboots
+nova/virt/xenapi/vmops.py: Automatically hard rebooting
+nova/virt/xenapi/vmops.py: Guest does not have a console available
+nova/virt/xenapi/vmops.py: Injecting network info to xenstore
+nova/virt/xenapi/vmops.py: Creating vifs
+nova/virt/xenapi/vmops.py: Create VIF %s
+nova/virt/xenapi/vmops.py: Injecting hostname (%s) into xenstore
+nova/virt/xenapi/vmops.py: Removing hostname from xenstore
+nova/virt/xenapi/vmops.py: TIMEOUT: The call to %(method)s timed out.
+nova/virt/xenapi/vmops.py: NOT IMPLEMENTED: The call to %(method)s is not
+nova/virt/xenapi/vmops.py: The call to %(method)s returned an error:
+nova/virt/xenapi/vmops.py: Migrate Receive failed
+nova/virt/xenapi/vmops.py: Plugin config_file get_val failed
+nova/virt/xenapi/vmops.py: PV device present but missing pv driver info.
+nova/virt/xenapi/vmops.py: Could not determine the presence of pv device.
+nova/virt/xenapi/vmops.py: Major Version: %s reported.
+nova/virt/xenapi/vmops.py: PV Device vif.%(vif_ref)s reporting state %(ret)s
+nova/virt/xenapi/vmops.py: Writing pvtools version major: %(major)s minor: %(minor)s
+nova/virt/xenapi/vmops.py: Migrate Send failed
+nova/virt/xenapi/vmops.py: Failed to forget the SR for volume %s
+nova/virt/xenapi/agent.py: TIMEOUT: The call to %(method)s timed out.
+nova/virt/xenapi/agent.py: REBOOT: The call to %(method)s detected a reboot.
+nova/virt/xenapi/agent.py: NOT IMPLEMENTED: The call to %(method)s is not
+nova/virt/xenapi/agent.py: The call to %(method)s returned an error: %(e)s.
+nova/virt/xenapi/agent.py: The agent call to %(method)s returned an invalid
+nova/virt/xenapi/agent.py: The agent call to %(method)s returned
+nova/virt/xenapi/agent.py: The agent call to %(method)s was successful:
+nova/virt/xenapi/agent.py: Found new dom_id %s
+nova/virt/xenapi/agent.py: Timed out waiting for new dom_id %s
+nova/virt/xenapi/agent.py: Ignoring error while configuring instance with
+nova/virt/xenapi/agent.py: Error setting instance fault.
+nova/virt/xenapi/agent.py: Querying agent version
+nova/virt/xenapi/agent.py: Latest agent build for %(hypervisor)s/%(os)s
+nova/virt/xenapi/agent.py: No agent build found for %(hypervisor)s/%(os)s
+nova/virt/xenapi/agent.py: Updating agent to %s
+nova/virt/xenapi/agent.py: Skipping agent update.
+nova/virt/xenapi/agent.py: Unable to update the agent due
+nova/virt/xenapi/agent.py: Setting admin password
+nova/virt/xenapi/agent.py: Skipping setting of ssh key for Windows.
+nova/virt/xenapi/agent.py: Skipping agent ssh key injection for this image.
+nova/virt/xenapi/agent.py: Skipping agent file injection for this image.
+nova/virt/xenapi/agent.py: Injecting file path: %r
+nova/virt/xenapi/agent.py: Resetting network
+nova/virt/xenapi/agent.py: XenServer tools installed in this
+nova/virt/xenapi/agent.py: XenServer tools are present
+nova/virt/xenapi/agent.py: XenServer tools are not
+nova/virt/xenapi/agent.py: Invalid 'agent_present' value.
+nova/virt/xenapi/vif.py: Failed to create vif, exception:%(exception)s,
+nova/virt/xenapi/vif.py: create vif %(vif)s for vm %(vm_ref)s successfully
+nova/virt/xenapi/vif.py: unplug vif, vif:%(vif)s, vm_ref:%(vm_ref)s
+nova/virt/xenapi/vif.py: vif didn't exist, no need to unplug vif %s
+nova/virt/xenapi/vif.py: Fail to unplug vif:%(vif)s, exception:%(exception)s
+nova/virt/xenapi/vif.py: VIF %s already exists when plug vif
+nova/virt/xenapi/vif.py: VIF %s already exists when plug vif
+nova/virt/xenapi/driver.py: Failure while cleaning up attached VDIs
+nova/virt/xenapi/driver.py: Could not determine key: %s
+nova/virt/xenapi/pool.py: Aggregate %(aggregate_id)s: unrecoverable
+nova/virt/xenapi/pool.py: Pool-Join failed: %s
+nova/virt/xenapi/pool.py: Pool-eject failed: %s
+nova/virt/xenapi/pool.py: Unable to set up pool: %s.
+nova/virt/xenapi/pool.py: Pool-set_name_label failed: %s
+nova/virt/xenapi/image/bittorrent.py: Value specified in conf file for
+nova/virt/xenapi/client/session.py: Host is member of a pool, but DB
+nova/virt/xenapi/client/session.py: plugin
+nova/virt/xenapi/client/session.py: %(plugin)s.%(fn)s failed.
+nova/virt/xenapi/client/session.py: Lost connection to XenAPI during call to
+nova/virt/xenapi/client/session.py: RetryableError, so retrying %(fn)s
+nova/virt/xenapi/client/session.py: Error due to a signal, retrying %(fn)s
+nova/virt/xenapi/client/session.py: Got exception: %s
+nova/virt/xenapi/client/session.py: Got exception: %s
+nova/virt/disk/api.py: Checking the file system with e2fsck has failed,
+nova/virt/disk/api.py: Resizing the file system with resize2fs
+nova/virt/disk/api.py: Checking if we can resize image %(image)s.
+nova/virt/disk/api.py: Cannot resize image %s to a smaller size.
+nova/virt/disk/api.py: Checking if we can extend filesystem inside %(image)s.
+nova/virt/disk/api.py: Unable to mount image %(image)s with
+nova/virt/disk/api.py: Unable to determine label for image %(image)s with
+nova/virt/disk/api.py: No device found for path: %s
+nova/virt/disk/api.py: Inject data image=%(image)s key=%(key)s net=%(net)s
+nova/virt/disk/api.py: Ignoring error injecting data into image %(image)s
+nova/virt/disk/api.py: Failed to mount container filesystem '%(image)s'
+nova/virt/disk/api.py: Release loop device %s
+nova/virt/disk/api.py: Release nbd device %s
+nova/virt/disk/api.py: No release necessary for block device %s
+nova/virt/disk/api.py: Failed to teardown container filesystem
+nova/virt/disk/api.py: Failed to umount container filesystem
+nova/virt/disk/api.py: Ignoring error injecting %(inject)s into
+nova/virt/disk/api.py: Inject file fs=%(fs)s path=%(path)s append=%(append)s
+nova/virt/disk/api.py: Inject metadata fs=%(fs)s metadata=%(metadata)s
+nova/virt/disk/api.py: Inject key fs=%(fs)s key=%(key)s
+nova/virt/disk/api.py: Inject key fs=%(fs)s net=%(net)s
+nova/virt/disk/api.py: Inject admin password fs=%(fs)s
+nova/virt/disk/vfs/api.py: Instance for image image=%(image)s
+nova/virt/disk/vfs/api.py: Using primary VFSGuestFS
+nova/virt/disk/vfs/api.py: Unable to import guestfs,
+nova/virt/disk/vfs/localfs.py: Failed to mount image: %(ex)s
+nova/virt/disk/vfs/localfs.py: Failed to unmount %(imgdir)s: %(ex)s
+nova/virt/disk/vfs/localfs.py: Failed to remove %(imgdir)s: %(ex)s
+nova/virt/disk/vfs/localfs.py: Make directory path=%s
+nova/virt/disk/vfs/localfs.py: Append file path=%s
+nova/virt/disk/vfs/localfs.py: Replace file path=%s
+nova/virt/disk/vfs/localfs.py: Read file path=%s
+nova/virt/disk/vfs/localfs.py: Has file path=%s
+nova/virt/disk/vfs/localfs.py: Set permissions path=%(path)s mode=%(mode)o
+nova/virt/disk/vfs/localfs.py: Set permissions path=%(path)s
+nova/virt/disk/vfs/guestfs.py: Please consider to execute setup before trying
+nova/virt/disk/vfs/guestfs.py: event=%(event)s eh=%(eh)d buf='%(buf)s'
+nova/virt/disk/vfs/guestfs.py: Mount guest OS image %(image)s partition %(part)s
+nova/virt/disk/vfs/guestfs.py: Inspecting guest OS image %s
+nova/virt/disk/vfs/guestfs.py: Multi-boot OS %(roots)s
+nova/virt/disk/vfs/guestfs.py: Inspecting guest OS root filesystem %s
+nova/virt/disk/vfs/guestfs.py: Mounting %(dev)s at %(dir)s
+nova/virt/disk/vfs/guestfs.py: Setting up appliance for %(image)s
+nova/virt/disk/vfs/guestfs.py: Unable to force TCG mode,
+nova/virt/disk/vfs/guestfs.py: Tearing down appliance
+nova/virt/disk/vfs/guestfs.py: Failed to close augeas %s
+nova/virt/disk/vfs/guestfs.py: Failed to shutdown appliance %s
+nova/virt/disk/vfs/guestfs.py: Failed to close guest handle %s
+nova/virt/disk/vfs/guestfs.py: Make directory path=%s
+nova/virt/disk/vfs/guestfs.py: Append file path=%s
+nova/virt/disk/vfs/guestfs.py: Replace file path=%s
+nova/virt/disk/vfs/guestfs.py: Read file path=%s
+nova/virt/disk/vfs/guestfs.py: Has file path=%s
+nova/virt/disk/vfs/guestfs.py: Set permissions path=%(path)s mode=%(mode)s
+nova/virt/disk/vfs/guestfs.py: Set ownership path=%(path)s
+nova/virt/disk/vfs/guestfs.py: chown uid=%(uid)d gid=%(gid)s
+nova/virt/disk/mount/api.py: Instance for format image=%(image)s
+nova/virt/disk/mount/api.py: Using LoopMount
+nova/virt/disk/mount/api.py: Using NbdMount
+nova/virt/disk/mount/api.py: Using BlockMount
+nova/virt/disk/mount/api.py: Instance for device image=%(image)s
+nova/virt/disk/mount/api.py: Using LoopMount
+nova/virt/disk/mount/api.py: Using NbdMount
+nova/virt/disk/mount/api.py: Using BlockMount
+nova/virt/disk/mount/api.py: Device allocation failed. Will retry in 2 seconds.
+nova/virt/disk/mount/api.py: Device allocation failed after repeated
+nova/virt/disk/mount/api.py: Map dev %s
+nova/virt/disk/mount/api.py: Unmap dev %s
+nova/virt/disk/mount/api.py: Mount %(dev)s on %(dir)s
+nova/virt/disk/mount/api.py: Umount %s
+nova/virt/disk/mount/api.py: Fail to mount, tearing back down
+nova/virt/disk/mount/loop.py: Loop mount error: %s
+nova/virt/disk/mount/loop.py: Got loop device %s
+nova/virt/disk/mount/loop.py: Release loop device %s
+nova/virt/disk/mount/nbd.py: NBD error - previous umount did not
+nova/virt/disk/mount/nbd.py: No free nbd devices
+nova/virt/disk/mount/nbd.py: nbd module not loaded
+nova/virt/disk/mount/nbd.py: Get nbd device %(dev)s for %(imgfile)s
+nova/virt/disk/mount/nbd.py: NBD mount error: %s
+nova/virt/disk/mount/nbd.py: NBD mount error: %s
+nova/virt/disk/mount/nbd.py: Detaching from erroneous nbd device returned
+nova/virt/disk/mount/nbd.py: Release nbd device %s
+nova/consoleauth/manager.py: Reloading compute RPC API
+nova/consoleauth/manager.py: Token: %(token)s failed to save into memcached.
+nova/consoleauth/manager.py: Instance: %(instance_uuid)s failed to save
+nova/consoleauth/manager.py: Received Token: %(token)s, %(token_dict)s
+nova/consoleauth/manager.py: Checking Token: %(token)s, %(token_valid)s
+nova/compute/resource_tracker.py: Host field should not be set on the instance
+nova/compute/resource_tracker.py: Node field should not be set on the instance
+nova/compute/resource_tracker.py: Memory overhead for %(flavor)d MB instance; %(overhead)d
+nova/compute/resource_tracker.py: Memory overhead for %(flavor)d MB instance; %(overhead)d
+nova/compute/resource_tracker.py: Compute_service record created for
+nova/compute/resource_tracker.py: Cannot get the metrics from %(mon)s;
+nova/compute/resource_tracker.py: Auditing locally available compute resources for
+nova/compute/resource_tracker.py: Virt driver does not support
+nova/compute/resource_tracker.py: Migration for instance %(uuid)s refers to
+nova/compute/resource_tracker.py: Compute_service record updated for %(host)s:%(node)s
+nova/compute/resource_tracker.py: No compute node record for %(host)s:%(node)s
+nova/compute/resource_tracker.py: Hypervisor: free VCPUs: %s
+nova/compute/resource_tracker.py: Hypervisor: VCPU information unavailable
+nova/compute/resource_tracker.py: Hypervisor: assignable PCI devices: %s
+nova/compute/resource_tracker.py: Hypervisor/Node resource view:
+nova/compute/resource_tracker.py: Total usable vcpus: %(tcpu)s,
+nova/compute/resource_tracker.py: Final resource view:
+nova/compute/resource_tracker.py: Updating from migration %s
+nova/compute/resource_tracker.py: Migration instance not found: %s
+nova/compute/resource_tracker.py: Instance not resizing, skipping migration.
+nova/compute/resource_tracker.py: Flavor could not be found, skipping
+nova/compute/resource_tracker.py: Detected running orphan instance: %(uuid)s
+nova/compute/rpcapi.py: Failed to extract compute RPC version from
+nova/compute/rpcapi.py: Failed to extract compute RPC version from
+nova/compute/rpcapi.py: Automatically selected compute RPC version %(rpc)s
+nova/compute/claims.py: Aborting claim: %s
+nova/compute/claims.py: Attempting claim: memory %(memory_mb)d MB,
+nova/compute/claims.py: Claim successful
+nova/compute/claims.py: Total %(type)s: %(total)d %(unit)s, used: %(used).02f
+nova/compute/claims.py: %(type)s limit not specified, defaulting to
+nova/compute/claims.py: %(type)s limit: %(limit).02f %(unit)s,
+nova/compute/claims.py: Aborting claim: %s
+nova/compute/claims.py: Can't create a migration_context record without a
+nova/compute/api.py: %(overs)s quota exceeded for %(pid)s,
+nova/compute/api.py: %(overs)s quota exceeded for %(pid)s,
+nova/compute/api.py: Failed to set instance name using
+nova/compute/api.py: Going to run %s instances...
+nova/compute/api.py: max count reduced from %(max_count)d to
+nova/compute/api.py: Image bdm %s
+nova/compute/api.py: block_device_mapping %s
+nova/compute/api.py: Invalid block device mapping boot sequence for
+nova/compute/api.py: instance termination disabled
+nova/compute/api.py: Working on deleting snapshot %s
+nova/compute/api.py: Failed to delete snapshot
+nova/compute/api.py: Something wrong happened when trying to
+nova/compute/api.py: Instance is already in deleting state,
+nova/compute/api.py: Found an unconfirmed migration during delete,
+nova/compute/api.py: Instance may have been confirmed during delete
+nova/compute/api.py: Migration %s may have been confirmed during
+nova/compute/api.py: Found stashed volume connector for instance but
+nova/compute/api.py: Unable to find connector for volume %s,
+nova/compute/api.py: instance is in SHELVED_OFFLOADED state, cleanup
+nova/compute/api.py: instance's host %s is down, deleting from
+nova/compute/api.py: Going to try to soft delete instance
+nova/compute/api.py: Going to try to terminate instance
+nova/compute/api.py: Going to try to stop instance
+nova/compute/api.py: Going to try to start instance
+nova/compute/api.py: Try to trigger crash dump
+nova/compute/api.py: Fetching instance by UUID
+nova/compute/api.py: Failed to fetch instance by id %s
+nova/compute/api.py: Invalid instance id %s
+nova/compute/api.py: Searching by: %s
+nova/compute/api.py: Removing limit for DB query due to IP filter
+nova/compute/api.py: It's not supported to backup volume backed
+nova/compute/api.py: Skipping quiescing instance:
+nova/compute/api.py: Creating snapshot from volume %s.
+nova/compute/api.py: flavor_id is None. Assuming migration.
+nova/compute/api.py: Old instance type %(current_instance_type_name)s,
+nova/compute/api.py: %(overs)s quota exceeded for %(pid)s,
+nova/compute/api.py: Locking
+nova/compute/api.py: Unlocking
+nova/compute/api.py: Going to try to live migrate instance to %s
+nova/compute/api.py: Going to try to force live migration to complete
+nova/compute/api.py: Going to cancel live migration %s
+nova/compute/api.py: vm evacuation scheduled
+nova/compute/api.py: Instance compute service state on %s
+nova/compute/api.py: Create Security Group %s
+nova/compute/api.py: Failed to update usages deallocating
+nova/compute/api.py: Delete security group %s
+nova/compute/api.py: name
+nova/compute/api.py: name
+nova/compute/utils.py: Using %(prefix)s instead of %(req_prefix)s
+nova/compute/utils.py: Metadata value %(value)s for %(key)s is not of
+nova/compute/utils.py: message
+nova/compute/utils.py: No aggregate id or name specified for this
+nova/compute/utils.py: No host name specified for the notification of
+nova/compute/flavors.py: Instance type %s not found for deletion
+nova/compute/manager.py: Error setting migration status
+nova/compute/manager.py: Task possibly preempted: %s
+nova/compute/manager.py: Successfully reverted task state from %s on
+nova/compute/manager.py: Cleaning up image %s
+nova/compute/manager.py: Error while trying to clean up
+nova/compute/manager.py: Preparing to wait for external event %(event)s
+nova/compute/manager.py: Unexpected attempt to pop events during shutdown
+nova/compute/manager.py: No waiting events found dispatching %(event)s
+nova/compute/manager.py: No event matching %(event)s in %(events)s
+nova/compute/manager.py: Unexpected attempt to clear events during shutdown
+nova/compute/manager.py: Unexpected attempt to cancel events during shutdown.
+nova/compute/manager.py: Canceling in-flight event %(event)s for
+nova/compute/manager.py: Reloading compute RPC API
+nova/compute/manager.py: Instance has been destroyed from under us while
+nova/compute/manager.py: Deleting instance as it has been evacuated from
+nova/compute/manager.py: Instance has been marked deleted already,
+nova/compute/manager.py: Hypervisor driver does not support
+nova/compute/manager.py: Failed to check if instance shared
+nova/compute/manager.py: Instance %(uuid)s appears to not be owned
+nova/compute/manager.py: Instance is in %s state.
+nova/compute/manager.py: Instance failed to spawn correctly,
+nova/compute/manager.py: Instance failed to rebuild correctly,
+nova/compute/manager.py: Instance in transitional state %s at start-up
+nova/compute/manager.py: Instance in transitional state %s at start-up
+nova/compute/manager.py: Service started deleting the instance during
+nova/compute/manager.py: Instance in transitional state (%(task_state)s) at
+nova/compute/manager.py: Instance in transitional state
+nova/compute/manager.py: Instance in transitional state
+nova/compute/manager.py: Failed to unpause instance
+nova/compute/manager.py: Instance in transitional state %s at start-up
+nova/compute/manager.py: Instance in transitional state %s at start-up
+nova/compute/manager.py: Vifs plug failed
+nova/compute/manager.py: Failed to revert crashed migration
+nova/compute/manager.py: Instance found in migrating state during
+nova/compute/manager.py: Current state is %(drv_state)s, state in DB is
+nova/compute/manager.py: Rebooting instance after nova-compute restart.
+nova/compute/manager.py: Hypervisor driver does not support
+nova/compute/manager.py: Failed to resume instance
+nova/compute/manager.py: Hypervisor driver does not support
+nova/compute/manager.py: VM %(state)s (Lifecycle Event)
+nova/compute/manager.py: Unexpected power state %d
+nova/compute/manager.py: Synchronizing instance power state after lifecycle
+nova/compute/manager.py: Event %s arrived for non-existent instance. The
+nova/compute/manager.py: Ignoring event %s
+nova/compute/manager.py: Instance lifecycle events from the compute
+nova/compute/manager.py: Instance lifecycle events from the compute
+nova/compute/manager.py: Checking state
+nova/compute/manager.py: Hypervisor driver does not support
+nova/compute/manager.py: Treating negative config value (%(retries)s) for
+nova/compute/manager.py: Volume id: %(vol_id)s finished being
+nova/compute/manager.py: Error: %s
+nova/compute/manager.py: Retry info not present, will not reschedule
+nova/compute/manager.py: No request spec, will not reschedule
+nova/compute/manager.py: Re-scheduling %(method)s: attempt %(num)d
+nova/compute/manager.py: Instance build timed out. Set to error
+nova/compute/manager.py: Allocating IP information in the background.
+nova/compute/manager.py: Treating negative config value (%(retries)s) for
+nova/compute/manager.py: Instance network_info: |%s|
+nova/compute/manager.py: Instance failed network setup
+nova/compute/manager.py: Instance failed network setup
+nova/compute/manager.py: Instance failed block device setup
+nova/compute/manager.py: Deallocating network for instance
+nova/compute/manager.py: Took %0.2f seconds to deallocate network for instance.
+nova/compute/manager.py: Starting instance...
+nova/compute/manager.py: No node specified, defaulting to %s
+nova/compute/manager.py: Took %0.2f seconds to build instance.
+nova/compute/manager.py: Retry info not present, will not reschedule
+nova/compute/manager.py: Start spawning the instance on the hypervisor.
+nova/compute/manager.py: Took %0.2f seconds to spawn the instance on
+nova/compute/manager.py: No more network or fixed IP to be allocated
+nova/compute/manager.py: Failed to allocate network(s)
+nova/compute/manager.py: Start building networks asynchronously for instance.
+nova/compute/manager.py: Failed to allocate network(s)
+nova/compute/manager.py: Start building block device mappings for instance.
+nova/compute/manager.py: Failure prepping block device
+nova/compute/manager.py: Instance failed to spawn
+nova/compute/manager.py: Could not clean up failed build,
+nova/compute/manager.py: Failed to deallocate network for instance.
+nova/compute/manager.py: Terminating instance
+nova/compute/manager.py: Start destroying the instance on the hypervisor.
+nova/compute/manager.py: Took %0.2f seconds to destroy the instance on the
+nova/compute/manager.py: Ignoring DiskNotFound: %s
+nova/compute/manager.py: Ignoring VolumeNotFound: %s
+nova/compute/manager.py: Ignoring EndpointNotFound for
+nova/compute/manager.py: Ignoring unknown cinder exception for
+nova/compute/manager.py: Ignoring unknown exception for
+nova/compute/manager.py: Took %(time).2f seconds to detach %(num)s volumes
+nova/compute/manager.py: terminating bdm %s
+nova/compute/manager.py: Failed to delete volume: %(volume_id)s
+nova/compute/manager.py: Events pending at deletion: %(events)s
+nova/compute/manager.py: Info cache for instance could not be found.
+nova/compute/manager.py: There are potentially stale BDMs during
+nova/compute/manager.py: Instance disappeared during terminate
+nova/compute/manager.py: Setting instance vm_state to ERROR
+nova/compute/manager.py: Stopping instance; current vm_state: %(vm_state)s,
+nova/compute/manager.py: Instance is already powered off in the
+nova/compute/manager.py: Failed to delete snapshot
+nova/compute/manager.py: Something wrong happened when trying to
+nova/compute/manager.py: Rebuilding instance
+nova/compute/manager.py: Failed to get compute_info for %s
+nova/compute/manager.py: Could not rebuild instance on this host, not
+nova/compute/manager.py: Instance was deleted while rebuilding
+nova/compute/manager.py: on_shared_storage is not provided, using driver
+nova/compute/manager.py: disk on shared storage, recreating using
+nova/compute/manager.py: disk not on shared storage, rebuilding from:
+nova/compute/manager.py: bringing vm to original state: '%s'
+nova/compute/manager.py: Detaching from volume api: %s
+nova/compute/manager.py: Rebooting instance
+nova/compute/manager.py: trying to reboot a non-running instance:
+nova/compute/manager.py: Reboot failed but instance is running
+nova/compute/manager.py: Cannot reboot instance: %s
+nova/compute/manager.py: Instance disappeared during reboot
+nova/compute/manager.py: Instance not found, could not set state %s
+nova/compute/manager.py: Instance being deleted, snapshot cannot continue
+nova/compute/manager.py: instance snapshotting
+nova/compute/manager.py: trying to snapshot a non-running instance:
+nova/compute/manager.py: Error while trying to clean up image %s
+nova/compute/manager.py: Found %(num_images)d images (rotation: %(rotation)d)
+nova/compute/manager.py: Rotating out %d backups
+nova/compute/manager.py: Deleting image %s
+nova/compute/manager.py: Root password set
+nova/compute/manager.py: set_admin_password is not implemented
+nova/compute/manager.py: set_admin_password failed
+nova/compute/manager.py: trying to inject a file into a non-running
+nova/compute/manager.py: injecting file to %s
+nova/compute/manager.py: Unable to find a different image to use for
+nova/compute/manager.py: Rescuing
+nova/compute/manager.py: Error trying to Rescue Instance
+nova/compute/manager.py: Unrescuing
+nova/compute/manager.py: Changing instance metadata according to %r
+nova/compute/manager.py: Going to confirm migration %s
+nova/compute/manager.py: Migration %s is not found during confirmation
+nova/compute/manager.py: Migration %s is already confirmed
+nova/compute/manager.py: Unexpected confirmation status '%(status)s'
+nova/compute/manager.py: Instance is not found during confirmation
+nova/compute/manager.py: Resized/migrated instance is powered off.
+nova/compute/manager.py: Updating instance to original state: '%s'
+nova/compute/manager.py: Stashing vm_state: %s
+nova/compute/manager.py: Migrating
+nova/compute/manager.py: No node specified, defaulting to %s
+nova/compute/manager.py: Error trying to reschedule
+nova/compute/manager.py: Setting instance vm_state to ERROR
+nova/compute/manager.py: Failed to rollback quota for failed
+nova/compute/manager.py: Pausing
+nova/compute/manager.py: Unpausing
+nova/compute/manager.py: Retrieving diagnostics
+nova/compute/manager.py: Retrieving diagnostics
+nova/compute/manager.py: Resuming
+nova/compute/manager.py: No node specified, defaulting to %s
+nova/compute/manager.py: Instance failed to spawn
+nova/compute/manager.py: Reset network
+nova/compute/manager.py: Inject network info
+nova/compute/manager.py: network_info to inject: |%s|
+nova/compute/manager.py: Get console output
+nova/compute/manager.py: Getting vnc console
+nova/compute/manager.py: Getting spice console
+nova/compute/manager.py: Getting RDP console
+nova/compute/manager.py: Getting MKS console
+nova/compute/manager.py: Getting serial console
+nova/compute/manager.py: Attaching volume %(volume_id)s to %(mountpoint)s
+nova/compute/manager.py: Failed to attach %(volume_id)s
+nova/compute/manager.py: Detach volume %(volume_id)s from mountpoint %(mp)s
+nova/compute/manager.py: Detaching volume from unknown instance
+nova/compute/manager.py: Ignoring DiskNotFound exception while detaching
+nova/compute/manager.py: Failed to detach volume %(volume_id)s
+nova/compute/manager.py: Updating volume usage cache with totals
+nova/compute/manager.py: Skipping _driver_detach_volume during remote rebuild.
+nova/compute/manager.py: Unable to call for a driver detach of volume
+nova/compute/manager.py: Host mismatch detected, but stashed
+nova/compute/manager.py: Host mismatch detected in stashed volume
+nova/compute/manager.py: Host mismatch detected. Found usable stashed
+nova/compute/manager.py: swap_volume: Calling driver volume swap with
+nova/compute/manager.py: old_volume_id
+nova/compute/manager.py: volume_id
+nova/compute/manager.py: swap_volume: calling Cinder terminate_connection
+nova/compute/manager.py: swap_volume: Cinder migrate_volume_completion
+nova/compute/manager.py: Swapping volume %(old_volume)s for %(new_volume)s
+nova/compute/manager.py: swap_volume: Updating volume %(volume_id)s BDM record with
+nova/compute/manager.py: allocate_port_for_instance returned %(ports)s
+nova/compute/manager.py: attach interface failed , try to deallocate
+nova/compute/manager.py: deallocate port %(port_id)s failed
+nova/compute/manager.py: Detach interface failed, port_id=%(port_id)s,
+nova/compute/manager.py: Failed to deallocate port %(port_id)s
+nova/compute/manager.py: destination check data is %s
+nova/compute/manager.py: source check data is %s
+nova/compute/manager.py: pre_live_migration data is %s
+nova/compute/manager.py: driver pre_live_migration data is %s
+nova/compute/manager.py: pre_live_migration result data is %s
+nova/compute/manager.py: Pre live migration failed at %s
+nova/compute/manager.py: live_migration data is %s
+nova/compute/manager.py: Live migration failed.
+nova/compute/manager.py: _post_live_migration() is started..
+nova/compute/manager.py: Calling driver.unfilter_instance from _post_live_migration
+nova/compute/manager.py: Calling driver.cleanup from _post_live_migration
+nova/compute/manager.py: Migrating instance to %s finished successfully.
+nova/compute/manager.py: You may see the error \"libvirt: QEMU error:
+nova/compute/manager.py: Post operation of migration started
+nova/compute/manager.py: Unexpected error during post live migration at
+nova/compute/manager.py: Failed to get compute_info for %s
+nova/compute/manager.py: An error occurred while deallocating network.
+nova/compute/manager.py: Starting heal instance info cache
+nova/compute/manager.py: Rebuilding the list of instances to heal
+nova/compute/manager.py: Skipping network cache update for instance
+nova/compute/manager.py: Skipping network cache update for instance
+nova/compute/manager.py: Skipping network cache update for instance
+nova/compute/manager.py: Skipping network cache update for instance
+nova/compute/manager.py: Updated the network info_cache for instance
+nova/compute/manager.py: Instance no longer exists. Unable to refresh
+nova/compute/manager.py: InstanceInfoCache no longer exists.
+nova/compute/manager.py: An error occurred while refreshing the network
+nova/compute/manager.py: Didn't find any instances for network info cache
+nova/compute/manager.py: Found %(migration_count)d unconfirmed migrations
+nova/compute/manager.py: Setting migration %(migration_id)s to error:
+nova/compute/manager.py: Automatically confirming migration
+nova/compute/manager.py: Error auto-confirming resize: %s.
+nova/compute/manager.py: Periodic task failed to offload instance.
+nova/compute/manager.py: Running instance usage audit for
+nova/compute/manager.py: Failed to generate usage
+nova/compute/manager.py: Updating bandwidth usage cache
+nova/compute/manager.py: Bandwidth usage not supported by
+nova/compute/manager.py: Updating volume usage cache
+nova/compute/manager.py: While synchronizing instance power states, found
+nova/compute/manager.py: Periodic sync_power_state task had an
+nova/compute/manager.py: Sync already in progress for %s
+nova/compute/manager.py: Triggering sync for uuid %s
+nova/compute/manager.py: During sync_power_state the instance has a
+nova/compute/manager.py: During the sync_power process the
+nova/compute/manager.py: During sync_power_state the instance has a
+nova/compute/manager.py: During _sync_instance_power_state the DB
+nova/compute/manager.py: Instance shutdown by itself. Calling the
+nova/compute/manager.py: error during stop() in
+nova/compute/manager.py: Instance is suspended unexpectedly. Calling
+nova/compute/manager.py: error during stop() in
+nova/compute/manager.py: Instance is paused unexpectedly. Ignore.
+nova/compute/manager.py: Instance is unexpectedly not found. Ignore.
+nova/compute/manager.py: Instance is not stopped. Calling
+nova/compute/manager.py: error during stop() in
+nova/compute/manager.py: Paused instance shutdown by itself. Calling
+nova/compute/manager.py: error during stop() in
+nova/compute/manager.py: Instance is not (soft-)deleted.
+nova/compute/manager.py: CONF.reclaim_instance_interval <= 0, skipping...
+nova/compute/manager.py: Reclaiming deleted instance
+nova/compute/manager.py: Periodic reclaim failed to delete
+nova/compute/manager.py: Compute node '%s' not found in
+nova/compute/manager.py: Error updating resources for node
+nova/compute/manager.py: Deleting orphan compute node %s
+nova/compute/manager.py: No compute node record for host %s
+nova/compute/manager.py: Detected instance with name label
+nova/compute/manager.py: Powering off instance with name label
+nova/compute/manager.py: set_bootable is not implemented
+nova/compute/manager.py: Destroying instance with name label
+nova/compute/manager.py: Periodic cleanup failed to delete
+nova/compute/manager.py: Setting instance back to %(state)s after:
+nova/compute/manager.py: Setting instance back to ACTIVE after: %s
+nova/compute/manager.py: Setting instance vm_state to ERROR
+nova/compute/manager.py: Hypervisor driver does not support
+nova/compute/manager.py: Hypervisor driver does not support
+nova/compute/manager.py: Processing event %(event)s
+nova/compute/manager.py: Neutron deleted interface %(intf)s;
+nova/compute/manager.py: Detach interface failed,
+nova/compute/manager.py: Received event %(event)s
+nova/compute/manager.py: Failed to process external instance event
+nova/compute/manager.py: Cleaning up deleted instances
+nova/compute/manager.py: There are %d instances to clean
+nova/compute/manager.py: Instance has had %(attempts)s of %(max)s
+nova/compute/manager.py: Cleaning up deleted instances with incomplete migration
+nova/compute/manager.py: Migration %s is not found.
+nova/compute/manager.py: Exception while waiting completion of
+nova/compute/monitors/__init__.py: Excluding %(namespace)s monitor
+nova/compute/monitors/__init__.py: Excluding %(namespace)s monitor %(monitor_name)s.
+nova/compute/monitors/cpu/virt_driver.py: Not all properties needed are implemented
+nova/compute/resources/__init__.py: Compute resource plugin %s was not loaded
+nova/compute/resources/__init__.py: The Extensible Resource Tracker is deprecated and will
+nova/hacking/checks.py: As per our translation policy,     https://wiki.openstack.org/wiki/LoggingStandards#Log_Translation     we shouldn
+nova/hacking/checks.py: ):         yield(0,
+nova/db/api.py: Failed to notify cells of bw_usage update
+nova/db/sqlalchemy/api.py: The row was updated in a concurrent transaction,
+nova/db/sqlalchemy/api.py: Failed to update usages bulk
+nova/db/sqlalchemy/api.py: The row was updated in a concurrent transaction,
+nova/db/sqlalchemy/api.py: The row was updated in a concurrent transaction,
+nova/db/sqlalchemy/api.py: Created instance_extra for %s
+nova/db/sqlalchemy/api.py: The row was updated in a concurrent transaction,
+nova/db/sqlalchemy/api.py: in_use has dropped below 0; forcing refresh for
+nova/db/sqlalchemy/api.py: quota_usages out of sync, updating.
+nova/db/sqlalchemy/api.py: QuotaUsage has not changed, refresh is unnecessary for: %s
+nova/db/sqlalchemy/api.py: Request is over project quota for resource
+nova/db/sqlalchemy/api.py: Request is over user quota for resource
+nova/db/sqlalchemy/api.py: Copying QuotaUsage for resource "%(key)s" from
+nova/db/sqlalchemy/api.py: Change will make usage less than 0 for the following
+nova/db/sqlalchemy/api.py: Raise OverQuota exception because:
+nova/db/sqlalchemy/api.py: Volume(%s) has lower stats then what is in
+nova/db/sqlalchemy/api.py: Failed to archive %(table)s: %(error)s
+nova/db/sqlalchemy/api.py: IntegrityError detected when archiving table
+nova/db/sqlalchemy/api.py: Data migrations for PciDevice are not safe, likely
+nova/db/sqlalchemy/utils.py: Exception while creating table.
+nova/db/sqlalchemy/utils.py: Exception while creating table.
+nova/db/sqlalchemy/migrate_repo/versions/319_add_instances_deleted_created_at_index.py: Skipped adding %s because an equivalent index
+nova/db/sqlalchemy/migrate_repo/versions/234_add_expire_reservations_index.py: Skipped adding reservations_deleted_expire_idx
+nova/db/sqlalchemy/migrate_repo/versions/216_havana.py: Exception while creating table.
+nova/db/sqlalchemy/migrate_repo/versions/216_havana.py: Exception while seeding instance_types table
+nova/db/sqlalchemy/migrate_repo/versions/216_havana.py: Exception while creating table.
+nova/db/sqlalchemy/migrate_repo/versions/295_add_virtual_interfaces_uuid_index.py: Skipped adding %s because an equivalent index
+nova/db/sqlalchemy/migrate_repo/versions/274_update_instances_project_id_index.py: Skipped adding instances_project_id_deleted_idx
+nova/db/sqlalchemy/migrate_repo/versions/248_add_expire_reservations_index.py: Skipped adding reservations_deleted_expire_idx
+nova/db/sqlalchemy/migrate_repo/versions/277_add_fixed_ip_updated_index.py: Skipped adding %s because an equivalent index
+nova/api/validator.py: %(key)s with value %(value)s failed
+nova/api/auth.py: Neither X_USER_ID nor X_USER found in request
+nova/api/openstack/urlmap.py: Could not find application for %s
+nova/api/openstack/__init__.py: Caught error: %s
+nova/api/openstack/__init__.py: %(url)s returned with HTTP %(status)d
+nova/api/openstack/__init__.py: Extending resource: %s
+nova/api/openstack/__init__.py: Extension %(ext_name)s: Cannot extend
+nova/api/openstack/__init__.py: Extension %(ext_name)s extended resource:
+nova/api/openstack/__init__.py: V2.1 API has been disabled by configuration
+nova/api/openstack/__init__.py: In the M release you must run the v2.1 API.
+nova/api/openstack/__init__.py: In the M release you must run all of the API.
+nova/api/openstack/__init__.py: v21 API Extension Blacklist: %s
+nova/api/openstack/__init__.py: v21 API Extension Whitelist: %s
+nova/api/openstack/__init__.py: Extensions in both blacklist and whitelist: %s
+nova/api/openstack/__init__.py: Missing core API extensions: %s
+nova/api/openstack/__init__.py: Loaded extensions: %s
+nova/api/openstack/__init__.py: Running _register_resources on %s
+nova/api/openstack/__init__.py: Extended resource: %s
+nova/api/openstack/__init__.py: Running _register_controllers on %s
+nova/api/openstack/__init__.py: Extension %(ext_name)s: Cannot extend
+nova/api/openstack/__init__.py: Extension %(ext_name)s extending resource:
+nova/api/openstack/extensions.py: Exception loading extension
+nova/api/openstack/extensions.py: Loading extension %s
+nova/api/openstack/extensions.py: The legacy v2 API module already moved into
+nova/api/openstack/extensions.py: Calling extension factory %s
+nova/api/openstack/extensions.py: Failed to load extension %(ext_factory)s:
+nova/api/openstack/extensions.py: Skipping extension: %s
+nova/api/openstack/extensions.py: Failed to load extension %(classpath)s:
+nova/api/openstack/extensions.py: Failed to load extension %(ext_name)s:
+nova/api/openstack/extensions.py: Unexpected exception in API method
+nova/api/openstack/common.py: status is UNKNOWN from vm_state=%(vm_state)s
+nova/api/openstack/common.py: href %s does not contain version
+nova/api/openstack/common.py: Rejecting snapshot request, snapshots currently
+nova/api/openstack/wsgi.py: Exception handling resource: %s
+nova/api/openstack/wsgi.py: Fault thrown: %s
+nova/api/openstack/wsgi.py: HTTP exception thrown: %s
+nova/api/openstack/wsgi.py: Calling method '%(meth)s'
+nova/api/openstack/wsgi.py: Returning %(code)s to user: %(explanation)s
+nova/api/openstack/compute/floating_ips.py: Info cache is %r during associate with no nw_info cache
+nova/api/openstack/compute/floating_ips.py: multiple fixed_ips exist, using the first
+nova/api/openstack/compute/server_groups.py: Failed to update usages deallocating
+nova/api/openstack/compute/__init__.py: Deprecated: Starting with the Liberty release, the v2 API was
+nova/api/openstack/compute/hosts.py: Putting host %(host_name)s in maintenance mode
+nova/api/openstack/compute/hosts.py: Enabling host %s.
+nova/api/openstack/compute/hosts.py: Disabling host %s.
+nova/api/openstack/compute/assisted_volume_snapshots.py: Create assisted snapshot from volume %s
+nova/api/openstack/compute/assisted_volume_snapshots.py: Delete snapshot with id: %s
+nova/api/openstack/compute/servers.py: Extension %s is both in whitelist and
+nova/api/openstack/compute/servers.py: extension %(ext_alias)s detected by
+nova/api/openstack/compute/servers.py: extension %(ext_alias)s is missing %(func)s
+nova/api/openstack/compute/servers.py: Did not find any server create extensions
+nova/api/openstack/compute/servers.py: Did not find any server rebuild extensions
+nova/api/openstack/compute/servers.py: Did not find any server update extensions
+nova/api/openstack/compute/servers.py: Did not find any server resize extensions
+nova/api/openstack/compute/servers.py: Did not find any server create schemas
+nova/api/openstack/compute/servers.py: Did not find any server update schemas
+nova/api/openstack/compute/servers.py: Did not find any server rebuild schemas
+nova/api/openstack/compute/servers.py: Did not find any server resize schemas
+nova/api/openstack/compute/servers.py: Flavor '%s' could not be found
+nova/api/openstack/compute/servers.py: Running _create_extension_point for %s
+nova/api/openstack/compute/servers.py: Running _rebuild_extension_point for %s
+nova/api/openstack/compute/servers.py: Running _resize_extension_point for %s
+nova/api/openstack/compute/servers.py: Running _update_extension_point for %s
+nova/api/openstack/compute/servers.py: Running _create_extension_schema for %s
+nova/api/openstack/compute/servers.py: Running _update_extension_schema for %s
+nova/api/openstack/compute/servers.py: Running _rebuild_extension_schema for %s
+nova/api/openstack/compute/servers.py: Running _resize_extension_schema for %s
+nova/api/openstack/compute/servers.py: start instance
+nova/api/openstack/compute/servers.py: stop instance
+nova/api/openstack/compute/servers.py: Removing options '%s' from query
+nova/api/openstack/compute/security_groups.py: Security Group ID %s does not exist
+nova/api/openstack/compute/tenant_networks.py: Failed to get default networks
+nova/api/openstack/compute/tenant_networks.py: Failed to update usages deallocating
+nova/api/openstack/compute/server_external_events.py: Dropping event %(name)s:%(tag)s for unknown
+nova/api/openstack/compute/server_external_events.py: Creating event %(name)s:%(tag)s for
+nova/api/openstack/compute/server_external_events.py: Unable to find a host for instance
+nova/api/openstack/compute/extension_info.py: Filter out extension %s from discover list
+nova/api/openstack/compute/extension_info.py: Exception loading extension
+nova/api/openstack/compute/legacy_v2/servers.py: Flavor '%s' could not be found
+nova/api/openstack/compute/legacy_v2/servers.py: Removing options '%s' from query
+nova/api/openstack/compute/legacy_v2/extensions.py: The extension configure options are deprecated.
+nova/api/openstack/compute/legacy_v2/contrib/floating_ips.py: Info cache is %r during associate
+nova/api/openstack/compute/legacy_v2/contrib/floating_ips.py: multiple fixed_ips exist, using the first
+nova/api/openstack/compute/legacy_v2/contrib/os_tenant_networks.py: Failed to get default networks
+nova/api/openstack/compute/legacy_v2/contrib/os_tenant_networks.py: Failed to update usages deallocating
+nova/api/openstack/compute/legacy_v2/contrib/server_groups.py: Failed to update usages deallocating
+nova/api/openstack/compute/legacy_v2/contrib/hosts.py: Putting host %(host_name)s in maintenance mode
+nova/api/openstack/compute/legacy_v2/contrib/hosts.py: Enabling host %s.
+nova/api/openstack/compute/legacy_v2/contrib/hosts.py: Disabling host %s.
+nova/api/openstack/compute/legacy_v2/contrib/assisted_volume_snapshots.py: Create assisted snapshot from volume %s
+nova/api/openstack/compute/legacy_v2/contrib/assisted_volume_snapshots.py: Delete snapshot with id: %s
+nova/api/openstack/compute/legacy_v2/contrib/volumes.py: vol=%s
+nova/api/openstack/compute/legacy_v2/contrib/volumes.py: Delete volume with id: %s
+nova/api/openstack/compute/legacy_v2/contrib/volumes.py: Create volume of %s GB
+nova/api/openstack/compute/legacy_v2/contrib/volumes.py: Attach volume %(volume_id)s to instance %(server_id)s
+nova/api/openstack/compute/legacy_v2/contrib/volumes.py: Detach volume %s
+nova/api/openstack/compute/legacy_v2/contrib/volumes.py: Delete snapshot with id: %s
+nova/api/openstack/compute/legacy_v2/contrib/volumes.py: Create snapshot from volume %s
+nova/api/openstack/compute/legacy_v2/contrib/security_groups.py: Security Group ID %s does not exist
+nova/api/openstack/compute/legacy_v2/contrib/attach_interfaces.py: Attach interface
+nova/api/openstack/compute/legacy_v2/contrib/attach_interfaces.py: Detach interface %s
+nova/api/openstack/compute/legacy_v2/contrib/server_external_events.py: Dropping event %(name)s:%(tag)s for unknown
+nova/api/openstack/compute/legacy_v2/contrib/server_external_events.py: Creating event %(name)s:%(tag)s for
+nova/api/openstack/compute/legacy_v2/contrib/server_external_events.py: Unable to find a host for instance
+nova/api/openstack/compute/legacy_v2/contrib/multinic.py: Unable to find address %r
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: Compute.api::pause %s
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: Compute.api::unpause %s
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: compute.api::suspend %s
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: compute.api::resume %s
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: Error in migrate
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: Compute.api::reset_network %s
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: Compute.api::inject_network_info %s
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: Compute.api::lock %s
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: Compute.api::unlock %s
+nova/api/openstack/compute/legacy_v2/contrib/admin_actions.py: Compute.api::resetState %s
+nova/api/openstack/compute/views/servers.py: Instance has had its instance_type removed
+nova/api/metadata/handler.py: Using cached metadata for %s
+nova/api/metadata/handler.py: Using cached metadata for instance %s
+nova/api/metadata/handler.py: X-Instance-ID present in request headers. The
+nova/api/metadata/handler.py: Failed to get metadata for IP: %s
+nova/api/metadata/handler.py: Failed to get metadata for IP: %s
+nova/api/metadata/handler.py: Failed to get instance id for metadata
+nova/api/metadata/handler.py: X-Instance-ID-Signature: %(signature)s does
+nova/api/metadata/handler.py: Failed to get metadata for instance id: %s
+nova/api/metadata/handler.py: Failed to get metadata for instance id: %s
+nova/api/metadata/handler.py: Tenant_id %(tenant_id)s does not match tenant_id
+nova/api/metadata/vendordata_json.py: %(logprefix)s file does not exist
+nova/api/metadata/vendordata_json.py: %(logprefix)s unexpected IOError when
+nova/api/metadata/vendordata_json.py: %(logprefix)s failed to load json
+nova/api/metadata/base.py: Unable to find keypair for instance with
+nova/api/metadata/base.py: future versions %s hidden in version list
+nova/api/ec2/ec2utils.py: Timestamp is invalid.
+nova/keymgr/barbican.py: Error creating Barbican client: %s
+nova/keymgr/barbican.py: Error creating key: %s
+nova/keymgr/barbican.py: Error storing key: %s
+nova/keymgr/barbican.py: Error copying key: %s
+nova/keymgr/barbican.py: Error getting secret data: %s
+nova/keymgr/barbican.py: Error getting secret metadata: %s
+nova/keymgr/barbican.py: Error getting key: %s
+nova/keymgr/barbican.py: Error deleting key: %s
+nova/keymgr/single_key_mgr.py: This key manager is insecure and is not recommended
+nova/keymgr/single_key_mgr.py: Not deleting key %s
+nova/keymgr/mock_key_mgr.py: This key manager is not suitable for use in
+nova/cloudpipe/pipelib.py: Launching VPN for %s
+nova/conductor/api.py: nova-conductor connection
+nova/conductor/api.py: Timed out waiting for nova-conductor.
+nova/conductor/manager.py: Backporting %(obj)s to %(ver)s with versions %(manifest)s
+nova/conductor/manager.py: Reloading compute RPC API
+nova/conductor/manager.py: Migration of instance %(instance_id)s to host
+nova/conductor/manager.py: Instance deleted during build
+nova/conductor/manager.py: No valid host found for unshelve instance
+nova/conductor/manager.py: Unshelve attempted but an error
+nova/conductor/manager.py: Unshelve attempted but vm_state not SHELVED or
+nova/conductor/manager.py: No valid host found for rebuild
+nova/conductor/manager.py: Server with unsupported policy
+nova/conductor/manager.py: No migration record for the rebuild/evacuate
+nova/conductor/tasks/live_migrate.py: Skipping host: %(host)s because: %(e)s
+nova/volume/cinder.py: attachment_id couldn't be retrieved
+nova/volume/cinder.py: attachment_id couldn't be retrieved for
+nova/volume/cinder.py: Initialize connection failed for volume
+nova/volume/cinder.py: Connection between volume %(vol)s and host
+nova/volume/encryptors/cryptsetup.py: Using old encrypted volume name: %s
+nova/volume/encryptors/cryptsetup.py: Using encrypted volume name from wwn: %s
+nova/volume/encryptors/cryptsetup.py: cryptsetup status %(dev_name)s exited
+nova/volume/encryptors/cryptsetup.py: opening encrypted volume %s
+nova/volume/encryptors/cryptsetup.py: closing encrypted volume %s
+nova/volume/encryptors/__init__.py: Error instantiating %(provider)s: %(exception)s
+nova/volume/encryptors/__init__.py: Volume %s should be encrypted but there is no
+nova/volume/encryptors/__init__.py: Failed to retrieve encryption metadata for
+nova/volume/encryptors/luks.py: isLuks exited abnormally (status %(exit_code)s):
+nova/volume/encryptors/luks.py: formatting encrypted volume %s
+nova/volume/encryptors/luks.py: opening encrypted volume %s
+nova/volume/encryptors/luks.py: %s is not a valid LUKS device;
+nova/volume/encryptors/luks.py: closing encrypted volume %s
+nova/servicegroup/api.py: Report interval must be less than service down
+nova/servicegroup/drivers/db.py: DB_Driver: join new ServiceGroup member %(member)s to
+nova/servicegroup/drivers/db.py: Seems service %(binary)s on host %(host)s is down.
+nova/servicegroup/drivers/db.py: Recovered from being unable to report status.
+nova/servicegroup/drivers/db.py: Lost connection to nova-conductor
+nova/servicegroup/drivers/db.py: Unexpected error while reporting service status
+nova/servicegroup/drivers/mc.py: Memcached_Driver: join new ServiceGroup member
+nova/servicegroup/drivers/mc.py: Seems service %s is down
+nova/servicegroup/drivers/mc.py: Recovered connection to memcache server
+nova/servicegroup/drivers/mc.py: Lost connection to memcache server
+nova/console/xvp.py: Rebuilding xvp conf
+nova/console/xvp.py: No console pools!
+nova/console/xvp.py: Re-wrote %s
+nova/console/xvp.py: Failed to write configuration file
+nova/console/xvp.py: Stopping xvp
+nova/console/xvp.py: Starting xvp
+nova/console/xvp.py: Error starting xvp: %s
+nova/console/xvp.py: Restarting xvp
+nova/console/xvp.py: xvp not running...
+nova/console/serial.py: serial_console.port_range should be <num>:<num>.
+nova/console/manager.py: Reloading compute RPC API
+nova/console/manager.py: Adding console
+nova/console/manager.py: Tried to remove non-existent console
